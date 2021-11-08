@@ -11,6 +11,7 @@
 		386FDC592739DA7300C1BAC2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386FDC582739DA7300C1BAC2 /* ContentView.swift */; };
 		386FDC5B2739DA7300C1BAC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 386FDC5A2739DA7300C1BAC2 /* Assets.xcassets */; };
 		386FDC5E2739DA7300C1BAC2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 386FDC5D2739DA7300C1BAC2 /* Preview Assets.xcassets */; };
+		386FDC662739DADD00C1BAC2 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386FDC652739DADD00C1BAC2 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		386FDC5A2739DA7300C1BAC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		386FDC5D2739DA7300C1BAC2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		386FDC5F2739DA7300C1BAC2 /* InventoryWatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InventoryWatch.entitlements; sourceTree = "<group>"; };
+		386FDC652739DADD00C1BAC2 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				386FDC562739DA7300C1BAC2 /* InventoryWatchApp.swift */,
 				386FDC582739DA7300C1BAC2 /* ContentView.swift */,
+				386FDC652739DADD00C1BAC2 /* Model.swift */,
 				386FDC5A2739DA7300C1BAC2 /* Assets.xcassets */,
 				386FDC5F2739DA7300C1BAC2 /* InventoryWatch.entitlements */,
 				386FDC5C2739DA7300C1BAC2 /* Preview Content */,
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				386FDC662739DADD00C1BAC2 /* Model.swift in Sources */,
 				386FDC592739DA7300C1BAC2 /* ContentView.swift in Sources */,
 				386FDC572739DA7300C1BAC2 /* InventoryWatchApp.swift in Sources */,
 			);
