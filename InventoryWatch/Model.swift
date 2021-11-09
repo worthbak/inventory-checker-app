@@ -24,6 +24,10 @@ struct PartAvailability {
     let partNumber: String
     let partName: String // storePickupProductTitle
     let availability: PickupAvailability
+    
+    var descriptiveName: String? {
+        return SKUs[partNumber]
+    }
 }
 
 extension PartAvailability: Identifiable {
@@ -38,9 +42,12 @@ final class Model: ObservableObject {
         case failedToParseJSON
     }
     
-    @Published var availableParts: [PartAvailability] = []
+    @Published var availableParts: [(Store, [PartAvailability])] = []
+    @Published var isLoading = false
     
     func fetchLatestInventory() throws {
+        isLoading = true
+        
         let urlRoot = "https://www.apple.com/shop/fulfillment-messages?"
         let query = "parts.0=MKGR3LL%2FA&parts.1=MKGP3LL%2FA&parts.2=MKGT3LL%2FA&parts.3=MKGQ3LL%2FA&parts.4=MMQX3LL%2FA&parts.5=MKH53LL%2FA&parts.6=MK1E3LL%2FA&parts.7=MK183LL%2FA&parts.8=MK1F3LL%2FA&parts.9=MK193LL%2FA&parts.10=MK1H3LL%2FA&parts.11=MK1A3LL%2FA&parts.12=MK233LL%2FA&parts.13=MMQW3LL%2FA&parts.14=MYD92LL%2FA&searchNearby=true&store=R172"
         
@@ -84,6 +91,8 @@ final class Model: ObservableObject {
             guard let state = storeJSON["state"] as? String else { return nil }
             guard let city = storeJSON["city"] as? String else { return nil }
             
+            if state != "CO" { return nil }
+            
             guard let partsAvailability = storeJSON["partsAvailability"] as? [String: [String: Any]] else { return nil }
             let parsedParts: [PartAvailability] = partsAvailability.values.compactMap { part in
                 guard let partNumber = part["partNumber"] as? String else { return nil }
@@ -93,6 +102,12 @@ final class Model: ObservableObject {
                         let availability = PartAvailability.PickupAvailability(rawValue: availabilityString)
                 else {
                     return nil
+                }
+                
+                if partNumber == controlSku && availability == .available {
+                    return nil
+                } else {
+                    print("Found unavailable control")
                 }
                 
                 return PartAvailability(partNumber: partNumber, partName: partName, availability: availability)
@@ -105,8 +120,8 @@ final class Model: ObservableObject {
     }
     
     private func parseAvailableModels(from stores: [Store]) throws {
-        let allAvailableModels: [PartAvailability] = stores.flatMap { store in
-            return store.partsAvailability.filter { part in
+        let allAvailableModels: [(Store, [PartAvailability])] = stores.compactMap { store in
+            let rv: [PartAvailability] = store.partsAvailability.filter { part in
                 switch part.availability {
                 case .available:
                     return true
@@ -114,10 +129,17 @@ final class Model: ObservableObject {
                     return false
                 }
             }
+            
+            if rv.isEmpty {
+                return nil
+            } else {
+                return (store, rv)
+            }
         }
         
         DispatchQueue.main.async {
             self.availableParts = allAvailableModels
+            self.isLoading = false
         }
     }
     

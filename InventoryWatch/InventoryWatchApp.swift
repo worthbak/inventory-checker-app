@@ -16,5 +16,6 @@ struct InventoryWatchApp: App {
             ContentView()
                 .environmentObject(model)
         }
+        .windowStyle(HiddenTitleBarWindowStyle())
     }
 }
