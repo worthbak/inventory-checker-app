@@ -60,6 +60,7 @@ struct ContentView: View {
         )
         .onAppear {
             try! model.fetchLatestInventory()
+            NotificationManager.shared.requestNotificationPermissions()
         }
     }
 }
@@ -67,5 +68,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(Model.testData)
     }
 }

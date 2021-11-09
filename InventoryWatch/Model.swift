@@ -45,7 +45,17 @@ final class Model: ObservableObject {
     @Published var availableParts: [(Store, [PartAvailability])] = []
     @Published var isLoading = false
     
+    private let isTest: Bool
+    
+    init(isTest: Bool = false) {
+        self.isTest = isTest
+    }
+    
     func fetchLatestInventory() throws {
+        guard !isTest else {
+            return
+        }
+        
         isLoading = true
         
         let urlRoot = "https://www.apple.com/shop/fulfillment-messages?"
@@ -140,7 +150,49 @@ final class Model: ObservableObject {
         DispatchQueue.main.async {
             self.availableParts = allAvailableModels
             self.isLoading = false
+            
+            if !self.isTest {
+                let message = Model.generateNotificationText(from: allAvailableModels)
+                NotificationManager.shared.sendNotification(title: "Apple Store Invetory Found", body: message)
+            }
         }
     }
     
+    static func generateNotificationText(from data: [(Store, [PartAvailability])]) -> String {
+        var collector: [String: Int] = [:]
+        for (_, parts) in data {
+            for part in parts {
+                collector[part.partNumber, default: 0] += 1
+            }
+        }
+        
+        let combined: [String] = collector.reduce(into: []) { partialResult, next in
+            let (key, value) = next
+            let name = SKUs[key] ?? key
+            partialResult.append("\(name): \(value) found")
+        }
+        
+        return combined.joined(separator: ", ")
+    }
+}
+
+extension Model {
+    static var testData: Model {
+        let model = Model(isTest: true)
+        
+        let testParts: [PartAvailability] = [
+            PartAvailability(partNumber: "MKGT3LL/A", partName: "14\" Si, Better", availability: .available),
+            PartAvailability(partNumber: "MKGQ3LL/A", partName: "14\" SG, Better", availability: .available),
+            PartAvailability(partNumber: "MMQX3LL/A", partName: "14\" Si, Ultimate", availability: .available),
+        ]
+        
+        let testStores: [Store] = [
+            Store(storeName: "Twenty Ninth St", storeNumber: "R452", city: "Boulder", state: "CO", partsAvailability: testParts),
+            Store(storeName: "Flatirons Crossing", storeNumber: "R462", city: "Louisville", state: "CO", partsAvailability: testParts),
+            Store(storeName: "Cherry Creek", storeNumber: "R552", city: "Denver", state: "CO", partsAvailability: testParts)
+        ]
+        
+        model.availableParts = testStores.map { ($0, testParts) }
+        return model
+    }
 }
