@@ -26,3 +26,21 @@ let SKUs = [
     "MMQW3LL/A": "16\" Si, Ultimate",
     "MYD92LL/A": "13\" Control",
 ]
+
+let OrderedSKUs = [
+    "MKGR3LL/A",
+    "MKGP3LL/A",
+    "MKGT3LL/A",
+    "MKGQ3LL/A",
+    "MMQX3LL/A",
+    "MKH53LL/A",
+    "MK1E3LL/A",
+    "MK183LL/A",
+    "MK1F3LL/A",
+    "MK193LL/A",
+    "MK1H3LL/A",
+    "MK1A3LL/A",
+    "MK233LL/A",
+    "MMQW3LL/A",
+    "MYD92LL/A"
+]

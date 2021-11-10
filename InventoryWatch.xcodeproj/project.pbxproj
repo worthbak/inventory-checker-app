@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3817268E273AA898003B8D76 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3817268D273AA898003B8D76 /* SettingsView.swift */; };
 		386FDC572739DA7300C1BAC2 /* InventoryWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386FDC562739DA7300C1BAC2 /* InventoryWatchApp.swift */; };
 		386FDC592739DA7300C1BAC2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386FDC582739DA7300C1BAC2 /* ContentView.swift */; };
 		386FDC5B2739DA7300C1BAC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 386FDC5A2739DA7300C1BAC2 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3817268D273AA898003B8D76 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		386FDC532739DA7300C1BAC2 /* InventoryWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InventoryWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		386FDC562739DA7300C1BAC2 /* InventoryWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryWatchApp.swift; sourceTree = "<group>"; };
 		386FDC582739DA7300C1BAC2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 			children = (
 				386FDC562739DA7300C1BAC2 /* InventoryWatchApp.swift */,
 				386FDC582739DA7300C1BAC2 /* ContentView.swift */,
+				3817268D273AA898003B8D76 /* SettingsView.swift */,
 				386FDC652739DADD00C1BAC2 /* Model.swift */,
 				386FDC69273A200000C1BAC2 /* NotificationManager.swift */,
 				386FDC67273A18F800C1BAC2 /* SKUData.swift */,
@@ -151,6 +154,7 @@
 				386FDC662739DADD00C1BAC2 /* Model.swift in Sources */,
 				386FDC68273A18F800C1BAC2 /* SKUData.swift in Sources */,
 				386FDC6A273A200000C1BAC2 /* NotificationManager.swift in Sources */,
+				3817268E273AA898003B8D76 /* SettingsView.swift in Sources */,
 				386FDC592739DA7300C1BAC2 /* ContentView.swift in Sources */,
 				386FDC572739DA7300C1BAC2 /* InventoryWatchApp.swift in Sources */,
 			);

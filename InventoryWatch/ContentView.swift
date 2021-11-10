@@ -22,7 +22,8 @@ struct ContentView: View {
                 Spacer()
                 
                 Text("Available Models")
-                    .font(.title)
+                    .font(.title2)
+                    .fontWeight(.semibold)
                 
                 Spacer()
                 
@@ -46,10 +47,13 @@ struct ContentView: View {
                 }
             }
             
-            Button("Run Query") {
-                try! model.fetchLatestInventory()
+            HStack {
+                Button("Run Query") {
+                    try! model.fetchLatestInventory()
+                }
+                .padding()
             }
-            .padding()
+            
         }
         .frame(
             minWidth: 500,

@@ -17,5 +17,9 @@ struct InventoryWatchApp: App {
                 .environmentObject(model)
         }
         .windowStyle(HiddenTitleBarWindowStyle())
+        
+        Settings {
+            SettingsView()
+        }
     }
 }

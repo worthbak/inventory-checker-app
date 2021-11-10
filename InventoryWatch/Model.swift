@@ -45,6 +45,16 @@ final class Model: ObservableObject {
     @Published var availableParts: [(Store, [PartAvailability])] = []
     @Published var isLoading = false
     
+    private var preferredSKUs: Set<String> {
+        guard let defaults = UserDefaults.standard.string(forKey: "preferredSKUs") else {
+            return []
+        }
+        
+        return defaults.components(separatedBy: ",").reduce(into: Set<String>()) { partialResult, next in
+            partialResult.insert(next)
+        }
+    }
+    
     private let isTest: Bool
     
     init(isTest: Bool = false) {
@@ -151,9 +161,20 @@ final class Model: ObservableObject {
             self.availableParts = allAvailableModels
             self.isLoading = false
             
+            var hasPreferredModel = false
+            let preferredModels = self.preferredSKUs
+            for model in allAvailableModels {
+                for submodel in model.1 {
+                    if hasPreferredModel == false && preferredModels.contains(submodel.partNumber) {
+                        hasPreferredModel = true
+                        break
+                    }
+                }
+            }
+            
             if !self.isTest {
                 let message = Model.generateNotificationText(from: allAvailableModels)
-                NotificationManager.shared.sendNotification(title: "Apple Store Invetory Found", body: message)
+                NotificationManager.shared.sendNotification(title: hasPreferredModel ? "Preferred Model Found" : "Apple Store Invetory Found", body: message)
             }
         }
     }
