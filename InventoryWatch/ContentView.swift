@@ -13,11 +13,12 @@ struct ContentView: View {
     var body: some View {
         VStack {
             HStack {
-                // This is dumb but it keeps the title centered
-                ProgressView()
-                    .progressViewStyle(CircularProgressViewStyle())
-                    .opacity(0.0)
-                    .scaleEffect(0.5, anchor: .center)
+                Button(
+                    action: { NSApp.sendAction(Selector(("showPreferencesWindow:")), to: nil, from: nil) },
+                    label: { Image(systemName: "gearshape.fill") }
+                )
+                    .buttonStyle(BorderlessButtonStyle())
+                    .padding()
                 
                 Spacer()
                 
@@ -55,7 +56,7 @@ struct ContentView: View {
             }
             
             HStack {
-                Button("Run Query") {
+                Button("Search Inventory") {
                     try! model.fetchLatestInventory()
                 }
                 .padding()
