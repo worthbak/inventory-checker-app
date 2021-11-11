@@ -77,6 +77,9 @@ final class Model: ObservableObject {
         }
     }()
     
+    private var preferredStoreInfoBacking: JsonStore?
+    @Published var preferredStoreInfo: String? = nil
+    
     private var preferredCountry: String {
         return UserDefaults.standard.string(forKey: "preferredCountry") ?? "US"
     }
@@ -120,6 +123,7 @@ final class Model: ObservableObject {
             return
         }
         
+        syncPreferredStore()
         isLoading = true
         
         let urlRoot = "https://www.apple.com/\(countryPathElement)shop/fulfillment-messages?"
@@ -260,6 +264,13 @@ final class Model: ObservableObject {
     
     func productName(forSKU sku: String) -> String {
         return skuData.productName(forSKU: sku) ?? sku
+    }
+    
+    func syncPreferredStore() {
+        if preferredStoreInfoBacking == nil || (preferredStoreInfoBacking != nil && preferredStoreInfoBacking!.storeNumber != preferredStoreNumber) {
+            preferredStoreInfoBacking = allStores.first(where: { $0.storeNumber == preferredStoreNumber })
+            preferredStoreInfo = preferredStoreInfoBacking?.storeName
+        }
     }
 }
 

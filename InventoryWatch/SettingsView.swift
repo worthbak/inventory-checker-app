@@ -116,6 +116,7 @@ struct SettingsView: View {
             
             if preferredStoreNumber != _selectedStore {
                 preferredStoreNumber = _selectedStore
+                model.syncPreferredStore()
             }
             
             loadStores(filterText: storeSearchText)

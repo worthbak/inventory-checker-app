@@ -26,9 +26,10 @@ struct ContentView: View {
                         .font(.title2)
                         .fontWeight(.semibold)
                     
-                    Text("at \()")
-                        .font(.title2)
-                        .fontWeight(.semibold)
+                    if let preferredStoreInfo = model.preferredStoreInfo {
+                        Text("at \(preferredStoreInfo)")
+                            .font(.title2)
+                    }
                 }
                 
                 Spacer()
