@@ -21,9 +21,15 @@ struct ContentView: View {
                 
                 Spacer()
                 
-                Text("Available Models")
-                    .font(.title2)
-                    .fontWeight(.semibold)
+                VStack {
+                    Text("Available Models")
+                        .font(.title2)
+                        .fontWeight(.semibold)
+                    
+                    Text("at \()")
+                        .font(.title2)
+                        .fontWeight(.semibold)
+                }
                 
                 Spacer()
                 
@@ -37,8 +43,8 @@ struct ContentView: View {
             
             List {
                 ForEach(model.availableParts, id: \.0.storeNumber) { data in
-                    Text(data.0.storeName)
-                        .font(.headline)
+                    Text("\(Text(data.0.storeName).font(.headline)) \(Text(data.0.locationDescription).font(.subheadline))")
+                        
                     
                     ForEach(data.1) { part in
                         Text(model.productName(forSKU: part.partNumber))

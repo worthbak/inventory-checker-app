@@ -7,16 +7,26 @@
 
 import Foundation
 
-struct Store {
+struct JsonStore: Codable, Equatable {
+    var storeName: String
+    var storeNumber: String
+    var city: String
+}
+
+struct Store: Equatable {
     let storeName: String
     let storeNumber: String
     let city: String
     let state: String
     
+    var locationDescription: String {
+        return [city, state].joined(separator: ", ")
+    }
+    
     let partsAvailability: [PartAvailability]
 }
 
-struct PartAvailability {
+struct PartAvailability: Equatable {
     enum PickupAvailability: String {
         case available, unavailable, ineligible
     }
@@ -44,6 +54,29 @@ final class Model: ObservableObject {
     @Published var availableParts: [(Store, [PartAvailability])] = []
     @Published var isLoading = false
     
+    lazy private(set) var allStores: [JsonStore] = {
+        var location = "Stores"
+        var fileType = "json"
+        if let path = Bundle.main.path(forResource: location, ofType: fileType) {
+            do {
+                let data = try Data(contentsOf: URL(fileURLWithPath: path))
+                let decoder = JSONDecoder()
+                
+                if let jsonStores = try? decoder.decode([JsonStore].self, from: data) {
+                    return jsonStores
+                } else {
+                    return []
+                }
+                
+            } catch {
+                print(error)
+                return []
+            }
+        } else {
+            return []
+        }
+    }()
+    
     private var preferredCountry: String {
         return UserDefaults.standard.string(forKey: "preferredCountry") ?? "US"
     }
@@ -55,6 +88,10 @@ final class Model: ObservableObject {
         } else {
             return country + "/"
         }
+    }
+    
+    private var preferredStoreNumber: String {
+        return UserDefaults.standard.string(forKey: "preferredStoreNumber") ?? "R032"
     }
     
     private var preferredSKUs: Set<String> {
@@ -128,8 +165,6 @@ final class Model: ObservableObject {
             guard let state = storeJSON["state"] as? String else { return nil }
             guard let city = storeJSON["city"] as? String else { return nil }
             
-//            if state != "CO" { return nil }
-            
             guard let partsAvailability = storeJSON["partsAvailability"] as? [String: [String: Any]] else { return nil }
             let parsedParts: [PartAvailability] = partsAvailability.values.compactMap { part in
                 guard let partNumber = part["partNumber"] as? String else { return nil }
@@ -139,12 +174,6 @@ final class Model: ObservableObject {
                 else {
                     return nil
                 }
-                
-//                if partNumber == controlSku && availability == .available {
-//                    return nil
-//                } else {
-//                    print("Found unavailable control")
-//                }
                 
                 return PartAvailability(partNumber: partNumber, availability: availability)
             }
@@ -224,7 +253,7 @@ final class Model: ObservableObject {
             }
         
         queryItems.append("searchNearby=true")
-        queryItems.append("store=R133")
+        queryItems.append("store=\(preferredStoreNumber)")
         
         return queryItems.joined(separator: "&")
     }

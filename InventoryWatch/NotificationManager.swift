@@ -39,7 +39,7 @@ final class NotificationManager: NSObject {
         let notificationCenter = UNUserNotificationCenter.current()
         notificationCenter.add(request) { (error) in
             if error != nil {
-                print(error)
+                print(error ?? "notification error!")
             }
         }
     }

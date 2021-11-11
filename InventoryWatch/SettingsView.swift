@@ -16,14 +16,28 @@ struct SettingsView: View {
         var id: String { sku }
     }
     
+    private struct StoreWithSelection: Identifiable, Equatable {
+        var store: JsonStore
+        var isSelected: Bool
+        
+        var id: String { store.storeNumber }
+        var storeNumber: String { store.storeNumber }
+        var storeName: String { store.storeNumber }
+        var city: String { store.city }
+    }
+    
     @EnvironmentObject var model: Model
     
     @AppStorage("preferredCountry") private var preferredCountry = "US"
+    @AppStorage("preferredStoreNumber") private var preferredStoreNumber = ""
     @AppStorage("preferredSKUs") private var preferredSKUs: String = ""
     
     @State private var selectedCountryIndex = 0
-    
     @State private var allModels: [ProductModel] = []
+    @State private var allStores: [StoreWithSelection] = []
+    @State private var storeSearchText: String = ""
+    
+    @State private var _selectedStore: String = ""
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -38,21 +52,28 @@ struct SettingsView: View {
             .padding()
             
             HStack {
-                List($allModels) { model in
-                    HStack {
-                        Toggle("", isOn: model.isFavorite)
-                            .toggleStyle(.checkbox)
-                        
-                        Text(model.name.wrappedValue)
+                List {
+                    ForEach($allModels) { model in
+                        HStack {
+                            Toggle("", isOn: model.isFavorite)
+                                .toggleStyle(.checkbox)
+                            
+                            Text(model.name.wrappedValue)
+                        }
                     }
                 }
-                
-                List($allModels) { model in
-                    HStack {
-                        Toggle("", isOn: model.isFavorite)
-                            .toggleStyle(.checkbox)
+                if #available(macOS 12.0, *) {
+                    List {
+                        TextField("Type here to filter stores", text: $storeSearchText)
                         
-                        Text(model.name.wrappedValue)
+                        ForEach($allStores) { store in
+                            HStack {
+                                Toggle("", isOn: store.isSelected)
+                                    .toggleStyle(.checkbox)
+                                
+                                Text("\(store.store.storeName.wrappedValue), \(store.store.city.wrappedValue)")
+                            }
+                        }
                     }
                 }
             }
@@ -62,6 +83,7 @@ struct SettingsView: View {
         .onAppear {
             loadCountries()
             loadSkus()
+            loadStores(filterText: nil)
         }
         .onChange(of: selectedCountryIndex) { newValue in
             print(newValue)
@@ -74,6 +96,29 @@ struct SettingsView: View {
             preferredSKUs = favoritedModels
                 .map { $0.sku }
                 .joined(separator: ",")
+        }
+        .onChange(of: storeSearchText) { newText in
+            guard newText.isEmpty == false else {
+                loadStores(filterText: nil)
+                return
+            }
+            
+            loadStores(filterText: newText)
+        }
+        .onChange(of: allStores) { newStores in
+            let currentSelected = _selectedStore
+            
+            for store in newStores {
+                if store.isSelected && store.storeNumber != currentSelected {
+                    _selectedStore = store.storeNumber
+                }
+            }
+            
+            if preferredStoreNumber != _selectedStore {
+                preferredStoreNumber = _selectedStore
+            }
+            
+            loadStores(filterText: storeSearchText)
         }
     }
     
@@ -91,6 +136,28 @@ struct SettingsView: View {
         allModels = model.skuData.orderedSKUs.map { sku in
             let name = model.skuData.productName(forSKU: sku) ?? sku
             return ProductModel(sku: sku, name: name, isFavorite: favoriteSkus.contains(sku))
+        }
+    }
+    
+    func loadStores(filterText: String?) {
+        if _selectedStore.isEmpty {
+            _selectedStore = preferredStoreNumber
+        }
+        
+        let storesJson = model.allStores
+        let stores: [StoreWithSelection] = storesJson.map { store in
+            StoreWithSelection(
+                store: store,
+                isSelected: store.storeNumber == _selectedStore
+            )
+        }
+        if let filter = filterText?.lowercased(), filter.isEmpty == false {
+            allStores = stores.filter { store in
+                return store.storeName.lowercased().contains(filter)
+                || store.city.lowercased().contains(filter)
+            }
+        } else {
+            allStores = stores
         }
     }
 }
