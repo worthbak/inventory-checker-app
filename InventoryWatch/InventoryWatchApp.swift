@@ -20,6 +20,7 @@ struct InventoryWatchApp: App {
         
         Settings {
             SettingsView()
+                .environmentObject(model)
         }
     }
 }

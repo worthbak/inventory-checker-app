@@ -40,8 +40,8 @@ struct ContentView: View {
                     Text(data.0.storeName)
                         .font(.headline)
                     
-                    ForEach(data.1) {
-                        Text($0.descriptiveName ?? $0.partName)
+                    ForEach(data.1) { part in
+                        Text(model.productName(forSKU: part.partNumber))
                             .font(.subheadline)
                     }
                 }

@@ -22,12 +22,11 @@ struct PartAvailability {
     }
     
     let partNumber: String
-    let partName: String // storePickupProductTitle
     let availability: PickupAvailability
     
-    var descriptiveName: String? {
-        return SKUs[partNumber]
-    }
+//    var descriptiveName: String? {
+//        return SKUs[partNumber]
+//    }
 }
 
 extension PartAvailability: Identifiable {
@@ -45,6 +44,19 @@ final class Model: ObservableObject {
     @Published var availableParts: [(Store, [PartAvailability])] = []
     @Published var isLoading = false
     
+    private var preferredCountry: String {
+        return UserDefaults.standard.string(forKey: "preferredCountry") ?? "US"
+    }
+    
+    private var countryPathElement: String {
+        let country = preferredCountry
+        if country == "US" {
+            return ""
+        } else {
+            return country + "/"
+        }
+    }
+    
     private var preferredSKUs: Set<String> {
         guard let defaults = UserDefaults.standard.string(forKey: "preferredSKUs") else {
             return []
@@ -54,6 +66,11 @@ final class Model: ObservableObject {
             partialResult.insert(next)
         }
     }
+    
+    lazy private(set) var skuData: SKUData = {
+        let country = Countries[preferredCountry] ?? USData
+        return SkuDataForCountry(country)
+    }()
     
     private let isTest: Bool
     
@@ -68,8 +85,8 @@ final class Model: ObservableObject {
         
         isLoading = true
         
-        let urlRoot = "https://www.apple.com/shop/fulfillment-messages?"
-        let query = "parts.0=MKGR3LL%2FA&parts.1=MKGP3LL%2FA&parts.2=MKGT3LL%2FA&parts.3=MKGQ3LL%2FA&parts.4=MMQX3LL%2FA&parts.5=MKH53LL%2FA&parts.6=MK1E3LL%2FA&parts.7=MK183LL%2FA&parts.8=MK1F3LL%2FA&parts.9=MK193LL%2FA&parts.10=MK1H3LL%2FA&parts.11=MK1A3LL%2FA&parts.12=MK233LL%2FA&parts.13=MMQW3LL%2FA&parts.14=MYD92LL%2FA&searchNearby=true&store=R172"
+        let urlRoot = "https://www.apple.com/\(countryPathElement)shop/fulfillment-messages?"
+        let query = generateQueryString()
         
         guard let url = URL(string: urlRoot + query) else {
             throw ModelError.couldNotGenerateURL
@@ -111,12 +128,11 @@ final class Model: ObservableObject {
             guard let state = storeJSON["state"] as? String else { return nil }
             guard let city = storeJSON["city"] as? String else { return nil }
             
-            if state != "CO" { return nil }
+//            if state != "CO" { return nil }
             
             guard let partsAvailability = storeJSON["partsAvailability"] as? [String: [String: Any]] else { return nil }
             let parsedParts: [PartAvailability] = partsAvailability.values.compactMap { part in
                 guard let partNumber = part["partNumber"] as? String else { return nil }
-                guard let partName = part["storePickupProductTitle"] as? String else { return nil }
                 guard
                     let availabilityString = part["pickupDisplay"] as? String,
                         let availability = PartAvailability.PickupAvailability(rawValue: availabilityString)
@@ -124,13 +140,13 @@ final class Model: ObservableObject {
                     return nil
                 }
                 
-                if partNumber == controlSku && availability == .available {
-                    return nil
-                } else {
-                    print("Found unavailable control")
-                }
+//                if partNumber == controlSku && availability == .available {
+//                    return nil
+//                } else {
+//                    print("Found unavailable control")
+//                }
                 
-                return PartAvailability(partNumber: partNumber, partName: partName, availability: availability)
+                return PartAvailability(partNumber: partNumber, availability: availability)
             }
             
             return Store(storeName: name, storeNumber: number, city: city, state: state, partsAvailability: parsedParts)
@@ -173,13 +189,13 @@ final class Model: ObservableObject {
             }
             
             if !self.isTest {
-                let message = Model.generateNotificationText(from: allAvailableModels)
+                let message = self.generateNotificationText(from: allAvailableModels)
                 NotificationManager.shared.sendNotification(title: hasPreferredModel ? "Preferred Model Found" : "Apple Store Invetory Found", body: message)
             }
         }
     }
     
-    static func generateNotificationText(from data: [(Store, [PartAvailability])]) -> String {
+    private func generateNotificationText(from data: [(Store, [PartAvailability])]) -> String {
         var collector: [String: Int] = [:]
         for (_, parts) in data {
             for part in parts {
@@ -189,11 +205,32 @@ final class Model: ObservableObject {
         
         let combined: [String] = collector.reduce(into: []) { partialResult, next in
             let (key, value) = next
-            let name = SKUs[key] ?? key
+            let name = skuData.productName(forSKU: key) ?? key
             partialResult.append("\(name): \(value) found")
         }
         
         return combined.joined(separator: ", ")
+    }
+    
+    private func generateQueryString() -> String {
+        // let query = "parts.0=MKGR3LL%2FA&parts.1=MKGP3LL%2FA&parts.2=MKGT3LL%2FA&parts.3=MKGQ3LL%2FA&parts.4=MMQX3LL%2FA&parts.5=MKH53LL%2FA&parts.6=MK1E3LL%2FA&parts.7=MK183LL%2FA&parts.8=MK1F3LL%2FA&parts.9=MK193LL%2FA&parts.10=MK1H3LL%2FA&parts.11=MK1A3LL%2FA&parts.12=MK233LL%2FA&parts.13=MMQW3LL%2FA&parts.14=MYD92LL%2FA&searchNearby=true&store=R133"
+        
+        var queryItems: [String] = skuData.orderedSKUs
+            .enumerated()
+            .map { next in
+                let count = next.offset
+                let sku = next.element
+                return "parts.\(count)=\(sku)"
+            }
+        
+        queryItems.append("searchNearby=true")
+        queryItems.append("store=R133")
+        
+        return queryItems.joined(separator: "&")
+    }
+    
+    func productName(forSKU sku: String) -> String {
+        return skuData.productName(forSKU: sku) ?? sku
     }
 }
 
@@ -202,9 +239,9 @@ extension Model {
         let model = Model(isTest: true)
         
         let testParts: [PartAvailability] = [
-            PartAvailability(partNumber: "MKGT3LL/A", partName: "14\" Si, Better", availability: .available),
-            PartAvailability(partNumber: "MKGQ3LL/A", partName: "14\" SG, Better", availability: .available),
-            PartAvailability(partNumber: "MMQX3LL/A", partName: "14\" Si, Ultimate", availability: .available),
+            PartAvailability(partNumber: "MKGT3LL/A", availability: .available),
+            PartAvailability(partNumber: "MKGQ3LL/A", availability: .available),
+            PartAvailability(partNumber: "MMQX3LL/A", availability: .available),
         ]
         
         let testStores: [Store] = [

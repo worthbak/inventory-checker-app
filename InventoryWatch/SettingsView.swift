@@ -8,69 +8,89 @@
 import SwiftUI
 
 struct SettingsView: View {
+    private struct ProductModel: Identifiable, Equatable {
+        let sku: String
+        var name: String
+        var isFavorite: Bool
+        
+        var id: String { sku }
+    }
+    
+    @EnvironmentObject var model: Model
+    
     @AppStorage("preferredCountry") private var preferredCountry = "US"
     @AppStorage("preferredSKUs") private var preferredSKUs: String = ""
     
     @State private var selectedCountryIndex = 0
-    @State var selectedSKUs = Set<String>()
     
-    var skuData: [String] {
-        OrderedSKUs.map { SKUs[$0]! }
-    }
-    
-    private let countries = [
-        "US", "CA"
-    ]
+    @State private var allModels: [ProductModel] = []
     
     var body: some View {
         VStack(alignment: .leading) {
             Picker("Country", selection: $selectedCountryIndex) {
-                ForEach(0..<countries.count) {
-                    Text(self.countries[$0])
+                ForEach(0..<OrderedCountries.count) { index in
+                    let countryCode = OrderedCountries[index]
+                    let country = Countries[countryCode]
+                    Text(country?.name ?? countryCode)
                 }
             }
             .fixedSize()
             .padding()
             
-            List(skuData, id: \.self, selection: $selectedSKUs) { name in
-                Text(name)
+            HStack {
+                List($allModels) { model in
+                    HStack {
+                        Toggle("", isOn: model.isFavorite)
+                            .toggleStyle(.checkbox)
+                        
+                        Text(model.name.wrappedValue)
+                    }
+                }
+                
+                List($allModels) { model in
+                    HStack {
+                        Toggle("", isOn: model.isFavorite)
+                            .toggleStyle(.checkbox)
+                        
+                        Text(model.name.wrappedValue)
+                    }
+                }
             }
             
         }
         .padding()
         .onAppear {
-            countries.enumerated().forEach { index, value in
-                if value == preferredCountry {
-                    selectedCountryIndex = index
-                }
-            }
-            
-            let models = preferredSKUs.components(separatedBy: ",")
-            for model in models {
-                guard !model.isEmpty else {
-                    continue
-                }
-                selectedSKUs.insert(SKUs[model]!)
-            }
+            loadCountries()
+            loadSkus()
         }
         .onChange(of: selectedCountryIndex) { newValue in
-            let newCountry = countries[newValue]
+            print(newValue)
+            let newCountry = OrderedCountries[newValue]
             preferredCountry = newCountry
         }
-        .onChange(of: selectedSKUs) { newValue in
-            let thing: [String] = newValue.compactMap { item in
-                for (model, name) in SKUs {
-                    if name == item {
-                        return model
-                    } else {
-                        continue
-                    }
-                }
-                
-                return nil
-            }
+        .onChange(of: allModels) { models in
+            let favoritedModels = models.filter { $0.isFavorite }
             
-            preferredSKUs = thing.joined(separator: ",")
+            preferredSKUs = favoritedModels
+                .map { $0.sku }
+                .joined(separator: ",")
+        }
+    }
+    
+    func loadCountries() {
+        OrderedCountries.enumerated().forEach { index, value in
+            if value == preferredCountry {
+                selectedCountryIndex = index
+            }
+        }
+    }
+    
+    func loadSkus() {
+        let favoriteSkus = Set<String>(preferredSKUs.components(separatedBy: ","))
+        
+        allModels = model.skuData.orderedSKUs.map { sku in
+            let name = model.skuData.productName(forSKU: sku) ?? sku
+            return ProductModel(sku: sku, name: name, isFavorite: favoriteSkus.contains(sku))
         }
     }
 }
@@ -78,5 +98,6 @@ struct SettingsView: View {
 struct SettingsView_Previews: PreviewProvider {
     static var previews: some View {
         SettingsView()
+            .environmentObject(Model.testData)
     }
 }
