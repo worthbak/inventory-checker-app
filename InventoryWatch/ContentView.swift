@@ -57,11 +57,8 @@ struct ContentView: View {
                 }
             }
             
-            VStack {
-                Button("Search Inventory") {
-                    try! model.fetchLatestInventory()
-                }
-                
+            HStack {
+                Spacer()
                 if lastUpdateDate.isEmpty == false {
                     Text("Last update at \(lastUpdateDate)")
                         .font(.caption)
@@ -69,8 +66,16 @@ struct ContentView: View {
                     Text("")
                         .font(.caption)
                 }
+                
+                Button(
+                    action: { try! model.fetchLatestInventory() },
+                    label: { Image(systemName: "arrow.clockwise") }
+                )
+                    .buttonStyle(BorderlessButtonStyle())
+                    .keyboardShortcut("r", modifiers: .command)
+                    .padding(.trailing, 8)
             }
-            .padding()
+            .padding(.bottom, 8)
             
         }
         .frame(

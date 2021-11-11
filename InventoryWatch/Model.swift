@@ -271,8 +271,6 @@ final class Model: ObservableObject {
     }
     
     private func generateQueryString() -> String {
-        // let query = "parts.0=MKGR3LL%2FA&parts.1=MKGP3LL%2FA&parts.2=MKGT3LL%2FA&parts.3=MKGQ3LL%2FA&parts.4=MMQX3LL%2FA&parts.5=MKH53LL%2FA&parts.6=MK1E3LL%2FA&parts.7=MK183LL%2FA&parts.8=MK1F3LL%2FA&parts.9=MK193LL%2FA&parts.10=MK1H3LL%2FA&parts.11=MK1A3LL%2FA&parts.12=MK233LL%2FA&parts.13=MMQW3LL%2FA&parts.14=MYD92LL%2FA&searchNearby=true&store=R133"
-        
         var queryItems: [String] = skuData.orderedSKUs
             .enumerated()
             .map { next in
