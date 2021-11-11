@@ -223,7 +223,7 @@ final class Model: ObservableObject {
             
             if !self.isTest {
                 let message = self.generateNotificationText(from: allAvailableModels)
-                NotificationManager.shared.sendNotification(title: hasPreferredModel ? "Preferred Model Found" : "Apple Store Invetory Found", body: message)
+                NotificationManager.shared.sendNotification(title: hasPreferredModel ? "Preferred Model Found!" : "Apple Store Invetory Found", body: message)
             }
         }
     }
