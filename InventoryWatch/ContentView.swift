@@ -10,6 +10,8 @@ import SwiftUI
 struct ContentView: View {
     @EnvironmentObject var model: Model
     
+    @AppStorage("lastUpdateDate") private var lastUpdateDate: String = ""
+    
     var body: some View {
         VStack {
             HStack {
@@ -55,12 +57,20 @@ struct ContentView: View {
                 }
             }
             
-            HStack {
+            VStack {
                 Button("Search Inventory") {
                     try! model.fetchLatestInventory()
                 }
-                .padding()
+                
+                if lastUpdateDate.isEmpty == false {
+                    Text("Last update at \(lastUpdateDate)")
+                        .font(.caption)
+                } else {
+                    Text("")
+                        .font(.caption)
+                }
             }
+            .padding()
             
         }
         .frame(

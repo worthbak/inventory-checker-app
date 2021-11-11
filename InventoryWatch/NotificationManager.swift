@@ -18,9 +18,9 @@ final class NotificationManager: NSObject {
         
         center.requestAuthorization(options: [.alert, .badge, .sound]) { (granted, error) in
             if granted {
-                print("Yay!")
+                print("Notifications are enabled.")
             } else {
-                print("D'oh")
+                print("Notifications are disabled.")
             }
         }
     }

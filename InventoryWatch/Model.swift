@@ -230,6 +230,11 @@ final class Model: ObservableObject {
             self.availableParts = allAvailableModels
             self.isLoading = false
             
+            let df = DateFormatter()
+            df.dateFormat = "MMM d, h:mm a"
+            let str = df.string(from: Date())
+            UserDefaults.standard.setValue(str, forKey: "lastUpdateDate")
+            
             var hasPreferredModel = false
             let preferredModels = self.preferredSKUs
             for model in allAvailableModels {
