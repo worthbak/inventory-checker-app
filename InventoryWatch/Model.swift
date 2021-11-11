@@ -112,6 +112,8 @@ final class Model: ObservableObject {
         return SkuDataForCountry(country)
     }()
     
+    private var updateTimer: Timer?
+    
     private let isTest: Bool
     
     init(isTest: Bool = false) {
@@ -140,6 +142,24 @@ final class Model: ObservableObject {
                 print(error)
             }
         }.resume()
+        
+        var updateInterval = UserDefaults.standard.integer(forKey: "preferredUpdateInterval")
+        if UserDefaults.standard.object(forKey: "preferredUpdateInterval") == nil {
+            updateInterval = 1
+            UserDefaults.standard.set(updateInterval, forKey: "preferredUpdateInterval")
+        }
+        
+        if let existingTimer = updateTimer, existingTimer.timeInterval != Double(updateInterval * 60) {
+            existingTimer.invalidate()
+            updateTimer = nil
+        }
+        
+        if updateTimer == nil {
+            let interval = Double(updateInterval * 60)
+            updateTimer = Timer.scheduledTimer(withTimeInterval: interval, repeats: true, block: { _ in
+                try? self.fetchLatestInventory()
+            })
+        }
     }
     
     private func parseStoreResponse(_ responseData: Data?) throws {

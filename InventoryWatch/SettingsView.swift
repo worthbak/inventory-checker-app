@@ -31,13 +31,13 @@ struct SettingsView: View {
     @AppStorage("preferredCountry") private var preferredCountry = "US"
     @AppStorage("preferredStoreNumber") private var preferredStoreNumber = ""
     @AppStorage("preferredSKUs") private var preferredSKUs: String = ""
+    @AppStorage("preferredUpdateInterval") private var preferredUpdateInterval: Int = 1
     
     @State private var selectedCountryIndex = 0
     @State private var allModels: [ProductModel] = []
     @State private var allStores: [StoreWithSelection] = []
     @State private var storeSearchText: String = ""
-    
-    @State private var _selectedStore: String = ""
+    @State private var selectedStore: String = ""
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -49,7 +49,18 @@ struct SettingsView: View {
                 }
             }
             .fixedSize()
-            .padding()
+            .padding(.leading, 8)
+            
+            Picker("Update every", selection: $preferredUpdateInterval) {
+                Text("Never").tag(0)
+                Text("1 minute").tag(1)
+                Text("5 minutes").tag(5)
+                Text("30 minutes").tag(30)
+                Text("60 minutes").tag(60)
+            }
+            .fixedSize()
+            .padding(.leading, 8)
+            
             
             HStack {
                 List {
@@ -106,16 +117,16 @@ struct SettingsView: View {
             loadStores(filterText: newText)
         }
         .onChange(of: allStores) { newStores in
-            let currentSelected = _selectedStore
+            let currentSelected = selectedStore
             
             for store in newStores {
                 if store.isSelected && store.storeNumber != currentSelected {
-                    _selectedStore = store.storeNumber
+                    selectedStore = store.storeNumber
                 }
             }
             
-            if preferredStoreNumber != _selectedStore {
-                preferredStoreNumber = _selectedStore
+            if preferredStoreNumber != selectedStore {
+                preferredStoreNumber = selectedStore
                 model.syncPreferredStore()
             }
             
@@ -141,15 +152,15 @@ struct SettingsView: View {
     }
     
     func loadStores(filterText: String?) {
-        if _selectedStore.isEmpty {
-            _selectedStore = preferredStoreNumber
+        if selectedStore.isEmpty {
+            selectedStore = preferredStoreNumber
         }
         
         let storesJson = model.allStores
         let stores: [StoreWithSelection] = storesJson.map { store in
             StoreWithSelection(
                 store: store,
-                isSelected: store.storeNumber == _selectedStore
+                isSelected: store.storeNumber == selectedStore
             )
         }
         if let filter = filterText?.lowercased(), filter.isEmpty == false {            
