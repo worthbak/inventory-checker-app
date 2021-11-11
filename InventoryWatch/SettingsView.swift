@@ -20,9 +20,9 @@ struct SettingsView: View {
         var store: JsonStore
         var isSelected: Bool
         
-        var id: String { store.storeNumber }
+        var id: String { storeNumber }
         var storeNumber: String { store.storeNumber }
-        var storeName: String { store.storeNumber }
+        var storeName: String { store.storeName }
         var city: String { store.city }
     }
     
@@ -152,10 +152,21 @@ struct SettingsView: View {
                 isSelected: store.storeNumber == _selectedStore
             )
         }
-        if let filter = filterText?.lowercased(), filter.isEmpty == false {
+        if let filter = filterText?.lowercased(), filter.isEmpty == false {            
             allStores = stores.filter { store in
-                return store.storeName.lowercased().contains(filter)
-                || store.city.lowercased().contains(filter)
+                if store.storeName.lowercased().contains(filter) {
+                    return true
+                }
+                
+                if store.city.lowercased().contains(filter) {
+                    return true
+                }
+                
+                if store.storeNumber.lowercased().contains(filter) {
+                    return true
+                }
+                
+                return false
             }
         } else {
             allStores = stores
