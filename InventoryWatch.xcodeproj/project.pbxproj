@@ -15,6 +15,7 @@
 		386FDC662739DADD00C1BAC2 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386FDC652739DADD00C1BAC2 /* Model.swift */; };
 		386FDC68273A18F800C1BAC2 /* SKUData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386FDC67273A18F800C1BAC2 /* SKUData.swift */; };
 		386FDC6A273A200000C1BAC2 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386FDC69273A200000C1BAC2 /* NotificationManager.swift */; };
+		38ABF80F273EAE9400902D0E /* iPhoneModels-us.json in Resources */ = {isa = PBXBuildFile; fileRef = 38ABF80E273EAE9400902D0E /* iPhoneModels-us.json */; };
 		38D0C3A2273C60B500A7DE65 /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D0C3A1273C60B500A7DE65 /* Countries.swift */; };
 		38DBAF39273D6692009992D8 /* Stores.json in Resources */ = {isa = PBXBuildFile; fileRef = 38DBAF38273D6692009992D8 /* Stores.json */; };
 /* End PBXBuildFile section */
@@ -30,6 +31,7 @@
 		386FDC652739DADD00C1BAC2 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		386FDC67273A18F800C1BAC2 /* SKUData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKUData.swift; sourceTree = "<group>"; };
 		386FDC69273A200000C1BAC2 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		38ABF80E273EAE9400902D0E /* iPhoneModels-us.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "iPhoneModels-us.json"; sourceTree = "<group>"; };
 		38D0C3A1273C60B500A7DE65 /* Countries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countries.swift; sourceTree = "<group>"; };
 		38DBAF38273D6692009992D8 /* Stores.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Stores.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,6 +72,7 @@
 				386FDC69273A200000C1BAC2 /* NotificationManager.swift */,
 				386FDC652739DADD00C1BAC2 /* Model.swift */,
 				38DBAF38273D6692009992D8 /* Stores.json */,
+				38ABF80E273EAE9400902D0E /* iPhoneModels-us.json */,
 				386FDC67273A18F800C1BAC2 /* SKUData.swift */,
 				38D0C3A1273C60B500A7DE65 /* Countries.swift */,
 				386FDC5A2739DA7300C1BAC2 /* Assets.xcassets */,
@@ -145,6 +148,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38ABF80F273EAE9400902D0E /* iPhoneModels-us.json in Resources */,
 				38DBAF39273D6692009992D8 /* Stores.json in Resources */,
 				386FDC5E2739DA7300C1BAC2 /* Preview Assets.xcassets in Resources */,
 				386FDC5B2739DA7300C1BAC2 /* Assets.xcassets in Resources */,

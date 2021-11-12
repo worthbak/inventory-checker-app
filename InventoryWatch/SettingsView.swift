@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct SettingsView: View {
+    
+    
     private struct ProductModel: Identifiable, Equatable {
         let sku: String
         var name: String
@@ -32,6 +34,7 @@ struct SettingsView: View {
     @AppStorage("preferredStoreNumber") private var preferredStoreNumber = ""
     @AppStorage("preferredSKUs") private var preferredSKUs: String = ""
     @AppStorage("preferredUpdateInterval") private var preferredUpdateInterval: Int = 1
+    @AppStorage("preferredProductType") private var preferredProductType: String = "MacBookPro"
     
     @State private var selectedCountryIndex = 0
     @State private var allModels: [ProductModel] = []
@@ -51,6 +54,16 @@ struct SettingsView: View {
             .fixedSize()
             .padding(.leading, 8)
             
+            Picker("Product Type", selection: $preferredProductType) {
+                Text("MacBook Pro").tag(ProductType.MacBookPro.rawValue)
+                Text("iPhone 13").tag(ProductType.iPhoneRegular13.rawValue)
+                Text("iPhone 13 mini").tag(ProductType.iPhoneMini13.rawValue)
+                Text("iPhone 13 Pro").tag(ProductType.iPhonePro13.rawValue)
+                Text("iPhone 13 Pro Max").tag(ProductType.iPhoneProMax13.rawValue)
+            }
+            .fixedSize()
+            .padding(.leading, 8)
+            
             Picker("Update every", selection: $preferredUpdateInterval) {
                 Text("Never").tag(0)
                 Text("1 minute").tag(1)
@@ -60,7 +73,6 @@ struct SettingsView: View {
             }
             .fixedSize()
             .padding(.leading, 8)
-            
             
             HStack {
                 VStack(alignment: .leading) {
@@ -148,6 +160,11 @@ struct SettingsView: View {
             
             loadStores(filterText: storeSearchText)
         }
+        .onChange(of: preferredProductType) { newType in
+            preferredSKUs = ""
+            loadSkus()
+            model.clearCurrentAvailableParts()
+        }
     }
     
     func loadCountries() {
@@ -161,9 +178,29 @@ struct SettingsView: View {
     func loadSkus() {
         let favoriteSkus = Set<String>(preferredSKUs.components(separatedBy: ","))
         
-        allModels = model.skuData.orderedSKUs.map { sku in
-            let name = model.skuData.productName(forSKU: sku) ?? sku
-            return ProductModel(sku: sku, name: name, isFavorite: favoriteSkus.contains(sku))
+        let productType = ProductType(rawValue: preferredProductType) ?? .MacBookPro
+        switch productType {
+        case .MacBookPro:
+            allModels = model.skuData.orderedSKUs.map { sku in
+                let name = model.skuData.productName(forSKU: sku) ?? sku
+                return ProductModel(sku: sku, name: name, isFavorite: favoriteSkus.contains(sku))
+            }
+        case .iPhoneRegular13:
+            allModels = model.iPhoneModelsUS.regular13.map { model in
+                ProductModel(sku: model.sku, name: model.productName, isFavorite: favoriteSkus.contains(model.sku))
+            }
+        case .iPhoneMini13:
+            allModels = model.iPhoneModelsUS.mini13.map { model in
+                ProductModel(sku: model.sku, name: model.productName, isFavorite: favoriteSkus.contains(model.sku))
+            }
+        case .iPhonePro13:
+            allModels = model.iPhoneModelsUS.pro13.map { model in
+                ProductModel(sku: model.sku, name: model.productName, isFavorite: favoriteSkus.contains(model.sku))
+            }
+        case .iPhoneProMax13:
+            allModels = model.iPhoneModelsUS.proMax13.map { model in
+                ProductModel(sku: model.sku, name: model.productName, isFavorite: favoriteSkus.contains(model.sku))
+            }
         }
     }
     

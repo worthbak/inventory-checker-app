@@ -33,15 +33,56 @@ struct PartAvailability: Equatable {
     
     let partNumber: String
     let availability: PickupAvailability
-    
-//    var descriptiveName: String? {
-//        return SKUs[partNumber]
-//    }
 }
 
 extension PartAvailability: Identifiable {
     var id: String {
         partNumber
+    }
+}
+
+enum ProductType: String {
+    case MacBookPro
+    case iPhoneRegular13
+    case iPhoneMini13
+    case iPhonePro13
+    case iPhoneProMax13
+    
+    var presentableName: String {
+        switch self {
+        case .MacBookPro:
+            return "MacBook Pro"
+        case .iPhoneRegular13:
+            return "iPhone 13"
+        case .iPhoneMini13:
+            return "iPhone 13 mini"
+        case .iPhonePro13:
+            return "iPhone 13 Pro"
+        case .iPhoneProMax13:
+            return "iPhone 13 Pro Max"
+        }
+    }
+}
+
+struct AllPhoneModels {
+    struct PhoneModel {
+        let sku: String
+        let productName: String
+    }
+    
+    var proMax13: [PhoneModel]
+    var pro13: [PhoneModel]
+    var mini13: [PhoneModel]
+    var regular13: [PhoneModel]
+    
+    func toSkuData(_ keypath: KeyPath<AllPhoneModels, [AllPhoneModels.PhoneModel]>) -> SKUData {
+        let models = self[keyPath: keypath]
+        
+        let lookup: [String: String] = models.reduce(into: [:]) { acc, next in
+            acc[next.sku] = next.productName
+        }
+        
+        return SKUData(orderedSKUs: models.map { $0.sku }, lookup: lookup)
     }
 }
 
@@ -55,8 +96,8 @@ final class Model: ObservableObject {
     @Published var isLoading = false
     
     lazy private(set) var allStores: [JsonStore] = {
-        var location = "Stores"
-        var fileType = "json"
+        let location = "Stores"
+        let fileType = "json"
         if let path = Bundle.main.path(forResource: location, ofType: fileType) {
             do {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path))
@@ -77,11 +118,63 @@ final class Model: ObservableObject {
         }
     }()
     
+    lazy private(set) var iPhoneModelsUS: AllPhoneModels = {
+        let phoneModelsJson = loadIPhoneModels()
+        let modelsData = [
+            (phoneModelsJson["proMax13"], \AllPhoneModels.proMax13),
+            (phoneModelsJson["pro13"], \AllPhoneModels.pro13),
+            (phoneModelsJson["mini13"], \AllPhoneModels.mini13),
+            (phoneModelsJson["regular13"], \AllPhoneModels.regular13)
+        ]
+        
+        var phoneModels = AllPhoneModels(proMax13: [], pro13: [], mini13: [], regular13: [])
+        for (models, keyPath) in modelsData {
+            guard let models = models else {
+                continue
+            }
+            
+            let parsed: [AllPhoneModels.PhoneModel] = models.map { modelData in
+                return AllPhoneModels.PhoneModel(sku: modelData.key, productName: modelData.value)
+            }
+            
+            phoneModels[keyPath: keyPath] = parsed
+        }
+        
+        return phoneModels
+    }()
+    
+    private func loadIPhoneModels() -> [String: [String: String]] {
+        let location = "iPhoneModels-us"
+        let fileType = "json"
+        if let path = Bundle.main.path(forResource: location, ofType: fileType) {
+            do {
+                let data = try Data(contentsOf: URL(fileURLWithPath: path))
+                let decoder = JSONDecoder()
+                
+                if let jsonStores = try? decoder.decode([String: [String: String]].self, from: data) {
+                    return jsonStores
+                } else {
+                    return [:]
+                }
+                
+            } catch {
+                print(error)
+                return [:]
+            }
+        } else {
+            return [:]
+        }
+    }
+    
     private var preferredStoreInfoBacking: JsonStore?
     @Published var preferredStoreInfo: String? = nil
     
     private var preferredCountry: String {
         return UserDefaults.standard.string(forKey: "preferredCountry") ?? "US"
+    }
+    
+    private var preferredProductType: String {
+        return UserDefaults.standard.string(forKey: "preferredProductType") ?? "MacBookPro"
     }
     
     private var countryPathElement: String {
@@ -107,10 +200,23 @@ final class Model: ObservableObject {
         }
     }
     
-    lazy private(set) var skuData: SKUData = {
-        let country = Countries[preferredCountry] ?? USData
-        return SkuDataForCountry(country)
-    }()
+    var skuData: SKUData {
+        let productType = ProductType(rawValue: preferredProductType) ?? .MacBookPro
+        
+        switch productType {
+        case .MacBookPro:
+            let country = Countries[preferredCountry] ?? USData
+            return SkuDataForCountry(country)
+        case .iPhoneRegular13:
+            return iPhoneModelsUS.toSkuData(\.regular13)
+        case .iPhoneMini13:
+            return iPhoneModelsUS.toSkuData(\.mini13)
+        case .iPhonePro13:
+            return iPhoneModelsUS.toSkuData(\.pro13)
+        case .iPhoneProMax13:
+            return iPhoneModelsUS.toSkuData(\.proMax13)
+        }
+    }
     
     private var updateTimer: Timer?
     
@@ -118,6 +224,10 @@ final class Model: ObservableObject {
     
     init(isTest: Bool = false) {
         self.isTest = isTest
+    }
+    
+    func clearCurrentAvailableParts() {
+        availableParts = []
     }
     
     func fetchLatestInventory() throws {
@@ -248,12 +358,16 @@ final class Model: ObservableObject {
             
             if !self.isTest {
                 let message = self.generateNotificationText(from: allAvailableModels)
-                NotificationManager.shared.sendNotification(title: hasPreferredModel ? "Preferred Model Found!" : "Apple Store Invetory Found", body: message)
+                NotificationManager.shared.sendNotification(title: hasPreferredModel ? "Preferred Model Found!" : "Apple Store Invetory", body: message)
             }
         }
     }
     
     private func generateNotificationText(from data: [(Store, [PartAvailability])]) -> String {
+        guard data.isEmpty == false else {
+            return "No Inventory Found"
+        }
+        
         var collector: [String: Int] = [:]
         for (_, parts) in data {
             for part in parts {

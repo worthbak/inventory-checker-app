@@ -11,7 +11,7 @@ struct SKUData {
     private let skuLookup: [String: String]
     let orderedSKUs: [String]
     
-    fileprivate init(orderedSKUs: [String], lookup: [String: String]) {
+    init(orderedSKUs: [String], lookup: [String: String]) {
         self.orderedSKUs = orderedSKUs
         self.skuLookup = lookup
     }

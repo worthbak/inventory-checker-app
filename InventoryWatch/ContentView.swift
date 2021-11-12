@@ -11,6 +11,7 @@ struct ContentView: View {
     @EnvironmentObject var model: Model
     
     @AppStorage("lastUpdateDate") private var lastUpdateDate: String = ""
+    @AppStorage("preferredProductType") private var preferredProductType: String = "MacBookPro"
     
     var body: some View {
         VStack {
@@ -25,9 +26,16 @@ struct ContentView: View {
                 Spacer()
                 
                 VStack {
-                    Text("Available Models")
-                        .font(.title2)
-                        .fontWeight(.semibold)
+                    if let product = ProductType(rawValue: preferredProductType) {
+                        Text("Available \(Text(product.presentableName).font(.title2).fontWeight(.heavy)) Models")
+                            .font(.title2)
+                            .fontWeight(.semibold)
+                    } else {
+                        Text("Available Models")
+                            .font(.title2)
+                            .fontWeight(.semibold)
+                    }
+                    
                     
                     if let preferredStoreInfo = model.preferredStoreInfo {
                         Text("at \(preferredStoreInfo)")
