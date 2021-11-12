@@ -63,20 +63,28 @@ struct SettingsView: View {
             
             
             HStack {
-                List {
-                    ForEach($allModels) { model in
-                        HStack {
-                            Toggle("", isOn: model.isFavorite)
-                                .toggleStyle(.checkbox)
-                            
-                            Text(model.name.wrappedValue)
+                VStack(alignment: .leading) {
+                    Text("Preferred Model(s)")
+                        .font(.headline)
+                    
+                    List {
+                        ForEach($allModels) { model in
+                            HStack {
+                                Toggle("", isOn: model.isFavorite)
+                                    .toggleStyle(.checkbox)
+                                
+                                Text(model.name.wrappedValue)
+                            }
                         }
                     }
                 }
-                if #available(macOS 12.0, *) {
+                VStack(alignment: .leading) {
+                    Text("Preferred Store")
+                        .font(.headline)
+                    
+                    TextField("Type here to filter stores", text: $storeSearchText)
+                    
                     List {
-                        TextField("Type here to filter stores", text: $storeSearchText)
-                        
                         ForEach($allStores) { store in
                             HStack {
                                 Toggle("", isOn: store.isSelected)
@@ -87,10 +95,18 @@ struct SettingsView: View {
                         }
                     }
                 }
-            }
+            }.padding(.top, 8)
             
         }
         .padding()
+        
+        .frame(
+            minWidth: 500,
+            maxWidth: .infinity,
+            minHeight: 600,
+            maxHeight: .infinity,
+            alignment: .center
+        )
         .onAppear {
             loadCountries()
             loadSkus()
