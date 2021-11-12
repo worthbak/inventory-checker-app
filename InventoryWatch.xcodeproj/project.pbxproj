@@ -18,6 +18,7 @@
 		38ABF80F273EAE9400902D0E /* iPhoneModels-us.json in Resources */ = {isa = PBXBuildFile; fileRef = 38ABF80E273EAE9400902D0E /* iPhoneModels-us.json */; };
 		38D0C3A2273C60B500A7DE65 /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D0C3A1273C60B500A7DE65 /* Countries.swift */; };
 		38DBAF39273D6692009992D8 /* Stores.json in Resources */ = {isa = PBXBuildFile; fileRef = 38DBAF38273D6692009992D8 /* Stores.json */; };
+		38E4279E273EF542006BF6D7 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 38E4279D273EF542006BF6D7 /* Credits.rtf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		38ABF80E273EAE9400902D0E /* iPhoneModels-us.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "iPhoneModels-us.json"; sourceTree = "<group>"; };
 		38D0C3A1273C60B500A7DE65 /* Countries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countries.swift; sourceTree = "<group>"; };
 		38DBAF38273D6692009992D8 /* Stores.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Stores.json; sourceTree = "<group>"; };
+		38E4279D273EF542006BF6D7 /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				386FDC67273A18F800C1BAC2 /* SKUData.swift */,
 				38D0C3A1273C60B500A7DE65 /* Countries.swift */,
 				386FDC5A2739DA7300C1BAC2 /* Assets.xcassets */,
+				38E4279D273EF542006BF6D7 /* Credits.rtf */,
 				386FDC5F2739DA7300C1BAC2 /* InventoryWatch.entitlements */,
 				386FDC5C2739DA7300C1BAC2 /* Preview Content */,
 			);
@@ -148,6 +151,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38E4279E273EF542006BF6D7 /* Credits.rtf in Resources */,
 				38ABF80F273EAE9400902D0E /* iPhoneModels-us.json in Resources */,
 				38DBAF39273D6692009992D8 /* Stores.json in Resources */,
 				386FDC5E2739DA7300C1BAC2 /* Preview Assets.xcassets in Resources */,
@@ -298,7 +302,7 @@
 				CODE_SIGN_ENTITLEMENTS = InventoryWatch/InventoryWatch.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"InventoryWatch/Preview Content\"";
 				DEVELOPMENT_TEAM = 64A6JSYH8N;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -327,7 +331,7 @@
 				CODE_SIGN_ENTITLEMENTS = InventoryWatch/InventoryWatch.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"InventoryWatch/Preview Content\"";
 				DEVELOPMENT_TEAM = 64A6JSYH8N;
 				ENABLE_HARDENED_RUNTIME = YES;

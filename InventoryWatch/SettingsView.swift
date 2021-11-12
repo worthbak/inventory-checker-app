@@ -35,6 +35,7 @@ struct SettingsView: View {
     @AppStorage("preferredSKUs") private var preferredSKUs: String = ""
     @AppStorage("preferredUpdateInterval") private var preferredUpdateInterval: Int = 1
     @AppStorage("preferredProductType") private var preferredProductType: String = "MacBookPro"
+    @AppStorage("notifyOnlyForPreferredModels") private var notifyOnlyForPreferredModels: Bool = false
     
     @State private var selectedCountryIndex = 0
     @State private var allModels: [ProductModel] = []
@@ -44,35 +45,40 @@ struct SettingsView: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            Picker("Country", selection: $selectedCountryIndex) {
-                ForEach(0..<OrderedCountries.count) { index in
-                    let countryCode = OrderedCountries[index]
-                    let country = Countries[countryCode]
-                    Text(country?.name ?? countryCode)
+            VStack(alignment: .leading) {
+                Picker("Country", selection: $selectedCountryIndex) {
+                    ForEach(0..<OrderedCountries.count) { index in
+                        let countryCode = OrderedCountries[index]
+                        let country = Countries[countryCode]
+                        Text(country?.name ?? countryCode)
+                    }
                 }
+                
+                Picker("Product Type", selection: $preferredProductType) {
+                    Text("MacBook Pro").tag(ProductType.MacBookPro.rawValue)
+                    Text("iPhone 13").tag(ProductType.iPhoneRegular13.rawValue)
+                    Text("iPhone 13 mini").tag(ProductType.iPhoneMini13.rawValue)
+                    Text("iPhone 13 Pro").tag(ProductType.iPhonePro13.rawValue)
+                    Text("iPhone 13 Pro Max").tag(ProductType.iPhoneProMax13.rawValue)
+                }
+                
+                Picker("Update every", selection: $preferredUpdateInterval) {
+                    Text("Never").tag(0)
+                    Text("1 minute").tag(1)
+                    Text("5 minutes").tag(5)
+                    Text("30 minutes").tag(30)
+                    Text("60 minutes").tag(60)
+                }
+                
+                Toggle(isOn: $notifyOnlyForPreferredModels) {
+                    Text("Notify only for preferred models")
+                        .padding(.leading, 4)
+                }
+                
             }
             .fixedSize()
             .padding(.leading, 8)
-            
-            Picker("Product Type", selection: $preferredProductType) {
-                Text("MacBook Pro").tag(ProductType.MacBookPro.rawValue)
-                Text("iPhone 13").tag(ProductType.iPhoneRegular13.rawValue)
-                Text("iPhone 13 mini").tag(ProductType.iPhoneMini13.rawValue)
-                Text("iPhone 13 Pro").tag(ProductType.iPhonePro13.rawValue)
-                Text("iPhone 13 Pro Max").tag(ProductType.iPhoneProMax13.rawValue)
-            }
-            .fixedSize()
-            .padding(.leading, 8)
-            
-            Picker("Update every", selection: $preferredUpdateInterval) {
-                Text("Never").tag(0)
-                Text("1 minute").tag(1)
-                Text("5 minutes").tag(5)
-                Text("30 minutes").tag(30)
-                Text("60 minutes").tag(60)
-            }
-            .fixedSize()
-            .padding(.leading, 8)
+            .padding(.bottom, 8)
             
             HStack {
                 VStack(alignment: .leading) {
@@ -81,11 +87,9 @@ struct SettingsView: View {
                     
                     List {
                         ForEach($allModels) { model in
-                            HStack {
-                                Toggle("", isOn: model.isFavorite)
-                                    .toggleStyle(.checkbox)
-                                
+                            Toggle(isOn: model.isFavorite) {
                                 Text(model.name.wrappedValue)
+                                    .padding(.leading, 4)
                             }
                         }
                     }
@@ -98,11 +102,9 @@ struct SettingsView: View {
                     
                     List {
                         ForEach($allStores) { store in
-                            HStack {
-                                Toggle("", isOn: store.isSelected)
-                                    .toggleStyle(.checkbox)
-                                
+                            Toggle(isOn: store.isSelected) {
                                 Text("\(store.store.storeName.wrappedValue), \(store.store.city.wrappedValue)")
+                                    .padding(.leading, 4)
                             }
                         }
                     }

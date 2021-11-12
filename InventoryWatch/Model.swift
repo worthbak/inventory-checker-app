@@ -357,6 +357,10 @@ final class Model: ObservableObject {
             }
             
             if !self.isTest {
+                if UserDefaults.standard.bool(forKey: "notifyOnlyForPreferredModels") && !hasPreferredModel {
+                    return
+                }
+                
                 let message = self.generateNotificationText(from: allAvailableModels)
                 NotificationManager.shared.sendNotification(title: hasPreferredModel ? "Preferred Model Found!" : "Apple Store Invetory", body: message)
             }
