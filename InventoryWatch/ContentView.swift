@@ -53,15 +53,24 @@ struct ContentView: View {
                 
             }
             
-            List {
-                ForEach(model.availableParts, id: \.0.storeNumber) { data in
-                    Text("\(Text(data.0.storeName).font(.headline)) \(Text(data.0.locationDescription).font(.subheadline))")
+            ZStack(alignment:.center) {
+                
+                
+                List {
+                    ForEach(model.availableParts, id: \.0.storeNumber) { data in
+                        Text("\(Text(data.0.storeName).font(.headline)) \(Text(data.0.locationDescription).font(.subheadline))")
+                            
                         
-                    
-                    ForEach(data.1) { part in
-                        Text(model.productName(forSKU: part.partNumber))
-                            .font(.subheadline)
+                        ForEach(data.1) { part in
+                            Text(model.productName(forSKU: part.partNumber))
+                                .font(.subheadline)
+                        }
                     }
+                }
+                
+                if model.availableParts.isEmpty && model.isLoading == false {
+                    Text("No models available")
+                        .foregroundColor(.secondary)
                 }
             }
             
