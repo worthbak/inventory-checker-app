@@ -165,6 +165,9 @@ struct SettingsView: View {
             loadSkus()
             model.clearCurrentAvailableParts()
         }
+        .onChange(of: preferredUpdateInterval) { _ in
+            try? model.fetchLatestInventory()
+        }
     }
     
     func loadCountries() {
