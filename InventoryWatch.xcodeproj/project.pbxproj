@@ -302,7 +302,7 @@
 				CODE_SIGN_ENTITLEMENTS = InventoryWatch/InventoryWatch.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"InventoryWatch/Preview Content\"";
 				DEVELOPMENT_TEAM = 64A6JSYH8N;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -331,7 +331,7 @@
 				CODE_SIGN_ENTITLEMENTS = InventoryWatch/InventoryWatch.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"InventoryWatch/Preview Content\"";
 				DEVELOPMENT_TEAM = 64A6JSYH8N;
 				ENABLE_HARDENED_RUNTIME = YES;
