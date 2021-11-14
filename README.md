@@ -1,4 +1,4 @@
 # inventory-checker-app
 A macOS app for checking Apple Store inventory
 
-[download](./products/InventoryWatch.app)
+[download](./products/InventoryWatch.zip)
