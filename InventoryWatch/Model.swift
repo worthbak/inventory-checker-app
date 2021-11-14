@@ -26,12 +26,13 @@ struct Store: Equatable {
     let partsAvailability: [PartAvailability]
 }
 
-struct PartAvailability: Equatable {
+struct PartAvailability: Equatable, Hashable {
     enum PickupAvailability: String {
         case available, unavailable, ineligible
     }
     
     let partNumber: String
+    let storePickupProductTitle: String
     let availability: PickupAvailability
 }
 
@@ -302,6 +303,7 @@ final class Model: ObservableObject {
             guard let partsAvailability = storeJSON["partsAvailability"] as? [String: [String: Any]] else { return nil }
             let parsedParts: [PartAvailability] = partsAvailability.values.compactMap { part in
                 guard let partNumber = part["partNumber"] as? String else { return nil }
+                guard let storePickupProductTitle = part["storePickupProductTitle"] as? String else { return nil }
                 guard
                     let availabilityString = part["pickupDisplay"] as? String,
                         let availability = PartAvailability.PickupAvailability(rawValue: availabilityString)
@@ -309,7 +311,7 @@ final class Model: ObservableObject {
                     return nil
                 }
                 
-                return PartAvailability(partNumber: partNumber, availability: availability)
+                return PartAvailability(partNumber: partNumber, storePickupProductTitle: storePickupProductTitle, availability: availability)
             }
             
             return Store(storeName: name, storeNumber: number, city: city, state: state, partsAvailability: parsedParts)
@@ -353,6 +355,11 @@ final class Model: ObservableObject {
                         hasPreferredModel = true
                         break
                     }
+                    
+                    if hasPreferredModel == false, let customSku = UserDefaults.standard.string(forKey: "customSku"), submodel.partNumber == customSku {
+                        hasPreferredModel = true
+                        break
+                    }
                 }
             }
             
@@ -389,7 +396,12 @@ final class Model: ObservableObject {
     }
     
     private func generateQueryString() -> String {
-        var queryItems: [String] = skuData.orderedSKUs
+        var allSkus = skuData.orderedSKUs
+        if let customSku = UserDefaults.standard.string(forKey: "customSku") {
+            allSkus.append(customSku)
+        }
+        
+        var queryItems: [String] = allSkus
             .enumerated()
             .map { next in
                 let count = next.offset
@@ -404,7 +416,17 @@ final class Model: ObservableObject {
     }
     
     func productName(forSKU sku: String) -> String {
-        return skuData.productName(forSKU: sku) ?? sku
+        if let name = skuData.productName(forSKU: sku){
+            return name
+        } else if let custom = UserDefaults.standard.string(forKey: "customSku"), custom == sku {
+            if let nickname = UserDefaults.standard.string(forKey: "customSkuNickname"), nickname.isEmpty == false {
+                return "\(nickname) (custom SKU)"
+            } else {
+                return "\(sku) (custom SKU)"
+            }
+        } else {
+            return sku
+        }
     }
     
     func syncPreferredStore() {
@@ -420,9 +442,9 @@ extension Model {
         let model = Model(isTest: true)
         
         let testParts: [PartAvailability] = [
-            PartAvailability(partNumber: "MKGT3LL/A", availability: .available),
-            PartAvailability(partNumber: "MKGQ3LL/A", availability: .available),
-            PartAvailability(partNumber: "MMQX3LL/A", availability: .available),
+            PartAvailability(partNumber: "MKGT3LL/A", storePickupProductTitle: "", availability: .available),
+            PartAvailability(partNumber: "MKGQ3LL/A", storePickupProductTitle: "", availability: .available),
+            PartAvailability(partNumber: "MMQX3LL/A", storePickupProductTitle: "", availability: .available),
         ]
         
         let testStores: [Store] = [

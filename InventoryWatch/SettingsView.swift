@@ -36,6 +36,8 @@ struct SettingsView: View {
     @AppStorage("preferredUpdateInterval") private var preferredUpdateInterval: Int = 1
     @AppStorage("preferredProductType") private var preferredProductType: String = "MacBookPro"
     @AppStorage("notifyOnlyForPreferredModels") private var notifyOnlyForPreferredModels: Bool = false
+    @AppStorage("customSku") private var customSku = ""
+    @AppStorage("customSkuNickname") private var customSkuNickname = ""
     
     @State private var selectedCountryIndex = 0
     @State private var allModels: [ProductModel] = []
@@ -45,40 +47,51 @@ struct SettingsView: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            VStack(alignment: .leading) {
-                Picker("Country", selection: $selectedCountryIndex) {
-                    ForEach(0..<OrderedCountries.count) { index in
-                        let countryCode = OrderedCountries[index]
-                        let country = Countries[countryCode]
-                        Text(country?.name ?? countryCode)
+            HStack(alignment: .top, spacing: 24) {
+                VStack(alignment: .leading) {
+                    Picker("Country", selection: $selectedCountryIndex) {
+                        ForEach(0..<OrderedCountries.count) { index in
+                            let countryCode = OrderedCountries[index]
+                            let country = Countries[countryCode]
+                            Text(country?.name ?? countryCode)
+                        }
+                    }
+                    
+                    Picker("Product Type", selection: $preferredProductType) {
+                        Text("MacBook Pro").tag(ProductType.MacBookPro.rawValue)
+                        Text("iPhone 13").tag(ProductType.iPhoneRegular13.rawValue)
+                        Text("iPhone 13 mini").tag(ProductType.iPhoneMini13.rawValue)
+                        Text("iPhone 13 Pro").tag(ProductType.iPhonePro13.rawValue)
+                        Text("iPhone 13 Pro Max").tag(ProductType.iPhoneProMax13.rawValue)
+                    }
+                    
+                    Picker("Update every", selection: $preferredUpdateInterval) {
+                        Text("Never").tag(0)
+                        Text("1 minute").tag(1)
+                        Text("5 minutes").tag(5)
+                        Text("30 minutes").tag(30)
+                        Text("60 minutes").tag(60)
+                    }
+                    
+                    Toggle(isOn: $notifyOnlyForPreferredModels) {
+                        Text("Notify only for preferred models")
+                            .padding(.leading, 4)
+                    }
+                    
+                    
+                }
+                .fixedSize()
+                .padding(.leading, 8)
+                .padding(.bottom, 8)
+                
+                HStack(alignment: .top) {
+                    Text("Custom SKU")
+                    VStack {
+                        TextField("Enter a custom SKU", text: $customSku)
+                        TextField("Custom SKU Nickname", text: $customSkuNickname)
                     }
                 }
-                
-                Picker("Product Type", selection: $preferredProductType) {
-                    Text("MacBook Pro").tag(ProductType.MacBookPro.rawValue)
-                    Text("iPhone 13").tag(ProductType.iPhoneRegular13.rawValue)
-                    Text("iPhone 13 mini").tag(ProductType.iPhoneMini13.rawValue)
-                    Text("iPhone 13 Pro").tag(ProductType.iPhonePro13.rawValue)
-                    Text("iPhone 13 Pro Max").tag(ProductType.iPhoneProMax13.rawValue)
-                }
-                
-                Picker("Update every", selection: $preferredUpdateInterval) {
-                    Text("Never").tag(0)
-                    Text("1 minute").tag(1)
-                    Text("5 minutes").tag(5)
-                    Text("30 minutes").tag(30)
-                    Text("60 minutes").tag(60)
-                }
-                
-                Toggle(isOn: $notifyOnlyForPreferredModels) {
-                    Text("Notify only for preferred models")
-                        .padding(.leading, 4)
-                }
-                
             }
-            .fixedSize()
-            .padding(.leading, 8)
-            .padding(.bottom, 8)
             
             HStack {
                 VStack(alignment: .leading) {
