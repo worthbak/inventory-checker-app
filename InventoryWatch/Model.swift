@@ -90,11 +90,30 @@ struct AllPhoneModels {
 final class Model: ObservableObject {
     enum ModelError: Swift.Error {
         case couldNotGenerateURL
+        case invalidStoreResponse
         case failedToParseJSON
+        case unexpectedJSONStructure
+        case noStoresFound
+        case invalidLocalModelStore
+        case generic(Error?)
+        
+        var errorMessage: String {
+            switch self {
+            case .couldNotGenerateURL:
+                return "InventoryWatch failed to construct a valid URL for your search."
+            case .invalidStoreResponse, .failedToParseJSON, .unexpectedJSONStructure, .noStoresFound:
+                return "Unexpected inventory data found. Please confirm that the selected store is valid for the selected country."
+            case .invalidLocalModelStore:
+                return "InventoryWatch has invalid or currupted local data. Please contact the developer (@worthbak)."
+            case .generic(let optional):
+                return "A network error occurred. Details: \(optional?.localizedDescription ?? "unknown")"
+            }
+        }
     }
     
     @Published var availableParts: [(Store, [PartAvailability])] = []
     @Published var isLoading = false
+    @Published var errorState: ModelError?
     
     lazy private(set) var allStores: [JsonStore] = {
         let location = "Stores"
@@ -125,7 +144,8 @@ final class Model: ObservableObject {
         
         for (countryCode, phones) in phoneModelsJson {
             guard let country = Countries[countryCode.uppercased()] else {
-                fatalError()
+                self.updateErrorState(to: ModelError.invalidLocalModelStore)
+                return [:]
             }
             
             let modelsData = [
@@ -156,8 +176,8 @@ final class Model: ObservableObject {
     
     func phoneModels(for country: Country) -> AllPhoneModels {
         guard let models = iPhoneModels[country] else {
-            // TODO: throw error
-            fatalError("no models for country")
+            self.updateErrorState(to: ModelError.invalidLocalModelStore)
+            return AllPhoneModels(proMax13: [], pro13: [], mini13: [], regular13: [])
         }
         
         return models
@@ -252,26 +272,48 @@ final class Model: ObservableObject {
         availableParts = []
     }
     
-    func fetchLatestInventory() throws {
+    func updateErrorState(to error: Error?, deactivateLoadingState: Bool = true) {
+        DispatchQueue.main.async {
+            if deactivateLoadingState {
+                self.isLoading = false
+            }
+            
+            print(error?.localizedDescription ?? "errorState: nil")
+            guard let error = error else {
+                self.errorState = nil
+                return
+            }
+            
+            if let modelError = error as? ModelError {
+                self.errorState = modelError
+            } else {
+                self.errorState = ModelError.generic(error)
+            }
+        }
+    }
+    
+    func fetchLatestInventory() {
         guard !isTest else {
             return
         }
         
         syncPreferredStore()
         isLoading = true
+        self.updateErrorState(to: .none, deactivateLoadingState: false)
         
         let urlRoot = "https://www.apple.com/\(countryPathElement.lowercased())shop/fulfillment-messages?"
         let query = generateQueryString()
         
         guard let url = URL(string: urlRoot + query) else {
-            throw ModelError.couldNotGenerateURL
+            updateErrorState(to: ModelError.couldNotGenerateURL)
+            return
         }
         
         URLSession.shared.dataTask(with: url) { data, response, error in
             do {
                 try self.parseStoreResponse(data)
             } catch {
-                print(error)
+                self.updateErrorState(to: error)
             }
         }.resume()
         
@@ -289,18 +331,18 @@ final class Model: ObservableObject {
         if updateTimer == nil {
             let interval = Double(updateInterval * 60)
             updateTimer = Timer.scheduledTimer(withTimeInterval: interval, repeats: true, block: { _ in
-                try? self.fetchLatestInventory()
+                self.fetchLatestInventory()
             })
         }
     }
     
     private func parseStoreResponse(_ responseData: Data?) throws {
         guard let responseData = responseData else {
-            throw ModelError.couldNotGenerateURL
+            throw ModelError.invalidStoreResponse
         }
         
         guard let json = try? JSONSerialization.jsonObject(with: responseData, options: []) as? [String : Any] else {
-            throw ModelError.couldNotGenerateURL
+            throw ModelError.failedToParseJSON
         }
         
         guard
@@ -308,11 +350,11 @@ final class Model: ObservableObject {
                 let content = body["content"] as? [String: Any],
                 let pickupMessage = content["pickupMessage"] as? [String: Any]
         else {
-            throw ModelError.couldNotGenerateURL
+            throw ModelError.unexpectedJSONStructure
         }
         
         guard let storeList = pickupMessage["stores"] as? [[String: Any]] else {
-            throw ModelError.couldNotGenerateURL
+            throw ModelError.noStoresFound
         }
         
         let collectedStores: [Store] = storeList.compactMap { storeJSON in
@@ -479,6 +521,8 @@ extension Model {
         ]
         
         model.availableParts = testStores.map { ($0, testParts) }
+        model.updateErrorState(to: ModelError.noStoresFound)
+        
         return model
     }
 }

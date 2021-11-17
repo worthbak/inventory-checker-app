@@ -57,6 +57,12 @@ struct ContentView: View {
                 
                 
                 List {
+                    if let error = model.errorState {
+                        Text(error.errorMessage)
+                            .font(.subheadline)
+                            .italic()
+                    }
+                    
                     ForEach(model.availableParts, id: \.0.storeNumber) { data in
                         Text("\(Text(data.0.storeName).font(.headline)) \(Text(data.0.locationDescription).font(.subheadline))")
                             
@@ -85,7 +91,7 @@ struct ContentView: View {
                 }
                 
                 Button(
-                    action: { try! model.fetchLatestInventory() },
+                    action: { model.fetchLatestInventory() },
                     label: { Image(systemName: "arrow.clockwise") }
                 )
                     .buttonStyle(BorderlessButtonStyle())
@@ -103,7 +109,7 @@ struct ContentView: View {
             alignment: .center
         )
         .onAppear {
-            try! model.fetchLatestInventory()
+            model.fetchLatestInventory()
             NotificationManager.shared.requestNotificationPermissions()
         }
     }

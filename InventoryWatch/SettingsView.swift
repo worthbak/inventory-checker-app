@@ -181,7 +181,7 @@ struct SettingsView: View {
             model.clearCurrentAvailableParts()
         }
         .onChange(of: preferredUpdateInterval) { _ in
-            try? model.fetchLatestInventory()
+            model.fetchLatestInventory()
         }
         .onChange(of: preferredCountry) { _ in
             loadSkus()
