@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Country {
+struct Country: Hashable {
     let name: String
     let storePathComponent: String
     let skuCode: String
@@ -41,7 +41,7 @@ let Countries: [String: Country] = [
         storePathComponent: "/uk",
         skuCode: "B"
     ),
-    "KR": Country( // South Korean Apple Stores do not appear to support in-store pickup
+    "KR": Country(
         name: "South Korea",
         storePathComponent: "/kr",
         skuCode: "KH"

@@ -17,10 +17,10 @@ struct Store: Equatable {
     let storeName: String
     let storeNumber: String
     let city: String
-    let state: String
+    let state: String?
     
     var locationDescription: String {
-        return [city, state].joined(separator: ", ")
+        return [city, state].compactMap { $0 }.joined(separator: ", ")
     }
     
     let partsAvailability: [PartAvailability]
@@ -119,40 +119,60 @@ final class Model: ObservableObject {
         }
     }()
     
-    lazy private(set) var iPhoneModelsUS: AllPhoneModels = {
+    lazy private var iPhoneModels: [Country: AllPhoneModels] = {
         let phoneModelsJson = loadIPhoneModels()
-        let modelsData = [
-            (phoneModelsJson["proMax13"], \AllPhoneModels.proMax13),
-            (phoneModelsJson["pro13"], \AllPhoneModels.pro13),
-            (phoneModelsJson["mini13"], \AllPhoneModels.mini13),
-            (phoneModelsJson["regular13"], \AllPhoneModels.regular13)
-        ]
+        var rv = [Country: AllPhoneModels]()
         
-        var phoneModels = AllPhoneModels(proMax13: [], pro13: [], mini13: [], regular13: [])
-        for (models, keyPath) in modelsData {
-            guard let models = models else {
-                continue
+        for (countryCode, phones) in phoneModelsJson {
+            guard let country = Countries[countryCode.uppercased()] else {
+                fatalError()
             }
             
-            let parsed: [AllPhoneModels.PhoneModel] = models.map { modelData in
-                return AllPhoneModels.PhoneModel(sku: modelData.key, productName: modelData.value)
+            let modelsData = [
+                (phones["proMax13"], \AllPhoneModels.proMax13),
+                (phones["pro13"], \AllPhoneModels.pro13),
+                (phones["mini13"], \AllPhoneModels.mini13),
+                (phones["regular13"], \AllPhoneModels.regular13)
+            ]
+            
+            var phoneModels = AllPhoneModels(proMax13: [], pro13: [], mini13: [], regular13: [])
+            for (models, keyPath) in modelsData {
+                guard let models = models else {
+                    continue
+                }
+                
+                let parsed: [AllPhoneModels.PhoneModel] = models.map { modelData in
+                    return AllPhoneModels.PhoneModel(sku: modelData.key, productName: modelData.value)
+                }
+                
+                phoneModels[keyPath: keyPath] = parsed
             }
             
-            phoneModels[keyPath: keyPath] = parsed
+            rv[country] = phoneModels
         }
         
-        return phoneModels
+        return rv
     }()
     
-    private func loadIPhoneModels() -> [String: [String: String]] {
-        let location = "iPhoneModels-us"
+    func phoneModels(for country: Country) -> AllPhoneModels {
+        guard let models = iPhoneModels[country] else {
+            // TODO: throw error
+            fatalError("no models for country")
+        }
+        
+        return models
+    }
+    
+                                    // country: type:    model:   description
+    private func loadIPhoneModels() -> [String: [String: [String: String]]] {
+        let location = "iPhoneModels-intl"
         let fileType = "json"
         if let path = Bundle.main.path(forResource: location, ofType: fileType) {
             do {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path))
                 let decoder = JSONDecoder()
                 
-                if let jsonStores = try? decoder.decode([String: [String: String]].self, from: data) {
+                if let jsonStores = try? decoder.decode([String: [String: [String: String]]].self, from: data) {
                     return jsonStores
                 } else {
                     return [:]
@@ -203,19 +223,20 @@ final class Model: ObservableObject {
     
     var skuData: SKUData {
         let productType = ProductType(rawValue: preferredProductType) ?? .MacBookPro
+        let country = Countries[preferredCountry] ?? USData
         
         switch productType {
         case .MacBookPro:
             let country = Countries[preferredCountry] ?? USData
             return SkuDataForCountry(country)
         case .iPhoneRegular13:
-            return iPhoneModelsUS.toSkuData(\.regular13)
+            return phoneModels(for: country).toSkuData(\.regular13)
         case .iPhoneMini13:
-            return iPhoneModelsUS.toSkuData(\.mini13)
+            return phoneModels(for: country).toSkuData(\.mini13)
         case .iPhonePro13:
-            return iPhoneModelsUS.toSkuData(\.pro13)
+            return phoneModels(for: country).toSkuData(\.pro13)
         case .iPhoneProMax13:
-            return iPhoneModelsUS.toSkuData(\.proMax13)
+            return phoneModels(for: country).toSkuData(\.proMax13)
         }
     }
     
@@ -239,7 +260,7 @@ final class Model: ObservableObject {
         syncPreferredStore()
         isLoading = true
         
-        let urlRoot = "https://www.apple.com/\(countryPathElement)shop/fulfillment-messages?"
+        let urlRoot = "https://www.apple.com/\(countryPathElement.lowercased())shop/fulfillment-messages?"
         let query = generateQueryString()
         
         guard let url = URL(string: urlRoot + query) else {
@@ -297,8 +318,8 @@ final class Model: ObservableObject {
         let collectedStores: [Store] = storeList.compactMap { storeJSON in
             guard let name = storeJSON["storeName"] as? String else { return nil }
             guard let number = storeJSON["storeNumber"] as? String else { return nil }
-            guard let state = storeJSON["state"] as? String else { return nil }
             guard let city = storeJSON["city"] as? String else { return nil }
+            let state = storeJSON["state"] as? String
             
             guard let partsAvailability = storeJSON["partsAvailability"] as? [String: [String: Any]] else { return nil }
             let parsedParts: [PartAvailability] = partsAvailability.values.compactMap { part in
@@ -403,7 +424,11 @@ final class Model: ObservableObject {
         
         var queryItems: [String] = allSkus
             .enumerated()
-            .map { next in
+            .compactMap { next in
+                guard next.element.isEmpty == false else {
+                    return nil
+                }
+                
                 let count = next.offset
                 let sku = next.element
                 return "parts.\(count)=\(sku)"

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		380CF9FB27448E860080472A /* iPhoneModels-intl.json in Resources */ = {isa = PBXBuildFile; fileRef = 380CF9FA27448E860080472A /* iPhoneModels-intl.json */; };
 		3817268E273AA898003B8D76 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3817268D273AA898003B8D76 /* SettingsView.swift */; };
 		386FDC572739DA7300C1BAC2 /* InventoryWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386FDC562739DA7300C1BAC2 /* InventoryWatchApp.swift */; };
 		386FDC592739DA7300C1BAC2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386FDC582739DA7300C1BAC2 /* ContentView.swift */; };
@@ -15,13 +16,13 @@
 		386FDC662739DADD00C1BAC2 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386FDC652739DADD00C1BAC2 /* Model.swift */; };
 		386FDC68273A18F800C1BAC2 /* SKUData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386FDC67273A18F800C1BAC2 /* SKUData.swift */; };
 		386FDC6A273A200000C1BAC2 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386FDC69273A200000C1BAC2 /* NotificationManager.swift */; };
-		38ABF80F273EAE9400902D0E /* iPhoneModels-us.json in Resources */ = {isa = PBXBuildFile; fileRef = 38ABF80E273EAE9400902D0E /* iPhoneModels-us.json */; };
 		38D0C3A2273C60B500A7DE65 /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D0C3A1273C60B500A7DE65 /* Countries.swift */; };
 		38DBAF39273D6692009992D8 /* Stores.json in Resources */ = {isa = PBXBuildFile; fileRef = 38DBAF38273D6692009992D8 /* Stores.json */; };
 		38E4279E273EF542006BF6D7 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 38E4279D273EF542006BF6D7 /* Credits.rtf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		380CF9FA27448E860080472A /* iPhoneModels-intl.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "iPhoneModels-intl.json"; sourceTree = "<group>"; };
 		3817268D273AA898003B8D76 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		386FDC532739DA7300C1BAC2 /* InventoryWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InventoryWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		386FDC562739DA7300C1BAC2 /* InventoryWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryWatchApp.swift; sourceTree = "<group>"; };
@@ -32,7 +33,6 @@
 		386FDC652739DADD00C1BAC2 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		386FDC67273A18F800C1BAC2 /* SKUData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKUData.swift; sourceTree = "<group>"; };
 		386FDC69273A200000C1BAC2 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
-		38ABF80E273EAE9400902D0E /* iPhoneModels-us.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "iPhoneModels-us.json"; sourceTree = "<group>"; };
 		38D0C3A1273C60B500A7DE65 /* Countries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countries.swift; sourceTree = "<group>"; };
 		38DBAF38273D6692009992D8 /* Stores.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Stores.json; sourceTree = "<group>"; };
 		38E4279D273EF542006BF6D7 /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
@@ -74,7 +74,7 @@
 				386FDC69273A200000C1BAC2 /* NotificationManager.swift */,
 				386FDC652739DADD00C1BAC2 /* Model.swift */,
 				38DBAF38273D6692009992D8 /* Stores.json */,
-				38ABF80E273EAE9400902D0E /* iPhoneModels-us.json */,
+				380CF9FA27448E860080472A /* iPhoneModels-intl.json */,
 				386FDC67273A18F800C1BAC2 /* SKUData.swift */,
 				38D0C3A1273C60B500A7DE65 /* Countries.swift */,
 				386FDC5A2739DA7300C1BAC2 /* Assets.xcassets */,
@@ -152,8 +152,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				38E4279E273EF542006BF6D7 /* Credits.rtf in Resources */,
-				38ABF80F273EAE9400902D0E /* iPhoneModels-us.json in Resources */,
 				38DBAF39273D6692009992D8 /* Stores.json in Resources */,
+				380CF9FB27448E860080472A /* iPhoneModels-intl.json in Resources */,
 				386FDC5E2739DA7300C1BAC2 /* Preview Assets.xcassets in Resources */,
 				386FDC5B2739DA7300C1BAC2 /* Assets.xcassets in Resources */,
 			);

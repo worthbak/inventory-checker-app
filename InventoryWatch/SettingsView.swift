@@ -183,6 +183,9 @@ struct SettingsView: View {
         .onChange(of: preferredUpdateInterval) { _ in
             try? model.fetchLatestInventory()
         }
+        .onChange(of: preferredCountry) { _ in
+            loadSkus()
+        }
     }
     
     func loadCountries() {
@@ -195,6 +198,7 @@ struct SettingsView: View {
     
     func loadSkus() {
         let favoriteSkus = Set<String>(preferredSKUs.components(separatedBy: ","))
+        let country = Countries[preferredCountry]!
         
         let productType = ProductType(rawValue: preferredProductType) ?? .MacBookPro
         switch productType {
@@ -204,19 +208,19 @@ struct SettingsView: View {
                 return ProductModel(sku: sku, name: name, isFavorite: favoriteSkus.contains(sku))
             }
         case .iPhoneRegular13:
-            allModels = model.iPhoneModelsUS.regular13.map { model in
+            allModels = model.phoneModels(for: country).regular13.map { model in
                 ProductModel(sku: model.sku, name: model.productName, isFavorite: favoriteSkus.contains(model.sku))
             }
         case .iPhoneMini13:
-            allModels = model.iPhoneModelsUS.mini13.map { model in
+            allModels = model.phoneModels(for: country).mini13.map { model in
                 ProductModel(sku: model.sku, name: model.productName, isFavorite: favoriteSkus.contains(model.sku))
             }
         case .iPhonePro13:
-            allModels = model.iPhoneModelsUS.pro13.map { model in
+            allModels = model.phoneModels(for: country).pro13.map { model in
                 ProductModel(sku: model.sku, name: model.productName, isFavorite: favoriteSkus.contains(model.sku))
             }
         case .iPhoneProMax13:
-            allModels = model.iPhoneModelsUS.proMax13.map { model in
+            allModels = model.phoneModels(for: country).proMax13.map { model in
                 ProductModel(sku: model.sku, name: model.productName, isFavorite: favoriteSkus.contains(model.sku))
             }
         }
