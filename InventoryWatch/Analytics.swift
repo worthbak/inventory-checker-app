@@ -16,6 +16,7 @@ struct AnalyticsData: Codable, Equatable {
     let updateInterval: Int
     let notifyOnlyForPreferredModels: Bool
     let hasCustomSku: Bool
+    let appVersion: String
     
     var toJsonData: Data? {
         let dictionary: [String: Any] = [
@@ -27,6 +28,7 @@ struct AnalyticsData: Codable, Equatable {
             "updateInterval": updateInterval,
             "notifyOnlyForPreferredModels": notifyOnlyForPreferredModels,
             "hasCustomSku": hasCustomSku,
+            "appVersion": appVersion
         ]
         
         let reduced = dictionary
@@ -63,7 +65,8 @@ struct AnalyticsData: Codable, Equatable {
             preferredModels: preferredSKUsString,
             updateInterval: preferredUpdateInterval,
             notifyOnlyForPreferredModels: notifyOnlyForPreferredModels,
-            hasCustomSku: customSku != nil && customSku?.isEmpty == false
+            hasCustomSku: customSku != nil && customSku?.isEmpty == false,
+            appVersion: Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "unkown_version"
         )
     }
     
