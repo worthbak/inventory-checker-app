@@ -21,7 +21,49 @@ struct SKUData {
     }
 }
 
-func SkuDataForCountry(_ country: Country) -> SKUData {
+func iPadDataForCountry(_ country: Country, isWifi: Bool) -> SKUData {
+    let skuCode = country.altSkuCode ?? country.skuCode
+    
+    let wifiData = [
+        "MK7R3": "iPad Mini 64GB Purple Wifi",
+        "MLWL3": "iPad Mini 64GB Pink Wifi",
+        "MK7P3": "iPad Mini 64GB Starlight Wifi",
+        "MK7M3": "iPad Mini 64GB Space Gray Wifi",
+        "MK7X3": "iPad Mini 256GB Purple Wifi",
+        "MLWR3": "iPad Mini 256GB Pink Wifi",
+        "MK7V3": "iPad Mini 256GB Starlight Wifi",
+        "MK7T3": "iPad Mini 256GB Space Gray Wifi"
+    ]
+    
+    let cellData = [
+        "MK8E3": "iPad Mini 64GB Purple Cellular",
+        "MLX43": "iPad Mini 64GB Pink Cellular",
+        "MK8C3": "iPad Mini 64GB Starlight Cellular",
+        "MK893": "iPad Mini 64GB Space Gray Cellular",
+        "MK8K3": "iPad Mini 256GB Purple Cellular",
+        "MLX93": "iPad Mini 256GB Pink Cellular",
+        "MK8H3": "iPad Mini 256GB Starlight Cellular",
+        "MK8F3": "iPad Mini 256GB Space Gray Cellular"
+    ]
+    
+    let orderedSkus = isWifi ?
+    [ "MK7R3", "MLWL3", "MK7P3", "MK7M3", "MK7X3", "MLWR3", "MK7V3", "MK7T3" ] :
+    [ "MK8E3", "MLX43", "MK8C3", "MK893", "MK8K3", "MLX93", "MK8H3", "MK8F3" ]
+    
+    let skusToName: [String: String] = orderedSkus.reduce(into: [String: String]()) { partialResult, next in
+        let map = isWifi ? wifiData : cellData
+        guard let name = map[next] else { return }
+        
+        let localSku = "\(next)\(skuCode)/A"
+        partialResult[localSku] = name
+    }
+    
+    let localOrderedSkus = orderedSkus.map { "\($0)\(skuCode)/A" }
+    
+    return SKUData(orderedSKUs: localOrderedSkus, lookup: skusToName)
+}
+
+func MBPDataForCountry(_ country: Country) -> SKUData {
     
     let orderedSkus = [
         "MKGR3\(country.skuCode)/A",
@@ -38,7 +80,6 @@ func SkuDataForCountry(_ country: Country) -> SKUData {
         "MK1A3\(country.skuCode)/A",
         "MK233\(country.skuCode)/A",
         "MMQW3\(country.skuCode)/A",
-//        "MYD92\(country.skuCode)/A"
     ]
     
     let skusToName = [
@@ -60,5 +101,3 @@ func SkuDataForCountry(_ country: Country) -> SKUData {
     
     return SKUData(orderedSKUs: orderedSkus, lookup: skusToName)
 }
-
-//let controlSku = "MYD92LL/A"

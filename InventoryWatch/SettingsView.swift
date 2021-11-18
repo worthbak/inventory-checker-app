@@ -58,11 +58,13 @@ struct SettingsView: View {
                     }
                     
                     Picker("Product Type", selection: $preferredProductType) {
-                        Text("MacBook Pro").tag(ProductType.MacBookPro.rawValue)
-                        Text("iPhone 13").tag(ProductType.iPhoneRegular13.rawValue)
-                        Text("iPhone 13 mini").tag(ProductType.iPhoneMini13.rawValue)
-                        Text("iPhone 13 Pro").tag(ProductType.iPhonePro13.rawValue)
-                        Text("iPhone 13 Pro Max").tag(ProductType.iPhoneProMax13.rawValue)
+                        Text(ProductType.MacBookPro.presentableName).tag(ProductType.MacBookPro.rawValue)
+                        Text(ProductType.iPadWifi.presentableName).tag(ProductType.iPadWifi.rawValue)
+                        Text(ProductType.iPadCellular.presentableName).tag(ProductType.iPadCellular.rawValue)
+                        Text(ProductType.iPhoneRegular13.presentableName).tag(ProductType.iPhoneRegular13.rawValue)
+                        Text(ProductType.iPhoneMini13.presentableName).tag(ProductType.iPhoneMini13.rawValue)
+                        Text(ProductType.iPhonePro13.presentableName).tag(ProductType.iPhonePro13.rawValue)
+                        Text(ProductType.iPhoneProMax13.presentableName).tag(ProductType.iPhoneProMax13.rawValue)
                     }
                     
                     Picker("Update every", selection: $preferredUpdateInterval) {
@@ -197,31 +199,10 @@ struct SettingsView: View {
     
     func loadSkus() {
         let favoriteSkus = Set<String>(preferredSKUs.components(separatedBy: ","))
-        let country = Countries[preferredCountry]!
-        
-        let productType = ProductType(rawValue: preferredProductType) ?? .MacBookPro
-        switch productType {
-        case .MacBookPro:
-            allModels = model.skuData.orderedSKUs.map { sku in
-                let name = model.skuData.productName(forSKU: sku) ?? sku
-                return ProductModel(sku: sku, name: name, isFavorite: favoriteSkus.contains(sku))
-            }
-        case .iPhoneRegular13:
-            allModels = model.phoneModels(for: country).regular13.map { model in
-                ProductModel(sku: model.sku, name: model.productName, isFavorite: favoriteSkus.contains(model.sku))
-            }
-        case .iPhoneMini13:
-            allModels = model.phoneModels(for: country).mini13.map { model in
-                ProductModel(sku: model.sku, name: model.productName, isFavorite: favoriteSkus.contains(model.sku))
-            }
-        case .iPhonePro13:
-            allModels = model.phoneModels(for: country).pro13.map { model in
-                ProductModel(sku: model.sku, name: model.productName, isFavorite: favoriteSkus.contains(model.sku))
-            }
-        case .iPhoneProMax13:
-            allModels = model.phoneModels(for: country).proMax13.map { model in
-                ProductModel(sku: model.sku, name: model.productName, isFavorite: favoriteSkus.contains(model.sku))
-            }
+        let skuData = model.skuData
+        allModels = skuData.orderedSKUs.map { sku in
+            let name = skuData.productName(forSKU: sku) ?? sku
+            return ProductModel(sku: sku, name: name, isFavorite: favoriteSkus.contains(sku))
         }
     }
     

@@ -44,6 +44,8 @@ extension PartAvailability: Identifiable {
 
 enum ProductType: String, Codable {
     case MacBookPro
+    case iPadWifi
+    case iPadCellular
     case iPhoneRegular13
     case iPhoneMini13
     case iPhonePro13
@@ -53,6 +55,10 @@ enum ProductType: String, Codable {
         switch self {
         case .MacBookPro:
             return "MacBook Pro"
+        case .iPadWifi:
+            return "iPad mini (Wifi)"
+        case .iPadCellular:
+            return "iPad mini (Cellular)"
         case .iPhoneRegular13:
             return "iPhone 13"
         case .iPhoneMini13:
@@ -248,7 +254,13 @@ final class Model: ObservableObject {
         switch productType {
         case .MacBookPro:
             let country = Countries[preferredCountry] ?? USData
-            return SkuDataForCountry(country)
+            return MBPDataForCountry(country)
+        case .iPadWifi:
+            let country = Countries[preferredCountry] ?? USData
+            return iPadDataForCountry(country, isWifi: true)
+        case .iPadCellular:
+            let country = Countries[preferredCountry] ?? USData
+            return iPadDataForCountry(country, isWifi: false)
         case .iPhoneRegular13:
             return phoneModels(for: country).toSkuData(\.regular13)
         case .iPhoneMini13:
