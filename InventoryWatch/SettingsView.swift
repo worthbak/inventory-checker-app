@@ -140,7 +140,6 @@ struct SettingsView: View {
             loadStores(filterText: nil)
         }
         .onChange(of: selectedCountryIndex) { newValue in
-            print(newValue)
             let newCountry = OrderedCountries[newValue]
             preferredCountry = newCountry
         }

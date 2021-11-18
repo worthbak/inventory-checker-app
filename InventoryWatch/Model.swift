@@ -42,7 +42,7 @@ extension PartAvailability: Identifiable {
     }
 }
 
-enum ProductType: String {
+enum ProductType: String, Codable {
     case MacBookPro
     case iPhoneRegular13
     case iPhoneMini13
@@ -334,6 +334,8 @@ final class Model: ObservableObject {
                 self.fetchLatestInventory()
             })
         }
+        
+            AnalyticsData.updateAnalyticsData()
     }
     
     private func parseStoreResponse(_ responseData: Data?) throws {
