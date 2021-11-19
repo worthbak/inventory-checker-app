@@ -1,39 +1,50 @@
-## Welcome to InventoryWatch
+## InventoryWatch: A Helpful Guide to Apple Store Inventory
 
-[Download InventoryWatch](./InventoryWatch-0.0.1.zip)
+[Download InventoryWatch (0.0.1) Now ⤵️](./InventoryWatch-0.0.1.zip)
 
-You can use the [editor on GitHub](https://github.com/worthbak/inventory-checker-app/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+### What is InventoryWatch?
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+InventoryWatch is a simple app for macOS that monitors local Apple Store inventory and notifies you when your preferred model comes in-stock. 
 
-### Markdown
+### Why do I need that? 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Have you tried ordering a new MacBook Pro? Or a new iPhone Pro Max? Shipping times can stretch into multiple weeks or months, and uncertainty around global supply chains can add stress to a process that would test anyone's patience. 
 
-```markdown
-Syntax highlighted code block
+InventoryWatch is designed to help you jump the line: Apple Stores frequently (but irregularly) get fresh stock. When that happens, InventoryWatch will notify you immediately, so you can place an in-store pickup order and get your product in minutes instead of months. 
 
-# Header 1
-## Header 2
-### Header 3
+### Does InventoryWatch support my local store? 
 
-- Bulleted
-- List
+InventoryWatch supports querying in-store pickup stock in seven countries:
 
-1. Numbered
-2. List
+  * United States
+  * Canada
+  * United Kingdom
+  * Austrailia
+  * Germany
+  * South Korea
+  * Hong Kong
 
-**Bold** and _Italic_ and `Code` text
+_Don't see your country on the list? Add an issue to the Github project [here](https://github.com/worthbak/inventory-checker-app/issues)._
 
-[Link](url) and ![Image](src)
-```
+### What products does InventoryWatch support? 
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+InventoryWatch can monitor local stock for the following products: 
 
-### Jekyll Themes
+* MacBook Pro (14" and 16")
+* iPhone 13
+* iPhone 13 mini
+* iPhone 13 Pro
+* iPhone 13 Pro Max
+* iPad mini (wifi and cellular)
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/worthbak/inventory-checker-app/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+_Don't see your product on the list? Add an issue to the Github project [here](https://github.com/worthbak/inventory-checker-app/issues)._
 
-### Support or Contact
+### How much does all of this cost? 
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+InventoryWatch is free, and does not collect any identifiable information about you. Anonymized usage statistics are collected.
+
+---
+
+## Ready to go?
+
+[Download InventoryWatch (0.0.1) Now ⤵️](./InventoryWatch-0.0.1.zip)
