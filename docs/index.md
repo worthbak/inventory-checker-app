@@ -1,6 +1,4 @@
-## InventoryWatch: Your Guide to Apple Store Inventory
-
-[Download InventoryWatch (0.0.1) Now ⤵️](./InventoryWatch-0.0.1.zip)
+## [Download InventoryWatch (0.0.1) Now ⤵️](./InventoryWatch-0.0.1.zip)
 
 ### What is InventoryWatch?
 
