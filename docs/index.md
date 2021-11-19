@@ -41,6 +41,10 @@ _Don't see your product on the list? Add an issue to the Github project [here](h
 
 InventoryWatch is free, and does not collect any identifiable information about you. Anonymized usage statistics are collected.
 
+### System requirements? 
+
+macOS Big Sur 11.5 or newer. InventoryWatch is built with SwiftUI. 
+
 ---
 
 ## Ready to go?
