@@ -1,8 +1,10 @@
 ## [Download InventoryWatch (0.0.1) Now ⤵️](./InventoryWatch-0.0.1.zip)
 
+![InventoryWatch-Screenshot](./ic-mkt-1.jpg)
+
 ### What is InventoryWatch?
 
-InventoryWatch is a simple app for macOS that monitors local Apple Store inventory and notifies you when your preferred model comes in-stock. 
+InventoryWatch is an app for macOS that monitors local Apple Store inventory and notifies you when your preferred model comes in-stock. 
 
 ### Why do I need that? 
 
@@ -34,6 +36,8 @@ InventoryWatch can monitor local stock for the following products:
 * iPhone 13 Pro
 * iPhone 13 Pro Max
 * iPad mini (wifi and cellular)
+
+Note that not all build-to-order configurations will be stocked by Apple Stores (this is especially true for MacBook Pros). InventoryWatch only lists configurations that are known to be stocked by Apple Stores. 
 
 _Don't see your product on the list? Add an issue to the Github project [here](https://github.com/worthbak/inventory-checker-app/issues)._
 
