@@ -1,4 +1,6 @@
-## Welcome to GitHub Pages
+## Welcome to InventoryWatch
+
+[Download InventoryWatch](./InventoryWatch-0.0.1.zip)
 
 You can use the [editor on GitHub](https://github.com/worthbak/inventory-checker-app/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
