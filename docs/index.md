@@ -19,7 +19,7 @@ InventoryWatch supports querying in-store pickup stock in seven countries:
   * United States
   * Canada
   * United Kingdom
-  * Austrailia
+  * Australia
   * Germany
   * South Korea
   * Hong Kong
