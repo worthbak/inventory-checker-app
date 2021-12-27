@@ -313,6 +313,9 @@ final class Model: ObservableObject {
         isLoading = true
         self.updateErrorState(to: .none, deactivateLoadingState: false)
         
+        let filterForPreferredModels = UserDefaults.standard.bool(forKey: "showResultsOnlyForPreferredModels")
+        let filterModels = filterForPreferredModels ? preferredSKUs : nil
+        
         let urlRoot = "https://www.apple.com/\(countryPathElement.lowercased())shop/fulfillment-messages?"
         let query = generateQueryString()
         
@@ -323,7 +326,7 @@ final class Model: ObservableObject {
         
         URLSession.shared.dataTask(with: url) { data, response, error in
             do {
-                try self.parseStoreResponse(data)
+                try self.parseStoreResponse(data, filterForModels: filterModels)
             } catch {
                 self.updateErrorState(to: error)
             }
@@ -350,7 +353,7 @@ final class Model: ObservableObject {
             AnalyticsData.updateAnalyticsData()
     }
     
-    private func parseStoreResponse(_ responseData: Data?) throws {
+    private func parseStoreResponse(_ responseData: Data?, filterForModels: Set<String>?) throws {
         guard let responseData = responseData else {
             throw ModelError.invalidStoreResponse
         }
@@ -394,14 +397,18 @@ final class Model: ObservableObject {
             return Store(storeName: name, storeNumber: number, city: city, state: state, partsAvailability: parsedParts)
         }
         
-        try self.parseAvailableModels(from: collectedStores)
+        try self.parseAvailableModels(from: collectedStores, filterForModels: filterForModels)
     }
     
-    private func parseAvailableModels(from stores: [Store]) throws {
+    private func parseAvailableModels(from stores: [Store], filterForModels: Set<String>?) throws {
         let allAvailableModels: [(Store, [PartAvailability])] = stores.compactMap { store in
             let rv: [PartAvailability] = store.partsAvailability.filter { part in
                 switch part.availability {
                 case .available:
+                    if let filter = filterForModels, filter.contains(part.partNumber) == false {
+                        return false
+                    }
+                    
                     return true
                 case .unavailable, .ineligible:
                     return false

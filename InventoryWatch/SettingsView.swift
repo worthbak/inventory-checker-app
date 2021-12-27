@@ -36,6 +36,7 @@ struct SettingsView: View {
     @AppStorage("preferredUpdateInterval") private var preferredUpdateInterval: Int = 1
     @AppStorage("preferredProductType") private var preferredProductType: String = "MacBookPro"
     @AppStorage("notifyOnlyForPreferredModels") private var notifyOnlyForPreferredModels: Bool = false
+    @AppStorage("showResultsOnlyForPreferredModels") private var showResultsOnlyForPreferredModels: Bool = false
     @AppStorage("customSku") private var customSku = ""
     @AppStorage("customSkuNickname") private var customSkuNickname = ""
     
@@ -77,6 +78,10 @@ struct SettingsView: View {
                     
                     Toggle(isOn: $notifyOnlyForPreferredModels) {
                         Text("Notify only for preferred models")
+                            .padding(.leading, 4)
+                    }
+                    Toggle(isOn: $showResultsOnlyForPreferredModels) {
+                        Text("Only show results for preferred models")
                             .padding(.leading, 4)
                     }
                     

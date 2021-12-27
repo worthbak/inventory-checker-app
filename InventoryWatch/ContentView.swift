@@ -13,6 +13,10 @@ struct ContentView: View {
     @AppStorage("lastUpdateDate") private var lastUpdateDate: String = ""
     @AppStorage("preferredProductType") private var preferredProductType: String = "MacBookPro"
     
+    private var onlyShowingPreferredResults: Bool {
+        return UserDefaults.standard.bool(forKey: "showResultsOnlyForPreferredModels")
+    }
+    
     var body: some View {
         VStack {
             HStack {
@@ -75,12 +79,18 @@ struct ContentView: View {
                 }
                 
                 if model.availableParts.isEmpty && model.isLoading == false {
-                    Text("No models available")
+                    Text("No models available.")
                         .foregroundColor(.secondary)
                 }
             }
             
             HStack {
+                if onlyShowingPreferredResults {
+                    Text("Only showing results for preferred models.")
+                        .font(.caption)
+                        .padding(.leading, 8)
+                }
+                
                 Spacer()
                 if lastUpdateDate.isEmpty == false {
                     Text("Last update at \(lastUpdateDate)")
