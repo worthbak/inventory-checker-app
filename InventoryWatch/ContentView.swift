@@ -79,7 +79,6 @@ struct ContentView: View {
                 }
                 
                 if model.availableParts.isEmpty && model.isLoading == false {
-                    
                     Text("No models available.")
                         .foregroundColor(.secondary)
                 }
