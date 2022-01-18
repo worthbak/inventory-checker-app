@@ -70,9 +70,11 @@ struct ContentView: View {
                     ForEach(model.availableParts, id: \.0.storeNumber) { data in
                         Text("\(Text(data.0.storeName).font(.headline)) \(Text(data.0.locationDescription).font(.subheadline))")
                             
-                        
-                        ForEach(data.1) { part in
-                            Text(model.productName(forSKU: part.partNumber))
+                      let sortedProductNames = data.1.map { model.productName(forSKU: $0.partNumber) }
+                        .sortedNumerically()
+
+                      ForEach(sortedProductNames, id: \.self) { productName in
+                            Text(productName)
                                 .font(.subheadline)
                         }
                     }
@@ -130,4 +132,12 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
             .environmentObject(Model.testData)
     }
+}
+
+extension Array where Element == String {
+  fileprivate func sortedNumerically() -> [Element] {
+    sorted { lhs, rhs in
+      lhs.compare(rhs, options: [.numeric], locale: .current) == .orderedAscending
+    }
+  }
 }
