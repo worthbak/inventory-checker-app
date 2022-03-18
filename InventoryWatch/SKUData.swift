@@ -63,6 +63,20 @@ func iPadDataForCountry(_ country: Country, isWifi: Bool) -> SKUData {
     return SKUData(orderedSKUs: localOrderedSkus, lookup: skusToName)
 }
 
+func MacStudioDataForCountry(_ country: Country) -> SKUData {
+    let orderedSkus = [
+        "MJMW3\(country.skuCode)/A",
+        "MJMV3\(country.skuCode)/A"
+    ]
+    
+    let skusToName = [
+        "MJMV3\(country.skuCode)/A": "M1 Max (10c CPU, 24c GPU), 32GB RAM, 512GB SSD",
+        "MJMW3\(country.skuCode)/A": "M1 Ultra (20c CPU, 48c GPU), 64GB RAM, 1TB SSD"
+    ]
+    
+    return SKUData(orderedSKUs: orderedSkus, lookup: skusToName)
+}
+
 func MBPDataForCountry(_ country: Country) -> SKUData {
     
     let orderedSkus = [

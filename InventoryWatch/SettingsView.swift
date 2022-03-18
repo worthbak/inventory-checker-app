@@ -51,7 +51,7 @@ struct SettingsView: View {
             HStack(alignment: .top, spacing: 24) {
                 VStack(alignment: .leading) {
                     Picker("Country", selection: $selectedCountryIndex) {
-                        ForEach(0..<OrderedCountries.count) { index in
+                        ForEach(0..<OrderedCountries.count, id: \.self) { index in
                             let countryCode = OrderedCountries[index]
                             let country = Countries[countryCode]
                             Text(country?.name ?? countryCode)
@@ -60,6 +60,7 @@ struct SettingsView: View {
                     
                     Picker("Product Type", selection: $preferredProductType) {
                         Text(ProductType.MacBookPro.presentableName).tag(ProductType.MacBookPro.rawValue)
+                        Text(ProductType.MacStudio.presentableName).tag(ProductType.MacStudio.rawValue)
                         Text(ProductType.iPadWifi.presentableName).tag(ProductType.iPadWifi.rawValue)
                         Text(ProductType.iPadCellular.presentableName).tag(ProductType.iPadCellular.rawValue)
                         Text(ProductType.iPhoneRegular13.presentableName).tag(ProductType.iPhoneRegular13.rawValue)
