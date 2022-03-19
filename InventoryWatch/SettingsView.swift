@@ -215,6 +215,9 @@ struct SettingsView: View {
         .onChange(of: preferredCountry) { _ in
             loadSkus()
         }
+        .onChange(of: showResultsOnlyForPreferredModels) { _ in
+            model.fetchLatestInventory()
+        }
     }
     
     func loadCountries() {

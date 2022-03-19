@@ -94,20 +94,22 @@ struct ContentView: View {
             }
             
             HStack {
+                let font = useLargeText ? Font.title3 : Font.caption
+                
                 if onlyShowingPreferredResults {
                     Text("Only showing results for preferred models.")
-                        .font(.caption)
+                        .font(font)
                         .padding(.leading, 8)
                 }
                 
                 Spacer()
+                
                 if lastUpdateDate.isEmpty == false {
-                    let font = useLargeText ? Font.headline : Font.caption
                     Text("Last update at \(lastUpdateDate)")
                         .font(font)
                 } else {
                     Text("")
-                        .font(.caption)
+                        .font(font)
                 }
                 
                 Button(
