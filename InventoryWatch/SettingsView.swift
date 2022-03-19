@@ -39,6 +39,7 @@ struct SettingsView: View {
     @AppStorage("showResultsOnlyForPreferredModels") private var showResultsOnlyForPreferredModels: Bool = false
     @AppStorage("customSku") private var customSku = ""
     @AppStorage("customSkuNickname") private var customSkuNickname = ""
+    @AppStorage("useLargeText") private var useLargeText: Bool = false
     
     @State private var selectedCountryIndex = 0
     @State private var allModels: [ProductModel] = []
@@ -92,11 +93,17 @@ struct SettingsView: View {
                 .padding(.leading, 8)
                 .padding(.bottom, 8)
                 
-                HStack(alignment: .top) {
-                    Text("Custom SKU")
-                    VStack {
-                        TextField("Enter a custom SKU", text: $customSku)
-                        TextField("Custom SKU Nickname", text: $customSkuNickname)
+                VStack(alignment: .leading) {
+                    HStack(alignment: .top) {
+                        Text("Custom SKU")
+                        VStack {
+                            TextField("Enter a custom SKU", text: $customSku)
+                            TextField("Custom SKU Nickname", text: $customSkuNickname)
+                        }
+                    }
+                    
+                    Toggle(isOn: $useLargeText) {
+                        Text("Use larger text sizes")
                     }
                 }
             }

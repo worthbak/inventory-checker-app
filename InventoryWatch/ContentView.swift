@@ -12,6 +12,7 @@ struct ContentView: View {
     
     @AppStorage("lastUpdateDate") private var lastUpdateDate: String = ""
     @AppStorage("preferredProductType") private var preferredProductType: String = "MacBookPro"
+    @AppStorage("useLargeText") private var useLargeText: Bool = false
     
     private var onlyShowingPreferredResults: Bool {
         return UserDefaults.standard.bool(forKey: "showResultsOnlyForPreferredModels")
@@ -30,13 +31,15 @@ struct ContentView: View {
                 Spacer()
                 
                 VStack {
+                    let font = useLargeText ? Font.largeTitle : Font.title2
+                    
                     if let product = ProductType(rawValue: preferredProductType) {
-                        Text("Available \(Text(product.presentableName).font(.title2).fontWeight(.heavy)) Models")
-                            .font(.title2)
+                        Text("Available \(Text(product.presentableName).font(font).fontWeight(.heavy)) Models")
+                            .font(font)
                             .fontWeight(.semibold)
                     } else {
                         Text("Available Models")
-                            .font(.title2)
+                            .font(font)
                             .fontWeight(.semibold)
                     }
                     
@@ -67,15 +70,19 @@ struct ContentView: View {
                             .italic()
                     }
                     
+                    let storeFont = useLargeText ? Font.largeTitle.bold() : Font.headline
+                    let cityFont = useLargeText ? Font.title2 : Font.subheadline
+                    let productFont = useLargeText ? Font.title : Font.subheadline
+                    
                     ForEach(model.availableParts, id: \.0.storeNumber) { data in
-                        Text("\(Text(data.0.storeName).font(.headline)) \(Text(data.0.locationDescription).font(.subheadline))")
+                        Text("\(Text(data.0.storeName).font(storeFont)) \(Text(data.0.locationDescription).font(cityFont))")
                             
                       let sortedProductNames = data.1.map { model.productName(forSKU: $0.partNumber) }
                         .sortedNumerically()
 
                       ForEach(sortedProductNames, id: \.self) { productName in
                             Text(productName)
-                                .font(.subheadline)
+                                .font(productFont)
                         }
                     }
                 }
@@ -95,8 +102,9 @@ struct ContentView: View {
                 
                 Spacer()
                 if lastUpdateDate.isEmpty == false {
+                    let font = useLargeText ? Font.headline : Font.caption
                     Text("Last update at \(lastUpdateDate)")
-                        .font(.caption)
+                        .font(font)
                 } else {
                     Text("")
                         .font(.caption)
