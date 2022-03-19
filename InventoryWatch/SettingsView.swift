@@ -29,6 +29,7 @@ struct SettingsView: View {
     }
     
     @EnvironmentObject var model: Model
+    @Environment(\.openURL) var openURL
     
     @AppStorage("preferredCountry") private var preferredCountry = "US"
     @AppStorage("preferredStoreNumber") private var preferredStoreNumber = ""
@@ -39,6 +40,7 @@ struct SettingsView: View {
     @AppStorage("showResultsOnlyForPreferredModels") private var showResultsOnlyForPreferredModels: Bool = false
     @AppStorage("customSku") private var customSku = ""
     @AppStorage("customSkuNickname") private var customSkuNickname = ""
+    @AppStorage("useLargeText") private var useLargeText: Bool = false
     
     @State private var selectedCountryIndex = 0
     @State private var allModels: [ProductModel] = []
@@ -51,7 +53,7 @@ struct SettingsView: View {
             HStack(alignment: .top, spacing: 24) {
                 VStack(alignment: .leading) {
                     Picker("Country", selection: $selectedCountryIndex) {
-                        ForEach(0..<OrderedCountries.count) { index in
+                        ForEach(0..<OrderedCountries.count, id: \.self) { index in
                             let countryCode = OrderedCountries[index]
                             let country = Countries[countryCode]
                             Text(country?.name ?? countryCode)
@@ -60,12 +62,16 @@ struct SettingsView: View {
                     
                     Picker("Product Type", selection: $preferredProductType) {
                         Text(ProductType.MacBookPro.presentableName).tag(ProductType.MacBookPro.rawValue)
+                        Text(ProductType.MacStudio.presentableName).tag(ProductType.MacStudio.rawValue)
                         Text(ProductType.iPadWifi.presentableName).tag(ProductType.iPadWifi.rawValue)
                         Text(ProductType.iPadCellular.presentableName).tag(ProductType.iPadCellular.rawValue)
                         Text(ProductType.iPhoneRegular13.presentableName).tag(ProductType.iPhoneRegular13.rawValue)
                         Text(ProductType.iPhoneMini13.presentableName).tag(ProductType.iPhoneMini13.rawValue)
                         Text(ProductType.iPhonePro13.presentableName).tag(ProductType.iPhonePro13.rawValue)
                         Text(ProductType.iPhoneProMax13.presentableName).tag(ProductType.iPhoneProMax13.rawValue)
+                    }
+                    .onChange(of: preferredProductType) { _ in
+                        model.fetchLatestInventory()
                     }
                     
                     Picker("Update every", selection: $preferredUpdateInterval) {
@@ -91,11 +97,27 @@ struct SettingsView: View {
                 .padding(.leading, 8)
                 .padding(.bottom, 8)
                 
-                HStack(alignment: .top) {
-                    Text("Custom SKU")
-                    VStack {
-                        TextField("Enter a custom SKU", text: $customSku)
-                        TextField("Custom SKU Nickname", text: $customSkuNickname)
+                VStack(alignment: .leading) {
+                    HStack(alignment: .top) {
+                        Text("Custom SKU")
+                        VStack {
+                            TextField("Enter a custom SKU", text: $customSku)
+                            TextField("Custom SKU Nickname", text: $customSkuNickname)
+                        }
+                    }
+                    
+                    Toggle(isOn: $useLargeText) {
+                        Text("Use larger text sizes")
+                    }
+                    
+                    if model.hasLatestVersion == false {
+                        Link(destination: URL(string: "https://worthbak.github.io/inventory-checker-app/")!) {
+                            HStack(spacing: 4) {
+                                Text("A new version of InventoryWatch is available")
+                                Image(systemName: "arrow.forward.circle")
+                            }
+                        }
+                        .padding(.top, 16)
                     }
                 }
             }
@@ -145,6 +167,7 @@ struct SettingsView: View {
             loadCountries()
             loadSkus()
             loadStores(filterText: nil)
+            model.fetchLatestGithubRelease()
         }
         .onChange(of: selectedCountryIndex) { newValue in
             let newCountry = OrderedCountries[newValue]
@@ -191,6 +214,9 @@ struct SettingsView: View {
         }
         .onChange(of: preferredCountry) { _ in
             loadSkus()
+        }
+        .onChange(of: showResultsOnlyForPreferredModels) { _ in
+            model.fetchLatestInventory()
         }
     }
     
