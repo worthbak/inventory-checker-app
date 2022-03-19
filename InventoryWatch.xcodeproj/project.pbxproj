@@ -19,6 +19,7 @@
 		38D0C3A2273C60B500A7DE65 /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D0C3A1273C60B500A7DE65 /* Countries.swift */; };
 		38D307DB2745E2E700A0686D /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D307DA2745E2E700A0686D /* Analytics.swift */; };
 		38DBAF39273D6692009992D8 /* Stores.json in Resources */ = {isa = PBXBuildFile; fileRef = 38DBAF38273D6692009992D8 /* Stores.json */; };
+		38E1C21A27E6714E0047703D /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E1C21927E6714E0047703D /* Helpers.swift */; };
 		38E4279E273EF542006BF6D7 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 38E4279D273EF542006BF6D7 /* Credits.rtf */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		38D0C3A1273C60B500A7DE65 /* Countries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countries.swift; sourceTree = "<group>"; };
 		38D307DA2745E2E700A0686D /* Analytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analytics.swift; sourceTree = "<group>"; };
 		38DBAF38273D6692009992D8 /* Stores.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Stores.json; sourceTree = "<group>"; };
+		38E1C21927E6714E0047703D /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		38E4279D273EF542006BF6D7 /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,6 +77,7 @@
 				3817268D273AA898003B8D76 /* SettingsView.swift */,
 				386FDC69273A200000C1BAC2 /* NotificationManager.swift */,
 				386FDC652739DADD00C1BAC2 /* Model.swift */,
+				38E1C21927E6714E0047703D /* Helpers.swift */,
 				38D307DA2745E2E700A0686D /* Analytics.swift */,
 				38DBAF38273D6692009992D8 /* Stores.json */,
 				380CF9FA27448E860080472A /* iPhoneModels-intl.json */,
@@ -173,6 +176,7 @@
 				386FDC68273A18F800C1BAC2 /* SKUData.swift in Sources */,
 				38D307DB2745E2E700A0686D /* Analytics.swift in Sources */,
 				386FDC6A273A200000C1BAC2 /* NotificationManager.swift in Sources */,
+				38E1C21A27E6714E0047703D /* Helpers.swift in Sources */,
 				3817268E273AA898003B8D76 /* SettingsView.swift in Sources */,
 				386FDC592739DA7300C1BAC2 /* ContentView.swift in Sources */,
 				38D0C3A2273C60B500A7DE65 /* Countries.swift in Sources */,

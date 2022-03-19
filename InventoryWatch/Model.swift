@@ -96,6 +96,10 @@ struct AllPhoneModels {
     }
 }
 
+struct GithubTag: Codable {
+    let name: String
+}
+
 final class Model: ObservableObject {
     enum ModelError: Swift.Error {
         case couldNotGenerateURL
@@ -122,6 +126,7 @@ final class Model: ObservableObject {
     
     @Published var availableParts: [(Store, [PartAvailability])] = []
     @Published var isLoading = false
+    @Published var hasLatestVersion = true
     @Published var errorState: ModelError?
     
     lazy private(set) var allStores: [JsonStore] = {
@@ -310,6 +315,41 @@ final class Model: ObservableObject {
         }
     }
     
+    func fetchLatestGithubRelease() {
+        guard
+            let appVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String,
+            let url = URL(string: "https://api.github.com/repos/worthbak/inventory-checker-app/tags")
+        else {
+            return
+        }
+        
+        URLSession.shared.dataTask(with: url) { data, response, error in
+            guard let data = data, let parsed = try? JSONDecoder().decode([GithubTag].self, from: data) else {
+                return
+            }
+            
+            guard var latestReleaseVersion = parsed.first?.name else {
+                return
+            }
+            
+            // remove leading `v` if present
+            latestReleaseVersion = latestReleaseVersion.replacingOccurrences(of: "v", with: "")
+            
+            let isLatestRelease: Bool
+            switch compareNumeric(latestReleaseVersion, appVersion) {
+            case .orderedAscending, .orderedSame:
+                isLatestRelease = true
+            case .orderedDescending:
+                isLatestRelease = false
+            }
+            
+            DispatchQueue.main.async {
+                print("Has \(isLatestRelease ? "latest" : "outdated") version: local: \(appVersion), remote: \(latestReleaseVersion)")
+                self.hasLatestVersion = isLatestRelease
+            }
+        }.resume()
+    }
+    
     func fetchLatestInventory() {
         guard !isTest else {
             return
@@ -317,6 +357,8 @@ final class Model: ObservableObject {
         
         syncPreferredStore()
         isLoading = true
+        
+        self.fetchLatestGithubRelease()
         self.updateErrorState(to: .none, deactivateLoadingState: false)
         
         let filterForPreferredModels = UserDefaults.standard.bool(forKey: "showResultsOnlyForPreferredModels")

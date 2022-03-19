@@ -141,11 +141,3 @@ struct ContentView_Previews: PreviewProvider {
             .environmentObject(Model.testData)
     }
 }
-
-extension Array where Element == String {
-  fileprivate func sortedNumerically() -> [Element] {
-    sorted { lhs, rhs in
-      lhs.compare(rhs, options: [.numeric], locale: .current) == .orderedAscending
-    }
-  }
-}

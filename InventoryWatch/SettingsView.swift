@@ -29,6 +29,7 @@ struct SettingsView: View {
     }
     
     @EnvironmentObject var model: Model
+    @Environment(\.openURL) var openURL
     
     @AppStorage("preferredCountry") private var preferredCountry = "US"
     @AppStorage("preferredStoreNumber") private var preferredStoreNumber = ""
@@ -69,6 +70,9 @@ struct SettingsView: View {
                         Text(ProductType.iPhonePro13.presentableName).tag(ProductType.iPhonePro13.rawValue)
                         Text(ProductType.iPhoneProMax13.presentableName).tag(ProductType.iPhoneProMax13.rawValue)
                     }
+                    .onChange(of: preferredProductType) { _ in
+                        model.fetchLatestInventory()
+                    }
                     
                     Picker("Update every", selection: $preferredUpdateInterval) {
                         Text("Never").tag(0)
@@ -104,6 +108,16 @@ struct SettingsView: View {
                     
                     Toggle(isOn: $useLargeText) {
                         Text("Use larger text sizes")
+                    }
+                    
+                    if model.hasLatestVersion == false {
+                        Link(destination: URL(string: "https://worthbak.github.io/inventory-checker-app/")!) {
+                            HStack(spacing: 4) {
+                                Text("A new version of InventoryWatch is available")
+                                Image(systemName: "arrow.forward.circle")
+                            }
+                        }
+                        .padding(.top, 16)
                     }
                 }
             }
@@ -153,6 +167,7 @@ struct SettingsView: View {
             loadCountries()
             loadSkus()
             loadStores(filterText: nil)
+            model.fetchLatestGithubRelease()
         }
         .onChange(of: selectedCountryIndex) { newValue in
             let newCountry = OrderedCountries[newValue]
