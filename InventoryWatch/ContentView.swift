@@ -70,9 +70,9 @@ struct ContentView: View {
                             .italic()
                     }
                     
-                    let storeFont = useLargeText ? Font.largeTitle.bold() : Font.headline
-                    let cityFont = useLargeText ? Font.title2 : Font.subheadline
-                    let productFont = useLargeText ? Font.title : Font.subheadline
+                    let storeFont = useLargeText ? Font.largeTitle.bold() : Font.headline.bold()
+                    let cityFont = useLargeText ? Font.title : Font.subheadline.bold()
+                    let productFont = useLargeText ? Font.title.weight(.medium) : Font.body.weight(.medium)
                     
                     ForEach(model.availableParts, id: \.0.storeNumber) { data in
                         Text("\(Text(data.0.storeName).font(storeFont)) \(Text(data.0.locationDescription).font(cityFont))")
