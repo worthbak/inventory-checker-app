@@ -1,6 +1,6 @@
-## [Download InventoryWatch (0.0.1) Now ⤵️](./InventoryWatch-0.0.1.zip)
+## [Download InventoryWatch (0.0.2) Now ⤵️](./InventoryWatch-0.0.2.zip)
 
-![InventoryWatch-Screenshot](./ic-mkt-1.jpg)
+![InventoryWatch-Screenshot](./ic-mkt.jpg)
 
 ### What is InventoryWatch?
 
