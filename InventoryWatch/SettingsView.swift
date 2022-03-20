@@ -63,6 +63,7 @@ struct SettingsView: View {
                     Picker("Product Type", selection: $preferredProductType) {
                         Text(ProductType.MacBookPro.presentableName).tag(ProductType.MacBookPro.rawValue)
                         Text(ProductType.MacStudio.presentableName).tag(ProductType.MacStudio.rawValue)
+                        Text(ProductType.StudioDisplay.presentableName).tag(ProductType.StudioDisplay.rawValue)
                         Text(ProductType.iPadWifi.presentableName).tag(ProductType.iPadWifi.rawValue)
                         Text(ProductType.iPadCellular.presentableName).tag(ProductType.iPadCellular.rawValue)
                         Text(ProductType.iPhoneRegular13.presentableName).tag(ProductType.iPhoneRegular13.rawValue)
@@ -208,6 +209,10 @@ struct SettingsView: View {
             preferredSKUs = ""
             loadSkus()
             model.clearCurrentAvailableParts()
+            model.fetchLatestInventory()
+        }
+        .onChange(of: preferredStoreNumber) { _ in
+            model.fetchLatestInventory()
         }
         .onChange(of: preferredUpdateInterval) { _ in
             model.fetchLatestInventory()

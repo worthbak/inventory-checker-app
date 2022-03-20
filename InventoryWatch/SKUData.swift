@@ -63,6 +63,28 @@ func iPadDataForCountry(_ country: Country, isWifi: Bool) -> SKUData {
     return SKUData(orderedSKUs: localOrderedSkus, lookup: skusToName)
 }
 
+func StudioDisplayForCountry(_ country: Country) -> SKUData {
+    let orderedSkus = [
+        "MK0U3\(country.skuCode)/A",
+        "MK0Q3\(country.skuCode)/A",
+        "MMYQ3\(country.skuCode)/A",
+        "MMYW3\(country.skuCode)/A",
+        "MMYV3\(country.skuCode)/A",
+        "MMYX3\(country.skuCode)/A"
+    ]
+    
+    let skusToName = [
+        "MK0U3\(country.skuCode)/A": "Studio Display - Standard glass - Tilt-adjustable stand",
+        "MK0Q3\(country.skuCode)/A": "Studio Display - Standard glass - Tilt- and height-adjustable stand",
+        "MMYQ3\(country.skuCode)/A": "Studio Display - Standard glass - VESA mount adapter",
+        "MMYW3\(country.skuCode)/A": "Studio Display - Nano-texture glass - Tilt-adjustable stand",
+        "MMYV3\(country.skuCode)/A": "Studio Display - Nano-texture glass - Tilt- and height-adjustable stand",
+        "MMYX3\(country.skuCode)/A": "Studio Display - Nano-texture glass - VESA mount adapter"
+    ]
+    
+    return SKUData(orderedSKUs: orderedSkus, lookup: skusToName)
+}
+
 func MacStudioDataForCountry(_ country: Country) -> SKUData {
     let orderedSkus = [
         "MJMW3\(country.skuCode)/A",
