@@ -61,14 +61,15 @@ struct SettingsView: View {
                     }
                     
                     Picker("Product Type", selection: $preferredProductType) {
-                        Text(ProductType.MacBookPro.presentableName).tag(ProductType.MacBookPro.rawValue)
-                        Text(ProductType.MacStudio.presentableName).tag(ProductType.MacStudio.rawValue)
-                        Text(ProductType.iPadWifi.presentableName).tag(ProductType.iPadWifi.rawValue)
-                        Text(ProductType.iPadCellular.presentableName).tag(ProductType.iPadCellular.rawValue)
-                        Text(ProductType.iPhoneRegular13.presentableName).tag(ProductType.iPhoneRegular13.rawValue)
-                        Text(ProductType.iPhoneMini13.presentableName).tag(ProductType.iPhoneMini13.rawValue)
-                        Text(ProductType.iPhonePro13.presentableName).tag(ProductType.iPhonePro13.rawValue)
-                        Text(ProductType.iPhoneProMax13.presentableName).tag(ProductType.iPhoneProMax13.rawValue)
+                        #warning("add array data")
+//                        Text(ProductType.MacBookPro.presentableName).tag(ProductType.MacBookPro.rawValue)
+//                        Text(ProductType.MacStudio.presentableName).tag(ProductType.MacStudio.rawValue)
+//                        Text(ProductType.iPadWifi.presentableName).tag(ProductType.iPadWifi.rawValue)
+//                        Text(ProductType.iPadCellular.presentableName).tag(ProductType.iPadCellular.rawValue)
+//                        Text(ProductType.iPhoneRegular13.presentableName).tag(ProductType.iPhoneRegular13.rawValue)
+//                        Text(ProductType.iPhoneMini13.presentableName).tag(ProductType.iPhoneMini13.rawValue)
+//                        Text(ProductType.iPhonePro13.presentableName).tag(ProductType.iPhonePro13.rawValue)
+//                        Text(ProductType.iPhoneProMax13.presentableName).tag(ProductType.iPhoneProMax13.rawValue)
                     }
                     .onChange(of: preferredProductType) { _ in
                         model.fetchLatestInventory()

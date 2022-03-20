@@ -33,15 +33,16 @@ struct ContentView: View {
                 VStack {
                     let font = useLargeText ? Font.largeTitle : Font.title2
                     
-                    if let product = ProductType(rawValue: preferredProductType) {
-                        Text("Available \(Text(product.presentableName).font(font).fontWeight(.heavy)) Models")
-                            .font(font)
-                            .fontWeight(.semibold)
-                    } else {
-                        Text("Available Models")
-                            .font(font)
-                            .fontWeight(.semibold)
-                    }
+                    #warning("load display name")
+//                    if let product = ProductType(rawValue: preferredProductType) {
+//                        Text("Available \(Text(product.presentableName).font(font).fontWeight(.heavy)) Models")
+//                            .font(font)
+//                            .fontWeight(.semibold)
+//                    } else {
+//                        Text("Available Models")
+//                            .font(font)
+//                            .fontWeight(.semibold)
+//                    }
                     
                     
                     if let preferredStoreInfo = model.preferredStoreInfo {

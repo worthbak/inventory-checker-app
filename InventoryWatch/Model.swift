@@ -42,37 +42,37 @@ extension PartAvailability: Identifiable {
     }
 }
 
-enum ProductType: String, Codable {
-    case MacBookPro
-    case MacStudio
-    case iPadWifi
-    case iPadCellular
-    case iPhoneRegular13
-    case iPhoneMini13
-    case iPhonePro13
-    case iPhoneProMax13
-    
-    var presentableName: String {
-        switch self {
-        case .MacBookPro:
-            return "MacBook Pro"
-        case .MacStudio:
-            return "Mac Studio"
-        case .iPadWifi:
-            return "iPad mini (Wifi)"
-        case .iPadCellular:
-            return "iPad mini (Cellular)"
-        case .iPhoneRegular13:
-            return "iPhone 13"
-        case .iPhoneMini13:
-            return "iPhone 13 mini"
-        case .iPhonePro13:
-            return "iPhone 13 Pro"
-        case .iPhoneProMax13:
-            return "iPhone 13 Pro Max"
-        }
-    }
-}
+//enum ProductType: String, Codable {
+//    case MacBookPro
+//    case MacStudio
+//    case iPadWifi
+//    case iPadCellular
+//    case iPhoneRegular13
+//    case iPhoneMini13
+//    case iPhonePro13
+//    case iPhoneProMax13
+//
+//    var presentableName: String {
+//        switch self {
+//        case .MacBookPro:
+//            return "MacBook Pro"
+//        case .MacStudio:
+//            return "Mac Studio"
+//        case .iPadWifi:
+//            return "iPad mini (Wifi)"
+//        case .iPadCellular:
+//            return "iPad mini (Cellular)"
+//        case .iPhoneRegular13:
+//            return "iPhone 13"
+//        case .iPhoneMini13:
+//            return "iPhone 13 mini"
+//        case .iPhonePro13:
+//            return "iPhone 13 Pro"
+//        case .iPhoneProMax13:
+//            return "iPhone 13 Pro Max"
+//        }
+//    }
+//}
 
 struct AllPhoneModels {
     struct PhoneModel {
@@ -152,75 +152,6 @@ final class Model: ObservableObject {
         }
     }()
     
-    lazy private var iPhoneModels: [Country: AllPhoneModels] = {
-        let phoneModelsJson = loadIPhoneModels()
-        var rv = [Country: AllPhoneModels]()
-        
-        for (countryCode, phones) in phoneModelsJson {
-            guard let country = Countries[countryCode.uppercased()] else {
-                self.updateErrorState(to: ModelError.invalidLocalModelStore)
-                return [:]
-            }
-            
-            let modelsData = [
-                (phones["proMax13"], \AllPhoneModels.proMax13),
-                (phones["pro13"], \AllPhoneModels.pro13),
-                (phones["mini13"], \AllPhoneModels.mini13),
-                (phones["regular13"], \AllPhoneModels.regular13)
-            ]
-            
-            var phoneModels = AllPhoneModels(proMax13: [], pro13: [], mini13: [], regular13: [])
-            for (models, keyPath) in modelsData {
-                guard let models = models else {
-                    continue
-                }
-                
-                let parsed: [AllPhoneModels.PhoneModel] = models.map { modelData in
-                    return AllPhoneModels.PhoneModel(sku: modelData.key, productName: modelData.value)
-                }
-                
-                phoneModels[keyPath: keyPath] = parsed
-            }
-            
-            rv[country] = phoneModels
-        }
-        
-        return rv
-    }()
-    
-    func phoneModels(for country: Country) -> AllPhoneModels {
-        guard let models = iPhoneModels[country] else {
-            self.updateErrorState(to: ModelError.invalidLocalModelStore)
-            return AllPhoneModels(proMax13: [], pro13: [], mini13: [], regular13: [])
-        }
-        
-        return models
-    }
-    
-                                    // country: type:    model:   description
-    private func loadIPhoneModels() -> [String: [String: [String: String]]] {
-        let location = "iPhoneModels-intl"
-        let fileType = "json"
-        if let path = Bundle.main.path(forResource: location, ofType: fileType) {
-            do {
-                let data = try Data(contentsOf: URL(fileURLWithPath: path))
-                let decoder = JSONDecoder()
-                
-                if let jsonStores = try? decoder.decode([String: [String: [String: String]]].self, from: data) {
-                    return jsonStores
-                } else {
-                    return [:]
-                }
-                
-            } catch {
-                print(error)
-                return [:]
-            }
-        } else {
-            return [:]
-        }
-    }
-    
     private var preferredStoreInfoBacking: JsonStore?
     @Published var preferredStoreInfo: String? = nil
     
@@ -228,8 +159,9 @@ final class Model: ObservableObject {
         return UserDefaults.standard.string(forKey: "preferredCountry") ?? "US"
     }
     
+    private static let defaultProductType = "MacBookPro"
     private var preferredProductType: String {
-        return UserDefaults.standard.string(forKey: "preferredProductType") ?? "MacBookPro"
+        return UserDefaults.standard.string(forKey: "preferredProductType") ?? Model.defaultProductType
     }
     
     private var countryPathElement: String {
@@ -256,31 +188,72 @@ final class Model: ObservableObject {
     }
     
     var skuData: SKUData {
-        let productType = ProductType(rawValue: preferredProductType) ?? .MacBookPro
-        let country = Countries[preferredCountry] ?? USData
-        
-        switch productType {
-        case .MacBookPro:
-            let country = Countries[preferredCountry] ?? USData
-            return MBPDataForCountry(country)
-        case .MacStudio:
-            let country = Countries[preferredCountry] ?? USData
-            return MacStudioDataForCountry(country)
-        case .iPadWifi:
-            let country = Countries[preferredCountry] ?? USData
-            return iPadDataForCountry(country, isWifi: true)
-        case .iPadCellular:
-            let country = Countries[preferredCountry] ?? USData
-            return iPadDataForCountry(country, isWifi: false)
-        case .iPhoneRegular13:
-            return phoneModels(for: country).toSkuData(\.regular13)
-        case .iPhoneMini13:
-            return phoneModels(for: country).toSkuData(\.mini13)
-        case .iPhonePro13:
-            return phoneModels(for: country).toSkuData(\.pro13)
-        case .iPhoneProMax13:
-            return phoneModels(for: country).toSkuData(\.proMax13)
+        if let data = remoteSkuData {
+            
+            let split = preferredProductType.split(separator: ".")
+            
+            if split.count > 1 {
+                // if preferred product is split, that should mean `${iPhone}.${model}`
+                let iPhoneModels = data.iPhoneProductData
+                
+                let productClass = split[0]
+                let model = String(split[1])
+                
+                let productData = iPhoneModels.first(where: { $0.key == productClass })
+                let skus = productData?.skus
+                
+                let hasCountry = skus?.countries.contains(preferredCountry.lowercased()) ?? false
+                let modelDisplay = skus?.modelKeys[model]
+                let hasModel = modelDisplay != nil
+                
+                if hasCountry, hasModel {
+                    let data = skus?.countryData[preferredCountry.lowercased()]?[model] ?? [:]
+                    
+                    let mappedSkus: [ProductSku] = data.map { (key, value) in
+                        return ProductSku(partNumber: key, displayName: value)
+                    }
+                    
+                    return SKUData(from: mappedSkus)
+                }
+            } else {
+                if let matchingProduct = data.productData.first(where: { $0.key == preferredProductType }) ?? data.productData.first {
+                    let delimiter = data.countryDelimiter
+                    let country = Countries[preferredCountry] ?? USData
+                    
+                    let skusWithCountry: [ProductSku] = matchingProduct.skus.map { item in
+                        let part = item.partNumber
+                        let partWithCountry = part.replacingOccurrences(of: delimiter, with: country.skuCode)
+                        
+                        return ProductSku(partNumber: partWithCountry, displayName: item.displayName)
+                    }
+                    
+                    return SKUData(from: skusWithCountry)
+                }
+            }
         }
+        
+        #warning("set error state here, and return default data (?)")
+        UserDefaults.standard.set(Model.defaultProductType, forKey: "preferredProductType")
+        return SKUData(from: [])
+    }
+    
+    var productTypes: [String: String] {
+        guard let skuData = remoteSkuData else {
+            return [:]
+        }
+        
+        var map: [String: String] = skuData.productData.reduce(into: [:]) { partialResult, next in
+            return partialResult[next.key] = next.displayName
+        }
+        
+        skuData.iPhoneProductData.forEach { iphoneData in
+//            map.merge(iphoneData.skus.modelKeys) { current, _ in current }
+            iphoneData.skus.modelKeys.forEach { modelKey, displayName in
+                map["\(iphoneData.key).\(modelKey)"] = displayName
+            }
+        }
+        
+        return map
     }
     
     private var updateTimer: Timer?
@@ -328,7 +301,7 @@ final class Model: ObservableObject {
                 return
             }
             
-            guard var latestReleaseVersion = parsed.first?.name else {
+            guard var latestReleaseVersion = parsed.last?.name else {
                 return
             }
             
@@ -350,6 +323,8 @@ final class Model: ObservableObject {
         }.resume()
     }
     
+    private var remoteSkuData: RemoteSkuData?
+    
     func fetchLatestInventory() {
         guard !isTest else {
             return
@@ -361,6 +336,28 @@ final class Model: ObservableObject {
         self.fetchLatestGithubRelease()
         self.updateErrorState(to: .none, deactivateLoadingState: false)
         
+        if remoteSkuData == nil {
+            fetchSkuData { result in
+                switch result {
+                case .failure(let error):
+                    switch error {
+                    case .failedToLoadLocalJson:
+                        fatalError("failed to serialize local product data")
+                    case .localParsingError(let swiftError):
+                        fatalError(swiftError.localizedDescription)
+                    }
+                case .success(let data):
+                    self.remoteSkuData = data
+                    
+                    fetchStoreData()
+                }
+            }
+        } else {
+            fetchStoreData()
+        }
+    }
+    
+    private func fetchStoreData() {
         let filterForPreferredModels = UserDefaults.standard.bool(forKey: "showResultsOnlyForPreferredModels")
         let filterModels = filterForPreferredModels ? preferredSKUs : nil
         
@@ -398,7 +395,7 @@ final class Model: ObservableObject {
             })
         }
         
-            AnalyticsData.updateAnalyticsData()
+        AnalyticsData.updateAnalyticsData()
     }
     
     private func parseStoreResponse(_ responseData: Data?, filterForModels: Set<String>?) throws {
