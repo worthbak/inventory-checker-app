@@ -1,4 +1,4 @@
-## [Download InventoryWatch (0.0.2) Now ⤵️](./InventoryWatch-0.0.2.zip)
+## [Download InventoryWatch (0.0.3) Now ⤵️](./InventoryWatch-0.0.3.zip)
 
 ![InventoryWatch-Screenshot](./ic-mkt.jpg)
 
@@ -8,9 +8,24 @@ InventoryWatch is an app for macOS that monitors local Apple Store inventory and
 
 ### Why do I need that? 
 
-Have you tried ordering a new MacBook Pro? Or a new iPhone Pro Max? Shipping times can stretch into multiple weeks or months, and uncertainty around global supply chains can add stress to a process that would test anyone's patience. 
+Ordering a new Apple product online can often involve monthslong shipping times and frustratingly vague delivery estimates. InventoryWatch is designed to help you jump the line: Apple Stores frequently (but irregularly) get fresh stock of hard-to-find products. When that happens, InventoryWatch will notify you immediately, so you can place an in-store pickup order and get your product in *minutes* instead of months. 
 
-InventoryWatch is designed to help you jump the line: Apple Stores frequently (but irregularly) get fresh stock. When that happens, InventoryWatch will notify you immediately, so you can place an in-store pickup order and get your product in minutes instead of months. 
+### What products does InventoryWatch support? 
+
+InventoryWatch can monitor local stock for the following products: 
+
+* MacBook Pro (14" and 16")
+* Mac Studio (**new**)
+* Studio Display (**new**)
+* iPhone 13
+* iPhone 13 mini
+* iPhone 13 Pro
+* iPhone 13 Pro Max
+* iPad mini (wifi and cellular)
+
+Note that not all build-to-order configurations will be stocked by Apple Stores (this is especially true for MacBook Pros). InventoryWatch only lists configurations that are known to be stocked by Apple Stores. 
+
+_Don't see your product on the list? Add an issue to the Github project [here](https://github.com/worthbak/inventory-checker-app/issues)._
 
 ### Does InventoryWatch support my local store? 
 
@@ -26,21 +41,6 @@ InventoryWatch supports querying in-store pickup stock in seven countries:
 
 _Don't see your country on the list? Add an issue to the Github project [here](https://github.com/worthbak/inventory-checker-app/issues)._
 
-### What products does InventoryWatch support? 
-
-InventoryWatch can monitor local stock for the following products: 
-
-* MacBook Pro (14" and 16")
-* iPhone 13
-* iPhone 13 mini
-* iPhone 13 Pro
-* iPhone 13 Pro Max
-* iPad mini (wifi and cellular)
-
-Note that not all build-to-order configurations will be stocked by Apple Stores (this is especially true for MacBook Pros). InventoryWatch only lists configurations that are known to be stocked by Apple Stores. 
-
-_Don't see your product on the list? Add an issue to the Github project [here](https://github.com/worthbak/inventory-checker-app/issues)._
-
 ### How much does all of this cost? 
 
 InventoryWatch is free, and does not collect any identifiable information about you. Anonymized usage statistics are collected.
@@ -53,4 +53,4 @@ macOS Big Sur 11.5 or newer. InventoryWatch is built with SwiftUI.
 
 ## Ready to go?
 
-[Download InventoryWatch (0.0.1) Now ⤵️](./InventoryWatch-0.0.1.zip)
+[Download InventoryWatch (0.0.3) Now ⤵️](./InventoryWatch-0.0.3.zip)
