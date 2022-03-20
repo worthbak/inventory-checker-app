@@ -334,12 +334,20 @@ final class Model: ObservableObject {
                 return
             }
             
-            guard var latestReleaseVersion = parsed.last?.name else {
+            let processedData = parsed
+                .filter { !$0.name.hasPrefix("v") }
+                .sorted { first, second in
+                    switch compareNumeric(first.name, second.name) {
+                    case .orderedAscending, .orderedSame:
+                        return false
+                    case .orderedDescending:
+                        return true
+                    }
+                }
+            
+            guard let latestReleaseVersion = processedData.first?.name else {
                 return
             }
-            
-            // remove leading `v` if present
-            latestReleaseVersion = latestReleaseVersion.replacingOccurrences(of: "v", with: "")
             
             let isLatestRelease: Bool
             switch compareNumeric(latestReleaseVersion, appVersion) {
