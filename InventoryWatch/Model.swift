@@ -45,6 +45,7 @@ extension PartAvailability: Identifiable {
 enum ProductType: String, Codable {
     case MacBookPro
     case MacStudio
+    case StudioDisplay
     case iPadWifi
     case iPadCellular
     case iPhoneRegular13
@@ -58,6 +59,8 @@ enum ProductType: String, Codable {
             return "MacBook Pro"
         case .MacStudio:
             return "Mac Studio"
+        case .StudioDisplay:
+            return "Studio Display"
         case .iPadWifi:
             return "iPad mini (Wifi)"
         case .iPadCellular:
@@ -266,6 +269,9 @@ final class Model: ObservableObject {
         case .MacStudio:
             let country = Countries[preferredCountry] ?? USData
             return MacStudioDataForCountry(country)
+        case .StudioDisplay:
+            let country = Countries[preferredCountry] ?? USData
+            return StudioDisplayForCountry(country)
         case .iPadWifi:
             let country = Countries[preferredCountry] ?? USData
             return iPadDataForCountry(country, isWifi: true)
@@ -328,7 +334,7 @@ final class Model: ObservableObject {
                 return
             }
             
-            guard var latestReleaseVersion = parsed.first?.name else {
+            guard var latestReleaseVersion = parsed.last?.name else {
                 return
             }
             
