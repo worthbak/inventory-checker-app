@@ -30,7 +30,7 @@ let Countries: [String: Country] = [
         altSkuCode: "VC"
     ),
     "AU": Country(
-        name: "Austrailia",
+        name: "Australia",
         storePathComponent: "/au",
         skuCode: "X",
         altSkuCode: nil
