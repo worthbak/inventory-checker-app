@@ -12,3 +12,26 @@ Run the following in the Chrome console while viewing an iPhone purchase page:
 ```
 temp = {}; window.PRODUCT_SELECTION_BOOTSTRAP.productSelectionData.products.map((a) => { temp[`${a.basePartNumber}`] = a })
 ```
+
+Useful Chrome console snippets:
+
+```
+temp = {}; window.PRODUCT_SELECTION_BOOTSTRAP.productSelectionData.products.map((a) => { temp[`${a.basePartNumber}`] = a })
+
+const mapToName = (familyType) => {
+	let rv = {};
+	rv = Object.entries(temp)
+	.filter(([key, value]) => value.familyType === familyType)
+	.reduce((acc, next) => {
+			var value = next[1];
+			return {
+				...acc,
+				[value.partNumber]: `iPhone 13 Pro Max ${value.dimensionCapacity} ${value.dimensionColor}`
+			}
+	}, {}
+	);
+	return JSON.stringify(rv);
+}
+
+
+```

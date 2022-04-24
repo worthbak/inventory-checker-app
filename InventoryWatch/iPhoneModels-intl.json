@@ -16,7 +16,11 @@
       "MLL53LL/A": "iPhone 13 Pro Max 1TB Sierra Blue",
       "MLL33LL/A": "iPhone 13 Pro Max 1TB Silver",
       "MLL43LL/A": "iPhone 13 Pro Max 1TB Gold",
-      "MLL23LL/A": "iPhone 13 Pro Max 1TB Graphite"
+      "MLL23LL/A": "iPhone 13 Pro Max 1TB Graphite",
+      "MNCP3LL/A": "iPhone 13 Pro Max 128GB Alpine Green",
+      "MNCQ3LL/A": "iPhone 13 Pro Max 256GB Alpine Green",
+      "MNCR3LL/A": "iPhone 13 Pro Max 512GB Alpine Green",
+      "MNCT3LL/A": "iPhone 13 Pro Max 1TB Alpine Green"
     },
     "pro13": {
       "MLTT3LL/A": "iPhone 13 Pro 128GB Sierra Blue",
@@ -34,7 +38,11 @@
       "MLUD3LL/A": "iPhone 13 Pro 1TB Sierra Blue",
       "MLUA3LL/A": "iPhone 13 Pro 1TB Silver",
       "MLUC3LL/A": "iPhone 13 Pro 1TB Gold",
-      "MLU93LL/A": "iPhone 13 Pro 1TB Graphite"
+      "MLU93LL/A": "iPhone 13 Pro 1TB Graphite",
+      "MNDT3LL/A": "iPhone 13 Pro 128GB Alpine Green",
+      "MNDU3LL/A": "iPhone 13 Pro 256GB Alpine Green",
+      "MNDV3LL/A": "iPhone 13 Pro 512GB Alpine Green",
+      "MNDW3LL/A": "iPhone 13 Pro 1TB Alpine Green"
     },
     "mini13": {
       "MLHP3LL/A": "iPhone 13 mini 128GB Pink",
@@ -51,7 +59,10 @@
       "MLJ03LL/A": "iPhone 13 mini 512GB Starlight",
       "MLHQ3LL/A": "iPhone 13 mini 128GB Product Red",
       "MLHW3LL/A": "iPhone 13 mini 256GB Product Red",
-      "MLJ23LL/A": "iPhone 13 mini 512GB Product Red"
+      "MLJ23LL/A": "iPhone 13 mini 512GB Product Red",
+      "MNF83LL/A": "iPhone 13 mini 128GB Green",
+      "MNF93LL/A": "iPhone 13 mini 256GB Green",
+      "MNFA3LL/A": "iPhone 13 mini 512GB Green"
     },
     "regular13": {
       "MLMN3LL/A": "iPhone 13 128GB Pink",
@@ -68,7 +79,10 @@
       "MLN33LL/A": "iPhone 13 512GB Starlight",
       "MLMQ3LL/A": "iPhone 13 128GB Product Red",
       "MLN03LL/A": "iPhone 13 256GB Product Red",
-      "MLN53LL/A": "iPhone 13 512GB Product Red"
+      "MLN53LL/A": "iPhone 13 512GB Product Red",
+      "MNGD3LL/A": "iPhone 13 128GB Green",
+      "MNGE3LL/A": "iPhone 13 256GB Green",
+      "MNGF3LL/A": "iPhone 13 512GB Green"
     }
   },
   "ca": {
