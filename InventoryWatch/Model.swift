@@ -238,9 +238,11 @@ final class Model: ObservableObject {
     private var countryPathElement: String {
         let country = preferredCountry
         if country == "US" {
-            return ""
+            return "/"
+        } else if country == "CN" {
+            return ".cn/"
         } else {
-            return country + "/"
+            return "/" + country + "/"
         }
     }
     
@@ -378,13 +380,15 @@ final class Model: ObservableObject {
         let filterForPreferredModels = UserDefaults.standard.bool(forKey: "showResultsOnlyForPreferredModels")
         let filterModels = filterForPreferredModels ? preferredSKUs : nil
         
-        let urlRoot = "https://www.apple.com/\(countryPathElement.lowercased())shop/fulfillment-messages?"
+        let urlRoot = "https://www.apple.com\(countryPathElement.lowercased())shop/fulfillment-messages?"
         let query = generateQueryString()
         
         guard let url = URL(string: urlRoot + query) else {
             updateErrorState(to: ModelError.couldNotGenerateURL)
             return
         }
+        
+        print("query url: \(url)")
         
         URLSession.shared.dataTask(with: url) { data, response, error in
             do {
