@@ -1,4 +1,4 @@
-## [Download InventoryWatch (0.0.4) Now ⤵️](./InventoryWatch-0.0.4.zip)
+## [Download InventoryWatch (0.0.5) Now ⤵️](./InventoryWatch-0.0.5.zip)
 
 ![InventoryWatch-Screenshot](./ic-mkt.jpg)
 
@@ -14,9 +14,11 @@ Ordering a new Apple product online can often involve monthslong shipping times 
 
 InventoryWatch can monitor local stock for the following products: 
 
+* M2 MacBook Air (**new**)
 * MacBook Pro (14" and 16")
-* Mac Studio (**new**)
-* Studio Display (**new**)
+* M2 MacBook Pro 13" (**new**)
+* Mac Studio
+* Studio Display
 * iPhone 13
 * iPhone 13 mini
 * iPhone 13 Pro
@@ -53,4 +55,4 @@ macOS Big Sur 11.5 or newer. InventoryWatch is built with SwiftUI.
 
 ## Ready to go?
 
-[Download InventoryWatch (0.0.4) Now ⤵️](./InventoryWatch-0.0.4.zip)
+[Download InventoryWatch (0.0.5) Now ⤵️](./InventoryWatch-0.0.5.zip)
