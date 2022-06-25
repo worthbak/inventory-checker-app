@@ -161,3 +161,30 @@ func M2MBPDataForCountry(_ country: Country) -> SKUData {
     
     return SKUData(orderedSKUs: orderedSkus, lookup: skusToName)
 }
+
+func M2MBAirDataForCountry(_ country: Country) -> SKUData {
+    
+    let orderedSkus = [
+        "MLXY3\(country.skuCode)/A",
+        "MLY03\(country.skuCode)/A",
+        "MLY13\(country.skuCode)/A",
+        "MLY23\(country.skuCode)/A",
+        "MLY43\(country.skuCode)/A",
+        "MLY33\(country.skuCode)/A",
+        "MLXX3\(country.skuCode)/A",
+        "MLXW3\(country.skuCode)/A"
+    ]
+    
+    let skusToName = [
+        "MLXY3\(country.skuCode)/A": "M2 (8c CPU, 8c GPU) 8GB/256GB Silver",
+        "MLY03\(country.skuCode)/A": "M2 (8c CPU, 10c GPU) 8GB/512GB Silver",
+        "MLY13\(country.skuCode)/A": "M2 (8c CPU, 8c GPU) 8GB/256GB Starlight",
+        "MLY23\(country.skuCode)/A": "M2 (8c CPU, 10c GPU) 8GB/512GB Starlight",
+        "MLY43\(country.skuCode)/A": "M2 (8c CPU, 10c GPU) 8GB/512GB Midnight",
+        "MLY33\(country.skuCode)/A": "M2 (8c CPU, 8c GPU) 8GB/256GB Midnight",
+        "MLXX3\(country.skuCode)/A": "M2 (8c CPU, 10c GPU) 8GB/512GB Space Gray",
+        "MLXW3\(country.skuCode)/A": "M2 (8c CPU, 8c GPU) 8GB/256GB Space Gray"
+    ]
+    
+    return SKUData(orderedSKUs: orderedSkus, lookup: skusToName)
+}

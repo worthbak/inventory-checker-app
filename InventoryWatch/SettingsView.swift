@@ -61,16 +61,9 @@ struct SettingsView: View {
                     }
                     
                     Picker("Product Type", selection: $preferredProductType) {
-                        Text(ProductType.MacBookPro.presentableName).tag(ProductType.MacBookPro.rawValue)
-                        Text(ProductType.M2MacBookPro13.presentableName).tag(ProductType.M2MacBookPro13.rawValue)
-                        Text(ProductType.MacStudio.presentableName).tag(ProductType.MacStudio.rawValue)
-                        Text(ProductType.StudioDisplay.presentableName).tag(ProductType.StudioDisplay.rawValue)
-                        Text(ProductType.iPadWifi.presentableName).tag(ProductType.iPadWifi.rawValue)
-                        Text(ProductType.iPadCellular.presentableName).tag(ProductType.iPadCellular.rawValue)
-                        Text(ProductType.iPhoneRegular13.presentableName).tag(ProductType.iPhoneRegular13.rawValue)
-                        Text(ProductType.iPhoneMini13.presentableName).tag(ProductType.iPhoneMini13.rawValue)
-                        Text(ProductType.iPhonePro13.presentableName).tag(ProductType.iPhonePro13.rawValue)
-                        Text(ProductType.iPhoneProMax13.presentableName).tag(ProductType.iPhoneProMax13.rawValue)
+                        ForEach(ProductType.allCases) { productType in
+                            Text(productType.presentableName).tag(productType.rawValue)
+                        }
                     }
                     .onChange(of: preferredProductType) { _ in
                         model.fetchLatestInventory()
