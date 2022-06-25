@@ -44,6 +44,7 @@ extension PartAvailability: Identifiable {
 
 enum ProductType: String, Codable {
     case MacBookPro
+    case M2MacBookPro13
     case MacStudio
     case StudioDisplay
     case iPadWifi
@@ -57,6 +58,8 @@ enum ProductType: String, Codable {
         switch self {
         case .MacBookPro:
             return "MacBook Pro"
+        case .M2MacBookPro13:
+            return "M2 MacBook Pro 13"
         case .MacStudio:
             return "Mac Studio"
         case .StudioDisplay:
@@ -266,6 +269,9 @@ final class Model: ObservableObject {
         case .MacBookPro:
             let country = Countries[preferredCountry] ?? USData
             return MBPDataForCountry(country)
+        case .M2MacBookPro13:
+            let country = Countries[preferredCountry] ?? USData
+            return M2MBPDataForCountry(country)
         case .MacStudio:
             let country = Countries[preferredCountry] ?? USData
             return MacStudioDataForCountry(country)

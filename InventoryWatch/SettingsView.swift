@@ -62,6 +62,7 @@ struct SettingsView: View {
                     
                     Picker("Product Type", selection: $preferredProductType) {
                         Text(ProductType.MacBookPro.presentableName).tag(ProductType.MacBookPro.rawValue)
+                        Text(ProductType.M2MacBookPro13.presentableName).tag(ProductType.M2MacBookPro13.rawValue)
                         Text(ProductType.MacStudio.presentableName).tag(ProductType.MacStudio.rawValue)
                         Text(ProductType.StudioDisplay.presentableName).tag(ProductType.StudioDisplay.rawValue)
                         Text(ProductType.iPadWifi.presentableName).tag(ProductType.iPadWifi.rawValue)

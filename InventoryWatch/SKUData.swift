@@ -142,3 +142,22 @@ func MBPDataForCountry(_ country: Country) -> SKUData {
     
     return SKUData(orderedSKUs: orderedSkus, lookup: skusToName)
 }
+
+func M2MBPDataForCountry(_ country: Country) -> SKUData {
+    
+    let orderedSkus = [
+        "MNEH3\(country.skuCode)/A", // sg low
+        "MNEJ3\(country.skuCode)/A", // sg high
+        "MNEP3\(country.skuCode)/A", // sv low
+        "MNEQ3\(country.skuCode)/A"  // sv high
+    ]
+    
+    let skusToName = [
+        "MNEH3\(country.skuCode)/A": "13\" M2 8GB/256GB - Space Gray",
+        "MNEJ3\(country.skuCode)/A": "13\" M2 8GB/512GB - Space Gray",
+        "MNEP3\(country.skuCode)/A": "13\" M2 8GB/256GB - Silver",
+        "MNEQ3\(country.skuCode)/A": "13\" M2 8GB/512GB - Silver"
+    ]
+    
+    return SKUData(orderedSKUs: orderedSkus, lookup: skusToName)
+}
