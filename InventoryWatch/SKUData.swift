@@ -22,7 +22,7 @@ struct SKUData {
 }
 
 func iPadDataForCountry(_ country: Country, isWifi: Bool) -> SKUData {
-    let skuCode = country.altSkuCode ?? country.skuCode
+    let skuCode = country.skuCode(for: isWifi ? .iPadWifi : .iPadCellular) ?? country.skuCode
     
     let wifiData = [
         "MK7R3": "iPad Mini 64GB Purple Wifi",
@@ -64,7 +64,7 @@ func iPadDataForCountry(_ country: Country, isWifi: Bool) -> SKUData {
 }
 
 func StudioDisplayForCountry(_ country: Country) -> SKUData {
-    let skuCode = country.altSkuCode ?? country.skuCode
+    let skuCode = country.skuCode(for: .StudioDisplay) ?? country.skuCode
     
     let orderedSkus = [
         "MK0U3\(skuCode)/A",
@@ -88,7 +88,7 @@ func StudioDisplayForCountry(_ country: Country) -> SKUData {
 }
 
 func MacStudioDataForCountry(_ country: Country) -> SKUData {
-    let skuCode = country.altSkuCode ?? country.skuCode
+    let skuCode = country.skuCode(for: .MacStudio) ?? country.skuCode
     
     let orderedSkus = [
         "MJMW3\(skuCode)/A",
