@@ -22,7 +22,7 @@ struct SKUData {
 }
 
 func iPadDataForCountry(_ country: Country, isWifi: Bool) -> SKUData {
-    let skuCode = country.altSkuCode ?? country.skuCode
+    let skuCode = country.skuCode(for: isWifi ? .iPadWifi : .iPadCellular) ?? country.skuCode
     
     let wifiData = [
         "MK7R3": "iPad Mini 64GB Purple Wifi",
@@ -64,36 +64,40 @@ func iPadDataForCountry(_ country: Country, isWifi: Bool) -> SKUData {
 }
 
 func StudioDisplayForCountry(_ country: Country) -> SKUData {
+    let skuCode = country.skuCode(for: .StudioDisplay) ?? country.skuCode
+    
     let orderedSkus = [
-        "MK0U3\(country.skuCode)/A",
-        "MK0Q3\(country.skuCode)/A",
-        "MMYQ3\(country.skuCode)/A",
-        "MMYW3\(country.skuCode)/A",
-        "MMYV3\(country.skuCode)/A",
-        "MMYX3\(country.skuCode)/A"
+        "MK0U3\(skuCode)/A",
+        "MK0Q3\(skuCode)/A",
+        "MMYQ3\(skuCode)/A",
+        "MMYW3\(skuCode)/A",
+        "MMYV3\(skuCode)/A",
+        "MMYX3\(skuCode)/A"
     ]
     
     let skusToName = [
-        "MK0U3\(country.skuCode)/A": "Studio Display - Standard glass - Tilt-adjustable stand",
-        "MK0Q3\(country.skuCode)/A": "Studio Display - Standard glass - Tilt- and height-adjustable stand",
-        "MMYQ3\(country.skuCode)/A": "Studio Display - Standard glass - VESA mount adapter",
-        "MMYW3\(country.skuCode)/A": "Studio Display - Nano-texture glass - Tilt-adjustable stand",
-        "MMYV3\(country.skuCode)/A": "Studio Display - Nano-texture glass - Tilt- and height-adjustable stand",
-        "MMYX3\(country.skuCode)/A": "Studio Display - Nano-texture glass - VESA mount adapter"
+        "MK0U3\(skuCode)/A": "Studio Display - Standard glass - Tilt-adjustable stand",
+        "MK0Q3\(skuCode)/A": "Studio Display - Standard glass - Tilt- and height-adjustable stand",
+        "MMYQ3\(skuCode)/A": "Studio Display - Standard glass - VESA mount adapter",
+        "MMYW3\(skuCode)/A": "Studio Display - Nano-texture glass - Tilt-adjustable stand",
+        "MMYV3\(skuCode)/A": "Studio Display - Nano-texture glass - Tilt- and height-adjustable stand",
+        "MMYX3\(skuCode)/A": "Studio Display - Nano-texture glass - VESA mount adapter"
     ]
     
     return SKUData(orderedSKUs: orderedSkus, lookup: skusToName)
 }
 
 func MacStudioDataForCountry(_ country: Country) -> SKUData {
+    let skuCode = country.skuCode(for: .MacStudio) ?? country.skuCode
+    
     let orderedSkus = [
-        "MJMW3\(country.skuCode)/A",
-        "MJMV3\(country.skuCode)/A"
+        "MJMW3\(skuCode)/A",
+        "MJMV3\(skuCode)/A"
     ]
     
     let skusToName = [
-        "MJMV3\(country.skuCode)/A": "M1 Max (10c CPU, 24c GPU), 32GB RAM, 512GB SSD",
-        "MJMW3\(country.skuCode)/A": "M1 Ultra (20c CPU, 48c GPU), 64GB RAM, 1TB SSD"
+        "MJMV3\(skuCode)/A": "M1 Max (10c CPU, 24c GPU), 32GB RAM, 512GB SSD",
+        "MJMW3\(skuCode)/A": "M1 Ultra (20c CPU, 48c GPU), 64GB RAM, 1TB SSD"
     ]
     
     return SKUData(orderedSKUs: orderedSkus, lookup: skusToName)
@@ -129,11 +133,12 @@ func MBPDataForCountry(_ country: Country) -> SKUData {
         "MKGQ3\(country.skuCode)/A": "14\" M1 Pro (10c CPU, 16c GPU) 16GB/1TB Space Grey",
         "MMQX3\(country.skuCode)/A": "14\" M1 Max (10c CPU, 32c GPU) 64GB/2TB Silver, Ultimate",
         "MKH53\(country.skuCode)/A": "14\" M1 Max (10c CPU, 32c GPU) 64GB/2TB Space Grey, Ultimate",
-
-        "MK1F3\(country.skuCode)/A": "16\" M1 Pro (10c CPU, 16c GPU) 16GB/512GB Silver",
-        "MK193\(country.skuCode)/A": "16\" M1 Pro (10c CPU, 16c GPU) 16GB/512GB Space Grey",
-        "MK1E3\(country.skuCode)/A": "16\" M1 Pro (10c CPU, 16c GPU) 16GB/1TB Silver",
-        "MK183\(country.skuCode)/A": "16\" M1 Pro (10c CPU, 16c GPU) 16GB/1TB Space Grey",
+        
+        "MK1E3\(country.skuCode)/A": "16\" M1 Pro (10c CPU, 16c GPU) 16GB/512GB Silver",
+        "MK183\(country.skuCode)/A": "16\" M1 Pro (10c CPU, 16c GPU) 16GB/512GB Space Grey",
+        "MK1F3\(country.skuCode)/A": "16\" M1 Pro (10c CPU, 16c GPU) 16GB/1TB Silver",
+        "MK193\(country.skuCode)/A": "16\" M1 Pro (10c CPU, 16c GPU) 16GB/1TB Space Grey",
+        
         "MK1H3\(country.skuCode)/A": "16\" M1 Max (10c CPU, 32c GPU) 32GB/1TB Silver",
         "MK1A3\(country.skuCode)/A": "16\" M1 Max (10c CPU, 32c GPU) 32GB/1TB Space Grey",
         "MMQW3\(country.skuCode)/A": "16\" M1 Max (10c CPU, 32c GPU) 64GB/4TB Silver, Ultimate",

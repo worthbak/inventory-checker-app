@@ -11,14 +11,34 @@ struct Country: Hashable {
     let name: String
     let storePathComponent: String
     let skuCode: String
-    let altSkuCode: String? // for ipad in some countries
+    
+    private static let GermanyAltCode = "FD"
+    private static let CanadaAltCode = "VC"
+    
+    /// Some countries have alternate country code schemes for specific products, which are accounted for here.
+    func skuCode(for product: ProductType) -> String? {
+        switch product {
+        case .MacStudio, .StudioDisplay:
+            return name == "Canada" ? Country.CanadaAltCode : nil
+        case .iPadWifi, .iPadCellular:
+            switch name {
+            case "Germany":
+                return Country.GermanyAltCode
+            case "Canada":
+                return Country.CanadaAltCode
+            default:
+                return nil
+            }
+        default:
+            return nil
+        }
+    }
 }
 
 let USData = Country(
     name: "United States",
     storePathComponent: "",
-    skuCode: "LL",
-    altSkuCode: nil
+    skuCode: "LL"
 )
 
 let Countries: [String: Country] = [
@@ -26,38 +46,32 @@ let Countries: [String: Country] = [
     "CA": Country(
         name: "Canada",
         storePathComponent: "/ca",
-        skuCode: "LL",
-        altSkuCode: "VC"
+        skuCode: "LL"
     ),
     "AU": Country(
         name: "Australia",
         storePathComponent: "/au",
-        skuCode: "X",
-        altSkuCode: nil
+        skuCode: "X"
     ),
     "DE": Country(
         name: "Germany",
         storePathComponent: "/de",
-        skuCode: "D",
-        altSkuCode: "FD"
+        skuCode: "D"
     ),
     "UK": Country(
         name: "United Kingdom",
         storePathComponent: "/uk",
-        skuCode: "B",
-        altSkuCode: nil
+        skuCode: "B"
     ),
     "KR": Country(
         name: "South Korea",
         storePathComponent: "/kr",
-        skuCode: "KH",
-        altSkuCode: nil
+        skuCode: "KH"
                  ),
     "HK": Country(
         name: "Hong Kong",
         storePathComponent: "/hk",
-        skuCode: "ZP",
-        altSkuCode: nil
+        skuCode: "ZP"
     )
 ];
 
