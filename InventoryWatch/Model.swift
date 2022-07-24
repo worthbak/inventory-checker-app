@@ -419,14 +419,16 @@ final class Model: ObservableObject {
             updateTimer = nil
         }
         
-        if updateTimer == nil {
+        // Create new update timer if the user-setting is not "Never" (0) and
+        // a timer does not already exist
+        if updateInterval > 0 && updateTimer == nil {
             let interval = Double(updateInterval * 60)
             updateTimer = Timer.scheduledTimer(withTimeInterval: interval, repeats: true, block: { _ in
                 self.fetchLatestInventory()
             })
         }
         
-            AnalyticsData.updateAnalyticsData()
+        AnalyticsData.updateAnalyticsData()
     }
     
     private func parseStoreResponse(_ responseData: Data?, filterForModels: Set<String>?) throws {
