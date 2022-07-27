@@ -7,110 +7,6 @@
 
 import Foundation
 
-struct JsonStore: Codable, Equatable {
-    var storeName: String
-    var storeNumber: String
-    var city: String
-}
-
-struct Store: Equatable {
-    let storeName: String
-    let storeNumber: String
-    let city: String
-    let state: String?
-    
-    var locationDescription: String {
-        return [city, state].compactMap { $0 }.joined(separator: ", ")
-    }
-    
-    let partsAvailability: [PartAvailability]
-}
-
-struct PartAvailability: Equatable, Hashable {
-    enum PickupAvailability: String {
-        case available, unavailable, ineligible
-    }
-    
-    let partNumber: String
-    let storePickupProductTitle: String
-    let availability: PickupAvailability
-}
-
-extension PartAvailability: Identifiable {
-    var id: String {
-        partNumber
-    }
-}
-
-enum ProductType: String, Codable, CaseIterable, Identifiable {
-    var id: Self { self }
-    
-    case MacBookPro
-    case M2MacBookPro13
-    case M2MacBookAir
-    case MacStudio
-    case StudioDisplay
-    case iPadWifi
-    case iPadCellular
-    case iPhoneRegular13
-    case iPhoneMini13
-    case iPhonePro13
-    case iPhoneProMax13
-    
-    var presentableName: String {
-        switch self {
-        case .MacBookPro:
-            return "MacBook Pro"
-        case .M2MacBookPro13:
-            return "M2 MacBook Pro 13in"
-        case .M2MacBookAir:
-            return "M2 MacBook Air"
-        case .MacStudio:
-            return "Mac Studio"
-        case .StudioDisplay:
-            return "Studio Display"
-        case .iPadWifi:
-            return "iPad mini (Wifi)"
-        case .iPadCellular:
-            return "iPad mini (Cellular)"
-        case .iPhoneRegular13:
-            return "iPhone 13"
-        case .iPhoneMini13:
-            return "iPhone 13 mini"
-        case .iPhonePro13:
-            return "iPhone 13 Pro"
-        case .iPhoneProMax13:
-            return "iPhone 13 Pro Max"
-        }
-    }
-}
-
-struct AllPhoneModels {
-    struct PhoneModel {
-        let sku: String
-        let productName: String
-    }
-    
-    var proMax13: [PhoneModel]
-    var pro13: [PhoneModel]
-    var mini13: [PhoneModel]
-    var regular13: [PhoneModel]
-    
-    func toSkuData(_ keypath: KeyPath<AllPhoneModels, [AllPhoneModels.PhoneModel]>) -> SKUData {
-        let models = self[keyPath: keypath]
-        
-        let lookup: [String: String] = models.reduce(into: [:]) { acc, next in
-            acc[next.sku] = next.productName
-        }
-        
-        return SKUData(orderedSKUs: models.map { $0.sku }, lookup: lookup)
-    }
-}
-
-struct GithubTag: Codable {
-    let name: String
-}
-
 final class Model: ObservableObject {
     enum ModelError: Swift.Error {
         case couldNotGenerateURL
@@ -461,15 +357,14 @@ final class Model: ObservableObject {
             guard let partsAvailability = storeJSON["partsAvailability"] as? [String: [String: Any]] else { return nil }
             let parsedParts: [PartAvailability] = partsAvailability.values.compactMap { part in
                 guard let partNumber = part["partNumber"] as? String else { return nil }
-                guard let storePickupProductTitle = part["storePickupProductTitle"] as? String else { return nil }
                 guard
                     let availabilityString = part["pickupDisplay"] as? String,
-                        let availability = PartAvailability.PickupAvailability(rawValue: availabilityString)
+                    let availability = PartAvailability.PickupAvailability(rawValue: availabilityString)
                 else {
                     return nil
                 }
                 
-                return PartAvailability(partNumber: partNumber, storePickupProductTitle: storePickupProductTitle, availability: availability)
+                return PartAvailability(partNumber: partNumber, availability: availability)
             }
             
             return Store(storeName: name, storeNumber: number, city: city, state: state, partsAvailability: parsedParts)
@@ -608,9 +503,9 @@ extension Model {
         let model = Model(isTest: true)
         
         let testParts: [PartAvailability] = [
-            PartAvailability(partNumber: "MKGT3LL/A", storePickupProductTitle: "", availability: .available),
-            PartAvailability(partNumber: "MKGQ3LL/A", storePickupProductTitle: "", availability: .available),
-            PartAvailability(partNumber: "MMQX3LL/A", storePickupProductTitle: "", availability: .available),
+            PartAvailability(partNumber: "MKGT3LL/A", availability: .available),
+            PartAvailability(partNumber: "MKGQ3LL/A", availability: .available),
+            PartAvailability(partNumber: "MMQX3LL/A", availability: .available),
         ]
         
         let testStores: [Store] = [
