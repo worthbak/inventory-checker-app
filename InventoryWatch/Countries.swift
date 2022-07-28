@@ -58,6 +58,12 @@ let Countries: [String: Country] = [
         storePathComponent: "/de",
         skuCode: "D"
     ),
+    "IT": Country(
+        name: "Italy",
+        storePathComponent: "/it",
+        skuCode: "T",
+        altSkuCode: "TY"
+    ),
     "UK": Country(
         name: "United Kingdom",
         storePathComponent: "/uk",
@@ -80,6 +86,7 @@ let OrderedCountries = [
     "CA",
     "AU",
     "DE",
+    "IT",
     "UK",
     "KR",
     "HK",
