@@ -8,7 +8,7 @@
 import Foundation
 
 final class Model: ObservableObject {
-    enum ModelError: Swift.Error {
+    enum ModelError: Swift.Error, LocalizedError {
         case couldNotGenerateURL
         case invalidStoreResponse
         case failedToParseJSON
@@ -397,7 +397,7 @@ final class Model: ObservableObject {
         
         DispatchQueue.main.async {
             self.availableParts = allAvailableModels
-            self.isLoading = false
+            self.updateErrorState(to: .none)
             
             let df = DateFormatter()
             df.dateFormat = "MMM d, h:mm a"

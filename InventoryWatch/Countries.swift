@@ -82,7 +82,8 @@ let Countries: [String: Country] = [
         skuCode: "ZP"
     ),
     "FR": Country(name: "France", storePathComponent: "/fr", skuCode: "FN"),
-    "IT": Country(name: "Italy", storePathComponent: "/it", skuCode: "T")
+    "IT": Country(name: "Italy", storePathComponent: "/it", skuCode: "T"),
+    "JP": Country(name: "Japan", storePathComponent: "/jp", skuCode: "J")
 ];
 
 let OrderedCountries = [
@@ -94,5 +95,6 @@ let OrderedCountries = [
     "KR",
     "HK",
     "FR",
-    "IT"
+    "IT",
+    "JP"
 ]
