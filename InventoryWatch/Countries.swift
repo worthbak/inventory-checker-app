@@ -51,36 +51,12 @@ let USData = Country(
 
 let Countries: [String: Country] = [
     "US": USData,
-    "CA": Country(
-        name: "Canada",
-        storePathComponent: "/ca",
-        skuCode: "LL"
-    ),
-    "AU": Country(
-        name: "Australia",
-        storePathComponent: "/au",
-        skuCode: "X"
-    ),
-    "DE": Country(
-        name: "Germany",
-        storePathComponent: "/de",
-        skuCode: "D"
-    ),
-    "UK": Country(
-        name: "United Kingdom",
-        storePathComponent: "/uk",
-        skuCode: "B"
-    ),
-    "KR": Country(
-        name: "South Korea",
-        storePathComponent: "/kr",
-        skuCode: "KH"
-                 ),
-    "HK": Country(
-        name: "Hong Kong",
-        storePathComponent: "/hk",
-        skuCode: "ZP"
-    ),
+    "CA": Country(name: "Canada", storePathComponent: "/ca", skuCode: "LL"),
+    "AU": Country(name: "Australia", storePathComponent: "/au", skuCode: "X"),
+    "DE": Country(name: "Germany", storePathComponent: "/de", skuCode: "D"),
+    "UK": Country(name: "United Kingdom", storePathComponent: "/uk", skuCode: "B"),
+    "KR": Country(name: "South Korea", storePathComponent: "/kr", skuCode: "KH"),
+    "HK": Country(name: "Hong Kong", storePathComponent: "/hk", skuCode: "ZP"),
     "FR": Country(name: "France", storePathComponent: "/fr", skuCode: "FN"),
     "IT": Country(name: "Italy", storePathComponent: "/it", skuCode: "T"),
     "JP": Country(name: "Japan", storePathComponent: "/jp", skuCode: "J")
