@@ -108,9 +108,10 @@ struct SettingsView: View {
                     if model.hasLatestVersion == false {
                         Link(destination: URL(string: "https://worthbak.github.io/inventory-checker-app/")!) {
                             HStack(spacing: 4) {
-                                Text("A new version of InventoryWatch is available")
+                                Text("A new version of InventoryWatch is available - click here to download.")
                                 Image(systemName: "arrow.forward.circle")
                             }
+                            .font(.headline)
                         }
                         .padding(.top, 16)
                     }
@@ -121,6 +122,9 @@ struct SettingsView: View {
                 VStack(alignment: .leading) {
                     Text("Preferred Model(s)")
                         .font(.headline)
+                    
+                    Text("Only specific model configurations are stocked in-stores. If you believe a configuration is missing, [please open an issue](https://github.com/worthbak/inventory-checker-app/issues).")
+                        .font(.caption).italic()
                     
                     List {
                         ForEach($allModels) { model in
@@ -136,6 +140,7 @@ struct SettingsView: View {
                         .font(.headline)
                     
                     TextField("Type here to filter stores", text: $storeSearchText)
+                        .padding(.top, -5)
                     
                     List {
                         ForEach($allStores) { store in

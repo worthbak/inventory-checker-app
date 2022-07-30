@@ -21,12 +21,19 @@ struct ContentView: View {
     var body: some View {
         VStack {
             HStack {
-                Button(
-                    action: { NSApp.sendAction(Selector(("showPreferencesWindow:")), to: nil, from: nil) },
-                    label: { Image(systemName: "gearshape.fill") }
-                )
-                    .buttonStyle(BorderlessButtonStyle())
-                    .padding()
+                ZStack {
+                    if model.hasLatestVersion == false {
+                        Text("!")
+                            .bold().foregroundColor(.blue)
+                            .offset(x: 8, y: -8)
+                    }
+                    Button(
+                        action: { NSApp.sendAction(Selector(("showPreferencesWindow:")), to: nil, from: nil) },
+                        label: { Image(systemName: "gearshape.fill") }
+                    )
+                        .buttonStyle(BorderlessButtonStyle())
+                        .padding()
+                }
                 
                 Spacer()
                 
@@ -88,7 +95,7 @@ struct ContentView: View {
                 }
                 
                 if model.availableParts.isEmpty && model.isLoading == false {
-                    Text("No models available.")
+                    Text("No models available in-store.")
                         .foregroundColor(.secondary)
                 }
             }

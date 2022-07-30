@@ -8,7 +8,7 @@
 import Foundation
 
 final class Model: ObservableObject {
-    enum ModelError: Swift.Error {
+    enum ModelError: Swift.Error, LocalizedError {
         case couldNotGenerateURL
         case invalidStoreResponse
         case failedToParseJSON
@@ -16,6 +16,15 @@ final class Model: ObservableObject {
         case noStoresFound
         case invalidLocalModelStore
         case generic(Error?)
+        
+        var errorDescription: String? {
+            switch self {
+            case .generic(let error):
+                return error?.localizedDescription ?? "unknown error"
+            default:
+                return "\(self)"
+            }
+        }
         
         var errorMessage: String {
             switch self {
@@ -296,6 +305,9 @@ final class Model: ObservableObject {
             return
         }
         
+        // Log the URL for debugging
+        print(url.absoluteString)
+        
         URLSession.shared.dataTask(with: url) { data, response, error in
             do {
                 try self.parseStoreResponse(data, filterForModels: filterModels)
@@ -398,6 +410,7 @@ final class Model: ObservableObject {
         DispatchQueue.main.async {
             self.availableParts = allAvailableModels
             self.isLoading = false
+            self.updateErrorState(to: .none)
             
             let df = DateFormatter()
             df.dateFormat = "MMM d, h:mm a"
