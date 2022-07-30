@@ -409,6 +409,7 @@ final class Model: ObservableObject {
         
         DispatchQueue.main.async {
             self.availableParts = allAvailableModels
+            self.isLoading = false
             self.updateErrorState(to: .none)
             
             let df = DateFormatter()
