@@ -1,4 +1,4 @@
-## [Download InventoryWatch (0.0.9) Now ⤵️](./InventoryWatch-0.0.9.zip)
+## [Download InventoryWatch (0.1.0) Now ⤵️](./InventoryWatch-0.1.0.zip)
 
 ![InventoryWatch-Screenshot](./ic-mkt.jpg)
 
@@ -55,4 +55,4 @@ macOS Big Sur 11.5 or newer. InventoryWatch is built with SwiftUI.
 
 ## Ready to go?
 
-[Download InventoryWatch (0.0.9) Now ⤵️](./InventoryWatch-0.0.9.zip)
+[Download InventoryWatch (0.1.0) Now ⤵️](./InventoryWatch-0.1.0.zip)
