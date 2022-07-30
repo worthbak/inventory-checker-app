@@ -40,6 +40,9 @@ InventoryWatch supports querying in-store pickup stock in seven countries:
   * Germany
   * South Korea
   * Hong Kong
+  * France (**new**)
+  * Italy (**new**)
+  * Japan (**new**)
 
 _Don't see your country on the list? Add an issue to the Github project [here](https://github.com/worthbak/inventory-checker-app/issues)._
 
