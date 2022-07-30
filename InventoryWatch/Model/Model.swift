@@ -17,6 +17,15 @@ final class Model: ObservableObject {
         case invalidLocalModelStore
         case generic(Error?)
         
+        var errorDescription: String? {
+            switch self {
+            case .generic(let error):
+                return error?.localizedDescription ?? "unknown error"
+            default:
+                return "\(self)"
+            }
+        }
+        
         var errorMessage: String {
             switch self {
             case .couldNotGenerateURL:
