@@ -296,6 +296,9 @@ final class Model: ObservableObject {
             return
         }
         
+        // Log the URL for debugging
+        print(url.absoluteString)
+        
         URLSession.shared.dataTask(with: url) { data, response, error in
             do {
                 try self.parseStoreResponse(data, filterForModels: filterModels)
