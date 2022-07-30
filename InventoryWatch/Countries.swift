@@ -9,11 +9,14 @@ import Foundation
 
 struct Country: Hashable {
     let name: String
+    
+    #warning("storePathComponent is unused currently")
     let storePathComponent: String
     let skuCode: String
     
     private static let GermanyAltCode = "FD"
     private static let CanadaAltCode = "VC"
+    private static let FranceAltCode = "NF"
     
     /// Some countries have alternate country code schemes for specific products, which are accounted for here.
     func skuCode(for product: ProductType) -> String? {
@@ -26,6 +29,8 @@ struct Country: Hashable {
                 return Country.GermanyAltCode
             case "Canada":
                 return Country.CanadaAltCode
+            case "France":
+                return Country.FranceAltCode
             default:
                 return nil
             }
@@ -72,7 +77,8 @@ let Countries: [String: Country] = [
         name: "Hong Kong",
         storePathComponent: "/hk",
         skuCode: "ZP"
-    )
+    ),
+    "FR": Country(name: "France", storePathComponent: "/fr", skuCode: "FN")
 ];
 
 let OrderedCountries = [
@@ -83,4 +89,5 @@ let OrderedCountries = [
     "UK",
     "KR",
     "HK",
+    "FR"
 ]
