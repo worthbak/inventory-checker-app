@@ -18,13 +18,22 @@ struct Country: Hashable {
     private static let CanadaAltCode = "VC"
     private static let FranceAltCode = "NF"
     private static let ItalyAltCode = "TY"
-    private static let AustriaAltCode = "FD"
+    private static let AustriaAltCode = "FD"    
+    private static let NetherlandsAltCodeStudio = "FN"
+    private static let NetherlandsAltCodeiPad = "NF"
     
     /// Some countries have alternate country code schemes for specific products, which are accounted for here.
     func skuCode(for product: ProductType) -> String? {
         switch product {
         case .MacStudio, .StudioDisplay:
-            return name == "Canada" ? Country.CanadaAltCode : nil
+            switch name {
+            case "Canada":
+                return Country.CanadaAltCode
+            case "Netherlands":
+                return Country.NetherlandsAltCodeStudio
+            default:
+                return nil
+            }
         case .iPadWifi, .iPadCellular:
             switch name {
             case "Germany":
@@ -37,6 +46,8 @@ struct Country: Hashable {
                 return Country.ItalyAltCode
             case "Austria":
                 return Country.AustriaAltCode
+            case "Netherlands":
+                return Country.NetherlandsAltCodeiPad
             default:
                 return nil
             }
@@ -63,7 +74,8 @@ let Countries: [String: Country] = [
     "FR": Country(name: "France", storePathComponent: "/fr", skuCode: "FN"),
     "IT": Country(name: "Italy", storePathComponent: "/it", skuCode: "T"),
     "JP": Country(name: "Japan", storePathComponent: "/jp", skuCode: "J"),
-    "AT": Country(name: "Austria", storePathComponent: "/at", skuCode: "D")
+    "AT": Country(name: "Austria", storePathComponent: "/at", skuCode: "D"),
+    "NL": Country(name: "Netherlands", storePathComponent: "/nl", skuCode: "N")
 ];
 
 let OrderedCountries = [
@@ -77,5 +89,6 @@ let OrderedCountries = [
     "FR",
     "IT",
     "JP",
-    "AT"
+    "AT",
+    "NL"
 ]
