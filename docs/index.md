@@ -1,4 +1,4 @@
-## [Download InventoryWatch (0.1.1) Now ⤵️](./InventoryWatch-0.1.1.zip)
+## [Download InventoryWatch (0.1.2) Now ⤵️](./InventoryWatch-0.1.2.zip)
 
 ![InventoryWatch-Screenshot](./ic-mkt.jpg)
 
@@ -40,10 +40,12 @@ InventoryWatch supports querying in-store pickup stock in seven countries:
   * Germany
   * South Korea
   * Hong Kong
-  * France (**new**)
-  * Italy (**new**)
-  * Japan (**new**)
-  * Austria (**new**)
+  * France
+  * Italy
+  * Japan
+  * Austria
+  * The Netherlands (**new**)
+  * Thailand (**new**)
 
 _Don't see your country on the list? Add an issue to the Github project [here](https://github.com/worthbak/inventory-checker-app/issues)._
 
@@ -59,4 +61,4 @@ macOS Big Sur 11.5 or newer. InventoryWatch is built with SwiftUI.
 
 ## Ready to go?
 
-[Download InventoryWatch (0.1.1) Now ⤵️](./InventoryWatch-0.1.1.zip)
+[Download InventoryWatch (0.1.2) Now ⤵️](./InventoryWatch-0.1.2.zip)
