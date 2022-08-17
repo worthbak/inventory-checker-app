@@ -13,8 +13,9 @@ struct InventoryWatchApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environmentObject(model)
+//            ContentView()
+//                .environmentObject(model)
+            PrimaryView()
         }
         .windowStyle(HiddenTitleBarWindowStyle())
         .commands {

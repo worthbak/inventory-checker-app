@@ -7,6 +7,10 @@
 
 import Foundation
 
+// TODO
+// fetch store data dynamically from:
+// https://www.apple.com/rsp-web/store-list?locale=en_US
+
 final class Model: ObservableObject {
     enum ModelError: Swift.Error, LocalizedError {
         case couldNotGenerateURL
