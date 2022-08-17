@@ -18,7 +18,7 @@ struct Country: Hashable {
     private static let CanadaAltCode = "VC"
     private static let FranceAltCode = "NF"
     private static let ItalyAltCode = "TY"
-    private static let AustriaAltCode = "FD"    
+    private static let AustriaAltCode = "FD"
     private static let NetherlandsAltCodeStudio = "FN"
     private static let NetherlandsAltCodeiPad = "NF"
     
