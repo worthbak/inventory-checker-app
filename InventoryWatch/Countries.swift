@@ -18,7 +18,7 @@ struct Country: Hashable {
     private static let CanadaAltCode = "VC"
     private static let FranceAltCode = "NF"
     private static let ItalyAltCode = "TY"
-    private static let AustriaAltCode = "FD"    
+    private static let AustriaAltCode = "FD"
     private static let NetherlandsAltCodeStudio = "FN"
     private static let NetherlandsAltCodeiPad = "NF"
     
@@ -75,7 +75,8 @@ let Countries: [String: Country] = [
     "IT": Country(name: "Italy", storePathComponent: "/it", skuCode: "T"),
     "JP": Country(name: "Japan", storePathComponent: "/jp", skuCode: "J"),
     "AT": Country(name: "Austria", storePathComponent: "/at", skuCode: "D"),
-    "NL": Country(name: "Netherlands", storePathComponent: "/nl", skuCode: "N")
+    "NL": Country(name: "Netherlands", storePathComponent: "/nl", skuCode: "N"),
+    "TH": Country(name: "Thailand", storePathComponent: "/th", skuCode: "TH")
 ];
 
 let OrderedCountries = [
@@ -90,5 +91,6 @@ let OrderedCountries = [
     "IT",
     "JP",
     "AT",
-    "NL"
+    "NL",
+    "TH"
 ]
