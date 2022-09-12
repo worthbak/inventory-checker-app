@@ -7,6 +7,10 @@
 
 import Foundation
 
+// TODO
+// fetch store data dynamically from:
+// https://www.apple.com/rsp-web/store-list?locale=en_US
+
 final class Model: ObservableObject {
     enum ModelError: Swift.Error, LocalizedError {
         case couldNotGenerateURL
@@ -69,36 +73,58 @@ final class Model: ObservableObject {
     }()
     
     lazy private var iPhoneModels: [Country: AllPhoneModels] = {
-        let phoneModelsJson = loadIPhoneModels()
         var rv = [Country: AllPhoneModels]()
         
-        for (countryCode, phones) in phoneModelsJson {
-            guard let country = Countries[countryCode.uppercased()] else {
-                self.updateErrorState(to: ModelError.invalidLocalModelStore)
-                return [:]
-            }
+        for phoneModel in iPhoneModel.allCases {
+            let phoneModelsJson = loadIPhoneModels(for: phoneModel)
             
-            let modelsData = [
-                (phones["proMax13"], \AllPhoneModels.proMax13),
-                (phones["pro13"], \AllPhoneModels.pro13),
-                (phones["mini13"], \AllPhoneModels.mini13),
-                (phones["regular13"], \AllPhoneModels.regular13)
-            ]
-            
-            var phoneModels = AllPhoneModels(proMax13: [], pro13: [], mini13: [], regular13: [])
-            for (models, keyPath) in modelsData {
-                guard let models = models else {
-                    continue
+            for (countryCode, phones) in phoneModelsJson {
+                guard let country = Countries[countryCode.uppercased()] else {
+                    self.updateErrorState(to: ModelError.invalidLocalModelStore)
+                    return [:]
                 }
                 
-                let parsed: [AllPhoneModels.PhoneModel] = models.map { modelData in
-                    return AllPhoneModels.PhoneModel(sku: modelData.key, productName: modelData.value)
+                let unmappedModelsData: [(String, WritableKeyPath<AllPhoneModels, [AllPhoneModels.PhoneModel]>)]
+                switch phoneModel {
+                case .thirteen:
+                    unmappedModelsData = [
+                        ("mini13", \AllPhoneModels.mini13),
+                        ("regular13", \AllPhoneModels.regular13)
+                    ]
+                case .fourteen:
+                    unmappedModelsData = [
+                        ("plus14", \AllPhoneModels.plus14),
+                        ("regular14", \AllPhoneModels.regular14),
+                        ("pro14", \AllPhoneModels.pro14),
+                        ("proMax14", \AllPhoneModels.proMax14)
+                    ]
                 }
                 
-                phoneModels[keyPath: keyPath] = parsed
+                let modelsData = unmappedModelsData.map { first, second in
+                    return (phones[first], second)
+                }
+                
+                var phoneModels: AllPhoneModels
+                if let existing = rv[country] {
+                    phoneModels = existing
+                } else {
+                    phoneModels = AllPhoneModels(proMax14: [], pro14: [], regular14: [], plus14: [], mini13: [], regular13: [])
+                }
+                
+                for (models, keyPath) in modelsData {
+                    guard let models = models else {
+                        continue
+                    }
+                    
+                    let parsed: [AllPhoneModels.PhoneModel] = models.map { modelData in
+                        return AllPhoneModels.PhoneModel(sku: modelData.key, productName: modelData.value)
+                    }
+                    
+                    phoneModels[keyPath: keyPath] = parsed
+                }
+                
+                rv[country] = phoneModels
             }
-            
-            rv[country] = phoneModels
         }
         
         return rv
@@ -107,15 +133,37 @@ final class Model: ObservableObject {
     func phoneModels(for country: Country) -> AllPhoneModels {
         guard let models = iPhoneModels[country] else {
             self.updateErrorState(to: ModelError.invalidLocalModelStore)
-            return AllPhoneModels(proMax13: [], pro13: [], mini13: [], regular13: [])
+            return AllPhoneModels(proMax14: [], pro14: [], regular14: [], plus14: [], mini13: [], regular13: [])
         }
         
         return models
     }
     
+    private var cachedPhoneData13: [String: [String: [String: String]]]?
+    private var cachedPhoneData14: [String: [String: [String: String]]]?
+    
+    private enum iPhoneModel: CaseIterable {
+        case thirteen, fourteen
+    }
+    
                                     // country: type:    model:   description
-    private func loadIPhoneModels() -> [String: [String: [String: String]]] {
-        let location = "iPhoneModels-intl"
+    private func loadIPhoneModels(for model: iPhoneModel) -> [String: [String: [String: String]]] {
+        let location: String
+        switch model {
+        case .thirteen:
+            if let cached = cachedPhoneData13 {
+                return cached
+            } else {
+                location = "iPhoneModels13-intl"
+            }
+        case .fourteen:
+            if let cached = cachedPhoneData14 {
+                return cached
+            } else {
+                location = "iPhoneModels14-intl"
+            }
+        }
+        
         let fileType = "json"
         if let path = Bundle.main.path(forResource: location, ofType: fileType) {
             do {
@@ -123,6 +171,11 @@ final class Model: ObservableObject {
                 let decoder = JSONDecoder()
                 
                 if let jsonStores = try? decoder.decode([String: [String: [String: String]]].self, from: data) {
+                    switch model {
+                    case .thirteen: cachedPhoneData13 = jsonStores
+                    case .fourteen: cachedPhoneData14 = jsonStores
+                    }
+                    
                     return jsonStores
                 } else {
                     return [:]
@@ -201,10 +254,14 @@ final class Model: ObservableObject {
             return phoneModels(for: country).toSkuData(\.regular13)
         case .iPhoneMini13:
             return phoneModels(for: country).toSkuData(\.mini13)
-        case .iPhonePro13:
-            return phoneModels(for: country).toSkuData(\.pro13)
-        case .iPhoneProMax13:
-            return phoneModels(for: country).toSkuData(\.proMax13)
+        case .iPhoneRegular14:
+            return phoneModels(for: country).toSkuData(\.regular14)
+        case .iPhonePlus14:
+            return phoneModels(for: country).toSkuData(\.plus14)
+        case .iPhonePro14:
+            return phoneModels(for: country).toSkuData(\.pro14)
+        case .iPhoneProMax14:
+            return phoneModels(for: country).toSkuData(\.proMax14)
         }
     }
     

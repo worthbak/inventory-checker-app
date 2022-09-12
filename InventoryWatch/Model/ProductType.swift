@@ -19,8 +19,10 @@ enum ProductType: String, Codable, CaseIterable, Identifiable {
     case iPadCellular
     case iPhoneRegular13
     case iPhoneMini13
-    case iPhonePro13
-    case iPhoneProMax13
+    case iPhoneRegular14
+    case iPhonePlus14
+    case iPhonePro14
+    case iPhoneProMax14
     
     var presentableName: String {
         switch self {
@@ -42,10 +44,14 @@ enum ProductType: String, Codable, CaseIterable, Identifiable {
             return "iPhone 13"
         case .iPhoneMini13:
             return "iPhone 13 mini"
-        case .iPhonePro13:
-            return "iPhone 13 Pro"
-        case .iPhoneProMax13:
-            return "iPhone 13 Pro Max"
+        case .iPhoneRegular14:
+            return "iPhone 14"
+        case .iPhonePlus14:
+            return "iPhone 14 Plus"
+        case .iPhonePro14:
+            return "iPhone 14 Pro"
+        case .iPhoneProMax14:
+            return "iPhone 14 Pro Max"
         }
     }
 }

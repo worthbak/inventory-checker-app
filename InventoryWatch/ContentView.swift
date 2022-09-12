@@ -52,7 +52,7 @@ struct ContentView: View {
                     
                     
                     if let preferredStoreInfo = model.preferredStoreInfo {
-                        Text("at \(preferredStoreInfo)")
+                        Text("near \(preferredStoreInfo)")
                             .font(.title2)
                     }
                 }
