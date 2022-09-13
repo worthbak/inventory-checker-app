@@ -1,4 +1,4 @@
-## [Download InventoryWatch (0.1.2) Now ⤵️](./InventoryWatch-0.1.2.zip)
+## [Download InventoryWatch (0.1.3) Now ⤵️](./InventoryWatch-0.1.3.zip)
 
 ![InventoryWatch-Screenshot](./ic-mkt.jpg)
 
@@ -14,15 +14,17 @@ Ordering a new Apple product online can often involve monthslong shipping times 
 
 InventoryWatch can monitor local stock for the following products: 
 
-* M2 MacBook Air (**new**)
+* iPhone 14 Pro (**new**)
+* iPhone 14 Pro Max (**new**)
+* iPhone 14 (**new**)
+* iPhone 14 Plus (**new**)
+* M2 MacBook Air
 * MacBook Pro (14" and 16")
-* M2 MacBook Pro 13" (**new**)
+* M2 MacBook Pro 13"
 * Mac Studio
 * Studio Display
 * iPhone 13
 * iPhone 13 mini
-* iPhone 13 Pro
-* iPhone 13 Pro Max
 * iPad mini (wifi and cellular)
 
 Note that not all build-to-order configurations will be stocked by Apple Stores (this is especially true for MacBook Pros). InventoryWatch only lists configurations that are known to be stocked by Apple Stores. 
@@ -44,8 +46,8 @@ InventoryWatch supports querying in-store pickup stock in seven countries:
   * Italy
   * Japan
   * Austria
-  * The Netherlands (**new**)
-  * Thailand (**new**)
+  * The Netherlands
+  * Thailand
 
 _Don't see your country on the list? Add an issue to the Github project [here](https://github.com/worthbak/inventory-checker-app/issues)._
 
@@ -61,4 +63,4 @@ macOS Big Sur 11.5 or newer. InventoryWatch is built with SwiftUI.
 
 ## Ready to go?
 
-[Download InventoryWatch (0.1.2) Now ⤵️](./InventoryWatch-0.1.2.zip)
+[Download InventoryWatch (0.1.3) Now ⤵️](./InventoryWatch-0.1.3.zip)
