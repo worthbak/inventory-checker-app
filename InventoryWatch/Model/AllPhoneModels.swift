@@ -13,8 +13,11 @@ struct AllPhoneModels {
         let productName: String
     }
     
-    var proMax13: [PhoneModel]
-    var pro13: [PhoneModel]
+    var proMax14: [PhoneModel]
+    var pro14: [PhoneModel]
+    var regular14: [PhoneModel]
+    var plus14: [PhoneModel]
+    
     var mini13: [PhoneModel]
     var regular13: [PhoneModel]
     
