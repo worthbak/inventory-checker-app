@@ -230,6 +230,11 @@
         "storeName": "Kurfürstendamm"
     },
     {
+        "storeNumber": "R443",
+        "city": "Berlin",
+        "storeName": "Rosenthaler Straße"
+    },
+    {
         "storeNumber": "R112",
         "city": "Bethesda",
         "storeName": "Bethesda Row"
