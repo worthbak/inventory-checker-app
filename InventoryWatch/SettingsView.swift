@@ -41,6 +41,7 @@ struct SettingsView: View {
     @AppStorage("customSku") private var customSku = ""
     @AppStorage("customSkuNickname") private var customSkuNickname = ""
     @AppStorage("useLargeText") private var useLargeText: Bool = false
+    @AppStorage("shouldIncludeNearbyStores") private var shouldIncludeNearbyStores: Bool = true
     
     @State private var selectedCountryIndex = 0
     @State private var allModels: [ProductModel] = []
@@ -103,6 +104,10 @@ struct SettingsView: View {
                     
                     Toggle(isOn: $useLargeText) {
                         Text("Use larger text sizes")
+                    }
+                    
+                    Toggle(isOn: $shouldIncludeNearbyStores) {
+                        Text("Include results from nearby stores")
                     }
                     
                     if model.hasLatestVersion == false {
@@ -220,6 +225,9 @@ struct SettingsView: View {
             loadSkus()
         }
         .onChange(of: showResultsOnlyForPreferredModels) { _ in
+            model.fetchLatestInventory()
+        }
+        .onChange(of: shouldIncludeNearbyStores) { _ in
             model.fetchLatestInventory()
         }
     }

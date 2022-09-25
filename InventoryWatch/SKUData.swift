@@ -201,3 +201,12 @@ func M2MBAirDataForCountry(_ country: Country) -> SKUData {
     
     return SKUData(orderedSKUs: orderedSkus, lookup: skusToName)
 }
+
+func AirPodsProGen2DataForCountry(_ country: Country) -> SKUData {
+    let skuCode = country.skuCode(for: .AirPodsProGen2) ?? country.skuCode
+    
+    return SKUData(
+        orderedSKUs: ["MQD83\(skuCode)/A"],
+        lookup: ["MQD83\(skuCode)/A": "AirPods Pro (2nd Generation)"]
+    )
+}

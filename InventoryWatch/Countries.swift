@@ -26,7 +26,7 @@ struct Country: Hashable {
     func skuCode(for product: ProductType) -> String? {
         switch product {
         case .MacStudio, .StudioDisplay:
-            switch name {
+            switch self.name {
             case "Canada":
                 return Country.CanadaAltCode
             case "Netherlands":
@@ -48,6 +48,19 @@ struct Country: Hashable {
                 return Country.AustriaAltCode
             case "Netherlands":
                 return Country.NetherlandsAltCodeiPad
+            default:
+                return nil
+            }
+        case .AirPodsProGen2:
+            switch self.name {
+            case "United States", "Canada":
+                return "AM"
+            case "Germany", "United Kingdom", "France", "Austria", "Netherlands":
+                return "ZM"
+            case "Australia", "Thailand":
+                return "ZA"
+            case "Italy":
+                return "TY"
             default:
                 return nil
             }
