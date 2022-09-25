@@ -214,6 +214,14 @@ final class Model: ObservableObject {
         return UserDefaults.standard.string(forKey: "preferredStoreNumber") ?? "R032"
     }
     
+    private var shouldIncludeNearbyStores: Bool {
+        let value = UserDefaults.standard.object(forKey: "shouldIncludeNearbyStores") as? Bool
+        
+        return value ?? true
+    }
+    
+    
+    
     private var preferredSKUs: Set<String> {
         guard let defaults = UserDefaults.standard.string(forKey: "preferredSKUs") else {
             return []
@@ -543,7 +551,7 @@ final class Model: ObservableObject {
                 return "parts.\(count)=\(sku)"
             }
         
-        queryItems.append("searchNearby=true")
+        queryItems.append("searchNearby=\(shouldIncludeNearbyStores)")
         queryItems.append("store=\(preferredStoreNumber)")
         
         return queryItems.joined(separator: "&")
