@@ -15,6 +15,7 @@ enum ProductType: String, Codable, CaseIterable, Identifiable {
     case M2MacBookAir
     case MacStudio
     case StudioDisplay
+    case AirPodsProGen2
     case iPadWifi
     case iPadCellular
     case iPhoneRegular13
@@ -36,6 +37,8 @@ enum ProductType: String, Codable, CaseIterable, Identifiable {
             return "Mac Studio"
         case .StudioDisplay:
             return "Studio Display"
+        case .AirPodsProGen2:
+            return "AirPods Pro"
         case .iPadWifi:
             return "iPad mini (Wifi)"
         case .iPadCellular:

@@ -244,6 +244,9 @@ final class Model: ObservableObject {
         case .StudioDisplay:
             let country = Countries[preferredCountry] ?? USData
             return StudioDisplayForCountry(country)
+        case .AirPodsProGen2:
+            let country = Countries[preferredCountry] ?? USData
+            return AirPodsProGen2DataForCountry(country)
         case .iPadWifi:
             let country = Countries[preferredCountry] ?? USData
             return iPadDataForCountry(country, isWifi: true)
