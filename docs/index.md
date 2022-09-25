@@ -1,4 +1,4 @@
-## [Download InventoryWatch (0.1.3) Now ⤵️](./InventoryWatch-0.1.3.zip)
+## [Download InventoryWatch (0.1.4) Now ⤵️](./InventoryWatch-0.1.4.zip)
 
 ![InventoryWatch-Screenshot](./ic-mkt.jpg)
 
@@ -18,6 +18,7 @@ InventoryWatch can monitor local stock for the following products:
 * iPhone 14 Pro Max (**new**)
 * iPhone 14 (**new**)
 * iPhone 14 Plus (**new**)
+* AirPods Pro (2nd Gen) (**new**)
 * M2 MacBook Air
 * MacBook Pro (14" and 16")
 * M2 MacBook Pro 13"
@@ -63,4 +64,4 @@ macOS Big Sur 11.5 or newer. InventoryWatch is built with SwiftUI.
 
 ## Ready to go?
 
-[Download InventoryWatch (0.1.3) Now ⤵️](./InventoryWatch-0.1.3.zip)
+[Download InventoryWatch (0.1.4) Now ⤵️](./InventoryWatch-0.1.4.zip)
