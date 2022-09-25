@@ -13,6 +13,7 @@ struct ContentView: View {
     @AppStorage("lastUpdateDate") private var lastUpdateDate: String = ""
     @AppStorage("preferredProductType") private var preferredProductType: String = "MacBookPro"
     @AppStorage("useLargeText") private var useLargeText: Bool = false
+    @AppStorage("shouldIncludeNearbyStores") private var shouldIncludeNearbyStores: Bool = true
     
     private var onlyShowingPreferredResults: Bool {
         return UserDefaults.standard.bool(forKey: "showResultsOnlyForPreferredModels")
@@ -52,7 +53,7 @@ struct ContentView: View {
                     
                     
                     if let preferredStoreInfo = model.preferredStoreInfo {
-                        Text("near \(preferredStoreInfo)")
+                        Text("\(shouldIncludeNearbyStores ? "near" : "at") \(preferredStoreInfo)")
                             .font(.title2)
                     }
                 }
