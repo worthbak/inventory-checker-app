@@ -12,12 +12,12 @@
             "MQEV3LL/A": "Titanium Case with Orange Alpine Loop (large)"
         },
         "trail": {
-            "MNHD3LL/A": "Titanium Case with Yellow/Beige Trail Loop (s_m)",
-            "MQF23LL/A": "Titanium Case with Yellow/Beige Trail Loop (m_l)",
-            "MNHE3LL/A": "Titanium Case with Blue/Gray Trail Loop (s_m)",
-            "MQF33LL/A": "Titanium Case with Blue/Gray Trail Loop (m_l)",
-            "MQF43LL/A": "Titanium Case with Black/Gray Trail Loop (s_m)",
-            "MQF53LL/A": "Titanium Case with Black/Gray Trail Loop (m_l)"
+            "MNHD3LL/A": "Titanium Case with Yellow/Beige Trail Loop (small/medium)",
+            "MQF23LL/A": "Titanium Case with Yellow/Beige Trail Loop (medium/large)",
+            "MNHE3LL/A": "Titanium Case with Blue/Gray Trail Loop (small/medium)",
+            "MQF33LL/A": "Titanium Case with Blue/Gray Trail Loop (medium/large)",
+            "MQF43LL/A": "Titanium Case with Black/Gray Trail Loop (small/medium)",
+            "MQF53LL/A": "Titanium Case with Black/Gray Trail Loop (medium/large)"
         },
         "ocean": {
             "MQET3LL/A": "Titanium Case with Midnight Ocean Band (onesize)",
@@ -38,12 +38,12 @@
             "MQEV3VC/A": "Titanium Case with Orange Alpine Loop (large)"
         },
         "trail": {
-            "MNHD3VC/A": "Titanium Case with Yellow/Beige Trail Loop (s_m)",
-            "MQF23VC/A": "Titanium Case with Yellow/Beige Trail Loop (m_l)",
-            "MNHE3VC/A": "Titanium Case with Blue/Grey Trail Loop (s_m)",
-            "MQF33VC/A": "Titanium Case with Blue/Grey Trail Loop (m_l)",
-            "MQF43VC/A": "Titanium Case with Black/Grey Trail Loop (s_m)",
-            "MQF53VC/A": "Titanium Case with Black/Grey Trail Loop (m_l)"
+            "MNHD3VC/A": "Titanium Case with Yellow/Beige Trail Loop (small/medium)",
+            "MQF23VC/A": "Titanium Case with Yellow/Beige Trail Loop (medium/large)",
+            "MNHE3VC/A": "Titanium Case with Blue/Grey Trail Loop (small/medium)",
+            "MQF33VC/A": "Titanium Case with Blue/Grey Trail Loop (medium/large)",
+            "MQF43VC/A": "Titanium Case with Black/Grey Trail Loop (small/medium)",
+            "MQF53VC/A": "Titanium Case with Black/Grey Trail Loop (medium/large)"
         },
         "ocean": {
             "MQET3VC/A": "Titanium Case with Midnight Ocean Band (onesize)",
@@ -64,12 +64,12 @@
             "MQFM3ZP/A": "Titanium Case with Orange Alpine Loop (large)"
         },
         "trail": {
-            "MNHK3ZP/A": "Titanium Case with Yellow/Beige Trail Loop (s_m)",
-            "MQFU3ZP/A": "Titanium Case with Yellow/Beige Trail Loop (m_l)",
-            "MNHL3ZP/A": "Titanium Case with Blue/Grey Trail Loop (s_m)",
-            "MQFV3ZP/A": "Titanium Case with Blue/Grey Trail Loop (m_l)",
-            "MQFW3ZP/A": "Titanium Case with Black/Grey Trail Loop (s_m)",
-            "MQFX3ZP/A": "Titanium Case with Black/Grey Trail Loop (m_l)"
+            "MNHK3ZP/A": "Titanium Case with Yellow/Beige Trail Loop (small/medium)",
+            "MQFU3ZP/A": "Titanium Case with Yellow/Beige Trail Loop (medium/large)",
+            "MNHL3ZP/A": "Titanium Case with Blue/Grey Trail Loop (small/medium)",
+            "MQFV3ZP/A": "Titanium Case with Blue/Grey Trail Loop (medium/large)",
+            "MQFW3ZP/A": "Titanium Case with Black/Grey Trail Loop (small/medium)",
+            "MQFX3ZP/A": "Titanium Case with Black/Grey Trail Loop (medium/large)"
         },
         "ocean": {
             "MQFK3ZP/A": "Titanium Case with Midnight Ocean Band (onesize)",
@@ -90,12 +90,12 @@
             "MQFM3FD/A": "Titangehäuse, Alpine Loop Orange (large)"
         },
         "trail": {
-            "MNHK3FD/A": "Titangehäuse, Trail Loop Gelb/Beige (s_m)",
-            "MQFU3FD/A": "Titangehäuse, Trail Loop Gelb/Beige (m_l)",
-            "MNHL3FD/A": "Titangehäuse, Trail Loop Blau/Grau (s_m)",
-            "MQFV3FD/A": "Titangehäuse, Trail Loop Blau/Grau (m_l)",
-            "MQFW3FD/A": "Titangehäuse, Trail Loop Schwarz/Grau (s_m)",
-            "MQFX3FD/A": "Titangehäuse, Trail Loop Schwarz/Grau (m_l)"
+            "MNHK3FD/A": "Titangehäuse, Trail Loop Gelb/Beige (small/medium)",
+            "MQFU3FD/A": "Titangehäuse, Trail Loop Gelb/Beige (medium/large)",
+            "MNHL3FD/A": "Titangehäuse, Trail Loop Blau/Grau (small/medium)",
+            "MQFV3FD/A": "Titangehäuse, Trail Loop Blau/Grau (medium/large)",
+            "MQFW3FD/A": "Titangehäuse, Trail Loop Schwarz/Grau (small/medium)",
+            "MQFX3FD/A": "Titangehäuse, Trail Loop Schwarz/Grau (medium/large)"
         },
         "ocean": {
             "MQFK3FD/A": "Titangehäuse, Ocean Armband Mitternacht (onesize)",
@@ -116,12 +116,12 @@
             "MQFM3B/A": "Titanium Case with Orange Alpine Loop (large)"
         },
         "trail": {
-            "MNHK3B/A": "Titanium Case with Yellow/Beige Trail Loop (s_m)",
-            "MQFU3B/A": "Titanium Case with Yellow/Beige Trail Loop (m_l)",
-            "MNHL3B/A": "Titanium Case with Blue/Grey Trail Loop (s_m)",
-            "MQFV3B/A": "Titanium Case with Blue/Grey Trail Loop (m_l)",
-            "MQFW3B/A": "Titanium Case with Black/Grey Trail Loop (s_m)",
-            "MQFX3B/A": "Titanium Case with Black/Grey Trail Loop (m_l)"
+            "MNHK3B/A": "Titanium Case with Yellow/Beige Trail Loop (small/medium)",
+            "MQFU3B/A": "Titanium Case with Yellow/Beige Trail Loop (medium/large)",
+            "MNHL3B/A": "Titanium Case with Blue/Grey Trail Loop (small/medium)",
+            "MQFV3B/A": "Titanium Case with Blue/Grey Trail Loop (medium/large)",
+            "MQFW3B/A": "Titanium Case with Black/Grey Trail Loop (small/medium)",
+            "MQFX3B/A": "Titanium Case with Black/Grey Trail Loop (medium/large)"
         },
         "ocean": {
             "MQFK3B/A": "Titanium Case with Midnight Ocean Band (onesize)",
@@ -142,12 +142,12 @@
             "MQFM3KH/A": "티타늄 케이스, 그리고 오렌지 알파인 루프 (large)"
         },
         "trail": {
-            "MNHK3KH/A": "티타늄 케이스, 그리고 옐로/베이지 트레일 루프 (s_m)",
-            "MQFU3KH/A": "티타늄 케이스, 그리고 옐로/베이지 트레일 루프 (m_l)",
-            "MNHL3KH/A": "티타늄 케이스, 그리고 블루/그레이 트레일 루프 (s_m)",
-            "MQFV3KH/A": "티타늄 케이스, 그리고 블루/그레이 트레일 루프 (m_l)",
-            "MQFW3KH/A": "티타늄 케이스, 그리고 블랙/그레이 트레일 루프 (s_m)",
-            "MQFX3KH/A": "티타늄 케이스, 그리고 블랙/그레이 트레일 루프 (m_l)"
+            "MNHK3KH/A": "티타늄 케이스, 그리고 옐로/베이지 트레일 루프 (small/medium)",
+            "MQFU3KH/A": "티타늄 케이스, 그리고 옐로/베이지 트레일 루프 (medium/large)",
+            "MNHL3KH/A": "티타늄 케이스, 그리고 블루/그레이 트레일 루프 (small/medium)",
+            "MQFV3KH/A": "티타늄 케이스, 그리고 블루/그레이 트레일 루프 (medium/large)",
+            "MQFW3KH/A": "티타늄 케이스, 그리고 블랙/그레이 트레일 루프 (small/medium)",
+            "MQFX3KH/A": "티타늄 케이스, 그리고 블랙/그레이 트레일 루프 (medium/large)"
         },
         "ocean": {
             "MQFK3KH/A": "티타늄 케이스, 그리고 미드나이트 오션 밴드 (onesize)",
@@ -168,12 +168,12 @@
             "MQF73ZA/A": "Titanium Case with Orange Alpine Loop (large)"
         },
         "trail": {
-            "MNHR3ZA/A": "Titanium Case with Yellow/Beige Trail Loop (s_m)",
-            "MQFE3ZA/A": "Titanium Case with Yellow/Beige Trail Loop (m_l)",
-            "MNHT3ZA/A": "Titanium Case with Blue/Gray Trail Loop (s_m)",
-            "MQFF3ZA/A": "Titanium Case with Blue/Gray Trail Loop (m_l)",
-            "MQFG3ZA/A": "Titanium Case with Black/Gray Trail Loop (s_m)",
-            "MQFH3ZA/A": "Titanium Case with Black/Gray Trail Loop (m_l)"
+            "MNHR3ZA/A": "Titanium Case with Yellow/Beige Trail Loop (small/medium)",
+            "MQFE3ZA/A": "Titanium Case with Yellow/Beige Trail Loop (medium/large)",
+            "MNHT3ZA/A": "Titanium Case with Blue/Gray Trail Loop (small/medium)",
+            "MQFF3ZA/A": "Titanium Case with Blue/Gray Trail Loop (medium/large)",
+            "MQFG3ZA/A": "Titanium Case with Black/Gray Trail Loop (small/medium)",
+            "MQFH3ZA/A": "Titanium Case with Black/Gray Trail Loop (medium/large)"
         },
         "ocean": {
             "MQF63ZA/A": "Titanium Case with Midnight Ocean Band (onesize)",
@@ -194,12 +194,12 @@
             "MQFM3NF/A": "Boîtier en titane, Boucle Alpine orange (large)"
         },
         "trail": {
-            "MNHK3NF/A": "Boîtier en titane, Boucle Trail jaune/beige (s_m)",
-            "MQFU3NF/A": "Boîtier en titane, Boucle Trail jaune/beige (m_l)",
-            "MNHL3NF/A": "Boîtier en titane, Boucle Trail bleu/gris (s_m)",
-            "MQFV3NF/A": "Boîtier en titane, Boucle Trail bleu/gris (m_l)",
-            "MQFW3NF/A": "Boîtier en titane, Boucle Trail noir/gris (s_m)",
-            "MQFX3NF/A": "Boîtier en titane, Boucle Trail noir/gris (m_l)"
+            "MNHK3NF/A": "Boîtier en titane, Boucle Trail jaune/beige (small/medium)",
+            "MQFU3NF/A": "Boîtier en titane, Boucle Trail jaune/beige (medium/large)",
+            "MNHL3NF/A": "Boîtier en titane, Boucle Trail bleu/gris (small/medium)",
+            "MQFV3NF/A": "Boîtier en titane, Boucle Trail bleu/gris (medium/large)",
+            "MQFW3NF/A": "Boîtier en titane, Boucle Trail noir/gris (small/medium)",
+            "MQFX3NF/A": "Boîtier en titane, Boucle Trail noir/gris (medium/large)"
         },
         "ocean": {
             "MQFK3NF/A": "Boîtier en titane, Bracelet Océan minuit (onesize)",
@@ -220,12 +220,12 @@
             "MQFM3TY/A": "Cassa in titanio con Alpine Loop arancione (large)"
         },
         "trail": {
-            "MNHK3TY/A": "Cassa in titanio con Trail Loop giallo/beige (s_m)",
-            "MQFU3TY/A": "Cassa in titanio con Trail Loop giallo/beige (m_l)",
-            "MNHL3TY/A": "Cassa in titanio con Trail Loop blu/grigio (s_m)",
-            "MQFV3TY/A": "Cassa in titanio con Trail Loop blu/grigio (m_l)",
-            "MQFW3TY/A": "Cassa in titanio con Trail Loop nero/grigio (s_m)",
-            "MQFX3TY/A": "Cassa in titanio con Trail Loop nero/grigio (m_l)"
+            "MNHK3TY/A": "Cassa in titanio con Trail Loop giallo/beige (small/medium)",
+            "MQFU3TY/A": "Cassa in titanio con Trail Loop giallo/beige (medium/large)",
+            "MNHL3TY/A": "Cassa in titanio con Trail Loop blu/grigio (small/medium)",
+            "MQFV3TY/A": "Cassa in titanio con Trail Loop blu/grigio (medium/large)",
+            "MQFW3TY/A": "Cassa in titanio con Trail Loop nero/grigio (small/medium)",
+            "MQFX3TY/A": "Cassa in titanio con Trail Loop nero/grigio (medium/large)"
         },
         "ocean": {
             "MQFK3TY/A": "Cassa in titanio con Cinturino Ocean mezzanotte (onesize)",
@@ -246,12 +246,12 @@
             "MQFM3J/A": "チタニウムケースとオレンジアルパインループ (large)"
         },
         "trail": {
-            "MNHK3J/A": "チタニウムケースとイエロー/ベージュトレイルループ (s_m)",
-            "MQFU3J/A": "チタニウムケースとイエロー/ベージュトレイルループ (m_l)",
-            "MNHL3J/A": "チタニウムケースとブルー/グレイトレイルループ (s_m)",
-            "MQFV3J/A": "チタニウムケースとブルー/グレイトレイルループ (m_l)",
-            "MQFW3J/A": "チタニウムケースとブラック/グレイトレイルループ (s_m)",
-            "MQFX3J/A": "チタニウムケースとブラック/グレイトレイルループ (m_l)"
+            "MNHK3J/A": "チタニウムケースとイエロー/ベージュトレイルループ (small/medium)",
+            "MQFU3J/A": "チタニウムケースとイエロー/ベージュトレイルループ (medium/large)",
+            "MNHL3J/A": "チタニウムケースとブルー/グレイトレイルループ (small/medium)",
+            "MQFV3J/A": "チタニウムケースとブルー/グレイトレイルループ (medium/large)",
+            "MQFW3J/A": "チタニウムケースとブラック/グレイトレイルループ (small/medium)",
+            "MQFX3J/A": "チタニウムケースとブラック/グレイトレイルループ (medium/large)"
         },
         "ocean": {
             "MQFK3J/A": "チタニウムケースとミッドナイトオーシャンバンド (onesize)",
@@ -272,12 +272,12 @@
             "MQFM3FD/A": "Titangehäuse, Alpine Loop Orange (large)"
         },
         "trail": {
-            "MNHK3FD/A": "Titangehäuse, Trail Loop Gelb/Beige (s_m)",
-            "MQFU3FD/A": "Titangehäuse, Trail Loop Gelb/Beige (m_l)",
-            "MNHL3FD/A": "Titangehäuse, Trail Loop Blau/Grau (s_m)",
-            "MQFV3FD/A": "Titangehäuse, Trail Loop Blau/Grau (m_l)",
-            "MQFW3FD/A": "Titangehäuse, Trail Loop Schwarz/Grau (s_m)",
-            "MQFX3FD/A": "Titangehäuse, Trail Loop Schwarz/Grau (m_l)"
+            "MNHK3FD/A": "Titangehäuse, Trail Loop Gelb/Beige (small/medium)",
+            "MQFU3FD/A": "Titangehäuse, Trail Loop Gelb/Beige (medium/large)",
+            "MNHL3FD/A": "Titangehäuse, Trail Loop Blau/Grau (small/medium)",
+            "MQFV3FD/A": "Titangehäuse, Trail Loop Blau/Grau (medium/large)",
+            "MQFW3FD/A": "Titangehäuse, Trail Loop Schwarz/Grau (small/medium)",
+            "MQFX3FD/A": "Titangehäuse, Trail Loop Schwarz/Grau (medium/large)"
         },
         "ocean": {
             "MQFK3FD/A": "Titangehäuse, Ocean Armband Mitternacht (onesize)",
@@ -298,12 +298,12 @@
             "MQFM3NF/A": "Kast van titanium • Oranje Alpine-bandje (large)"
         },
         "trail": {
-            "MNHK3NF/A": "Kast van titanium • Geel/beige Trail-bandje (s_m)",
-            "MQFU3NF/A": "Kast van titanium • Geel/beige Trail-bandje (m_l)",
-            "MNHL3NF/A": "Kast van titanium • Blauw/grijs Trail-bandje (s_m)",
-            "MQFV3NF/A": "Kast van titanium • Blauw/grijs Trail-bandje (m_l)",
-            "MQFW3NF/A": "Kast van titanium • Zwart/grijs Trail-bandje (s_m)",
-            "MQFX3NF/A": "Kast van titanium • Zwart/grijs Trail-bandje (m_l)"
+            "MNHK3NF/A": "Kast van titanium • Geel/beige Trail-bandje (small/medium)",
+            "MQFU3NF/A": "Kast van titanium • Geel/beige Trail-bandje (medium/large)",
+            "MNHL3NF/A": "Kast van titanium • Blauw/grijs Trail-bandje (small/medium)",
+            "MQFV3NF/A": "Kast van titanium • Blauw/grijs Trail-bandje (medium/large)",
+            "MQFW3NF/A": "Kast van titanium • Zwart/grijs Trail-bandje (small/medium)",
+            "MQFX3NF/A": "Kast van titanium • Zwart/grijs Trail-bandje (medium/large)"
         },
         "ocean": {
             "MQFK3NF/A": "Kast van titanium • Middernacht Ocean-bandje (onesize)",
@@ -324,12 +324,12 @@
             "MQFM3TH/A": "ตัวเรือนไทเทเนียม | สายแบบ Alpine Loop สีส้ม (large)"
         },
         "trail": {
-            "MNHK3TH/A": "ตัวเรือนไทเทเนียม | สายแบบ Trail Loop สีเหลือง/เบจ (s_m)",
-            "MQFU3TH/A": "ตัวเรือนไทเทเนียม | สายแบบ Trail Loop สีเหลือง/เบจ (m_l)",
-            "MNHL3TH/A": "ตัวเรือนไทเทเนียม | สายแบบ Trail Loop สีน้ำเงิน/เทา (s_m)",
-            "MQFV3TH/A": "ตัวเรือนไทเทเนียม | สายแบบ Trail Loop สีน้ำเงิน/เทา (m_l)",
-            "MQFW3TH/A": "ตัวเรือนไทเทเนียม | สายแบบ Trail Loop สีดำ/เทา (s_m)",
-            "MQFX3TH/A": "ตัวเรือนไทเทเนียม | สายแบบ Trail Loop สีดำ/เทา (m_l)"
+            "MNHK3TH/A": "ตัวเรือนไทเทเนียม | สายแบบ Trail Loop สีเหลือง/เบจ (small/medium)",
+            "MQFU3TH/A": "ตัวเรือนไทเทเนียม | สายแบบ Trail Loop สีเหลือง/เบจ (medium/large)",
+            "MNHL3TH/A": "ตัวเรือนไทเทเนียม | สายแบบ Trail Loop สีน้ำเงิน/เทา (small/medium)",
+            "MQFV3TH/A": "ตัวเรือนไทเทเนียม | สายแบบ Trail Loop สีน้ำเงิน/เทา (medium/large)",
+            "MQFW3TH/A": "ตัวเรือนไทเทเนียม | สายแบบ Trail Loop สีดำ/เทา (small/medium)",
+            "MQFX3TH/A": "ตัวเรือนไทเทเนียม | สายแบบ Trail Loop สีดำ/เทา (medium/large)"
         },
         "ocean": {
             "MQFK3TH/A": "ตัวเรือนไทเทเนียม | สายแบบ Ocean Band สีมิดไนท์ (onesize)",

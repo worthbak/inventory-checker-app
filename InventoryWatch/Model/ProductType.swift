@@ -24,6 +24,7 @@ enum ProductType: String, Codable, CaseIterable, Identifiable {
     case iPhonePlus14
     case iPhonePro14
     case iPhoneProMax14
+    case AppleWatchUltra
     
     var presentableName: String {
         switch self {
@@ -55,6 +56,8 @@ enum ProductType: String, Codable, CaseIterable, Identifiable {
             return "iPhone 14 Pro"
         case .iPhoneProMax14:
             return "iPhone 14 Pro Max"
+        case.AppleWatchUltra:
+            return "Apple Watch Ultra"
         }
     }
 }
