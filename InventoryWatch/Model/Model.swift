@@ -44,10 +44,18 @@ final class Model: ObservableObject {
         }
     }
     
+    private enum iPhoneModel: CaseIterable {
+        case thirteen, fourteen
+    }
+    
     @Published var availableParts: [(Store, [PartAvailability])] = []
     @Published var isLoading = false
     @Published var hasLatestVersion = true
     @Published var errorState: ModelError?
+    
+    private var cachedPhoneData13: [String: [String: [String: String]]]?
+    private var cachedPhoneData14: [String: [String: [String: String]]]?
+    private var cachedAppleWatchData: [String: [String: [String: String]]]?
     
     lazy private(set) var allStores: [JsonStore] = {
         let location = "Stores"
@@ -138,14 +146,7 @@ final class Model: ObservableObject {
         
         return models
     }
-    
-    private var cachedPhoneData13: [String: [String: [String: String]]]?
-    private var cachedPhoneData14: [String: [String: [String: String]]]?
-    
-    private enum iPhoneModel: CaseIterable {
-        case thirteen, fourteen
-    }
-    
+
                                     // country: type:    model:   description
     private func loadIPhoneModels(for model: iPhoneModel) -> [String: [String: [String: String]]] {
         let location: String
@@ -164,19 +165,78 @@ final class Model: ObservableObject {
             }
         }
         
-        let fileType = "json"
-        if let path = Bundle.main.path(forResource: location, ofType: fileType) {
+        if let path = Bundle.main.path(forResource: location, ofType: "json") {
             do {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path))
                 let decoder = JSONDecoder()
                 
-                if let jsonStores = try? decoder.decode([String: [String: [String: String]]].self, from: data) {
+                if let iphoneData = try? decoder.decode([String: [String: [String: String]]].self, from: data) {
                     switch model {
-                    case .thirteen: cachedPhoneData13 = jsonStores
-                    case .fourteen: cachedPhoneData14 = jsonStores
+                    case .thirteen: cachedPhoneData13 = iphoneData
+                    case .fourteen: cachedPhoneData14 = iphoneData
                     }
                     
-                    return jsonStores
+                    return iphoneData
+                } else {
+                    return [:]
+                }
+                
+            } catch {
+                print(error)
+                return [:]
+            }
+        } else {
+            return [:]
+        }
+    }
+    
+    func appleWatchUltraModels(for country: Country) -> SKUData {
+        let rawData = loadAppleWatchUltraModels()
+        if rawData.isEmpty {
+            fatalError()
+        }
+        
+        var compiled: [Country: [String: [String: String]]] = [:]
+        for (countryCode, models) in rawData {
+            guard let foundCountry = Countries[countryCode.uppercased()] else {
+                self.updateErrorState(to: ModelError.invalidLocalModelStore)
+                return SKUData(orderedSKUs: [], lookup: [:])
+            }
+            
+            compiled[foundCountry] = models
+        }
+        
+        guard let countryData = compiled[country] else {
+            self.updateErrorState(to: ModelError.invalidLocalModelStore)
+            return SKUData(orderedSKUs: [], lookup: [:])
+        }
+        
+        var allSKUs = [String]()
+        var map = [String: String]()
+        for (_, models) in countryData {
+            for (sku, model) in models {
+                allSKUs.append(sku)
+                map[sku] = model
+            }
+        }
+        
+        return SKUData(orderedSKUs: allSKUs, lookup: map)
+    }
+    
+    private func loadAppleWatchUltraModels() -> [String: [String: [String: String]]] {
+        if let cachedAppleWatchData {
+            return cachedAppleWatchData
+        }
+        
+        if let path = Bundle.main.path(forResource: "AppleWatchUltra-intl", ofType: "json") {
+            do {
+                let data = try Data(contentsOf: URL(fileURLWithPath: path))
+                let decoder = JSONDecoder()
+                
+                if let appleWatchData = try? decoder.decode([String: [String: [String: String]]].self, from: data) {
+                    cachedAppleWatchData = appleWatchData
+                    
+                    return appleWatchData
                 } else {
                     return [:]
                 }
@@ -273,6 +333,8 @@ final class Model: ObservableObject {
             return phoneModels(for: country).toSkuData(\.pro14)
         case .iPhoneProMax14:
             return phoneModels(for: country).toSkuData(\.proMax14)
+        case .AppleWatchUltra:
+            return appleWatchUltraModels(for: country)
         }
     }
     
