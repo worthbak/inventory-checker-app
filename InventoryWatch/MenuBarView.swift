@@ -59,7 +59,6 @@ struct MenuBarView: View {
             .padding(.top)
         }
         .frame(width: 250)
-        .background(.black.opacity(0.05))
     }
 }
 
