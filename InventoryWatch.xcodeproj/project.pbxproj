@@ -28,6 +28,7 @@
 		38DBAF39273D6692009992D8 /* Stores.json in Resources */ = {isa = PBXBuildFile; fileRef = 38DBAF38273D6692009992D8 /* Stores.json */; };
 		38E1C21A27E6714E0047703D /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E1C21927E6714E0047703D /* Helpers.swift */; };
 		38E4279E273EF542006BF6D7 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 38E4279D273EF542006BF6D7 /* Credits.rtf */; };
+		85C56DCE28E4F5CE0032B405 /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C56DCD28E4F5CE0032B405 /* MenuBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		38DBAF38273D6692009992D8 /* Stores.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Stores.json; sourceTree = "<group>"; };
 		38E1C21927E6714E0047703D /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		38E4279D273EF542006BF6D7 /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
+		85C56DCD28E4F5CE0032B405 /* MenuBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 			children = (
 				386FDC562739DA7300C1BAC2 /* InventoryWatchApp.swift */,
 				386FDC582739DA7300C1BAC2 /* ContentView.swift */,
+				85C56DCD28E4F5CE0032B405 /* MenuBarView.swift */,
 				3817268D273AA898003B8D76 /* SettingsView.swift */,
 				386FDC69273A200000C1BAC2 /* NotificationManager.swift */,
 				3885D54A289170E700BD6A78 /* Model */,
@@ -212,6 +215,7 @@
 				3885D54C2891711E00BD6A78 /* Store.swift in Sources */,
 				3817268E273AA898003B8D76 /* SettingsView.swift in Sources */,
 				386FDC592739DA7300C1BAC2 /* ContentView.swift in Sources */,
+				85C56DCE28E4F5CE0032B405 /* MenuBarView.swift in Sources */,
 				3885D5542891719600BD6A78 /* GithubTag.swift in Sources */,
 				38D0C3A2273C60B500A7DE65 /* Countries.swift in Sources */,
 				3885D5522891718600BD6A78 /* AllPhoneModels.swift in Sources */,
@@ -352,7 +356,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"InventoryWatch/Preview Content\"";
-				DEVELOPMENT_TEAM = 64A6JSYH8N;
+				DEVELOPMENT_TEAM = T73EZMH2MB;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -362,7 +366,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 0.1.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.worthbak.InventoryWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -383,7 +387,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"InventoryWatch/Preview Content\"";
-				DEVELOPMENT_TEAM = 64A6JSYH8N;
+				DEVELOPMENT_TEAM = T73EZMH2MB;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -393,7 +397,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 0.1.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.worthbak.InventoryWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";

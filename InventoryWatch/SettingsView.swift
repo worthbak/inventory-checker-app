@@ -42,6 +42,7 @@ struct SettingsView: View {
     @AppStorage("customSkuNickname") private var customSkuNickname = ""
     @AppStorage("useLargeText") private var useLargeText: Bool = false
     @AppStorage("shouldIncludeNearbyStores") private var shouldIncludeNearbyStores: Bool = true
+    @AppStorage("showInMenuBar") private var showInMenuBar: Bool = true
     
     @State private var selectedCountryIndex = 0
     @State private var allModels: [ProductModel] = []
@@ -86,8 +87,10 @@ struct SettingsView: View {
                         Text("Only show results for preferred models")
                             .padding(.leading, 4)
                     }
-                    
-                    
+                    Toggle(isOn: $showInMenuBar) {
+                        Text("Show in Menu Bar (requires Mac OS Ventura)")
+                            .padding(.leading, 4)
+                    }
                 }
                 .fixedSize()
                 .padding(.leading, 8)
