@@ -113,7 +113,7 @@ struct SettingsView: View {
                         Text("Show in Menu Bar (requires macOS Ventura)")
                     }
                     
-                    if model.hasLatestVersion == true {
+                    if model.hasLatestVersion == false {
                         Link(destination: URL(string: "https://worthbak.github.io/inventory-checker-app/")!) {
                             HStack(spacing: 4) {
                                 Text("A new version of InventoryWatch is available - click here to download.")
