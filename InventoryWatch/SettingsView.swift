@@ -87,10 +87,6 @@ struct SettingsView: View {
                         Text("Only show results for preferred models")
                             .padding(.leading, 4)
                     }
-                    Toggle(isOn: $showInMenuBar) {
-                        Text("Show in Menu Bar (requires Mac OS Ventura)")
-                            .padding(.leading, 4)
-                    }
                 }
                 .fixedSize()
                 .padding(.leading, 8)
@@ -113,7 +109,11 @@ struct SettingsView: View {
                         Text("Include results from nearby stores")
                     }
                     
-                    if model.hasLatestVersion == false {
+                    Toggle(isOn: $showInMenuBar) {
+                        Text("Show in Menu Bar (requires macOS Ventura)")
+                    }
+                    
+                    if model.hasLatestVersion == true {
                         Link(destination: URL(string: "https://worthbak.github.io/inventory-checker-app/")!) {
                             HStack(spacing: 4) {
                                 Text("A new version of InventoryWatch is available - click here to download.")

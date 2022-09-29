@@ -54,11 +54,19 @@ struct InventoryWatchAppMacOS13: App {
                 let total = model.availableParts.reduce(0) { partialResult, part in
                     partialResult + part.1.count
                 }
-                Image("StatusBarLogo")
+                if let statusBarLogo = statusBarLogo {
+                    Image(nsImage: statusBarLogo)
+                }
                 Text("\(total) in stock")
             }
         }
         .menuBarExtraStyle(.window)
+    }
+    
+    var statusBarLogo: NSImage? {
+        let image = NSImage(named: "StatusBarLogo")
+        image?.isTemplate = true
+        return image
     }
 }
 
