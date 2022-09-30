@@ -18,11 +18,31 @@ struct AppVersionSelector {
     }
 }
 
+struct InventoryWatchApp: App {
+    @StateObject var model = Model()
+    
+    var body: some Scene {
+        ContentViewScene(model: model)
+        
+        SettingsScene(model: model)
+    }
+}
+
 @available(macOS 13.0, *)
 struct InventoryWatchAppMacOS13: App {
     @StateObject var model = Model()
-    @AppStorage("showInMenuBar") private var showInMenuBar: Bool = true
     
+    var body: some Scene {
+        ContentViewScene(model: model)
+        
+        SettingsScene(model: model)
+        
+        MenuBarScene(model: model)
+    }
+}
+
+struct ContentViewScene: Scene {
+    @StateObject var model: Model
     var body: some Scene {
         WindowGroup {
             ContentView()
@@ -39,12 +59,24 @@ struct InventoryWatchAppMacOS13: App {
                     .keyboardShortcut("r", modifiers: .command)
             }
         }
-        
+    }
+}
+
+struct SettingsScene: Scene {
+    @StateObject var model: Model
+    var body: some Scene {
         Settings {
             SettingsView()
                 .environmentObject(model)
         }
-        
+    }
+}
+
+@available(macOS 13.0, *)
+struct MenuBarScene: Scene {
+    @StateObject var model: Model
+    @AppStorage("showInMenuBar") private var showInMenuBar: Bool = true
+    var body: some Scene {
         MenuBarExtra(isInserted: $showInMenuBar) {
                 MenuBarView()
                 .frame(maxHeight: 300)
@@ -67,32 +99,5 @@ struct InventoryWatchAppMacOS13: App {
         let image = NSImage(named: "StatusBarLogo")
         image?.isTemplate = true
         return image
-    }
-}
-
-struct InventoryWatchApp: App {
-    @StateObject var model = Model()
-    
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-                .environmentObject(model)
-        }
-        .windowStyle(HiddenTitleBarWindowStyle())
-        .commands {
-            CommandGroup(replacing: .newItem) {
-                Button(action: {
-                    model.fetchLatestInventory()
-                }, label: {
-                    Text("Reload Inventory")
-                })
-                    .keyboardShortcut("r", modifiers: .command)
-            }
-        }
-        
-        Settings {
-            SettingsView()
-                .environmentObject(model)
-        }
     }
 }
