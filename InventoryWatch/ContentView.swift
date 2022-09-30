@@ -29,7 +29,13 @@ struct ContentView: View {
                             .offset(x: 8, y: -8)
                     }
                     Button(
-                        action: { NSApp.sendAction(Selector(("showPreferencesWindow:")), to: nil, from: nil) },
+                        action: {
+                            if #available(macOS 13, *) {
+                                NSApp.sendAction(Selector(("showSettingsWindow:")), to: nil, from: nil)
+                            } else {
+                                NSApp.sendAction(Selector(("showPreferencesWindow:")), to: nil, from: nil)
+                            }
+                        },
                         label: { Image(systemName: "gearshape.fill") }
                     )
                         .buttonStyle(BorderlessButtonStyle())
