@@ -472,22 +472,26 @@ final class Model: ObservableObject {
         AnalyticsData.updateAnalyticsData()
     }
     
-    private func parseStoreResponse(_ responseData: Data?, response: HTTPURLResponse?, filterForModels: Set<String>?) throws {
-        if let statusCode = response?.statusCode {
-            switch statusCode {
-            case 500...599:
-                throw ModelError.storeUnavailable
-            default:
-                break
-            }
+    private func errorForStatusCode(_ statusCode: Int?) -> ModelError? {
+        guard let statusCode else {
+            return nil
         }
         
+        switch statusCode {
+        case 500...599:
+            return .storeUnavailable
+        default:
+            return nil
+        }
+    }
+    
+    private func parseStoreResponse(_ responseData: Data?, response: HTTPURLResponse?, filterForModels: Set<String>?) throws {        
         guard let responseData = responseData else {
-            throw ModelError.invalidStoreResponse
+            throw errorForStatusCode(response?.statusCode) ?? ModelError.invalidStoreResponse
         }
         
         guard let json = try? JSONSerialization.jsonObject(with: responseData, options: []) as? [String : Any] else {
-            throw ModelError.failedToParseJSON
+            throw errorForStatusCode(response?.statusCode) ?? ModelError.invalidStoreResponse
         }
         
         guard
