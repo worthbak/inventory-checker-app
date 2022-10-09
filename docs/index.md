@@ -1,4 +1,4 @@
-## [Download InventoryWatch (0.1.5) Now ⤵️](./InventoryWatch-0.1.5.zip)
+## [Download InventoryWatch (0.1.6) Now ⤵️](./InventoryWatch-0.1.6.zip)
 
 ![InventoryWatch-Screenshot](./ic-mkt.jpg)
 
@@ -35,7 +35,7 @@ _Don't see your product on the list? Add an issue to the Github project [here](h
 
 ### Does InventoryWatch support my local store? 
 
-InventoryWatch supports querying in-store pickup stock in seven countries:
+InventoryWatch supports querying in-store pickup stock in several countries:
 
   * United States
   * Canada
@@ -65,4 +65,4 @@ macOS Big Sur 11.5 or newer. InventoryWatch is built with SwiftUI.
 
 ## Ready to go?
 
-[Download InventoryWatch (0.1.5) Now ⤵️](./InventoryWatch-0.1.5.zip)
+[Download InventoryWatch (0.1.6) Now ⤵️](./InventoryWatch-0.1.6.zip)
