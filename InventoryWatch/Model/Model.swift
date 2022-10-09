@@ -15,6 +15,7 @@ final class Model: ObservableObject {
     enum ModelError: Swift.Error, LocalizedError {
         case couldNotGenerateURL
         case invalidStoreResponse
+        case storeUnavailable
         case failedToParseJSON
         case unexpectedJSONStructure
         case noStoresFound
@@ -36,6 +37,8 @@ final class Model: ObservableObject {
                 return "InventoryWatch failed to construct a valid URL for your search."
             case .invalidStoreResponse, .failedToParseJSON, .unexpectedJSONStructure, .noStoresFound:
                 return "Unexpected inventory data found. Please confirm that the selected store is valid for the selected country."
+            case .storeUnavailable:
+                return "Apple's fulfillment API returned a server-based error and is currently unavailable."
             case .invalidLocalModelStore:
                 return "InventoryWatch has invalid or currupted local data. Please contact the developer (@worthbak)."
             case .generic(let optional):
@@ -440,7 +443,7 @@ final class Model: ObservableObject {
         
         URLSession.shared.dataTask(with: url) { data, response, error in
             do {
-                try self.parseStoreResponse(data, filterForModels: filterModels)
+                try self.parseStoreResponse(data, response: response as? HTTPURLResponse, filterForModels: filterModels)
             } catch {
                 self.updateErrorState(to: error)
             }
@@ -469,13 +472,26 @@ final class Model: ObservableObject {
         AnalyticsData.updateAnalyticsData()
     }
     
-    private func parseStoreResponse(_ responseData: Data?, filterForModels: Set<String>?) throws {
+    private func errorForStatusCode(_ statusCode: Int?) -> ModelError? {
+        guard let statusCode else {
+            return nil
+        }
+        
+        switch statusCode {
+        case 500...599:
+            return .storeUnavailable
+        default:
+            return nil
+        }
+    }
+    
+    private func parseStoreResponse(_ responseData: Data?, response: HTTPURLResponse?, filterForModels: Set<String>?) throws {        
         guard let responseData = responseData else {
-            throw ModelError.invalidStoreResponse
+            throw errorForStatusCode(response?.statusCode) ?? ModelError.invalidStoreResponse
         }
         
         guard let json = try? JSONSerialization.jsonObject(with: responseData, options: []) as? [String : Any] else {
-            throw ModelError.failedToParseJSON
+            throw errorForStatusCode(response?.statusCode) ?? ModelError.invalidStoreResponse
         }
         
         guard
