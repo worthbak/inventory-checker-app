@@ -19,13 +19,16 @@ struct SettingsView: View {
     }
     
     private struct StoreWithSelection: Identifiable, Equatable {
-        var store: JsonStore
+        var store: RetailStore
         var isSelected: Bool
         
         var id: String { storeNumber }
-        var storeNumber: String { store.storeNumber }
-        var storeName: String { store.storeName }
-        var city: String { store.city }
+        var storeNumber: String { store.id }
+        var storeName: String { store.name }
+        var city: String { store.address.city }
+        
+        var stateName: String? { store.address.stateName }
+        var stateCode: String? { store.address.stateCode }
     }
     
     @EnvironmentObject var model: Model
@@ -128,7 +131,7 @@ struct SettingsView: View {
                     Text("Preferred Model(s)")
                         .font(.headline)
                     
-                    Text("Only specific model configurations are stocked in-stores. If you believe a configuration is missing, [please open an issue](https://github.com/worthbak/inventory-checker-app/issues).")
+                    Text("Only certain model configurations are stocked in-stores. If you believe a configuration is missing, [please open an issue](https://github.com/worthbak/inventory-checker-app/issues).")
                         .font(.caption).italic()
                     
                     List {
@@ -150,7 +153,8 @@ struct SettingsView: View {
                     List {
                         ForEach($allStores) { store in
                             Toggle(isOn: store.isSelected) {
-                                Text("\(store.store.storeName.wrappedValue), \(store.store.city.wrappedValue)")
+                                let wrapped = store.wrappedValue
+                                Text("\(Text(wrapped.storeName).bold()) - \(wrapped.store.address.cityStateDisplay)")
                                     .padding(.leading, 4)
                             }
                         }
@@ -222,7 +226,10 @@ struct SettingsView: View {
             model.fetchLatestInventory()
         }
         .onChange(of: preferredCountry) { _ in
+            storeSearchText = ""
+            loadStores(filterText: storeSearchText)
             loadSkus()
+            selectDefaultStoreForNewCountry()
         }
         .onChange(of: showResultsOnlyForPreferredModels) { _ in
             model.fetchLatestInventory()
@@ -254,7 +261,7 @@ struct SettingsView: View {
             selectedStore = preferredStoreNumber
         }
         
-        let storesJson = model.allStores
+        let storesJson = model.storesForCurrentCountry
         let stores: [StoreWithSelection] = storesJson.map { store in
             StoreWithSelection(
                 store: store,
@@ -275,10 +282,31 @@ struct SettingsView: View {
                     return true
                 }
                 
+                if (store.stateName?.lowercased() ?? "").contains(filter) {
+                    return true
+                }
+                
+                if (store.stateCode?.lowercased() ?? "").contains(filter) {
+                    return true
+                }
+                
                 return false
             }
         } else {
             allStores = stores
+        }
+    }
+    
+    func selectDefaultStoreForNewCountry() {
+        guard let defaultStore = model.getDefaultStoreForCurrentCountry() else {
+            return
+        }
+        
+        preferredStoreNumber = defaultStore.storeNumber
+        selectedStore = preferredStoreNumber
+        
+        for var store in allStores {
+            store.isSelected = store.storeNumber == preferredStoreNumber
         }
     }
 }

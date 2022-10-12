@@ -58,8 +58,8 @@ struct ContentView: View {
                     }
                     
                     
-                    if let preferredStoreInfo = model.preferredStoreInfo {
-                        Text("\(shouldIncludeNearbyStores ? "near" : "at") \(preferredStoreInfo)")
+                    if let preferredStoreName = model.preferredStoreName {
+                        Text("\(shouldIncludeNearbyStores ? "near" : "at") \(preferredStoreName)")
                             .font(.title2)
                     }
                 }

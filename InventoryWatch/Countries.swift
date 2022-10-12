@@ -10,8 +10,7 @@ import Foundation
 struct Country: Hashable {
     let name: String
     
-    #warning("storePathComponent is unused currently")
-    let storePathComponent: String
+    let locale: String
     let skuCode: String
     
     private static let GermanyAltCode = "FD"
@@ -72,24 +71,24 @@ struct Country: Hashable {
 
 let USData = Country(
     name: "United States",
-    storePathComponent: "",
+    locale: "en_US",
     skuCode: "LL"
 )
 
 let Countries: [String: Country] = [
     "US": USData,
-    "CA": Country(name: "Canada", storePathComponent: "/ca", skuCode: "LL"),
-    "AU": Country(name: "Australia", storePathComponent: "/au", skuCode: "X"),
-    "DE": Country(name: "Germany", storePathComponent: "/de", skuCode: "D"),
-    "UK": Country(name: "United Kingdom", storePathComponent: "/uk", skuCode: "B"),
-    "KR": Country(name: "South Korea", storePathComponent: "/kr", skuCode: "KH"),
-    "HK": Country(name: "Hong Kong", storePathComponent: "/hk", skuCode: "ZP"),
-    "FR": Country(name: "France", storePathComponent: "/fr", skuCode: "FN"),
-    "IT": Country(name: "Italy", storePathComponent: "/it", skuCode: "T"),
-    "JP": Country(name: "Japan", storePathComponent: "/jp", skuCode: "J"),
-    "AT": Country(name: "Austria", storePathComponent: "/at", skuCode: "D"),
-    "NL": Country(name: "Netherlands", storePathComponent: "/nl", skuCode: "N"),
-    "TH": Country(name: "Thailand", storePathComponent: "/th", skuCode: "TH")
+    "CA": Country(name: "Canada", locale: "en_CA", skuCode: "LL"),
+    "AU": Country(name: "Australia", locale: "en_AU", skuCode: "X"),
+    "DE": Country(name: "Germany", locale: "de_DE", skuCode: "D"),
+    "UK": Country(name: "United Kingdom", locale: "en_GB", skuCode: "B"),
+    "KR": Country(name: "South Korea", locale: "ko_KR", skuCode: "KH"),
+    "HK": Country(name: "Hong Kong", locale: "en_HK", skuCode: "ZP"),
+    "FR": Country(name: "France", locale: "fr_FR", skuCode: "FN"),
+    "IT": Country(name: "Italy", locale: "it_IT", skuCode: "T"),
+    "JP": Country(name: "Japan", locale: "ja_JP", skuCode: "J"),
+    "AT": Country(name: "Austria", locale: "de_AT", skuCode: "D"),
+    "NL": Country(name: "Netherlands", locale: "nl_NL", skuCode: "N"),
+    "TH": Country(name: "Thailand", locale: "th_TH", skuCode: "TH"),
 ];
 
 let OrderedCountries = [

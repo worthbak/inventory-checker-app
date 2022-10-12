@@ -51,7 +51,7 @@ final class Model: ObservableObject {
         case thirteen, fourteen
     }
     
-    @Published var availableParts: [(Store, [PartAvailability])] = []
+    @Published var availableParts: [(FulfillmentStore, [PartAvailability])] = []
     @Published var isLoading = false
     @Published var hasLatestVersion = true
     @Published var errorState: ModelError?
@@ -60,26 +60,38 @@ final class Model: ObservableObject {
     private var cachedPhoneData14: [String: [String: [String: String]]]?
     private var cachedAppleWatchData: [String: [String: [String: String]]]?
     
-    lazy private(set) var allStores: [JsonStore] = {
-        let location = "Stores"
+    var storesForCurrentCountry: [RetailStore] {
+        guard let stores = storesByCountry[country.locale]?.stores else {
+            // Probably should handle this error state more intelligently
+            return []
+        }
+        
+        return stores .sorted(by: { first, second in
+            if let firstState = first.address.stateName, let secondState = second.address.stateName {
+                return firstState < secondState
+            } else {
+                return first.name < second.name
+            }
+        })
+    }
+    
+    lazy private(set) var storesByCountry: [String: StoreCountry] = {
+        
         let fileType = "json"
-        if let path = Bundle.main.path(forResource: location, ofType: fileType) {
+        if let path = Bundle.main.path(forResource: "Stores_LocalBootstrap", ofType: fileType) {
             do {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path))
                 let decoder = JSONDecoder()
                 
-                if let jsonStores = try? decoder.decode([JsonStore].self, from: data) {
-                    return jsonStores
-                } else {
-                    return []
-                }
+                let jsonStores = try decoder.decode(StoreBootstrap.self, from: data)
+                return jsonStores.countryData
                 
             } catch {
                 print(error)
-                return []
+                return [:]
             }
         } else {
-            return []
+            return [:]
         }
     }()
     
@@ -253,9 +265,10 @@ final class Model: ObservableObject {
         }
     }
     
-    private var preferredStoreInfoBacking: JsonStore?
-    @Published var preferredStoreInfo: String? = nil
+    private var preferredStoreInfoBacking: RetailStore?
+    @Published var preferredStoreName: String? = nil
     
+    private var country: Country { Countries[preferredCountry] ?? USData }
     private var preferredCountry: String {
         return UserDefaults.standard.string(forKey: "preferredCountry") ?? "US"
     }
@@ -297,32 +310,23 @@ final class Model: ObservableObject {
     
     var skuData: SKUData {
         let productType = ProductType(rawValue: preferredProductType) ?? .MacBookPro
-        let country = Countries[preferredCountry] ?? USData
         
         switch productType {
         case .MacBookPro:
-            let country = Countries[preferredCountry] ?? USData
             return MBPDataForCountry(country)
         case .M2MacBookPro13:
-            let country = Countries[preferredCountry] ?? USData
             return M2MBPDataForCountry(country)
         case .M2MacBookAir:
-            let country = Countries[preferredCountry] ?? USData
             return M2MBAirDataForCountry(country)
         case .MacStudio:
-            let country = Countries[preferredCountry] ?? USData
             return MacStudioDataForCountry(country)
         case .StudioDisplay:
-            let country = Countries[preferredCountry] ?? USData
             return StudioDisplayForCountry(country)
         case .AirPodsProGen2:
-            let country = Countries[preferredCountry] ?? USData
             return AirPodsProGen2DataForCountry(country)
         case .iPadWifi:
-            let country = Countries[preferredCountry] ?? USData
             return iPadDataForCountry(country, isWifi: true)
         case .iPadCellular:
-            let country = Countries[preferredCountry] ?? USData
             return iPadDataForCountry(country, isWifi: false)
         case .iPhoneRegular13:
             return phoneModels(for: country).toSkuData(\.regular13)
@@ -506,7 +510,7 @@ final class Model: ObservableObject {
             throw ModelError.noStoresFound
         }
         
-        let collectedStores: [Store] = storeList.compactMap { storeJSON in
+        let collectedStores: [FulfillmentStore] = storeList.compactMap { storeJSON in
             guard let name = storeJSON["storeName"] as? String else { return nil }
             guard let number = storeJSON["storeNumber"] as? String else { return nil }
             guard let city = storeJSON["city"] as? String else { return nil }
@@ -525,14 +529,14 @@ final class Model: ObservableObject {
                 return PartAvailability(partNumber: partNumber, availability: availability)
             }
             
-            return Store(storeName: name, storeNumber: number, city: city, state: state, partsAvailability: parsedParts)
+            return FulfillmentStore(storeName: name, storeNumber: number, city: city, state: state, partsAvailability: parsedParts)
         }
         
         try self.parseAvailableModels(from: collectedStores, filterForModels: filterForModels)
     }
     
-    private func parseAvailableModels(from stores: [Store], filterForModels: Set<String>?) throws {
-        let allAvailableModels: [(Store, [PartAvailability])] = stores.compactMap { store in
+    private func parseAvailableModels(from stores: [FulfillmentStore], filterForModels: Set<String>?) throws {
+        let allAvailableModels: [(FulfillmentStore, [PartAvailability])] = stores.compactMap { store in
             let rv: [PartAvailability] = store.partsAvailability.filter { part in
                 switch part.availability {
                 case .available:
@@ -590,7 +594,7 @@ final class Model: ObservableObject {
         }
     }
     
-    private func generateNotificationText(from data: [(Store, [PartAvailability])]) -> String {
+    private func generateNotificationText(from data: [(FulfillmentStore, [PartAvailability])]) -> String {
         guard data.isEmpty == false else {
             return "No Inventory Found"
         }
@@ -649,10 +653,35 @@ final class Model: ObservableObject {
         }
     }
     
+    func getDefaultStoreForCurrentCountry() -> RetailStore? {
+        let stores = storesForCurrentCountry
+        
+        let defaultStoreNumber: String
+        switch country.locale {
+        case "en_US": defaultStoreNumber = "R032"
+        case "fr_FR": defaultStoreNumber = "R277"
+        case "en_CA": defaultStoreNumber = "R121"
+        case "en_AU": defaultStoreNumber = "R238"
+        case "de_DE": defaultStoreNumber = "R443"
+        case "en_GB": defaultStoreNumber = "R092"
+        default:
+            return stores.first
+        }
+        
+        return stores.first(where: { $0.storeNumber == defaultStoreNumber }) ?? stores.first
+    }
+    
     func syncPreferredStore() {
-        if preferredStoreInfoBacking == nil || (preferredStoreInfoBacking != nil && preferredStoreInfoBacking!.storeNumber != preferredStoreNumber) {
-            preferredStoreInfoBacking = allStores.first(where: { $0.storeNumber == preferredStoreNumber })
-            preferredStoreInfo = preferredStoreInfoBacking?.storeName
+        if preferredStoreInfoBacking == nil
+                || (preferredStoreInfoBacking != nil
+                    && preferredStoreInfoBacking!.id != preferredStoreNumber
+                )
+        {
+            // Probably should handle this nil-state more intelligently
+            let stores = storesByCountry[country.locale]?.stores ?? []
+            
+            preferredStoreInfoBacking = stores.first(where: { $0.id == preferredStoreNumber })
+            preferredStoreName = preferredStoreInfoBacking?.name
         }
     }
 }
@@ -667,10 +696,10 @@ extension Model {
             PartAvailability(partNumber: "MMQX3LL/A", availability: .available),
         ]
         
-        let testStores: [Store] = [
-            Store(storeName: "Twenty Ninth St", storeNumber: "R452", city: "Boulder", state: "CO", partsAvailability: testParts),
-            Store(storeName: "Flatirons Crossing", storeNumber: "R462", city: "Louisville", state: "CO", partsAvailability: testParts),
-            Store(storeName: "Cherry Creek", storeNumber: "R552", city: "Denver", state: "CO", partsAvailability: testParts)
+        let testStores: [FulfillmentStore] = [
+            FulfillmentStore(storeName: "Twenty Ninth St", storeNumber: "R452", city: "Boulder", state: "CO", partsAvailability: testParts),
+            FulfillmentStore(storeName: "Flatirons Crossing", storeNumber: "R462", city: "Louisville", state: "CO", partsAvailability: testParts),
+            FulfillmentStore(storeName: "Cherry Creek", storeNumber: "R552", city: "Denver", state: "CO", partsAvailability: testParts)
         ]
         
         model.availableParts = testStores.map { ($0, testParts) }
