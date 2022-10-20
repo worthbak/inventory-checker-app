@@ -7,10 +7,7 @@
 
 import Foundation
 
-// TODO
-// fetch store data dynamically from:
-// https://www.apple.com/rsp-web/store-list?locale=en_US
-
+@MainActor
 final class Model: ObservableObject {
     enum ModelError: Swift.Error, LocalizedError {
         case couldNotGenerateURL
@@ -61,39 +58,58 @@ final class Model: ObservableObject {
     private var cachedAppleWatchData: [String: [String: [String: String]]]?
     
     var storesForCurrentCountry: [RetailStore] {
-        guard let stores = storesByCountry[country.locale]?.stores else {
-            // Probably should handle this error state more intelligently
-            return []
-        }
-        
-        return stores .sorted(by: { first, second in
-            if let firstState = first.address.stateName, let secondState = second.address.stateName {
-                return firstState < secondState
-            } else {
-                return first.name < second.name
+        get async {
+            let storesByCountry = try? await loadStoresByCountry()
+            guard let storesByCountry else {
+                print(ModelError.invalidLocalModelStore.localizedDescription)
+                return []
             }
-        })
+            
+            guard let stores = storesByCountry[country.locale]?.stores else {
+                // Probably should handle this error state more intelligently
+                return []
+            }
+            
+            return stores .sorted(by: { first, second in
+                if let firstState = first.address.stateName, let secondState = second.address.stateName {
+                    return firstState < secondState
+                } else {
+                    return first.name < second.name
+                }
+            })
+        }
     }
     
-    lazy private(set) var storesByCountry: [String: StoreCountry] = {
+    func loadStoresByCountry() async throws -> [String: StoreCountry] {
+        let decoder = JSONDecoder()
         
+        do {
+            // Try loading remote stores first
+            let url = URL(string: "https://www.apple.com/rsp-web/store-list?locale=en_US")!
+            let (data, _) = try await URLSession.shared.data(from: url)
+            let jsonStores = try decoder.decode(StoreBootstrap.self, from: data)
+            return jsonStores.countryData
+        } catch {
+            print(error)
+        }
+        
+        // If remote stores failed to load, fallback to local bootstrap
         let fileType = "json"
         if let path = Bundle.main.path(forResource: "Stores_LocalBootstrap", ofType: fileType) {
             do {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path))
-                let decoder = JSONDecoder()
                 
                 let jsonStores = try decoder.decode(StoreBootstrap.self, from: data)
                 return jsonStores.countryData
                 
             } catch {
                 print(error)
-                return [:]
+                throw error
             }
         } else {
-            return [:]
+            throw ModelError.invalidLocalModelStore
         }
-    }()
+    }
     
     lazy private var iPhoneModels: [Country: AllPhoneModels] = {
         var rv = [Country: AllPhoneModels]()
@@ -162,7 +178,7 @@ final class Model: ObservableObject {
         return models
     }
 
-                                    // country: type:    model:   description
+                                                          // country: type:    model:   description
     private func loadIPhoneModels(for model: iPhoneModel) -> [String: [String: [String: String]]] {
         let location: String
         switch model {
@@ -320,14 +336,21 @@ final class Model: ObservableObject {
             return M2MBAirDataForCountry(country)
         case .MacStudio:
             return MacStudioDataForCountry(country)
+            
         case .StudioDisplay:
             return StudioDisplayForCountry(country)
         case .AirPodsProGen2:
             return AirPodsProGen2DataForCountry(country)
-        case .iPadWifi:
-            return iPadDataForCountry(country, isWifi: true)
-        case .iPadCellular:
-            return iPadDataForCountry(country, isWifi: false)
+            
+        case .iPadMiniWifi:
+            return iPadMiniDataForCountry(country, isWifi: true)
+        case .iPadMiniCellular:
+            return iPadMiniDataForCountry(country, isWifi: false)
+        case .iPad10thGenWifi:
+            return iPad10thGenDataForCountry(country, isWifi: true)
+        case .iPad10thGenCellular:
+            return iPad10thGenDataForCountry(country, isWifi: false)
+            
         case .iPhoneRegular13:
             return phoneModels(for: country).toSkuData(\.regular13)
         case .iPhoneMini13:
@@ -340,6 +363,7 @@ final class Model: ObservableObject {
             return phoneModels(for: country).toSkuData(\.pro14)
         case .iPhoneProMax14:
             return phoneModels(for: country).toSkuData(\.proMax14)
+            
         case .AppleWatchUltra:
             return appleWatchUltraModels(for: country)
         }
@@ -358,7 +382,7 @@ final class Model: ObservableObject {
     }
     
     func updateErrorState(to error: Error?, deactivateLoadingState: Bool = true) {
-        DispatchQueue.main.async {
+//        DispatchQueue.main.async {
             if deactivateLoadingState {
                 self.isLoading = false
             }
@@ -374,7 +398,7 @@ final class Model: ObservableObject {
             } else {
                 self.errorState = ModelError.generic(error)
             }
-        }
+//        }
     }
     
     func fetchLatestGithubRelease() {
@@ -420,13 +444,17 @@ final class Model: ObservableObject {
         }.resume()
     }
     
-    func fetchLatestInventory() {
+    #warning("move this to a better spot! and clean up the async code!")
+    private var currentTask: URLSessionDataTask?
+    
+    func fetchLatestInventory() async {
         guard !isTest else {
             return
         }
         
-        syncPreferredStore()
+        await syncPreferredStore()
         isLoading = true
+        currentTask?.cancel()
         
         self.fetchLatestGithubRelease()
         self.updateErrorState(to: .none, deactivateLoadingState: false)
@@ -445,13 +473,23 @@ final class Model: ObservableObject {
         // Log the URL for debugging
         print(url.absoluteString)
         
-        URLSession.shared.dataTask(with: url) { data, response, error in
+        let task = URLSession.shared.dataTask(with: url) { data, response, error in
+            Task { self.currentTask = nil }
+            
+            if let error = error as? URLError, error.code == .cancelled {
+                print("duplicate URL task cancelled")
+                return
+            }
+            
             do {
                 try self.parseStoreResponse(data, response: response as? HTTPURLResponse, filterForModels: filterModels)
             } catch {
                 self.updateErrorState(to: error)
             }
-        }.resume()
+        }
+            
+        currentTask = task
+        task.resume()
         
         var updateInterval = UserDefaults.standard.integer(forKey: "preferredUpdateInterval")
         if UserDefaults.standard.object(forKey: "preferredUpdateInterval") == nil {
@@ -469,7 +507,7 @@ final class Model: ObservableObject {
         if updateInterval > 0 && updateTimer == nil {
             let interval = Double(updateInterval * 60)
             updateTimer = Timer.scheduledTimer(withTimeInterval: interval, repeats: true, block: { _ in
-                self.fetchLatestInventory()
+                Task { await self.fetchLatestInventory() }
             })
         }
         
@@ -536,25 +574,30 @@ final class Model: ObservableObject {
     }
     
     private func parseAvailableModels(from stores: [FulfillmentStore], filterForModels: Set<String>?) throws {
-        let allAvailableModels: [(FulfillmentStore, [PartAvailability])] = stores.compactMap { store in
-            let rv: [PartAvailability] = store.partsAvailability.filter { part in
-                switch part.availability {
-                case .available:
-                    if let filter = filterForModels, filter.contains(part.partNumber) == false {
+        let allAvailableModels: [(FulfillmentStore, [PartAvailability])] = stores
+            .sorted(by: { first, _ in
+                // always put preferred store first
+                return first.storeNumber == preferredStoreNumber
+            })
+            .compactMap { store in
+                let rv: [PartAvailability] = store.partsAvailability.filter { part in
+                    switch part.availability {
+                    case .available:
+                        if let filter = filterForModels, filter.contains(part.partNumber) == false {
+                            return false
+                        }
+                        
+                        return true
+                    case .unavailable, .ineligible:
                         return false
                     }
-                    
-                    return true
-                case .unavailable, .ineligible:
-                    return false
                 }
-            }
-            
-            if rv.isEmpty {
-                return nil
-            } else {
-                return (store, rv)
-            }
+                
+                if rv.isEmpty {
+                    return nil
+                } else {
+                    return (store, rv)
+                }
         }
         
         DispatchQueue.main.async {
@@ -653,8 +696,8 @@ final class Model: ObservableObject {
         }
     }
     
-    func getDefaultStoreForCurrentCountry() -> RetailStore? {
-        let stores = storesForCurrentCountry
+    func getDefaultStoreForCurrentCountry() async -> RetailStore? {
+        let stores = await storesForCurrentCountry
         
         let defaultStoreNumber: String
         switch country.locale {
@@ -671,14 +714,13 @@ final class Model: ObservableObject {
         return stores.first(where: { $0.storeNumber == defaultStoreNumber }) ?? stores.first
     }
     
-    func syncPreferredStore() {
+    func syncPreferredStore() async {
         if preferredStoreInfoBacking == nil
-                || (preferredStoreInfoBacking != nil
-                    && preferredStoreInfoBacking!.id != preferredStoreNumber
-                )
+            || (preferredStoreInfoBacking != nil
+                && preferredStoreInfoBacking!.id != preferredStoreNumber
+            )
         {
-            // Probably should handle this nil-state more intelligently
-            let stores = storesByCountry[country.locale]?.stores ?? []
+            let stores = await storesForCurrentCountry
             
             preferredStoreInfoBacking = stores.first(where: { $0.id == preferredStoreNumber })
             preferredStoreName = preferredStoreInfoBacking?.name

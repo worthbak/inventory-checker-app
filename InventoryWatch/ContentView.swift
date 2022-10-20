@@ -127,7 +127,7 @@ struct ContentView: View {
                 }
                 
                 Button(
-                    action: { model.fetchLatestInventory() },
+                    action: { Task { await model.fetchLatestInventory() } },
                     label: { Image(systemName: "arrow.clockwise") }
                 )
                     .buttonStyle(BorderlessButtonStyle())
@@ -145,8 +145,10 @@ struct ContentView: View {
             alignment: .center
         )
         .onAppear {
-            model.fetchLatestInventory()
-            NotificationManager.shared.requestNotificationPermissions()
+            Task {
+                await model.fetchLatestInventory()
+                NotificationManager.shared.requestNotificationPermissions()
+            }
         }
     }
 }

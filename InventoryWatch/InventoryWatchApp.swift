@@ -20,7 +20,7 @@ struct InventoryWatchApp: App {
         .commands {
             CommandGroup(replacing: .newItem) {
                 Button(action: {
-                    model.fetchLatestInventory()
+                    Task { await model.fetchLatestInventory() }
                 }, label: {
                     Text("Reload Inventory")
                 })

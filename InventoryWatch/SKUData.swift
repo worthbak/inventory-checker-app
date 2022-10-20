@@ -21,8 +21,50 @@ struct SKUData {
     }
 }
 
-func iPadDataForCountry(_ country: Country, isWifi: Bool) -> SKUData {
-    let skuCode = country.skuCode(for: isWifi ? .iPadWifi : .iPadCellular) ?? country.skuCode
+func iPad10thGenDataForCountry(_ country: Country, isWifi: Bool) -> SKUData {
+    let skuCode = country.skuCode(for: isWifi ? .iPad10thGenWifi : .iPad10thGenCellular) ?? country.skuCode
+    
+    let wifiData = [
+        "MPQ13": "iPad (10th Gen) 64GB Blue Wifi",
+        "MPQ93": "iPad (10th Gen) 256GB Blue Wifi",
+        "MPQ33": "iPad (10th Gen) 64GB Pink Wifi",
+        "MPQC3": "iPad (10th Gen) 256GB Pink Wifi",
+        "MPQ03": "iPad (10th Gen) 64GB Silver Wifi",
+        "MPQ83": "iPad (10th Gen) 256GB Silver Wifi",
+        "MPQ23": "iPad (10th Gen) 64GB Yellow Wifi",
+        "MPQA3": "iPad (10th Gen) 256GB Yellow Wifi"
+    ]
+    
+    let cellData = [
+        "MQ6K3": "iPad (10th Gen) 64GB Blue Cellular",
+        "MQ6U3": "iPad (10th Gen) 256GB Blue Cellular",
+        "MQ6M3": "iPad (10th Gen) 64GB Pink Cellular",
+        "MQ6W3": "iPad (10th Gen) 256GB Pink Cellular",
+        "MQ6J3": "iPad (10th Gen) 64GB Silver Cellular",
+        "MQ6T3": "iPad (10th Gen) 256GB Silver Cellular",
+        "MQ6L3": "iPad (10th Gen) 64GB Yellow Cellular",
+        "MQ6V3": "iPad (10th Gen) 256GB Yellow Cellular"
+    ]
+    
+    let orderedSkus = isWifi ?
+    ["MPQ13", "MPQ93", "MPQ33", "MPQC3", "MPQ03", "MPQ83", "MPQ23", "MPQA3"] :
+    ["MQ6K3", "MQ6U3", "MQ6M3", "MQ6W3", "MQ6J3", "MQ6T3", "MQ6L3", "MQ6V3"]
+    
+    let skusToName: [String: String] = orderedSkus.reduce(into: [String: String]()) { partialResult, next in
+        let map = isWifi ? wifiData : cellData
+        guard let name = map[next] else { return }
+        
+        let localSku = "\(next)\(skuCode)/A"
+        partialResult[localSku] = name
+    }
+    
+    let localOrderedSkus = orderedSkus.map { "\($0)\(skuCode)/A" }
+    
+    return SKUData(orderedSKUs: localOrderedSkus, lookup: skusToName)
+}
+
+func iPadMiniDataForCountry(_ country: Country, isWifi: Bool) -> SKUData {
+    let skuCode = country.skuCode(for: isWifi ? .iPadMiniWifi : .iPadMiniCellular) ?? country.skuCode
     
     let wifiData = [
         "MK7R3": "iPad Mini 64GB Purple Wifi",
