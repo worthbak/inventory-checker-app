@@ -33,7 +33,7 @@ struct Country: Hashable {
             default:
                 return nil
             }
-        case .iPadMiniWifi, .iPadMiniCellular, .iPad10thGenWifi, .iPad10thGenCellular:
+        case .iPadMiniWifi, .iPadMiniCellular, .iPad10thGenWifi, .iPad10thGenCellular, .iPadProM2_11in_Wifi, .iPadProM2_11in_Cellular, .iPadProM2_13in_Wifi, .iPadProM2_13in_Cellular:
             switch name {
             case "Germany":
                 return Country.GermanyAltCode

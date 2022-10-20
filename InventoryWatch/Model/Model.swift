@@ -350,6 +350,14 @@ final class Model: ObservableObject {
             return iPad10thGenDataForCountry(country, isWifi: true)
         case .iPad10thGenCellular:
             return iPad10thGenDataForCountry(country, isWifi: false)
+        case .iPadProM2_11in_Wifi:
+            return iPadProM2_11inDataForCountry(country, isWifi: true)
+        case .iPadProM2_11in_Cellular:
+            return iPadProM2_11inDataForCountry(country, isWifi: false)
+        case .iPadProM2_13in_Wifi:
+            return iPadProM2_13inDataForCountry(country, isWifi: true)
+        case .iPadProM2_13in_Cellular:
+            return iPadProM2_13inDataForCountry(country, isWifi: false)
             
         case .iPhoneRegular13:
             return phoneModels(for: country).toSkuData(\.regular13)
@@ -382,7 +390,7 @@ final class Model: ObservableObject {
     }
     
     func updateErrorState(to error: Error?, deactivateLoadingState: Bool = true) {
-//        DispatchQueue.main.async {
+        DispatchQueue.main.async {
             if deactivateLoadingState {
                 self.isLoading = false
             }
@@ -398,7 +406,7 @@ final class Model: ObservableObject {
             } else {
                 self.errorState = ModelError.generic(error)
             }
-//        }
+        }
     }
     
     func fetchLatestGithubRelease() {

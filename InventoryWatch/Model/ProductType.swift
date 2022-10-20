@@ -22,6 +22,10 @@ enum ProductType: String, Codable, CaseIterable, Identifiable {
     case iPadMiniCellular
     case iPad10thGenWifi
     case iPad10thGenCellular
+    case iPadProM2_11in_Wifi
+    case iPadProM2_11in_Cellular
+    case iPadProM2_13in_Wifi
+    case iPadProM2_13in_Cellular
     
     case iPhoneRegular13
     case iPhoneMini13
@@ -56,6 +60,14 @@ enum ProductType: String, Codable, CaseIterable, Identifiable {
             return "iPad (10th Gen) (Wifi)"
         case .iPad10thGenCellular:
             return "iPad (10th Gen) (Cellular)"
+        case .iPadProM2_11in_Wifi:
+            return "M2 iPad Pro 11in (Wifi)"
+        case .iPadProM2_11in_Cellular:
+            return "M2 iPad Pro 11in (Cellular)"
+        case .iPadProM2_13in_Wifi:
+            return "M2 iPad Pro 12.9in (Wifi)"
+        case .iPadProM2_13in_Cellular:
+            return "M2 iPad Pro 12.9in (Cellular)"
             
         case .iPhoneRegular13:
             return "iPhone 13"
