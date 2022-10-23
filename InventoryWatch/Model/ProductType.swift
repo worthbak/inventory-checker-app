@@ -7,6 +7,43 @@
 
 import Foundation
 
+enum ProductCategories: String, Codable, CaseIterable, Identifiable {
+    var id: Self { self }
+    
+    case Mac, iPad, iPhone, AppleWatch, Accessories
+    
+    var products: [ProductType] {
+        switch self {
+        case .Mac:
+            return [.MacStudio, .M2MacBookPro13, .M2MacBookAir, .MacBookPro]
+        case .iPad:
+            return [
+                .iPadMiniWifi,
+                .iPadMiniCellular,
+                .iPad10thGenWifi,
+                .iPad10thGenCellular,
+                .iPadProM2_11in_Wifi,
+                .iPadProM2_11in_Cellular,
+                .iPadProM2_13in_Wifi,
+                .iPadProM2_13in_Cellular
+            ]
+        case .iPhone:
+            return [
+                .iPhoneRegular13,
+                .iPhoneMini13,
+                .iPhoneRegular14,
+                .iPhonePlus14,
+                .iPhonePro14,
+                .iPhoneProMax14
+            ]
+        case .AppleWatch:
+            return [.AppleWatchUltra]
+        case .Accessories:
+            return [.StudioDisplay, .AirPodsProGen2, .ApplePencilUSBCAdapter]
+        }
+    }
+}
+
 enum ProductType: String, Codable, CaseIterable, Identifiable {
     var id: Self { self }
     
@@ -17,6 +54,8 @@ enum ProductType: String, Codable, CaseIterable, Identifiable {
     
     case StudioDisplay
     case AirPodsProGen2
+    #warning("this does not work in all countries (yet)")
+    case ApplePencilUSBCAdapter
     
     case iPadMiniWifi
     case iPadMiniCellular
@@ -51,6 +90,8 @@ enum ProductType: String, Codable, CaseIterable, Identifiable {
             return "Studio Display"
         case .AirPodsProGen2:
             return "AirPods Pro"
+        case .ApplePencilUSBCAdapter:
+            return "USB-C to Apple Pencil Adapter"
             
         case .iPadMiniWifi:
             return "iPad mini (Wifi)"

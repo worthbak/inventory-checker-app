@@ -341,6 +341,8 @@ final class Model: ObservableObject {
             return StudioDisplayForCountry(country)
         case .AirPodsProGen2:
             return AirPodsProGen2DataForCountry(country)
+        case .ApplePencilUSBCAdapter:
+            return ApplePencilUSBCAdapterDataForCountry(country)
             
         case .iPadMiniWifi:
             return iPadMiniDataForCountry(country, isWifi: true)
@@ -468,7 +470,10 @@ final class Model: ObservableObject {
         self.updateErrorState(to: .none, deactivateLoadingState: false)
         
         let filterForPreferredModels = UserDefaults.standard.bool(forKey: "showResultsOnlyForPreferredModels")
-        let filterModels = filterForPreferredModels ? preferredSKUs : nil
+        var filterModels = filterForPreferredModels ? preferredSKUs : nil
+        if let customSku = customSkuData?.sku {
+            filterModels?.insert(customSku)
+        }
         
         let urlRoot = "https://www.apple.com/\(countryPathElement.lowercased())shop/fulfillment-messages?"
         let query = generateQueryString()
@@ -482,7 +487,8 @@ final class Model: ObservableObject {
         print(url.absoluteString)
         
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
-            Task { self.currentTask = nil }
+            
+            Task { @MainActor in self.currentTask = nil }
             
             if let error = error as? URLError, error.code == .cancelled {
                 print("duplicate URL task cancelled")
@@ -627,7 +633,7 @@ final class Model: ObservableObject {
                         break
                     }
                     
-                    if hasPreferredModel == false, let customSku = UserDefaults.standard.string(forKey: "customSku"), submodel.partNumber == customSku {
+                    if hasPreferredModel == false, let customSku = self.customSkuData?.sku, submodel.partNumber == customSku {
                         hasPreferredModel = true
                         break
                     }
@@ -666,9 +672,20 @@ final class Model: ObservableObject {
         return combined.joined(separator: ", ")
     }
     
+    private var customSkuData: (sku: String, nickname: String)? {
+        guard
+            let sku = UserDefaults.standard.string(forKey: "customSku"),
+            let name = UserDefaults.standard.string(forKey: "customSkuNickname")
+        else {
+            return nil
+        }
+        
+        return (sku, name)
+    }
+    
     private func generateQueryString() -> String {
         var allSkus = skuData.orderedSKUs
-        if let customSku = UserDefaults.standard.string(forKey: "customSku") {
+        if let customSku = customSkuData?.sku {
             allSkus.append(customSku)
         }
         
@@ -691,10 +708,10 @@ final class Model: ObservableObject {
     }
     
     func productName(forSKU sku: String) -> String {
-        if let name = skuData.productName(forSKU: sku){
+        if let name = skuData.productName(forSKU: sku) {
             return name
-        } else if let custom = UserDefaults.standard.string(forKey: "customSku"), custom == sku {
-            if let nickname = UserDefaults.standard.string(forKey: "customSkuNickname"), nickname.isEmpty == false {
+        } else if let custom = customSkuData?.sku, custom == sku {
+            if let nickname = customSkuData?.nickname, nickname.isEmpty == false {
                 return "\(nickname) (custom SKU)"
             } else {
                 return "\(sku) (custom SKU)"

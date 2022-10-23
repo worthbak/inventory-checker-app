@@ -65,10 +65,13 @@ struct SettingsView: View {
                     }
                     
                     Picker("Product Type", selection: $preferredProductType) {
-                        // TODO: add separators between different product categories (iPad, Mac, etc)
-                        ForEach(ProductType.allCases) { productType in
-                            Text(productType.presentableName).tag(productType.rawValue)
+                        ForEach(ProductCategories.allCases) { category in
+                            Divider()
+                            ForEach(category.products) { productType in
+                                Text(productType.presentableName).tag(productType.rawValue)
+                            }
                         }
+                        
                     }
                     .onChange(of: preferredProductType) { _ in
                         Task { await model.fetchLatestInventory() }

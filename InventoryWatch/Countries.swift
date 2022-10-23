@@ -50,7 +50,7 @@ struct Country: Hashable {
             default:
                 return nil
             }
-        case .AirPodsProGen2:
+        case .AirPodsProGen2, .ApplePencilUSBCAdapter:
             switch self.name {
             case "United States", "Canada":
                 return "AM"

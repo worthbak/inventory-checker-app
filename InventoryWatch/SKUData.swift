@@ -344,3 +344,12 @@ func AirPodsProGen2DataForCountry(_ country: Country) -> SKUData {
         lookup: ["MQD83\(skuCode)/A": "AirPods Pro (2nd Generation)"]
     )
 }
+
+func ApplePencilUSBCAdapterDataForCountry(_ country: Country) -> SKUData {
+    let skuCode = country.skuCode(for: .ApplePencilUSBCAdapter) ?? country.skuCode
+    
+    return SKUData(
+        orderedSKUs: ["MQLU3\(skuCode)/A"],
+        lookup: ["MQLU3\(skuCode)/A": "USB-C to Apple Pencil Adapter"]
+    )
+}
