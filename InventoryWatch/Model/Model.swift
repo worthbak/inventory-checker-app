@@ -7,108 +7,45 @@
 
 import Foundation
 
-@MainActor
-final class Model: ObservableObject {
-    enum ModelError: Swift.Error, LocalizedError {
-        case couldNotGenerateURL
-        case invalidStoreResponse
-        case storeUnavailable
-        case failedToParseJSON
-        case unexpectedJSONStructure
-        case noStoresFound
-        case invalidLocalModelStore
-        case generic(Error?)
-        
-        var errorDescription: String? {
-            switch self {
-            case .generic(let error):
-                return error?.localizedDescription ?? "unknown error"
-            default:
-                return "\(self)"
-            }
-        }
-        
-        var errorMessage: String {
-            switch self {
-            case .couldNotGenerateURL:
-                return "InventoryWatch failed to construct a valid URL for your search."
-            case .invalidStoreResponse, .failedToParseJSON, .unexpectedJSONStructure, .noStoresFound:
-                return "Unexpected inventory data found. Please confirm that the selected store is valid for the selected country."
-            case .storeUnavailable:
-                return "Apple's fulfillment API returned a server-based error and is currently unavailable."
-            case .invalidLocalModelStore:
-                return "InventoryWatch has invalid or currupted local data. Please contact the developer (@worthbak)."
-            case .generic(let optional):
-                return "A network error occurred. Details: \(optional?.localizedDescription ?? "unknown")"
-            }
+enum ModelError: Swift.Error, LocalizedError {
+    case couldNotGenerateURL
+    case invalidStoreResponse
+    case storeUnavailable
+    case failedToParseJSON
+    case unexpectedJSONStructure
+    case noStoresFound
+    case invalidLocalModelStore
+    case generic(Error?)
+    
+    var errorDescription: String? {
+        switch self {
+        case .generic(let error):
+            return error?.localizedDescription ?? "unknown error"
+        default:
+            return "\(self)"
         }
     }
+    
+    var errorMessage: String {
+        switch self {
+        case .couldNotGenerateURL:
+            return "InventoryWatch failed to construct a valid URL for your search."
+        case .invalidStoreResponse, .failedToParseJSON, .unexpectedJSONStructure, .noStoresFound:
+            return "Unexpected inventory data found. Please confirm that the selected store is valid for the selected country."
+        case .storeUnavailable:
+            return "Apple's fulfillment API returned a server-based error and is currently unavailable."
+        case .invalidLocalModelStore:
+            return "InventoryWatch has invalid or currupted local data. Please contact the developer (@worthbak)."
+        case .generic(let optional):
+            return "A network error occurred. Details: \(optional?.localizedDescription ?? "unknown")"
+        }
+    }
+}
+
+struct ModelLoader {
     
     private enum iPhoneModel: CaseIterable {
         case thirteen, fourteen
-    }
-    
-    @Published var availableParts: [(FulfillmentStore, [PartAvailability])] = []
-    @Published var isLoading = false
-    @Published var hasLatestVersion = true
-    @Published var errorState: ModelError?
-    
-    private var cachedPhoneData13: [String: [String: [String: String]]]?
-    private var cachedPhoneData14: [String: [String: [String: String]]]?
-    private var cachedAppleWatchData: [String: [String: [String: String]]]?
-    
-    var storesForCurrentCountry: [RetailStore] {
-        get async {
-            let storesByCountry = try? await loadStoresByCountry()
-            guard let storesByCountry else {
-                print(ModelError.invalidLocalModelStore.localizedDescription)
-                return []
-            }
-            
-            guard let stores = storesByCountry[country.locale]?.stores else {
-                // Probably should handle this error state more intelligently
-                return []
-            }
-            
-            return stores .sorted(by: { first, second in
-                if let firstState = first.address.stateName, let secondState = second.address.stateName {
-                    return firstState < secondState
-                } else {
-                    return first.name < second.name
-                }
-            })
-        }
-    }
-    
-    func loadStoresByCountry() async throws -> [String: StoreCountry] {
-        let decoder = JSONDecoder()
-        
-        do {
-            // Try loading remote stores first
-            let url = URL(string: "https://www.apple.com/rsp-web/store-list?locale=en_US")!
-            let (data, _) = try await URLSession.shared.data(from: url)
-            let jsonStores = try decoder.decode(StoreBootstrap.self, from: data)
-            return jsonStores.countryData
-        } catch {
-            print(error)
-        }
-        
-        // If remote stores failed to load, fallback to local bootstrap
-        let fileType = "json"
-        if let path = Bundle.main.path(forResource: "Stores_LocalBootstrap", ofType: fileType) {
-            do {
-                let data = try Data(contentsOf: URL(fileURLWithPath: path))
-                
-                let jsonStores = try decoder.decode(StoreBootstrap.self, from: data)
-                return jsonStores.countryData
-                
-            } catch {
-                print(error)
-                throw error
-            }
-        } else {
-            throw ModelError.invalidLocalModelStore
-        }
     }
     
     lazy private var iPhoneModels: [Country: AllPhoneModels] = {
@@ -169,6 +106,59 @@ final class Model: ObservableObject {
         return rv
     }()
     
+    func skuData(for productType: ProductType, and country: Country) -> SKUData {
+        switch productType {
+        case .MacBookPro:
+            return MBPDataForCountry(country)
+        case .M2MacBookPro13:
+            return M2MBPDataForCountry(country)
+        case .M2MacBookAir:
+            return M2MBAirDataForCountry(country)
+        case .MacStudio:
+            return MacStudioDataForCountry(country)
+            
+        case .StudioDisplay:
+            return StudioDisplayForCountry(country)
+        case .AirPodsProGen2:
+            return AirPodsProGen2DataForCountry(country)
+        case .ApplePencilUSBCAdapter:
+            return ApplePencilUSBCAdapterDataForCountry(country)
+            
+        case .iPadMiniWifi:
+            return iPadMiniDataForCountry(country, isWifi: true)
+        case .iPadMiniCellular:
+            return iPadMiniDataForCountry(country, isWifi: false)
+        case .iPad10thGenWifi:
+            return iPad10thGenDataForCountry(country, isWifi: true)
+        case .iPad10thGenCellular:
+            return iPad10thGenDataForCountry(country, isWifi: false)
+        case .iPadProM2_11in_Wifi:
+            return iPadProM2_11inDataForCountry(country, isWifi: true)
+        case .iPadProM2_11in_Cellular:
+            return iPadProM2_11inDataForCountry(country, isWifi: false)
+        case .iPadProM2_13in_Wifi:
+            return iPadProM2_13inDataForCountry(country, isWifi: true)
+        case .iPadProM2_13in_Cellular:
+            return iPadProM2_13inDataForCountry(country, isWifi: false)
+            
+        case .iPhoneRegular13:
+            return phoneModels(for: country).toSkuData(\.regular13)
+        case .iPhoneMini13:
+            return phoneModels(for: country).toSkuData(\.mini13)
+        case .iPhoneRegular14:
+            return phoneModels(for: country).toSkuData(\.regular14)
+        case .iPhonePlus14:
+            return phoneModels(for: country).toSkuData(\.plus14)
+        case .iPhonePro14:
+            return phoneModels(for: country).toSkuData(\.pro14)
+        case .iPhoneProMax14:
+            return phoneModels(for: country).toSkuData(\.proMax14)
+            
+        case .AppleWatchUltra:
+            return appleWatchUltraModels(for: country)
+        }
+    }
+    
     func phoneModels(for country: Country) -> AllPhoneModels {
         guard let models = iPhoneModels[country] else {
             self.updateErrorState(to: ModelError.invalidLocalModelStore)
@@ -177,49 +167,48 @@ final class Model: ObservableObject {
         
         return models
     }
-
-                                                          // country: type:    model:   description
+                                                           // country: type:    model:   description
     private func loadIPhoneModels(for model: iPhoneModel) -> [String: [String: [String: String]]] {
-        let location: String
-        switch model {
-        case .thirteen:
-            if let cached = cachedPhoneData13 {
-                return cached
-            } else {
-                location = "iPhoneModels13-intl"
+            let location: String
+            switch model {
+            case .thirteen:
+                if let cached = cachedPhoneData13 {
+                    return cached
+                } else {
+                    location = "iPhoneModels13-intl"
+                }
+            case .fourteen:
+                if let cached = cachedPhoneData14 {
+                    return cached
+                } else {
+                    location = "iPhoneModels14-intl"
+                }
             }
-        case .fourteen:
-            if let cached = cachedPhoneData14 {
-                return cached
-            } else {
-                location = "iPhoneModels14-intl"
-            }
-        }
-        
-        if let path = Bundle.main.path(forResource: location, ofType: "json") {
-            do {
-                let data = try Data(contentsOf: URL(fileURLWithPath: path))
-                let decoder = JSONDecoder()
-                
-                if let iphoneData = try? decoder.decode([String: [String: [String: String]]].self, from: data) {
-                    switch model {
-                    case .thirteen: cachedPhoneData13 = iphoneData
-                    case .fourteen: cachedPhoneData14 = iphoneData
+            
+            if let path = Bundle.main.path(forResource: location, ofType: "json") {
+                do {
+                    let data = try Data(contentsOf: URL(fileURLWithPath: path))
+                    let decoder = JSONDecoder()
+                    
+                    if let iphoneData = try? decoder.decode([String: [String: [String: String]]].self, from: data) {
+                        switch model {
+                        case .thirteen: cachedPhoneData13 = iphoneData
+                        case .fourteen: cachedPhoneData14 = iphoneData
+                        }
+                        
+                        return iphoneData
+                    } else {
+                        return [:]
                     }
                     
-                    return iphoneData
-                } else {
+                } catch {
+                    print(error)
                     return [:]
                 }
-                
-            } catch {
-                print(error)
+            } else {
                 return [:]
             }
-        } else {
-            return [:]
         }
-    }
     
     func appleWatchUltraModels(for country: Country) -> SKUData {
         let rawData = loadAppleWatchUltraModels()
@@ -280,137 +269,46 @@ final class Model: ObservableObject {
             return [:]
         }
     }
+}
+
+actor FulfillmentModel {
     
-    private var preferredStoreInfoBacking: RetailStore?
-    @Published var preferredStoreName: String? = nil
-    
-    private var country: Country { Countries[preferredCountry] ?? USData }
-    private var preferredCountry: String {
-        return UserDefaults.standard.string(forKey: "preferredCountry") ?? "US"
-    }
-    
-    private var preferredProductType: String {
-        return UserDefaults.standard.string(forKey: "preferredProductType") ?? "MacBookPro"
-    }
-    
-    private var countryPathElement: String {
-        let country = preferredCountry
-        if country == "US" {
-            return ""
+    func loadStoresByCountry() async throws -> [String: StoreCountry] {
+        let decoder = JSONDecoder()
+        
+        do {
+            // Try loading remote stores first
+            let url = URL(string: "https://www.apple.com/rsp-web/store-list?locale=en_US")!
+            let (data, _) = try await URLSession.shared.data(from: url)
+            let jsonStores = try decoder.decode(StoreBootstrap.self, from: data)
+            return jsonStores.countryData
+        } catch {
+            print(error)
+        }
+        
+        // If remote stores failed to load, fallback to local bootstrap
+        let fileType = "json"
+        if let path = Bundle.main.path(forResource: "Stores_LocalBootstrap", ofType: fileType) {
+            do {
+                let data = try Data(contentsOf: URL(fileURLWithPath: path))
+                
+                let jsonStores = try decoder.decode(StoreBootstrap.self, from: data)
+                return jsonStores.countryData
+                
+            } catch {
+                print(error)
+                throw error
+            }
         } else {
-            return country + "/"
+            throw ModelError.invalidLocalModelStore
         }
     }
     
-    private var preferredStoreNumber: String {
-        return UserDefaults.standard.string(forKey: "preferredStoreNumber") ?? "R032"
-    }
-    
-    private var shouldIncludeNearbyStores: Bool {
-        let value = UserDefaults.standard.object(forKey: "shouldIncludeNearbyStores") as? Bool
-        
-        return value ?? true
-    }
     
     
-    
-    private var preferredSKUs: Set<String> {
-        guard let defaults = UserDefaults.standard.string(forKey: "preferredSKUs") else {
-            return []
-        }
-        
-        return defaults.components(separatedBy: ",").reduce(into: Set<String>()) { partialResult, next in
-            partialResult.insert(next)
-        }
-    }
-    
-    var skuData: SKUData {
-        let productType = ProductType(rawValue: preferredProductType) ?? .MacBookPro
-        
-        switch productType {
-        case .MacBookPro:
-            return MBPDataForCountry(country)
-        case .M2MacBookPro13:
-            return M2MBPDataForCountry(country)
-        case .M2MacBookAir:
-            return M2MBAirDataForCountry(country)
-        case .MacStudio:
-            return MacStudioDataForCountry(country)
-            
-        case .StudioDisplay:
-            return StudioDisplayForCountry(country)
-        case .AirPodsProGen2:
-            return AirPodsProGen2DataForCountry(country)
-        case .ApplePencilUSBCAdapter:
-            return ApplePencilUSBCAdapterDataForCountry(country)
-            
-        case .iPadMiniWifi:
-            return iPadMiniDataForCountry(country, isWifi: true)
-        case .iPadMiniCellular:
-            return iPadMiniDataForCountry(country, isWifi: false)
-        case .iPad10thGenWifi:
-            return iPad10thGenDataForCountry(country, isWifi: true)
-        case .iPad10thGenCellular:
-            return iPad10thGenDataForCountry(country, isWifi: false)
-        case .iPadProM2_11in_Wifi:
-            return iPadProM2_11inDataForCountry(country, isWifi: true)
-        case .iPadProM2_11in_Cellular:
-            return iPadProM2_11inDataForCountry(country, isWifi: false)
-        case .iPadProM2_13in_Wifi:
-            return iPadProM2_13inDataForCountry(country, isWifi: true)
-        case .iPadProM2_13in_Cellular:
-            return iPadProM2_13inDataForCountry(country, isWifi: false)
-            
-        case .iPhoneRegular13:
-            return phoneModels(for: country).toSkuData(\.regular13)
-        case .iPhoneMini13:
-            return phoneModels(for: country).toSkuData(\.mini13)
-        case .iPhoneRegular14:
-            return phoneModels(for: country).toSkuData(\.regular14)
-        case .iPhonePlus14:
-            return phoneModels(for: country).toSkuData(\.plus14)
-        case .iPhonePro14:
-            return phoneModels(for: country).toSkuData(\.pro14)
-        case .iPhoneProMax14:
-            return phoneModels(for: country).toSkuData(\.proMax14)
-            
-        case .AppleWatchUltra:
-            return appleWatchUltraModels(for: country)
-        }
-    }
-    
-    private var updateTimer: Timer?
-    
-    private let isTest: Bool
-    
-    init(isTest: Bool = false) {
-        self.isTest = isTest
-    }
-    
-    func clearCurrentAvailableParts() {
-        availableParts = []
-    }
-    
-    func updateErrorState(to error: Error?, deactivateLoadingState: Bool = true) {
-        DispatchQueue.main.async {
-            if deactivateLoadingState {
-                self.isLoading = false
-            }
-            
-            print(error?.localizedDescription ?? "errorState: nil")
-            guard let error = error else {
-                self.errorState = nil
-                return
-            }
-            
-            if let modelError = error as? ModelError {
-                self.errorState = modelError
-            } else {
-                self.errorState = ModelError.generic(error)
-            }
-        }
-    }
-    
+}
+
+actor GithubModel {
     func fetchLatestGithubRelease() {
         guard
             let appVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String,
@@ -451,8 +349,150 @@ final class Model: ObservableObject {
                 print("Has \(isLatestRelease ? "latest" : "outdated") version: local: \(appVersion), remote: \(latestReleaseVersion)")
                 self.hasLatestVersion = isLatestRelease
             }
-        }.resume()
+        }
+        .resume()
     }
+}
+
+@MainActor
+final class ViewModel {
+    
+    
+    
+    private let fulfillmentModel = FulfillmentModel()
+    private let defaultsVendor = DefaultsVendor()
+    
+    @Published var availableParts: [(FulfillmentStore, [PartAvailability])] = []
+    @Published var isLoading = false
+    @Published var hasLatestVersion = true
+    @Published var errorState: ModelError?
+    
+    private var country: Country { Countries[defaultsVendor.preferredCountry] ?? USData }
+    
+    @Published var preferredStoreName: String? = nil
+    
+    private var updateTimer: Timer?
+    
+    // Published? function?
+    var storesForCurrentCountry: [RetailStore] {
+        get async {
+            let storesByCountry = try? await fulfillmentModel.loadStoresByCountry()
+            guard let storesByCountry else {
+                print(ModelError.invalidLocalModelStore.localizedDescription)
+                return []
+            }
+            
+            guard let stores = storesByCountry[country.locale]?.stores else {
+                // Probably should handle this error state more intelligently
+                return []
+            }
+            
+            return stores .sorted(by: { first, second in
+                if let firstState = first.address.stateName, let secondState = second.address.stateName {
+                    return firstState < secondState
+                } else {
+                    return first.name < second.name
+                }
+            })
+        }
+    }
+    
+}
+
+struct DefaultsVendor {
+    var preferredCountry: String {
+        return UserDefaults.standard.string(forKey: "preferredCountry") ?? "US"
+    }
+    
+    var preferredProductType: String {
+        return UserDefaults.standard.string(forKey: "preferredProductType") ?? "MacBookPro"
+    }
+    
+    var countryPathElement: String {
+        let country = preferredCountry
+        if country == "US" {
+            return ""
+        } else {
+            return country + "/"
+        }
+    }
+    
+    var preferredStoreNumber: String {
+        return UserDefaults.standard.string(forKey: "preferredStoreNumber") ?? "R032"
+    }
+    
+    private var shouldIncludeNearbyStores: Bool {
+        let value = UserDefaults.standard.object(forKey: "shouldIncludeNearbyStores") as? Bool
+        
+        return value ?? true
+    }
+    
+    
+    
+    var preferredSKUs: Set<String> {
+        guard let defaults = UserDefaults.standard.string(forKey: "preferredSKUs") else {
+            return []
+        }
+        
+        return defaults.components(separatedBy: ",").reduce(into: Set<String>()) { partialResult, next in
+            partialResult.insert(next)
+        }
+    }
+}
+
+@MainActor
+final class Model: ObservableObject {
+    
+    
+    
+    
+    
+    
+    private var cachedPhoneData13: [String: [String: [String: String]]]?
+    private var cachedPhoneData14: [String: [String: [String: String]]]?
+    private var cachedAppleWatchData: [String: [String: [String: String]]]?
+    
+    
+    private var preferredStoreInfoBacking: RetailStore?
+    
+    
+    
+    
+    
+    
+    
+    
+    private let isTest: Bool
+    
+    init(isTest: Bool = false) {
+        self.isTest = isTest
+    }
+    
+    func clearCurrentAvailableParts() {
+        availableParts = []
+    }
+    
+    func updateErrorState(to error: Error?, deactivateLoadingState: Bool = true) {
+        DispatchQueue.main.async {
+            if deactivateLoadingState {
+                self.isLoading = false
+            }
+            
+            print(error?.localizedDescription ?? "errorState: nil")
+            guard let error = error else {
+                self.errorState = nil
+                return
+            }
+            
+            if let modelError = error as? ModelError {
+                self.errorState = modelError
+            } else {
+                self.errorState = ModelError.generic(error)
+            }
+        }
+    }
+    
+    
     
     #warning("move this to a better spot! and clean up the async code!")
     private var currentTask: URLSessionDataTask?
