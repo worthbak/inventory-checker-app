@@ -162,7 +162,17 @@ actor FulfillmentModel {
                     return nil
                 }
                 
-                return PartAvailability(partNumber: partNumber, partName: skuData.productName(forSKU: partNumber) ?? partNumber, availability: availability)
+                // get name from SKU data, or custom SKU if available 
+                let productName: String
+                if let name = skuData.productName(forSKU: partNumber) {
+                    productName = name
+                } else if let customSku = defaultsManager.customSkuData, partNumber == customSku.sku {
+                    productName = customSku.nickname
+                } else {
+                    productName = partNumber
+                }
+                
+                return PartAvailability(partNumber: partNumber, partName: productName, availability: availability)
             }
             
             

@@ -41,16 +41,16 @@ final class NotificationSender {
             return "No Inventory Found"
         }
         
-        var collector: [String: Int] = [:]
+        var collector: [PartAvailability: Int] = [:]
         for (_, parts) in data {
             for part in parts {
-                collector[part.partNumber, default: 0] += 1
+                collector[part, default: 0] += 1
             }
         }
         
         let combined: [String] = collector.reduce(into: []) { partialResult, next in
             let (key, value) = next
-            let name = skuData.productName(forSKU: key) ?? key
+            let name = key.partName
             partialResult.append("\(name): \(value) found")
         }
         
