@@ -9,7 +9,7 @@ import Foundation
 
 struct Country: Hashable {
     let name: String
-    
+    let shortcode: String
     let locale: String
     let skuCode: String
     
@@ -71,24 +71,25 @@ struct Country: Hashable {
 
 let USData = Country(
     name: "United States",
+    shortcode: "US",
     locale: "en_US",
     skuCode: "LL"
 )
 
 let Countries: [String: Country] = [
     "US": USData,
-    "CA": Country(name: "Canada", locale: "en_CA", skuCode: "LL"),
-    "AU": Country(name: "Australia", locale: "en_AU", skuCode: "X"),
-    "DE": Country(name: "Germany", locale: "de_DE", skuCode: "D"),
-    "UK": Country(name: "United Kingdom", locale: "en_GB", skuCode: "B"),
-    "KR": Country(name: "South Korea", locale: "ko_KR", skuCode: "KH"),
-    "HK": Country(name: "Hong Kong", locale: "en_HK", skuCode: "ZP"),
-    "FR": Country(name: "France", locale: "fr_FR", skuCode: "FN"),
-    "IT": Country(name: "Italy", locale: "it_IT", skuCode: "T"),
-    "JP": Country(name: "Japan", locale: "ja_JP", skuCode: "J"),
-    "AT": Country(name: "Austria", locale: "de_AT", skuCode: "D"),
-    "NL": Country(name: "Netherlands", locale: "nl_NL", skuCode: "N"),
-    "TH": Country(name: "Thailand", locale: "th_TH", skuCode: "TH"),
+    "CA": Country(name: "Canada", shortcode: "CA", locale: "en_CA", skuCode: "LL"),
+    "AU": Country(name: "Australia", shortcode: "AU", locale: "en_AU", skuCode: "X"),
+    "DE": Country(name: "Germany", shortcode: "DE", locale: "de_DE", skuCode: "D"),
+    "UK": Country(name: "United Kingdom", shortcode: "UK", locale: "en_GB", skuCode: "B"),
+    "KR": Country(name: "South Korea", shortcode: "KR", locale: "ko_KR", skuCode: "KH"),
+    "HK": Country(name: "Hong Kong", shortcode: "HK", locale: "en_HK", skuCode: "ZP"),
+    "FR": Country(name: "France", shortcode: "FR", locale: "fr_FR", skuCode: "FN"),
+    "IT": Country(name: "Italy", shortcode: "IT", locale: "it_IT", skuCode: "T"),
+    "JP": Country(name: "Japan", shortcode: "JP", locale: "ja_JP", skuCode: "J"),
+    "AT": Country(name: "Austria", shortcode: "AT", locale: "de_AT", skuCode: "D"),
+    "NL": Country(name: "Netherlands", shortcode: "NL", locale: "nl_NL", skuCode: "N"),
+    "TH": Country(name: "Thailand", shortcode: "TH", locale: "th_TH", skuCode: "TH"),
 ];
 
 let OrderedCountries = [

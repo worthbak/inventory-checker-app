@@ -10,6 +10,12 @@
 		380CF9FB27448E860080472A /* iPhoneModels13-intl.json in Resources */ = {isa = PBXBuildFile; fileRef = 380CF9FA27448E860080472A /* iPhoneModels13-intl.json */; };
 		3817268E273AA898003B8D76 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3817268D273AA898003B8D76 /* SettingsView.swift */; };
 		382981C328E3EA54008C68F7 /* AppleWatchUltra-intl.json in Resources */ = {isa = PBXBuildFile; fileRef = 382981C228E3EA54008C68F7 /* AppleWatchUltra-intl.json */; };
+		385886AD290827A6003D3C80 /* ModelError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385886AC290827A6003D3C80 /* ModelError.swift */; };
+		385886AF290827D6003D3C80 /* SKUDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385886AE290827D6003D3C80 /* SKUDataLoader.swift */; };
+		385886B12908280E003D3C80 /* FulfillmentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385886B02908280E003D3C80 /* FulfillmentModel.swift */; };
+		385886B32908281F003D3C80 /* GithubModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385886B22908281F003D3C80 /* GithubModel.swift */; };
+		385886B529082831003D3C80 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385886B429082831003D3C80 /* ViewModel.swift */; };
+		385886B72908283F003D3C80 /* DefaultsVendor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385886B62908283F003D3C80 /* DefaultsVendor.swift */; };
 		386FDC572739DA7300C1BAC2 /* InventoryWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386FDC562739DA7300C1BAC2 /* InventoryWatchApp.swift */; };
 		386FDC592739DA7300C1BAC2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386FDC582739DA7300C1BAC2 /* ContentView.swift */; };
 		386FDC5B2739DA7300C1BAC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 386FDC5A2739DA7300C1BAC2 /* Assets.xcassets */; };
@@ -25,6 +31,8 @@
 		3885D5542891719600BD6A78 /* GithubTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3885D5532891719600BD6A78 /* GithubTag.swift */; };
 		3891902D28E882070051FE3A /* Stores_LocalBootstrap.json in Resources */ = {isa = PBXBuildFile; fileRef = 3891902C28E882070051FE3A /* Stores_LocalBootstrap.json */; };
 		3891902F28E8831B0051FE3A /* StoreBootstrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3891902E28E8831B0051FE3A /* StoreBootstrap.swift */; };
+		3895BE92290ACE5000FBC188 /* AppleWatchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3895BE91290ACE5000FBC188 /* AppleWatchData.swift */; };
+		3895BE94290B101B00FBC188 /* NotificationSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3895BE93290B101B00FBC188 /* NotificationSender.swift */; };
 		38D0C3A2273C60B500A7DE65 /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D0C3A1273C60B500A7DE65 /* Countries.swift */; };
 		38D307DB2745E2E700A0686D /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D307DA2745E2E700A0686D /* Analytics.swift */; };
 		38E1C21A27E6714E0047703D /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E1C21927E6714E0047703D /* Helpers.swift */; };
@@ -35,6 +43,12 @@
 		380CF9FA27448E860080472A /* iPhoneModels13-intl.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "iPhoneModels13-intl.json"; sourceTree = "<group>"; };
 		3817268D273AA898003B8D76 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		382981C228E3EA54008C68F7 /* AppleWatchUltra-intl.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "AppleWatchUltra-intl.json"; sourceTree = "<group>"; };
+		385886AC290827A6003D3C80 /* ModelError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelError.swift; sourceTree = "<group>"; };
+		385886AE290827D6003D3C80 /* SKUDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKUDataLoader.swift; sourceTree = "<group>"; };
+		385886B02908280E003D3C80 /* FulfillmentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FulfillmentModel.swift; sourceTree = "<group>"; };
+		385886B22908281F003D3C80 /* GithubModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubModel.swift; sourceTree = "<group>"; };
+		385886B429082831003D3C80 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		385886B62908283F003D3C80 /* DefaultsVendor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsVendor.swift; sourceTree = "<group>"; };
 		386FDC532739DA7300C1BAC2 /* InventoryWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InventoryWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		386FDC562739DA7300C1BAC2 /* InventoryWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryWatchApp.swift; sourceTree = "<group>"; };
 		386FDC582739DA7300C1BAC2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +66,8 @@
 		3885D5532891719600BD6A78 /* GithubTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubTag.swift; sourceTree = "<group>"; };
 		3891902C28E882070051FE3A /* Stores_LocalBootstrap.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Stores_LocalBootstrap.json; sourceTree = "<group>"; };
 		3891902E28E8831B0051FE3A /* StoreBootstrap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreBootstrap.swift; sourceTree = "<group>"; };
+		3895BE91290ACE5000FBC188 /* AppleWatchData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleWatchData.swift; sourceTree = "<group>"; };
+		3895BE93290B101B00FBC188 /* NotificationSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSender.swift; sourceTree = "<group>"; };
 		38D0C3A1273C60B500A7DE65 /* Countries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countries.swift; sourceTree = "<group>"; };
 		38D307DA2745E2E700A0686D /* Analytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analytics.swift; sourceTree = "<group>"; };
 		38E1C21927E6714E0047703D /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
@@ -69,6 +85,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		385886AB2908278E003D3C80 /* ModelV2 */ = {
+			isa = PBXGroup;
+			children = (
+				385886AC290827A6003D3C80 /* ModelError.swift */,
+				385886B62908283F003D3C80 /* DefaultsVendor.swift */,
+				385886B429082831003D3C80 /* ViewModel.swift */,
+				385886B22908281F003D3C80 /* GithubModel.swift */,
+				385886AE290827D6003D3C80 /* SKUDataLoader.swift */,
+				385886B02908280E003D3C80 /* FulfillmentModel.swift */,
+				3895BE93290B101B00FBC188 /* NotificationSender.swift */,
+			);
+			path = ModelV2;
+			sourceTree = "<group>";
+		};
 		386FDC4A2739DA7300C1BAC2 = {
 			isa = PBXGroup;
 			children = (
@@ -121,10 +151,12 @@
 			isa = PBXGroup;
 			children = (
 				386FDC652739DADD00C1BAC2 /* Model.swift */,
+				385886AB2908278E003D3C80 /* ModelV2 */,
 				3885D54F2891714400BD6A78 /* ProductType.swift */,
 				3885D54B2891711E00BD6A78 /* FulfillmentStore.swift */,
 				3891902E28E8831B0051FE3A /* StoreBootstrap.swift */,
 				3885D5512891718600BD6A78 /* AllPhoneModels.swift */,
+				3895BE91290ACE5000FBC188 /* AppleWatchData.swift */,
 				3885D54D2891713200BD6A78 /* PartAvailability.swift */,
 				3885D5532891719600BD6A78 /* GithubTag.swift */,
 			);
@@ -209,15 +241,23 @@
 				386FDC662739DADD00C1BAC2 /* Model.swift in Sources */,
 				3885D54E2891713200BD6A78 /* PartAvailability.swift in Sources */,
 				386FDC68273A18F800C1BAC2 /* SKUData.swift in Sources */,
+				385886B72908283F003D3C80 /* DefaultsVendor.swift in Sources */,
 				38D307DB2745E2E700A0686D /* Analytics.swift in Sources */,
 				386FDC6A273A200000C1BAC2 /* NotificationManager.swift in Sources */,
 				38E1C21A27E6714E0047703D /* Helpers.swift in Sources */,
+				3895BE94290B101B00FBC188 /* NotificationSender.swift in Sources */,
+				385886AD290827A6003D3C80 /* ModelError.swift in Sources */,
 				3885D54C2891711E00BD6A78 /* FulfillmentStore.swift in Sources */,
 				3817268E273AA898003B8D76 /* SettingsView.swift in Sources */,
 				3891902F28E8831B0051FE3A /* StoreBootstrap.swift in Sources */,
+				385886B529082831003D3C80 /* ViewModel.swift in Sources */,
 				386FDC592739DA7300C1BAC2 /* ContentView.swift in Sources */,
+				385886AF290827D6003D3C80 /* SKUDataLoader.swift in Sources */,
+				385886B12908280E003D3C80 /* FulfillmentModel.swift in Sources */,
 				3885D5542891719600BD6A78 /* GithubTag.swift in Sources */,
+				3895BE92290ACE5000FBC188 /* AppleWatchData.swift in Sources */,
 				38D0C3A2273C60B500A7DE65 /* Countries.swift in Sources */,
+				385886B32908281F003D3C80 /* GithubModel.swift in Sources */,
 				3885D5522891718600BD6A78 /* AllPhoneModels.swift in Sources */,
 				386FDC572739DA7300C1BAC2 /* InventoryWatchApp.swift in Sources */,
 				3885D5502891714400BD6A78 /* ProductType.swift in Sources */,
