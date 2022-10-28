@@ -65,37 +65,43 @@ final class ViewModel: ObservableObject {
         Task { await updateStoreName() }
     }
     
+    private var lastTask: Task<(), Never>? = nil
+    
     func fetchLatestInventory() async {
         isLoading = true
-        defer {
-            isLoading = false
-            resetTimer()
+        AnalyticsData.updateAnalyticsData()
+        
+        if let task = lastTask {
+            print("cancelling prior task: \(task)")
+            task.cancel()
         }
         
-        #warning("need to implement dupe cancellation")
-        do {
-            hasLatestVersion = try await githubModel.hasLatestGithubRelease()
-            updateErrorState(to: .none, deactivateLoadingState: false)
+        lastTask = Task {
             
-            availableParts = try await fulfillmentModel.fetchInventory()
-            updateErrorState(to: .none)
-            
-            refreshLastUpdateTime()
-            
-            if let skuData = try? await skuDataForPreferredProduct {
-                await notificationSender.sendNotificationIfNeeded(availableParts: availableParts, skuData: skuData)
+            do {
+                hasLatestVersion = try await githubModel.hasLatestGithubRelease()
+                updateErrorState(to: .none, deactivateLoadingState: false)
+                
+                availableParts = try await fulfillmentModel.fetchInventory()
+                try Task.checkCancellation()
+                updateErrorState(to: .none)
+                
+                refreshLastUpdateTime()
+                
+                if let skuData = try? await skuDataForPreferredProduct {
+                    await notificationSender.sendNotificationIfNeeded(availableParts: availableParts, skuData: skuData)
+                }
+                
+                print("successful update at \(defaultsVendor.lastUpdateDate ?? "unknown time")")
+            } catch {
+                updateErrorState(to: error)
             }
             
-            
-            
-            #warning("analytics!")
-        } catch {
-            #warning("error handling, updates")
-            updateErrorState(to: error)
+            // how to deal with these during a cancellation?
+            isLoading = false
+            lastTask = nil
+            resetTimer()
         }
-        
-        
-        
     }
     
     func clearCurrentAvailableParts() {
@@ -108,17 +114,18 @@ final class ViewModel: ObservableObject {
         }
     }
     
+    #warning("error handling, updates")
     func updateErrorState(to error: Error?, deactivateLoadingState: Bool = true) {
         if deactivateLoadingState {
             self.isLoading = false
         }
         
-        print(error?.localizedDescription ?? "errorState: nil")
         guard let error = error else {
             self.errorState = nil
             return
         }
         
+        print(error.localizedDescription)
         if let modelError = error as? ModelError {
             self.errorState = modelError
         } else {
