@@ -8,11 +8,31 @@
 import Foundation
 import Combine
 
-// define key for observing
 extension UserDefaults {
+    
     @objc dynamic var preferredStoreNumber: String {
         get { string(forKey: "preferredStoreNumber") ?? "R032" }
         set { setValue(newValue, forKey: "preferredStoreNumber") }
+    }
+    
+    @objc dynamic var lastUpdateDate: String? {
+        get { string(forKey: "lastUpdateDate") }
+        set { setValue(newValue, forKey: "lastUpdateDate") }
+    }
+    
+    @objc dynamic var preferredUpdateInterval: Int {
+        get {
+            if let currentValue = object(forKey: "preferredUpdateInterval") as? Int {
+                return currentValue
+            } else {
+                // WB 10/28/22: Changing default update interval from 1min to 5min
+                let presetValue = 5
+                set(presetValue, forKey: "preferredUpdateInterval")
+                
+                return presetValue
+            }
+        }
+        set { setValue(newValue, forKey: "preferredUpdateInterval") }
     }
 }
 
@@ -40,13 +60,24 @@ struct DefaultsVendor {
     }
     
     var preferredStoreNumber: String {
-        return UserDefaults.standard.preferredStoreNumber
+        get { return UserDefaults.standard.preferredStoreNumber }
+        set { UserDefaults.standard.preferredStoreNumber = newValue }
     }
     
-    var preferredStoreNumberStream: AnyPublisher<String, Never> {
+    var lastUpdateDate: String? {
+        get { return UserDefaults.standard.lastUpdateDate }
+        set { UserDefaults.standard.lastUpdateDate = newValue }
+    }
+    
+    // unused - keeping this around as an example implementation
+    private var preferredStoreNumberStream: AnyPublisher<String, Never> {
         return UserDefaults.standard
             .publisher(for: \.preferredStoreNumber)
             .eraseToAnyPublisher()
+    }
+    
+    var preferredUpdateInterval: Int {
+        return UserDefaults.standard.preferredUpdateInterval
     }
     
     var shouldIncludeNearbyStores: Bool {

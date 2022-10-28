@@ -11,6 +11,7 @@ final class NotificationSender {
     
     private let defaultsVendor = DefaultsVendor()
     
+    #warning("todo: only send text for preferred models")
     func sendNotificationIfNeeded(availableParts: [(FulfillmentStore, [PartAvailability])], skuData: SKUData) async {
         var hasPreferredModel = false
         let preferredModels = defaultsVendor.preferredSKUs

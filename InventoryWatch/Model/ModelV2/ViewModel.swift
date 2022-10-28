@@ -13,13 +13,12 @@ final class ViewModel: ObservableObject {
     private let fulfillmentModel = FulfillmentModel()
     private let githubModel = GithubModel()
     private let notificationSender = NotificationSender()
-    private let defaultsVendor = DefaultsVendor()
+    private var defaultsVendor = DefaultsVendor()
     
     @Published var availableParts: [(FulfillmentStore, [PartAvailability])] = []
     @Published var isLoading = false
     @Published var hasLatestVersion = true
     @Published var errorState: ModelError?
-    
     @Published var preferredStoreName: String? = nil
     
     private var updateTimer: Timer?
@@ -63,21 +62,15 @@ final class ViewModel: ObservableObject {
     }
     
     init() {
-        let cancel = defaultsVendor.preferredStoreNumberStream.sink { storeNumber in
-            Task {
-                let store = await self.storesForCurrentCountry.first(where: { store in
-                    store.storeNumber == storeNumber
-                })
-                
-                self.preferredStoreName = store?.name
-            }
-        }
+        Task { await updateStoreName() }
     }
     
     func fetchLatestInventory() async {
-        #warning("todo: timer")
         isLoading = true
-        defer { isLoading = false }
+        defer {
+            isLoading = false
+            resetTimer()
+        }
         
         #warning("need to implement dupe cancellation")
         do {
@@ -92,6 +85,10 @@ final class ViewModel: ObservableObject {
             if let skuData = try? await skuDataForPreferredProduct {
                 await notificationSender.sendNotificationIfNeeded(availableParts: availableParts, skuData: skuData)
             }
+            
+            
+            
+            #warning("analytics!")
         } catch {
             #warning("error handling, updates")
             updateErrorState(to: error)
@@ -147,15 +144,35 @@ final class ViewModel: ObservableObject {
         return stores.first(where: { $0.storeNumber == defaultStoreNumber }) ?? stores.first
     }
     
-    private func refreshLastUpdateTime() {
-        let df = DateFormatter()
-        df.dateFormat = "MMM d, h:mm a"
-        let str = df.string(from: Date())
+    func updateStoreName() async {
+        let storeNumber = defaultsVendor.preferredStoreNumber
+        let store = await self.storesForCurrentCountry.first(where: { store in
+            store.storeNumber == storeNumber
+        })
         
-        #warning("factor into defaults manager")
-        UserDefaults.standard.setValue(str, forKey: "lastUpdateDate")
+        self.preferredStoreName = store?.name
     }
     
+    private func refreshLastUpdateTime() {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MMM d, h:mm a"
+        let dateString = formatter.string(from: Date())
+        
+        defaultsVendor.lastUpdateDate = dateString
+    }
     
+    private func resetTimer() {
+        if let existingTimer = updateTimer, existingTimer.timeInterval != Double(defaultsVendor.preferredUpdateInterval * 60) {
+            existingTimer.invalidate()
+            updateTimer = nil
+        }
+        
+        if defaultsVendor.preferredUpdateInterval > 0, updateTimer == nil {
+            let interval = Double(defaultsVendor.preferredUpdateInterval * 60)
+            updateTimer = Timer.scheduledTimer(withTimeInterval: interval, repeats: true, block: { _ in
+                Task { [weak self] in await self?.fetchLatestInventory() }
+            })
+        }
+    }
     
 }

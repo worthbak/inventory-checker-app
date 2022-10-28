@@ -232,7 +232,10 @@ struct SettingsView: View {
             }
         }
         .onChange(of: preferredStoreNumber) { _ in
-            Task { await model.fetchLatestInventory() }
+            Task {
+                await model.updateStoreName()
+                await model.fetchLatestInventory()
+            }
         }
         .onChange(of: preferredUpdateInterval) { _ in
             Task { await model.fetchLatestInventory() }
