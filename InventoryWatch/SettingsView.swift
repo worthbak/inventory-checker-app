@@ -65,7 +65,7 @@ struct SettingsView: View {
                     }
                     
                     Picker("Product Type", selection: $preferredProductType) {
-                        ForEach(ProductCategories.allCases) { category in
+                        ForEach(ProductCategory.allCases) { category in
                             Divider()
                             ForEach(category.products) { productType in
                                 Text(productType.presentableName).tag(productType.rawValue)

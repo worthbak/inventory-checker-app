@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum ProductCategories: String, Codable, CaseIterable, Identifiable {
+enum ProductCategory: String, Codable, CaseIterable, Identifiable {
     var id: Self { self }
     
     case Mac, iPad, iPhone, AppleWatch, Accessories
