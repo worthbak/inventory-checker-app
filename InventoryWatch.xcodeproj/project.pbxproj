@@ -20,7 +20,6 @@
 		386FDC592739DA7300C1BAC2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386FDC582739DA7300C1BAC2 /* ContentView.swift */; };
 		386FDC5B2739DA7300C1BAC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 386FDC5A2739DA7300C1BAC2 /* Assets.xcassets */; };
 		386FDC5E2739DA7300C1BAC2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 386FDC5D2739DA7300C1BAC2 /* Preview Assets.xcassets */; };
-		386FDC662739DADD00C1BAC2 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386FDC652739DADD00C1BAC2 /* Model.swift */; };
 		386FDC68273A18F800C1BAC2 /* SKUData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386FDC67273A18F800C1BAC2 /* SKUData.swift */; };
 		386FDC6A273A200000C1BAC2 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386FDC69273A200000C1BAC2 /* NotificationManager.swift */; };
 		387F6E7628CCF5B300E68AC0 /* iPhoneModels14-intl.json in Resources */ = {isa = PBXBuildFile; fileRef = 387F6E7528CCF5B300E68AC0 /* iPhoneModels14-intl.json */; };
@@ -55,7 +54,6 @@
 		386FDC5A2739DA7300C1BAC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		386FDC5D2739DA7300C1BAC2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		386FDC5F2739DA7300C1BAC2 /* InventoryWatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InventoryWatch.entitlements; sourceTree = "<group>"; };
-		386FDC652739DADD00C1BAC2 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		386FDC67273A18F800C1BAC2 /* SKUData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKUData.swift; sourceTree = "<group>"; };
 		386FDC69273A200000C1BAC2 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		387F6E7528CCF5B300E68AC0 /* iPhoneModels14-intl.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "iPhoneModels14-intl.json"; sourceTree = "<group>"; };
@@ -85,18 +83,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		385886AB2908278E003D3C80 /* ModelV2 */ = {
+		3863FF54290D7F550013C1DE /* ModelTypes */ = {
 			isa = PBXGroup;
 			children = (
-				385886AC290827A6003D3C80 /* ModelError.swift */,
-				385886B62908283F003D3C80 /* DefaultsVendor.swift */,
-				385886B429082831003D3C80 /* ViewModel.swift */,
-				385886B22908281F003D3C80 /* GithubModel.swift */,
-				385886AE290827D6003D3C80 /* SKUDataLoader.swift */,
-				385886B02908280E003D3C80 /* FulfillmentModel.swift */,
-				3895BE93290B101B00FBC188 /* NotificationSender.swift */,
+				3885D54F2891714400BD6A78 /* ProductType.swift */,
+				3885D54B2891711E00BD6A78 /* FulfillmentStore.swift */,
+				3891902E28E8831B0051FE3A /* StoreBootstrap.swift */,
+				3885D5512891718600BD6A78 /* AllPhoneModels.swift */,
+				3895BE91290ACE5000FBC188 /* AppleWatchData.swift */,
+				3885D54D2891713200BD6A78 /* PartAvailability.swift */,
+				3885D5532891719600BD6A78 /* GithubTag.swift */,
 			);
-			path = ModelV2;
+			path = ModelTypes;
 			sourceTree = "<group>";
 		};
 		386FDC4A2739DA7300C1BAC2 = {
@@ -150,15 +148,14 @@
 		3885D54A289170E700BD6A78 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				386FDC652739DADD00C1BAC2 /* Model.swift */,
-				385886AB2908278E003D3C80 /* ModelV2 */,
-				3885D54F2891714400BD6A78 /* ProductType.swift */,
-				3885D54B2891711E00BD6A78 /* FulfillmentStore.swift */,
-				3891902E28E8831B0051FE3A /* StoreBootstrap.swift */,
-				3885D5512891718600BD6A78 /* AllPhoneModels.swift */,
-				3895BE91290ACE5000FBC188 /* AppleWatchData.swift */,
-				3885D54D2891713200BD6A78 /* PartAvailability.swift */,
-				3885D5532891719600BD6A78 /* GithubTag.swift */,
+				385886AC290827A6003D3C80 /* ModelError.swift */,
+				385886B62908283F003D3C80 /* DefaultsVendor.swift */,
+				385886B429082831003D3C80 /* ViewModel.swift */,
+				385886B22908281F003D3C80 /* GithubModel.swift */,
+				385886AE290827D6003D3C80 /* SKUDataLoader.swift */,
+				385886B02908280E003D3C80 /* FulfillmentModel.swift */,
+				3895BE93290B101B00FBC188 /* NotificationSender.swift */,
+				3863FF54290D7F550013C1DE /* ModelTypes */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -238,7 +235,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				386FDC662739DADD00C1BAC2 /* Model.swift in Sources */,
 				3885D54E2891713200BD6A78 /* PartAvailability.swift in Sources */,
 				386FDC68273A18F800C1BAC2 /* SKUData.swift in Sources */,
 				385886B72908283F003D3C80 /* DefaultsVendor.swift in Sources */,
