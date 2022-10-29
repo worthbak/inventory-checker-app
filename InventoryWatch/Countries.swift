@@ -76,34 +76,20 @@ let USData = Country(
     skuCode: "LL"
 )
 
-let Countries: [String: Country] = [
-    "US": USData,
-    "CA": Country(name: "Canada", shortcode: "CA", locale: "en_CA", skuCode: "LL"),
-    "AU": Country(name: "Australia", shortcode: "AU", locale: "en_AU", skuCode: "X"),
-    "DE": Country(name: "Germany", shortcode: "DE", locale: "de_DE", skuCode: "D"),
-    "UK": Country(name: "United Kingdom", shortcode: "UK", locale: "en_GB", skuCode: "B"),
-    "KR": Country(name: "South Korea", shortcode: "KR", locale: "ko_KR", skuCode: "KH"),
-    "HK": Country(name: "Hong Kong", shortcode: "HK", locale: "en_HK", skuCode: "ZP"),
-    "FR": Country(name: "France", shortcode: "FR", locale: "fr_FR", skuCode: "FN"),
-    "IT": Country(name: "Italy", shortcode: "IT", locale: "it_IT", skuCode: "T"),
-    "JP": Country(name: "Japan", shortcode: "JP", locale: "ja_JP", skuCode: "J"),
-    "AT": Country(name: "Austria", shortcode: "AT", locale: "de_AT", skuCode: "D"),
-    "NL": Country(name: "Netherlands", shortcode: "NL", locale: "nl_NL", skuCode: "N"),
-    "TH": Country(name: "Thailand", shortcode: "TH", locale: "th_TH", skuCode: "TH"),
-];
-
-let OrderedCountries = [
-    "US",
-    "CA",
-    "AU",
-    "DE",
-    "UK",
-    "KR",
-    "HK",
-    "FR",
-    "IT",
-    "JP",
-    "AT",
-    "NL",
-    "TH"
+let AllCountries = [
+    USData,
+    Country(name: "Canada", shortcode: "CA", locale: "en_CA", skuCode: "LL"),
+    Country(name: "Australia", shortcode: "AU", locale: "en_AU", skuCode: "X"),
+    Country(name: "Germany", shortcode: "DE", locale: "de_DE", skuCode: "D"),
+    Country(name: "United Kingdom", shortcode: "UK", locale: "en_GB", skuCode: "B"),
+    Country(name: "South Korea", shortcode: "KR", locale: "ko_KR", skuCode: "KH"),
+    Country(name: "Hong Kong", shortcode: "HK", locale: "en_HK", skuCode: "ZP"),
+    Country(name: "France", shortcode: "FR", locale: "fr_FR", skuCode: "FN"),
+    Country(name: "Italy", shortcode: "IT", locale: "it_IT", skuCode: "T"),
+    Country(name: "Japan", shortcode: "JP", locale: "ja_JP", skuCode: "J"),
+    Country(name: "Austria", shortcode: "AT", locale: "de_AT", skuCode: "D"),
+    Country(name: "Netherlands", shortcode: "NL", locale: "nl_NL", skuCode: "N"),
+    Country(name: "Thailand", shortcode: "TH", locale: "th_TH", skuCode: "TH"),
 ]
+let Countries: [CountryCode: Country] = Dictionary(uniqueKeysWithValues: AllCountries.map { ($0.shortcode, $0) })
+let OrderedCountries: [CountryCode] = AllCountries.map { $0.shortcode }

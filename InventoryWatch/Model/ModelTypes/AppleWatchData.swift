@@ -7,8 +7,6 @@
 
 import Foundation
 
-
-
 struct AppleWatchData {
     
     struct AppleWatchModel {

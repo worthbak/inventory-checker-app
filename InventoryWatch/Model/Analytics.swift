@@ -112,11 +112,9 @@ struct AnalyticsData: Codable, Equatable {
         }
         
         Task {
-            var request = URLRequest(url: url)
-            
             let bodyData = data.toJsonData
             
-            // Change the URLRequest to a POST request
+            var request = URLRequest(url: url)
             request.httpMethod = "POST"
             request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
             request.httpBody = bodyData

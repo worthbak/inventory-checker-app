@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class NotificationSender {
+struct NotificationSender {
     
     private let defaultsVendor = DefaultsVendor()
     

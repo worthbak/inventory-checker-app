@@ -217,13 +217,13 @@ struct SettingsView: View {
                 
                 if preferredStoreNumber != selectedStore {
                     preferredStoreNumber = selectedStore
-//                    await model.syncPreferredStore()
                 }
                 
                 await loadStores(filterText: storeSearchText)
             }
         }
         .onChange(of: preferredProductType) { newType in
+            #warning("TODO: move UserDefaults updates to ViewModel (?)")
             Task {
                 preferredSKUs = ""
                 await loadSkus()
@@ -331,7 +331,6 @@ struct SettingsView: View {
     }
 }
 
-#warning("restore")
 //struct SettingsView_Previews: PreviewProvider {
 //    static var previews: some View {
 //        SettingsView()

@@ -9,7 +9,7 @@ import Foundation
 
 actor FulfillmentModel {
     
-    let defaultsManager = DefaultsVendor()
+    let defaultsVendor = DefaultsVendor()
     let skuDataLoader = SKUDataLoader()
     
     var skuDataForPreferredProduct: SKUData {
@@ -21,9 +21,9 @@ actor FulfillmentModel {
     private var cachedStoreData: [String: StoreCountry] = [:]
     
     private var modelParsingFilter: Set<String>? {
-        let filterForPreferredModels = defaultsManager.showResultsOnlyForPreferredModels
-        var filterModels = filterForPreferredModels ? defaultsManager.preferredSKUs : nil
-        if let customSku = defaultsManager.customSkuData?.sku {
+        let filterForPreferredModels = defaultsVendor.showResultsOnlyForPreferredModels
+        var filterModels = filterForPreferredModels ? defaultsVendor.preferredSKUs : nil
+        if let customSku = defaultsVendor.customSkuData?.sku {
             filterModels?.insert(customSku)
         }
         
@@ -68,7 +68,7 @@ actor FulfillmentModel {
     }
     
     func fetchInventory() async throws -> [(FulfillmentStore, [PartAvailability])] {
-        let urlRoot = "https://www.apple.com/\(defaultsManager.countryPathElement.lowercased())shop/fulfillment-messages?"
+        let urlRoot = "https://www.apple.com/\(defaultsVendor.countryPathElement.lowercased())shop/fulfillment-messages?"
         let query = try await generateQueryString()
         
         guard let url = URL(string: urlRoot + query) else {
@@ -82,12 +82,33 @@ actor FulfillmentModel {
         return try await parseStoreResponse(data, response: response as? HTTPURLResponse, filterForModels: modelParsingFilter)
     }
     
+    func getDefaultStoreForCurrentCountry() async throws -> RetailStore? {
+        let storesByCountry = try await loadStoresByCountry()
+        guard let stores = storesByCountry[defaultsVendor.preferredCountry.locale]?.stores else {
+            throw AppError.invalidProjectState
+        }
+        
+        let defaultStoreNumber: String
+        switch defaultsVendor.preferredCountry.locale {
+        case "en_US": defaultStoreNumber = "R032"
+        case "fr_FR": defaultStoreNumber = "R277"
+        case "en_CA": defaultStoreNumber = "R121"
+        case "en_AU": defaultStoreNumber = "R238"
+        case "de_DE": defaultStoreNumber = "R443"
+        case "en_GB": defaultStoreNumber = "R092"
+        default:
+            return stores.first
+        }
+        
+        return stores.first(where: { $0.storeNumber == defaultStoreNumber }) ?? stores.first
+    }
+    
     private func generateQueryString() async throws -> String {
         
         let skuData = try await skuDataLoader.skuDataForPreferredProduct
         
         var allSkus = skuData.orderedSKUs
-        if let customSku = defaultsManager.customSkuData?.sku {
+        if let customSku = defaultsVendor.customSkuData?.sku {
             allSkus.append(customSku)
         }
         
@@ -103,8 +124,8 @@ actor FulfillmentModel {
                 return "parts.\(count)=\(sku)"
             }
         
-        queryItems.append("searchNearby=\(defaultsManager.shouldIncludeNearbyStores)")
-        queryItems.append("store=\(defaultsManager.preferredStoreNumber)")
+        queryItems.append("searchNearby=\(defaultsVendor.shouldIncludeNearbyStores)")
+        queryItems.append("store=\(defaultsVendor.preferredStoreNumber)")
         
         return queryItems.joined(separator: "&")
     }
@@ -151,7 +172,7 @@ actor FulfillmentModel {
                 let productName: String
                 if let name = skuData.productName(forSKU: partNumber) {
                     productName = name
-                } else if let customSku = defaultsManager.customSkuData, partNumber == customSku.sku {
+                } else if let customSku = defaultsVendor.customSkuData, partNumber == customSku.sku {
                     productName = customSku.nickname
                 } else {
                     productName = partNumber
@@ -172,7 +193,7 @@ actor FulfillmentModel {
         let allAvailableModels: [(FulfillmentStore, [PartAvailability])] = stores
             .sorted(by: { first, _ in
                 // always put preferred store first
-                return first.storeNumber == defaultsManager.preferredStoreNumber
+                return first.storeNumber == defaultsVendor.preferredStoreNumber
             })
             .compactMap { store in
                 let rv: [PartAvailability] = store.partsAvailability.filter { part in

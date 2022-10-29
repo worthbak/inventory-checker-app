@@ -15,13 +15,13 @@ final class ViewModel: ObservableObject {
     private let notificationSender = NotificationSender()
     private var defaultsVendor = DefaultsVendor()
     
+    private var updateTimer: Timer?
+    
     @Published var availableParts: [(FulfillmentStore, [PartAvailability])] = []
     @Published var isLoading = false
     @Published var hasLatestVersion = true
     @Published var errorState: AppError?
     @Published var preferredStoreName: String? = nil
-    
-    private var updateTimer: Timer?
     
     var skuDataForPreferredProduct: SKUData {
         get async throws {
@@ -38,7 +38,7 @@ final class ViewModel: ObservableObject {
             }
             
             guard let stores = storesByCountry[defaultsVendor.preferredCountry.locale]?.stores else {
-                // Probably should handle this error state more intelligently
+                #warning("Probably should handle this error state more intelligently")
                 return []
             }
             
@@ -94,10 +94,11 @@ final class ViewModel: ObservableObject {
                 
                 print("successful update at \(defaultsVendor.lastUpdateDate ?? "unknown time")")
             } catch {
+                #warning("should catch a cancellation error specifically")
                 updateErrorState(to: error)
             }
             
-            // how to deal with these during a cancellation?
+            #warning("how to deal with these during a cancellation?")
             isLoading = false
             lastTask = nil
             resetTimer()
@@ -133,21 +134,16 @@ final class ViewModel: ObservableObject {
     }
     
     func getDefaultStoreForCurrentCountry() async -> RetailStore? {
-        let stores = await storesForCurrentCountry
-        
-        let defaultStoreNumber: String
-        switch defaultsVendor.preferredCountry.locale {
-        case "en_US": defaultStoreNumber = "R032"
-        case "fr_FR": defaultStoreNumber = "R277"
-        case "en_CA": defaultStoreNumber = "R121"
-        case "en_AU": defaultStoreNumber = "R238"
-        case "de_DE": defaultStoreNumber = "R443"
-        case "en_GB": defaultStoreNumber = "R092"
-        default:
-            return stores.first
+        do {
+            guard let store = try await fulfillmentModel.getDefaultStoreForCurrentCountry() else {
+                throw AppError.invalidProjectState
+            }
+            
+            return store
+        } catch {
+            updateErrorState(to: error)
+            return nil
         }
-        
-        return stores.first(where: { $0.storeNumber == defaultStoreNumber }) ?? stores.first
     }
     
     func updateStoreName() async {
@@ -168,11 +164,13 @@ final class ViewModel: ObservableObject {
     }
     
     private func resetTimer() {
+        // if the timer settings have changed, kill the current timer
         if let existingTimer = updateTimer, existingTimer.timeInterval != Double(defaultsVendor.preferredUpdateInterval * 60) {
             existingTimer.invalidate()
             updateTimer = nil
         }
         
+        // if no timer exists, and the user wants repeated updates, construct a repeating timer 
         if defaultsVendor.preferredUpdateInterval > 0, updateTimer == nil {
             let interval = Double(defaultsVendor.preferredUpdateInterval * 60)
             updateTimer = Timer.scheduledTimer(withTimeInterval: interval, repeats: true, block: { _ in
