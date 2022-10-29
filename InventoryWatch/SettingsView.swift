@@ -31,7 +31,7 @@ struct SettingsView: View {
         var stateCode: String? { store.address.stateCode }
     }
     
-    @EnvironmentObject var model: Model
+    @EnvironmentObject var model: ViewModel
     @Environment(\.openURL) var openURL
     
     @AppStorage("preferredCountry") private var preferredCountry = "US"
@@ -65,7 +65,7 @@ struct SettingsView: View {
                     }
                     
                     Picker("Product Type", selection: $preferredProductType) {
-                        ForEach(ProductCategories.allCases) { category in
+                        ForEach(ProductCategory.allCases) { category in
                             Divider()
                             ForEach(category.products) { productType in
                                 Text(productType.presentableName).tag(productType.rawValue)
@@ -179,9 +179,9 @@ struct SettingsView: View {
         .onAppear {
             Task {
                 loadCountries()
-                loadSkus()
+                await loadSkus()
                 await loadStores(filterText: nil)
-                model.fetchLatestGithubRelease()
+                await model.fetchLatestGithubRelease()
             }
         }
         .onChange(of: selectedCountryIndex) { newValue in
@@ -217,22 +217,25 @@ struct SettingsView: View {
                 
                 if preferredStoreNumber != selectedStore {
                     preferredStoreNumber = selectedStore
-                    await model.syncPreferredStore()
                 }
                 
                 await loadStores(filterText: storeSearchText)
             }
         }
         .onChange(of: preferredProductType) { newType in
+            #warning("TODO: move UserDefaults updates to ViewModel (?)")
             Task {
                 preferredSKUs = ""
-                loadSkus()
+                await loadSkus()
                 model.clearCurrentAvailableParts()
                 await model.fetchLatestInventory()
             }
         }
         .onChange(of: preferredStoreNumber) { _ in
-            Task { await model.fetchLatestInventory() }
+            Task {
+                await model.updateStoreName()
+                await model.fetchLatestInventory()
+            }
         }
         .onChange(of: preferredUpdateInterval) { _ in
             Task { await model.fetchLatestInventory() }
@@ -241,7 +244,7 @@ struct SettingsView: View {
             Task {
                 storeSearchText = ""
                 await loadStores(filterText: storeSearchText)
-                loadSkus()
+                await loadSkus()
                 await selectDefaultStoreForNewCountry()
             }
         }
@@ -261,9 +264,12 @@ struct SettingsView: View {
         }
     }
     
-    func loadSkus() {
+    func loadSkus() async {
         let favoriteSkus = Set<String>(preferredSKUs.components(separatedBy: ","))
-        let skuData = model.skuData
+        guard let skuData = try? await model.skuDataForPreferredProduct else {
+            return
+        }
+        
         allModels = skuData.orderedSKUs.map { sku in
             let name = skuData.productName(forSKU: sku) ?? sku
             return ProductModel(sku: sku, name: name, isFavorite: favoriteSkus.contains(sku))
@@ -325,9 +331,9 @@ struct SettingsView: View {
     }
 }
 
-struct SettingsView_Previews: PreviewProvider {
-    static var previews: some View {
-        SettingsView()
-            .environmentObject(Model.testData)
-    }
-}
+//struct SettingsView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        SettingsView()
+//            .environmentObject(Model.testData)
+//    }
+//}

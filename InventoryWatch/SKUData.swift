@@ -30,11 +30,11 @@ func iPadProM2_11inDataForCountry(_ country: Country, isWifi: Bool) -> SKUData {
         "MP5D3": "M2 iPad Pro 11in 512GB Silver Cellular",
         "MP5F3": "M2 iPad Pro 11in 1TB Silver Cellular",
         "MP5H3": "M2 iPad Pro 11in 2TB Silver Cellular",
-        "MP553": "M2 iPad Pro 11in 128GB Space_gray Cellular",
-        "MP573": "M2 iPad Pro 11in 256GB Space_gray Cellular",
-        "MP593": "M2 iPad Pro 11in 512GB Space_gray Cellular",
-        "MP5E3": "M2 iPad Pro 11in 1TB Space_gray Cellular",
-        "MP5G3": "M2 iPad Pro 11in 2TB Space_gray Cellular"
+        "MP553": "M2 iPad Pro 11in 128GB Space Gray Cellular",
+        "MP573": "M2 iPad Pro 11in 256GB Space Gray Cellular",
+        "MP593": "M2 iPad Pro 11in 512GB Space Gray Cellular",
+        "MP5E3": "M2 iPad Pro 11in 1TB Space Gray Cellular",
+        "MP5G3": "M2 iPad Pro 11in 2TB Space Gray Cellular"
     ]
     
     let wifiData = [
@@ -43,11 +43,11 @@ func iPadProM2_11inDataForCountry(_ country: Country, isWifi: Bool) -> SKUData {
         "MNXJ3": "M2 iPad Pro 11in 512GB Silver Wifi",
         "MNXL3": "M2 iPad Pro 11in 1TB Silver Wifi",
         "MNXN3": "M2 iPad Pro 11in 2TB Silver Wifi",
-        "MNXD3": "M2 iPad Pro 11in 128GB Space_gray Wifi",
-        "MNXF3": "M2 iPad Pro 11in 256GB Space_gray Wifi",
-        "MNXH3": "M2 iPad Pro 11in 512GB Space_gray Wifi",
-        "MNXK3": "M2 iPad Pro 11in 1TB Space_gray Wifi",
-        "MNXM3": "M2 iPad Pro 11in 2TB Space_gray Wifi"
+        "MNXD3": "M2 iPad Pro 11in 128GB Space Gray Wifi",
+        "MNXF3": "M2 iPad Pro 11in 256GB Space Gray Wifi",
+        "MNXH3": "M2 iPad Pro 11in 512GB Space Gray Wifi",
+        "MNXK3": "M2 iPad Pro 11in 1TB Space Gray Wifi",
+        "MNXM3": "M2 iPad Pro 11in 2TB Space Gray Wifi"
     ]
     
     let orderedSkus = isWifi ?
@@ -76,11 +76,11 @@ func iPadProM2_13inDataForCountry(_ country: Country, isWifi: Bool) -> SKUData {
         "MP633": "M2 iPad Pro 12.9in 512GB Silver Cellular",
         "MP653": "M2 iPad Pro 12.9in 1TB Silver Cellular",
         "MP673": "M2 iPad Pro 12.9in 2TB Silver Cellular",
-        "MP5X3": "M2 iPad Pro 12.9in 128GB Space_gray Cellular",
-        "MP603": "M2 iPad Pro 12.9in 256GB Space_gray Cellular",
-        "MP623": "M2 iPad Pro 12.9in 512GB Space_gray Cellular",
-        "MP643": "M2 iPad Pro 12.9in 1TB Space_gray Cellular",
-        "MP663": "M2 iPad Pro 12.9in 2TB Space_gray Cellular"
+        "MP5X3": "M2 iPad Pro 12.9in 128GB Space Gray Cellular",
+        "MP603": "M2 iPad Pro 12.9in 256GB Space Gray Cellular",
+        "MP623": "M2 iPad Pro 12.9in 512GB Space Gray Cellular",
+        "MP643": "M2 iPad Pro 12.9in 1TB Space Gray Cellular",
+        "MP663": "M2 iPad Pro 12.9in 2TB Space Gray Cellular"
     ]
     
     let wifiData = [
@@ -89,11 +89,11 @@ func iPadProM2_13inDataForCountry(_ country: Country, isWifi: Bool) -> SKUData {
         "MNXV3": "M2 iPad Pro 12.9in 512GB Silver Wifi",
         "MNXX3": "M2 iPad Pro 12.9in 1TB Silver Wifi",
         "MNY03": "M2 iPad Pro 12.9in 2TB Silver Wifi",
-        "MNXP3": "M2 iPad Pro 12.9in 128GB Space_gray Wifi",
-        "MNXR3": "M2 iPad Pro 12.9in 256GB Space_gray Wifi",
-        "MNXU3": "M2 iPad Pro 12.9in 512GB Space_gray Wifi",
-        "MNXW3": "M2 iPad Pro 12.9in 1TB Space_gray Wifi",
-        "MNXY3": "M2 iPad Pro 12.9in 2TB Space_gray Wifi"
+        "MNXP3": "M2 iPad Pro 12.9in 128GB Space Gray Wifi",
+        "MNXR3": "M2 iPad Pro 12.9in 256GB Space Gray Wifi",
+        "MNXU3": "M2 iPad Pro 12.9in 512GB Space Gray Wifi",
+        "MNXW3": "M2 iPad Pro 12.9in 1TB Space Gray Wifi",
+        "MNXY3": "M2 iPad Pro 12.9in 2TB Space Gray Wifi"
     ]
     
     let orderedSkus = isWifi ?

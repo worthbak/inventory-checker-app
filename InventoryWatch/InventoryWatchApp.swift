@@ -9,7 +9,7 @@ import SwiftUI
 
 @main
 struct InventoryWatchApp: App {
-    @StateObject var model = Model()
+    @StateObject var model = ViewModel()
     
     var body: some Scene {
         WindowGroup {

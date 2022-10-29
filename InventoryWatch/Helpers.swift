@@ -7,6 +7,9 @@
 
 import Foundation
 
+typealias SKUString = String
+typealias CountryCode = String
+
 extension Array where Element == String {
   func sortedNumerically() -> [Element] {
     sorted { lhs, rhs in
@@ -38,12 +41,8 @@ public extension URLSession {
     /// - throws: Any error encountered while performing the data task.
     func data(for request: URLRequest) async throws -> (Data, URLResponse) {
         var dataTask: URLSessionDataTask?
-        let onCancel = { dataTask?.cancel() }
-
+        
         return try await withTaskCancellationHandler(
-            handler: {
-                onCancel()
-            },
             operation: {
                 try await withCheckedThrowingContinuation { continuation in
                     dataTask = self.dataTask(with: request) { data, response, error in
@@ -51,12 +50,14 @@ public extension URLSession {
                             let error = error ?? URLError(.badServerResponse)
                             return continuation.resume(throwing: error)
                         }
-
                         continuation.resume(returning: (data, response))
                     }
-
+                    
                     dataTask?.resume()
                 }
+            },
+            onCancel: { [dataTask] in
+                dataTask?.cancel()
             }
         )
     }

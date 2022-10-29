@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @EnvironmentObject var model: Model
+    @EnvironmentObject var model: ViewModel
     
     @AppStorage("lastUpdateDate") private var lastUpdateDate: String = ""
     @AppStorage("preferredProductType") private var preferredProductType: String = "MacBookPro"
@@ -90,9 +90,9 @@ struct ContentView: View {
                     
                     ForEach(model.availableParts, id: \.0.storeNumber) { data in
                         Text("\(Text(data.0.storeName).font(storeFont)) \(Text(data.0.locationDescription).font(cityFont))")
-                            
-                      let sortedProductNames = data.1.map { model.productName(forSKU: $0.partNumber) }
-                        .sortedNumerically()
+                        
+                        let sortedProductNames = data.1.map { $0.partName }
+                            .sortedNumerically()
 
                       ForEach(sortedProductNames, id: \.self) { productName in
                             Text(productName)
@@ -153,9 +153,9 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-            .environmentObject(Model.testData)
-    }
-}
+//struct ContentView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ContentView()
+//            .environmentObject(Model.testData)
+//    }
+//}

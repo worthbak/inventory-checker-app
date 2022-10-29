@@ -111,24 +111,19 @@ struct AnalyticsData: Codable, Equatable {
             return
         }
         
-        var request = URLRequest(url: url)
-        
-        let bodyData = data.toJsonData
-
-        // Change the URLRequest to a POST request
-        request.httpMethod = "POST"
-        request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
-        request.httpBody = bodyData
-        
-        let session = URLSession.shared
-        let task = session.dataTask(with: request) { (data, response, error) in
-
-            if let error = error {
-                // Handle HTTP request error
+        Task {
+            let bodyData = data.toJsonData
+            
+            var request = URLRequest(url: url)
+            request.httpMethod = "POST"
+            request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
+            request.httpBody = bodyData
+            do {
+                let (_, response) = try await URLSession.shared.data(for: request)
+                print("successfully updated analytics: response code \((response as? HTTPURLResponse)?.statusCode ?? 0)")
+            } catch {
                 print(error)
             }
         }
-        
-        task.resume()
     }
 }

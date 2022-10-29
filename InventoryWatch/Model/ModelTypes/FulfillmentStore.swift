@@ -7,7 +7,7 @@
 
 import Foundation
 
-// Would be good to unify this model with `RetailStore`
+#warning("Would be good to unify this model with `RetailStore`")
 struct FulfillmentStore: Equatable {
     let storeName: String
     let storeNumber: String
