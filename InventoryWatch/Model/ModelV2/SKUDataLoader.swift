@@ -9,11 +9,6 @@ import Foundation
 
 actor SKUDataLoader {
     
-    enum Error: Swift.Error {
-        case invalidLocalModelStore
-        case invalidProjectState
-    }
-    
     private enum iPhoneModel: CaseIterable {
         case thirteen, fourteen
     }
@@ -94,7 +89,7 @@ actor SKUDataLoader {
             
             for (countryCode, phones) in phoneModelsJson {
                 guard let country = Countries[countryCode.uppercased()] else {
-                    throw Error.invalidLocalModelStore
+                    throw AppError.invalidLocalModelStore
                 }
                 
                 let unmappedModelsData: [(String, WritableKeyPath<AllPhoneModels, [AllPhoneModels.PhoneModel]>)]
@@ -148,7 +143,7 @@ actor SKUDataLoader {
         let iPhoneModels = try generateiPhoneModelsByCountry()
         
         guard let models = iPhoneModels[country] else {
-            throw Error.invalidLocalModelStore
+            throw AppError.invalidLocalModelStore
         }
         
         return models
@@ -171,7 +166,7 @@ actor SKUDataLoader {
             let iphoneData = try decoder.decode([String: [String: [String: String]]].self, from: data)
             return iphoneData
         } else {
-            throw Error.invalidProjectState
+            throw AppError.invalidProjectState
         }
     }
     
@@ -184,14 +179,14 @@ actor SKUDataLoader {
         var compiled: [Country: AppleWatchData] = [:]
         for (countryCode, models) in rawData {
             guard let foundCountry = Countries[countryCode.uppercased()] else {
-                throw Error.invalidLocalModelStore
+                throw AppError.invalidLocalModelStore
             }
             
             compiled[foundCountry] = models
         }
         
         guard let countryData = compiled[country] else {
-            throw Error.invalidLocalModelStore
+            throw AppError.invalidLocalModelStore
         }
         
         return countryData.toSkuData()
@@ -215,10 +210,10 @@ actor SKUDataLoader {
                 cachedAppleWatchUltraData = mapped
                 return mapped
             } else {
-                throw Error.invalidLocalModelStore
+                throw AppError.invalidLocalModelStore
             }
         } else {
-            throw Error.invalidProjectState
+            throw AppError.invalidProjectState
         }
     }
 }

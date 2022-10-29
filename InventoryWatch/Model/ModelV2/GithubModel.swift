@@ -9,17 +9,12 @@ import Foundation
 
 actor GithubModel {
     
-    enum Error: Swift.Error {
-        case failedToInitURL
-        case failedToParseGithubVersion
-    }
-    
     let localAppVersion: String = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "0.0.0"
     var latestFetchedReleaseVersion: String?
     
     func hasLatestGithubRelease() async throws -> Bool {
         guard let url = URL(string: "https://api.github.com/repos/worthbak/inventory-checker-app/tags") else {
-            throw Error.failedToInitURL
+            throw AppError.couldNotGenerateURL
         }
         
         let (data, _) = try await URLSession.shared.data(from: url)
@@ -37,7 +32,7 @@ actor GithubModel {
             }
         
         guard let latestReleaseVersion = processedData.first?.name else {
-            throw Error.failedToParseGithubVersion
+            throw AppError.failedToParseGithubVersion
         }
         
         latestFetchedReleaseVersion = latestReleaseVersion

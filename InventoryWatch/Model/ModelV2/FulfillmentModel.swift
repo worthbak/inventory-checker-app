@@ -9,21 +9,6 @@ import Foundation
 
 actor FulfillmentModel {
     
-    enum Error: Swift.Error {
-        case invalidProjectState
-        case couldNotGenerateURL
-        case noStoresFound
-    }
-    
-    enum NetworkError: Swift.Error {
-        case storeUnavailable
-    }
-    
-    enum ParsingError: Swift.Error {
-        case invalidStoreResponse
-        case unexpectedJSONStructure
-    }
-    
     let defaultsManager = DefaultsVendor()
     let skuDataLoader = SKUDataLoader()
     
@@ -78,7 +63,7 @@ actor FulfillmentModel {
                 throw error
             }
         } else {
-            throw Error.invalidProjectState
+            throw AppError.invalidProjectState
         }
     }
     
@@ -87,7 +72,7 @@ actor FulfillmentModel {
         let query = try await generateQueryString()
         
         guard let url = URL(string: urlRoot + query) else {
-            throw Error.couldNotGenerateURL
+            throw AppError.couldNotGenerateURL
         }
         
         // Log the URL for debugging
@@ -126,11 +111,11 @@ actor FulfillmentModel {
     
     private func parseStoreResponse(_ responseData: Data?, response: HTTPURLResponse?, filterForModels: Set<String>?) async throws -> [(FulfillmentStore, [PartAvailability])] {
         guard let responseData = responseData else {
-            throw errorForStatusCode(response?.statusCode) ?? ParsingError.invalidStoreResponse
+            throw errorForStatusCode(response?.statusCode) ?? AppError.invalidStoreResponse
         }
         
         guard let json = try? JSONSerialization.jsonObject(with: responseData, options: []) as? [String : Any] else {
-            throw errorForStatusCode(response?.statusCode) ?? ParsingError.invalidStoreResponse
+            throw errorForStatusCode(response?.statusCode) ?? AppError.invalidStoreResponse
         }
         
         guard
@@ -138,11 +123,11 @@ actor FulfillmentModel {
             let content = body["content"] as? [String: Any],
             let pickupMessage = content["pickupMessage"] as? [String: Any]
         else {
-            throw ParsingError.unexpectedJSONStructure
+            throw AppError.unexpectedJSONStructure
         }
         
         guard let storeList = pickupMessage["stores"] as? [[String: Any]] else {
-            throw Error.noStoresFound
+            throw AppError.noStoresFound
         }
         
         let skuData = try await skuDataForPreferredProduct
@@ -213,7 +198,7 @@ actor FulfillmentModel {
         return allAvailableModels
     }
     
-    private func errorForStatusCode(_ statusCode: Int?) -> FulfillmentModel.NetworkError? {
+    private func errorForStatusCode(_ statusCode: Int?) -> AppError? {
         guard let statusCode else {
             return nil
         }

@@ -18,7 +18,7 @@ final class ViewModel: ObservableObject {
     @Published var availableParts: [(FulfillmentStore, [PartAvailability])] = []
     @Published var isLoading = false
     @Published var hasLatestVersion = true
-    @Published var errorState: ModelError?
+    @Published var errorState: AppError?
     @Published var preferredStoreName: String? = nil
     
     private var updateTimer: Timer?
@@ -33,7 +33,7 @@ final class ViewModel: ObservableObject {
         get async {
             let storesByCountry = try? await fulfillmentModel.loadStoresByCountry()
             guard let storesByCountry else {
-                print(ModelError.invalidLocalModelStore.localizedDescription)
+                updateErrorState(to: AppError.invalidLocalModelStore)
                 return []
             }
             
@@ -114,7 +114,6 @@ final class ViewModel: ObservableObject {
         }
     }
     
-    #warning("error handling, updates")
     func updateErrorState(to error: Error?, deactivateLoadingState: Bool = true) {
         if deactivateLoadingState {
             self.isLoading = false
@@ -126,10 +125,10 @@ final class ViewModel: ObservableObject {
         }
         
         print(error.localizedDescription)
-        if let modelError = error as? ModelError {
+        if let modelError = error as? AppError {
             self.errorState = modelError
         } else {
-            self.errorState = ModelError.generic(error)
+            self.errorState = AppError.generic(error)
         }
     }
     
