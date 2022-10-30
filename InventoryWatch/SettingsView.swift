@@ -45,6 +45,7 @@ struct SettingsView: View {
     @AppStorage("customSkuNickname") private var customSkuNickname = ""
     @AppStorage("useLargeText") private var useLargeText: Bool = false
     @AppStorage("shouldIncludeNearbyStores") private var shouldIncludeNearbyStores: Bool = true
+    @AppStorage("showInMenuBar") private var showInMenuBar: Bool = true
     
     @State private var selectedCountryIndex = 0
     @State private var allModels: [ProductModel] = []
@@ -115,6 +116,10 @@ struct SettingsView: View {
                     
                     Toggle(isOn: $shouldIncludeNearbyStores) {
                         Text("Include results from nearby stores")
+                    }
+                    
+                    Toggle(isOn: $showInMenuBar) {
+                        Text("Show InventoryWatch in the Menu Bar")
                     }
                     
                     if model.hasLatestVersion == false {
