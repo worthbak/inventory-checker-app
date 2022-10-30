@@ -54,7 +54,6 @@ enum ProductType: String, Codable, CaseIterable, Identifiable {
     
     case StudioDisplay
     case AirPodsProGen2
-    #warning("this does not work in all countries (yet)")
     case ApplePencilUSBCAdapter
     
     case iPadMiniWifi
