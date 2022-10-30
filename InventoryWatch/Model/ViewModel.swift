@@ -31,24 +31,23 @@ final class ViewModel: ObservableObject {
     
     var storesForCurrentCountry: [RetailStore] {
         get async {
-            let storesByCountry = try? await fulfillmentModel.loadStoresByCountry()
-            guard let storesByCountry else {
-                updateErrorState(to: AppError.invalidLocalModelStore)
-                return []
-            }
-            
-            guard let stores = storesByCountry[defaultsVendor.preferredCountry.locale]?.stores else {
-                #warning("Probably should handle this error state more intelligently")
-                return []
-            }
-            
-            return stores .sorted(by: { first, second in
-                if let firstState = first.address.stateName, let secondState = second.address.stateName {
-                    return firstState < secondState
-                } else {
-                    return first.name < second.name
+            do {
+                let storesByCountry = try await fulfillmentModel.loadStoresByCountry()
+                guard let stores = storesByCountry[defaultsVendor.preferredCountry.locale]?.stores else {
+                    throw AppError.invalidProjectState
                 }
-            })
+                
+                return stores .sorted(by: { first, second in
+                    if let firstState = first.address.stateName, let secondState = second.address.stateName {
+                        return firstState < secondState
+                    } else {
+                        return first.name < second.name
+                    }
+                })
+            } catch {
+                updateErrorState(to: error)
+                return []
+            }
         }
     }
     
@@ -65,18 +64,18 @@ final class ViewModel: ObservableObject {
         Task { await updateStoreName() }
     }
     
-    private var lastTask: Task<(), Never>? = nil
+    private var latestTask: Task<(), Never>? = nil
     
     func fetchLatestInventory() async {
         isLoading = true
         AnalyticsData.updateAnalyticsData()
         
-        if let task = lastTask {
+        if let task = latestTask {
             print("cancelling prior task: \(task)")
             task.cancel()
         }
         
-        lastTask = Task {
+        latestTask = Task {
             
             do {
                 hasLatestVersion = try await githubModel.hasLatestGithubRelease()
@@ -94,13 +93,16 @@ final class ViewModel: ObservableObject {
                 
                 print("successful update at \(defaultsVendor.lastUpdateDate ?? "unknown time")")
             } catch {
-                #warning("should catch a cancellation error specifically")
-                updateErrorState(to: error)
+                if error is CancellationError {
+                    print("task cancelled - suppressing thrown CancellationError and returning")
+                    return
+                } else {
+                    updateErrorState(to: error)
+                }
             }
             
-            #warning("how to deal with these during a cancellation?")
             isLoading = false
-            lastTask = nil
+            latestTask = nil
             resetTimer()
         }
     }
