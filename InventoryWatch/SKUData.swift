@@ -21,8 +21,142 @@ struct SKUData {
     }
 }
 
-func iPadDataForCountry(_ country: Country, isWifi: Bool) -> SKUData {
-    let skuCode = country.skuCode(for: isWifi ? .iPadWifi : .iPadCellular) ?? country.skuCode
+func iPadProM2_11inDataForCountry(_ country: Country, isWifi: Bool) -> SKUData {
+    let skuCode = country.skuCode(for: isWifi ? .iPadProM2_11in_Wifi : .iPadProM2_11in_Cellular) ?? country.skuCode
+    
+    let cellData = [
+        "MP563": "M2 iPad Pro 11in 128GB Silver Cellular",
+        "MP583": "M2 iPad Pro 11in 256GB Silver Cellular",
+        "MP5D3": "M2 iPad Pro 11in 512GB Silver Cellular",
+        "MP5F3": "M2 iPad Pro 11in 1TB Silver Cellular",
+        "MP5H3": "M2 iPad Pro 11in 2TB Silver Cellular",
+        "MP553": "M2 iPad Pro 11in 128GB Space Gray Cellular",
+        "MP573": "M2 iPad Pro 11in 256GB Space Gray Cellular",
+        "MP593": "M2 iPad Pro 11in 512GB Space Gray Cellular",
+        "MP5E3": "M2 iPad Pro 11in 1TB Space Gray Cellular",
+        "MP5G3": "M2 iPad Pro 11in 2TB Space Gray Cellular"
+    ]
+    
+    let wifiData = [
+        "MNXE3": "M2 iPad Pro 11in 128GB Silver Wifi",
+        "MNXG3": "M2 iPad Pro 11in 256GB Silver Wifi",
+        "MNXJ3": "M2 iPad Pro 11in 512GB Silver Wifi",
+        "MNXL3": "M2 iPad Pro 11in 1TB Silver Wifi",
+        "MNXN3": "M2 iPad Pro 11in 2TB Silver Wifi",
+        "MNXD3": "M2 iPad Pro 11in 128GB Space Gray Wifi",
+        "MNXF3": "M2 iPad Pro 11in 256GB Space Gray Wifi",
+        "MNXH3": "M2 iPad Pro 11in 512GB Space Gray Wifi",
+        "MNXK3": "M2 iPad Pro 11in 1TB Space Gray Wifi",
+        "MNXM3": "M2 iPad Pro 11in 2TB Space Gray Wifi"
+    ]
+    
+    let orderedSkus = isWifi ?
+    ["MNXE3", "MNXG3", "MNXJ3", "MNXL3", "MNXN3", "MNXD3", "MNXF3", "MNXH3", "MNXK3", "MNXM3"] :
+    ["MNXE3", "MNXG3", "MNXJ3", "MNXL3", "MNXN3", "MNXD3", "MNXF3", "MNXH3", "MNXK3", "MNXM3"]
+    
+    let skusToName: [String: String] = orderedSkus.reduce(into: [String: String]()) { partialResult, next in
+        let map = isWifi ? wifiData : cellData
+        guard let name = map[next] else { return }
+        
+        let localSku = "\(next)\(skuCode)/A"
+        partialResult[localSku] = name
+    }
+    
+    let localOrderedSkus = orderedSkus.map { "\($0)\(skuCode)/A" }
+    
+    return SKUData(orderedSKUs: localOrderedSkus, lookup: skusToName)
+}
+
+func iPadProM2_13inDataForCountry(_ country: Country, isWifi: Bool) -> SKUData {
+    let skuCode = country.skuCode(for: isWifi ? .iPadProM2_13in_Wifi : .iPadProM2_13in_Cellular) ?? country.skuCode
+    
+    let cellData = [
+        "MP5Y3": "M2 iPad Pro 12.9in 128GB Silver Cellular",
+        "MP613": "M2 iPad Pro 12.9in 256GB Silver Cellular",
+        "MP633": "M2 iPad Pro 12.9in 512GB Silver Cellular",
+        "MP653": "M2 iPad Pro 12.9in 1TB Silver Cellular",
+        "MP673": "M2 iPad Pro 12.9in 2TB Silver Cellular",
+        "MP5X3": "M2 iPad Pro 12.9in 128GB Space Gray Cellular",
+        "MP603": "M2 iPad Pro 12.9in 256GB Space Gray Cellular",
+        "MP623": "M2 iPad Pro 12.9in 512GB Space Gray Cellular",
+        "MP643": "M2 iPad Pro 12.9in 1TB Space Gray Cellular",
+        "MP663": "M2 iPad Pro 12.9in 2TB Space Gray Cellular"
+    ]
+    
+    let wifiData = [
+        "MNXQ3": "M2 iPad Pro 12.9in 128GB Silver Wifi",
+        "MNXT3": "M2 iPad Pro 12.9in 256GB Silver Wifi",
+        "MNXV3": "M2 iPad Pro 12.9in 512GB Silver Wifi",
+        "MNXX3": "M2 iPad Pro 12.9in 1TB Silver Wifi",
+        "MNY03": "M2 iPad Pro 12.9in 2TB Silver Wifi",
+        "MNXP3": "M2 iPad Pro 12.9in 128GB Space Gray Wifi",
+        "MNXR3": "M2 iPad Pro 12.9in 256GB Space Gray Wifi",
+        "MNXU3": "M2 iPad Pro 12.9in 512GB Space Gray Wifi",
+        "MNXW3": "M2 iPad Pro 12.9in 1TB Space Gray Wifi",
+        "MNXY3": "M2 iPad Pro 12.9in 2TB Space Gray Wifi"
+    ]
+    
+    let orderedSkus = isWifi ?
+    ["MNXQ3", "MNXT3", "MNXV3", "MNXX3", "MNY03", "MNXP3", "MNXR3", "MNXU3", "MNXW3", "MNXY3"] :
+    ["MP5Y3", "MP613", "MP633", "MP653", "MP673", "MP5X3", "MP603", "MP623", "MP643", "MP663"]
+    
+    let skusToName: [String: String] = orderedSkus.reduce(into: [String: String]()) { partialResult, next in
+        let map = isWifi ? wifiData : cellData
+        guard let name = map[next] else { return }
+        
+        let localSku = "\(next)\(skuCode)/A"
+        partialResult[localSku] = name
+    }
+    
+    let localOrderedSkus = orderedSkus.map { "\($0)\(skuCode)/A" }
+    
+    return SKUData(orderedSKUs: localOrderedSkus, lookup: skusToName)
+}
+
+func iPad10thGenDataForCountry(_ country: Country, isWifi: Bool) -> SKUData {
+    let skuCode = country.skuCode(for: isWifi ? .iPad10thGenWifi : .iPad10thGenCellular) ?? country.skuCode
+    
+    let wifiData = [
+        "MPQ13": "iPad (10th Gen) 64GB Blue Wifi",
+        "MPQ93": "iPad (10th Gen) 256GB Blue Wifi",
+        "MPQ33": "iPad (10th Gen) 64GB Pink Wifi",
+        "MPQC3": "iPad (10th Gen) 256GB Pink Wifi",
+        "MPQ03": "iPad (10th Gen) 64GB Silver Wifi",
+        "MPQ83": "iPad (10th Gen) 256GB Silver Wifi",
+        "MPQ23": "iPad (10th Gen) 64GB Yellow Wifi",
+        "MPQA3": "iPad (10th Gen) 256GB Yellow Wifi"
+    ]
+    
+    let cellData = [
+        "MQ6K3": "iPad (10th Gen) 64GB Blue Cellular",
+        "MQ6U3": "iPad (10th Gen) 256GB Blue Cellular",
+        "MQ6M3": "iPad (10th Gen) 64GB Pink Cellular",
+        "MQ6W3": "iPad (10th Gen) 256GB Pink Cellular",
+        "MQ6J3": "iPad (10th Gen) 64GB Silver Cellular",
+        "MQ6T3": "iPad (10th Gen) 256GB Silver Cellular",
+        "MQ6L3": "iPad (10th Gen) 64GB Yellow Cellular",
+        "MQ6V3": "iPad (10th Gen) 256GB Yellow Cellular"
+    ]
+    
+    let orderedSkus = isWifi ?
+    ["MPQ13", "MPQ93", "MPQ33", "MPQC3", "MPQ03", "MPQ83", "MPQ23", "MPQA3"] :
+    ["MQ6K3", "MQ6U3", "MQ6M3", "MQ6W3", "MQ6J3", "MQ6T3", "MQ6L3", "MQ6V3"]
+    
+    let skusToName: [String: String] = orderedSkus.reduce(into: [String: String]()) { partialResult, next in
+        let map = isWifi ? wifiData : cellData
+        guard let name = map[next] else { return }
+        
+        let localSku = "\(next)\(skuCode)/A"
+        partialResult[localSku] = name
+    }
+    
+    let localOrderedSkus = orderedSkus.map { "\($0)\(skuCode)/A" }
+    
+    return SKUData(orderedSKUs: localOrderedSkus, lookup: skusToName)
+}
+
+func iPadMiniDataForCountry(_ country: Country, isWifi: Bool) -> SKUData {
+    let skuCode = country.skuCode(for: isWifi ? .iPadMiniWifi : .iPadMiniCellular) ?? country.skuCode
     
     let wifiData = [
         "MK7R3": "iPad Mini 64GB Purple Wifi",
@@ -208,5 +342,14 @@ func AirPodsProGen2DataForCountry(_ country: Country) -> SKUData {
     return SKUData(
         orderedSKUs: ["MQD83\(skuCode)/A"],
         lookup: ["MQD83\(skuCode)/A": "AirPods Pro (2nd Generation)"]
+    )
+}
+
+func ApplePencilUSBCAdapterDataForCountry(_ country: Country) -> SKUData {
+    let skuCode = country.skuCode(for: .ApplePencilUSBCAdapter) ?? country.skuCode
+    
+    return SKUData(
+        orderedSKUs: ["MQLU3\(skuCode)/A"],
+        lookup: ["MQLU3\(skuCode)/A": "USB-C to Apple Pencil Adapter"]
     )
 }

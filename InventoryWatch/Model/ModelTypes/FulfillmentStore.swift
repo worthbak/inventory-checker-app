@@ -7,13 +7,8 @@
 
 import Foundation
 
-struct JsonStore: Codable, Equatable {
-    var storeName: String
-    var storeNumber: String
-    var city: String
-}
-
-struct Store: Equatable {
+#warning("Would be good to unify this model with `RetailStore`")
+struct FulfillmentStore: Equatable {
     let storeName: String
     let storeNumber: String
     let city: String

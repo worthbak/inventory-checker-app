@@ -1,4 +1,4 @@
-## [Download InventoryWatch (0.1.6) Now ⤵️](./InventoryWatch-0.1.6.zip)
+## [Download InventoryWatch (0.2.0) Now ⤵️](./InventoryWatch-0.2.0.zip)
 
 ![InventoryWatch-Screenshot](./ic-mkt.jpg)
 
@@ -14,12 +14,15 @@ Ordering a new Apple product online can often involve monthslong shipping times 
 
 InventoryWatch can monitor local stock for the following products: 
 
-* Apple Watch Ultra (**new**)
-* iPhone 14 Pro (**new**)
-* iPhone 14 Pro Max (**new**)
-* iPhone 14 (**new**)
-* iPhone 14 Plus (**new**)
-* AirPods Pro (2nd Gen) (**new**)
+* M2 iPad Pro (11in and 13in) (**new**)
+* iPad (10th Gen) (**new**)
+* USB-C to Apple Pencil Adapter (**new**)
+* Apple Watch Ultra
+* iPhone 14 Pro
+* iPhone 14 Pro Max
+* iPhone 14
+* iPhone 14 Plus
+* AirPods Pro (2nd Gen)
 * M2 MacBook Air
 * MacBook Pro (14" and 16")
 * M2 MacBook Pro 13"
@@ -65,4 +68,4 @@ macOS Big Sur 11.5 or newer. InventoryWatch is built with SwiftUI.
 
 ## Ready to go?
 
-[Download InventoryWatch (0.1.6) Now ⤵️](./InventoryWatch-0.1.6.zip)
+[Download InventoryWatch (0.2.0) Now ⤵️](./InventoryWatch-0.2.0.zip)

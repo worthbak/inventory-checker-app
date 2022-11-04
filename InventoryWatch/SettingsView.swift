@@ -19,16 +19,19 @@ struct SettingsView: View {
     }
     
     private struct StoreWithSelection: Identifiable, Equatable {
-        var store: JsonStore
+        var store: RetailStore
         var isSelected: Bool
         
         var id: String { storeNumber }
-        var storeNumber: String { store.storeNumber }
-        var storeName: String { store.storeName }
-        var city: String { store.city }
+        var storeNumber: String { store.id }
+        var storeName: String { store.name }
+        var city: String { store.address.city }
+        
+        var stateName: String? { store.address.stateName }
+        var stateCode: String? { store.address.stateCode }
     }
     
-    @EnvironmentObject var model: Model
+    @EnvironmentObject var model: ViewModel
     @Environment(\.openURL) var openURL
     
     @AppStorage("preferredCountry") private var preferredCountry = "US"
@@ -62,12 +65,16 @@ struct SettingsView: View {
                     }
                     
                     Picker("Product Type", selection: $preferredProductType) {
-                        ForEach(ProductType.allCases) { productType in
-                            Text(productType.presentableName).tag(productType.rawValue)
+                        ForEach(ProductCategory.allCases) { category in
+                            Divider()
+                            ForEach(category.products) { productType in
+                                Text(productType.presentableName).tag(productType.rawValue)
+                            }
                         }
+                        
                     }
                     .onChange(of: preferredProductType) { _ in
-                        model.fetchLatestInventory()
+                        Task { await model.fetchLatestInventory() }
                     }
                     
                     Picker("Update every", selection: $preferredUpdateInterval) {
@@ -128,7 +135,7 @@ struct SettingsView: View {
                     Text("Preferred Model(s)")
                         .font(.headline)
                     
-                    Text("Only specific model configurations are stocked in-stores. If you believe a configuration is missing, [please open an issue](https://github.com/worthbak/inventory-checker-app/issues).")
+                    Text("Only certain model configurations are stocked in-stores. If you believe a configuration is missing, [please open an issue](https://github.com/worthbak/inventory-checker-app/issues).")
                         .font(.caption).italic()
                     
                     List {
@@ -144,13 +151,14 @@ struct SettingsView: View {
                     Text("Preferred Store")
                         .font(.headline)
                     
-                    TextField("Type here to filter stores", text: $storeSearchText)
+                    TextField("Filter by store name, city, state, or province", text: $storeSearchText)
                         .padding(.top, -5)
                     
                     List {
                         ForEach($allStores) { store in
                             Toggle(isOn: store.isSelected) {
-                                Text("\(store.store.storeName.wrappedValue), \(store.store.city.wrappedValue)")
+                                let wrapped = store.wrappedValue
+                                Text("\(Text(wrapped.storeName).bold()) - \(wrapped.store.address.cityStateDisplay)")
                                     .padding(.leading, 4)
                             }
                         }
@@ -169,10 +177,12 @@ struct SettingsView: View {
             alignment: .center
         )
         .onAppear {
-            loadCountries()
-            loadSkus()
-            loadStores(filterText: nil)
-            model.fetchLatestGithubRelease()
+            Task {
+                loadCountries()
+                await loadSkus()
+                await loadStores(filterText: nil)
+                await model.fetchLatestGithubRelease()
+            }
         }
         .onChange(of: selectedCountryIndex) { newValue in
             let newCountry = OrderedCountries[newValue]
@@ -186,49 +196,63 @@ struct SettingsView: View {
                 .joined(separator: ",")
         }
         .onChange(of: storeSearchText) { newText in
-            guard newText.isEmpty == false else {
-                loadStores(filterText: nil)
-                return
+            Task {
+                guard newText.isEmpty == false else {
+                    await loadStores(filterText: nil)
+                    return
+                }
+                
+                await loadStores(filterText: newText)
             }
-            
-            loadStores(filterText: newText)
         }
         .onChange(of: allStores) { newStores in
-            let currentSelected = selectedStore
-            
-            for store in newStores {
-                if store.isSelected && store.storeNumber != currentSelected {
-                    selectedStore = store.storeNumber
+            Task {
+                let currentSelected = selectedStore
+                
+                for store in newStores {
+                    if store.isSelected && store.storeNumber != currentSelected {
+                        selectedStore = store.storeNumber
+                    }
                 }
+                
+                if preferredStoreNumber != selectedStore {
+                    preferredStoreNumber = selectedStore
+                }
+                
+                await loadStores(filterText: storeSearchText)
             }
-            
-            if preferredStoreNumber != selectedStore {
-                preferredStoreNumber = selectedStore
-                model.syncPreferredStore()
-            }
-            
-            loadStores(filterText: storeSearchText)
         }
         .onChange(of: preferredProductType) { newType in
-            preferredSKUs = ""
-            loadSkus()
-            model.clearCurrentAvailableParts()
-            model.fetchLatestInventory()
+            #warning("TODO: move UserDefaults updates to ViewModel (?)")
+            Task {
+                preferredSKUs = ""
+                await loadSkus()
+                model.clearCurrentAvailableParts()
+                await model.fetchLatestInventory()
+            }
         }
         .onChange(of: preferredStoreNumber) { _ in
-            model.fetchLatestInventory()
+            Task {
+                await model.updateStoreName()
+                await model.fetchLatestInventory()
+            }
         }
         .onChange(of: preferredUpdateInterval) { _ in
-            model.fetchLatestInventory()
+            Task { await model.fetchLatestInventory() }
         }
         .onChange(of: preferredCountry) { _ in
-            loadSkus()
+            Task {
+                storeSearchText = ""
+                await loadStores(filterText: storeSearchText)
+                await loadSkus()
+                await selectDefaultStoreForNewCountry()
+            }
         }
         .onChange(of: showResultsOnlyForPreferredModels) { _ in
-            model.fetchLatestInventory()
+            Task { await model.fetchLatestInventory() }
         }
         .onChange(of: shouldIncludeNearbyStores) { _ in
-            model.fetchLatestInventory()
+            Task { await model.fetchLatestInventory() }
         }
     }
     
@@ -240,21 +264,24 @@ struct SettingsView: View {
         }
     }
     
-    func loadSkus() {
+    func loadSkus() async {
         let favoriteSkus = Set<String>(preferredSKUs.components(separatedBy: ","))
-        let skuData = model.skuData
+        guard let skuData = try? await model.skuDataForPreferredProduct else {
+            return
+        }
+        
         allModels = skuData.orderedSKUs.map { sku in
             let name = skuData.productName(forSKU: sku) ?? sku
             return ProductModel(sku: sku, name: name, isFavorite: favoriteSkus.contains(sku))
         }
     }
     
-    func loadStores(filterText: String?) {
+    func loadStores(filterText: String?) async {
         if selectedStore.isEmpty {
             selectedStore = preferredStoreNumber
         }
         
-        let storesJson = model.allStores
+        let storesJson = await model.storesForCurrentCountry
         let stores: [StoreWithSelection] = storesJson.map { store in
             StoreWithSelection(
                 store: store,
@@ -275,17 +302,38 @@ struct SettingsView: View {
                     return true
                 }
                 
+                if (store.stateName?.lowercased() ?? "").contains(filter) {
+                    return true
+                }
+                
+                if (store.stateCode?.lowercased() ?? "").contains(filter) {
+                    return true
+                }
+                
                 return false
             }
         } else {
             allStores = stores
         }
     }
-}
-
-struct SettingsView_Previews: PreviewProvider {
-    static var previews: some View {
-        SettingsView()
-            .environmentObject(Model.testData)
+    
+    func selectDefaultStoreForNewCountry() async {
+        guard let defaultStore = await model.getDefaultStoreForCurrentCountry() else {
+            return
+        }
+        
+        preferredStoreNumber = defaultStore.storeNumber
+        selectedStore = preferredStoreNumber
+        
+        for var store in allStores {
+            store.isSelected = store.storeNumber == preferredStoreNumber
+        }
     }
 }
+
+//struct SettingsView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        SettingsView()
+//            .environmentObject(Model.testData)
+//    }
+//}

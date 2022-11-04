@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @EnvironmentObject var model: Model
+    @EnvironmentObject var model: ViewModel
     
     @AppStorage("lastUpdateDate") private var lastUpdateDate: String = ""
     @AppStorage("preferredProductType") private var preferredProductType: String = "MacBookPro"
@@ -58,8 +58,8 @@ struct ContentView: View {
                     }
                     
                     
-                    if let preferredStoreInfo = model.preferredStoreInfo {
-                        Text("\(shouldIncludeNearbyStores ? "near" : "at") \(preferredStoreInfo)")
+                    if let preferredStoreName = model.preferredStoreName {
+                        Text("\(shouldIncludeNearbyStores ? "near" : "at") \(preferredStoreName)")
                             .font(.title2)
                     }
                 }
@@ -90,9 +90,9 @@ struct ContentView: View {
                     
                     ForEach(model.availableParts, id: \.0.storeNumber) { data in
                         Text("\(Text(data.0.storeName).font(storeFont)) \(Text(data.0.locationDescription).font(cityFont))")
-                            
-                      let sortedProductNames = data.1.map { model.productName(forSKU: $0.partNumber) }
-                        .sortedNumerically()
+                        
+                        let sortedProductNames = data.1.map { $0.partName }
+                            .sortedNumerically()
 
                       ForEach(sortedProductNames, id: \.self) { productName in
                             Text(productName)
@@ -127,7 +127,7 @@ struct ContentView: View {
                 }
                 
                 Button(
-                    action: { model.fetchLatestInventory() },
+                    action: { Task { await model.fetchLatestInventory() } },
                     label: { Image(systemName: "arrow.clockwise") }
                 )
                     .buttonStyle(BorderlessButtonStyle())
@@ -145,15 +145,17 @@ struct ContentView: View {
             alignment: .center
         )
         .onAppear {
-            model.fetchLatestInventory()
-            NotificationManager.shared.requestNotificationPermissions()
+            Task {
+                await model.fetchLatestInventory()
+                NotificationManager.shared.requestNotificationPermissions()
+            }
         }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-            .environmentObject(Model.testData)
-    }
-}
+//struct ContentView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ContentView()
+//            .environmentObject(Model.testData)
+//    }
+//}

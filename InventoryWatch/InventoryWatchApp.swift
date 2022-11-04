@@ -9,7 +9,7 @@ import SwiftUI
 
 @main
 struct InventoryWatchApp: App {
-    @StateObject var model = Model()
+    @StateObject var model = ViewModel()
     
     var body: some Scene {
         WindowGroup {
@@ -20,7 +20,7 @@ struct InventoryWatchApp: App {
         .commands {
             CommandGroup(replacing: .newItem) {
                 Button(action: {
-                    model.fetchLatestInventory()
+                    Task { await model.fetchLatestInventory() }
                 }, label: {
                     Text("Reload Inventory")
                 })

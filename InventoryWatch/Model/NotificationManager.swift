@@ -29,6 +29,7 @@ final class NotificationManager: NSObject {
         let content = UNMutableNotificationContent()
         content.title = title
         content.body = body
+        content.sound = UNNotificationSound.default
         
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false)
         
@@ -48,5 +49,5 @@ final class NotificationManager: NSObject {
 extension NotificationManager: UNUserNotificationCenterDelegate {
     public func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Swift.Void) {
         completionHandler( [.banner, .badge, .sound])
-        }
+    }
 }
