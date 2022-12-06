@@ -73,9 +73,6 @@ struct SettingsView: View {
                         }
                         
                     }
-                    .onChange(of: preferredProductType) { _ in
-                        Task { await model.fetchLatestInventory() }
-                    }
                     
                     Picker("Update every", selection: $preferredUpdateInterval) {
                         Text("Never").tag(0)

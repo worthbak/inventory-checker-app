@@ -105,8 +105,7 @@ struct AnalyticsData: Codable, Equatable {
     }
     
     private static func postUserSettings(_ data: AnalyticsData) {
-        // let urlString = "http://127.0.0.1:3002/user-settings"
-        let urlString = "https://peaceful-island-18502.herokuapp.com/user-settings"
+        let urlString = "https://api.inventorywatch.app/user-settings"
         guard let url = URL(string: urlString) else {
             return
         }
