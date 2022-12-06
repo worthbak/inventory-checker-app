@@ -41,15 +41,19 @@ struct NotificationSender {
             return "No Inventory Found"
         }
         
+        let customSkuData = defaultsVendor.customSkuData
         let filterForPreferredModels = defaultsVendor.notifyOnlyForPreferredModels
+        
         var collector: [PartAvailability: Int] = [:]
         for (_, parts) in data {
             for part in parts {
-                if filterForPreferredModels, !preferredModels.contains(part.partNumber) {
-                    continue
-                }
+                let collect = { collector[part, default: 0] += 1 }
                 
-                collector[part, default: 0] += 1
+                if part.partNumber == customSkuData?.sku {
+                    collect()
+                } else if filterForPreferredModels, preferredModels.contains(part.partNumber) {
+                    collect()
+                }
             }
         }
         
