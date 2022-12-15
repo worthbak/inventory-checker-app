@@ -2,6 +2,8 @@
 
 ![InventoryWatch-Screenshot](./ic-mkt.jpg)
 
+*Note: If you're seeing an "Apple fulfillment API" error, try updating to the latest version of the app.*
+
 ### What is InventoryWatch?
 
 InventoryWatch is an app for macOS that monitors local Apple Store inventory and notifies you when your preferred model comes in-stock. 
