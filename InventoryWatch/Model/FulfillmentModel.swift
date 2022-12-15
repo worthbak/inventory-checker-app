@@ -75,10 +75,13 @@ actor FulfillmentModel {
             throw AppError.couldNotGenerateURL
         }
         
+        var request = URLRequest(url: url)
+        request.addValue("https://www.apple.com/shop/buy-iphone/", forHTTPHeaderField: "Referer")
+        
         // Log the URL for debugging
         print(url.absoluteString)
         
-        let (data, response) = try await URLSession.shared.data(from: url)
+        let (data, response) = try await URLSession.shared.data(for: request)
         return try await parseStoreResponse(data, response: response as? HTTPURLResponse, filterForModels: modelParsingFilter)
     }
     
