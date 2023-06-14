@@ -18,7 +18,7 @@ One thing remains the same: **our committment to privacy, and generally not bein
 
 ## How To Upgrade
 
-As always, InventoryWatch for macOS is available to download for free. You can get it now at our new homepage: [InventoryWatch.app](https://inventorywatch.app)
+As always, InventoryWatch for macOS is available to download for free. InventoryWatch 2.0 requires macOS Ventura (13.0), and you can download it now at our new homepage: [InventoryWatch.app](https://inventorywatch.app)
 
 Support for premium features like email and text notifications, multiple searches, and web access are available via an InventoryWatch subscription, starting at just $2 per month. You can learn more and check out pricing here: [InventoryWatch Pricing](https://inventorywatch.app/plans)
 
