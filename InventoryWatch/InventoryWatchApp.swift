@@ -10,11 +10,13 @@ import SwiftUI
 @main
 struct InventoryWatchApp: App {
     @StateObject var model = ViewModel()
-    
+    @StateObject var projectStore = ProjectStore()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootView()
                 .environmentObject(model)
+                .environmentObject(projectStore)
         }
         .windowStyle(HiddenTitleBarWindowStyle())
         .commands {
@@ -27,7 +29,7 @@ struct InventoryWatchApp: App {
                     .keyboardShortcut("r", modifiers: .command)
             }
         }
-        
+
         Settings {
             SettingsView()
                 .environmentObject(model)
