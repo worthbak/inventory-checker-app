@@ -36,7 +36,27 @@
 		38D307DB2745E2E700A0686D /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D307DA2745E2E700A0686D /* Analytics.swift */; };
 		38E1C21A27E6714E0047703D /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E1C21927E6714E0047703D /* Helpers.swift */; };
 		38E4279E273EF542006BF6D7 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 38E4279D273EF542006BF6D7 /* Credits.rtf */; };
+		AA000001300900000000001A /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000001300900000000001B /* Project.swift */; };
+		AA000002300900000000002A /* ProjectStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000002300900000000002B /* ProjectStore.swift */; };
+		AA000003300900000000003A /* FileWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000003300900000000003B /* FileWatcher.swift */; };
+		AA000004300900000000004A /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000004300900000000004B /* SidebarView.swift */; };
+		AA000005300900000000005A /* ProjectDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000005300900000000005B /* ProjectDetailView.swift */; };
+		AA000006300900000000006A /* ProjectNameGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000006300900000000006B /* ProjectNameGenerator.swift */; };
+		AA000007300900000000007A /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000007300900000000007B /* RootView.swift */; };
+		BB00000130090000000000A1 /* ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB00000130090000000000B1 /* ProjectTests.swift */; };
+		BB00000230090000000000A2 /* ProjectStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB00000230090000000000B2 /* ProjectStoreTests.swift */; };
+		BB00000330090000000000A3 /* ProjectNameGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB00000330090000000000B3 /* ProjectNameGeneratorTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BB000004300900000000C001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 386FDC4B2739DA7300C1BAC2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 386FDC522739DA7300C1BAC2;
+			remoteInfo = InventoryWatch;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		380CF9FA27448E860080472A /* iPhoneModels13-intl.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "iPhoneModels13-intl.json"; sourceTree = "<group>"; };
@@ -70,10 +90,28 @@
 		38D307DA2745E2E700A0686D /* Analytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analytics.swift; sourceTree = "<group>"; };
 		38E1C21927E6714E0047703D /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		38E4279D273EF542006BF6D7 /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
+		AA000001300900000000001B /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		AA000002300900000000002B /* ProjectStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectStore.swift; sourceTree = "<group>"; };
+		AA000003300900000000003B /* FileWatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileWatcher.swift; sourceTree = "<group>"; };
+		AA000004300900000000004B /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
+		AA000005300900000000005B /* ProjectDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailView.swift; sourceTree = "<group>"; };
+		AA000006300900000000006B /* ProjectNameGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectNameGenerator.swift; sourceTree = "<group>"; };
+		AA000007300900000000007B /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		BB00000130090000000000B1 /* ProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTests.swift; sourceTree = "<group>"; };
+		BB00000230090000000000B2 /* ProjectStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectStoreTests.swift; sourceTree = "<group>"; };
+		BB00000330090000000000B3 /* ProjectNameGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectNameGeneratorTests.swift; sourceTree = "<group>"; };
+		BB000005300900000000D001 /* InventoryWatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InventoryWatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		386FDC502739DA7300C1BAC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB000006300900000000E001 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -101,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				386FDC552739DA7300C1BAC2 /* InventoryWatch */,
+				BB000007300900000000F001 /* InventoryWatchTests */,
 				386FDC542739DA7300C1BAC2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -109,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				386FDC532739DA7300C1BAC2 /* InventoryWatch.app */,
+				BB000005300900000000D001 /* InventoryWatchTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,6 +159,10 @@
 				386FDC562739DA7300C1BAC2 /* InventoryWatchApp.swift */,
 				386FDC582739DA7300C1BAC2 /* ContentView.swift */,
 				3817268D273AA898003B8D76 /* SettingsView.swift */,
+				AA000004300900000000004B /* SidebarView.swift */,
+				AA000005300900000000005B /* ProjectDetailView.swift */,
+				AA000006300900000000006B /* ProjectNameGenerator.swift */,
+				AA000007300900000000007B /* RootView.swift */,
 				3885D54A289170E700BD6A78 /* Model */,
 				38E1C21927E6714E0047703D /* Helpers.swift */,
 				3891902C28E882070051FE3A /* Stores_LocalBootstrap.json */,
@@ -155,9 +199,22 @@
 				385886AE290827D6003D3C80 /* SKUDataLoader.swift */,
 				385886B02908280E003D3C80 /* FulfillmentModel.swift */,
 				3895BE93290B101B00FBC188 /* NotificationSender.swift */,
+				AA000001300900000000001B /* Project.swift */,
+				AA000002300900000000002B /* ProjectStore.swift */,
+				AA000003300900000000003B /* FileWatcher.swift */,
 				3863FF54290D7F550013C1DE /* ModelTypes */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		BB000007300900000000F001 /* InventoryWatchTests */ = {
+			isa = PBXGroup;
+			children = (
+				BB00000130090000000000B1 /* ProjectTests.swift */,
+				BB00000230090000000000B2 /* ProjectStoreTests.swift */,
+				BB00000330090000000000B3 /* ProjectNameGeneratorTests.swift */,
+			);
+			path = InventoryWatchTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +237,24 @@
 			productReference = 386FDC532739DA7300C1BAC2 /* InventoryWatch.app */;
 			productType = "com.apple.product-type.application";
 		};
+		BB000008300900000000F002 /* InventoryWatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB00000C300900000000F006 /* Build configuration list for PBXNativeTarget "InventoryWatchTests" */;
+			buildPhases = (
+				BB000009300900000000F003 /* Sources */,
+				BB000006300900000000E001 /* Frameworks */,
+				BB00000A300900000000F004 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB00000B300900000000F005 /* PBXTargetDependency */,
+			);
+			name = InventoryWatchTests;
+			productName = InventoryWatchTests;
+			productReference = BB000005300900000000D001 /* InventoryWatchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -192,6 +267,10 @@
 				TargetAttributes = {
 					386FDC522739DA7300C1BAC2 = {
 						CreatedOnToolsVersion = 13.1;
+					};
+					BB000008300900000000F002 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 386FDC522739DA7300C1BAC2;
 					};
 				};
 			};
@@ -209,6 +288,7 @@
 			projectRoot = "";
 			targets = (
 				386FDC522739DA7300C1BAC2 /* InventoryWatch */,
+				BB000008300900000000F002 /* InventoryWatchTests */,
 			);
 		};
 /* End PBXProject section */
@@ -225,6 +305,13 @@
 				380CF9FB27448E860080472A /* iPhoneModels13-intl.json in Resources */,
 				386FDC5E2739DA7300C1BAC2 /* Preview Assets.xcassets in Resources */,
 				386FDC5B2739DA7300C1BAC2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB00000A300900000000F004 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,11 +343,36 @@
 				385886B32908281F003D3C80 /* GithubModel.swift in Sources */,
 				3885D5522891718600BD6A78 /* AllPhoneModels.swift in Sources */,
 				386FDC572739DA7300C1BAC2 /* InventoryWatchApp.swift in Sources */,
+				AA000001300900000000001A /* Project.swift in Sources */,
+				AA000002300900000000002A /* ProjectStore.swift in Sources */,
+				AA000003300900000000003A /* FileWatcher.swift in Sources */,
+				AA000004300900000000004A /* SidebarView.swift in Sources */,
+				AA000005300900000000005A /* ProjectDetailView.swift in Sources */,
+				AA000006300900000000006A /* ProjectNameGenerator.swift in Sources */,
+				AA000007300900000000007A /* RootView.swift in Sources */,
 				3885D5502891714400BD6A78 /* ProductType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BB000009300900000000F003 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB00000130090000000000A1 /* ProjectTests.swift in Sources */,
+				BB00000230090000000000A2 /* ProjectStoreTests.swift in Sources */,
+				BB00000330090000000000A3 /* ProjectNameGeneratorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB00000B300900000000F005 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 386FDC522739DA7300C1BAC2 /* InventoryWatch */;
+			targetProxy = BB000004300900000000C001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		386FDC602739DA7300C1BAC2 /* Debug */ = {
@@ -444,6 +556,44 @@
 			};
 			name = Release;
 		};
+		BB00000D300900000000F007 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = 64A6JSYH8N;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.worthbak.InventoryWatchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InventoryWatch.app/Contents/MacOS/InventoryWatch";
+			};
+			name = Debug;
+		};
+		BB00000E300900000000F008 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = 64A6JSYH8N;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.worthbak.InventoryWatchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InventoryWatch.app/Contents/MacOS/InventoryWatch";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -461,6 +611,15 @@
 			buildConfigurations = (
 				386FDC632739DA7300C1BAC2 /* Debug */,
 				386FDC642739DA7300C1BAC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB00000C300900000000F006 /* Build configuration list for PBXNativeTarget "InventoryWatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB00000D300900000000F007 /* Debug */,
+				BB00000E300900000000F008 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
