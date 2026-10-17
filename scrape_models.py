@@ -23,6 +23,14 @@ from family_handlers import get_handler
 
 DEFAULT_CONFIG_PATH = "scraper_config.json"
 
+
+class RegionFetchError(Exception):
+    """Raised when a region page could not be fetched/scraped (network or server error).
+
+    A 404 or a redirect to the main store is *not* a RegionFetchError — those mean the
+    product is simply not offered in that region and are handled as a normal None result.
+    """
+
 DEFAULT_UA = {
     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
@@ -138,18 +146,43 @@ class Scraper:
 
     def _extract_product_data(self, url: str) -> Optional[dict]:
         try:
-            print(f"[scrape] GET {url}")
-            resp = self.session.get(url, timeout=20)
-            try:
-                resp.raise_for_status()
-            except requests.exceptions.HTTPError as he:
-                # Downgrade 404 to info: some models are simply not offered in a region
-                status = getattr(getattr(he, 'response', None), 'status_code', None)
-                if status == 404:
-                    print(f"[info] 404 Not Found (not offered in this region): {url}")
-                    return None
-                # Re-raise other HTTP errors to be handled by the outer except
-                raise
+            request_delay = float(self.config.get('http_delay', 0) or 0)
+            retries = int(self.config.get('http_retries', 3) or 1)
+            resp = None
+            last_err: Optional[Exception] = None
+            for attempt in range(1, retries + 1):
+                if request_delay and attempt == 1:
+                    time.sleep(request_delay)
+                print(f"[scrape] GET {url}")
+                try:
+                    resp = self.session.get(url, timeout=20)
+                    try:
+                        resp.raise_for_status()
+                    except requests.exceptions.HTTPError as he:
+                        # Downgrade 404 to info: some models are simply not offered in a region
+                        status = getattr(getattr(he, 'response', None), 'status_code', None)
+                        if status == 404:
+                            print(f"[info] 404 Not Found (not offered in this region): {url}")
+                            return None
+                        # Retryable server/rate-limit codes (541 is Apple's bot/edge blocker)
+                        if status in (429, 500, 502, 503, 504, 520, 521, 522, 524, 541) and attempt < retries:
+                            backoff = 5 * attempt
+                            print(f"[warn] retry {attempt}/{retries - 1}: HTTP {status} for {url} (backoff {backoff}s)")
+                            time.sleep(backoff)
+                            continue
+                        raise
+                    break
+                except (requests.exceptions.ConnectionError, requests.exceptions.Timeout,
+                        requests.exceptions.ChunkedEncodingError) as e:
+                    last_err = e
+                    if attempt < retries:
+                        backoff = 5 * attempt
+                        print(f"[warn] retry {attempt}/{retries - 1}: {type(e).__name__} for {url} (backoff {backoff}s)")
+                        time.sleep(backoff)
+                        continue
+                    raise
+            if resp is None:
+                raise last_err or requests.exceptions.RequestException(f"request failed for {url}")
             html = resp.text
             # Detect redirect to main store page (product not offered in region)
             # e.g., https://www.apple.com/at/shop/buy-vision/apple-vision-pro → https://www.apple.com/at/store
@@ -317,9 +350,11 @@ class Scraper:
                 except Exception:
                     pass
             return {"html": html, "title": page_title, "json_blobs": json_blobs, "metrics": metrics, "bootstrap": bootstrap}
+        except RegionFetchError:
+            raise
         except Exception as e:
             print(f"[error] fetch failed: {e}")
-            return None
+            raise RegionFetchError(f"fetch failed for {url}: {e}") from None
 
     def _apply_variant_from_config(self, base_model: str, product_family: str, family: str, title_text: str) -> str:
         """Apply variant suffix to base model using configuration."""
@@ -1132,18 +1167,20 @@ class Scraper:
                                     
                                     # Look for product name patterns in the title
                                     words = title_text.split()
+                                    known_series = ('iphone', 'ipad', 'imac', 'macbook', 'macmini', 'macstudio',
+                                                    'applewatch', 'watch', 'airpods', 'homepod', 'vision', 'appletv')
                                     for i, word in enumerate(words):
                                         # Look for numeric model identifiers
                                         if word.isdigit() and i > 0:
                                             # Found a number, check if previous word looks like a product name
                                             prev_word = words[i-1]
-                                            if prev_word.isalpha() and len(prev_word) > 2:
+                                            if prev_word.isalpha() and len(prev_word) > 2 and prev_word.lower() in known_series:
                                                 base_model = f"{prev_word} {word}"
                                                 break
                                     
                                     # Use product family to determine the specific variant from config
                                     if base_model and product_family:
-                                        fam_name = self._apply_variant_from_config(base_model, product_family, family, title_text)
+                                        fam_name = self._apply_variant_from_config(base_model, product_family, fam, title_text)
                                     
                                     if fam_name:
                                         break
@@ -1177,7 +1214,7 @@ class Scraper:
                         if product_family:
                             base_model = self._extract_base_model_from_title(title)
                             if base_model:
-                                fam_name = self._apply_variant_from_config(base_model, product_family, family, title)
+                                fam_name = self._apply_variant_from_config(base_model, product_family, fam, title)
                     
                     # Remember name by base to stitch ld+json offers
                     try:
@@ -1818,7 +1855,22 @@ class Scraper:
             return overrides[token.lower()]
         return pretty or token
 
-    def emit_model_file(self, family: str, token: str, country_to_data: Dict[str, Tuple[str, Dict[str, dict]]], regions_count: int = 0) -> str:
+    def _model_output_path(self, family: str, token: str) -> str:
+        """Absolute path for the catalog file of (family, token)."""
+        fc = self._family_config(family)
+        famTitle = fc.get('file_prefix', (family or '').capitalize())
+        prettyToken = self._pretty_token_name(family, token)
+        fname = f"{famTitle}-{prettyToken}-intl.json"
+        out_dir = "InventoryWatch"
+        models_dir = os.path.join(out_dir, "Catalogs")
+        try:
+            if os.path.isdir(out_dir) and not os.path.isdir(models_dir):
+                os.makedirs(models_dir, exist_ok=True)
+        except Exception:
+            pass
+        return os.path.join(models_dir if os.path.isdir(models_dir) else (out_dir if os.path.isdir(out_dir) else "."), fname)
+
+    def emit_model_file(self, family: str, token: str, country_to_data: Dict[str, Tuple[str, Dict[str, dict]]], regions_count: int = 0, failed_regions: Optional[List[str]] = None) -> str:
         """
         country_to_data: country_code -> (shop_path, skus_dict)
         """
@@ -1872,24 +1924,21 @@ class Scraper:
             "token": token,
             "regions_scraped": regions_count
         }
-        famTitle = fc.get('file_prefix', (family or '').capitalize())
-        prettyToken = self._pretty_token_name(family, token)
-        fname = f"{famTitle}-{prettyToken}-intl.json"
-        # Prefer InventoryWatch/Catalogs/ for organization (avoid confusion with 'Model/')
-        out_dir = "InventoryWatch"
-        models_dir = os.path.join(out_dir, "Catalogs")
-        try:
-            if os.path.isdir(out_dir) and not os.path.isdir(models_dir):
-                os.makedirs(models_dir, exist_ok=True)
-        except Exception:
-            pass
-        out_path = os.path.join(models_dir if os.path.isdir(models_dir) else (out_dir if os.path.isdir(out_dir) else "."), fname)
+        failed = sorted(set(failed_regions or []))
+        if failed:
+            # Honest accounting: regions this run could not fetch. Their previous data is
+            # carried forward, so the catalog stays complete but the failure is visible.
+            root["_meta"]["regions_failed"] = failed
+            root["_meta"]["regions_carried_forward"] = len(failed)
+        out_path = self._model_output_path(family, token)
         with open(out_path, 'w', encoding='utf-8') as f:
             json.dump(root, f, ensure_ascii=False, indent=2, sort_keys=True)
         print(f"[write] {out_path}")
         return out_path
 
     def run(self, family: str, tokens: Optional[List[str]], all_models: bool, countries: Optional[List[str]]):
+        self._ignore_failures = self.config.get('ignore_failures', False)
+        run_failures: Dict[str, List[str]] = {}
         regions = self._regions(countries)
         if not regions:
             print("[error] no regions configured or matched")
@@ -2001,6 +2050,7 @@ class Scraper:
 
         for token in tokens or []:
             country_to_data: Dict[str, Tuple[str, Dict[str, dict]]] = {}
+            failed_regions: List[str] = []
             inferred_display: Optional[str] = None
             for r in regions:
                 shop_path = seeds.get(token)
@@ -2022,16 +2072,26 @@ class Scraper:
                     continue
                 base = r["url_prefix"].rstrip('/') + '/'
                 url = base + shop_path
-                payload = self._extract_product_data(url)
+                try:
+                    payload = self._extract_product_data(url)
+                except Exception as e:
+                    print(f"[error] {r['code']}:{token}: {e}")
+                    failed_regions.append(r['code'].lower())
+                    continue
                 if not payload:
                     continue
-                skus = self._build_skus_from_payload(payload, family_hint=family)
-                # Retry with purchaseOption=fullPrice if configured for this family
-                if self._family_config(family).get('retry_full_price') and (not skus or len(skus) < 3):
-                    alt_url = url + ("&" if "?" in url else "?") + "purchaseOption=fullPrice"
-                    alt = self._extract_product_data(alt_url)
-                    if alt:
-                        skus = self._build_skus_from_payload(alt, family_hint=family) or skus
+                try:
+                    skus = self._build_skus_from_payload(payload, family_hint=family)
+                    # Retry with purchaseOption=fullPrice if configured for this family
+                    if self._family_config(family).get('retry_full_price') and (not skus or len(skus) < 3):
+                        alt_url = url + ("&" if "?" in url else "?") + "purchaseOption=fullPrice"
+                        alt = self._extract_product_data(alt_url)
+                        if alt:
+                            skus = self._build_skus_from_payload(alt, family_hint=family) or skus
+                except Exception as e:
+                    print(f"[error] {r['code']}:{token}: {e}")
+                    failed_regions.append(r['code'].lower())
+                    continue
                 # Handler: pre-pruning enrichment
                 skus = h.enrich_skus(skus, payload, r)
                 # Evaluate usefulness: count entries with any non-empty metadata
@@ -2789,10 +2849,41 @@ class Scraper:
                             v['colorDisplay'] = cd
                 
                 country_to_data[r["code"].upper()] = (shop_path, skus or {})
+            if failed_regions:
+                # Carry forward the last-known-good data for regions that failed to fetch,
+                # so a partially-blocked run does not silently truncate the catalog.
+                old_path = self._model_output_path(family, token)
+                try:
+                    with open(old_path, 'r', encoding='utf-8') as _f:
+                        old_root = json.load(_f)
+                    old_models = (old_root.get('discovered_models') or {})
+                    for rc in list(failed_regions):
+                        region_data = old_models.get(rc, {}).get(token)
+                        if not isinstance(region_data, dict) or not region_data.get('skus'):
+                            continue
+                        old_shop = None
+                        cm = (old_root.get('country_mappings') or {}).get(rc, {})
+                        if isinstance(cm, dict):
+                            old_shop = (cm.get('shop_paths') or {}).get(token)
+                        country_to_data[rc.upper()] = (old_shop, region_data.get('skus') or {})
+                        print(f"[warn] {rc}:{token} carried forward previous data ({len(region_data.get('skus') or {})} skus)")
+                except FileNotFoundError:
+                    pass
+                except Exception as e:
+                    print(f"[warn] could not carry forward previous data for {token}: {e}")
             if country_to_data:
-                self.emit_model_file(family, token, country_to_data, regions_count=len(regions))
+                self.emit_model_file(family, token, country_to_data, regions_count=len(regions), failed_regions=failed_regions)
             else:
                 print(f"[warn] no data for token {token} in selected regions")
+            if failed_regions:
+                run_failures.setdefault(token, []).extend(sorted(set(failed_regions)))
+        if run_failures and not self._ignore_failures:
+            total = sum(len(v) for v in run_failures.values())
+            print(f"[error] {total} region fetch(es) failed (data carried forward from previous run):")
+            for tok, regs in sorted(run_failures.items()):
+                print(f"[error]   {tok}: {', '.join(regs)}")
+            print("[error] re-run the scraper to refresh these regions, or pass --ignore-failures to accept the result.")
+            sys.exit(1)
 
 
 def main():
@@ -2802,10 +2893,13 @@ def main():
     ap.add_argument('--token', action='append', help='Model token to update (repeatable)')
     ap.add_argument('--all-models', action='store_true', help='Discover and scrape all models for the family')
     ap.add_argument('--countries', help='Comma-separated list of country codes to scrape (e.g., US,AT,UK)')
+    ap.add_argument('--ignore-failures', action='store_true',
+                    help='Exit 0 even if some regions failed to fetch (data is carried forward)')
     args = ap.parse_args()
 
     countries = [c.strip() for c in (args.countries.split(',') if args.countries else []) if c.strip()]
     s = Scraper(args.config)
+    s.config['ignore_failures'] = args.ignore_failures
     s.run(args.family, args.token, args.all_models, countries)
 
 if __name__ == '__main__':

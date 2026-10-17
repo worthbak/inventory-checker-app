@@ -1,7 +1,7 @@
 {
   "_meta": {
     "family": "airpods",
-    "generated_at": "2026-09-09T21:14:10.699208+00:00",
+    "generated_at": "2026-10-16T14:00:23.385817+00:00",
     "regions_scraped": 33,
     "scraper_version": "1.0",
     "token": "airpods-max-2"
@@ -334,63 +334,78 @@
         "skus": {
           "MHWK4ZE/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "midnight",
+            "colorKey": "midnight",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Midnight"
+              "dimensionColor": "Midnight",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Midnight"
+            "name": "Midnight",
+            "partNumber": "MHWK4ZE/A"
           },
           "MHWL4ZE/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "starlight",
+            "colorKey": "starlight",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Starlight"
+              "dimensionColor": "Starlight",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Starlight"
+            "name": "Starlight",
+            "partNumber": "MHWL4ZE/A"
           },
           "MHWM4ZE/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Blue",
+            "colorKey": "blue",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Blue"
+              "dimensionColor": "Blue",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Blue"
+            "name": "Blue",
+            "partNumber": "MHWM4ZE/A"
           },
           "MHWN4ZE/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Orange",
+            "colorKey": "orange",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Orange"
+              "dimensionColor": "Orange",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Orange"
+            "name": "Orange",
+            "partNumber": "MHWN4ZE/A"
           },
           "MHWP4ZE/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Purple",
+            "colorKey": "purple",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Purple"
+              "dimensionColor": "Purple",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Purple"
+            "name": "Purple",
+            "partNumber": "MHWP4ZE/A"
           }
         },
         "url": "https://www.apple.com/ae/shop/buy-airpods/airpods-max-2"
@@ -401,63 +416,78 @@
         "skus": {
           "MHWK4ZM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "midnight",
+            "colorKey": "midnight",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Midnight"
+              "dimensionColor": "Midnight",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Midnight"
+            "name": "Midnight",
+            "partNumber": "MHWK4ZM/A"
           },
           "MHWL4ZM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "starlight",
+            "colorKey": "starlight",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Starlight"
+              "dimensionColor": "Starlight",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Starlight"
+            "name": "Starlight",
+            "partNumber": "MHWL4ZM/A"
           },
           "MHWM4ZM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Blau",
+            "colorKey": "blue",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Blau"
+              "dimensionColor": "Blau",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Blau"
+            "name": "Blau",
+            "partNumber": "MHWM4ZM/A"
           },
           "MHWN4ZM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Orange",
+            "colorKey": "orange",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Orange"
+              "dimensionColor": "Orange",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Orange"
+            "name": "Orange",
+            "partNumber": "MHWN4ZM/A"
           },
           "MHWP4ZM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Violett",
+            "colorKey": "purple",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Violett"
+              "dimensionColor": "Violett",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Violett"
+            "name": "Violett",
+            "partNumber": "MHWP4ZM/A"
           }
         },
         "url": "https://www.apple.com/at/shop/buy-airpods/airpods-max-2"
@@ -468,63 +498,78 @@
         "skus": {
           "MHWK4ZA/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "midnight",
+            "colorKey": "midnight",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Midnight"
+              "dimensionColor": "Midnight",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Midnight"
+            "name": "Midnight",
+            "partNumber": "MHWK4ZA/A"
           },
           "MHWL4ZA/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "starlight",
+            "colorKey": "starlight",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Starlight"
+              "dimensionColor": "Starlight",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Starlight"
+            "name": "Starlight",
+            "partNumber": "MHWL4ZA/A"
           },
           "MHWM4ZA/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Blue",
+            "colorKey": "blue",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Blue"
+              "dimensionColor": "Blue",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Blue"
+            "name": "Blue",
+            "partNumber": "MHWM4ZA/A"
           },
           "MHWN4ZA/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Orange",
+            "colorKey": "orange",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Orange"
+              "dimensionColor": "Orange",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Orange"
+            "name": "Orange",
+            "partNumber": "MHWN4ZA/A"
           },
           "MHWP4ZA/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Purple",
+            "colorKey": "purple",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Purple"
+              "dimensionColor": "Purple",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Purple"
+            "name": "Purple",
+            "partNumber": "MHWP4ZA/A"
           }
         },
         "url": "https://www.apple.com/au/shop/buy-airpods/airpods-max-2"
@@ -535,63 +580,78 @@
         "skus": {
           "MHWK4ZM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "midnight",
+            "colorKey": "midnight",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Midnight"
+              "dimensionColor": "Midnight",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Midnight"
+            "name": "Midnight",
+            "partNumber": "MHWK4ZM/A"
           },
           "MHWL4ZM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "starlight",
+            "colorKey": "starlight",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Starlight"
+              "dimensionColor": "Starlight",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Starlight"
+            "name": "Starlight",
+            "partNumber": "MHWL4ZM/A"
           },
           "MHWM4ZM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Bleu",
+            "colorKey": "blue",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Bleu"
+              "dimensionColor": "Bleu",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Bleu"
+            "name": "Bleu",
+            "partNumber": "MHWM4ZM/A"
           },
           "MHWN4ZM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Orange",
+            "colorKey": "orange",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Orange"
+              "dimensionColor": "Orange",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Orange"
+            "name": "Orange",
+            "partNumber": "MHWN4ZM/A"
           },
           "MHWP4ZM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Violet",
+            "colorKey": "purple",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Violet"
+              "dimensionColor": "Violet",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Violet"
+            "name": "Violet",
+            "partNumber": "MHWP4ZM/A"
           }
         },
         "url": "https://www.apple.com/be-fr/shop/buy-airpods/airpods-max-2"
@@ -602,63 +662,78 @@
         "skus": {
           "MHWK4ZM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "midnight",
+            "colorKey": "midnight",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Midnight"
+              "dimensionColor": "Midnight",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Midnight"
+            "name": "Midnight",
+            "partNumber": "MHWK4ZM/A"
           },
           "MHWL4ZM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "starlight",
+            "colorKey": "starlight",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Starlight"
+              "dimensionColor": "Starlight",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Starlight"
+            "name": "Starlight",
+            "partNumber": "MHWL4ZM/A"
           },
           "MHWM4ZM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Blauw",
+            "colorKey": "blue",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Blauw"
+              "dimensionColor": "Blauw",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Blauw"
+            "name": "Blauw",
+            "partNumber": "MHWM4ZM/A"
           },
           "MHWN4ZM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Oranje",
+            "colorKey": "orange",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Oranje"
+              "dimensionColor": "Oranje",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Oranje"
+            "name": "Oranje",
+            "partNumber": "MHWN4ZM/A"
           },
           "MHWP4ZM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Paars",
+            "colorKey": "purple",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Paars"
+              "dimensionColor": "Paars",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Paars"
+            "name": "Paars",
+            "partNumber": "MHWP4ZM/A"
           }
         },
         "url": "https://www.apple.com/be-nl/shop/buy-airpods/airpods-max-2"
@@ -669,63 +744,78 @@
         "skus": {
           "MHWK4BE/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "midnight",
+            "colorKey": "midnight",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Midnight"
+              "dimensionColor": "Midnight",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Midnight"
+            "name": "Midnight",
+            "partNumber": "MHWK4BE/A"
           },
           "MHWL4BE/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "starlight",
+            "colorKey": "starlight",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Starlight"
+              "dimensionColor": "Starlight",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Starlight"
+            "name": "Starlight",
+            "partNumber": "MHWL4BE/A"
           },
           "MHWM4BE/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Azul",
+            "colorKey": "blue",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Azul"
+              "dimensionColor": "Azul",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Azul"
+            "name": "Azul",
+            "partNumber": "MHWM4BE/A"
           },
           "MHWN4BE/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Laranja",
+            "colorKey": "orange",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Laranja"
+              "dimensionColor": "Laranja",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Laranja"
+            "name": "Laranja",
+            "partNumber": "MHWN4BE/A"
           },
           "MHWP4BE/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Roxo",
+            "colorKey": "purple",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Roxo"
+              "dimensionColor": "Roxo",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Roxo"
+            "name": "Roxo",
+            "partNumber": "MHWP4BE/A"
           }
         },
         "url": "https://www.apple.com/br/shop/buy-airpods/airpods-max-2"
@@ -736,63 +826,78 @@
         "skus": {
           "MHWK4AM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "midnight",
+            "colorKey": "midnight",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Midnight"
+              "dimensionColor": "Midnight",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Midnight"
+            "name": "Midnight",
+            "partNumber": "MHWK4AM/A"
           },
           "MHWL4AM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "starlight",
+            "colorKey": "starlight",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Starlight"
+              "dimensionColor": "Starlight",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Starlight"
+            "name": "Starlight",
+            "partNumber": "MHWL4AM/A"
           },
           "MHWM4AM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Blue",
+            "colorKey": "blue",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Blue"
+              "dimensionColor": "Blue",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Blue"
+            "name": "Blue",
+            "partNumber": "MHWM4AM/A"
           },
           "MHWN4AM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Orange",
+            "colorKey": "orange",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Orange"
+              "dimensionColor": "Orange",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Orange"
+            "name": "Orange",
+            "partNumber": "MHWN4AM/A"
           },
           "MHWP4AM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Purple",
+            "colorKey": "purple",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Purple"
+              "dimensionColor": "Purple",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Purple"
+            "name": "Purple",
+            "partNumber": "MHWP4AM/A"
           }
         },
         "url": "https://www.apple.com/ca/shop/buy-airpods/airpods-max-2"
@@ -803,63 +908,78 @@
         "skus": {
           "MHWK4ZM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "midnight",
+            "colorKey": "midnight",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Midnight"
+              "dimensionColor": "Midnight",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Midnight"
+            "name": "Midnight",
+            "partNumber": "MHWK4ZM/A"
           },
           "MHWL4ZM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "starlight",
+            "colorKey": "starlight",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Starlight"
+              "dimensionColor": "Starlight",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Starlight"
+            "name": "Starlight",
+            "partNumber": "MHWL4ZM/A"
           },
           "MHWM4ZM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Blau",
+            "colorKey": "blue",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Blau"
+              "dimensionColor": "Blau",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Blau"
+            "name": "Blau",
+            "partNumber": "MHWM4ZM/A"
           },
           "MHWN4ZM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Orange",
+            "colorKey": "orange",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Orange"
+              "dimensionColor": "Orange",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Orange"
+            "name": "Orange",
+            "partNumber": "MHWN4ZM/A"
           },
           "MHWP4ZM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Violett",
+            "colorKey": "purple",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Violett"
+              "dimensionColor": "Violett",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Violett"
+            "name": "Violett",
+            "partNumber": "MHWP4ZM/A"
           }
         },
         "url": "https://www.apple.com/ch-de/shop/buy-airpods/airpods-max-2"
@@ -870,63 +990,78 @@
         "skus": {
           "MHWK4ZM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "midnight",
+            "colorKey": "midnight",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Midnight"
+              "dimensionColor": "Midnight",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Midnight"
+            "name": "Midnight",
+            "partNumber": "MHWK4ZM/A"
           },
           "MHWL4ZM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "starlight",
+            "colorKey": "starlight",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Starlight"
+              "dimensionColor": "Starlight",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Starlight"
+            "name": "Starlight",
+            "partNumber": "MHWL4ZM/A"
           },
           "MHWM4ZM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Bleu",
+            "colorKey": "blue",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Bleu"
+              "dimensionColor": "Bleu",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Bleu"
+            "name": "Bleu",
+            "partNumber": "MHWM4ZM/A"
           },
           "MHWN4ZM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Orange",
+            "colorKey": "orange",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Orange"
+              "dimensionColor": "Orange",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Orange"
+            "name": "Orange",
+            "partNumber": "MHWN4ZM/A"
           },
           "MHWP4ZM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Violet",
+            "colorKey": "purple",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Violet"
+              "dimensionColor": "Violet",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Violet"
+            "name": "Violet",
+            "partNumber": "MHWP4ZM/A"
           }
         },
         "url": "https://www.apple.com/ch-fr/shop/buy-airpods/airpods-max-2"
@@ -937,63 +1072,78 @@
         "skus": {
           "MHWK4CH/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "midnight",
+            "colorKey": "midnight",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2 - Midnight",
             "metadata": {
-              "dimensionColor": "Midnight"
+              "dimensionColor": "Midnight",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Midnight"
+            "name": "Midnight",
+            "partNumber": "MHWK4CH/A"
           },
           "MHWL4CH/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "starlight",
+            "colorKey": "starlight",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2 - Midnight",
             "metadata": {
-              "dimensionColor": "Starlight"
+              "dimensionColor": "Starlight",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Starlight"
+            "name": "Starlight",
+            "partNumber": "MHWL4CH/A"
           },
           "MHWM4CH/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "蓝色",
+            "colorKey": "blue",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2 - Midnight",
             "metadata": {
-              "dimensionColor": "蓝色"
+              "dimensionColor": "蓝色",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "蓝色"
+            "name": "蓝色",
+            "partNumber": "MHWM4CH/A"
           },
           "MHWN4CH/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "橙色",
+            "colorKey": "orange",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2 - Midnight",
             "metadata": {
-              "dimensionColor": "橙色"
+              "dimensionColor": "橙色",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "橙色"
+            "name": "橙色",
+            "partNumber": "MHWN4CH/A"
           },
           "MHWP4CH/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "紫色",
+            "colorKey": "purple",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2 - Midnight",
             "metadata": {
-              "dimensionColor": "紫色"
+              "dimensionColor": "紫色",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "紫色"
+            "name": "紫色",
+            "partNumber": "MHWP4CH/A"
           }
         },
         "url": "https://www.apple.com/cn/shop/buy-airpods/airpods-max-2"
@@ -1004,63 +1154,78 @@
         "skus": {
           "MHWK4ZM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "midnight",
+            "colorKey": "midnight",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Midnight"
+              "dimensionColor": "Midnight",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Midnight"
+            "name": "Midnight",
+            "partNumber": "MHWK4ZM/A"
           },
           "MHWL4ZM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "starlight",
+            "colorKey": "starlight",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Starlight"
+              "dimensionColor": "Starlight",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Starlight"
+            "name": "Starlight",
+            "partNumber": "MHWL4ZM/A"
           },
           "MHWM4ZM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Blau",
+            "colorKey": "blue",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Blau"
+              "dimensionColor": "Blau",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Blau"
+            "name": "Blau",
+            "partNumber": "MHWM4ZM/A"
           },
           "MHWN4ZM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Orange",
+            "colorKey": "orange",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Orange"
+              "dimensionColor": "Orange",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Orange"
+            "name": "Orange",
+            "partNumber": "MHWN4ZM/A"
           },
           "MHWP4ZM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Violett",
+            "colorKey": "purple",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Violett"
+              "dimensionColor": "Violett",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Violett"
+            "name": "Violett",
+            "partNumber": "MHWP4ZM/A"
           }
         },
         "url": "https://www.apple.com/de/shop/buy-airpods/airpods-max-2"
@@ -1071,63 +1236,78 @@
         "skus": {
           "MHWK4DN/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "midnight",
+            "colorKey": "midnight",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Midnight"
+              "dimensionColor": "Midnight",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Midnight"
+            "name": "Midnight",
+            "partNumber": "MHWK4DN/A"
           },
           "MHWL4DN/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "starlight",
+            "colorKey": "starlight",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Starlight"
+              "dimensionColor": "Starlight",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Starlight"
+            "name": "Starlight",
+            "partNumber": "MHWL4DN/A"
           },
           "MHWM4DN/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "blå",
+            "colorKey": "blue",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "blå"
+              "dimensionColor": "blå",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "blå"
+            "name": "blå",
+            "partNumber": "MHWM4DN/A"
           },
           "MHWN4DN/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "orange",
+            "colorKey": "orange",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "orange"
+              "dimensionColor": "orange",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "orange"
+            "name": "orange",
+            "partNumber": "MHWN4DN/A"
           },
           "MHWP4DN/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "lilla",
+            "colorKey": "purple",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "lilla"
+              "dimensionColor": "lilla",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "lilla"
+            "name": "lilla",
+            "partNumber": "MHWP4DN/A"
           }
         },
         "url": "https://www.apple.com/dk/shop/buy-airpods/airpods-max-2"
@@ -1138,63 +1318,78 @@
         "skus": {
           "MHWK4ZM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "midnight",
+            "colorKey": "midnight",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Midnight"
+              "dimensionColor": "Midnight",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Midnight"
+            "name": "Midnight",
+            "partNumber": "MHWK4ZM/A"
           },
           "MHWL4ZM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "starlight",
+            "colorKey": "starlight",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Starlight"
+              "dimensionColor": "Starlight",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Starlight"
+            "name": "Starlight",
+            "partNumber": "MHWL4ZM/A"
           },
           "MHWM4ZM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Azul",
+            "colorKey": "blue",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Azul"
+              "dimensionColor": "Azul",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Azul"
+            "name": "Azul",
+            "partNumber": "MHWM4ZM/A"
           },
           "MHWN4ZM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Naranja",
+            "colorKey": "orange",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Naranja"
+              "dimensionColor": "Naranja",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Naranja"
+            "name": "Naranja",
+            "partNumber": "MHWN4ZM/A"
           },
           "MHWP4ZM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Púrpura",
+            "colorKey": "purple",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Púrpura"
+              "dimensionColor": "Púrpura",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Púrpura"
+            "name": "Púrpura",
+            "partNumber": "MHWP4ZM/A"
           }
         },
         "url": "https://www.apple.com/es/shop/buy-airpods/airpods-max-2"
@@ -1205,63 +1400,78 @@
         "skus": {
           "MHWK4DN/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "midnight",
+            "colorKey": "midnight",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Midnight"
+              "dimensionColor": "Midnight",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Midnight"
+            "name": "Midnight",
+            "partNumber": "MHWK4DN/A"
           },
           "MHWL4DN/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "starlight",
+            "colorKey": "starlight",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Starlight"
+              "dimensionColor": "Starlight",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Starlight"
+            "name": "Starlight",
+            "partNumber": "MHWL4DN/A"
           },
           "MHWM4DN/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Sininen",
+            "colorKey": "blue",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Sininen"
+              "dimensionColor": "Sininen",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Sininen"
+            "name": "Sininen",
+            "partNumber": "MHWM4DN/A"
           },
           "MHWN4DN/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Oranssi",
+            "colorKey": "orange",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Oranssi"
+              "dimensionColor": "Oranssi",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Oranssi"
+            "name": "Oranssi",
+            "partNumber": "MHWN4DN/A"
           },
           "MHWP4DN/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Violetti",
+            "colorKey": "purple",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Violetti"
+              "dimensionColor": "Violetti",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Violetti"
+            "name": "Violetti",
+            "partNumber": "MHWP4DN/A"
           }
         },
         "url": "https://www.apple.com/fi/shop/buy-airpods/airpods-max-2"
@@ -1272,63 +1482,78 @@
         "skus": {
           "MHWK4ZM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "midnight",
+            "colorKey": "midnight",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Midnight"
+              "dimensionColor": "Midnight",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Midnight"
+            "name": "Midnight",
+            "partNumber": "MHWK4ZM/A"
           },
           "MHWL4ZM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "starlight",
+            "colorKey": "starlight",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Starlight"
+              "dimensionColor": "Starlight",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Starlight"
+            "name": "Starlight",
+            "partNumber": "MHWL4ZM/A"
           },
           "MHWM4ZM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Bleu",
+            "colorKey": "blue",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Bleu"
+              "dimensionColor": "Bleu",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Bleu"
+            "name": "Bleu",
+            "partNumber": "MHWM4ZM/A"
           },
           "MHWN4ZM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Orange",
+            "colorKey": "orange",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Orange"
+              "dimensionColor": "Orange",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Orange"
+            "name": "Orange",
+            "partNumber": "MHWN4ZM/A"
           },
           "MHWP4ZM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Violet",
+            "colorKey": "purple",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Violet"
+              "dimensionColor": "Violet",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Violet"
+            "name": "Violet",
+            "partNumber": "MHWP4ZM/A"
           }
         },
         "url": "https://www.apple.com/fr/shop/buy-airpods/airpods-max-2"
@@ -1339,63 +1564,78 @@
         "skus": {
           "MHWK4ZA/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "midnight",
+            "colorKey": "midnight",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Midnight"
+              "dimensionColor": "Midnight",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Midnight"
+            "name": "Midnight",
+            "partNumber": "MHWK4ZA/A"
           },
           "MHWL4ZA/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "starlight",
+            "colorKey": "starlight",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Starlight"
+              "dimensionColor": "Starlight",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Starlight"
+            "name": "Starlight",
+            "partNumber": "MHWL4ZA/A"
           },
           "MHWM4ZA/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Blue",
+            "colorKey": "blue",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Blue"
+              "dimensionColor": "Blue",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Blue"
+            "name": "Blue",
+            "partNumber": "MHWM4ZA/A"
           },
           "MHWN4ZA/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Orange",
+            "colorKey": "orange",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Orange"
+              "dimensionColor": "Orange",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Orange"
+            "name": "Orange",
+            "partNumber": "MHWN4ZA/A"
           },
           "MHWP4ZA/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Purple",
+            "colorKey": "purple",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Purple"
+              "dimensionColor": "Purple",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Purple"
+            "name": "Purple",
+            "partNumber": "MHWP4ZA/A"
           }
         },
         "url": "https://www.apple.com/hk/shop/buy-airpods/airpods-max-2"
@@ -1406,63 +1646,78 @@
         "skus": {
           "MHWK4HN/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "midnight",
+            "colorKey": "midnight",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Midnight"
+              "dimensionColor": "Midnight",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Midnight"
+            "name": "Midnight",
+            "partNumber": "MHWK4HN/A"
           },
           "MHWL4HN/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "starlight",
+            "colorKey": "starlight",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Starlight"
+              "dimensionColor": "Starlight",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Starlight"
+            "name": "Starlight",
+            "partNumber": "MHWL4HN/A"
           },
           "MHWM4HN/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Blue",
+            "colorKey": "blue",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Blue"
+              "dimensionColor": "Blue",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Blue"
+            "name": "Blue",
+            "partNumber": "MHWM4HN/A"
           },
           "MHWN4HN/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Orange",
+            "colorKey": "orange",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Orange"
+              "dimensionColor": "Orange",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Orange"
+            "name": "Orange",
+            "partNumber": "MHWN4HN/A"
           },
           "MHWP4HN/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Purple",
+            "colorKey": "purple",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Purple"
+              "dimensionColor": "Purple",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Purple"
+            "name": "Purple",
+            "partNumber": "MHWP4HN/A"
           }
         },
         "url": "https://www.apple.com/in/shop/buy-airpods/airpods-max-2"
@@ -1473,63 +1728,78 @@
         "skus": {
           "MHWK4ZM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "midnight",
+            "colorKey": "midnight",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Midnight"
+              "dimensionColor": "Midnight",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Midnight"
+            "name": "Midnight",
+            "partNumber": "MHWK4ZM/A"
           },
           "MHWL4ZM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "starlight",
+            "colorKey": "starlight",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Starlight"
+              "dimensionColor": "Starlight",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Starlight"
+            "name": "Starlight",
+            "partNumber": "MHWL4ZM/A"
           },
           "MHWM4ZM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Blu",
+            "colorKey": "blue",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Blu"
+              "dimensionColor": "Blu",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Blu"
+            "name": "Blu",
+            "partNumber": "MHWM4ZM/A"
           },
           "MHWN4ZM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Arancione",
+            "colorKey": "orange",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Arancione"
+              "dimensionColor": "Arancione",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Arancione"
+            "name": "Arancione",
+            "partNumber": "MHWN4ZM/A"
           },
           "MHWP4ZM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Viola",
+            "colorKey": "purple",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Viola"
+              "dimensionColor": "Viola",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Viola"
+            "name": "Viola",
+            "partNumber": "MHWP4ZM/A"
           }
         },
         "url": "https://www.apple.com/it/shop/buy-airpods/airpods-max-2"
@@ -1622,63 +1892,78 @@
         "skus": {
           "MHWK4KH/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "midnight",
+            "colorKey": "midnight",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Midnight"
+              "dimensionColor": "Midnight",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Midnight"
+            "name": "Midnight",
+            "partNumber": "MHWK4KH/A"
           },
           "MHWL4KH/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "starlight",
+            "colorKey": "starlight",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Starlight"
+              "dimensionColor": "Starlight",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Starlight"
+            "name": "Starlight",
+            "partNumber": "MHWL4KH/A"
           },
           "MHWM4KH/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "블루",
+            "colorKey": "blue",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "블루"
+              "dimensionColor": "블루",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "블루"
+            "name": "블루",
+            "partNumber": "MHWM4KH/A"
           },
           "MHWN4KH/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "오렌지",
+            "colorKey": "orange",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "오렌지"
+              "dimensionColor": "오렌지",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "오렌지"
+            "name": "오렌지",
+            "partNumber": "MHWN4KH/A"
           },
           "MHWP4KH/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "퍼플",
+            "colorKey": "purple",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "퍼플"
+              "dimensionColor": "퍼플",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "퍼플"
+            "name": "퍼플",
+            "partNumber": "MHWP4KH/A"
           }
         },
         "url": "https://www.apple.com/kr/shop/buy-airpods/airpods-max-2"
@@ -1689,63 +1974,78 @@
         "skus": {
           "MHWK4BE/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "midnight",
+            "colorKey": "midnight",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Midnight"
+              "dimensionColor": "Midnight",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Midnight"
+            "name": "Midnight",
+            "partNumber": "MHWK4BE/A"
           },
           "MHWL4BE/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "starlight",
+            "colorKey": "starlight",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Starlight"
+              "dimensionColor": "Starlight",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Starlight"
+            "name": "Starlight",
+            "partNumber": "MHWL4BE/A"
           },
           "MHWM4BE/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Azul",
+            "colorKey": "blue",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Azul"
+              "dimensionColor": "Azul",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Azul"
+            "name": "Azul",
+            "partNumber": "MHWM4BE/A"
           },
           "MHWN4BE/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Naranja",
+            "colorKey": "orange",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Naranja"
+              "dimensionColor": "Naranja",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Naranja"
+            "name": "Naranja",
+            "partNumber": "MHWN4BE/A"
           },
           "MHWP4BE/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Morado",
+            "colorKey": "purple",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Morado"
+              "dimensionColor": "Morado",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Morado"
+            "name": "Morado",
+            "partNumber": "MHWP4BE/A"
           }
         },
         "url": "https://www.apple.com/mx/shop/buy-airpods/airpods-max-2"
@@ -1756,63 +2056,78 @@
         "skus": {
           "MHWK4ZA/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "midnight",
+            "colorKey": "midnight",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Midnight"
+              "dimensionColor": "Midnight",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Midnight"
+            "name": "Midnight",
+            "partNumber": "MHWK4ZA/A"
           },
           "MHWL4ZA/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "starlight",
+            "colorKey": "starlight",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Starlight"
+              "dimensionColor": "Starlight",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Starlight"
+            "name": "Starlight",
+            "partNumber": "MHWL4ZA/A"
           },
           "MHWM4ZA/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Blue",
+            "colorKey": "blue",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Blue"
+              "dimensionColor": "Blue",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Blue"
+            "name": "Blue",
+            "partNumber": "MHWM4ZA/A"
           },
           "MHWN4ZA/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Orange",
+            "colorKey": "orange",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Orange"
+              "dimensionColor": "Orange",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Orange"
+            "name": "Orange",
+            "partNumber": "MHWN4ZA/A"
           },
           "MHWP4ZA/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Purple",
+            "colorKey": "purple",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Purple"
+              "dimensionColor": "Purple",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Purple"
+            "name": "Purple",
+            "partNumber": "MHWP4ZA/A"
           }
         },
         "url": "https://www.apple.com/my/shop/buy-airpods/airpods-max-2"
@@ -1823,63 +2138,78 @@
         "skus": {
           "MHWK4ZM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "midnight",
+            "colorKey": "midnight",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Midnight"
+              "dimensionColor": "Midnight",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Midnight"
+            "name": "Midnight",
+            "partNumber": "MHWK4ZM/A"
           },
           "MHWL4ZM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "starlight",
+            "colorKey": "starlight",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Starlight"
+              "dimensionColor": "Starlight",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Starlight"
+            "name": "Starlight",
+            "partNumber": "MHWL4ZM/A"
           },
           "MHWM4ZM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Blauw",
+            "colorKey": "blue",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Blauw"
+              "dimensionColor": "Blauw",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Blauw"
+            "name": "Blauw",
+            "partNumber": "MHWM4ZM/A"
           },
           "MHWN4ZM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Oranje",
+            "colorKey": "orange",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Oranje"
+              "dimensionColor": "Oranje",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Oranje"
+            "name": "Oranje",
+            "partNumber": "MHWN4ZM/A"
           },
           "MHWP4ZM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Paars",
+            "colorKey": "purple",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Paars"
+              "dimensionColor": "Paars",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Paars"
+            "name": "Paars",
+            "partNumber": "MHWP4ZM/A"
           }
         },
         "url": "https://www.apple.com/nl/shop/buy-airpods/airpods-max-2"
@@ -1890,63 +2220,78 @@
         "skus": {
           "MHWK4DN/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "midnight",
+            "colorKey": "midnight",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Midnight"
+              "dimensionColor": "Midnight",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Midnight"
+            "name": "Midnight",
+            "partNumber": "MHWK4DN/A"
           },
           "MHWL4DN/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "starlight",
+            "colorKey": "starlight",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Starlight"
+              "dimensionColor": "Starlight",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Starlight"
+            "name": "Starlight",
+            "partNumber": "MHWL4DN/A"
           },
           "MHWM4DN/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "blå",
+            "colorKey": "blue",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "blå"
+              "dimensionColor": "blå",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "blå"
+            "name": "blå",
+            "partNumber": "MHWM4DN/A"
           },
           "MHWN4DN/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "oransje",
+            "colorKey": "orange",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "oransje"
+              "dimensionColor": "oransje",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "oransje"
+            "name": "oransje",
+            "partNumber": "MHWN4DN/A"
           },
           "MHWP4DN/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "lilla",
+            "colorKey": "purple",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "lilla"
+              "dimensionColor": "lilla",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "lilla"
+            "name": "lilla",
+            "partNumber": "MHWP4DN/A"
           }
         },
         "url": "https://www.apple.com/no/shop/buy-airpods/airpods-max-2"
@@ -1957,63 +2302,78 @@
         "skus": {
           "MHWK4ZE/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "midnight",
+            "colorKey": "midnight",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Midnight"
+              "dimensionColor": "Midnight",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Midnight"
+            "name": "Midnight",
+            "partNumber": "MHWK4ZE/A"
           },
           "MHWL4ZE/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "starlight",
+            "colorKey": "starlight",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Starlight"
+              "dimensionColor": "Starlight",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Starlight"
+            "name": "Starlight",
+            "partNumber": "MHWL4ZE/A"
           },
           "MHWM4ZE/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Blue",
+            "colorKey": "blue",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Blue"
+              "dimensionColor": "Blue",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Blue"
+            "name": "Blue",
+            "partNumber": "MHWM4ZE/A"
           },
           "MHWN4ZE/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Orange",
+            "colorKey": "orange",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Orange"
+              "dimensionColor": "Orange",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Orange"
+            "name": "Orange",
+            "partNumber": "MHWN4ZE/A"
           },
           "MHWP4ZE/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Purple",
+            "colorKey": "purple",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Purple"
+              "dimensionColor": "Purple",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Purple"
+            "name": "Purple",
+            "partNumber": "MHWP4ZE/A"
           }
         },
         "url": "https://www.apple.com/sa/shop/buy-airpods/airpods-max-2"
@@ -2024,63 +2384,78 @@
         "skus": {
           "MHWK4DN/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "midnight",
+            "colorKey": "midnight",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Midnight"
+              "dimensionColor": "Midnight",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Midnight"
+            "name": "Midnight",
+            "partNumber": "MHWK4DN/A"
           },
           "MHWL4DN/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "starlight",
+            "colorKey": "starlight",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Starlight"
+              "dimensionColor": "Starlight",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Starlight"
+            "name": "Starlight",
+            "partNumber": "MHWL4DN/A"
           },
           "MHWM4DN/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "blå",
+            "colorKey": "blue",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "blå"
+              "dimensionColor": "blå",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "blå"
+            "name": "blå",
+            "partNumber": "MHWM4DN/A"
           },
           "MHWN4DN/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "orange",
+            "colorKey": "orange",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "orange"
+              "dimensionColor": "orange",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "orange"
+            "name": "orange",
+            "partNumber": "MHWN4DN/A"
           },
           "MHWP4DN/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "lila",
+            "colorKey": "purple",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "lila"
+              "dimensionColor": "lila",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "lila"
+            "name": "lila",
+            "partNumber": "MHWP4DN/A"
           }
         },
         "url": "https://www.apple.com/se/shop/buy-airpods/airpods-max-2"
@@ -2091,63 +2466,78 @@
         "skus": {
           "MHWK4ZA/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "midnight",
+            "colorKey": "midnight",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Midnight"
+              "dimensionColor": "Midnight",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Midnight"
+            "name": "Midnight",
+            "partNumber": "MHWK4ZA/A"
           },
           "MHWL4ZA/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "starlight",
+            "colorKey": "starlight",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Starlight"
+              "dimensionColor": "Starlight",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Starlight"
+            "name": "Starlight",
+            "partNumber": "MHWL4ZA/A"
           },
           "MHWM4ZA/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Blue",
+            "colorKey": "blue",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Blue"
+              "dimensionColor": "Blue",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Blue"
+            "name": "Blue",
+            "partNumber": "MHWM4ZA/A"
           },
           "MHWN4ZA/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Orange",
+            "colorKey": "orange",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Orange"
+              "dimensionColor": "Orange",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Orange"
+            "name": "Orange",
+            "partNumber": "MHWN4ZA/A"
           },
           "MHWP4ZA/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Purple",
+            "colorKey": "purple",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Purple"
+              "dimensionColor": "Purple",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Purple"
+            "name": "Purple",
+            "partNumber": "MHWP4ZA/A"
           }
         },
         "url": "https://www.apple.com/sg/shop/buy-airpods/airpods-max-2"
@@ -2158,63 +2548,78 @@
         "skus": {
           "MHWK4ZA/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "midnight",
+            "colorKey": "midnight",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Midnight"
+              "dimensionColor": "Midnight",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Midnight"
+            "name": "Midnight",
+            "partNumber": "MHWK4ZA/A"
           },
           "MHWL4ZA/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "starlight",
+            "colorKey": "starlight",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Starlight"
+              "dimensionColor": "Starlight",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Starlight"
+            "name": "Starlight",
+            "partNumber": "MHWL4ZA/A"
           },
           "MHWM4ZA/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "ฟ้า",
+            "colorKey": "blue",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "ฟ้า"
+              "dimensionColor": "ฟ้า",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "ฟ้า"
+            "name": "ฟ้า",
+            "partNumber": "MHWM4ZA/A"
           },
           "MHWN4ZA/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "ส้ม",
+            "colorKey": "orange",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "ส้ม"
+              "dimensionColor": "ส้ม",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "ส้ม"
+            "name": "ส้ม",
+            "partNumber": "MHWN4ZA/A"
           },
           "MHWP4ZA/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "ม่วง",
+            "colorKey": "purple",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "ม่วง"
+              "dimensionColor": "ม่วง",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "ม่วง"
+            "name": "ม่วง",
+            "partNumber": "MHWP4ZA/A"
           }
         },
         "url": "https://www.apple.com/th/shop/buy-airpods/airpods-max-2"
@@ -2225,63 +2630,78 @@
         "skus": {
           "MHWK4TU/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "midnight",
+            "colorKey": "midnight",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Midnight"
+              "dimensionColor": "Midnight",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Midnight"
+            "name": "Midnight",
+            "partNumber": "MHWK4TU/A"
           },
           "MHWL4TU/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "starlight",
+            "colorKey": "starlight",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Starlight"
+              "dimensionColor": "Starlight",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Starlight"
+            "name": "Starlight",
+            "partNumber": "MHWL4TU/A"
           },
           "MHWM4TU/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Mavi",
+            "colorKey": "blue",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Mavi"
+              "dimensionColor": "Mavi",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Mavi"
+            "name": "Mavi",
+            "partNumber": "MHWM4TU/A"
           },
           "MHWN4TU/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Turuncu",
+            "colorKey": "orange",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Turuncu"
+              "dimensionColor": "Turuncu",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Turuncu"
+            "name": "Turuncu",
+            "partNumber": "MHWN4TU/A"
           },
           "MHWP4TU/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Mor",
+            "colorKey": "purple",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Mor"
+              "dimensionColor": "Mor",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Mor"
+            "name": "Mor",
+            "partNumber": "MHWP4TU/A"
           }
         },
         "url": "https://www.apple.com/tr/shop/buy-airpods/airpods-max-2"
@@ -2292,63 +2712,78 @@
         "skus": {
           "MHWK4TA/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "midnight",
+            "colorKey": "midnight",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Midnight"
+              "dimensionColor": "Midnight",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Midnight"
+            "name": "Midnight",
+            "partNumber": "MHWK4TA/A"
           },
           "MHWL4TA/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "starlight",
+            "colorKey": "starlight",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Starlight"
+              "dimensionColor": "Starlight",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Starlight"
+            "name": "Starlight",
+            "partNumber": "MHWL4TA/A"
           },
           "MHWM4TA/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "藍色",
+            "colorKey": "blue",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "藍色"
+              "dimensionColor": "藍色",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "藍色"
+            "name": "藍色",
+            "partNumber": "MHWM4TA/A"
           },
           "MHWN4TA/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "橙色",
+            "colorKey": "orange",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "橙色"
+              "dimensionColor": "橙色",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "橙色"
+            "name": "橙色",
+            "partNumber": "MHWN4TA/A"
           },
           "MHWP4TA/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "紫色",
+            "colorKey": "purple",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "紫色"
+              "dimensionColor": "紫色",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "紫色"
+            "name": "紫色",
+            "partNumber": "MHWP4TA/A"
           }
         },
         "url": "https://www.apple.com/tw/shop/buy-airpods/airpods-max-2"
@@ -2359,63 +2794,78 @@
         "skus": {
           "MHWK4ZM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "midnight",
+            "colorKey": "midnight",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Midnight"
+              "dimensionColor": "Midnight",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Midnight"
+            "name": "Midnight",
+            "partNumber": "MHWK4ZM/A"
           },
           "MHWL4ZM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "starlight",
+            "colorKey": "starlight",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Starlight"
+              "dimensionColor": "Starlight",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Starlight"
+            "name": "Starlight",
+            "partNumber": "MHWL4ZM/A"
           },
           "MHWM4ZM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Blue",
+            "colorKey": "blue",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Blue"
+              "dimensionColor": "Blue",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Blue"
+            "name": "Blue",
+            "partNumber": "MHWM4ZM/A"
           },
           "MHWN4ZM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Orange",
+            "colorKey": "orange",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Orange"
+              "dimensionColor": "Orange",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Orange"
+            "name": "Orange",
+            "partNumber": "MHWN4ZM/A"
           },
           "MHWP4ZM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Purple",
+            "colorKey": "purple",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Purple"
+              "dimensionColor": "Purple",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Purple"
+            "name": "Purple",
+            "partNumber": "MHWP4ZM/A"
           }
         },
         "url": "https://www.apple.com/uk/shop/buy-airpods/airpods-max-2"
@@ -2426,63 +2876,78 @@
         "skus": {
           "MHWK4AM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "midnight",
+            "colorKey": "midnight",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Midnight"
+              "dimensionColor": "Midnight",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Midnight"
+            "name": "Midnight",
+            "partNumber": "MHWK4AM/A"
           },
           "MHWL4AM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "starlight",
+            "colorKey": "starlight",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Starlight"
+              "dimensionColor": "Starlight",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Starlight"
+            "name": "Starlight",
+            "partNumber": "MHWL4AM/A"
           },
           "MHWM4AM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Blue",
+            "colorKey": "blue",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Blue"
+              "dimensionColor": "Blue",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Blue"
+            "name": "Blue",
+            "partNumber": "MHWM4AM/A"
           },
           "MHWN4AM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Orange",
+            "colorKey": "orange",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Orange"
+              "dimensionColor": "Orange",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Orange"
+            "name": "Orange",
+            "partNumber": "MHWN4AM/A"
           },
           "MHWP4AM/A": {
             "capacity": "",
-            "colorDisplay": "",
-            "colorKey": "",
+            "colorDisplay": "Purple",
+            "colorKey": "purple",
             "dimensionScreensize": "",
-            "family": "airpods",
+            "family": "airpodsmax2",
             "familyName": "AirPods Max 2",
             "metadata": {
-              "dimensionColor": "Purple"
+              "dimensionColor": "Purple",
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
             },
-            "name": "Purple"
+            "name": "Purple",
+            "partNumber": "MHWP4AM/A"
           }
         },
         "url": "https://www.apple.com/us/shop/buy-airpods/airpods-max-2"

@@ -1,7 +1,7 @@
 {
   "_meta": {
     "family": "iphone",
-    "generated_at": "2026-09-09T19:58:14.217828+00:00",
+    "generated_at": "2026-10-16T13:58:30.802123+00:00",
     "regions_scraped": 33,
     "scraper_version": "1.0",
     "token": "iphone-16"
@@ -217,16 +217,6 @@
         "iphone-16": "shop/buy-iphone/iphone-16"
       }
     },
-    "my": {
-      "localization": {
-        "token_display": {
-          "iphone-16": "iPhone 16"
-        }
-      },
-      "shop_paths": {
-        "iphone-16": "shop/buy-iphone/iphone-16"
-      }
-    },
     "nl": {
       "localization": {
         "token_display": {
@@ -337,45 +327,70 @@
             "colorDisplay": "Black",
             "colorKey": "black",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYDQ3AE/A"
           },
           "MYDR3AE/A": {
             "capacity": "128GB",
             "colorDisplay": "White",
             "colorKey": "white",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYDR3AE/A"
           },
           "MYDT3AE/A": {
             "capacity": "128GB",
             "colorDisplay": "Pink",
             "colorKey": "pink",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYDT3AE/A"
           },
           "MYDU3AE/A": {
             "capacity": "128GB",
             "colorDisplay": "Ultramarine",
             "colorKey": "ultramarine",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYDU3AE/A"
           },
           "MYDV3AE/A": {
             "capacity": "128GB",
             "colorDisplay": "Teal",
             "colorKey": "teal",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYDV3AE/A"
           }
         },
         "url": "https://www.apple.com/ae/shop/buy-iphone/iphone-16"
@@ -389,45 +404,70 @@
             "colorDisplay": "Schwarz",
             "colorKey": "black",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYE73ZD/A"
           },
           "MYE93ZD/A": {
             "capacity": "128GB",
             "colorDisplay": "Weiß",
             "colorKey": "white",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYE93ZD/A"
           },
           "MYEA3ZD/A": {
             "capacity": "128GB",
             "colorDisplay": "Pink",
             "colorKey": "pink",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYEA3ZD/A"
           },
           "MYEC3ZD/A": {
             "capacity": "128GB",
             "colorDisplay": "Ultramarin",
             "colorKey": "ultramarine",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYEC3ZD/A"
           },
           "MYED3ZD/A": {
             "capacity": "128GB",
             "colorDisplay": "Blaugrün",
             "colorKey": "teal",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYED3ZD/A"
           }
         },
         "url": "https://www.apple.com/at/shop/buy-iphone/iphone-16"
@@ -441,45 +481,70 @@
             "colorDisplay": "Black",
             "colorKey": "black",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYE73X/A"
           },
           "MYE93X/A": {
             "capacity": "128GB",
             "colorDisplay": "White",
             "colorKey": "white",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYE93X/A"
           },
           "MYEA3X/A": {
             "capacity": "128GB",
             "colorDisplay": "Pink",
             "colorKey": "pink",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYEA3X/A"
           },
           "MYEC3X/A": {
             "capacity": "128GB",
             "colorDisplay": "Ultramarine",
             "colorKey": "ultramarine",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYEC3X/A"
           },
           "MYED3X/A": {
             "capacity": "128GB",
             "colorDisplay": "Teal",
             "colorKey": "teal",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYED3X/A"
           }
         },
         "url": "https://www.apple.com/au/shop/buy-iphone/iphone-16"
@@ -489,49 +554,74 @@
       "iphone-16": {
         "skus": {
           "MYE73ZD/A": {
-            "capacity": "128GB",
+            "capacity": "128 Go",
             "colorDisplay": "Noir",
             "colorKey": "black",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYE73ZD/A"
           },
           "MYE93ZD/A": {
-            "capacity": "128GB",
+            "capacity": "128 Go",
             "colorDisplay": "Blanc",
             "colorKey": "white",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYE93ZD/A"
           },
           "MYEA3ZD/A": {
-            "capacity": "128GB",
+            "capacity": "128 Go",
             "colorDisplay": "Rose",
             "colorKey": "pink",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYEA3ZD/A"
           },
           "MYEC3ZD/A": {
-            "capacity": "128GB",
+            "capacity": "128 Go",
             "colorDisplay": "Outremer",
             "colorKey": "ultramarine",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYEC3ZD/A"
           },
           "MYED3ZD/A": {
-            "capacity": "128GB",
+            "capacity": "128 Go",
             "colorDisplay": "Sarcelle",
             "colorKey": "teal",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYED3ZD/A"
           }
         },
         "url": "https://www.apple.com/be-fr/shop/buy-iphone/iphone-16"
@@ -545,45 +635,70 @@
             "colorDisplay": "Zwart",
             "colorKey": "black",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYE73ZD/A"
           },
           "MYE93ZD/A": {
             "capacity": "128GB",
             "colorDisplay": "Wit",
             "colorKey": "white",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYE93ZD/A"
           },
           "MYEA3ZD/A": {
             "capacity": "128GB",
             "colorDisplay": "Roze",
             "colorKey": "pink",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYEA3ZD/A"
           },
           "MYEC3ZD/A": {
             "capacity": "128GB",
             "colorDisplay": "Ultramarijn",
             "colorKey": "ultramarine",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYEC3ZD/A"
           },
           "MYED3ZD/A": {
             "capacity": "128GB",
             "colorDisplay": "Blauwgroen",
             "colorKey": "teal",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYED3ZD/A"
           }
         },
         "url": "https://www.apple.com/be-nl/shop/buy-iphone/iphone-16"
@@ -597,45 +712,70 @@
             "colorDisplay": "Preto",
             "colorKey": "black",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYE73BR/A"
           },
           "MYE93BR/A": {
             "capacity": "128GB",
             "colorDisplay": "Branco",
             "colorKey": "white",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYE93BR/A"
           },
           "MYEA3BR/A": {
             "capacity": "128GB",
             "colorDisplay": "Rosa",
             "colorKey": "pink",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYEA3BR/A"
           },
           "MYEC3BR/A": {
             "capacity": "128GB",
             "colorDisplay": "Ultramarino",
             "colorKey": "ultramarine",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYEC3BR/A"
           },
           "MYED3BR/A": {
             "capacity": "128GB",
             "colorDisplay": "Verde-acinzentado",
             "colorKey": "teal",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYED3BR/A"
           }
         },
         "url": "https://www.apple.com/br/shop/buy-iphone/iphone-16"
@@ -649,45 +789,70 @@
             "colorDisplay": "Black",
             "colorKey": "black",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYDQ3VC/A"
           },
           "MYDR3VC/A": {
             "capacity": "128GB",
             "colorDisplay": "White",
             "colorKey": "white",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYDR3VC/A"
           },
           "MYDT3VC/A": {
             "capacity": "128GB",
             "colorDisplay": "Pink",
             "colorKey": "pink",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYDT3VC/A"
           },
           "MYDU3VC/A": {
             "capacity": "128GB",
             "colorDisplay": "Ultramarine",
             "colorKey": "ultramarine",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYDU3VC/A"
           },
           "MYDV3VC/A": {
             "capacity": "128GB",
             "colorDisplay": "Teal",
             "colorKey": "teal",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYDV3VC/A"
           }
         },
         "url": "https://www.apple.com/ca/shop/buy-iphone/iphone-16"
@@ -701,45 +866,70 @@
             "colorDisplay": "Schwarz",
             "colorKey": "black",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYE73QL/A"
           },
           "MYE93QL/A": {
             "capacity": "128GB",
             "colorDisplay": "Weiß",
             "colorKey": "white",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYE93QL/A"
           },
           "MYEA3QL/A": {
             "capacity": "128GB",
             "colorDisplay": "Pink",
             "colorKey": "pink",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYEA3QL/A"
           },
           "MYEC3QL/A": {
             "capacity": "128GB",
             "colorDisplay": "Ultramarin",
             "colorKey": "ultramarine",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYEC3QL/A"
           },
           "MYED3QL/A": {
             "capacity": "128GB",
             "colorDisplay": "Blaugrün",
             "colorKey": "teal",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYED3QL/A"
           }
         },
         "url": "https://www.apple.com/ch-de/shop/buy-iphone/iphone-16"
@@ -749,49 +939,74 @@
       "iphone-16": {
         "skus": {
           "MYE73QL/A": {
-            "capacity": "128GB",
+            "capacity": "128 Go",
             "colorDisplay": "Noir",
             "colorKey": "black",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYE73QL/A"
           },
           "MYE93QL/A": {
-            "capacity": "128GB",
+            "capacity": "128 Go",
             "colorDisplay": "Blanc",
             "colorKey": "white",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYE93QL/A"
           },
           "MYEA3QL/A": {
-            "capacity": "128GB",
+            "capacity": "128 Go",
             "colorDisplay": "Rose",
             "colorKey": "pink",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYEA3QL/A"
           },
           "MYEC3QL/A": {
-            "capacity": "128GB",
+            "capacity": "128 Go",
             "colorDisplay": "Outremer",
             "colorKey": "ultramarine",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYEC3QL/A"
           },
           "MYED3QL/A": {
-            "capacity": "128GB",
+            "capacity": "128 Go",
             "colorDisplay": "Sarcelle",
             "colorKey": "teal",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYED3QL/A"
           }
         },
         "url": "https://www.apple.com/ch-fr/shop/buy-iphone/iphone-16"
@@ -805,45 +1020,70 @@
             "colorDisplay": "黑色",
             "colorKey": "black",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYEV3CH/A"
           },
           "MYEW3CH/A": {
             "capacity": "128GB",
             "colorDisplay": "白色",
             "colorKey": "white",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYEW3CH/A"
           },
           "MYEX3CH/A": {
             "capacity": "128GB",
             "colorDisplay": "粉色",
             "colorKey": "pink",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYEX3CH/A"
           },
           "MYEY3CH/A": {
             "capacity": "128GB",
             "colorDisplay": "群青色",
             "colorKey": "ultramarine",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYEY3CH/A"
           },
           "MYF03CH/A": {
             "capacity": "128GB",
             "colorDisplay": "深青色",
             "colorKey": "teal",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYF03CH/A"
           }
         },
         "url": "https://www.apple.com/cn/shop/buy-iphone/iphone-16"
@@ -857,45 +1097,70 @@
             "colorDisplay": "Schwarz",
             "colorKey": "black",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYE73ZD/A"
           },
           "MYE93ZD/A": {
             "capacity": "128GB",
             "colorDisplay": "Weiß",
             "colorKey": "white",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYE93ZD/A"
           },
           "MYEA3ZD/A": {
             "capacity": "128GB",
             "colorDisplay": "Pink",
             "colorKey": "pink",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYEA3ZD/A"
           },
           "MYEC3ZD/A": {
             "capacity": "128GB",
             "colorDisplay": "Ultramarin",
             "colorKey": "ultramarine",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYEC3ZD/A"
           },
           "MYED3ZD/A": {
             "capacity": "128GB",
             "colorDisplay": "Blaugrün",
             "colorKey": "teal",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYED3ZD/A"
           }
         },
         "url": "https://www.apple.com/de/shop/buy-iphone/iphone-16"
@@ -909,45 +1174,70 @@
             "colorDisplay": "sort",
             "colorKey": "black",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYE73QN/A"
           },
           "MYE93QN/A": {
             "capacity": "128GB",
             "colorDisplay": "hvid",
             "colorKey": "white",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYE93QN/A"
           },
           "MYEA3QN/A": {
             "capacity": "128GB",
             "colorDisplay": "lyserød",
             "colorKey": "pink",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYEA3QN/A"
           },
           "MYEC3QN/A": {
             "capacity": "128GB",
             "colorDisplay": "ultramarin",
             "colorKey": "ultramarine",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYEC3QN/A"
           },
           "MYED3QN/A": {
             "capacity": "128GB",
             "colorDisplay": "grønblå",
             "colorKey": "teal",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYED3QN/A"
           }
         },
         "url": "https://www.apple.com/dk/shop/buy-iphone/iphone-16"
@@ -961,45 +1251,70 @@
             "colorDisplay": "Negro",
             "colorKey": "black",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYE73QL/A"
           },
           "MYE93QL/A": {
             "capacity": "128GB",
             "colorDisplay": "Blanco",
             "colorKey": "white",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYE93QL/A"
           },
           "MYEA3QL/A": {
             "capacity": "128GB",
             "colorDisplay": "Rosa",
             "colorKey": "pink",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYEA3QL/A"
           },
           "MYEC3QL/A": {
             "capacity": "128GB",
             "colorDisplay": "Azul ultramar",
             "colorKey": "ultramarine",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYEC3QL/A"
           },
           "MYED3QL/A": {
             "capacity": "128GB",
             "colorDisplay": "Verde azulado",
             "colorKey": "teal",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYED3QL/A"
           }
         },
         "url": "https://www.apple.com/es/shop/buy-iphone/iphone-16"
@@ -1009,49 +1324,74 @@
       "iphone-16": {
         "skus": {
           "MYE73QN/A": {
-            "capacity": "128GB",
+            "capacity": "128 Gt",
             "colorDisplay": "Musta",
             "colorKey": "black",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYE73QN/A"
           },
           "MYE93QN/A": {
-            "capacity": "128GB",
+            "capacity": "128 Gt",
             "colorDisplay": "Valkoinen",
             "colorKey": "white",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYE93QN/A"
           },
           "MYEA3QN/A": {
-            "capacity": "128GB",
+            "capacity": "128 Gt",
             "colorDisplay": "Pinkki",
             "colorKey": "pink",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYEA3QN/A"
           },
           "MYEC3QN/A": {
-            "capacity": "128GB",
+            "capacity": "128 Gt",
             "colorDisplay": "Ultra­mariini",
             "colorKey": "ultramarine",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYEC3QN/A"
           },
           "MYED3QN/A": {
-            "capacity": "128GB",
+            "capacity": "128 Gt",
             "colorDisplay": "Sini­­vihreä",
             "colorKey": "teal",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYED3QN/A"
           }
         },
         "url": "https://www.apple.com/fi/shop/buy-iphone/iphone-16"
@@ -1061,49 +1401,74 @@
       "iphone-16": {
         "skus": {
           "MYE73ZD/A": {
-            "capacity": "128GB",
+            "capacity": "128 Go",
             "colorDisplay": "Noir",
             "colorKey": "black",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYE73ZD/A"
           },
           "MYE93ZD/A": {
-            "capacity": "128GB",
+            "capacity": "128 Go",
             "colorDisplay": "Blanc",
             "colorKey": "white",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYE93ZD/A"
           },
           "MYEA3ZD/A": {
-            "capacity": "128GB",
+            "capacity": "128 Go",
             "colorDisplay": "Rose",
             "colorKey": "pink",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYEA3ZD/A"
           },
           "MYEC3ZD/A": {
-            "capacity": "128GB",
+            "capacity": "128 Go",
             "colorDisplay": "Outremer",
             "colorKey": "ultramarine",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYEC3ZD/A"
           },
           "MYED3ZD/A": {
-            "capacity": "128GB",
+            "capacity": "128 Go",
             "colorDisplay": "Sarcelle",
             "colorKey": "teal",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYED3ZD/A"
           }
         },
         "url": "https://www.apple.com/fr/shop/buy-iphone/iphone-16"
@@ -1117,45 +1482,70 @@
             "colorDisplay": "Black",
             "colorKey": "black",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYEV3ZA/A"
           },
           "MYEW3ZA/A": {
             "capacity": "128GB",
             "colorDisplay": "White",
             "colorKey": "white",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYEW3ZA/A"
           },
           "MYEX3ZA/A": {
             "capacity": "128GB",
             "colorDisplay": "Pink",
             "colorKey": "pink",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYEX3ZA/A"
           },
           "MYEY3ZA/A": {
             "capacity": "128GB",
             "colorDisplay": "Ultramarine",
             "colorKey": "ultramarine",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYEY3ZA/A"
           },
           "MYF03ZA/A": {
             "capacity": "128GB",
             "colorDisplay": "Teal",
             "colorKey": "teal",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYF03ZA/A"
           }
         },
         "url": "https://www.apple.com/hk/shop/buy-iphone/iphone-16"
@@ -1169,45 +1559,70 @@
             "colorDisplay": "Black",
             "colorKey": "black",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYE73HN/A"
           },
           "MYE93HN/A": {
             "capacity": "128GB",
             "colorDisplay": "White",
             "colorKey": "white",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYE93HN/A"
           },
           "MYEA3HN/A": {
             "capacity": "128GB",
             "colorDisplay": "Pink",
             "colorKey": "pink",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYEA3HN/A"
           },
           "MYEC3HN/A": {
             "capacity": "128GB",
             "colorDisplay": "Ultramarine",
             "colorKey": "ultramarine",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYEC3HN/A"
           },
           "MYED3HN/A": {
             "capacity": "128GB",
             "colorDisplay": "Teal",
             "colorKey": "teal",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYED3HN/A"
           }
         },
         "url": "https://www.apple.com/in/shop/buy-iphone/iphone-16"
@@ -1221,45 +1636,70 @@
             "colorDisplay": "Nero",
             "colorKey": "black",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYE73QL/A"
           },
           "MYE93QL/A": {
             "capacity": "128GB",
             "colorDisplay": "Bianco",
             "colorKey": "white",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYE93QL/A"
           },
           "MYEA3QL/A": {
             "capacity": "128GB",
             "colorDisplay": "Rosa",
             "colorKey": "pink",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYEA3QL/A"
           },
           "MYEC3QL/A": {
             "capacity": "128GB",
             "colorDisplay": "Blu oltremare",
             "colorKey": "ultramarine",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYEC3QL/A"
           },
           "MYED3QL/A": {
             "capacity": "128GB",
             "colorDisplay": "Verde acqua",
             "colorKey": "teal",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYED3QL/A"
           }
         },
         "url": "https://www.apple.com/it/shop/buy-iphone/iphone-16"
@@ -1273,45 +1713,70 @@
             "colorDisplay": "ブラック",
             "colorKey": "black",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYDQ3J/A"
           },
           "MYDR3J/A": {
             "capacity": "128GB",
             "colorDisplay": "ホワイト",
             "colorKey": "white",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYDR3J/A"
           },
           "MYDT3J/A": {
             "capacity": "128GB",
             "colorDisplay": "ピンク",
             "colorKey": "pink",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYDT3J/A"
           },
           "MYDU3J/A": {
             "capacity": "128GB",
             "colorDisplay": "ウルトラマリン",
             "colorKey": "ultramarine",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYDU3J/A"
           },
           "MYDV3J/A": {
             "capacity": "128GB",
             "colorDisplay": "ティール",
             "colorKey": "teal",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYDV3J/A"
           }
         },
         "url": "https://www.apple.com/jp/shop/buy-iphone/iphone-16"
@@ -1325,45 +1790,70 @@
             "colorDisplay": "블랙",
             "colorKey": "black",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYE73KH/A"
           },
           "MYE93KH/A": {
             "capacity": "128GB",
             "colorDisplay": "화이트",
             "colorKey": "white",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYE93KH/A"
           },
           "MYEA3KH/A": {
             "capacity": "128GB",
             "colorDisplay": "핑크",
             "colorKey": "pink",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYEA3KH/A"
           },
           "MYEC3KH/A": {
             "capacity": "128GB",
             "colorDisplay": "울트라마린",
             "colorKey": "ultramarine",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYEC3KH/A"
           },
           "MYED3KH/A": {
             "capacity": "128GB",
             "colorDisplay": "틸",
             "colorKey": "teal",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYED3KH/A"
           }
         },
         "url": "https://www.apple.com/kr/shop/buy-iphone/iphone-16"
@@ -1377,45 +1867,70 @@
             "colorDisplay": "Negro",
             "colorKey": "black",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYDQ3E/A"
           },
           "MYDR3E/A": {
             "capacity": "128GB",
             "colorDisplay": "Blanco",
             "colorKey": "white",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYDR3E/A"
           },
           "MYDT3E/A": {
             "capacity": "128GB",
             "colorDisplay": "Rosa",
             "colorKey": "pink",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYDT3E/A"
           },
           "MYDU3E/A": {
             "capacity": "128GB",
             "colorDisplay": "Ultramarino",
             "colorKey": "ultramarine",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYDU3E/A"
           },
           "MYDV3E/A": {
             "capacity": "128GB",
             "colorDisplay": "Verde azulado",
             "colorKey": "teal",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYDV3E/A"
           }
         },
         "url": "https://www.apple.com/mx/shop/buy-iphone/iphone-16"
@@ -1429,45 +1944,70 @@
             "colorDisplay": "Black",
             "colorKey": "black",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYE73ZP/A"
           },
           "MYE93ZP/A": {
             "capacity": "128GB",
             "colorDisplay": "White",
             "colorKey": "white",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYE93ZP/A"
           },
           "MYEA3ZP/A": {
             "capacity": "128GB",
             "colorDisplay": "Pink",
             "colorKey": "pink",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYEA3ZP/A"
           },
           "MYEC3ZP/A": {
             "capacity": "128GB",
             "colorDisplay": "Ultramarine",
             "colorKey": "ultramarine",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYEC3ZP/A"
           },
           "MYED3ZP/A": {
             "capacity": "128GB",
             "colorDisplay": "Teal",
             "colorKey": "teal",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYED3ZP/A"
           }
         },
         "url": "https://www.apple.com/my/shop/buy-iphone/iphone-16"
@@ -1481,45 +2021,70 @@
             "colorDisplay": "Zwart",
             "colorKey": "black",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYE73ZD/A"
           },
           "MYE93ZD/A": {
             "capacity": "128GB",
             "colorDisplay": "Wit",
             "colorKey": "white",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYE93ZD/A"
           },
           "MYEA3ZD/A": {
             "capacity": "128GB",
             "colorDisplay": "Roze",
             "colorKey": "pink",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYEA3ZD/A"
           },
           "MYEC3ZD/A": {
             "capacity": "128GB",
             "colorDisplay": "Ultramarijn",
             "colorKey": "ultramarine",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYEC3ZD/A"
           },
           "MYED3ZD/A": {
             "capacity": "128GB",
             "colorDisplay": "Blauwgroen",
             "colorKey": "teal",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYED3ZD/A"
           }
         },
         "url": "https://www.apple.com/nl/shop/buy-iphone/iphone-16"
@@ -1533,45 +2098,70 @@
             "colorDisplay": "svart",
             "colorKey": "black",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYE73QN/A"
           },
           "MYE93QN/A": {
             "capacity": "128GB",
             "colorDisplay": "hvit",
             "colorKey": "white",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYE93QN/A"
           },
           "MYEA3QN/A": {
             "capacity": "128GB",
             "colorDisplay": "rosa",
             "colorKey": "pink",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYEA3QN/A"
           },
           "MYEC3QN/A": {
             "capacity": "128GB",
             "colorDisplay": "ultramarin",
             "colorKey": "ultramarine",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYEC3QN/A"
           },
           "MYED3QN/A": {
             "capacity": "128GB",
             "colorDisplay": "blågrønn",
             "colorKey": "teal",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYED3QN/A"
           }
         },
         "url": "https://www.apple.com/no/shop/buy-iphone/iphone-16"
@@ -1585,45 +2175,70 @@
             "colorDisplay": "Black",
             "colorKey": "black",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYDQ3AH/A"
           },
           "MYDR3AH/A": {
             "capacity": "128GB",
             "colorDisplay": "White",
             "colorKey": "white",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYDR3AH/A"
           },
           "MYDT3AH/A": {
             "capacity": "128GB",
             "colorDisplay": "Pink",
             "colorKey": "pink",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYDT3AH/A"
           },
           "MYDU3AH/A": {
             "capacity": "128GB",
             "colorDisplay": "Ultramarine",
             "colorKey": "ultramarine",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYDU3AH/A"
           },
           "MYDV3AH/A": {
             "capacity": "128GB",
             "colorDisplay": "Teal",
             "colorKey": "teal",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYDV3AH/A"
           }
         },
         "url": "https://www.apple.com/sa/shop/buy-iphone/iphone-16"
@@ -1637,45 +2252,70 @@
             "colorDisplay": "svart",
             "colorKey": "black",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYE73QN/A"
           },
           "MYE93QN/A": {
             "capacity": "128GB",
             "colorDisplay": "vit",
             "colorKey": "white",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYE93QN/A"
           },
           "MYEA3QN/A": {
             "capacity": "128GB",
             "colorDisplay": "rosa",
             "colorKey": "pink",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYEA3QN/A"
           },
           "MYEC3QN/A": {
             "capacity": "128GB",
             "colorDisplay": "ultramarin",
             "colorKey": "ultramarine",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYEC3QN/A"
           },
           "MYED3QN/A": {
             "capacity": "128GB",
             "colorDisplay": "blågrön",
             "colorKey": "teal",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYED3QN/A"
           }
         },
         "url": "https://www.apple.com/se/shop/buy-iphone/iphone-16"
@@ -1689,45 +2329,70 @@
             "colorDisplay": "Black",
             "colorKey": "black",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYE73ZP/A"
           },
           "MYE93ZP/A": {
             "capacity": "128GB",
             "colorDisplay": "White",
             "colorKey": "white",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYE93ZP/A"
           },
           "MYEA3ZP/A": {
             "capacity": "128GB",
             "colorDisplay": "Pink",
             "colorKey": "pink",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYEA3ZP/A"
           },
           "MYEC3ZP/A": {
             "capacity": "128GB",
             "colorDisplay": "Ultramarine",
             "colorKey": "ultramarine",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYEC3ZP/A"
           },
           "MYED3ZP/A": {
             "capacity": "128GB",
             "colorDisplay": "Teal",
             "colorKey": "teal",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYED3ZP/A"
           }
         },
         "url": "https://www.apple.com/sg/shop/buy-iphone/iphone-16"
@@ -1741,45 +2406,70 @@
             "colorDisplay": "ดำ",
             "colorKey": "black",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYE73ZP/A"
           },
           "MYE93ZP/A": {
             "capacity": "128GB",
             "colorDisplay": "ขาว",
             "colorKey": "white",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYE93ZP/A"
           },
           "MYEA3ZP/A": {
             "capacity": "128GB",
             "colorDisplay": "ชมพู",
             "colorKey": "pink",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYEA3ZP/A"
           },
           "MYEC3ZP/A": {
             "capacity": "128GB",
             "colorDisplay": "น้ำเงินอัลตร้ามารีน",
             "colorKey": "ultramarine",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYEC3ZP/A"
           },
           "MYED3ZP/A": {
             "capacity": "128GB",
             "colorDisplay": "เขียวอมฟ้า",
             "colorKey": "teal",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYED3ZP/A"
           }
         },
         "url": "https://www.apple.com/th/shop/buy-iphone/iphone-16"
@@ -1793,45 +2483,70 @@
             "colorDisplay": "Siyah",
             "colorKey": "black",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYE73TU/A"
           },
           "MYE93TU/A": {
             "capacity": "128GB",
             "colorDisplay": "Beyaz",
             "colorKey": "white",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYE93TU/A"
           },
           "MYEA3TU/A": {
             "capacity": "128GB",
             "colorDisplay": "Pembe",
             "colorKey": "pink",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYEA3TU/A"
           },
           "MYEC3TU/A": {
             "capacity": "128GB",
             "colorDisplay": "Laciverttaş",
             "colorKey": "ultramarine",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYEC3TU/A"
           },
           "MYED3TU/A": {
             "capacity": "128GB",
             "colorDisplay": "Deniz Mavisi",
             "colorKey": "teal",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYED3TU/A"
           }
         },
         "url": "https://www.apple.com/tr/shop/buy-iphone/iphone-16"
@@ -1845,45 +2560,70 @@
             "colorDisplay": "黑色",
             "colorKey": "black",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYE73ZP/A"
           },
           "MYE93ZP/A": {
             "capacity": "128GB",
             "colorDisplay": "白色",
             "colorKey": "white",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYE93ZP/A"
           },
           "MYEA3ZP/A": {
             "capacity": "128GB",
             "colorDisplay": "粉紅色",
             "colorKey": "pink",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYEA3ZP/A"
           },
           "MYEC3ZP/A": {
             "capacity": "128GB",
             "colorDisplay": "湛海藍色",
             "colorKey": "ultramarine",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYEC3ZP/A"
           },
           "MYED3ZP/A": {
             "capacity": "128GB",
             "colorDisplay": "湖水綠色",
             "colorKey": "teal",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYED3ZP/A"
           }
         },
         "url": "https://www.apple.com/tw/shop/buy-iphone/iphone-16"
@@ -1897,45 +2637,70 @@
             "colorDisplay": "Black",
             "colorKey": "black",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYE73QN/A"
           },
           "MYE93QN/A": {
             "capacity": "128GB",
             "colorDisplay": "White",
             "colorKey": "white",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYE93QN/A"
           },
           "MYEA3QN/A": {
             "capacity": "128GB",
             "colorDisplay": "Pink",
             "colorKey": "pink",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYEA3QN/A"
           },
           "MYEC3QN/A": {
             "capacity": "128GB",
             "colorDisplay": "Ultramarine",
             "colorKey": "ultramarine",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYEC3QN/A"
           },
           "MYED3QN/A": {
             "capacity": "128GB",
             "colorDisplay": "Teal",
             "colorKey": "teal",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYED3QN/A"
           }
         },
         "url": "https://www.apple.com/uk/shop/buy-iphone/iphone-16"
@@ -1949,45 +2714,70 @@
             "colorDisplay": "Black",
             "colorKey": "black",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYAP3LL/A"
           },
           "MYAQ3LL/A": {
             "capacity": "128GB",
             "colorDisplay": "White",
             "colorKey": "white",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYAQ3LL/A"
           },
           "MYAR3LL/A": {
             "capacity": "128GB",
             "colorDisplay": "Pink",
             "colorKey": "pink",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYAR3LL/A"
           },
           "MYAT3LL/A": {
             "capacity": "128GB",
             "colorDisplay": "Ultramarine",
             "colorKey": "ultramarine",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYAT3LL/A"
           },
           "MYAW3LL/A": {
             "capacity": "128GB",
             "colorDisplay": "Teal",
             "colorKey": "teal",
             "dimensionScreensize": "6_1inch",
-            "family": "iphone",
+            "family": "iphone16",
             "familyName": "iPhone 16",
-            "name": ""
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MYAW3LL/A"
           }
         },
         "url": "https://www.apple.com/us/shop/buy-iphone/iphone-16"

@@ -1,7 +1,7 @@
 {
   "_meta": {
     "family": "homepod",
-    "generated_at": "2026-09-09T19:50:06.726086+00:00",
+    "generated_at": "2026-10-16T13:32:27.434423+00:00",
     "regions_scraped": 33,
     "scraper_version": "1.0",
     "token": "homepod-mini"
@@ -338,75 +338,75 @@
     "at": {
       "homepod-mini": {
         "skus": {
-          "MJ2C3D/A": {
-            "capacity": "",
-            "colorDisplay": "Blau",
-            "colorKey": "blue",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Blau",
-            "partNumber": "MJ2C3D/A"
-          },
-          "MJ2D3D/A": {
-            "capacity": "",
-            "colorDisplay": "Orange",
-            "colorKey": "orange",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Orange",
-            "partNumber": "MJ2D3D/A"
-          },
-          "MJ2E3D/A": {
-            "capacity": "",
-            "colorDisplay": "Gelb",
-            "colorKey": "yellow",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Gelb",
-            "partNumber": "MJ2E3D/A"
-          },
-          "MTJT3D/A": {
+          "MGHJ4ZD/A": {
             "capacity": "",
             "colorDisplay": "Mitternacht",
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "homepodmini",
-            "familyName": "HomePod mini",
+            "familyName": "HomePod mini 2",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "homepod"
             },
-            "name": "HomePod mini Mitternacht",
-            "partNumber": "MTJT3D/A"
+            "name": "HomePod mini 2 Mitternacht",
+            "partNumber": "MGHJ4ZD/A"
           },
-          "MY5H2D/A": {
+          "MGHK4ZD/A": {
             "capacity": "",
             "colorDisplay": "Weiß",
             "colorKey": "white",
             "dimensionScreensize": "",
             "family": "homepodmini",
-            "familyName": "HomePod mini",
+            "familyName": "HomePod mini 2",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "homepod"
             },
-            "name": "HomePod mini Weiß",
-            "partNumber": "MY5H2D/A"
+            "name": "HomePod mini 2 Weiß",
+            "partNumber": "MGHK4ZD/A"
+          },
+          "MGHL4ZD/A": {
+            "capacity": "",
+            "colorDisplay": "Grün",
+            "colorKey": "green",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Grün",
+            "partNumber": "MGHL4ZD/A"
+          },
+          "MGHM4ZD/A": {
+            "capacity": "",
+            "colorDisplay": "Blau",
+            "colorKey": "blue",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Blau",
+            "partNumber": "MGHM4ZD/A"
+          },
+          "MGKR4ZD/A": {
+            "capacity": "",
+            "colorDisplay": "Pink",
+            "colorKey": "pink",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Pink",
+            "partNumber": "MGKR4ZD/A"
           }
         },
         "url": "https://www.apple.com/at/shop/buy-homepod/homepod-mini"
@@ -415,75 +415,75 @@
     "au": {
       "homepod-mini": {
         "skus": {
-          "MJ2C3AX/A": {
-            "capacity": "",
-            "colorDisplay": "Blue",
-            "colorKey": "blue",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Blue",
-            "partNumber": "MJ2C3AX/A"
-          },
-          "MJ2D3AX/A": {
-            "capacity": "",
-            "colorDisplay": "Orange",
-            "colorKey": "orange",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Orange",
-            "partNumber": "MJ2D3AX/A"
-          },
-          "MJ2E3AX/A": {
-            "capacity": "",
-            "colorDisplay": "Yellow",
-            "colorKey": "yellow",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Yellow",
-            "partNumber": "MJ2E3AX/A"
-          },
-          "MTJT3AX/A": {
+          "MGHJ4X/A": {
             "capacity": "",
             "colorDisplay": "Midnight",
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "homepodmini",
-            "familyName": "HomePod mini",
+            "familyName": "HomePod mini 2",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "homepod"
             },
-            "name": "HomePod mini Midnight",
-            "partNumber": "MTJT3AX/A"
+            "name": "HomePod mini 2 Midnight",
+            "partNumber": "MGHJ4X/A"
           },
-          "MY5H2AX/A": {
+          "MGHK4X/A": {
             "capacity": "",
             "colorDisplay": "White",
             "colorKey": "white",
             "dimensionScreensize": "",
             "family": "homepodmini",
-            "familyName": "HomePod mini",
+            "familyName": "HomePod mini 2",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "homepod"
             },
-            "name": "HomePod mini White",
-            "partNumber": "MY5H2AX/A"
+            "name": "HomePod mini 2 White",
+            "partNumber": "MGHK4X/A"
+          },
+          "MGHL4X/A": {
+            "capacity": "",
+            "colorDisplay": "Green",
+            "colorKey": "green",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Green",
+            "partNumber": "MGHL4X/A"
+          },
+          "MGHM4X/A": {
+            "capacity": "",
+            "colorDisplay": "Blue",
+            "colorKey": "blue",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Blue",
+            "partNumber": "MGHM4X/A"
+          },
+          "MGKR4X/A": {
+            "capacity": "",
+            "colorDisplay": "Pink",
+            "colorKey": "pink",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Pink",
+            "partNumber": "MGKR4X/A"
           }
         },
         "url": "https://www.apple.com/au/shop/buy-homepod/homepod-mini"
@@ -492,75 +492,75 @@
     "be-fr": {
       "homepod-mini": {
         "skus": {
-          "MJ2C3FN/A": {
-            "capacity": "",
-            "colorDisplay": "Bleu",
-            "colorKey": "blue",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Bleu",
-            "partNumber": "MJ2C3FN/A"
-          },
-          "MJ2D3FN/A": {
-            "capacity": "",
-            "colorDisplay": "Orange",
-            "colorKey": "orange",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Orange",
-            "partNumber": "MJ2D3FN/A"
-          },
-          "MJ2E3FN/A": {
-            "capacity": "",
-            "colorDisplay": "Jaune",
-            "colorKey": "yellow",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Jaune",
-            "partNumber": "MJ2E3FN/A"
-          },
-          "MTJT3FN/A": {
+          "MGHJ4ZD/A": {
             "capacity": "",
             "colorDisplay": "Minuit",
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "homepodmini",
-            "familyName": "HomePod mini",
+            "familyName": "HomePod mini 2",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "homepod"
             },
-            "name": "HomePod mini Minuit",
-            "partNumber": "MTJT3FN/A"
+            "name": "HomePod mini 2 Minuit",
+            "partNumber": "MGHJ4ZD/A"
           },
-          "MY5H2FN/A": {
+          "MGHK4ZD/A": {
             "capacity": "",
             "colorDisplay": "Blanc",
             "colorKey": "white",
             "dimensionScreensize": "",
             "family": "homepodmini",
-            "familyName": "HomePod mini",
+            "familyName": "HomePod mini 2",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "homepod"
             },
-            "name": "HomePod mini Blanc",
-            "partNumber": "MY5H2FN/A"
+            "name": "HomePod mini 2 Blanc",
+            "partNumber": "MGHK4ZD/A"
+          },
+          "MGHL4ZD/A": {
+            "capacity": "",
+            "colorDisplay": "Vert",
+            "colorKey": "green",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Vert",
+            "partNumber": "MGHL4ZD/A"
+          },
+          "MGHM4ZD/A": {
+            "capacity": "",
+            "colorDisplay": "Bleu",
+            "colorKey": "blue",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Bleu",
+            "partNumber": "MGHM4ZD/A"
+          },
+          "MGKR4ZD/A": {
+            "capacity": "",
+            "colorDisplay": "Rose",
+            "colorKey": "pink",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Rose",
+            "partNumber": "MGKR4ZD/A"
           }
         },
         "url": "https://www.apple.com/be-fr/shop/buy-homepod/homepod-mini"
@@ -569,75 +569,75 @@
     "be-nl": {
       "homepod-mini": {
         "skus": {
-          "MJ2C3FN/A": {
-            "capacity": "",
-            "colorDisplay": "Blauw",
-            "colorKey": "blue",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Blauw",
-            "partNumber": "MJ2C3FN/A"
-          },
-          "MJ2D3FN/A": {
-            "capacity": "",
-            "colorDisplay": "Oranje",
-            "colorKey": "orange",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Oranje",
-            "partNumber": "MJ2D3FN/A"
-          },
-          "MJ2E3FN/A": {
-            "capacity": "",
-            "colorDisplay": "Geel",
-            "colorKey": "yellow",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Geel",
-            "partNumber": "MJ2E3FN/A"
-          },
-          "MTJT3FN/A": {
+          "MGHJ4ZD/A": {
             "capacity": "",
             "colorDisplay": "Middernacht",
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "homepodmini",
-            "familyName": "HomePod mini",
+            "familyName": "HomePod mini 2",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "homepod"
             },
-            "name": "HomePod mini Middernacht",
-            "partNumber": "MTJT3FN/A"
+            "name": "HomePod mini 2 Middernacht",
+            "partNumber": "MGHJ4ZD/A"
           },
-          "MY5H2FN/A": {
+          "MGHK4ZD/A": {
             "capacity": "",
             "colorDisplay": "Wit",
             "colorKey": "white",
             "dimensionScreensize": "",
             "family": "homepodmini",
-            "familyName": "HomePod mini",
+            "familyName": "HomePod mini 2",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "homepod"
             },
-            "name": "HomePod mini Wit",
-            "partNumber": "MY5H2FN/A"
+            "name": "HomePod mini 2 Wit",
+            "partNumber": "MGHK4ZD/A"
+          },
+          "MGHL4ZD/A": {
+            "capacity": "",
+            "colorDisplay": "Groen",
+            "colorKey": "green",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Groen",
+            "partNumber": "MGHL4ZD/A"
+          },
+          "MGHM4ZD/A": {
+            "capacity": "",
+            "colorDisplay": "Blauw",
+            "colorKey": "blue",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Blauw",
+            "partNumber": "MGHM4ZD/A"
+          },
+          "MGKR4ZD/A": {
+            "capacity": "",
+            "colorDisplay": "Roze",
+            "colorKey": "pink",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Roze",
+            "partNumber": "MGKR4ZD/A"
           }
         },
         "url": "https://www.apple.com/be-nl/shop/buy-homepod/homepod-mini"
@@ -652,75 +652,75 @@
     "ca": {
       "homepod-mini": {
         "skus": {
-          "MJ2C3C/A": {
-            "capacity": "",
-            "colorDisplay": "Blue",
-            "colorKey": "blue",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Blue",
-            "partNumber": "MJ2C3C/A"
-          },
-          "MJ2D3C/A": {
-            "capacity": "",
-            "colorDisplay": "Orange",
-            "colorKey": "orange",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Orange",
-            "partNumber": "MJ2D3C/A"
-          },
-          "MJ2E3C/A": {
-            "capacity": "",
-            "colorDisplay": "Yellow",
-            "colorKey": "yellow",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Yellow",
-            "partNumber": "MJ2E3C/A"
-          },
-          "MTJT3C/A": {
+          "MGHJ4AM/A": {
             "capacity": "",
             "colorDisplay": "Midnight",
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "homepodmini",
-            "familyName": "HomePod mini",
+            "familyName": "HomePod mini 2",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "homepod"
             },
-            "name": "HomePod mini Midnight",
-            "partNumber": "MTJT3C/A"
+            "name": "HomePod mini 2 Midnight",
+            "partNumber": "MGHJ4AM/A"
           },
-          "MY5H2C/A": {
+          "MGHK4AM/A": {
             "capacity": "",
             "colorDisplay": "White",
             "colorKey": "white",
             "dimensionScreensize": "",
             "family": "homepodmini",
-            "familyName": "HomePod mini",
+            "familyName": "HomePod mini 2",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "homepod"
             },
-            "name": "HomePod mini White",
-            "partNumber": "MY5H2C/A"
+            "name": "HomePod mini 2 White",
+            "partNumber": "MGHK4AM/A"
+          },
+          "MGHL4AM/A": {
+            "capacity": "",
+            "colorDisplay": "Green",
+            "colorKey": "green",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Green",
+            "partNumber": "MGHL4AM/A"
+          },
+          "MGHM4AM/A": {
+            "capacity": "",
+            "colorDisplay": "Blue",
+            "colorKey": "blue",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Blue",
+            "partNumber": "MGHM4AM/A"
+          },
+          "MGKR4AM/A": {
+            "capacity": "",
+            "colorDisplay": "Pink",
+            "colorKey": "pink",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Pink",
+            "partNumber": "MGKR4AM/A"
           }
         },
         "url": "https://www.apple.com/ca/shop/buy-homepod/homepod-mini"
@@ -729,75 +729,75 @@
     "ch-de": {
       "homepod-mini": {
         "skus": {
-          "MJ2C3SM/A": {
-            "capacity": "",
-            "colorDisplay": "Blau",
-            "colorKey": "blue",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Blau",
-            "partNumber": "MJ2C3SM/A"
-          },
-          "MJ2D3SM/A": {
-            "capacity": "",
-            "colorDisplay": "Orange",
-            "colorKey": "orange",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Orange",
-            "partNumber": "MJ2D3SM/A"
-          },
-          "MJ2E3SM/A": {
-            "capacity": "",
-            "colorDisplay": "Gelb",
-            "colorKey": "yellow",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Gelb",
-            "partNumber": "MJ2E3SM/A"
-          },
-          "MTJT3SM/A": {
+          "MGHJ4QL/A": {
             "capacity": "",
             "colorDisplay": "Mitternacht",
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "homepodmini",
-            "familyName": "HomePod mini",
+            "familyName": "HomePod mini 2",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "homepod"
             },
-            "name": "HomePod mini Mitternacht",
-            "partNumber": "MTJT3SM/A"
+            "name": "HomePod mini 2 Mitternacht",
+            "partNumber": "MGHJ4QL/A"
           },
-          "MY5H2SM/A": {
+          "MGHK4QL/A": {
             "capacity": "",
             "colorDisplay": "Weiß",
             "colorKey": "white",
             "dimensionScreensize": "",
             "family": "homepodmini",
-            "familyName": "HomePod mini",
+            "familyName": "HomePod mini 2",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "homepod"
             },
-            "name": "HomePod mini Weiß",
-            "partNumber": "MY5H2SM/A"
+            "name": "HomePod mini 2 Weiß",
+            "partNumber": "MGHK4QL/A"
+          },
+          "MGHL4QL/A": {
+            "capacity": "",
+            "colorDisplay": "Grün",
+            "colorKey": "green",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Grün",
+            "partNumber": "MGHL4QL/A"
+          },
+          "MGHM4QL/A": {
+            "capacity": "",
+            "colorDisplay": "Blau",
+            "colorKey": "blue",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Blau",
+            "partNumber": "MGHM4QL/A"
+          },
+          "MGKR4QL/A": {
+            "capacity": "",
+            "colorDisplay": "Pink",
+            "colorKey": "pink",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Pink",
+            "partNumber": "MGKR4QL/A"
           }
         },
         "url": "https://www.apple.com/ch-de/shop/buy-homepod/homepod-mini"
@@ -806,75 +806,75 @@
     "ch-fr": {
       "homepod-mini": {
         "skus": {
-          "MJ2C3SM/A": {
-            "capacity": "",
-            "colorDisplay": "Bleu",
-            "colorKey": "blue",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Bleu",
-            "partNumber": "MJ2C3SM/A"
-          },
-          "MJ2D3SM/A": {
-            "capacity": "",
-            "colorDisplay": "Orange",
-            "colorKey": "orange",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Orange",
-            "partNumber": "MJ2D3SM/A"
-          },
-          "MJ2E3SM/A": {
-            "capacity": "",
-            "colorDisplay": "Jaune",
-            "colorKey": "yellow",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Jaune",
-            "partNumber": "MJ2E3SM/A"
-          },
-          "MTJT3SM/A": {
+          "MGHJ4QL/A": {
             "capacity": "",
             "colorDisplay": "Minuit",
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "homepodmini",
-            "familyName": "HomePod mini",
+            "familyName": "HomePod mini 2",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "homepod"
             },
-            "name": "HomePod mini Minuit",
-            "partNumber": "MTJT3SM/A"
+            "name": "HomePod mini 2 Minuit",
+            "partNumber": "MGHJ4QL/A"
           },
-          "MY5H2SM/A": {
+          "MGHK4QL/A": {
             "capacity": "",
             "colorDisplay": "Blanc",
             "colorKey": "white",
             "dimensionScreensize": "",
             "family": "homepodmini",
-            "familyName": "HomePod mini",
+            "familyName": "HomePod mini 2",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "homepod"
             },
-            "name": "HomePod mini Blanc",
-            "partNumber": "MY5H2SM/A"
+            "name": "HomePod mini 2 Blanc",
+            "partNumber": "MGHK4QL/A"
+          },
+          "MGHL4QL/A": {
+            "capacity": "",
+            "colorDisplay": "Vert",
+            "colorKey": "green",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Vert",
+            "partNumber": "MGHL4QL/A"
+          },
+          "MGHM4QL/A": {
+            "capacity": "",
+            "colorDisplay": "Bleu",
+            "colorKey": "blue",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Bleu",
+            "partNumber": "MGHM4QL/A"
+          },
+          "MGKR4QL/A": {
+            "capacity": "",
+            "colorDisplay": "Rose",
+            "colorKey": "pink",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Rose",
+            "partNumber": "MGKR4QL/A"
           }
         },
         "url": "https://www.apple.com/ch-fr/shop/buy-homepod/homepod-mini"
@@ -883,75 +883,75 @@
     "cn": {
       "homepod-mini": {
         "skus": {
-          "MHY53CH/A": {
-            "capacity": "",
-            "colorDisplay": "白色",
-            "colorKey": "white",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini - Blue",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini - Blue 白色",
-            "partNumber": "MHY53CH/A"
-          },
-          "MJ2J3CH/A": {
-            "capacity": "",
-            "colorDisplay": "蓝色",
-            "colorKey": "blue",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini - Blue",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini - Blue 蓝色",
-            "partNumber": "MJ2J3CH/A"
-          },
-          "MJ2K3CH/A": {
-            "capacity": "",
-            "colorDisplay": "橙色",
-            "colorKey": "orange",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini - Blue",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini - Blue 橙色",
-            "partNumber": "MJ2K3CH/A"
-          },
-          "MJ2L3CH/A": {
-            "capacity": "",
-            "colorDisplay": "黄色",
-            "colorKey": "yellow",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini - Blue",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini - Blue 黄色",
-            "partNumber": "MJ2L3CH/A"
-          },
-          "MTJU3CH/A": {
+          "MGHJ4CH/A": {
             "capacity": "",
             "colorDisplay": "午夜色",
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "homepodmini",
-            "familyName": "HomePod mini - Blue",
+            "familyName": "HomePod mini 2 - Pink",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "homepod"
             },
-            "name": "HomePod mini - Blue 午夜色",
-            "partNumber": "MTJU3CH/A"
+            "name": "HomePod mini 2 - Pink 午夜色",
+            "partNumber": "MGHJ4CH/A"
+          },
+          "MGHK4CH/A": {
+            "capacity": "",
+            "colorDisplay": "白色",
+            "colorKey": "white",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2 - Pink",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 - Pink 白色",
+            "partNumber": "MGHK4CH/A"
+          },
+          "MGHL4CH/A": {
+            "capacity": "",
+            "colorDisplay": "绿色",
+            "colorKey": "green",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2 - Pink",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 - Pink 绿色",
+            "partNumber": "MGHL4CH/A"
+          },
+          "MGHM4CH/A": {
+            "capacity": "",
+            "colorDisplay": "蓝色",
+            "colorKey": "blue",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2 - Pink",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 - Pink 蓝色",
+            "partNumber": "MGHM4CH/A"
+          },
+          "MGKR4CH/A": {
+            "capacity": "",
+            "colorDisplay": "粉色",
+            "colorKey": "pink",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2 - Pink",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 - Pink 粉色",
+            "partNumber": "MGKR4CH/A"
           }
         },
         "url": "https://www.apple.com/cn/shop/buy-homepod/homepod-mini"
@@ -960,75 +960,75 @@
     "de": {
       "homepod-mini": {
         "skus": {
-          "MJ2C3D/A": {
-            "capacity": "",
-            "colorDisplay": "Blau",
-            "colorKey": "blue",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Blau",
-            "partNumber": "MJ2C3D/A"
-          },
-          "MJ2D3D/A": {
-            "capacity": "",
-            "colorDisplay": "Orange",
-            "colorKey": "orange",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Orange",
-            "partNumber": "MJ2D3D/A"
-          },
-          "MJ2E3D/A": {
-            "capacity": "",
-            "colorDisplay": "Gelb",
-            "colorKey": "yellow",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Gelb",
-            "partNumber": "MJ2E3D/A"
-          },
-          "MTJT3D/A": {
+          "MGHJ4ZD/A": {
             "capacity": "",
             "colorDisplay": "Mitternacht",
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "homepodmini",
-            "familyName": "HomePod mini",
+            "familyName": "HomePod mini 2",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "homepod"
             },
-            "name": "HomePod mini Mitternacht",
-            "partNumber": "MTJT3D/A"
+            "name": "HomePod mini 2 Mitternacht",
+            "partNumber": "MGHJ4ZD/A"
           },
-          "MY5H2D/A": {
+          "MGHK4ZD/A": {
             "capacity": "",
             "colorDisplay": "Weiß",
             "colorKey": "white",
             "dimensionScreensize": "",
             "family": "homepodmini",
-            "familyName": "HomePod mini",
+            "familyName": "HomePod mini 2",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "homepod"
             },
-            "name": "HomePod mini Weiß",
-            "partNumber": "MY5H2D/A"
+            "name": "HomePod mini 2 Weiß",
+            "partNumber": "MGHK4ZD/A"
+          },
+          "MGHL4ZD/A": {
+            "capacity": "",
+            "colorDisplay": "Grün",
+            "colorKey": "green",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Grün",
+            "partNumber": "MGHL4ZD/A"
+          },
+          "MGHM4ZD/A": {
+            "capacity": "",
+            "colorDisplay": "Blau",
+            "colorKey": "blue",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Blau",
+            "partNumber": "MGHM4ZD/A"
+          },
+          "MGKR4ZD/A": {
+            "capacity": "",
+            "colorDisplay": "Pink",
+            "colorKey": "pink",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Pink",
+            "partNumber": "MGKR4ZD/A"
           }
         },
         "url": "https://www.apple.com/de/shop/buy-homepod/homepod-mini"
@@ -1037,75 +1037,75 @@
     "dk": {
       "homepod-mini": {
         "skus": {
-          "MJ2C3DN/A": {
-            "capacity": "",
-            "colorDisplay": "blå",
-            "colorKey": "blue",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini blå",
-            "partNumber": "MJ2C3DN/A"
-          },
-          "MJ2D3DN/A": {
-            "capacity": "",
-            "colorDisplay": "orange",
-            "colorKey": "orange",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini orange",
-            "partNumber": "MJ2D3DN/A"
-          },
-          "MJ2E3DN/A": {
-            "capacity": "",
-            "colorDisplay": "gul",
-            "colorKey": "yellow",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini gul",
-            "partNumber": "MJ2E3DN/A"
-          },
-          "MTJT3DN/A": {
+          "MGHJ4QN/A": {
             "capacity": "",
             "colorDisplay": "midnat",
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "homepodmini",
-            "familyName": "HomePod mini",
+            "familyName": "HomePod mini 2",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "homepod"
             },
-            "name": "HomePod mini midnat",
-            "partNumber": "MTJT3DN/A"
+            "name": "HomePod mini 2 midnat",
+            "partNumber": "MGHJ4QN/A"
           },
-          "MY5H2DN/A": {
+          "MGHK4QN/A": {
             "capacity": "",
             "colorDisplay": "hvid",
             "colorKey": "white",
             "dimensionScreensize": "",
             "family": "homepodmini",
-            "familyName": "HomePod mini",
+            "familyName": "HomePod mini 2",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "homepod"
             },
-            "name": "HomePod mini hvid",
-            "partNumber": "MY5H2DN/A"
+            "name": "HomePod mini 2 hvid",
+            "partNumber": "MGHK4QN/A"
+          },
+          "MGHL4QN/A": {
+            "capacity": "",
+            "colorDisplay": "grøn",
+            "colorKey": "green",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 grøn",
+            "partNumber": "MGHL4QN/A"
+          },
+          "MGHM4QN/A": {
+            "capacity": "",
+            "colorDisplay": "blå",
+            "colorKey": "blue",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 blå",
+            "partNumber": "MGHM4QN/A"
+          },
+          "MGKR4QN/A": {
+            "capacity": "",
+            "colorDisplay": "lyserød",
+            "colorKey": "pink",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 lyserød",
+            "partNumber": "MGKR4QN/A"
           }
         },
         "url": "https://www.apple.com/dk/shop/buy-homepod/homepod-mini"
@@ -1114,75 +1114,75 @@
     "es": {
       "homepod-mini": {
         "skus": {
-          "MJ2C3Y/A": {
-            "capacity": "",
-            "colorDisplay": "Azul",
-            "colorKey": "blue",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Azul",
-            "partNumber": "MJ2C3Y/A"
-          },
-          "MJ2D3Y/A": {
-            "capacity": "",
-            "colorDisplay": "Naranja",
-            "colorKey": "orange",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Naranja",
-            "partNumber": "MJ2D3Y/A"
-          },
-          "MJ2E3Y/A": {
-            "capacity": "",
-            "colorDisplay": "Amarillo",
-            "colorKey": "yellow",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Amarillo",
-            "partNumber": "MJ2E3Y/A"
-          },
-          "MTJT3Y/A": {
+          "MGHJ4QL/A": {
             "capacity": "",
             "colorDisplay": "Medianoche",
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "homepodmini",
-            "familyName": "HomePod mini",
+            "familyName": "HomePod mini 2",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "homepod"
             },
-            "name": "HomePod mini Medianoche",
-            "partNumber": "MTJT3Y/A"
+            "name": "HomePod mini 2 Medianoche",
+            "partNumber": "MGHJ4QL/A"
           },
-          "MY5H2Y/A": {
+          "MGHK4QL/A": {
             "capacity": "",
             "colorDisplay": "Blanco",
             "colorKey": "white",
             "dimensionScreensize": "",
             "family": "homepodmini",
-            "familyName": "HomePod mini",
+            "familyName": "HomePod mini 2",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "homepod"
             },
-            "name": "HomePod mini Blanco",
-            "partNumber": "MY5H2Y/A"
+            "name": "HomePod mini 2 Blanco",
+            "partNumber": "MGHK4QL/A"
+          },
+          "MGHL4QL/A": {
+            "capacity": "",
+            "colorDisplay": "Verde",
+            "colorKey": "green",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Verde",
+            "partNumber": "MGHL4QL/A"
+          },
+          "MGHM4QL/A": {
+            "capacity": "",
+            "colorDisplay": "Azul",
+            "colorKey": "blue",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Azul",
+            "partNumber": "MGHM4QL/A"
+          },
+          "MGKR4QL/A": {
+            "capacity": "",
+            "colorDisplay": "Rosa",
+            "colorKey": "pink",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Rosa",
+            "partNumber": "MGKR4QL/A"
           }
         },
         "url": "https://www.apple.com/es/shop/buy-homepod/homepod-mini"
@@ -1191,75 +1191,75 @@
     "fi": {
       "homepod-mini": {
         "skus": {
-          "MJ2C3DN/A": {
-            "capacity": "",
-            "colorDisplay": "Sininen",
-            "colorKey": "blue",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Sininen",
-            "partNumber": "MJ2C3DN/A"
-          },
-          "MJ2D3DN/A": {
-            "capacity": "",
-            "colorDisplay": "Oranssi",
-            "colorKey": "orange",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Oranssi",
-            "partNumber": "MJ2D3DN/A"
-          },
-          "MJ2E3DN/A": {
-            "capacity": "",
-            "colorDisplay": "Keltainen",
-            "colorKey": "yellow",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Keltainen",
-            "partNumber": "MJ2E3DN/A"
-          },
-          "MTJT3DN/A": {
+          "MGHJ4QN/A": {
             "capacity": "",
             "colorDisplay": "Keskiyö",
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "homepodmini",
-            "familyName": "HomePod mini",
+            "familyName": "HomePod mini 2",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "homepod"
             },
-            "name": "HomePod mini Keskiyö",
-            "partNumber": "MTJT3DN/A"
+            "name": "HomePod mini 2 Keskiyö",
+            "partNumber": "MGHJ4QN/A"
           },
-          "MY5H2DN/A": {
+          "MGHK4QN/A": {
             "capacity": "",
             "colorDisplay": "Valkoinen",
             "colorKey": "white",
             "dimensionScreensize": "",
             "family": "homepodmini",
-            "familyName": "HomePod mini",
+            "familyName": "HomePod mini 2",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "homepod"
             },
-            "name": "HomePod mini Valkoinen",
-            "partNumber": "MY5H2DN/A"
+            "name": "HomePod mini 2 Valkoinen",
+            "partNumber": "MGHK4QN/A"
+          },
+          "MGHL4QN/A": {
+            "capacity": "",
+            "colorDisplay": "Vihreä",
+            "colorKey": "green",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Vihreä",
+            "partNumber": "MGHL4QN/A"
+          },
+          "MGHM4QN/A": {
+            "capacity": "",
+            "colorDisplay": "Sininen",
+            "colorKey": "blue",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Sininen",
+            "partNumber": "MGHM4QN/A"
+          },
+          "MGKR4QN/A": {
+            "capacity": "",
+            "colorDisplay": "Pinkki",
+            "colorKey": "pink",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Pinkki",
+            "partNumber": "MGKR4QN/A"
           }
         },
         "url": "https://www.apple.com/fi/shop/buy-homepod/homepod-mini"
@@ -1268,75 +1268,75 @@
     "fr": {
       "homepod-mini": {
         "skus": {
-          "MJ2C3F/A": {
-            "capacity": "",
-            "colorDisplay": "Bleu",
-            "colorKey": "blue",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Bleu",
-            "partNumber": "MJ2C3F/A"
-          },
-          "MJ2D3F/A": {
-            "capacity": "",
-            "colorDisplay": "Orange",
-            "colorKey": "orange",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Orange",
-            "partNumber": "MJ2D3F/A"
-          },
-          "MJ2E3F/A": {
-            "capacity": "",
-            "colorDisplay": "Jaune",
-            "colorKey": "yellow",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Jaune",
-            "partNumber": "MJ2E3F/A"
-          },
-          "MTJT3F/A": {
+          "MGHJ4ZD/A": {
             "capacity": "",
             "colorDisplay": "Minuit",
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "homepodmini",
-            "familyName": "HomePod mini",
+            "familyName": "HomePod mini 2",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "homepod"
             },
-            "name": "HomePod mini Minuit",
-            "partNumber": "MTJT3F/A"
+            "name": "HomePod mini 2 Minuit",
+            "partNumber": "MGHJ4ZD/A"
           },
-          "MY5H2F/A": {
+          "MGHK4ZD/A": {
             "capacity": "",
             "colorDisplay": "Blanc",
             "colorKey": "white",
             "dimensionScreensize": "",
             "family": "homepodmini",
-            "familyName": "HomePod mini",
+            "familyName": "HomePod mini 2",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "homepod"
             },
-            "name": "HomePod mini Blanc",
-            "partNumber": "MY5H2F/A"
+            "name": "HomePod mini 2 Blanc",
+            "partNumber": "MGHK4ZD/A"
+          },
+          "MGHL4ZD/A": {
+            "capacity": "",
+            "colorDisplay": "Vert",
+            "colorKey": "green",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Vert",
+            "partNumber": "MGHL4ZD/A"
+          },
+          "MGHM4ZD/A": {
+            "capacity": "",
+            "colorDisplay": "Bleu",
+            "colorKey": "blue",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Bleu",
+            "partNumber": "MGHM4ZD/A"
+          },
+          "MGKR4ZD/A": {
+            "capacity": "",
+            "colorDisplay": "Rose",
+            "colorKey": "pink",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Rose",
+            "partNumber": "MGKR4ZD/A"
           }
         },
         "url": "https://www.apple.com/fr/shop/buy-homepod/homepod-mini"
@@ -1345,75 +1345,75 @@
     "hk": {
       "homepod-mini": {
         "skus": {
-          "MJ2C3ZP/A": {
-            "capacity": "",
-            "colorDisplay": "Blue",
-            "colorKey": "blue",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Blue",
-            "partNumber": "MJ2C3ZP/A"
-          },
-          "MJ2D3ZP/A": {
-            "capacity": "",
-            "colorDisplay": "Orange",
-            "colorKey": "orange",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Orange",
-            "partNumber": "MJ2D3ZP/A"
-          },
-          "MJ2E3ZP/A": {
-            "capacity": "",
-            "colorDisplay": "Yellow",
-            "colorKey": "yellow",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Yellow",
-            "partNumber": "MJ2E3ZP/A"
-          },
-          "MTJT3ZP/A": {
+          "MGHJ4ZP/A": {
             "capacity": "",
             "colorDisplay": "Midnight",
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "homepodmini",
-            "familyName": "HomePod mini",
+            "familyName": "HomePod mini 2",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "homepod"
             },
-            "name": "HomePod mini Midnight",
-            "partNumber": "MTJT3ZP/A"
+            "name": "HomePod mini 2 Midnight",
+            "partNumber": "MGHJ4ZP/A"
           },
-          "MY5H2ZP/A": {
+          "MGHK4ZP/A": {
             "capacity": "",
             "colorDisplay": "White",
             "colorKey": "white",
             "dimensionScreensize": "",
             "family": "homepodmini",
-            "familyName": "HomePod mini",
+            "familyName": "HomePod mini 2",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "homepod"
             },
-            "name": "HomePod mini White",
-            "partNumber": "MY5H2ZP/A"
+            "name": "HomePod mini 2 White",
+            "partNumber": "MGHK4ZP/A"
+          },
+          "MGHL4ZP/A": {
+            "capacity": "",
+            "colorDisplay": "Green",
+            "colorKey": "green",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Green",
+            "partNumber": "MGHL4ZP/A"
+          },
+          "MGHM4ZP/A": {
+            "capacity": "",
+            "colorDisplay": "Blue",
+            "colorKey": "blue",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Blue",
+            "partNumber": "MGHM4ZP/A"
+          },
+          "MGKR4ZP/A": {
+            "capacity": "",
+            "colorDisplay": "Pink",
+            "colorKey": "pink",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Pink",
+            "partNumber": "MGKR4ZP/A"
           }
         },
         "url": "https://www.apple.com/hk/shop/buy-homepod/homepod-mini"
@@ -1422,75 +1422,75 @@
     "in": {
       "homepod-mini": {
         "skus": {
-          "MJ2C3HN/A": {
-            "capacity": "",
-            "colorDisplay": "Blue",
-            "colorKey": "blue",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Blue",
-            "partNumber": "MJ2C3HN/A"
-          },
-          "MJ2D3HN/A": {
-            "capacity": "",
-            "colorDisplay": "Orange",
-            "colorKey": "orange",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Orange",
-            "partNumber": "MJ2D3HN/A"
-          },
-          "MJ2E3HN/A": {
-            "capacity": "",
-            "colorDisplay": "Yellow",
-            "colorKey": "yellow",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Yellow",
-            "partNumber": "MJ2E3HN/A"
-          },
-          "MTJT3HN/A": {
+          "MGHJ4HN/A": {
             "capacity": "",
             "colorDisplay": "Midnight",
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "homepodmini",
-            "familyName": "HomePod mini",
+            "familyName": "HomePod mini 2",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "homepod"
             },
-            "name": "HomePod mini Midnight",
-            "partNumber": "MTJT3HN/A"
+            "name": "HomePod mini 2 Midnight",
+            "partNumber": "MGHJ4HN/A"
           },
-          "MY5H2HN/A": {
+          "MGHK4HN/A": {
             "capacity": "",
             "colorDisplay": "White",
             "colorKey": "white",
             "dimensionScreensize": "",
             "family": "homepodmini",
-            "familyName": "HomePod mini",
+            "familyName": "HomePod mini 2",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "homepod"
             },
-            "name": "HomePod mini White",
-            "partNumber": "MY5H2HN/A"
+            "name": "HomePod mini 2 White",
+            "partNumber": "MGHK4HN/A"
+          },
+          "MGHL4HN/A": {
+            "capacity": "",
+            "colorDisplay": "Green",
+            "colorKey": "green",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Green",
+            "partNumber": "MGHL4HN/A"
+          },
+          "MGHM4HN/A": {
+            "capacity": "",
+            "colorDisplay": "Blue",
+            "colorKey": "blue",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Blue",
+            "partNumber": "MGHM4HN/A"
+          },
+          "MGKR4HN/A": {
+            "capacity": "",
+            "colorDisplay": "Pink",
+            "colorKey": "pink",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Pink",
+            "partNumber": "MGKR4HN/A"
           }
         },
         "url": "https://www.apple.com/in/shop/buy-homepod/homepod-mini"
@@ -1499,75 +1499,75 @@
     "it": {
       "homepod-mini": {
         "skus": {
-          "MJ2C3SM/A": {
-            "capacity": "",
-            "colorDisplay": "Blu",
-            "colorKey": "blue",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Blu",
-            "partNumber": "MJ2C3SM/A"
-          },
-          "MJ2D3SM/A": {
-            "capacity": "",
-            "colorDisplay": "Arancione",
-            "colorKey": "orange",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Arancione",
-            "partNumber": "MJ2D3SM/A"
-          },
-          "MJ2E3SM/A": {
-            "capacity": "",
-            "colorDisplay": "Giallo",
-            "colorKey": "yellow",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Giallo",
-            "partNumber": "MJ2E3SM/A"
-          },
-          "MTJT3SM/A": {
+          "MGHJ4QL/A": {
             "capacity": "",
             "colorDisplay": "Mezzanotte",
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "homepodmini",
-            "familyName": "HomePod mini",
+            "familyName": "HomePod mini 2",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "homepod"
             },
-            "name": "HomePod mini Mezzanotte",
-            "partNumber": "MTJT3SM/A"
+            "name": "HomePod mini 2 Mezzanotte",
+            "partNumber": "MGHJ4QL/A"
           },
-          "MY5H2SM/A": {
+          "MGHK4QL/A": {
             "capacity": "",
             "colorDisplay": "Bianco",
             "colorKey": "white",
             "dimensionScreensize": "",
             "family": "homepodmini",
-            "familyName": "HomePod mini",
+            "familyName": "HomePod mini 2",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "homepod"
             },
-            "name": "HomePod mini Bianco",
-            "partNumber": "MY5H2SM/A"
+            "name": "HomePod mini 2 Bianco",
+            "partNumber": "MGHK4QL/A"
+          },
+          "MGHL4QL/A": {
+            "capacity": "",
+            "colorDisplay": "Verde",
+            "colorKey": "green",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Verde",
+            "partNumber": "MGHL4QL/A"
+          },
+          "MGHM4QL/A": {
+            "capacity": "",
+            "colorDisplay": "Blu",
+            "colorKey": "blue",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Blu",
+            "partNumber": "MGHM4QL/A"
+          },
+          "MGKR4QL/A": {
+            "capacity": "",
+            "colorDisplay": "Rosa",
+            "colorKey": "pink",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Rosa",
+            "partNumber": "MGKR4QL/A"
           }
         },
         "url": "https://www.apple.com/it/shop/buy-homepod/homepod-mini"
@@ -1576,75 +1576,75 @@
     "jp": {
       "homepod-mini": {
         "skus": {
-          "MJ2C3J/A": {
-            "capacity": "",
-            "colorDisplay": "ブルー",
-            "colorKey": "blue",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini ブルー",
-            "partNumber": "MJ2C3J/A"
-          },
-          "MJ2D3J/A": {
-            "capacity": "",
-            "colorDisplay": "オレンジ",
-            "colorKey": "orange",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini オレンジ",
-            "partNumber": "MJ2D3J/A"
-          },
-          "MJ2E3J/A": {
-            "capacity": "",
-            "colorDisplay": "イエロー",
-            "colorKey": "yellow",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini イエロー",
-            "partNumber": "MJ2E3J/A"
-          },
-          "MTJT3J/A": {
+          "MGHJ4J/A": {
             "capacity": "",
             "colorDisplay": "ミッドナイト",
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "homepodmini",
-            "familyName": "HomePod mini",
+            "familyName": "HomePod mini 2",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "homepod"
             },
-            "name": "HomePod mini ミッドナイト",
-            "partNumber": "MTJT3J/A"
+            "name": "HomePod mini 2 ミッドナイト",
+            "partNumber": "MGHJ4J/A"
           },
-          "MY5H2J/A": {
+          "MGHK4J/A": {
             "capacity": "",
             "colorDisplay": "ホワイト",
             "colorKey": "white",
             "dimensionScreensize": "",
             "family": "homepodmini",
-            "familyName": "HomePod mini",
+            "familyName": "HomePod mini 2",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "homepod"
             },
-            "name": "HomePod mini ホワイト",
-            "partNumber": "MY5H2J/A"
+            "name": "HomePod mini 2 ホワイト",
+            "partNumber": "MGHK4J/A"
+          },
+          "MGHL4J/A": {
+            "capacity": "",
+            "colorDisplay": "グリーン",
+            "colorKey": "green",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 グリーン",
+            "partNumber": "MGHL4J/A"
+          },
+          "MGHM4J/A": {
+            "capacity": "",
+            "colorDisplay": "ブルー",
+            "colorKey": "blue",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 ブルー",
+            "partNumber": "MGHM4J/A"
+          },
+          "MGKR4J/A": {
+            "capacity": "",
+            "colorDisplay": "ピンク",
+            "colorKey": "pink",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 ピンク",
+            "partNumber": "MGKR4J/A"
           }
         },
         "url": "https://www.apple.com/jp/shop/buy-homepod/homepod-mini"
@@ -1659,75 +1659,75 @@
     "mx": {
       "homepod-mini": {
         "skus": {
-          "MJ2C3CL/A": {
-            "capacity": "",
-            "colorDisplay": "Azul",
-            "colorKey": "blue",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Azul",
-            "partNumber": "MJ2C3CL/A"
-          },
-          "MJ2D3CL/A": {
-            "capacity": "",
-            "colorDisplay": "Naranja",
-            "colorKey": "orange",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Naranja",
-            "partNumber": "MJ2D3CL/A"
-          },
-          "MJ2E3CL/A": {
-            "capacity": "",
-            "colorDisplay": "Amarillo",
-            "colorKey": "yellow",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Amarillo",
-            "partNumber": "MJ2E3CL/A"
-          },
-          "MTJT3CL/A": {
+          "MGHJ4LZ/A": {
             "capacity": "",
             "colorDisplay": "Color medianoche",
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "homepodmini",
-            "familyName": "HomePod mini",
+            "familyName": "HomePod mini 2",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "homepod"
             },
-            "name": "HomePod mini Color medianoche",
-            "partNumber": "MTJT3CL/A"
+            "name": "HomePod mini 2 Color medianoche",
+            "partNumber": "MGHJ4LZ/A"
           },
-          "MY5H2CL/A": {
+          "MGHK4LZ/A": {
             "capacity": "",
             "colorDisplay": "Blanco",
             "colorKey": "white",
             "dimensionScreensize": "",
             "family": "homepodmini",
-            "familyName": "HomePod mini",
+            "familyName": "HomePod mini 2",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "homepod"
             },
-            "name": "HomePod mini Blanco",
-            "partNumber": "MY5H2CL/A"
+            "name": "HomePod mini 2 Blanco",
+            "partNumber": "MGHK4LZ/A"
+          },
+          "MGHL4LZ/A": {
+            "capacity": "",
+            "colorDisplay": "Verde",
+            "colorKey": "green",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Verde",
+            "partNumber": "MGHL4LZ/A"
+          },
+          "MGHM4LZ/A": {
+            "capacity": "",
+            "colorDisplay": "Azul",
+            "colorKey": "blue",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Azul",
+            "partNumber": "MGHM4LZ/A"
+          },
+          "MGKR4LZ/A": {
+            "capacity": "",
+            "colorDisplay": "Rosa",
+            "colorKey": "pink",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Rosa",
+            "partNumber": "MGKR4LZ/A"
           }
         },
         "url": "https://www.apple.com/mx/shop/buy-homepod/homepod-mini"
@@ -1736,75 +1736,75 @@
     "my": {
       "homepod-mini": {
         "skus": {
-          "MJ2C3ZA/A": {
-            "capacity": "",
-            "colorDisplay": "Blue",
-            "colorKey": "blue",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Blue",
-            "partNumber": "MJ2C3ZA/A"
-          },
-          "MJ2D3ZA/A": {
-            "capacity": "",
-            "colorDisplay": "Orange",
-            "colorKey": "orange",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Orange",
-            "partNumber": "MJ2D3ZA/A"
-          },
-          "MJ2E3ZA/A": {
-            "capacity": "",
-            "colorDisplay": "Yellow",
-            "colorKey": "yellow",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Yellow",
-            "partNumber": "MJ2E3ZA/A"
-          },
-          "MTJT3ZA/A": {
+          "MGHJ4ZP/A": {
             "capacity": "",
             "colorDisplay": "Midnight",
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "homepodmini",
-            "familyName": "HomePod mini",
+            "familyName": "HomePod mini 2",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "homepod"
             },
-            "name": "HomePod mini Midnight",
-            "partNumber": "MTJT3ZA/A"
+            "name": "HomePod mini 2 Midnight",
+            "partNumber": "MGHJ4ZP/A"
           },
-          "MY5H2ZA/A": {
+          "MGHK4ZP/A": {
             "capacity": "",
             "colorDisplay": "White",
             "colorKey": "white",
             "dimensionScreensize": "",
             "family": "homepodmini",
-            "familyName": "HomePod mini",
+            "familyName": "HomePod mini 2",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "homepod"
             },
-            "name": "HomePod mini White",
-            "partNumber": "MY5H2ZA/A"
+            "name": "HomePod mini 2 White",
+            "partNumber": "MGHK4ZP/A"
+          },
+          "MGHL4ZP/A": {
+            "capacity": "",
+            "colorDisplay": "Green",
+            "colorKey": "green",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Green",
+            "partNumber": "MGHL4ZP/A"
+          },
+          "MGHM4ZP/A": {
+            "capacity": "",
+            "colorDisplay": "Blue",
+            "colorKey": "blue",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Blue",
+            "partNumber": "MGHM4ZP/A"
+          },
+          "MGKR4ZP/A": {
+            "capacity": "",
+            "colorDisplay": "Pink",
+            "colorKey": "pink",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Pink",
+            "partNumber": "MGKR4ZP/A"
           }
         },
         "url": "https://www.apple.com/my/shop/buy-homepod/homepod-mini"
@@ -1813,75 +1813,75 @@
     "nl": {
       "homepod-mini": {
         "skus": {
-          "MJ2C3FN/A": {
-            "capacity": "",
-            "colorDisplay": "Blauw",
-            "colorKey": "blue",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Blauw",
-            "partNumber": "MJ2C3FN/A"
-          },
-          "MJ2D3FN/A": {
-            "capacity": "",
-            "colorDisplay": "Oranje",
-            "colorKey": "orange",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Oranje",
-            "partNumber": "MJ2D3FN/A"
-          },
-          "MJ2E3FN/A": {
-            "capacity": "",
-            "colorDisplay": "Geel",
-            "colorKey": "yellow",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Geel",
-            "partNumber": "MJ2E3FN/A"
-          },
-          "MTJT3FN/A": {
+          "MGHJ4ZD/A": {
             "capacity": "",
             "colorDisplay": "Middernacht",
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "homepodmini",
-            "familyName": "HomePod mini",
+            "familyName": "HomePod mini 2",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "homepod"
             },
-            "name": "HomePod mini Middernacht",
-            "partNumber": "MTJT3FN/A"
+            "name": "HomePod mini 2 Middernacht",
+            "partNumber": "MGHJ4ZD/A"
           },
-          "MY5H2FN/A": {
+          "MGHK4ZD/A": {
             "capacity": "",
             "colorDisplay": "Wit",
             "colorKey": "white",
             "dimensionScreensize": "",
             "family": "homepodmini",
-            "familyName": "HomePod mini",
+            "familyName": "HomePod mini 2",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "homepod"
             },
-            "name": "HomePod mini Wit",
-            "partNumber": "MY5H2FN/A"
+            "name": "HomePod mini 2 Wit",
+            "partNumber": "MGHK4ZD/A"
+          },
+          "MGHL4ZD/A": {
+            "capacity": "",
+            "colorDisplay": "Groen",
+            "colorKey": "green",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Groen",
+            "partNumber": "MGHL4ZD/A"
+          },
+          "MGHM4ZD/A": {
+            "capacity": "",
+            "colorDisplay": "Blauw",
+            "colorKey": "blue",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Blauw",
+            "partNumber": "MGHM4ZD/A"
+          },
+          "MGKR4ZD/A": {
+            "capacity": "",
+            "colorDisplay": "Roze",
+            "colorKey": "pink",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Roze",
+            "partNumber": "MGKR4ZD/A"
           }
         },
         "url": "https://www.apple.com/nl/shop/buy-homepod/homepod-mini"
@@ -1890,75 +1890,75 @@
     "no": {
       "homepod-mini": {
         "skus": {
-          "MJ2C3DN/A": {
-            "capacity": "",
-            "colorDisplay": "blå",
-            "colorKey": "blue",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini blå",
-            "partNumber": "MJ2C3DN/A"
-          },
-          "MJ2D3DN/A": {
-            "capacity": "",
-            "colorDisplay": "oransje",
-            "colorKey": "orange",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini oransje",
-            "partNumber": "MJ2D3DN/A"
-          },
-          "MJ2E3DN/A": {
-            "capacity": "",
-            "colorDisplay": "gul",
-            "colorKey": "yellow",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini gul",
-            "partNumber": "MJ2E3DN/A"
-          },
-          "MTJT3DN/A": {
+          "MGHJ4QN/A": {
             "capacity": "",
             "colorDisplay": "midnatt",
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "homepodmini",
-            "familyName": "HomePod mini",
+            "familyName": "HomePod mini 2",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "homepod"
             },
-            "name": "HomePod mini midnatt",
-            "partNumber": "MTJT3DN/A"
+            "name": "HomePod mini 2 midnatt",
+            "partNumber": "MGHJ4QN/A"
           },
-          "MY5H2DN/A": {
+          "MGHK4QN/A": {
             "capacity": "",
             "colorDisplay": "hvit",
             "colorKey": "white",
             "dimensionScreensize": "",
             "family": "homepodmini",
-            "familyName": "HomePod mini",
+            "familyName": "HomePod mini 2",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "homepod"
             },
-            "name": "HomePod mini hvit",
-            "partNumber": "MY5H2DN/A"
+            "name": "HomePod mini 2 hvit",
+            "partNumber": "MGHK4QN/A"
+          },
+          "MGHL4QN/A": {
+            "capacity": "",
+            "colorDisplay": "grønn",
+            "colorKey": "green",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 grønn",
+            "partNumber": "MGHL4QN/A"
+          },
+          "MGHM4QN/A": {
+            "capacity": "",
+            "colorDisplay": "blå",
+            "colorKey": "blue",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 blå",
+            "partNumber": "MGHM4QN/A"
+          },
+          "MGKR4QN/A": {
+            "capacity": "",
+            "colorDisplay": "rosa",
+            "colorKey": "pink",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 rosa",
+            "partNumber": "MGKR4QN/A"
           }
         },
         "url": "https://www.apple.com/no/shop/buy-homepod/homepod-mini"
@@ -1973,75 +1973,75 @@
     "se": {
       "homepod-mini": {
         "skus": {
-          "MJ2C3DN/A": {
-            "capacity": "",
-            "colorDisplay": "blå",
-            "colorKey": "blue",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini blå",
-            "partNumber": "MJ2C3DN/A"
-          },
-          "MJ2D3DN/A": {
-            "capacity": "",
-            "colorDisplay": "orange",
-            "colorKey": "orange",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini orange",
-            "partNumber": "MJ2D3DN/A"
-          },
-          "MJ2E3DN/A": {
-            "capacity": "",
-            "colorDisplay": "gul",
-            "colorKey": "yellow",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini gul",
-            "partNumber": "MJ2E3DN/A"
-          },
-          "MTJT3DN/A": {
+          "MGHJ4QN/A": {
             "capacity": "",
             "colorDisplay": "midnatt",
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "homepodmini",
-            "familyName": "HomePod mini",
+            "familyName": "HomePod mini 2",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "homepod"
             },
-            "name": "HomePod mini midnatt",
-            "partNumber": "MTJT3DN/A"
+            "name": "HomePod mini 2 midnatt",
+            "partNumber": "MGHJ4QN/A"
           },
-          "MY5H2DN/A": {
+          "MGHK4QN/A": {
             "capacity": "",
             "colorDisplay": "vit",
             "colorKey": "white",
             "dimensionScreensize": "",
             "family": "homepodmini",
-            "familyName": "HomePod mini",
+            "familyName": "HomePod mini 2",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "homepod"
             },
-            "name": "HomePod mini vit",
-            "partNumber": "MY5H2DN/A"
+            "name": "HomePod mini 2 vit",
+            "partNumber": "MGHK4QN/A"
+          },
+          "MGHL4QN/A": {
+            "capacity": "",
+            "colorDisplay": "grön",
+            "colorKey": "green",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 grön",
+            "partNumber": "MGHL4QN/A"
+          },
+          "MGHM4QN/A": {
+            "capacity": "",
+            "colorDisplay": "blå",
+            "colorKey": "blue",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 blå",
+            "partNumber": "MGHM4QN/A"
+          },
+          "MGKR4QN/A": {
+            "capacity": "",
+            "colorDisplay": "rosa",
+            "colorKey": "pink",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 rosa",
+            "partNumber": "MGKR4QN/A"
           }
         },
         "url": "https://www.apple.com/se/shop/buy-homepod/homepod-mini"
@@ -2050,75 +2050,75 @@
     "sg": {
       "homepod-mini": {
         "skus": {
-          "MJ2C3ZA/A": {
-            "capacity": "",
-            "colorDisplay": "Blue",
-            "colorKey": "blue",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Blue",
-            "partNumber": "MJ2C3ZA/A"
-          },
-          "MJ2D3ZA/A": {
-            "capacity": "",
-            "colorDisplay": "Orange",
-            "colorKey": "orange",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Orange",
-            "partNumber": "MJ2D3ZA/A"
-          },
-          "MJ2E3ZA/A": {
-            "capacity": "",
-            "colorDisplay": "Yellow",
-            "colorKey": "yellow",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Yellow",
-            "partNumber": "MJ2E3ZA/A"
-          },
-          "MTJT3ZA/A": {
+          "MGHJ4ZP/A": {
             "capacity": "",
             "colorDisplay": "Midnight",
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "homepodmini",
-            "familyName": "HomePod mini",
+            "familyName": "HomePod mini 2",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "homepod"
             },
-            "name": "HomePod mini Midnight",
-            "partNumber": "MTJT3ZA/A"
+            "name": "HomePod mini 2 Midnight",
+            "partNumber": "MGHJ4ZP/A"
           },
-          "MY5H2ZA/A": {
+          "MGHK4ZP/A": {
             "capacity": "",
             "colorDisplay": "White",
             "colorKey": "white",
             "dimensionScreensize": "",
             "family": "homepodmini",
-            "familyName": "HomePod mini",
+            "familyName": "HomePod mini 2",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "homepod"
             },
-            "name": "HomePod mini White",
-            "partNumber": "MY5H2ZA/A"
+            "name": "HomePod mini 2 White",
+            "partNumber": "MGHK4ZP/A"
+          },
+          "MGHL4ZP/A": {
+            "capacity": "",
+            "colorDisplay": "Green",
+            "colorKey": "green",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Green",
+            "partNumber": "MGHL4ZP/A"
+          },
+          "MGHM4ZP/A": {
+            "capacity": "",
+            "colorDisplay": "Blue",
+            "colorKey": "blue",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Blue",
+            "partNumber": "MGHM4ZP/A"
+          },
+          "MGKR4ZP/A": {
+            "capacity": "",
+            "colorDisplay": "Pink",
+            "colorKey": "pink",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Pink",
+            "partNumber": "MGKR4ZP/A"
           }
         },
         "url": "https://www.apple.com/sg/shop/buy-homepod/homepod-mini"
@@ -2127,75 +2127,75 @@
     "th": {
       "homepod-mini": {
         "skus": {
-          "MJ2C3TH/A": {
-            "capacity": "",
-            "colorDisplay": "ฟ้า",
-            "colorKey": "blue",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini ฟ้า",
-            "partNumber": "MJ2C3TH/A"
-          },
-          "MJ2D3TH/A": {
-            "capacity": "",
-            "colorDisplay": "ส้ม",
-            "colorKey": "orange",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini ส้ม",
-            "partNumber": "MJ2D3TH/A"
-          },
-          "MJ2E3TH/A": {
-            "capacity": "",
-            "colorDisplay": "เหลือง",
-            "colorKey": "yellow",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini เหลือง",
-            "partNumber": "MJ2E3TH/A"
-          },
-          "MTJT3TH/A": {
+          "MGHJ4TH/A": {
             "capacity": "",
             "colorDisplay": "มิดไนท์",
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "homepodmini",
-            "familyName": "HomePod mini",
+            "familyName": "HomePod mini 2",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "homepod"
             },
-            "name": "HomePod mini มิดไนท์",
-            "partNumber": "MTJT3TH/A"
+            "name": "HomePod mini 2 มิดไนท์",
+            "partNumber": "MGHJ4TH/A"
           },
-          "MY5H2TH/A": {
+          "MGHK4TH/A": {
             "capacity": "",
             "colorDisplay": "ขาว",
             "colorKey": "white",
             "dimensionScreensize": "",
             "family": "homepodmini",
-            "familyName": "HomePod mini",
+            "familyName": "HomePod mini 2",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "homepod"
             },
-            "name": "HomePod mini ขาว",
-            "partNumber": "MY5H2TH/A"
+            "name": "HomePod mini 2 ขาว",
+            "partNumber": "MGHK4TH/A"
+          },
+          "MGHL4TH/A": {
+            "capacity": "",
+            "colorDisplay": "เขียว",
+            "colorKey": "green",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 เขียว",
+            "partNumber": "MGHL4TH/A"
+          },
+          "MGHM4TH/A": {
+            "capacity": "",
+            "colorDisplay": "ฟ้า",
+            "colorKey": "blue",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 ฟ้า",
+            "partNumber": "MGHM4TH/A"
+          },
+          "MGKR4TH/A": {
+            "capacity": "",
+            "colorDisplay": "ชมพู",
+            "colorKey": "pink",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 ชมพู",
+            "partNumber": "MGKR4TH/A"
           }
         },
         "url": "https://www.apple.com/th/shop/buy-homepod/homepod-mini"
@@ -2204,75 +2204,75 @@
     "tr": {
       "homepod-mini": {
         "skus": {
-          "MJ2C3TU/A": {
-            "capacity": "",
-            "colorDisplay": "Mavi",
-            "colorKey": "blue",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Mavi",
-            "partNumber": "MJ2C3TU/A"
-          },
-          "MJ2D3TU/A": {
-            "capacity": "",
-            "colorDisplay": "Turuncu",
-            "colorKey": "orange",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Turuncu",
-            "partNumber": "MJ2D3TU/A"
-          },
-          "MJ2E3TU/A": {
-            "capacity": "",
-            "colorDisplay": "Sarı",
-            "colorKey": "yellow",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Sarı",
-            "partNumber": "MJ2E3TU/A"
-          },
-          "MTJT3TU/A": {
+          "MGHJ4TU/A": {
             "capacity": "",
             "colorDisplay": "Gece Yarısı",
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "homepodmini",
-            "familyName": "HomePod mini",
+            "familyName": "HomePod mini 2",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "homepod"
             },
-            "name": "HomePod mini Gece Yarısı",
-            "partNumber": "MTJT3TU/A"
+            "name": "HomePod mini 2 Gece Yarısı",
+            "partNumber": "MGHJ4TU/A"
           },
-          "MY5H2TU/A": {
+          "MGHK4TU/A": {
             "capacity": "",
             "colorDisplay": "Beyaz",
             "colorKey": "white",
             "dimensionScreensize": "",
             "family": "homepodmini",
-            "familyName": "HomePod mini",
+            "familyName": "HomePod mini 2",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "homepod"
             },
-            "name": "HomePod mini Beyaz",
-            "partNumber": "MY5H2TU/A"
+            "name": "HomePod mini 2 Beyaz",
+            "partNumber": "MGHK4TU/A"
+          },
+          "MGHL4TU/A": {
+            "capacity": "",
+            "colorDisplay": "Yeşil",
+            "colorKey": "green",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Yeşil",
+            "partNumber": "MGHL4TU/A"
+          },
+          "MGHM4TU/A": {
+            "capacity": "",
+            "colorDisplay": "Mavi",
+            "colorKey": "blue",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Mavi",
+            "partNumber": "MGHM4TU/A"
+          },
+          "MGKR4TU/A": {
+            "capacity": "",
+            "colorDisplay": "Pembe",
+            "colorKey": "pink",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Pembe",
+            "partNumber": "MGKR4TU/A"
           }
         },
         "url": "https://www.apple.com/tr/shop/buy-homepod/homepod-mini"
@@ -2281,75 +2281,75 @@
     "tw": {
       "homepod-mini": {
         "skus": {
-          "MJ2C3TA/A": {
-            "capacity": "",
-            "colorDisplay": "藍色",
-            "colorKey": "blue",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini 藍色",
-            "partNumber": "MJ2C3TA/A"
-          },
-          "MJ2D3TA/A": {
-            "capacity": "",
-            "colorDisplay": "橙色",
-            "colorKey": "orange",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini 橙色",
-            "partNumber": "MJ2D3TA/A"
-          },
-          "MJ2E3TA/A": {
-            "capacity": "",
-            "colorDisplay": "黃色",
-            "colorKey": "yellow",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini 黃色",
-            "partNumber": "MJ2E3TA/A"
-          },
-          "MTJT3TA/A": {
+          "MGHJ4TA/A": {
             "capacity": "",
             "colorDisplay": "午夜色",
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "homepodmini",
-            "familyName": "HomePod mini",
+            "familyName": "HomePod mini 2",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "homepod"
             },
-            "name": "HomePod mini 午夜色",
-            "partNumber": "MTJT3TA/A"
+            "name": "HomePod mini 2 午夜色",
+            "partNumber": "MGHJ4TA/A"
           },
-          "MY5H2TA/A": {
+          "MGHK4TA/A": {
             "capacity": "",
             "colorDisplay": "白色",
             "colorKey": "white",
             "dimensionScreensize": "",
             "family": "homepodmini",
-            "familyName": "HomePod mini",
+            "familyName": "HomePod mini 2",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "homepod"
             },
-            "name": "HomePod mini 白色",
-            "partNumber": "MY5H2TA/A"
+            "name": "HomePod mini 2 白色",
+            "partNumber": "MGHK4TA/A"
+          },
+          "MGHL4TA/A": {
+            "capacity": "",
+            "colorDisplay": "綠色",
+            "colorKey": "green",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 綠色",
+            "partNumber": "MGHL4TA/A"
+          },
+          "MGHM4TA/A": {
+            "capacity": "",
+            "colorDisplay": "藍色",
+            "colorKey": "blue",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 藍色",
+            "partNumber": "MGHM4TA/A"
+          },
+          "MGKR4TA/A": {
+            "capacity": "",
+            "colorDisplay": "粉紅色",
+            "colorKey": "pink",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 粉紅色",
+            "partNumber": "MGKR4TA/A"
           }
         },
         "url": "https://www.apple.com/tw/shop/buy-homepod/homepod-mini"
@@ -2358,75 +2358,75 @@
     "uk": {
       "homepod-mini": {
         "skus": {
-          "MJ2C3B/A": {
-            "capacity": "",
-            "colorDisplay": "Blue",
-            "colorKey": "blue",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Blue",
-            "partNumber": "MJ2C3B/A"
-          },
-          "MJ2D3B/A": {
-            "capacity": "",
-            "colorDisplay": "Orange",
-            "colorKey": "orange",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Orange",
-            "partNumber": "MJ2D3B/A"
-          },
-          "MJ2E3B/A": {
-            "capacity": "",
-            "colorDisplay": "Yellow",
-            "colorKey": "yellow",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Yellow",
-            "partNumber": "MJ2E3B/A"
-          },
-          "MTJT3B/A": {
+          "MGHJ4B/A": {
             "capacity": "",
             "colorDisplay": "Midnight",
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "homepodmini",
-            "familyName": "HomePod mini",
+            "familyName": "HomePod mini 2",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "homepod"
             },
-            "name": "HomePod mini Midnight",
-            "partNumber": "MTJT3B/A"
+            "name": "HomePod mini 2 Midnight",
+            "partNumber": "MGHJ4B/A"
           },
-          "MY5H2B/A": {
+          "MGHK4B/A": {
             "capacity": "",
             "colorDisplay": "White",
             "colorKey": "white",
             "dimensionScreensize": "",
             "family": "homepodmini",
-            "familyName": "HomePod mini",
+            "familyName": "HomePod mini 2",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "homepod"
             },
-            "name": "HomePod mini White",
-            "partNumber": "MY5H2B/A"
+            "name": "HomePod mini 2 White",
+            "partNumber": "MGHK4B/A"
+          },
+          "MGHL4B/A": {
+            "capacity": "",
+            "colorDisplay": "Green",
+            "colorKey": "green",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Green",
+            "partNumber": "MGHL4B/A"
+          },
+          "MGHM4B/A": {
+            "capacity": "",
+            "colorDisplay": "Blue",
+            "colorKey": "blue",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Blue",
+            "partNumber": "MGHM4B/A"
+          },
+          "MGKR4B/A": {
+            "capacity": "",
+            "colorDisplay": "Pink",
+            "colorKey": "pink",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Pink",
+            "partNumber": "MGKR4B/A"
           }
         },
         "url": "https://www.apple.com/uk/shop/buy-homepod/homepod-mini"
@@ -2435,75 +2435,75 @@
     "us": {
       "homepod-mini": {
         "skus": {
-          "MJ2C3LL/A": {
-            "capacity": "",
-            "colorDisplay": "Blue",
-            "colorKey": "blue",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Blue",
-            "partNumber": "MJ2C3LL/A"
-          },
-          "MJ2D3LL/A": {
-            "capacity": "",
-            "colorDisplay": "Orange",
-            "colorKey": "orange",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Orange",
-            "partNumber": "MJ2D3LL/A"
-          },
-          "MJ2E3LL/A": {
-            "capacity": "",
-            "colorDisplay": "Yellow",
-            "colorKey": "yellow",
-            "dimensionScreensize": "",
-            "family": "homepodmini",
-            "familyName": "HomePod mini",
-            "metadata": {
-              "isRealPartNumber": true,
-              "sourcePage": "homepod"
-            },
-            "name": "HomePod mini Yellow",
-            "partNumber": "MJ2E3LL/A"
-          },
-          "MTJT3LL/A": {
+          "MGHJ4AM/A": {
             "capacity": "",
             "colorDisplay": "Midnight",
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "homepodmini",
-            "familyName": "HomePod mini",
+            "familyName": "HomePod mini 2",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "homepod"
             },
-            "name": "HomePod mini Midnight",
-            "partNumber": "MTJT3LL/A"
+            "name": "HomePod mini 2 Midnight",
+            "partNumber": "MGHJ4AM/A"
           },
-          "MY5H2LL/A": {
+          "MGHK4AM/A": {
             "capacity": "",
             "colorDisplay": "White",
             "colorKey": "white",
             "dimensionScreensize": "",
             "family": "homepodmini",
-            "familyName": "HomePod mini",
+            "familyName": "HomePod mini 2",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "homepod"
             },
-            "name": "HomePod mini White",
-            "partNumber": "MY5H2LL/A"
+            "name": "HomePod mini 2 White",
+            "partNumber": "MGHK4AM/A"
+          },
+          "MGHL4AM/A": {
+            "capacity": "",
+            "colorDisplay": "Green",
+            "colorKey": "green",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Green",
+            "partNumber": "MGHL4AM/A"
+          },
+          "MGHM4AM/A": {
+            "capacity": "",
+            "colorDisplay": "Blue",
+            "colorKey": "blue",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Blue",
+            "partNumber": "MGHM4AM/A"
+          },
+          "MGKR4AM/A": {
+            "capacity": "",
+            "colorDisplay": "Pink",
+            "colorKey": "pink",
+            "dimensionScreensize": "",
+            "family": "homepodmini",
+            "familyName": "HomePod mini 2",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "homepod"
+            },
+            "name": "HomePod mini 2 Pink",
+            "partNumber": "MGKR4AM/A"
           }
         },
         "url": "https://www.apple.com/us/shop/buy-homepod/homepod-mini"

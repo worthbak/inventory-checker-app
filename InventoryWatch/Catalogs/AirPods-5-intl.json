@@ -1,7 +1,7 @@
 {
   "_meta": {
     "family": "airpods",
-    "generated_at": "2026-09-09T21:13:21.200466+00:00",
+    "generated_at": "2026-10-16T14:00:04.286323+00:00",
     "regions_scraped": 33,
     "scraper_version": "1.0",
     "token": "airpods-5"
@@ -932,10 +932,11 @@
             "family": "airpods",
             "familyName": "AirPods 5",
             "metadata": {
+              "dimensionCharging": "AirPods 5 with Wireless Charging Case\nIncludes force sensor with volume swipe and longer battery life",
               "isRealPartNumber": true,
               "sourcePage": "airpods"
             },
-            "name": "AirPods 5",
+            "name": "AirPods 5 with Wireless Charging Case\nIncludes force sensor with volume swipe and longer battery life",
             "partNumber": "MKFT4HN/A"
           },
           "MKFW4HN/A": {
@@ -946,6 +947,7 @@
             "family": "airpods",
             "familyName": "AirPods 5",
             "metadata": {
+              "dimensionCharging": "AirPods 5",
               "isRealPartNumber": true,
               "sourcePage": "airpods"
             },
