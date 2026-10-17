@@ -17,8 +17,14 @@ actor GithubModel {
             throw AppError.couldNotGenerateURL
         }
         
-        let (data, _) = try await URLSession.shared.data(from: url)
-        let parsed = try JSONDecoder().decode([GithubTag].self, from: data)
+        let (data, response) = try await URLSession.shared.data(from: url)
+        let statusCode = (response as? HTTPURLResponse)?.statusCode ?? 0
+        guard statusCode == 200 else {
+            throw AppError.failedToParseGithubVersion
+        }
+        guard let parsed = try? JSONDecoder().decode([GithubTag].self, from: data) else {
+            throw AppError.failedToParseGithubVersion
+        }
         
         let processedData = parsed
             .filter { !$0.name.hasPrefix("v") }

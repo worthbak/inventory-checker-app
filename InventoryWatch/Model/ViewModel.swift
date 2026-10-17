@@ -79,7 +79,7 @@ final class ViewModel: ObservableObject {
         latestTask = Task {
             
             do {
-                hasLatestVersion = try await githubModel.hasLatestGithubRelease()
+                hasLatestVersion = (try? await githubModel.hasLatestGithubRelease()) ?? true
                 updateErrorState(to: .none, deactivateLoadingState: false)
                 
                 availableParts = try await fulfillmentModel.fetchInventory()
