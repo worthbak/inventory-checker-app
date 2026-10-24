@@ -56,6 +56,68 @@ open InventoryWatch.xcodeproj
 
 Requires Xcode 15+ and macOS 14+.
 
+### Sign and notarize a release
+
+For direct distribution outside the Mac App Store, use
+[`scripts/release.sh`](scripts/release.sh). This requires full Xcode, an active
+Apple Developer Program membership, and a **Developer ID Application**
+certificate with its private key installed in your login Keychain. An Apple
+Development certificate is not sufficient.
+
+1. Check that your distribution identity is available:
+
+   ```bash
+   security find-identity -v -p codesigning
+   ```
+
+2. Create an app-specific password at <https://account.apple.com/>. Store
+   notarization credentials in Keychain using your developer Apple ID and team
+   ID (from your Apple Developer membership):
+
+   ```bash
+   xcrun notarytool store-credentials inventorywatch-notary \
+     --apple-id 'you@example.com' \
+     --team-id 'YOUR_TEAM_ID'
+   ```
+
+   Enter the app-specific password at the secure terminal prompt. Do not put
+   passwords, private keys, or certificate exports in the repository or chat.
+   `notarytool` validates the credentials before saving them. App Store Connect
+   API credentials can also be stored with `notarytool store-credentials`;
+   consult `xcrun notarytool store-credentials --help` for the key options.
+
+3. Run the unit tests, review the Release version/build number in Xcode, then
+   build and notarize:
+
+   ```bash
+   TEAM_ID=YOUR_TEAM_ID bash scripts/release.sh
+   ```
+
+   The script overrides development signing for this archive only; normal Xcode
+   development builds are unchanged. It builds a universal Apple Silicon/Intel
+   archive with Hardened Runtime and a secure timestamp, verifies the signature,
+   waits for Apple's **Accepted** result, staples and validates the ticket, and
+   checks Gatekeeper before producing `InventoryWatch.zip` and its SHA-256
+   checksum. Output and diagnostic logs are retained in a unique directory
+   under the ignored `build/release/` directory. A rejected submission stops the
+   release and downloads Apple's diagnostic log when a submission ID is available.
+
+   Upload only the final `InventoryWatch.zip` to the GitHub release, not
+   `notarization-upload.zip` (which does not include the stapled ticket).
+   Notarization submits the signed app to Apple; this script does not publish a
+   GitHub release or change the app version.
+
+To verify local signing without submitting to Apple:
+
+```bash
+TEAM_ID=YOUR_TEAM_ID bash scripts/release.sh --build-only
+```
+
+This produces a signed archive, **not** a notarized release ZIP. Use
+`SIGNING_IDENTITY` to select a specific Developer ID Application identity
+(name or SHA-1 fingerprint), or `NOTARY_PROFILE` to select another saved
+Keychain profile.
+
 ### Scrape product data
 
 ```bash
