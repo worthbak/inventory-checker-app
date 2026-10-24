@@ -39,6 +39,39 @@ enum ProductFamily: String, Codable, CaseIterable, Identifiable {
     }
 }
 
+struct SearchConfiguration: Codable, Hashable, Identifiable {
+    var id: UUID
+    var family: ProductFamily
+    var token: String
+    var countryCode: String
+    var storeNumber: String
+
+    init(
+        id: UUID = UUID(),
+        family: ProductFamily,
+        token: String,
+        countryCode: String = "US",
+        storeNumber: String = ""
+    ) {
+        self.id = id
+        self.family = family
+        self.token = token
+        self.countryCode = countryCode
+        self.storeNumber = storeNumber
+    }
+
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        id = try container.decodeIfPresent(UUID.self, forKey: .id) ?? UUID()
+        family = try container.decode(ProductFamily.self, forKey: .family)
+        token = try container.decode(String.self, forKey: .token)
+        countryCode = try container.decodeIfPresent(String.self, forKey: .countryCode)
+            ?? (UserDefaults.standard.string(forKey: "preferredCountry") ?? "US")
+        storeNumber = try container.decodeIfPresent(String.self, forKey: .storeNumber)
+            ?? UserDefaults.standard.preferredStoreNumber
+    }
+}
+
 extension UserDefaults {
     
     @objc dynamic var preferredStoreNumber: String {

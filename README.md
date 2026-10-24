@@ -5,6 +5,7 @@ macOS app to monitor Apple Store pickup availability for iPhone, Apple Watch, Ma
 ## Features
 
 - Real-time inventory checking across Apple Store locations
+- Multiple saved searches, each with its own country and store
 - Per-country store selection (35+ countries, including multi-language stores in Belgium and Switzerland)
 - Per-model token selection for all Apple product families (iPhone, iPad, Mac, Apple Watch, AirPods, HomePod, Apple Vision Pro)
 - Configurable update intervals with notifications

@@ -7,6 +7,13 @@
 
 import Foundation
 
+struct SearchInventoryResult: Identifiable {
+    let search: SearchConfiguration
+    let availableParts: [(FulfillmentStore, [PartAvailability])]
+
+    var id: UUID { search.id }
+}
+
 @MainActor
 final class ViewModel: ObservableObject {
     
@@ -17,12 +24,13 @@ final class ViewModel: ObservableObject {
     
     private var updateTimer: Timer?
     
-    @Published var availableParts: [(FulfillmentStore, [PartAvailability])] = []
+    @Published var searchResults: [SearchInventoryResult] = []
     @Published var isLoading = false
     @Published var hasLatestVersion = true
     @Published var errorState: AppError?
-    @Published var preferredStoreName: String? = nil
     @Published var pickupErrorKeys: [String] = []
+    @Published private(set) var searchConfigurations: [SearchConfiguration] = []
+    private var searchConfigurationLoadError: Error?
     
     var skuDataForPreferredProduct: SKUData {
         get async throws {
@@ -30,51 +38,104 @@ final class ViewModel: ObservableObject {
         }
     }
     
-    var storesForCurrentCountry: [RetailStore] {
-        get async {
-            do {
-                let storesByCountry = try await fulfillmentModel.loadStoresByCountry()
-                guard let stores = storesByCountry[defaultsVendor.preferredCountry.locale]?.stores else {
-                    throw AppError.invalidProjectState
-                }
-                
-                return stores .sorted(by: { first, second in
-                    if let firstState = first.address.stateName, let secondState = second.address.stateName {
-                        return firstState < secondState
-                    } else {
-                        return first.name < second.name
-                    }
-                })
-            } catch {
-                updateErrorState(to: error)
-                return []
-            }
-        }
-    }
-    
-    private var selectedStore: RetailStore? {
-        get async {
-            let allStores = await storesForCurrentCountry
-            let preferredStoreNumber = defaultsVendor.preferredStoreNumber
-            
-            return allStores.first(where: { $0.storeNumber == preferredStoreNumber })
-        }
-    }
-    
     init() {
-        Task { await updateStoreName() }
+        if let savedConfigurations = UserDefaults.standard.data(forKey: "searchConfigurations") {
+            do {
+                let decoded = try JSONDecoder().decode([SearchConfiguration].self, from: savedConfigurations)
+                var seen = Set<UUID>()
+                searchConfigurations = decoded.filter { seen.insert($0.id).inserted }
+                persistSearchConfigurations()
+            } catch {
+                searchConfigurationLoadError = error
+                errorState = .generic(error)
+            }
+        } else if let legacyConfiguration = Self.legacySearchConfiguration {
+            searchConfigurations = [legacyConfiguration]
+            persistSearchConfigurations()
+        }
+
     }
-    
+
+    private static var legacySearchConfiguration: SearchConfiguration? {
+        let defaults = DefaultsVendor()
+        let family = defaults.preferredProductFamily
+        let token: String
+        switch family {
+        case .watch: token = defaults.preferredWatchToken
+        case .iphone: token = defaults.preferredPhoneToken
+        case .mac: token = defaults.preferredMacToken
+        case .ipad: token = defaults.preferrediPadToken
+        case .airpods: token = defaults.preferredAirPodsToken
+        case .homepod: token = defaults.preferredHomePodToken
+        case .avp: token = defaults.preferredAVPToken
+        }
+        guard token.isEmpty == false else { return nil }
+        return SearchConfiguration(
+            family: family,
+            token: token,
+            countryCode: defaults.preferredCountry.shortcode,
+            storeNumber: defaults.preferredStoreNumber
+        )
+    }
+
+    func addSearchConfiguration(_ configuration: SearchConfiguration) {
+        guard searchConfigurations.contains(where: { $0.id == configuration.id }) == false else { return }
+        searchConfigurations.append(configuration)
+        persistSearchConfigurations()
+        clearSearchResults()
+        Task { await fetchLatestInventory() }
+    }
+
+    func updateSearchConfiguration(_ configuration: SearchConfiguration) {
+        guard let index = searchConfigurations.firstIndex(where: { $0.id == configuration.id }),
+              searchConfigurations[index] != configuration else { return }
+        searchConfigurations[index] = configuration
+        persistSearchConfigurations()
+        clearSearchResults()
+        Task { await fetchLatestInventory() }
+    }
+
+    func removeSearchConfiguration(_ configuration: SearchConfiguration) {
+        searchConfigurations.removeAll { $0.id == configuration.id }
+        persistSearchConfigurations()
+        clearSearchResults()
+        Task { await fetchLatestInventory() }
+    }
+
+    private func persistSearchConfigurations() {
+        do {
+            let data = try JSONEncoder().encode(searchConfigurations)
+            UserDefaults.standard.set(data, forKey: "searchConfigurations")
+            searchConfigurationLoadError = nil
+        } catch {
+            updateErrorState(to: error)
+        }
+    }
+
     private var latestTask: Task<(), Never>? = nil
     
     func fetchLatestInventory() async {
+        if let task = latestTask {
+            task.cancel()
+            latestTask = nil
+        }
+
+        if let searchConfigurationLoadError {
+            isLoading = false
+            updateErrorState(to: searchConfigurationLoadError)
+            return
+        }
+
+        guard searchConfigurations.isEmpty == false else {
+            searchResults = []
+            isLoading = false
+            updateErrorState(to: nil)
+            return
+        }
+
         isLoading = true
         AnalyticsData.updateAnalyticsData()
-        
-        if let task = latestTask {
-            print("cancelling prior task: \(task)")
-            task.cancel()
-        }
+        let searches = searchConfigurations
         
         latestTask = Task {
             
@@ -82,17 +143,21 @@ final class ViewModel: ObservableObject {
                 hasLatestVersion = (try? await githubModel.hasLatestGithubRelease()) ?? true
                 updateErrorState(to: .none, deactivateLoadingState: false)
                 
-                availableParts = try await fulfillmentModel.fetchInventory()
-                // Surface any Apple pickup API error keys (e.g., invalidLocalModelStore)
-                pickupErrorKeys = await fulfillmentModel.lastPickupErrorKeys
+                let result = try await fulfillmentModel.fetchInventory(searches: searches)
+                let pickupErrors = await fulfillmentModel.lastPickupErrorKeys
                 try Task.checkCancellation()
+                searchResults = result.searchResults
+                // Surface any Apple pickup API error keys (e.g., invalidLocalModelStore)
+                pickupErrorKeys = pickupErrors
                 updateErrorState(to: .none)
                 
                 refreshLastUpdateTime()
                 
-                if let skuData = try? await skuDataForPreferredProduct {
-                    await notificationSender.sendNotificationIfNeeded(availableParts: availableParts, skuData: skuData)
-                }
+                await notificationSender.sendNotificationIfNeeded(
+                    availableParts: result.searchResults.flatMap(\.availableParts),
+                    skuData: result.skuData,
+                    searches: searches
+                )
                 
                 print("successful update at \(defaultsVendor.lastUpdateDate ?? "unknown time")")
             } catch {
@@ -110,8 +175,8 @@ final class ViewModel: ObservableObject {
         }
     }
     
-    func clearCurrentAvailableParts() {
-        availableParts = []
+    func clearSearchResults() {
+        searchResults = []
     }
     
     func fetchLatestGithubRelease() async {
@@ -138,28 +203,23 @@ final class ViewModel: ObservableObject {
         }
     }
     
-    func getDefaultStoreForCurrentCountry() async -> RetailStore? {
+    func stores(for countryCode: String) async -> [RetailStore] {
         do {
-            guard let store = try await fulfillmentModel.getDefaultStoreForCurrentCountry() else {
-                throw AppError.invalidProjectState
+            guard let country = Countries[countryCode] else { throw AppError.invalidProjectState }
+            let storesByCountry = try await fulfillmentModel.loadStoresByCountry(country: country)
+            guard let stores = storesByCountry[country.locale]?.stores else { throw AppError.invalidProjectState }
+            return stores.sorted { first, second in
+                if let firstState = first.address.stateName, let secondState = second.address.stateName {
+                    return firstState < secondState
+                }
+                return first.name < second.name
             }
-            
-            return store
         } catch {
             updateErrorState(to: error)
-            return nil
+            return []
         }
     }
-    
-    func updateStoreName() async {
-        let storeNumber = defaultsVendor.preferredStoreNumber
-        let store = await self.storesForCurrentCountry.first(where: { store in
-            store.storeNumber == storeNumber
-        })
-        
-        self.preferredStoreName = store?.name
-    }
-    
+
     private func refreshLastUpdateTime() {
         let formatter = DateFormatter()
         formatter.dateFormat = "MMM d, h:mm a"

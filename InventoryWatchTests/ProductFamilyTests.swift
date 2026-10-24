@@ -39,4 +39,37 @@ struct ProductFamilyTests {
             #expect(count == 1, "\(family) should have exactly one isX property true")
         }
     }
+
+    @Test func searchConfigurationsSupportMultipleFamiliesAndRoundTrip() throws {
+        let searches = [
+            SearchConfiguration(family: .iphone, token: "iphone-17", countryCode: "US", storeNumber: "R001"),
+            SearchConfiguration(family: .watch, token: "apple-watch", countryCode: "CA", storeNumber: "R002")
+        ]
+        let encoded = try JSONEncoder().encode(searches)
+        let decoded = try JSONDecoder().decode([SearchConfiguration].self, from: encoded)
+
+        #expect(decoded == searches)
+        #expect(Set(decoded.map(\.id)).count == 2)
+        #expect(decoded.map(\.countryCode) == ["US", "CA"])
+        #expect(decoded.map(\.storeNumber) == ["R001", "R002"])
+    }
+
+    @Test func searchConfigurationIdentityIncludesFamilyAndToken() {
+        let phone = SearchConfiguration(family: .iphone, token: "iphone-17")
+        let anotherPhone = SearchConfiguration(family: .iphone, token: "iphone-17-pro")
+        let watch = SearchConfiguration(family: .watch, token: "iphone-17")
+
+        #expect(phone != anotherPhone)
+        #expect(phone != watch)
+    }
+
+    @Test func searchConfigurationDecodesPreviousFormat() throws {
+        let data = Data(#"{"family":"iphone","token":"iphone-17"}"#.utf8)
+        let decoded = try JSONDecoder().decode(SearchConfiguration.self, from: data)
+
+        #expect(decoded.family == .iphone)
+        #expect(decoded.token == "iphone-17")
+        #expect(decoded.countryCode == (UserDefaults.standard.string(forKey: "preferredCountry") ?? "US"))
+        #expect(decoded.storeNumber == UserDefaults.standard.preferredStoreNumber)
+    }
 }

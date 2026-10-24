@@ -25,7 +25,7 @@ struct SKUResolutionTests {
               let firstSKU = data.orderedSKUs.first else {
             return
         }
-        let name = SKUDataLoader.buildLocalizedProductName(for: firstSKU, country: us, in: data)
+        let name = data.productName(forSKU: firstSKU) ?? ""
         #expect(name.isEmpty == false, "buildLocalizedProductName should produce non-empty string")
     }
 }
