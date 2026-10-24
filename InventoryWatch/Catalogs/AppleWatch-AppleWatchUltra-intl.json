@@ -1,0 +1,1581 @@
+{
+  "_meta": {
+    "family": "watch",
+    "generated_at": "2026-10-16T12:22:38.690139+00:00",
+    "regions_scraped": 33,
+    "scraper_version": "1.0",
+    "token": "apple-watch-ultra"
+  },
+  "country_mappings": {
+    "ae": {
+      "localization": {
+        "token_display": {
+          "apple-watch-ultra": "Apple Watch Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-ultra": "shop/buy-watch/apple-watch-ultra"
+      }
+    },
+    "at": {
+      "localization": {
+        "token_display": {
+          "apple-watch-ultra": "Apple Watch Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-ultra": "shop/buy-watch/apple-watch-ultra"
+      }
+    },
+    "au": {
+      "localization": {
+        "token_display": {
+          "apple-watch-ultra": "Apple Watch Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-ultra": "shop/buy-watch/apple-watch-ultra"
+      }
+    },
+    "be-fr": {
+      "localization": {
+        "token_display": {
+          "apple-watch-ultra": "Apple Watch Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-ultra": "shop/buy-watch/apple-watch-ultra"
+      }
+    },
+    "be-nl": {
+      "localization": {
+        "token_display": {
+          "apple-watch-ultra": "Apple Watch Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-ultra": "shop/buy-watch/apple-watch-ultra"
+      }
+    },
+    "br": {
+      "localization": {
+        "token_display": {
+          "apple-watch-ultra": "Apple Watch Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-ultra": "shop/buy-watch/apple-watch-ultra"
+      }
+    },
+    "ca": {
+      "localization": {
+        "token_display": {
+          "apple-watch-ultra": "Apple Watch Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-ultra": "shop/buy-watch/apple-watch-ultra"
+      }
+    },
+    "ch-de": {
+      "localization": {
+        "token_display": {
+          "apple-watch-ultra": "Apple Watch Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-ultra": "shop/buy-watch/apple-watch-ultra"
+      }
+    },
+    "ch-fr": {
+      "localization": {
+        "token_display": {
+          "apple-watch-ultra": "Apple Watch Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-ultra": "shop/buy-watch/apple-watch-ultra"
+      }
+    },
+    "cn": {
+      "localization": {
+        "token_display": {
+          "apple-watch-ultra": "Apple Watch Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-ultra": "shop/buy-watch/apple-watch-ultra"
+      }
+    },
+    "de": {
+      "localization": {
+        "token_display": {
+          "apple-watch-ultra": "Apple Watch Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-ultra": "shop/buy-watch/apple-watch-ultra"
+      }
+    },
+    "dk": {
+      "localization": {
+        "token_display": {
+          "apple-watch-ultra": "Apple Watch Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-ultra": "shop/buy-watch/apple-watch-ultra"
+      }
+    },
+    "es": {
+      "localization": {
+        "token_display": {
+          "apple-watch-ultra": "Apple Watch Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-ultra": "shop/buy-watch/apple-watch-ultra"
+      }
+    },
+    "fi": {
+      "localization": {
+        "token_display": {
+          "apple-watch-ultra": "Apple Watch Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-ultra": "shop/buy-watch/apple-watch-ultra"
+      }
+    },
+    "fr": {
+      "localization": {
+        "token_display": {
+          "apple-watch-ultra": "Apple Watch Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-ultra": "shop/buy-watch/apple-watch-ultra"
+      }
+    },
+    "hk": {
+      "localization": {
+        "token_display": {
+          "apple-watch-ultra": "Apple Watch Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-ultra": "shop/buy-watch/apple-watch-ultra"
+      }
+    },
+    "in": {
+      "localization": {
+        "token_display": {
+          "apple-watch-ultra": "Apple Watch Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-ultra": "shop/buy-watch/apple-watch-ultra"
+      }
+    },
+    "it": {
+      "localization": {
+        "token_display": {
+          "apple-watch-ultra": "Apple Watch Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-ultra": "shop/buy-watch/apple-watch-ultra"
+      }
+    },
+    "jp": {
+      "localization": {
+        "token_display": {
+          "apple-watch-ultra": "Apple Watch Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-ultra": "shop/buy-watch/apple-watch-ultra"
+      }
+    },
+    "kr": {
+      "localization": {
+        "token_display": {
+          "apple-watch-ultra": "Apple Watch Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-ultra": "shop/buy-watch/apple-watch-ultra"
+      }
+    },
+    "mx": {
+      "localization": {
+        "token_display": {
+          "apple-watch-ultra": "Apple Watch Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-ultra": "shop/buy-watch/apple-watch-ultra"
+      }
+    },
+    "my": {
+      "localization": {
+        "token_display": {
+          "apple-watch-ultra": "Apple Watch Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-ultra": "shop/buy-watch/apple-watch-ultra"
+      }
+    },
+    "nl": {
+      "localization": {
+        "token_display": {
+          "apple-watch-ultra": "Apple Watch Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-ultra": "shop/buy-watch/apple-watch-ultra"
+      }
+    },
+    "no": {
+      "localization": {
+        "token_display": {
+          "apple-watch-ultra": "Apple Watch Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-ultra": "shop/buy-watch/apple-watch-ultra"
+      }
+    },
+    "sa": {
+      "localization": {
+        "token_display": {
+          "apple-watch-ultra": "Apple Watch Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-ultra": "shop/buy-watch/apple-watch-ultra"
+      }
+    },
+    "se": {
+      "localization": {
+        "token_display": {
+          "apple-watch-ultra": "Apple Watch Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-ultra": "shop/buy-watch/apple-watch-ultra"
+      }
+    },
+    "sg": {
+      "localization": {
+        "token_display": {
+          "apple-watch-ultra": "Apple Watch Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-ultra": "shop/buy-watch/apple-watch-ultra"
+      }
+    },
+    "th": {
+      "localization": {
+        "token_display": {
+          "apple-watch-ultra": "Apple Watch Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-ultra": "shop/buy-watch/apple-watch-ultra"
+      }
+    },
+    "tr": {
+      "localization": {
+        "token_display": {
+          "apple-watch-ultra": "Apple Watch Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-ultra": "shop/buy-watch/apple-watch-ultra"
+      }
+    },
+    "tw": {
+      "localization": {
+        "token_display": {
+          "apple-watch-ultra": "Apple Watch Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-ultra": "shop/buy-watch/apple-watch-ultra"
+      }
+    },
+    "uk": {
+      "localization": {
+        "token_display": {
+          "apple-watch-ultra": "Apple Watch Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-ultra": "shop/buy-watch/apple-watch-ultra"
+      }
+    },
+    "us": {
+      "localization": {
+        "token_display": {
+          "apple-watch-ultra": "Apple Watch Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-ultra": "shop/buy-watch/apple-watch-ultra"
+      }
+    }
+  },
+  "discovered_models": {
+    "ae": {
+      "apple-watch-ultra": {
+        "skus": {
+          "MJCR4AF/A": {
+            "capacity": "",
+            "colorDisplay": "Natural",
+            "colorKey": "natural",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Natural",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Natural",
+            "partNumber": "MJCR4AF/A"
+          },
+          "MJCT4AF/A": {
+            "capacity": "",
+            "colorDisplay": "Black",
+            "colorKey": "black",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Black",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Black",
+            "partNumber": "MJCT4AF/A"
+          }
+        },
+        "url": "https://www.apple.com/ae/shop/buy-watch/apple-watch-ultra"
+      }
+    },
+    "at": {
+      "apple-watch-ultra": {
+        "skus": {
+          "MJCR4QF/A": {
+            "capacity": "",
+            "colorDisplay": "Natur",
+            "colorKey": "natural",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Natur",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Natur",
+            "partNumber": "MJCR4QF/A"
+          },
+          "MJCT4QF/A": {
+            "capacity": "",
+            "colorDisplay": "Schwarz",
+            "colorKey": "black",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Schwarz",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Schwarz",
+            "partNumber": "MJCT4QF/A"
+          }
+        },
+        "url": "https://www.apple.com/at/shop/buy-watch/apple-watch-ultra"
+      }
+    },
+    "au": {
+      "apple-watch-ultra": {
+        "skus": {
+          "MJCR4X/A": {
+            "capacity": "",
+            "colorDisplay": "Natural",
+            "colorKey": "natural",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Natural",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Natural",
+            "partNumber": "MJCR4X/A"
+          },
+          "MJCT4X/A": {
+            "capacity": "",
+            "colorDisplay": "Black",
+            "colorKey": "black",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Black",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Black",
+            "partNumber": "MJCT4X/A"
+          }
+        },
+        "url": "https://www.apple.com/au/shop/buy-watch/apple-watch-ultra"
+      }
+    },
+    "be-fr": {
+      "apple-watch-ultra": {
+        "skus": {
+          "MJCR4QR/A": {
+            "capacity": "",
+            "colorDisplay": "Naturel",
+            "colorKey": "natural",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Naturel",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Naturel",
+            "partNumber": "MJCR4QR/A"
+          },
+          "MJCT4QR/A": {
+            "capacity": "",
+            "colorDisplay": "Noir",
+            "colorKey": "black",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Noir",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Noir",
+            "partNumber": "MJCT4QR/A"
+          }
+        },
+        "url": "https://www.apple.com/be-fr/shop/buy-watch/apple-watch-ultra"
+      }
+    },
+    "be-nl": {
+      "apple-watch-ultra": {
+        "skus": {
+          "MJCR4QR/A": {
+            "capacity": "",
+            "colorDisplay": "Naturel",
+            "colorKey": "natural",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Naturel",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Naturel",
+            "partNumber": "MJCR4QR/A"
+          },
+          "MJCT4QR/A": {
+            "capacity": "",
+            "colorDisplay": "Zwart",
+            "colorKey": "black",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Zwart",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Zwart",
+            "partNumber": "MJCT4QR/A"
+          }
+        },
+        "url": "https://www.apple.com/be-nl/shop/buy-watch/apple-watch-ultra"
+      }
+    },
+    "br": {
+      "apple-watch-ultra": {
+        "skus": {
+          "MJCR4BE/A": {
+            "capacity": "",
+            "colorDisplay": "Natural",
+            "colorKey": "natural",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Natural",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Natural",
+            "partNumber": "MJCR4BE/A"
+          },
+          "MJCT4BE/A": {
+            "capacity": "",
+            "colorDisplay": "Preto",
+            "colorKey": "black",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Preto",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Preto",
+            "partNumber": "MJCT4BE/A"
+          }
+        },
+        "url": "https://www.apple.com/br/shop/buy-watch/apple-watch-ultra"
+      }
+    },
+    "ca": {
+      "apple-watch-ultra": {
+        "skus": {
+          "MJCR4CL/A": {
+            "capacity": "",
+            "colorDisplay": "Natural",
+            "colorKey": "natural",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Natural",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Natural",
+            "partNumber": "MJCR4CL/A"
+          },
+          "MJCT4CL/A": {
+            "capacity": "",
+            "colorDisplay": "Black",
+            "colorKey": "black",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Black",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Black",
+            "partNumber": "MJCT4CL/A"
+          }
+        },
+        "url": "https://www.apple.com/ca/shop/buy-watch/apple-watch-ultra"
+      }
+    },
+    "ch-de": {
+      "apple-watch-ultra": {
+        "skus": {
+          "MJCR4QF/A": {
+            "capacity": "",
+            "colorDisplay": "Natur",
+            "colorKey": "natural",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Natur",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Natur",
+            "partNumber": "MJCR4QF/A"
+          },
+          "MJCT4QF/A": {
+            "capacity": "",
+            "colorDisplay": "Schwarz",
+            "colorKey": "black",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Schwarz",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Schwarz",
+            "partNumber": "MJCT4QF/A"
+          }
+        },
+        "url": "https://www.apple.com/ch-de/shop/buy-watch/apple-watch-ultra"
+      }
+    },
+    "ch-fr": {
+      "apple-watch-ultra": {
+        "skus": {
+          "MJCR4QF/A": {
+            "capacity": "",
+            "colorDisplay": "Naturel",
+            "colorKey": "natural",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Naturel",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Naturel",
+            "partNumber": "MJCR4QF/A"
+          },
+          "MJCT4QF/A": {
+            "capacity": "",
+            "colorDisplay": "Noir",
+            "colorKey": "black",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Noir",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Noir",
+            "partNumber": "MJCT4QF/A"
+          }
+        },
+        "url": "https://www.apple.com/ch-fr/shop/buy-watch/apple-watch-ultra"
+      }
+    },
+    "cn": {
+      "apple-watch-ultra": {
+        "skus": {
+          "MJCW4CH/B": {
+            "capacity": "",
+            "colorDisplay": "原色",
+            "colorKey": "natural",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "原色",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm 原色",
+            "partNumber": "MJCW4CH/B"
+          },
+          "MJCX4CH/B": {
+            "capacity": "",
+            "colorDisplay": "黑色",
+            "colorKey": "black",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "黑色",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm 黑色",
+            "partNumber": "MJCX4CH/B"
+          }
+        },
+        "url": "https://www.apple.com/cn/shop/buy-watch/apple-watch-ultra"
+      }
+    },
+    "de": {
+      "apple-watch-ultra": {
+        "skus": {
+          "MJCR4QF/A": {
+            "capacity": "",
+            "colorDisplay": "Natur",
+            "colorKey": "natural",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Natur",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Natur",
+            "partNumber": "MJCR4QF/A"
+          },
+          "MJCT4QF/A": {
+            "capacity": "",
+            "colorDisplay": "Schwarz",
+            "colorKey": "black",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Schwarz",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Schwarz",
+            "partNumber": "MJCT4QF/A"
+          }
+        },
+        "url": "https://www.apple.com/de/shop/buy-watch/apple-watch-ultra"
+      }
+    },
+    "dk": {
+      "apple-watch-ultra": {
+        "skus": {
+          "MJCR4DH/A": {
+            "capacity": "",
+            "colorDisplay": "naturlig",
+            "colorKey": "natural",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "naturlig",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm naturlig",
+            "partNumber": "MJCR4DH/A"
+          },
+          "MJCT4DH/A": {
+            "capacity": "",
+            "colorDisplay": "sort",
+            "colorKey": "black",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "sort",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm sort",
+            "partNumber": "MJCT4DH/A"
+          }
+        },
+        "url": "https://www.apple.com/dk/shop/buy-watch/apple-watch-ultra"
+      }
+    },
+    "es": {
+      "apple-watch-ultra": {
+        "skus": {
+          "MJCR4QL/A": {
+            "capacity": "",
+            "colorDisplay": "Natural",
+            "colorKey": "natural",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Natural",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Natural",
+            "partNumber": "MJCR4QL/A"
+          },
+          "MJCT4QL/A": {
+            "capacity": "",
+            "colorDisplay": "Negro",
+            "colorKey": "black",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Negro",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Negro",
+            "partNumber": "MJCT4QL/A"
+          }
+        },
+        "url": "https://www.apple.com/es/shop/buy-watch/apple-watch-ultra"
+      }
+    },
+    "fi": {
+      "apple-watch-ultra": {
+        "skus": {
+          "MJCR4KS/A": {
+            "capacity": "",
+            "colorDisplay": "Luonnon­­vaalea",
+            "colorKey": "natural",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Luonnon­­vaalea",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Luonnon­­vaalea",
+            "partNumber": "MJCR4KS/A"
+          },
+          "MJCT4KS/A": {
+            "capacity": "",
+            "colorDisplay": "Musta",
+            "colorKey": "black",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Musta",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Musta",
+            "partNumber": "MJCT4KS/A"
+          }
+        },
+        "url": "https://www.apple.com/fi/shop/buy-watch/apple-watch-ultra"
+      }
+    },
+    "fr": {
+      "apple-watch-ultra": {
+        "skus": {
+          "MJCR4QF/A": {
+            "capacity": "",
+            "colorDisplay": "Naturel",
+            "colorKey": "natural",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Naturel",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Naturel",
+            "partNumber": "MJCR4QF/A"
+          },
+          "MJCT4QF/A": {
+            "capacity": "",
+            "colorDisplay": "Noir",
+            "colorKey": "black",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Noir",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Noir",
+            "partNumber": "MJCT4QF/A"
+          }
+        },
+        "url": "https://www.apple.com/fr/shop/buy-watch/apple-watch-ultra"
+      }
+    },
+    "hk": {
+      "apple-watch-ultra": {
+        "skus": {
+          "MJCR4X/A": {
+            "capacity": "",
+            "colorDisplay": "Natural",
+            "colorKey": "natural",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Natural",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Natural",
+            "partNumber": "MJCR4X/A"
+          },
+          "MJCT4X/A": {
+            "capacity": "",
+            "colorDisplay": "Black",
+            "colorKey": "black",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Black",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Black",
+            "partNumber": "MJCT4X/A"
+          }
+        },
+        "url": "https://www.apple.com/hk/shop/buy-watch/apple-watch-ultra"
+      }
+    },
+    "in": {
+      "apple-watch-ultra": {
+        "skus": {
+          "MJCR4HN/A": {
+            "capacity": "",
+            "colorDisplay": "Natural",
+            "colorKey": "natural",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Natural",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Natural",
+            "partNumber": "MJCR4HN/A"
+          },
+          "MJCT4HN/A": {
+            "capacity": "",
+            "colorDisplay": "Black",
+            "colorKey": "black",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Black",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Black",
+            "partNumber": "MJCT4HN/A"
+          }
+        },
+        "url": "https://www.apple.com/in/shop/buy-watch/apple-watch-ultra"
+      }
+    },
+    "it": {
+      "apple-watch-ultra": {
+        "skus": {
+          "MJCR4QL/A": {
+            "capacity": "",
+            "colorDisplay": "Naturale",
+            "colorKey": "natural",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Naturale",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Naturale",
+            "partNumber": "MJCR4QL/A"
+          },
+          "MJCT4QL/A": {
+            "capacity": "",
+            "colorDisplay": "Nero",
+            "colorKey": "black",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Nero",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Nero",
+            "partNumber": "MJCT4QL/A"
+          }
+        },
+        "url": "https://www.apple.com/it/shop/buy-watch/apple-watch-ultra"
+      }
+    },
+    "jp": {
+      "apple-watch-ultra": {
+        "skus": {
+          "MJCR4X/A": {
+            "capacity": "",
+            "colorDisplay": "ナチュラル",
+            "colorKey": "natural",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "ナチュラル",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm ナチュラル",
+            "partNumber": "MJCR4X/A"
+          },
+          "MJCT4X/A": {
+            "capacity": "",
+            "colorDisplay": "ブラック",
+            "colorKey": "black",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "ブラック",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm ブラック",
+            "partNumber": "MJCT4X/A"
+          }
+        },
+        "url": "https://www.apple.com/jp/shop/buy-watch/apple-watch-ultra"
+      }
+    },
+    "kr": {
+      "apple-watch-ultra": {
+        "skus": {
+          "MJCR4KH/A": {
+            "capacity": "",
+            "colorDisplay": "내추럴",
+            "colorKey": "natural",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "내추럴",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm 내추럴",
+            "partNumber": "MJCR4KH/A"
+          },
+          "MJCT4KH/A": {
+            "capacity": "",
+            "colorDisplay": "블랙",
+            "colorKey": "black",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "블랙",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm 블랙",
+            "partNumber": "MJCT4KH/A"
+          }
+        },
+        "url": "https://www.apple.com/kr/shop/buy-watch/apple-watch-ultra"
+      }
+    },
+    "mx": {
+      "apple-watch-ultra": {
+        "skus": {
+          "MJCR4BE/A": {
+            "capacity": "",
+            "colorDisplay": "Natural",
+            "colorKey": "natural",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Natural",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Natural",
+            "partNumber": "MJCR4BE/A"
+          },
+          "MJCT4BE/A": {
+            "capacity": "",
+            "colorDisplay": "Negro",
+            "colorKey": "black",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Negro",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Negro",
+            "partNumber": "MJCT4BE/A"
+          }
+        },
+        "url": "https://www.apple.com/mx/shop/buy-watch/apple-watch-ultra"
+      }
+    },
+    "my": {
+      "apple-watch-ultra": {
+        "skus": {
+          "MJCR4X/A": {
+            "capacity": "",
+            "colorDisplay": "Natural",
+            "colorKey": "natural",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Natural",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Natural",
+            "partNumber": "MJCR4X/A"
+          },
+          "MJCT4X/A": {
+            "capacity": "",
+            "colorDisplay": "Black",
+            "colorKey": "black",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Black",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Black",
+            "partNumber": "MJCT4X/A"
+          }
+        },
+        "url": "https://www.apple.com/my/shop/buy-watch/apple-watch-ultra"
+      }
+    },
+    "nl": {
+      "apple-watch-ultra": {
+        "skus": {
+          "MJCR4QR/A": {
+            "capacity": "",
+            "colorDisplay": "Naturel",
+            "colorKey": "natural",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Naturel",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Naturel",
+            "partNumber": "MJCR4QR/A"
+          },
+          "MJCT4QR/A": {
+            "capacity": "",
+            "colorDisplay": "Zwart",
+            "colorKey": "black",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Zwart",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Zwart",
+            "partNumber": "MJCT4QR/A"
+          }
+        },
+        "url": "https://www.apple.com/nl/shop/buy-watch/apple-watch-ultra"
+      }
+    },
+    "no": {
+      "apple-watch-ultra": {
+        "skus": {
+          "MJCR4DH/A": {
+            "capacity": "",
+            "colorDisplay": "naturlig",
+            "colorKey": "natural",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "naturlig",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm naturlig",
+            "partNumber": "MJCR4DH/A"
+          },
+          "MJCT4DH/A": {
+            "capacity": "",
+            "colorDisplay": "svart",
+            "colorKey": "black",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "svart",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm svart",
+            "partNumber": "MJCT4DH/A"
+          }
+        },
+        "url": "https://www.apple.com/no/shop/buy-watch/apple-watch-ultra"
+      }
+    },
+    "sa": {
+      "apple-watch-ultra": {
+        "skus": {
+          "MJCR4AF/A": {
+            "capacity": "",
+            "colorDisplay": "Natural",
+            "colorKey": "natural",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Natural",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Natural",
+            "partNumber": "MJCR4AF/A"
+          },
+          "MJCT4AF/A": {
+            "capacity": "",
+            "colorDisplay": "Black",
+            "colorKey": "black",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Black",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Black",
+            "partNumber": "MJCT4AF/A"
+          }
+        },
+        "url": "https://www.apple.com/sa/shop/buy-watch/apple-watch-ultra"
+      }
+    },
+    "se": {
+      "apple-watch-ultra": {
+        "skus": {
+          "MJCR4KS/A": {
+            "capacity": "",
+            "colorDisplay": "naturlig",
+            "colorKey": "natural",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "naturlig",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm naturlig",
+            "partNumber": "MJCR4KS/A"
+          },
+          "MJCT4KS/A": {
+            "capacity": "",
+            "colorDisplay": "svart",
+            "colorKey": "black",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "svart",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm svart",
+            "partNumber": "MJCT4KS/A"
+          }
+        },
+        "url": "https://www.apple.com/se/shop/buy-watch/apple-watch-ultra"
+      }
+    },
+    "sg": {
+      "apple-watch-ultra": {
+        "skus": {
+          "MJCR4X/A": {
+            "capacity": "",
+            "colorDisplay": "Natural",
+            "colorKey": "natural",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Natural",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Natural",
+            "partNumber": "MJCR4X/A"
+          },
+          "MJCT4X/A": {
+            "capacity": "",
+            "colorDisplay": "Black",
+            "colorKey": "black",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Black",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Black",
+            "partNumber": "MJCT4X/A"
+          }
+        },
+        "url": "https://www.apple.com/sg/shop/buy-watch/apple-watch-ultra"
+      }
+    },
+    "th": {
+      "apple-watch-ultra": {
+        "skus": {
+          "MJCR4SA/A": {
+            "capacity": "",
+            "colorDisplay": "ธรรมชาติ",
+            "colorKey": "natural",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "ธรรมชาติ",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm ธรรมชาติ",
+            "partNumber": "MJCR4SA/A"
+          },
+          "MJCT4SA/A": {
+            "capacity": "",
+            "colorDisplay": "ดำ",
+            "colorKey": "black",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "ดำ",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm ดำ",
+            "partNumber": "MJCT4SA/A"
+          }
+        },
+        "url": "https://www.apple.com/th/shop/buy-watch/apple-watch-ultra"
+      }
+    },
+    "tr": {
+      "apple-watch-ultra": {
+        "skus": {
+          "MJCR4TU/A": {
+            "capacity": "",
+            "colorDisplay": "Natürel",
+            "colorKey": "natural",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Natürel",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Natürel",
+            "partNumber": "MJCR4TU/A"
+          },
+          "MJCT4TU/A": {
+            "capacity": "",
+            "colorDisplay": "Siyah",
+            "colorKey": "black",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Siyah",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Siyah",
+            "partNumber": "MJCT4TU/A"
+          }
+        },
+        "url": "https://www.apple.com/tr/shop/buy-watch/apple-watch-ultra"
+      }
+    },
+    "tw": {
+      "apple-watch-ultra": {
+        "skus": {
+          "MJCR4TA/A": {
+            "capacity": "",
+            "colorDisplay": "原色",
+            "colorKey": "natural",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "原色",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm 原色",
+            "partNumber": "MJCR4TA/A"
+          },
+          "MJCT4TA/A": {
+            "capacity": "",
+            "colorDisplay": "黑色",
+            "colorKey": "black",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "黑色",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm 黑色",
+            "partNumber": "MJCT4TA/A"
+          }
+        },
+        "url": "https://www.apple.com/tw/shop/buy-watch/apple-watch-ultra"
+      }
+    },
+    "uk": {
+      "apple-watch-ultra": {
+        "skus": {
+          "MJCR4DH/A": {
+            "capacity": "",
+            "colorDisplay": "Natural",
+            "colorKey": "natural",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Natural",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Natural",
+            "partNumber": "MJCR4DH/A"
+          },
+          "MJCT4DH/A": {
+            "capacity": "",
+            "colorDisplay": "Black",
+            "colorKey": "black",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Black",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Black",
+            "partNumber": "MJCT4DH/A"
+          }
+        },
+        "url": "https://www.apple.com/uk/shop/buy-watch/apple-watch-ultra"
+      }
+    },
+    "us": {
+      "apple-watch-ultra": {
+        "skus": {
+          "MJCR4LS/A": {
+            "capacity": "",
+            "colorDisplay": "Natural",
+            "colorKey": "natural",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Natural",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Natural",
+            "partNumber": "MJCR4LS/A"
+          },
+          "MJCT4LS/A": {
+            "capacity": "",
+            "colorDisplay": "Black",
+            "colorKey": "black",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Black",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Black",
+            "partNumber": "MJCT4LS/A"
+          }
+        },
+        "url": "https://www.apple.com/us/shop/buy-watch/apple-watch-ultra"
+      }
+    }
+  }
+}

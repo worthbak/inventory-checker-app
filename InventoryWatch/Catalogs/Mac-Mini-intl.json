@@ -1,0 +1,1389 @@
+{
+  "_meta": {
+    "family": "mac",
+    "generated_at": "2026-10-16T12:25:16.773866+00:00",
+    "regions_scraped": 33,
+    "scraper_version": "1.0",
+    "token": "mac-mini"
+  },
+  "country_mappings": {
+    "ae": {
+      "localization": {
+        "token_display": {
+          "mac-mini": "Mac Mini"
+        }
+      },
+      "shop_paths": {
+        "mac-mini": "shop/buy-mac/mac-mini"
+      }
+    },
+    "at": {
+      "localization": {
+        "token_display": {
+          "mac-mini": "Mac Mini"
+        }
+      },
+      "shop_paths": {
+        "mac-mini": "shop/buy-mac/mac-mini"
+      }
+    },
+    "au": {
+      "localization": {
+        "token_display": {
+          "mac-mini": "Mac Mini"
+        }
+      },
+      "shop_paths": {
+        "mac-mini": "shop/buy-mac/mac-mini"
+      }
+    },
+    "be-fr": {
+      "localization": {
+        "token_display": {
+          "mac-mini": "Mac Mini"
+        }
+      },
+      "shop_paths": {
+        "mac-mini": "shop/buy-mac/mac-mini"
+      }
+    },
+    "be-nl": {
+      "localization": {
+        "token_display": {
+          "mac-mini": "Mac Mini"
+        }
+      },
+      "shop_paths": {
+        "mac-mini": "shop/buy-mac/mac-mini"
+      }
+    },
+    "br": {
+      "localization": {
+        "token_display": {
+          "mac-mini": "Mac Mini"
+        }
+      },
+      "shop_paths": {
+        "mac-mini": "shop/buy-mac/mac-mini"
+      }
+    },
+    "ca": {
+      "localization": {
+        "token_display": {
+          "mac-mini": "Mac Mini"
+        }
+      },
+      "shop_paths": {
+        "mac-mini": "shop/buy-mac/mac-mini"
+      }
+    },
+    "ch-de": {
+      "localization": {
+        "token_display": {
+          "mac-mini": "Mac Mini"
+        }
+      },
+      "shop_paths": {
+        "mac-mini": "shop/buy-mac/mac-mini"
+      }
+    },
+    "ch-fr": {
+      "localization": {
+        "token_display": {
+          "mac-mini": "Mac Mini"
+        }
+      },
+      "shop_paths": {
+        "mac-mini": "shop/buy-mac/mac-mini"
+      }
+    },
+    "cn": {
+      "localization": {
+        "token_display": {
+          "mac-mini": "Mac Mini"
+        }
+      },
+      "shop_paths": {
+        "mac-mini": "shop/buy-mac/mac-mini"
+      }
+    },
+    "de": {
+      "localization": {
+        "token_display": {
+          "mac-mini": "Mac Mini"
+        }
+      },
+      "shop_paths": {
+        "mac-mini": "shop/buy-mac/mac-mini"
+      }
+    },
+    "dk": {
+      "localization": {
+        "token_display": {
+          "mac-mini": "Mac Mini"
+        }
+      },
+      "shop_paths": {
+        "mac-mini": "shop/buy-mac/mac-mini"
+      }
+    },
+    "es": {
+      "localization": {
+        "token_display": {
+          "mac-mini": "Mac Mini"
+        }
+      },
+      "shop_paths": {
+        "mac-mini": "shop/buy-mac/mac-mini"
+      }
+    },
+    "fi": {
+      "localization": {
+        "token_display": {
+          "mac-mini": "Mac Mini"
+        }
+      },
+      "shop_paths": {
+        "mac-mini": "shop/buy-mac/mac-mini"
+      }
+    },
+    "fr": {
+      "localization": {
+        "token_display": {
+          "mac-mini": "Mac Mini"
+        }
+      },
+      "shop_paths": {
+        "mac-mini": "shop/buy-mac/mac-mini"
+      }
+    },
+    "hk": {
+      "localization": {
+        "token_display": {
+          "mac-mini": "Mac Mini"
+        }
+      },
+      "shop_paths": {
+        "mac-mini": "shop/buy-mac/mac-mini"
+      }
+    },
+    "in": {
+      "localization": {
+        "token_display": {
+          "mac-mini": "Mac Mini"
+        }
+      },
+      "shop_paths": {
+        "mac-mini": "shop/buy-mac/mac-mini"
+      }
+    },
+    "it": {
+      "localization": {
+        "token_display": {
+          "mac-mini": "Mac Mini"
+        }
+      },
+      "shop_paths": {
+        "mac-mini": "shop/buy-mac/mac-mini"
+      }
+    },
+    "jp": {
+      "localization": {
+        "token_display": {
+          "mac-mini": "Mac Mini"
+        }
+      },
+      "shop_paths": {
+        "mac-mini": "shop/buy-mac/mac-mini"
+      }
+    },
+    "kr": {
+      "localization": {
+        "token_display": {
+          "mac-mini": "Mac Mini"
+        }
+      },
+      "shop_paths": {
+        "mac-mini": "shop/buy-mac/mac-mini"
+      }
+    },
+    "mx": {
+      "localization": {
+        "token_display": {
+          "mac-mini": "Mac Mini"
+        }
+      },
+      "shop_paths": {
+        "mac-mini": "shop/buy-mac/mac-mini"
+      }
+    },
+    "my": {
+      "localization": {
+        "token_display": {
+          "mac-mini": "Mac Mini"
+        }
+      },
+      "shop_paths": {
+        "mac-mini": "shop/buy-mac/mac-mini"
+      }
+    },
+    "nl": {
+      "localization": {
+        "token_display": {
+          "mac-mini": "Mac Mini"
+        }
+      },
+      "shop_paths": {
+        "mac-mini": "shop/buy-mac/mac-mini"
+      }
+    },
+    "no": {
+      "localization": {
+        "token_display": {
+          "mac-mini": "Mac Mini"
+        }
+      },
+      "shop_paths": {
+        "mac-mini": "shop/buy-mac/mac-mini"
+      }
+    },
+    "sa": {
+      "localization": {
+        "token_display": {
+          "mac-mini": "Mac Mini"
+        }
+      },
+      "shop_paths": {
+        "mac-mini": "shop/buy-mac/mac-mini"
+      }
+    },
+    "se": {
+      "localization": {
+        "token_display": {
+          "mac-mini": "Mac Mini"
+        }
+      },
+      "shop_paths": {
+        "mac-mini": "shop/buy-mac/mac-mini"
+      }
+    },
+    "sg": {
+      "localization": {
+        "token_display": {
+          "mac-mini": "Mac Mini"
+        }
+      },
+      "shop_paths": {
+        "mac-mini": "shop/buy-mac/mac-mini"
+      }
+    },
+    "th": {
+      "localization": {
+        "token_display": {
+          "mac-mini": "Mac Mini"
+        }
+      },
+      "shop_paths": {
+        "mac-mini": "shop/buy-mac/mac-mini"
+      }
+    },
+    "tr": {
+      "localization": {
+        "token_display": {
+          "mac-mini": "Mac Mini"
+        }
+      },
+      "shop_paths": {
+        "mac-mini": "shop/buy-mac/mac-mini"
+      }
+    },
+    "tw": {
+      "localization": {
+        "token_display": {
+          "mac-mini": "Mac Mini"
+        }
+      },
+      "shop_paths": {
+        "mac-mini": "shop/buy-mac/mac-mini"
+      }
+    },
+    "uk": {
+      "localization": {
+        "token_display": {
+          "mac-mini": "Mac Mini"
+        }
+      },
+      "shop_paths": {
+        "mac-mini": "shop/buy-mac/mac-mini"
+      }
+    },
+    "us": {
+      "localization": {
+        "token_display": {
+          "mac-mini": "Mac Mini"
+        }
+      },
+      "shop_paths": {
+        "mac-mini": "shop/buy-mac/mac-mini"
+      }
+    }
+  },
+  "discovered_models": {
+    "ae": {
+      "mac-mini": {
+        "skus": {
+          "MHQK4AB/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M6_GOO_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M6 (12-Core CPU / 12-Core GPU)"
+            },
+            "name": "Mac mini M6 (12-Core CPU / 12-Core GPU)"
+          },
+          "MHQN4AB/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M6_GOO_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Pro (15-Core CPU / 16-Core GPU)"
+            },
+            "name": "Mac mini M5 Pro (15-Core CPU / 16-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/ae/shop/buy-mac/mac-mini"
+      }
+    },
+    "at": {
+      "mac-mini": {
+        "skus": {
+          "MHQK4ZD/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M5PRO_ULT_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M6 (12-Core CPU / 12-Core GPU)"
+            },
+            "name": "Mac mini M6 (12-Core CPU / 12-Core GPU)"
+          },
+          "MHQN4ZD/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M5PRO_ULT_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Pro (15-Core CPU / 16-Core GPU)"
+            },
+            "name": "Mac mini M5 Pro (15-Core CPU / 16-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/at/shop/buy-mac/mac-mini"
+      }
+    },
+    "au": {
+      "mac-mini": {
+        "skus": {
+          "MHQK4X/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M6_GOO_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M6 (12-Core CPU / 12-Core GPU)"
+            },
+            "name": "Mac mini M6 (12-Core CPU / 12-Core GPU)"
+          },
+          "MHQN4X/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M6_GOO_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Pro (15-Core CPU / 16-Core GPU)"
+            },
+            "name": "Mac mini M5 Pro (15-Core CPU / 16-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/au/shop/buy-mac/mac-mini"
+      }
+    },
+    "be-fr": {
+      "mac-mini": {
+        "skus": {
+          "MHQK4ZD/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M5PRO_ULT_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M6 (12-Core CPU / 12-Core GPU)"
+            },
+            "name": "Mac mini M6 (12-Core CPU / 12-Core GPU)"
+          },
+          "MHQN4ZD/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M5PRO_ULT_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Pro (15-Core CPU / 16-Core GPU)"
+            },
+            "name": "Mac mini M5 Pro (15-Core CPU / 16-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/be-fr/shop/buy-mac/mac-mini"
+      }
+    },
+    "be-nl": {
+      "mac-mini": {
+        "skus": {
+          "MHQK4ZD/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M6_GOO_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M6 (12-Core CPU / 12-Core GPU)"
+            },
+            "name": "Mac mini M6 (12-Core CPU / 12-Core GPU)"
+          },
+          "MHQN4ZD/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M6_GOO_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Pro (15-Core CPU / 16-Core GPU)"
+            },
+            "name": "Mac mini M5 Pro (15-Core CPU / 16-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/be-nl/shop/buy-mac/mac-mini"
+      }
+    },
+    "br": {
+      "mac-mini": {
+        "skus": {
+          "MHQK4BZ/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M5PRO_ULT_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M6 (12-Core CPU / 12-Core GPU)"
+            },
+            "name": "Mac mini M6 (12-Core CPU / 12-Core GPU)"
+          },
+          "MHQN4BZ/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M5PRO_ULT_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Pro (15-Core CPU / 16-Core GPU)"
+            },
+            "name": "Mac mini M5 Pro (15-Core CPU / 16-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/br/shop/buy-mac/mac-mini"
+      }
+    },
+    "ca": {
+      "mac-mini": {
+        "skus": {
+          "MHQK4VC/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M6_GOO_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M6 (12-Core CPU / 12-Core GPU)"
+            },
+            "name": "Mac mini M6 (12-Core CPU / 12-Core GPU)"
+          },
+          "MHQN4VC/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M6_GOO_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Pro (15-Core CPU / 16-Core GPU)"
+            },
+            "name": "Mac mini M5 Pro (15-Core CPU / 16-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/ca/shop/buy-mac/mac-mini"
+      }
+    },
+    "ch-de": {
+      "mac-mini": {
+        "skus": {
+          "MHQK4ZD/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M5PRO_ULT_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M6 (12-Core CPU / 12-Core GPU)"
+            },
+            "name": "Mac mini M6 (12-Core CPU / 12-Core GPU)"
+          },
+          "MHQN4ZD/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M5PRO_ULT_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Pro (15-Core CPU / 16-Core GPU)"
+            },
+            "name": "Mac mini M5 Pro (15-Core CPU / 16-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/ch-de/shop/buy-mac/mac-mini"
+      }
+    },
+    "ch-fr": {
+      "mac-mini": {
+        "skus": {
+          "MHQK4ZD/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M5PRO_ULT_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M6 (12-Core CPU / 12-Core GPU)"
+            },
+            "name": "Mac mini M6 (12-Core CPU / 12-Core GPU)"
+          },
+          "MHQN4ZD/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M5PRO_ULT_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Pro (15-Core CPU / 16-Core GPU)"
+            },
+            "name": "Mac mini M5 Pro (15-Core CPU / 16-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/ch-fr/shop/buy-mac/mac-mini"
+      }
+    },
+    "cn": {
+      "mac-mini": {
+        "skus": {
+          "MHQK4CH/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M5PRO_ULT_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M6 (12-Core CPU / 12-Core GPU)"
+            },
+            "name": "Mac mini M6 (12-Core CPU / 12-Core GPU)"
+          },
+          "MHQN4CH/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M5PRO_ULT_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Pro (15-Core CPU / 16-Core GPU)"
+            },
+            "name": "Mac mini M5 Pro (15-Core CPU / 16-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/cn/shop/buy-mac/mac-mini"
+      }
+    },
+    "de": {
+      "mac-mini": {
+        "skus": {
+          "MHQK4ZD/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M5PRO_ULT_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M6 (12-Core CPU / 12-Core GPU)"
+            },
+            "name": "Mac mini M6 (12-Core CPU / 12-Core GPU)"
+          },
+          "MHQN4ZD/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M5PRO_ULT_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Pro (15-Core CPU / 16-Core GPU)"
+            },
+            "name": "Mac mini M5 Pro (15-Core CPU / 16-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/de/shop/buy-mac/mac-mini"
+      }
+    },
+    "dk": {
+      "mac-mini": {
+        "skus": {
+          "MHQK4DH/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M5PRO_ULT_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M6 (12-Core CPU / 12-Core GPU)"
+            },
+            "name": "Mac mini M6 (12-Core CPU / 12-Core GPU)"
+          },
+          "MHQN4DH/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M5PRO_ULT_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Pro (15-Core CPU / 16-Core GPU)"
+            },
+            "name": "Mac mini M5 Pro (15-Core CPU / 16-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/dk/shop/buy-mac/mac-mini"
+      }
+    },
+    "es": {
+      "mac-mini": {
+        "skus": {
+          "MHQK4TY/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M5PRO_ULT_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M6 (12-Core CPU / 12-Core GPU)"
+            },
+            "name": "Mac mini M6 (12-Core CPU / 12-Core GPU)"
+          },
+          "MHQN4TY/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M5PRO_ULT_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Pro (15-Core CPU / 16-Core GPU)"
+            },
+            "name": "Mac mini M5 Pro (15-Core CPU / 16-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/es/shop/buy-mac/mac-mini"
+      }
+    },
+    "fi": {
+      "mac-mini": {
+        "skus": {
+          "MHQK4KS/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M6_GOO_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M6 (12-Core CPU / 12-Core GPU)"
+            },
+            "name": "Mac mini M6 (12-Core CPU / 12-Core GPU)"
+          },
+          "MHQN4KS/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M6_GOO_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Pro (15-Core CPU / 16-Core GPU)"
+            },
+            "name": "Mac mini M5 Pro (15-Core CPU / 16-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/fi/shop/buy-mac/mac-mini"
+      }
+    },
+    "fr": {
+      "mac-mini": {
+        "skus": {
+          "MHQK4ZD/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M5PRO_ULT_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M6 (12-Core CPU / 12-Core GPU)"
+            },
+            "name": "Mac mini M6 (12-Core CPU / 12-Core GPU)"
+          },
+          "MHQN4ZD/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M5PRO_ULT_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Pro (15-Core CPU / 16-Core GPU)"
+            },
+            "name": "Mac mini M5 Pro (15-Core CPU / 16-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/fr/shop/buy-mac/mac-mini"
+      }
+    },
+    "hk": {
+      "mac-mini": {
+        "skus": {
+          "MHQK4ZP/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M5PRO_ULT_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M6 (12-Core CPU / 12-Core GPU)"
+            },
+            "name": "Mac mini M6 (12-Core CPU / 12-Core GPU)"
+          },
+          "MHQN4ZP/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M5PRO_ULT_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Pro (15-Core CPU / 16-Core GPU)"
+            },
+            "name": "Mac mini M5 Pro (15-Core CPU / 16-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/hk/shop/buy-mac/mac-mini"
+      }
+    },
+    "in": {
+      "mac-mini": {
+        "skus": {
+          "MHQK4HN/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M6_GOO_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M6 (12-Core CPU / 12-Core GPU)"
+            },
+            "name": "Mac mini M6 (12-Core CPU / 12-Core GPU)"
+          },
+          "MHQN4HN/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M6_GOO_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Pro (15-Core CPU / 16-Core GPU)"
+            },
+            "name": "Mac mini M5 Pro (15-Core CPU / 16-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/in/shop/buy-mac/mac-mini"
+      }
+    },
+    "it": {
+      "mac-mini": {
+        "skus": {
+          "MHQK4TY/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M5PRO_ULT_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M6 (12-Core CPU / 12-Core GPU)"
+            },
+            "name": "Mac mini M6 (12-Core CPU / 12-Core GPU)"
+          },
+          "MHQN4TY/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M5PRO_ULT_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Pro (15-Core CPU / 16-Core GPU)"
+            },
+            "name": "Mac mini M5 Pro (15-Core CPU / 16-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/it/shop/buy-mac/mac-mini"
+      }
+    },
+    "jp": {
+      "mac-mini": {
+        "skus": {
+          "MHQK4J/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M6_GOO_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M6 (12-Core CPU / 12-Core GPU)"
+            },
+            "name": "Mac mini M6 (12-Core CPU / 12-Core GPU)"
+          },
+          "MHQN4J/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M6_GOO_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Pro (15-Core CPU / 16-Core GPU)"
+            },
+            "name": "Mac mini M5 Pro (15-Core CPU / 16-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/jp/shop/buy-mac/mac-mini"
+      }
+    },
+    "kr": {
+      "mac-mini": {
+        "skus": {
+          "MHQK4KH/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M5PRO_ULT_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M6 (12-Core CPU / 12-Core GPU)"
+            },
+            "name": "Mac mini M6 (12-Core CPU / 12-Core GPU)"
+          },
+          "MHQN4KH/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M5PRO_ULT_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Pro (15-Core CPU / 16-Core GPU)"
+            },
+            "name": "Mac mini M5 Pro (15-Core CPU / 16-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/kr/shop/buy-mac/mac-mini"
+      }
+    },
+    "mx": {
+      "mac-mini": {
+        "skus": {
+          "MHQK4E/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M6_GOO_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M6 (12-Core CPU / 12-Core GPU)"
+            },
+            "name": "Mac mini M6 (12-Core CPU / 12-Core GPU)"
+          },
+          "MHQN4E/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M6_GOO_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Pro (15-Core CPU / 16-Core GPU)"
+            },
+            "name": "Mac mini M5 Pro (15-Core CPU / 16-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/mx/shop/buy-mac/mac-mini"
+      }
+    },
+    "my": {
+      "mac-mini": {
+        "skus": {
+          "MHQK4ZP/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M6_GOO_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M6 (12-Core CPU / 12-Core GPU)"
+            },
+            "name": "Mac mini M6 (12-Core CPU / 12-Core GPU)"
+          },
+          "MHQN4ZP/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M6_GOO_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Pro (15-Core CPU / 16-Core GPU)"
+            },
+            "name": "Mac mini M5 Pro (15-Core CPU / 16-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/my/shop/buy-mac/mac-mini"
+      }
+    },
+    "nl": {
+      "mac-mini": {
+        "skus": {
+          "MHQK4ZD/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M5PRO_ULT_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M6 (12-Core CPU / 12-Core GPU)"
+            },
+            "name": "Mac mini M6 (12-Core CPU / 12-Core GPU)"
+          },
+          "MHQN4ZD/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M5PRO_ULT_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Pro (15-Core CPU / 16-Core GPU)"
+            },
+            "name": "Mac mini M5 Pro (15-Core CPU / 16-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/nl/shop/buy-mac/mac-mini"
+      }
+    },
+    "no": {
+      "mac-mini": {
+        "skus": {
+          "MHQK4DH/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M5PRO_ULT_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M6 (12-Core CPU / 12-Core GPU)"
+            },
+            "name": "Mac mini M6 (12-Core CPU / 12-Core GPU)"
+          },
+          "MHQN4DH/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M5PRO_ULT_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Pro (15-Core CPU / 16-Core GPU)"
+            },
+            "name": "Mac mini M5 Pro (15-Core CPU / 16-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/no/shop/buy-mac/mac-mini"
+      }
+    },
+    "sa": {
+      "mac-mini": {
+        "skus": {
+          "MHQK4AB/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M5PRO_ULT_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M6 (12-Core CPU / 12-Core GPU)"
+            },
+            "name": "Mac mini M6 (12-Core CPU / 12-Core GPU)"
+          },
+          "MHQN4AB/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M5PRO_ULT_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Pro (15-Core CPU / 16-Core GPU)"
+            },
+            "name": "Mac mini M5 Pro (15-Core CPU / 16-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/sa/shop/buy-mac/mac-mini"
+      }
+    },
+    "se": {
+      "mac-mini": {
+        "skus": {
+          "MHQK4KS/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M5PRO_ULT_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M6 (12-Core CPU / 12-Core GPU)"
+            },
+            "name": "Mac mini M6 (12-Core CPU / 12-Core GPU)"
+          },
+          "MHQN4KS/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M5PRO_ULT_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Pro (15-Core CPU / 16-Core GPU)"
+            },
+            "name": "Mac mini M5 Pro (15-Core CPU / 16-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/se/shop/buy-mac/mac-mini"
+      }
+    },
+    "sg": {
+      "mac-mini": {
+        "skus": {
+          "MHQK4ZP/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M5PRO_ULT_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M6 (12-Core CPU / 12-Core GPU)"
+            },
+            "name": "Mac mini M6 (12-Core CPU / 12-Core GPU)"
+          },
+          "MHQN4ZP/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M5PRO_ULT_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Pro (15-Core CPU / 16-Core GPU)"
+            },
+            "name": "Mac mini M5 Pro (15-Core CPU / 16-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/sg/shop/buy-mac/mac-mini"
+      }
+    },
+    "th": {
+      "mac-mini": {
+        "skus": {
+          "MHQK4TH/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M5PRO_ULT_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M6 (12-Core CPU / 12-Core GPU)"
+            },
+            "name": "Mac mini M6 (12-Core CPU / 12-Core GPU)"
+          },
+          "MHQN4TH/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M5PRO_ULT_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Pro (15-Core CPU / 16-Core GPU)"
+            },
+            "name": "Mac mini M5 Pro (15-Core CPU / 16-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/th/shop/buy-mac/mac-mini"
+      }
+    },
+    "tr": {
+      "mac-mini": {
+        "skus": {
+          "MHQK4TU/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M6_GOO_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M6 (12-Core CPU / 12-Core GPU)"
+            },
+            "name": "Mac mini M6 (12-Core CPU / 12-Core GPU)"
+          },
+          "MHQN4TU/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M6_GOO_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Pro (15-Core CPU / 16-Core GPU)"
+            },
+            "name": "Mac mini M5 Pro (15-Core CPU / 16-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/tr/shop/buy-mac/mac-mini"
+      }
+    },
+    "tw": {
+      "mac-mini": {
+        "skus": {
+          "MHQK4TA/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M6_GOO_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M6 (12-Core CPU / 12-Core GPU)"
+            },
+            "name": "Mac mini M6 (12-Core CPU / 12-Core GPU)"
+          },
+          "MHQN4TA/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M6_GOO_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Pro (15-Core CPU / 16-Core GPU)"
+            },
+            "name": "Mac mini M5 Pro (15-Core CPU / 16-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/tw/shop/buy-mac/mac-mini"
+      }
+    },
+    "uk": {
+      "mac-mini": {
+        "skus": {
+          "MHQK4B/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M5PRO_ULT_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M6 (12-Core CPU / 12-Core GPU)"
+            },
+            "name": "Mac mini M6 (12-Core CPU / 12-Core GPU)"
+          },
+          "MHQN4B/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M5PRO_ULT_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Pro (15-Core CPU / 16-Core GPU)"
+            },
+            "name": "Mac mini M5 Pro (15-Core CPU / 16-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/uk/shop/buy-mac/mac-mini"
+      }
+    },
+    "us": {
+      "mac-mini": {
+        "skus": {
+          "MHQK4LL/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M6_GOO_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M6 (12-Core CPU / 12-Core GPU)"
+            },
+            "name": "Mac mini M6 (12-Core CPU / 12-Core GPU)"
+          },
+          "MHQN4LL/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac mini",
+            "metadata": {
+              "containerPartNumber": "RO_MACMINI_M6_GOO_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Pro (15-Core CPU / 16-Core GPU)"
+            },
+            "name": "Mac mini M5 Pro (15-Core CPU / 16-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/us/shop/buy-mac/mac-mini"
+      }
+    }
+  }
+}

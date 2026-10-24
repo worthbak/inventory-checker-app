@@ -1,0 +1,780 @@
+{
+  "_meta": {
+    "family": "avp",
+    "generated_at": "2026-10-16T12:21:58.353428+00:00",
+    "regions_scraped": 33,
+    "scraper_version": "1.0",
+    "token": "apple-vision-pro"
+  },
+  "country_mappings": {
+    "ae": {
+      "localization": {
+        "token_display": {
+          "apple-vision-pro": "Apple Vision Pro"
+        }
+      },
+      "shop_paths": {
+        "apple-vision-pro": "shop/buy-vision/apple-vision-pro"
+      }
+    },
+    "au": {
+      "localization": {
+        "token_display": {
+          "apple-vision-pro": "Apple Vision Pro"
+        }
+      },
+      "shop_paths": {
+        "apple-vision-pro": "shop/buy-vision/apple-vision-pro"
+      }
+    },
+    "ca": {
+      "localization": {
+        "token_display": {
+          "apple-vision-pro": "Apple Vision Pro"
+        }
+      },
+      "shop_paths": {
+        "apple-vision-pro": "shop/buy-vision/apple-vision-pro"
+      }
+    },
+    "cn": {
+      "localization": {
+        "token_display": {
+          "apple-vision-pro": "Apple Vision Pro"
+        }
+      },
+      "shop_paths": {
+        "apple-vision-pro": "shop/buy-vision/apple-vision-pro"
+      }
+    },
+    "de": {
+      "localization": {
+        "token_display": {
+          "apple-vision-pro": "Apple Vision Pro"
+        }
+      },
+      "shop_paths": {
+        "apple-vision-pro": "shop/buy-vision/apple-vision-pro"
+      }
+    },
+    "fr": {
+      "localization": {
+        "token_display": {
+          "apple-vision-pro": "Apple Vision Pro"
+        }
+      },
+      "shop_paths": {
+        "apple-vision-pro": "shop/buy-vision/apple-vision-pro"
+      }
+    },
+    "hk": {
+      "localization": {
+        "token_display": {
+          "apple-vision-pro": "Apple Vision Pro"
+        }
+      },
+      "shop_paths": {
+        "apple-vision-pro": "shop/buy-vision/apple-vision-pro"
+      }
+    },
+    "jp": {
+      "localization": {
+        "token_display": {
+          "apple-vision-pro": "Apple Vision Pro"
+        }
+      },
+      "shop_paths": {
+        "apple-vision-pro": "shop/buy-vision/apple-vision-pro"
+      }
+    },
+    "kr": {
+      "localization": {
+        "token_display": {
+          "apple-vision-pro": "Apple Vision Pro"
+        }
+      },
+      "shop_paths": {
+        "apple-vision-pro": "shop/buy-vision/apple-vision-pro"
+      }
+    },
+    "sg": {
+      "localization": {
+        "token_display": {
+          "apple-vision-pro": "Apple Vision Pro"
+        }
+      },
+      "shop_paths": {
+        "apple-vision-pro": "shop/buy-vision/apple-vision-pro"
+      }
+    },
+    "tw": {
+      "localization": {
+        "token_display": {
+          "apple-vision-pro": "Apple Vision Pro"
+        }
+      },
+      "shop_paths": {
+        "apple-vision-pro": "shop/buy-vision/apple-vision-pro"
+      }
+    },
+    "uk": {
+      "localization": {
+        "token_display": {
+          "apple-vision-pro": "Apple Vision Pro"
+        }
+      },
+      "shop_paths": {
+        "apple-vision-pro": "shop/buy-vision/apple-vision-pro"
+      }
+    },
+    "us": {
+      "localization": {
+        "token_display": {
+          "apple-vision-pro": "Apple Vision Pro"
+        }
+      },
+      "shop_paths": {
+        "apple-vision-pro": "shop/buy-vision/apple-vision-pro"
+      }
+    }
+  },
+  "discovered_models": {
+    "ae": {
+      "apple-vision-pro": {
+        "skus": {
+          "MFHE4B/A": {
+            "capacity": "256GB",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "avp",
+            "familyName": "Apple Vision Pro",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "avp"
+            },
+            "name": "Apple Vision Pro 256GB",
+            "partNumber": "MFHE4B/A"
+          },
+          "MFHF4B/A": {
+            "capacity": "512GB",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "avp",
+            "familyName": "Apple Vision Pro",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "avp"
+            },
+            "name": "Apple Vision Pro 512GB",
+            "partNumber": "MFHF4B/A"
+          },
+          "MFHG4B/A": {
+            "capacity": "1TB",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "avp",
+            "familyName": "Apple Vision Pro",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "avp"
+            },
+            "name": "Apple Vision Pro 1TB",
+            "partNumber": "MFHG4B/A"
+          }
+        },
+        "url": "https://www.apple.com/ae/shop/buy-vision/apple-vision-pro"
+      }
+    },
+    "au": {
+      "apple-vision-pro": {
+        "skus": {
+          "MFHE4X/A": {
+            "capacity": "256GB",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "avp",
+            "familyName": "Apple Vision Pro",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "avp"
+            },
+            "name": "Apple Vision Pro 256GB",
+            "partNumber": "MFHE4X/A"
+          },
+          "MFHF4X/A": {
+            "capacity": "512GB",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "avp",
+            "familyName": "Apple Vision Pro",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "avp"
+            },
+            "name": "Apple Vision Pro 512GB",
+            "partNumber": "MFHF4X/A"
+          },
+          "MFHG4X/A": {
+            "capacity": "1TB",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "avp",
+            "familyName": "Apple Vision Pro",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "avp"
+            },
+            "name": "Apple Vision Pro 1TB",
+            "partNumber": "MFHG4X/A"
+          }
+        },
+        "url": "https://www.apple.com/au/shop/buy-vision/apple-vision-pro"
+      }
+    },
+    "ca": {
+      "apple-vision-pro": {
+        "skus": {
+          "MFHE4AM/A": {
+            "capacity": "256GB",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "avp",
+            "familyName": "Apple Vision Pro",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "avp"
+            },
+            "name": "Apple Vision Pro 256GB",
+            "partNumber": "MFHE4AM/A"
+          },
+          "MFHF4AM/A": {
+            "capacity": "512GB",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "avp",
+            "familyName": "Apple Vision Pro",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "avp"
+            },
+            "name": "Apple Vision Pro 512GB",
+            "partNumber": "MFHF4AM/A"
+          },
+          "MFHG4AM/A": {
+            "capacity": "1TB",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "avp",
+            "familyName": "Apple Vision Pro",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "avp"
+            },
+            "name": "Apple Vision Pro 1TB",
+            "partNumber": "MFHG4AM/A"
+          }
+        },
+        "url": "https://www.apple.com/ca/shop/buy-vision/apple-vision-pro"
+      }
+    },
+    "cn": {
+      "apple-vision-pro": {
+        "skus": {
+          "MFHE4CH/A": {
+            "capacity": "256GB",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "avp",
+            "familyName": "Apple Vision Pro",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "avp"
+            },
+            "name": "Apple Vision Pro 256 GB",
+            "partNumber": "MFHE4CH/A"
+          },
+          "MFHF4CH/A": {
+            "capacity": "512GB",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "avp",
+            "familyName": "Apple Vision Pro",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "avp"
+            },
+            "name": "Apple Vision Pro 512 GB",
+            "partNumber": "MFHF4CH/A"
+          },
+          "MFHG4CH/A": {
+            "capacity": "1TB",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "avp",
+            "familyName": "Apple Vision Pro",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "avp"
+            },
+            "name": "Apple Vision Pro 1 TB",
+            "partNumber": "MFHG4CH/A"
+          }
+        },
+        "url": "https://www.apple.com/cn/shop/buy-vision/apple-vision-pro"
+      }
+    },
+    "de": {
+      "apple-vision-pro": {
+        "skus": {
+          "MFHE4FD/A": {
+            "capacity": "256GB",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "avp",
+            "familyName": "Apple Vision Pro",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "avp"
+            },
+            "name": "Apple Vision Pro 256 GB",
+            "partNumber": "MFHE4FD/A"
+          },
+          "MFHF4FD/A": {
+            "capacity": "512GB",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "avp",
+            "familyName": "Apple Vision Pro",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "avp"
+            },
+            "name": "Apple Vision Pro 512 GB",
+            "partNumber": "MFHF4FD/A"
+          },
+          "MFHG4FD/A": {
+            "capacity": "1TB",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "avp",
+            "familyName": "Apple Vision Pro",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "avp"
+            },
+            "name": "Apple Vision Pro 1 TB",
+            "partNumber": "MFHG4FD/A"
+          }
+        },
+        "url": "https://www.apple.com/de/shop/buy-vision/apple-vision-pro"
+      }
+    },
+    "fr": {
+      "apple-vision-pro": {
+        "skus": {
+          "MFHE4FD/A": {
+            "capacity": "256 Go",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "avp",
+            "familyName": "Apple Vision Pro",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "avp"
+            },
+            "name": "Apple Vision Pro 256 Go",
+            "partNumber": "MFHE4FD/A"
+          },
+          "MFHF4FD/A": {
+            "capacity": "512 Go",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "avp",
+            "familyName": "Apple Vision Pro",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "avp"
+            },
+            "name": "Apple Vision Pro 512 Go",
+            "partNumber": "MFHF4FD/A"
+          },
+          "MFHG4FD/A": {
+            "capacity": "1 To",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "avp",
+            "familyName": "Apple Vision Pro",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "avp"
+            },
+            "name": "Apple Vision Pro 1 To",
+            "partNumber": "MFHG4FD/A"
+          }
+        },
+        "url": "https://www.apple.com/fr/shop/buy-vision/apple-vision-pro"
+      }
+    },
+    "hk": {
+      "apple-vision-pro": {
+        "skus": {
+          "MFHE4ZP/A": {
+            "capacity": "256GB",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "avp",
+            "familyName": "Apple Vision Pro",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "avp"
+            },
+            "name": "Apple Vision Pro 256GB",
+            "partNumber": "MFHE4ZP/A"
+          },
+          "MFHF4ZP/A": {
+            "capacity": "512GB",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "avp",
+            "familyName": "Apple Vision Pro",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "avp"
+            },
+            "name": "Apple Vision Pro 512GB",
+            "partNumber": "MFHF4ZP/A"
+          },
+          "MFHG4ZP/A": {
+            "capacity": "1TB",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "avp",
+            "familyName": "Apple Vision Pro",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "avp"
+            },
+            "name": "Apple Vision Pro 1TB",
+            "partNumber": "MFHG4ZP/A"
+          }
+        },
+        "url": "https://www.apple.com/hk/shop/buy-vision/apple-vision-pro"
+      }
+    },
+    "jp": {
+      "apple-vision-pro": {
+        "skus": {
+          "MFHE4J/A": {
+            "capacity": "256GB",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "avp",
+            "familyName": "Apple Vision Pro",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "avp"
+            },
+            "name": "Apple Vision Pro 256GB",
+            "partNumber": "MFHE4J/A"
+          },
+          "MFHF4J/A": {
+            "capacity": "512GB",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "avp",
+            "familyName": "Apple Vision Pro",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "avp"
+            },
+            "name": "Apple Vision Pro 512GB",
+            "partNumber": "MFHF4J/A"
+          },
+          "MFHG4J/A": {
+            "capacity": "1TB",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "avp",
+            "familyName": "Apple Vision Pro",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "avp"
+            },
+            "name": "Apple Vision Pro 1TB",
+            "partNumber": "MFHG4J/A"
+          }
+        },
+        "url": "https://www.apple.com/jp/shop/buy-vision/apple-vision-pro"
+      }
+    },
+    "kr": {
+      "apple-vision-pro": {
+        "skus": {
+          "MFHE4KH/A": {
+            "capacity": "256GB",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "avp",
+            "familyName": "Apple Vision Pro",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "avp"
+            },
+            "name": "Apple Vision Pro 256GB",
+            "partNumber": "MFHE4KH/A"
+          },
+          "MFHF4KH/A": {
+            "capacity": "512GB",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "avp",
+            "familyName": "Apple Vision Pro",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "avp"
+            },
+            "name": "Apple Vision Pro 512GB",
+            "partNumber": "MFHF4KH/A"
+          },
+          "MFHG4KH/A": {
+            "capacity": "1TB",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "avp",
+            "familyName": "Apple Vision Pro",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "avp"
+            },
+            "name": "Apple Vision Pro 1TB",
+            "partNumber": "MFHG4KH/A"
+          }
+        },
+        "url": "https://www.apple.com/kr/shop/buy-vision/apple-vision-pro"
+      }
+    },
+    "sg": {
+      "apple-vision-pro": {
+        "skus": {
+          "MFHE4ZP/A": {
+            "capacity": "256GB",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "avp",
+            "familyName": "Apple Vision Pro",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "avp"
+            },
+            "name": "Apple Vision Pro 256GB",
+            "partNumber": "MFHE4ZP/A"
+          },
+          "MFHF4ZP/A": {
+            "capacity": "512GB",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "avp",
+            "familyName": "Apple Vision Pro",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "avp"
+            },
+            "name": "Apple Vision Pro 512GB",
+            "partNumber": "MFHF4ZP/A"
+          },
+          "MFHG4ZP/A": {
+            "capacity": "1TB",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "avp",
+            "familyName": "Apple Vision Pro",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "avp"
+            },
+            "name": "Apple Vision Pro 1TB",
+            "partNumber": "MFHG4ZP/A"
+          }
+        },
+        "url": "https://www.apple.com/sg/shop/buy-vision/apple-vision-pro"
+      }
+    },
+    "tw": {
+      "apple-vision-pro": {
+        "skus": {
+          "MFHE4TA/A": {
+            "capacity": "256GB",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "avp",
+            "familyName": "Apple Vision Pro",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "avp"
+            },
+            "name": "Apple Vision Pro 256GB",
+            "partNumber": "MFHE4TA/A"
+          },
+          "MFHF4TA/A": {
+            "capacity": "512GB",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "avp",
+            "familyName": "Apple Vision Pro",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "avp"
+            },
+            "name": "Apple Vision Pro 512GB",
+            "partNumber": "MFHF4TA/A"
+          },
+          "MFHG4TA/A": {
+            "capacity": "1TB",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "avp",
+            "familyName": "Apple Vision Pro",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "avp"
+            },
+            "name": "Apple Vision Pro 1TB",
+            "partNumber": "MFHG4TA/A"
+          }
+        },
+        "url": "https://www.apple.com/tw/shop/buy-vision/apple-vision-pro"
+      }
+    },
+    "uk": {
+      "apple-vision-pro": {
+        "skus": {
+          "MFHE4B/A": {
+            "capacity": "256GB",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "avp",
+            "familyName": "Apple Vision Pro",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "avp"
+            },
+            "name": "Apple Vision Pro 256GB",
+            "partNumber": "MFHE4B/A"
+          },
+          "MFHF4B/A": {
+            "capacity": "512GB",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "avp",
+            "familyName": "Apple Vision Pro",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "avp"
+            },
+            "name": "Apple Vision Pro 512GB",
+            "partNumber": "MFHF4B/A"
+          },
+          "MFHG4B/A": {
+            "capacity": "1TB",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "avp",
+            "familyName": "Apple Vision Pro",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "avp"
+            },
+            "name": "Apple Vision Pro 1TB",
+            "partNumber": "MFHG4B/A"
+          }
+        },
+        "url": "https://www.apple.com/uk/shop/buy-vision/apple-vision-pro"
+      }
+    },
+    "us": {
+      "apple-vision-pro": {
+        "skus": {
+          "MFHE4AM/A": {
+            "capacity": "256GB",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "avp",
+            "familyName": "Apple Vision Pro",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "avp"
+            },
+            "name": "Apple Vision Pro 256GB",
+            "partNumber": "MFHE4AM/A"
+          },
+          "MFHF4AM/A": {
+            "capacity": "512GB",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "avp",
+            "familyName": "Apple Vision Pro",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "avp"
+            },
+            "name": "Apple Vision Pro 512GB",
+            "partNumber": "MFHF4AM/A"
+          },
+          "MFHG4AM/A": {
+            "capacity": "1TB",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "avp",
+            "familyName": "Apple Vision Pro",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "avp"
+            },
+            "name": "Apple Vision Pro 1TB",
+            "partNumber": "MFHG4AM/A"
+          }
+        },
+        "url": "https://www.apple.com/us/shop/buy-vision/apple-vision-pro"
+      }
+    }
+  }
+}

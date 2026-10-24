@@ -1,0 +1,525 @@
+{
+  "_meta": {
+    "family": "ipad",
+    "generated_at": "2026-10-16T12:27:58.660918+00:00",
+    "regions_scraped": 33,
+    "scraper_version": "1.0",
+    "token": "ipad-10-2"
+  },
+  "country_mappings": {
+    "ae": {
+      "localization": {
+        "token_display": {
+          "ipad-10-2": "iPad 10 2"
+        }
+      },
+      "shop_paths": {
+        "ipad-10-2": "shop/buy-ipad/ipad-10-2"
+      }
+    },
+    "at": {
+      "localization": {
+        "token_display": {
+          "ipad-10-2": "iPad 10 2"
+        }
+      },
+      "shop_paths": {
+        "ipad-10-2": "shop/buy-ipad/ipad-10-2"
+      }
+    },
+    "au": {
+      "localization": {
+        "token_display": {
+          "ipad-10-2": "iPad 10 2"
+        }
+      },
+      "shop_paths": {
+        "ipad-10-2": "shop/buy-ipad/ipad-10-2"
+      }
+    },
+    "be-fr": {
+      "localization": {
+        "token_display": {
+          "ipad-10-2": "iPad 10 2"
+        }
+      },
+      "shop_paths": {
+        "ipad-10-2": "shop/buy-ipad/ipad-10-2"
+      }
+    },
+    "be-nl": {
+      "localization": {
+        "token_display": {
+          "ipad-10-2": "iPad 10 2"
+        }
+      },
+      "shop_paths": {
+        "ipad-10-2": "shop/buy-ipad/ipad-10-2"
+      }
+    },
+    "br": {
+      "localization": {
+        "token_display": {
+          "ipad-10-2": "iPad 10 2"
+        }
+      },
+      "shop_paths": {
+        "ipad-10-2": "shop/buy-ipad/ipad-10-2"
+      }
+    },
+    "ca": {
+      "localization": {
+        "token_display": {
+          "ipad-10-2": "iPad 10 2"
+        }
+      },
+      "shop_paths": {
+        "ipad-10-2": "shop/buy-ipad/ipad-10-2"
+      }
+    },
+    "ch-de": {
+      "localization": {
+        "token_display": {
+          "ipad-10-2": "iPad 10 2"
+        }
+      },
+      "shop_paths": {
+        "ipad-10-2": "shop/buy-ipad/ipad-10-2"
+      }
+    },
+    "ch-fr": {
+      "localization": {
+        "token_display": {
+          "ipad-10-2": "iPad 10 2"
+        }
+      },
+      "shop_paths": {
+        "ipad-10-2": "shop/buy-ipad/ipad-10-2"
+      }
+    },
+    "cn": {
+      "localization": {
+        "token_display": {
+          "ipad-10-2": "iPad 10 2"
+        }
+      },
+      "shop_paths": {
+        "ipad-10-2": "shop/buy-ipad/ipad-10-2"
+      }
+    },
+    "de": {
+      "localization": {
+        "token_display": {
+          "ipad-10-2": "iPad 10 2"
+        }
+      },
+      "shop_paths": {
+        "ipad-10-2": "shop/buy-ipad/ipad-10-2"
+      }
+    },
+    "dk": {
+      "localization": {
+        "token_display": {
+          "ipad-10-2": "iPad 10 2"
+        }
+      },
+      "shop_paths": {
+        "ipad-10-2": "shop/buy-ipad/ipad-10-2"
+      }
+    },
+    "es": {
+      "localization": {
+        "token_display": {
+          "ipad-10-2": "iPad 10 2"
+        }
+      },
+      "shop_paths": {
+        "ipad-10-2": "shop/buy-ipad/ipad-10-2"
+      }
+    },
+    "fi": {
+      "localization": {
+        "token_display": {
+          "ipad-10-2": "iPad 10 2"
+        }
+      },
+      "shop_paths": {
+        "ipad-10-2": "shop/buy-ipad/ipad-10-2"
+      }
+    },
+    "fr": {
+      "localization": {
+        "token_display": {
+          "ipad-10-2": "iPad 10 2"
+        }
+      },
+      "shop_paths": {
+        "ipad-10-2": "shop/buy-ipad/ipad-10-2"
+      }
+    },
+    "hk": {
+      "localization": {
+        "token_display": {
+          "ipad-10-2": "iPad 10 2"
+        }
+      },
+      "shop_paths": {
+        "ipad-10-2": "shop/buy-ipad/ipad-10-2"
+      }
+    },
+    "in": {
+      "localization": {
+        "token_display": {
+          "ipad-10-2": "iPad 10 2"
+        }
+      },
+      "shop_paths": {
+        "ipad-10-2": "shop/buy-ipad/ipad-10-2"
+      }
+    },
+    "it": {
+      "localization": {
+        "token_display": {
+          "ipad-10-2": "iPad 10 2"
+        }
+      },
+      "shop_paths": {
+        "ipad-10-2": "shop/buy-ipad/ipad-10-2"
+      }
+    },
+    "jp": {
+      "localization": {
+        "token_display": {
+          "ipad-10-2": "iPad 10 2"
+        }
+      },
+      "shop_paths": {
+        "ipad-10-2": "shop/buy-ipad/ipad-10-2"
+      }
+    },
+    "kr": {
+      "localization": {
+        "token_display": {
+          "ipad-10-2": "iPad 10 2"
+        }
+      },
+      "shop_paths": {
+        "ipad-10-2": "shop/buy-ipad/ipad-10-2"
+      }
+    },
+    "mx": {
+      "localization": {
+        "token_display": {
+          "ipad-10-2": "iPad 10 2"
+        }
+      },
+      "shop_paths": {
+        "ipad-10-2": "shop/buy-ipad/ipad-10-2"
+      }
+    },
+    "my": {
+      "localization": {
+        "token_display": {
+          "ipad-10-2": "iPad 10 2"
+        }
+      },
+      "shop_paths": {
+        "ipad-10-2": "shop/buy-ipad/ipad-10-2"
+      }
+    },
+    "nl": {
+      "localization": {
+        "token_display": {
+          "ipad-10-2": "iPad 10 2"
+        }
+      },
+      "shop_paths": {
+        "ipad-10-2": "shop/buy-ipad/ipad-10-2"
+      }
+    },
+    "no": {
+      "localization": {
+        "token_display": {
+          "ipad-10-2": "iPad 10 2"
+        }
+      },
+      "shop_paths": {
+        "ipad-10-2": "shop/buy-ipad/ipad-10-2"
+      }
+    },
+    "sa": {
+      "localization": {
+        "token_display": {
+          "ipad-10-2": "iPad 10 2"
+        }
+      },
+      "shop_paths": {
+        "ipad-10-2": "shop/buy-ipad/ipad-10-2"
+      }
+    },
+    "se": {
+      "localization": {
+        "token_display": {
+          "ipad-10-2": "iPad 10 2"
+        }
+      },
+      "shop_paths": {
+        "ipad-10-2": "shop/buy-ipad/ipad-10-2"
+      }
+    },
+    "sg": {
+      "localization": {
+        "token_display": {
+          "ipad-10-2": "iPad 10 2"
+        }
+      },
+      "shop_paths": {
+        "ipad-10-2": "shop/buy-ipad/ipad-10-2"
+      }
+    },
+    "th": {
+      "localization": {
+        "token_display": {
+          "ipad-10-2": "iPad 10 2"
+        }
+      },
+      "shop_paths": {
+        "ipad-10-2": "shop/buy-ipad/ipad-10-2"
+      }
+    },
+    "tr": {
+      "localization": {
+        "token_display": {
+          "ipad-10-2": "iPad 10 2"
+        }
+      },
+      "shop_paths": {
+        "ipad-10-2": "shop/buy-ipad/ipad-10-2"
+      }
+    },
+    "tw": {
+      "localization": {
+        "token_display": {
+          "ipad-10-2": "iPad 10 2"
+        }
+      },
+      "shop_paths": {
+        "ipad-10-2": "shop/buy-ipad/ipad-10-2"
+      }
+    },
+    "uk": {
+      "localization": {
+        "token_display": {
+          "ipad-10-2": "iPad 10 2"
+        }
+      },
+      "shop_paths": {
+        "ipad-10-2": "shop/buy-ipad/ipad-10-2"
+      }
+    },
+    "us": {
+      "localization": {
+        "token_display": {
+          "ipad-10-2": "iPad 10 2"
+        }
+      },
+      "shop_paths": {
+        "ipad-10-2": "shop/buy-ipad/ipad-10-2"
+      }
+    }
+  },
+  "discovered_models": {
+    "ae": {
+      "ipad-10-2": {
+        "skus": {},
+        "url": "https://www.apple.com/ae/shop/buy-ipad/ipad-10-2"
+      }
+    },
+    "at": {
+      "ipad-10-2": {
+        "skus": {},
+        "url": "https://www.apple.com/at/shop/buy-ipad/ipad-10-2"
+      }
+    },
+    "au": {
+      "ipad-10-2": {
+        "skus": {},
+        "url": "https://www.apple.com/au/shop/buy-ipad/ipad-10-2"
+      }
+    },
+    "be-fr": {
+      "ipad-10-2": {
+        "skus": {},
+        "url": "https://www.apple.com/be-fr/shop/buy-ipad/ipad-10-2"
+      }
+    },
+    "be-nl": {
+      "ipad-10-2": {
+        "skus": {},
+        "url": "https://www.apple.com/be-nl/shop/buy-ipad/ipad-10-2"
+      }
+    },
+    "br": {
+      "ipad-10-2": {
+        "skus": {},
+        "url": "https://www.apple.com/br/shop/buy-ipad/ipad-10-2"
+      }
+    },
+    "ca": {
+      "ipad-10-2": {
+        "skus": {},
+        "url": "https://www.apple.com/ca/shop/buy-ipad/ipad-10-2"
+      }
+    },
+    "ch-de": {
+      "ipad-10-2": {
+        "skus": {},
+        "url": "https://www.apple.com/ch-de/shop/buy-ipad/ipad-10-2"
+      }
+    },
+    "ch-fr": {
+      "ipad-10-2": {
+        "skus": {},
+        "url": "https://www.apple.com/ch-fr/shop/buy-ipad/ipad-10-2"
+      }
+    },
+    "cn": {
+      "ipad-10-2": {
+        "skus": {},
+        "url": "https://www.apple.com/cn/shop/buy-ipad/ipad-10-2"
+      }
+    },
+    "de": {
+      "ipad-10-2": {
+        "skus": {},
+        "url": "https://www.apple.com/de/shop/buy-ipad/ipad-10-2"
+      }
+    },
+    "dk": {
+      "ipad-10-2": {
+        "skus": {},
+        "url": "https://www.apple.com/dk/shop/buy-ipad/ipad-10-2"
+      }
+    },
+    "es": {
+      "ipad-10-2": {
+        "skus": {},
+        "url": "https://www.apple.com/es/shop/buy-ipad/ipad-10-2"
+      }
+    },
+    "fi": {
+      "ipad-10-2": {
+        "skus": {},
+        "url": "https://www.apple.com/fi/shop/buy-ipad/ipad-10-2"
+      }
+    },
+    "fr": {
+      "ipad-10-2": {
+        "skus": {},
+        "url": "https://www.apple.com/fr/shop/buy-ipad/ipad-10-2"
+      }
+    },
+    "hk": {
+      "ipad-10-2": {
+        "skus": {},
+        "url": "https://www.apple.com/hk/shop/buy-ipad/ipad-10-2"
+      }
+    },
+    "in": {
+      "ipad-10-2": {
+        "skus": {},
+        "url": "https://www.apple.com/in/shop/buy-ipad/ipad-10-2"
+      }
+    },
+    "it": {
+      "ipad-10-2": {
+        "skus": {},
+        "url": "https://www.apple.com/it/shop/buy-ipad/ipad-10-2"
+      }
+    },
+    "jp": {
+      "ipad-10-2": {
+        "skus": {},
+        "url": "https://www.apple.com/jp/shop/buy-ipad/ipad-10-2"
+      }
+    },
+    "kr": {
+      "ipad-10-2": {
+        "skus": {},
+        "url": "https://www.apple.com/kr/shop/buy-ipad/ipad-10-2"
+      }
+    },
+    "mx": {
+      "ipad-10-2": {
+        "skus": {},
+        "url": "https://www.apple.com/mx/shop/buy-ipad/ipad-10-2"
+      }
+    },
+    "my": {
+      "ipad-10-2": {
+        "skus": {},
+        "url": "https://www.apple.com/my/shop/buy-ipad/ipad-10-2"
+      }
+    },
+    "nl": {
+      "ipad-10-2": {
+        "skus": {},
+        "url": "https://www.apple.com/nl/shop/buy-ipad/ipad-10-2"
+      }
+    },
+    "no": {
+      "ipad-10-2": {
+        "skus": {},
+        "url": "https://www.apple.com/no/shop/buy-ipad/ipad-10-2"
+      }
+    },
+    "sa": {
+      "ipad-10-2": {
+        "skus": {},
+        "url": "https://www.apple.com/sa/shop/buy-ipad/ipad-10-2"
+      }
+    },
+    "se": {
+      "ipad-10-2": {
+        "skus": {},
+        "url": "https://www.apple.com/se/shop/buy-ipad/ipad-10-2"
+      }
+    },
+    "sg": {
+      "ipad-10-2": {
+        "skus": {},
+        "url": "https://www.apple.com/sg/shop/buy-ipad/ipad-10-2"
+      }
+    },
+    "th": {
+      "ipad-10-2": {
+        "skus": {},
+        "url": "https://www.apple.com/th/shop/buy-ipad/ipad-10-2"
+      }
+    },
+    "tr": {
+      "ipad-10-2": {
+        "skus": {},
+        "url": "https://www.apple.com/tr/shop/buy-ipad/ipad-10-2"
+      }
+    },
+    "tw": {
+      "ipad-10-2": {
+        "skus": {},
+        "url": "https://www.apple.com/tw/shop/buy-ipad/ipad-10-2"
+      }
+    },
+    "uk": {
+      "ipad-10-2": {
+        "skus": {},
+        "url": "https://www.apple.com/uk/shop/buy-ipad/ipad-10-2"
+      }
+    },
+    "us": {
+      "ipad-10-2": {
+        "skus": {},
+        "url": "https://www.apple.com/us/shop/buy-ipad/ipad-10-2"
+      }
+    }
+  }
+}

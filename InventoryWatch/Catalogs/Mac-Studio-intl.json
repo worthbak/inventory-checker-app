@@ -1,0 +1,1389 @@
+{
+  "_meta": {
+    "family": "mac",
+    "generated_at": "2026-10-16T12:25:39.360870+00:00",
+    "regions_scraped": 33,
+    "scraper_version": "1.0",
+    "token": "mac-studio"
+  },
+  "country_mappings": {
+    "ae": {
+      "localization": {
+        "token_display": {
+          "mac-studio": "Mac Studio"
+        }
+      },
+      "shop_paths": {
+        "mac-studio": "shop/buy-mac/mac-studio"
+      }
+    },
+    "at": {
+      "localization": {
+        "token_display": {
+          "mac-studio": "Mac Studio"
+        }
+      },
+      "shop_paths": {
+        "mac-studio": "shop/buy-mac/mac-studio"
+      }
+    },
+    "au": {
+      "localization": {
+        "token_display": {
+          "mac-studio": "Mac Studio"
+        }
+      },
+      "shop_paths": {
+        "mac-studio": "shop/buy-mac/mac-studio"
+      }
+    },
+    "be-fr": {
+      "localization": {
+        "token_display": {
+          "mac-studio": "Mac Studio"
+        }
+      },
+      "shop_paths": {
+        "mac-studio": "shop/buy-mac/mac-studio"
+      }
+    },
+    "be-nl": {
+      "localization": {
+        "token_display": {
+          "mac-studio": "Mac Studio"
+        }
+      },
+      "shop_paths": {
+        "mac-studio": "shop/buy-mac/mac-studio"
+      }
+    },
+    "br": {
+      "localization": {
+        "token_display": {
+          "mac-studio": "Mac Studio"
+        }
+      },
+      "shop_paths": {
+        "mac-studio": "shop/buy-mac/mac-studio"
+      }
+    },
+    "ca": {
+      "localization": {
+        "token_display": {
+          "mac-studio": "Mac Studio"
+        }
+      },
+      "shop_paths": {
+        "mac-studio": "shop/buy-mac/mac-studio"
+      }
+    },
+    "ch-de": {
+      "localization": {
+        "token_display": {
+          "mac-studio": "Mac Studio"
+        }
+      },
+      "shop_paths": {
+        "mac-studio": "shop/buy-mac/mac-studio"
+      }
+    },
+    "ch-fr": {
+      "localization": {
+        "token_display": {
+          "mac-studio": "Mac Studio"
+        }
+      },
+      "shop_paths": {
+        "mac-studio": "shop/buy-mac/mac-studio"
+      }
+    },
+    "cn": {
+      "localization": {
+        "token_display": {
+          "mac-studio": "Mac Studio"
+        }
+      },
+      "shop_paths": {
+        "mac-studio": "shop/buy-mac/mac-studio"
+      }
+    },
+    "de": {
+      "localization": {
+        "token_display": {
+          "mac-studio": "Mac Studio"
+        }
+      },
+      "shop_paths": {
+        "mac-studio": "shop/buy-mac/mac-studio"
+      }
+    },
+    "dk": {
+      "localization": {
+        "token_display": {
+          "mac-studio": "Mac Studio"
+        }
+      },
+      "shop_paths": {
+        "mac-studio": "shop/buy-mac/mac-studio"
+      }
+    },
+    "es": {
+      "localization": {
+        "token_display": {
+          "mac-studio": "Mac Studio"
+        }
+      },
+      "shop_paths": {
+        "mac-studio": "shop/buy-mac/mac-studio"
+      }
+    },
+    "fi": {
+      "localization": {
+        "token_display": {
+          "mac-studio": "Mac Studio"
+        }
+      },
+      "shop_paths": {
+        "mac-studio": "shop/buy-mac/mac-studio"
+      }
+    },
+    "fr": {
+      "localization": {
+        "token_display": {
+          "mac-studio": "Mac Studio"
+        }
+      },
+      "shop_paths": {
+        "mac-studio": "shop/buy-mac/mac-studio"
+      }
+    },
+    "hk": {
+      "localization": {
+        "token_display": {
+          "mac-studio": "Mac Studio"
+        }
+      },
+      "shop_paths": {
+        "mac-studio": "shop/buy-mac/mac-studio"
+      }
+    },
+    "in": {
+      "localization": {
+        "token_display": {
+          "mac-studio": "Mac Studio"
+        }
+      },
+      "shop_paths": {
+        "mac-studio": "shop/buy-mac/mac-studio"
+      }
+    },
+    "it": {
+      "localization": {
+        "token_display": {
+          "mac-studio": "Mac Studio"
+        }
+      },
+      "shop_paths": {
+        "mac-studio": "shop/buy-mac/mac-studio"
+      }
+    },
+    "jp": {
+      "localization": {
+        "token_display": {
+          "mac-studio": "Mac Studio"
+        }
+      },
+      "shop_paths": {
+        "mac-studio": "shop/buy-mac/mac-studio"
+      }
+    },
+    "kr": {
+      "localization": {
+        "token_display": {
+          "mac-studio": "Mac Studio"
+        }
+      },
+      "shop_paths": {
+        "mac-studio": "shop/buy-mac/mac-studio"
+      }
+    },
+    "mx": {
+      "localization": {
+        "token_display": {
+          "mac-studio": "Mac Studio"
+        }
+      },
+      "shop_paths": {
+        "mac-studio": "shop/buy-mac/mac-studio"
+      }
+    },
+    "my": {
+      "localization": {
+        "token_display": {
+          "mac-studio": "Mac Studio"
+        }
+      },
+      "shop_paths": {
+        "mac-studio": "shop/buy-mac/mac-studio"
+      }
+    },
+    "nl": {
+      "localization": {
+        "token_display": {
+          "mac-studio": "Mac Studio"
+        }
+      },
+      "shop_paths": {
+        "mac-studio": "shop/buy-mac/mac-studio"
+      }
+    },
+    "no": {
+      "localization": {
+        "token_display": {
+          "mac-studio": "Mac Studio"
+        }
+      },
+      "shop_paths": {
+        "mac-studio": "shop/buy-mac/mac-studio"
+      }
+    },
+    "sa": {
+      "localization": {
+        "token_display": {
+          "mac-studio": "Mac Studio"
+        }
+      },
+      "shop_paths": {
+        "mac-studio": "shop/buy-mac/mac-studio"
+      }
+    },
+    "se": {
+      "localization": {
+        "token_display": {
+          "mac-studio": "Mac Studio"
+        }
+      },
+      "shop_paths": {
+        "mac-studio": "shop/buy-mac/mac-studio"
+      }
+    },
+    "sg": {
+      "localization": {
+        "token_display": {
+          "mac-studio": "Mac Studio"
+        }
+      },
+      "shop_paths": {
+        "mac-studio": "shop/buy-mac/mac-studio"
+      }
+    },
+    "th": {
+      "localization": {
+        "token_display": {
+          "mac-studio": "Mac Studio"
+        }
+      },
+      "shop_paths": {
+        "mac-studio": "shop/buy-mac/mac-studio"
+      }
+    },
+    "tr": {
+      "localization": {
+        "token_display": {
+          "mac-studio": "Mac Studio"
+        }
+      },
+      "shop_paths": {
+        "mac-studio": "shop/buy-mac/mac-studio"
+      }
+    },
+    "tw": {
+      "localization": {
+        "token_display": {
+          "mac-studio": "Mac Studio"
+        }
+      },
+      "shop_paths": {
+        "mac-studio": "shop/buy-mac/mac-studio"
+      }
+    },
+    "uk": {
+      "localization": {
+        "token_display": {
+          "mac-studio": "Mac Studio"
+        }
+      },
+      "shop_paths": {
+        "mac-studio": "shop/buy-mac/mac-studio"
+      }
+    },
+    "us": {
+      "localization": {
+        "token_display": {
+          "mac-studio": "Mac Studio"
+        }
+      },
+      "shop_paths": {
+        "mac-studio": "shop/buy-mac/mac-studio"
+      }
+    }
+  },
+  "discovered_models": {
+    "ae": {
+      "mac-studio": {
+        "skus": {
+          "MHL64AB/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
+            },
+            "name": "Mac Studio M5 Max (18-Core CPU / 32-Core GPU)"
+          },
+          "MHL74AB/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Ultra (30-Core CPU / 64-Core GPU)"
+            },
+            "name": "Mac Studio M5 Ultra (30-Core CPU / 64-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/ae/shop/buy-mac/mac-studio"
+      }
+    },
+    "at": {
+      "mac-studio": {
+        "skus": {
+          "MHL64ZD/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
+            },
+            "name": "Mac Studio M5 Max (18-Core CPU / 32-Core GPU)"
+          },
+          "MHL74ZD/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Ultra (30-Core CPU / 64-Core GPU)"
+            },
+            "name": "Mac Studio M5 Ultra (30-Core CPU / 64-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/at/shop/buy-mac/mac-studio"
+      }
+    },
+    "au": {
+      "mac-studio": {
+        "skus": {
+          "MHL64X/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
+            },
+            "name": "Mac Studio M5 Max (18-Core CPU / 32-Core GPU)"
+          },
+          "MHL74X/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Ultra (30-Core CPU / 64-Core GPU)"
+            },
+            "name": "Mac Studio M5 Ultra (30-Core CPU / 64-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/au/shop/buy-mac/mac-studio"
+      }
+    },
+    "be-fr": {
+      "mac-studio": {
+        "skus": {
+          "MHL64ZD/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
+            },
+            "name": "Mac Studio M5 Max (18-Core CPU / 32-Core GPU)"
+          },
+          "MHL74ZD/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Ultra (30-Core CPU / 64-Core GPU)"
+            },
+            "name": "Mac Studio M5 Ultra (30-Core CPU / 64-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/be-fr/shop/buy-mac/mac-studio"
+      }
+    },
+    "be-nl": {
+      "mac-studio": {
+        "skus": {
+          "MHL64ZD/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
+            },
+            "name": "Mac Studio M5 Max (18-Core CPU / 32-Core GPU)"
+          },
+          "MHL74ZD/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Ultra (30-Core CPU / 64-Core GPU)"
+            },
+            "name": "Mac Studio M5 Ultra (30-Core CPU / 64-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/be-nl/shop/buy-mac/mac-studio"
+      }
+    },
+    "br": {
+      "mac-studio": {
+        "skus": {
+          "MHL64BZ/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
+            },
+            "name": "Mac Studio M5 Max (18-Core CPU / 32-Core GPU)"
+          },
+          "MHL74BZ/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Ultra (30-Core CPU / 64-Core GPU)"
+            },
+            "name": "Mac Studio M5 Ultra (30-Core CPU / 64-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/br/shop/buy-mac/mac-studio"
+      }
+    },
+    "ca": {
+      "mac-studio": {
+        "skus": {
+          "MHL64VC/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
+            },
+            "name": "Mac Studio M5 Max (18-Core CPU / 32-Core GPU)"
+          },
+          "MHL74VC/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Ultra (30-Core CPU / 64-Core GPU)"
+            },
+            "name": "Mac Studio M5 Ultra (30-Core CPU / 64-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/ca/shop/buy-mac/mac-studio"
+      }
+    },
+    "ch-de": {
+      "mac-studio": {
+        "skus": {
+          "MHL64SM/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
+            },
+            "name": "Mac Studio M5 Max (18-Core CPU / 32-Core GPU)"
+          },
+          "MHL74SM/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Ultra (30-Core CPU / 64-Core GPU)"
+            },
+            "name": "Mac Studio M5 Ultra (30-Core CPU / 64-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/ch-de/shop/buy-mac/mac-studio"
+      }
+    },
+    "ch-fr": {
+      "mac-studio": {
+        "skus": {
+          "MHL64SM/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
+            },
+            "name": "Mac Studio M5 Max (18-Core CPU / 32-Core GPU)"
+          },
+          "MHL74SM/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Ultra (30-Core CPU / 64-Core GPU)"
+            },
+            "name": "Mac Studio M5 Ultra (30-Core CPU / 64-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/ch-fr/shop/buy-mac/mac-studio"
+      }
+    },
+    "cn": {
+      "mac-studio": {
+        "skus": {
+          "MHL64CH/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
+            },
+            "name": "Mac Studio M5 Max (18-Core CPU / 32-Core GPU)"
+          },
+          "MHL74CH/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Ultra (30-Core CPU / 64-Core GPU)"
+            },
+            "name": "Mac Studio M5 Ultra (30-Core CPU / 64-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/cn/shop/buy-mac/mac-studio"
+      }
+    },
+    "de": {
+      "mac-studio": {
+        "skus": {
+          "MHL64ZD/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
+            },
+            "name": "Mac Studio M5 Max (18-Core CPU / 32-Core GPU)"
+          },
+          "MHL74ZD/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Ultra (30-Core CPU / 64-Core GPU)"
+            },
+            "name": "Mac Studio M5 Ultra (30-Core CPU / 64-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/de/shop/buy-mac/mac-studio"
+      }
+    },
+    "dk": {
+      "mac-studio": {
+        "skus": {
+          "MHL64DK/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
+            },
+            "name": "Mac Studio M5 Max (18-Core CPU / 32-Core GPU)"
+          },
+          "MHL74DK/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Ultra (30-Core CPU / 64-Core GPU)"
+            },
+            "name": "Mac Studio M5 Ultra (30-Core CPU / 64-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/dk/shop/buy-mac/mac-studio"
+      }
+    },
+    "es": {
+      "mac-studio": {
+        "skus": {
+          "MHL64GR/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
+            },
+            "name": "Mac Studio M5 Max (18-Core CPU / 32-Core GPU)"
+          },
+          "MHL74GR/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Ultra (30-Core CPU / 64-Core GPU)"
+            },
+            "name": "Mac Studio M5 Ultra (30-Core CPU / 64-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/es/shop/buy-mac/mac-studio"
+      }
+    },
+    "fi": {
+      "mac-studio": {
+        "skus": {
+          "MHL64FS/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
+            },
+            "name": "Mac Studio M5 Max (18-Core CPU / 32-Core GPU)"
+          },
+          "MHL74FS/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Ultra (30-Core CPU / 64-Core GPU)"
+            },
+            "name": "Mac Studio M5 Ultra (30-Core CPU / 64-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/fi/shop/buy-mac/mac-studio"
+      }
+    },
+    "fr": {
+      "mac-studio": {
+        "skus": {
+          "MHL64ZD/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
+            },
+            "name": "Mac Studio M5 Max (18-Core CPU / 32-Core GPU)"
+          },
+          "MHL74ZD/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Ultra (30-Core CPU / 64-Core GPU)"
+            },
+            "name": "Mac Studio M5 Ultra (30-Core CPU / 64-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/fr/shop/buy-mac/mac-studio"
+      }
+    },
+    "hk": {
+      "mac-studio": {
+        "skus": {
+          "MHL64ZP/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
+            },
+            "name": "Mac Studio M5 Max (18-Core CPU / 32-Core GPU)"
+          },
+          "MHL74ZP/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Ultra (30-Core CPU / 64-Core GPU)"
+            },
+            "name": "Mac Studio M5 Ultra (30-Core CPU / 64-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/hk/shop/buy-mac/mac-studio"
+      }
+    },
+    "in": {
+      "mac-studio": {
+        "skus": {
+          "MHL64HN/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
+            },
+            "name": "Mac Studio M5 Max (18-Core CPU / 32-Core GPU)"
+          },
+          "MHL74HN/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Ultra (30-Core CPU / 64-Core GPU)"
+            },
+            "name": "Mac Studio M5 Ultra (30-Core CPU / 64-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/in/shop/buy-mac/mac-studio"
+      }
+    },
+    "it": {
+      "mac-studio": {
+        "skus": {
+          "MHL64T/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
+            },
+            "name": "Mac Studio M5 Max (18-Core CPU / 32-Core GPU)"
+          },
+          "MHL74T/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Ultra (30-Core CPU / 64-Core GPU)"
+            },
+            "name": "Mac Studio M5 Ultra (30-Core CPU / 64-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/it/shop/buy-mac/mac-studio"
+      }
+    },
+    "jp": {
+      "mac-studio": {
+        "skus": {
+          "MHL64J/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
+            },
+            "name": "Mac Studio M5 Max (18-Core CPU / 32-Core GPU)"
+          },
+          "MHL74J/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Ultra (30-Core CPU / 64-Core GPU)"
+            },
+            "name": "Mac Studio M5 Ultra (30-Core CPU / 64-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/jp/shop/buy-mac/mac-studio"
+      }
+    },
+    "kr": {
+      "mac-studio": {
+        "skus": {
+          "MHL64KH/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
+            },
+            "name": "Mac Studio M5 Max (18-Core CPU / 32-Core GPU)"
+          },
+          "MHL74KH/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Ultra (30-Core CPU / 64-Core GPU)"
+            },
+            "name": "Mac Studio M5 Ultra (30-Core CPU / 64-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/kr/shop/buy-mac/mac-studio"
+      }
+    },
+    "mx": {
+      "mac-studio": {
+        "skus": {
+          "MHL64E/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
+            },
+            "name": "Mac Studio M5 Max (18-Core CPU / 32-Core GPU)"
+          },
+          "MHL74E/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Ultra (30-Core CPU / 64-Core GPU)"
+            },
+            "name": "Mac Studio M5 Ultra (30-Core CPU / 64-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/mx/shop/buy-mac/mac-studio"
+      }
+    },
+    "my": {
+      "mac-studio": {
+        "skus": {
+          "MHL64ZP/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
+            },
+            "name": "Mac Studio M5 Max (18-Core CPU / 32-Core GPU)"
+          },
+          "MHL74ZP/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Ultra (30-Core CPU / 64-Core GPU)"
+            },
+            "name": "Mac Studio M5 Ultra (30-Core CPU / 64-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/my/shop/buy-mac/mac-studio"
+      }
+    },
+    "nl": {
+      "mac-studio": {
+        "skus": {
+          "MHL64ZD/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
+            },
+            "name": "Mac Studio M5 Max (18-Core CPU / 32-Core GPU)"
+          },
+          "MHL74ZD/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Ultra (30-Core CPU / 64-Core GPU)"
+            },
+            "name": "Mac Studio M5 Ultra (30-Core CPU / 64-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/nl/shop/buy-mac/mac-studio"
+      }
+    },
+    "no": {
+      "mac-studio": {
+        "skus": {
+          "MHL64FS/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
+            },
+            "name": "Mac Studio M5 Max (18-Core CPU / 32-Core GPU)"
+          },
+          "MHL74FS/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Ultra (30-Core CPU / 64-Core GPU)"
+            },
+            "name": "Mac Studio M5 Ultra (30-Core CPU / 64-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/no/shop/buy-mac/mac-studio"
+      }
+    },
+    "sa": {
+      "mac-studio": {
+        "skus": {
+          "MHL64AB/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
+            },
+            "name": "Mac Studio M5 Max (18-Core CPU / 32-Core GPU)"
+          },
+          "MHL74AB/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Ultra (30-Core CPU / 64-Core GPU)"
+            },
+            "name": "Mac Studio M5 Ultra (30-Core CPU / 64-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/sa/shop/buy-mac/mac-studio"
+      }
+    },
+    "se": {
+      "mac-studio": {
+        "skus": {
+          "MHL64FS/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
+            },
+            "name": "Mac Studio M5 Max (18-Core CPU / 32-Core GPU)"
+          },
+          "MHL74FS/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Ultra (30-Core CPU / 64-Core GPU)"
+            },
+            "name": "Mac Studio M5 Ultra (30-Core CPU / 64-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/se/shop/buy-mac/mac-studio"
+      }
+    },
+    "sg": {
+      "mac-studio": {
+        "skus": {
+          "MHL64ZP/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
+            },
+            "name": "Mac Studio M5 Max (18-Core CPU / 32-Core GPU)"
+          },
+          "MHL74ZP/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Ultra (30-Core CPU / 64-Core GPU)"
+            },
+            "name": "Mac Studio M5 Ultra (30-Core CPU / 64-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/sg/shop/buy-mac/mac-studio"
+      }
+    },
+    "th": {
+      "mac-studio": {
+        "skus": {
+          "MHL64TH/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
+            },
+            "name": "Mac Studio M5 Max (18-Core CPU / 32-Core GPU)"
+          },
+          "MHL74TH/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Ultra (30-Core CPU / 64-Core GPU)"
+            },
+            "name": "Mac Studio M5 Ultra (30-Core CPU / 64-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/th/shop/buy-mac/mac-studio"
+      }
+    },
+    "tr": {
+      "mac-studio": {
+        "skus": {
+          "MHL64TU/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
+            },
+            "name": "Mac Studio M5 Max (18-Core CPU / 32-Core GPU)"
+          },
+          "MHL74TU/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Ultra (30-Core CPU / 64-Core GPU)"
+            },
+            "name": "Mac Studio M5 Ultra (30-Core CPU / 64-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/tr/shop/buy-mac/mac-studio"
+      }
+    },
+    "tw": {
+      "mac-studio": {
+        "skus": {
+          "MHL64TA/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
+            },
+            "name": "Mac Studio M5 Max (18-Core CPU / 32-Core GPU)"
+          },
+          "MHL74TA/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Ultra (30-Core CPU / 64-Core GPU)"
+            },
+            "name": "Mac Studio M5 Ultra (30-Core CPU / 64-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/tw/shop/buy-mac/mac-studio"
+      }
+    },
+    "uk": {
+      "mac-studio": {
+        "skus": {
+          "MHL64B/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
+            },
+            "name": "Mac Studio M5 Max (18-Core CPU / 32-Core GPU)"
+          },
+          "MHL74B/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Ultra (30-Core CPU / 64-Core GPU)"
+            },
+            "name": "Mac Studio M5 Ultra (30-Core CPU / 64-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/uk/shop/buy-mac/mac-studio"
+      }
+    },
+    "us": {
+      "mac-studio": {
+        "skus": {
+          "MHL64LL/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
+            },
+            "name": "Mac Studio M5 Max (18-Core CPU / 32-Core GPU)"
+          },
+          "MHL74LL/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "family": "mac",
+            "familyName": "Mac Studio",
+            "metadata": {
+              "containerPartNumber": "RO_MACSTUDIO_M5MAX_M5ULTRA_BET_BES_2026",
+              "isRealPartNumber": true,
+              "processorDisplay": "M5 Ultra (30-Core CPU / 64-Core GPU)"
+            },
+            "name": "Mac Studio M5 Ultra (30-Core CPU / 64-Core GPU)"
+          }
+        },
+        "url": "https://www.apple.com/us/shop/buy-mac/mac-studio"
+      }
+    }
+  }
+}

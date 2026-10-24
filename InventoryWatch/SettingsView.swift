@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Foundation
 
 struct SettingsView: View {
     
@@ -16,6 +17,17 @@ struct SettingsView: View {
         var isFavorite: Bool
         
         var id: String { sku }
+    }
+
+    // Strip capacity and common color suffixes from any incoming iPhone model title
+    private func sanitizeModelTitle(_ title: String) -> String {
+        var s = title
+        // Remove capacity and anything after it (e.g., " 256GB Black")
+        if let re = try? NSRegularExpression(pattern: "(?i)\\s[0-9]{2,4}\\s?(?:GB|TB).*", options: []) {
+            let range = NSRange(location: 0, length: (s as NSString).length)
+            s = re.stringByReplacingMatches(in: s, options: [], range: range, withTemplate: "")
+        }
+        return s.trimmingCharacters(in: .whitespacesAndNewlines)
     }
     
     private struct StoreWithSelection: Identifiable, Equatable {
@@ -38,7 +50,14 @@ struct SettingsView: View {
     @AppStorage("preferredStoreNumber") private var preferredStoreNumber = ""
     @AppStorage("preferredSKUs") private var preferredSKUs: String = ""
     @AppStorage("preferredUpdateInterval") private var preferredUpdateInterval: Int = 1
-    @AppStorage("preferredProductType") private var preferredProductType: String = "MacBookPro"
+    @AppStorage("preferredProductType") private var preferredProductType: String = ProductFamily.iphone.rawValue
+    @AppStorage("preferredWatchToken") private var preferredWatchToken: String = ""
+    @AppStorage("preferredPhoneToken") private var preferredPhoneToken: String = ""
+    @AppStorage("preferredMacToken") private var preferredMacToken: String = ""
+    @AppStorage("preferrediPadToken") private var preferrediPadToken: String = ""
+    @AppStorage("preferredAirPodsToken") private var preferredAirPodsToken: String = ""
+    @AppStorage("preferredHomePodToken") private var preferredHomePodToken: String = ""
+    @AppStorage("preferredAVPToken") private var preferredAVPToken: String = ""
     @AppStorage("notifyOnlyForPreferredModels") private var notifyOnlyForPreferredModels: Bool = false
     @AppStorage("showResultsOnlyForPreferredModels") private var showResultsOnlyForPreferredModels: Bool = false
     @AppStorage("customSku") private var customSku = ""
@@ -51,121 +70,36 @@ struct SettingsView: View {
     @State private var allStores: [StoreWithSelection] = []
     @State private var storeSearchText: String = ""
     @State private var selectedStore: String = ""
+    @State private var availableWatchTokens: [String] = []
+    @State private var availablePhoneTokens: [String] = []
+    @State private var availableMacTokens: [String] = []
+    @State private var watchTokenNames: [String: String] = [:]
+    @State private var phoneTokenNames: [String: String] = [:]
+@State private var macTokenNames: [String: String] = [:]
+    @State private var availableiPadTokens: [String] = []
+    @State private var iPadTokenNames: [String: String] = [:]
+    @State private var availableAirPodsTokens: [String] = []
+    @State private var airpodsTokenNames: [String: String] = [:]
+    @State private var availableHomePodTokens: [String] = []
+    @State private var homepodTokenNames: [String: String] = [:]
+    @State private var availableAVPTokens: [String] = []
+    @State private var avpTokenNames: [String: String] = [:]
     
     var body: some View {
         VStack(alignment: .leading) {
-            HStack(alignment: .top, spacing: 24) {
-                VStack(alignment: .leading) {
-                    Picker("Country", selection: $selectedCountryIndex) {
-                        ForEach(0..<OrderedCountries.count, id: \.self) { index in
-                            let countryCode = OrderedCountries[index]
-                            let country = Countries[countryCode]
-                            Text(country?.name ?? countryCode)
-                        }
-                    }
-                    
-                    Picker("Product Type", selection: $preferredProductType) {
-                        ForEach(ProductCategory.allCases) { category in
-                            Divider()
-                            ForEach(category.products) { productType in
-                                Text(productType.presentableName).tag(productType.rawValue)
-                            }
-                        }
-                        
-                    }
-                    
-                    Picker("Update every", selection: $preferredUpdateInterval) {
-                        Text("Never").tag(0)
-                        Text("1 minute").tag(1)
-                        Text("5 minutes").tag(5)
-                        Text("30 minutes").tag(30)
-                        Text("60 minutes").tag(60)
-                    }
-                    
-                    Toggle(isOn: $notifyOnlyForPreferredModels) {
-                        Text("Notify only for preferred models")
-                            .padding(.leading, 4)
-                    }
-                    Toggle(isOn: $showResultsOnlyForPreferredModels) {
-                        Text("Only show results for preferred models")
-                            .padding(.leading, 4)
-                    }
-                    
-                    
+            if model.pickupErrorKeys.isEmpty == false {
+                HStack(spacing: 8) {
+                    Image(systemName: "exclamationmark.triangle.fill")
+                    Text("Apple pickup API warning: \(model.pickupErrorKeys.joined(separator: ", "))")
                 }
-                .fixedSize()
-                .padding(.leading, 8)
-                .padding(.bottom, 8)
-                
-                VStack(alignment: .leading) {
-                    HStack(alignment: .top) {
-                        Text("Custom SKU")
-                        VStack {
-                            TextField("Enter a custom SKU", text: $customSku)
-                            TextField("Custom SKU Nickname", text: $customSkuNickname)
-                        }
-                    }
-                    
-                    Toggle(isOn: $useLargeText) {
-                        Text("Use larger text sizes")
-                    }
-                    
-                    Toggle(isOn: $shouldIncludeNearbyStores) {
-                        Text("Include results from nearby stores")
-                    }
-                    
-                    if model.hasLatestVersion == false {
-                        Link(destination: URL(string: "https://worthbak.github.io/inventory-checker-app/")!) {
-                            HStack(spacing: 4) {
-                                Text("A new version of InventoryWatch is available - click here to download.")
-                                Image(systemName: "arrow.forward.circle")
-                            }
-                            .font(.headline)
-                        }
-                        .padding(.top, 16)
-                    }
-                }
+                .foregroundColor(.orange)
+                .padding(.bottom, 6)
             }
-            
-            HStack {
-                VStack(alignment: .leading) {
-                    Text("Preferred Model(s)")
-                        .font(.headline)
-                    
-                    Text("Only certain model configurations are stocked in-stores. If you believe a configuration is missing, [please open an issue](https://github.com/worthbak/inventory-checker-app/issues).")
-                        .font(.caption).italic()
-                    
-                    List {
-                        ForEach($allModels) { model in
-                            Toggle(isOn: model.isFavorite) {
-                                Text(model.name.wrappedValue)
-                                    .padding(.leading, 4)
-                            }
-                        }
-                    }
-                }
-                VStack(alignment: .leading) {
-                    Text("Preferred Store")
-                        .font(.headline)
-                    
-                    TextField("Filter by store name, city, state, or province", text: $storeSearchText)
-                        .padding(.top, -5)
-                    
-                    List {
-                        ForEach($allStores) { store in
-                            Toggle(isOn: store.isSelected) {
-                                let wrapped = store.wrappedValue
-                                Text("\(Text(wrapped.storeName).bold()) - \(wrapped.store.address.cityStateDisplay)")
-                                    .padding(.leading, 4)
-                            }
-                        }
-                    }
-                }
-            }.padding(.top, 8)
-            
+            topControls
+            modelsAndStores
+                .padding(.top, 8)
         }
         .padding()
-        
         .frame(
             minWidth: 500,
             maxWidth: .infinity,
@@ -173,83 +107,390 @@ struct SettingsView: View {
             maxHeight: .infinity,
             alignment: .center
         )
-        .onAppear {
-            Task {
-                loadCountries()
-                await loadSkus()
-                await loadStores(filterText: nil)
-                await model.fetchLatestGithubRelease()
+        .onAppear { onAppearSetup() }
+        .onChange(of: selectedCountryIndex) { _, newValue in handleSelectedCountryIndexChange(newValue) }
+        .onChange(of: allModels) { _, newValue in handleAllModelsChange(newValue) }
+        .onChange(of: storeSearchText) { _, newValue in handleStoreSearchTextChange(newValue) }
+        .onChange(of: allStores) { _, newValue in handleAllStoresChange(newValue) }
+        .onChange(of: preferredProductType) { _, newValue in handlePreferredProductTypeChange(newValue) }
+        .onChange(of: preferredStoreNumber) { handlePreferredStoreNumberChange() }
+        .onChange(of: preferredUpdateInterval) { handlePreferredUpdateIntervalChange() }
+        .onChange(of: preferredCountry) { handlePreferredCountryChange() }
+        .onChange(of: showResultsOnlyForPreferredModels) { handleReloadInventory() }
+        .onChange(of: shouldIncludeNearbyStores) { handleReloadInventory() }
+        .onChange(of: preferredWatchToken) { handlePreferredWatchTokenChange() }
+        .onChange(of: preferredPhoneToken) { handlePreferredPhoneTokenChange() }
+        .onChange(of: preferredMacToken) { handlePreferredMacTokenChange() }
+        .onChange(of: preferrediPadToken) { handlePreferrediPadTokenChange() }
+        .onChange(of: preferredAirPodsToken) { handlePreferredAirPodsTokenChange() }
+        .onChange(of: preferredHomePodToken) { handlePreferredHomePodTokenChange() }
+        .onChange(of: preferredAVPToken) { handlePreferredAVPTokenChange() }
+    }
+
+    // Break complex views into smaller computed blocks to assist the type-checker
+    @ViewBuilder private var topControls: some View {
+        HStack(alignment: .top, spacing: 24) {
+            leftControlsView
+                .fixedSize()
+                .padding(.leading, 8)
+                .padding(.bottom, 8)
+            rightControlsView
+        }
+    }
+
+    @ViewBuilder private var modelsAndStores: some View {
+        HStack {
+            preferredModelsList
+            preferredStoreList
+        }
+    }
+
+    // MARK: - Extracted subviews
+    @ViewBuilder private var leftControlsView: some View {
+        VStack(alignment: .leading) {
+            countryPickerView
+            productOrWatchPickerView
+
+            Picker("Update every", selection: $preferredUpdateInterval) {
+                Text("Never").tag(0)
+                Text("1 minute").tag(1)
+                Text("5 minutes").tag(5)
+                Text("30 minutes").tag(30)
+                Text("60 minutes").tag(60)
             }
-        }
-        .onChange(of: selectedCountryIndex) { newValue in
-            let newCountry = OrderedCountries[newValue]
-            preferredCountry = newCountry
-        }
-        .onChange(of: allModels) { models in
-            let favoritedModels = models.filter { $0.isFavorite }
             
-            preferredSKUs = favoritedModels
-                .map { $0.sku }
-                .joined(separator: ",")
-        }
-        .onChange(of: storeSearchText) { newText in
-            Task {
-                guard newText.isEmpty == false else {
-                    await loadStores(filterText: nil)
-                    return
-                }
-                
-                await loadStores(filterText: newText)
+            Toggle(isOn: $notifyOnlyForPreferredModels) {
+                Text("Notify only for preferred models")
+                    .padding(.leading, 4)
+            }
+            Toggle(isOn: $showResultsOnlyForPreferredModels) {
+                Text("Only show results for preferred models")
+                    .padding(.leading, 4)
             }
         }
-        .onChange(of: allStores) { newStores in
-            Task {
-                let currentSelected = selectedStore
-                
-                for store in newStores {
-                    if store.isSelected && store.storeNumber != currentSelected {
-                        selectedStore = store.storeNumber
+    }
+
+    @ViewBuilder private var rightControlsView: some View {
+        VStack(alignment: .leading) {
+            HStack(alignment: .top) {
+                Text("Custom SKU")
+                VStack {
+                    TextField("Enter a custom SKU", text: $customSku)
+                    TextField("Custom SKU Nickname", text: $customSkuNickname)
+                }
+            }
+            
+            Toggle(isOn: $useLargeText) {
+                Text("Use larger text sizes")
+            }
+            
+            Toggle(isOn: $shouldIncludeNearbyStores) {
+                Text("Include results from nearby stores")
+            }
+            
+            if model.hasLatestVersion == false {
+                Link(destination: URL(string: "https://worthbak.github.io/inventory-checker-app/")!) {
+                    HStack(spacing: 4) {
+                        Text("A new version of InventoryWatch is available - click here to download.")
+                        Image(systemName: "arrow.forward.circle")
+                    }
+                    .font(.headline)
+                }
+                .padding(.top, 16)
+            }
+        }
+    }
+
+    @ViewBuilder private var preferredModelsList: some View {
+        VStack(alignment: .leading) {
+            Text("Preferred Model(s)")
+                .font(.headline)
+            
+            Text("Only certain model configurations are stocked in-stores. If you believe a configuration is missing, [please open an issue](https://github.com/worthbak/inventory-checker-app/issues).")
+                .font(.caption).italic()
+            
+            List {
+                ForEach($allModels) { model in
+                    Toggle(isOn: model.isFavorite) {
+                        Text(model.name.wrappedValue)
+                            .padding(.leading, 4)
                     }
                 }
-                
-                if preferredStoreNumber != selectedStore {
-                    preferredStoreNumber = selectedStore
+            }
+        }
+    }
+
+    @ViewBuilder private var preferredStoreList: some View {
+        VStack(alignment: .leading) {
+            Text("Preferred Store")
+                .font(.headline)
+            
+            TextField("Filter by store name, city, state, or province", text: $storeSearchText)
+                .padding(.top, -5)
+            
+            List {
+                ForEach($allStores) { store in
+                    Toggle(isOn: store.isSelected) {
+                        let wrapped = store.wrappedValue
+                        Text("\(Text(wrapped.storeName).bold()) - \(wrapped.store.address.cityStateDisplay)")
+                            .padding(.leading, 4)
+                    }
                 }
-                
-                await loadStores(filterText: storeSearchText)
             }
         }
-        .onChange(of: preferredProductType) { newType in
-            #warning("TODO: move UserDefaults updates to ViewModel (?)")
-            Task {
-                preferredSKUs = ""
-                await loadSkus()
-                model.clearCurrentAvailableParts()
-                await model.fetchLatestInventory()
+    }
+
+    @ViewBuilder private var countryPickerView: some View {
+        Picker("Country", selection: $selectedCountryIndex) {
+            ForEach(0..<OrderedCountries.count, id: \.self) { index in
+                let countryCode = OrderedCountries[index]
+                let country = Countries[countryCode]
+                Text(country?.name ?? countryCode)
             }
         }
-        .onChange(of: preferredStoreNumber) { _ in
-            Task {
-                await model.updateStoreName()
-                await model.fetchLatestInventory()
+    }
+
+    @ViewBuilder private var productOrWatchPickerView: some View {
+        let isWatch: Bool = {
+            guard let fam = ProductFamily(rawValue: preferredProductType) else { return false }
+            return fam.isWatch
+        }()
+        let isPhone: Bool = {
+            guard let fam = ProductFamily(rawValue: preferredProductType) else { return false }
+            return fam.isIPhone
+        }()
+        let isMac: Bool = {
+            guard let fam = ProductFamily(rawValue: preferredProductType) else { return false }
+            return fam.isMac
+        }()
+        let isIPad: Bool = {
+            guard let fam = ProductFamily(rawValue: preferredProductType) else { return false }
+            return fam.isIPad
+        }()
+        let isAirPods: Bool = {
+            guard let fam = ProductFamily(rawValue: preferredProductType) else { return false }
+            return fam.isAirPods
+        }()
+        let isHomePod: Bool = {
+            guard let fam = ProductFamily(rawValue: preferredProductType) else { return false }
+            return fam.isHomePod
+        }()
+        let isAVP: Bool = {
+            guard let fam = ProductFamily(rawValue: preferredProductType) else { return false }
+            return fam.isAVP
+        }()
+        // Dropdown to switch between product families
+        Picker("Product Type", selection: $preferredProductType) {
+            ForEach(ProductFamily.allCases) { family in
+                Text(family.displayName).tag(family.rawValue)
             }
         }
-        .onChange(of: preferredUpdateInterval) { _ in
-            Task { await model.fetchLatestInventory() }
-        }
-        .onChange(of: preferredCountry) { _ in
-            Task {
-                storeSearchText = ""
-                await loadStores(filterText: storeSearchText)
-                await loadSkus()
-                await selectDefaultStoreForNewCountry()
+        .pickerStyle(.menu)
+        .frame(minWidth: 260)
+        
+        if isWatch {
+            Picker("Watch Model", selection: $preferredWatchToken) {
+                ForEach(availableWatchTokens, id: \.self) { token in
+                    Text(displayName(forToken: token)).tag(token)
+                }
             }
-        }
-        .onChange(of: showResultsOnlyForPreferredModels) { _ in
-            Task { await model.fetchLatestInventory() }
-        }
-        .onChange(of: shouldIncludeNearbyStores) { _ in
-            Task { await model.fetchLatestInventory() }
+        } else if isPhone {
+            // Selected token display name beside the picker label
+            let selectedDisplayName: String = {
+                let raw = phoneTokenNames[preferredPhoneToken] ?? preferredPhoneToken
+                return sanitizeModelTitle(raw)
+            }()
+            HStack {
+                Text("Phone Model")
+                Spacer()
+                Text(selectedDisplayName).foregroundColor(.secondary)
+            }
+            // PDP base preview resolved from scraped JSON
+            if let country = Countries[preferredCountry] ?? Countries[preferredCountry.uppercased()] {
+                let pdpBase = SKUDataLoader().phonePDPBaseURL(for: country, sourcePage: preferredPhoneToken)
+                HStack(spacing: 8) {
+                    Text("PDP Base")
+                    Spacer()
+                    Text(pdpBase?.absoluteString ?? "—")
+                        .foregroundColor(.secondary)
+                        .lineLimit(1)
+                        .truncationMode(.middle)
+                }
+            }
+            Picker("", selection: $preferredPhoneToken) {
+                ForEach(availablePhoneTokens, id: \.self) { token in
+                    let label = sanitizeModelTitle(phoneTokenNames[token] ?? token)
+                    Text(label).tag(token)
+                }
+            }
+            .id("phonepicker-\(preferredCountry)-\(preferredProductType)-\(availablePhoneTokens.joined(separator: ","))")
+            .pickerStyle(.menu)
+            .frame(minWidth: 260) // help AppKit menu measure and update reliably
+        } else if isMac {
+            let selectedMacDisplayName: String = {
+                if let country = Countries[preferredCountry] ?? Countries[preferredCountry.uppercased()],
+                   preferredMacToken.isEmpty == false,
+                   let name = JSONCatalogMac.tokenDisplayName(for: country, sourcePage: preferredMacToken) {
+                    return name
+                }
+                return macTokenNames[preferredMacToken] ?? preferredMacToken
+            }()
+            HStack {
+                Text("Mac Model")
+                Spacer()
+                Text(selectedMacDisplayName).foregroundColor(.secondary)
+            }
+            if let country = Countries[preferredCountry] ?? Countries[preferredCountry.uppercased()] {
+                let pdpBase = JSONCatalogMac.pdpBaseURL(for: country, sourcePage: preferredMacToken)
+                HStack(spacing: 8) {
+                    Text("PDP Base")
+                    Spacer()
+                    Text(pdpBase?.absoluteString ?? "—")
+                        .foregroundColor(.secondary)
+                        .lineLimit(1)
+                        .truncationMode(.middle)
+                }
+            }
+            Picker("", selection: $preferredMacToken) {
+                ForEach(availableMacTokens, id: \.self) { token in
+                    Text(macTokenNames[token] ?? token).tag(token)
+                }
+            }
+            .id("macpicker-\(preferredCountry)-\(preferredProductType)-\(availableMacTokens.joined(separator: ","))")
+            .pickerStyle(.menu)
+            .frame(minWidth: 260)
+        } else if isIPad {
+            let selectediPadDisplayName: String = {
+                if let country = Countries[preferredCountry] ?? Countries[preferredCountry.uppercased()],
+                   preferrediPadToken.isEmpty == false,
+                   let name = JSONCatalogiPad.tokenDisplayName(for: country, sourcePage: preferrediPadToken) {
+                    return name
+                }
+                return iPadTokenNames[preferrediPadToken] ?? preferrediPadToken
+            }()
+            HStack {
+                Text("iPad Model")
+                Spacer()
+                Text(selectediPadDisplayName).foregroundColor(.secondary)
+            }
+            if let country = Countries[preferredCountry] ?? Countries[preferredCountry.uppercased()] {
+                let pdpBase = JSONCatalogiPad.pdpBaseURL(for: country, sourcePage: preferrediPadToken)
+                HStack(spacing: 8) {
+                    Text("PDP Base")
+                    Spacer()
+                    Text(pdpBase?.absoluteString ?? "—")
+                        .foregroundColor(.secondary)
+                        .lineLimit(1)
+                        .truncationMode(.middle)
+                }
+            }
+            Picker("", selection: $preferrediPadToken) {
+                ForEach(availableiPadTokens, id: \.self) { token in
+                    Text(iPadTokenNames[token] ?? token).tag(token)
+                }
+            }
+            .id("iPadpicker-\(preferredCountry)-\(preferredProductType)-\(availableiPadTokens.joined(separator: ","))")
+            .pickerStyle(.menu)
+            .frame(minWidth: 260)
+        } else if isAirPods {
+            let selectedAirPodsDisplayName: String = {
+                if let country = Countries[preferredCountry] ?? Countries[preferredCountry.uppercased()],
+                   preferredAirPodsToken.isEmpty == false,
+                   let name = JSONCatalogAirPods.tokenDisplayName(for: country, sourcePage: preferredAirPodsToken) {
+                    return name
+                }
+                return airpodsTokenNames[preferredAirPodsToken] ?? preferredAirPodsToken
+            }()
+            HStack {
+                Text("AirPods Model")
+                Spacer()
+                Text(selectedAirPodsDisplayName).foregroundColor(.secondary)
+            }
+            if let country = Countries[preferredCountry] ?? Countries[preferredCountry.uppercased()] {
+                let pdpBase = JSONCatalogAirPods.pdpBaseURL(for: country, sourcePage: preferredAirPodsToken)
+                HStack(spacing: 8) {
+                    Text("PDP Base")
+                    Spacer()
+                    Text(pdpBase?.absoluteString ?? "—")
+                        .foregroundColor(.secondary)
+                        .lineLimit(1)
+                        .truncationMode(.middle)
+                }
+            }
+            Picker("", selection: $preferredAirPodsToken) {
+                ForEach(availableAirPodsTokens, id: \.self) { token in
+                    Text(airpodsTokenNames[token] ?? token).tag(token)
+                }
+            }
+            .id("airpodspicker-\(preferredCountry)-\(preferredProductType)-\(availableAirPodsTokens.joined(separator: ","))")
+            .pickerStyle(.menu)
+            .frame(minWidth: 260)
+        } else if isHomePod {
+            let selectedHomePodDisplayName: String = {
+                if let country = Countries[preferredCountry] ?? Countries[preferredCountry.uppercased()],
+                   preferredHomePodToken.isEmpty == false,
+                   let name = JSONCatalogHomePod.tokenDisplayName(for: country, sourcePage: preferredHomePodToken) {
+                    return name
+                }
+                return homepodTokenNames[preferredHomePodToken] ?? preferredHomePodToken
+            }()
+            HStack {
+                Text("HomePod Model")
+                Spacer()
+                Text(selectedHomePodDisplayName).foregroundColor(.secondary)
+            }
+            if let country = Countries[preferredCountry] ?? Countries[preferredCountry.uppercased()] {
+                let pdpBase = JSONCatalogHomePod.pdpBaseURL(for: country, sourcePage: preferredHomePodToken)
+                HStack(spacing: 8) {
+                    Text("PDP Base")
+                    Spacer()
+                    Text(pdpBase?.absoluteString ?? "—")
+                        .foregroundColor(.secondary)
+                        .lineLimit(1)
+                        .truncationMode(.middle)
+                }
+            }
+            Picker("", selection: $preferredHomePodToken) {
+                ForEach(availableHomePodTokens, id: \.self) { token in
+                    Text(homepodTokenNames[token] ?? token).tag(token)
+                }
+            }
+            .id("homepodpicker-\(preferredCountry)-\(preferredProductType)-\(availableHomePodTokens.joined(separator: ","))")
+            .pickerStyle(.menu)
+            .frame(minWidth: 260)
+        } else if isAVP {
+            let selectedAVPDisplayName: String = {
+                if let country = Countries[preferredCountry] ?? Countries[preferredCountry.uppercased()],
+                   preferredAVPToken.isEmpty == false,
+                   let name = JSONCatalogAVP.tokenDisplayName(for: country, sourcePage: preferredAVPToken) {
+                    return name
+                }
+                return avpTokenNames[preferredAVPToken] ?? preferredAVPToken
+            }()
+            HStack {
+                Text("Apple Vision Pro Model")
+                Spacer()
+                Text(selectedAVPDisplayName).foregroundColor(.secondary)
+            }
+            if let country = Countries[preferredCountry] ?? Countries[preferredCountry.uppercased()] {
+                let pdpBase = JSONCatalogAVP.pdpBaseURL(for: country, sourcePage: preferredAVPToken)
+                HStack(spacing: 8) {
+                    Text("PDP Base")
+                    Spacer()
+                    Text(pdpBase?.absoluteString ?? "—")
+                        .foregroundColor(.secondary)
+                        .lineLimit(1)
+                        .truncationMode(.middle)
+                }
+            }
+            Picker("", selection: $preferredAVPToken) {
+                ForEach(availableAVPTokens, id: \.self) { token in
+                    Text(avpTokenNames[token] ?? token).tag(token)
+                }
+            }
+            .id("avppicker-\(preferredCountry)-\(preferredProductType)-\(availableAVPTokens.joined(separator: ","))")
+            .pickerStyle(.menu)
+            .frame(minWidth: 260)
         }
     }
     
@@ -263,14 +504,322 @@ struct SettingsView: View {
     
     func loadSkus() async {
         let favoriteSkus = Set<String>(preferredSKUs.components(separatedBy: ","))
-        guard let skuData = try? await model.skuDataForPreferredProduct else {
-            return
+        // Resolve the preferred product type
+        let family = ProductFamily(rawValue: preferredProductType)
+        // When Apple Watch is selected, use the JSON-driven, cached watch helper (synchronous)
+        if family?.isWatch == true {
+            if let country = Countries[preferredCountry] ?? Countries[preferredCountry.uppercased()],
+               preferredWatchToken.isEmpty == false,
+               let skuData = SKUDataLoader().watchSKUData(forToken: preferredWatchToken, country: country) {
+                // Use labels computed by SKUDataLoader (which already apply token display/familyName + watch metadata)
+                allModels = skuData.orderedSKUs.map { sku in
+                    let name = skuData.productName(forSKU: sku) ?? sku
+                    return ProductModel(sku: sku, name: name, isFavorite: favoriteSkus.contains(sku))
+                }
+                return
+            }
         }
-        
+        // When iPhone is selected and a token is chosen, use phone token path
+        if family?.isIPhone == true {
+            if let country = Countries[preferredCountry] ?? Countries[preferredCountry.uppercased()],
+               preferredPhoneToken.isEmpty == false,
+               let skuData = SKUDataLoader().phoneSKUData(forToken: preferredPhoneToken, country: country) {
+                allModels = skuData.orderedSKUs.map { sku in
+                    let name = skuData.productName(forSKU: sku) ?? sku
+                    return ProductModel(sku: sku, name: name, isFavorite: favoriteSkus.contains(sku))
+                }
+                return
+            }
+        }
+        // When Mac is selected and a token is chosen, use Mac token path
+        if family?.isMac == true {
+            if let country = Countries[preferredCountry] ?? Countries[preferredCountry.uppercased()],
+               preferredMacToken.isEmpty == false,
+               let skuData = SKUDataLoader().macSKUData(forToken: preferredMacToken, country: country) {
+                allModels = skuData.orderedSKUs.map { sku in
+                    let name = skuData.productName(forSKU: sku) ?? sku
+                    return ProductModel(sku: sku, name: name, isFavorite: favoriteSkus.contains(sku))
+                }
+                return
+            }
+        }
+        // When iPad is selected and a token is chosen, use iPad token path
+        if family?.isIPad == true {
+            if let country = Countries[preferredCountry] ?? Countries[preferredCountry.uppercased()],
+               preferrediPadToken.isEmpty == false,
+               let skuData = SKUDataLoader().ipadSKUData(forToken: preferrediPadToken, country: country) {
+                allModels = skuData.orderedSKUs.map { sku in
+                    let name = skuData.productName(forSKU: sku) ?? sku
+                    return ProductModel(sku: sku, name: name, isFavorite: favoriteSkus.contains(sku))
+                }
+                return
+            }
+        }
+        // When AirPods is selected and a token is chosen, use AirPods token path
+        if family?.isAirPods == true {
+            if let country = Countries[preferredCountry] ?? Countries[preferredCountry.uppercased()],
+               preferredAirPodsToken.isEmpty == false,
+               let skuData = SKUDataLoader().airpodsSKUData(forToken: preferredAirPodsToken, country: country) {
+                allModels = skuData.orderedSKUs.map { sku in
+                    let name = skuData.productName(forSKU: sku) ?? sku
+                    return ProductModel(sku: sku, name: name, isFavorite: favoriteSkus.contains(sku))
+                }
+                return
+            }
+        }
+        // When HomePod is selected and a token is chosen, use HomePod token path
+        if family?.isHomePod == true {
+            if let country = Countries[preferredCountry] ?? Countries[preferredCountry.uppercased()],
+               preferredHomePodToken.isEmpty == false,
+               let skuData = SKUDataLoader().homepodSKUData(forToken: preferredHomePodToken, country: country) {
+                allModels = skuData.orderedSKUs.map { sku in
+                    let name = skuData.productName(forSKU: sku) ?? sku
+                    return ProductModel(sku: sku, name: name, isFavorite: favoriteSkus.contains(sku))
+                }
+                return
+            }
+        }
+        // When AVP is selected and a token is chosen, use AVP token path
+        if family?.isAVP == true {
+            if let country = Countries[preferredCountry] ?? Countries[preferredCountry.uppercased()],
+               preferredAVPToken.isEmpty == false,
+               let skuData = SKUDataLoader().avpSKUData(forToken: preferredAVPToken, country: country) {
+                allModels = skuData.orderedSKUs.map { sku in
+                    let name = skuData.productName(forSKU: sku) ?? sku
+                    return ProductModel(sku: sku, name: name, isFavorite: favoriteSkus.contains(sku))
+                }
+                return
+            }
+        }
+        // Fallback for non-watch (existing async path)
+        guard let skuData = try? await model.skuDataForPreferredProduct else { return }
         allModels = skuData.orderedSKUs.map { sku in
             let name = skuData.productName(forSKU: sku) ?? sku
             return ProductModel(sku: sku, name: name, isFavorite: favoriteSkus.contains(sku))
         }
+    }
+
+    @MainActor func loadWatchTokens() async {
+        guard let country = Countries[preferredCountry] ?? Countries[preferredCountry.uppercased()] else { return }
+        availableWatchTokens = JSONCatalogAppleWatch.categoriesSourcePages(for: country)
+        // Build human-friendly names for tokens from JSON metadata
+        var names: [String: String] = [:]
+        for token in availableWatchTokens {
+            // Derive from metadata and token (avoid using scraped token_display to prevent CTA/noise)
+            if let dict = JSONCatalogAppleWatch.categoryData(for: country, sourcePage: token),
+               let md = dict.values.first {
+                var baseName: String? = nil
+                if let famName = md.familyName, famName.isEmpty == false, famName.lowercased() != "unknown" {
+                    baseName = famName
+                } else {
+                    let fam = md.family
+                    if fam == "apple_watch" {
+                        baseName = "Apple Watch"
+                    } else if fam.isEmpty == false {
+                        baseName = fam.replacingOccurrences(of: "_", with: " ").capitalized
+                    }
+                }
+                var variant: String? = nil
+                if token.hasPrefix("apple-watch-") {
+                    let suffix = String(token.dropFirst("apple-watch-".count))
+                    if suffix.isEmpty == false {
+                        var v = suffix.replacingOccurrences(of: "-", with: " ").capitalized
+                        // Normalize special cases like SE
+                        if v.lowercased().hasPrefix("se") {
+                            v = v.replacingOccurrences(of: "Se", with: "SE")
+                        }
+                        variant = v
+                    }
+                }
+                if let base = baseName { names[token] = variant != nil ? "\(base) \(variant!)" : base }
+            }
+        }
+        watchTokenNames = names
+        // If current preferredWatchToken is not in the list, set a sensible default (first token or empty)
+        if preferredWatchToken.isEmpty || availableWatchTokens.contains(preferredWatchToken) == false {
+            preferredWatchToken = availableWatchTokens.first ?? ""
+        }
+    }
+
+    @MainActor func loadPhoneTokens() async {
+        guard let country = Countries[preferredCountry] ?? Countries[preferredCountry.uppercased()] else { return }
+        // Load tokens from JSON catalogs
+        let rawTokens = JSONCatalogiPhone.categoriesSourcePages(for: country)
+        // Guard against accidental SKU lists by filtering to iphone-* tokens.
+        var tokenLike = rawTokens.filter { $0.lowercased().hasPrefix("iphone-") }
+        // Fallback: if none found (e.g., only legacy aggregate JSON present), derive tokens from any bundled iPhone JSONs
+        if tokenLike.isEmpty {
+            let all = JSONCatalogiPhone.loadAll()
+            var union: Set<String> = []
+            for root in all.values {
+                if let cm = root.country_mappings {
+                    for (_, map) in cm {
+                        if let paths = map.shop_paths {
+                            for key in paths.keys where key.lowercased().hasPrefix("iphone-") { union.insert(key) }
+                        }
+                    }
+                }
+                if union.isEmpty, let dm = root.discovered_models {
+                    for (_, byToken) in dm {
+                        for key in byToken.keys where key.lowercased().hasPrefix("iphone-") { union.insert(key) }
+                    }
+                }
+            }
+            tokenLike = Array(union).sorted()
+        }
+        availablePhoneTokens = tokenLike
+        var names: [String: String] = [:]
+        for token in availablePhoneTokens {
+            // 1) Prefer explicit per-country token display from JSON if available
+            if let explicit = JSONCatalogiPhone.tokenDisplayName(for: country, sourcePage: token), explicit.isEmpty == false {
+                names[token] = sanitizeModelTitle(explicit)
+                continue
+            }
+            // 2) Derive base name from JSON (familyName or family)
+            var baseName: String = "iPhone"
+            if let dict = JSONCatalogiPhone.categoryData(for: country, sourcePage: token),
+               let md = dict.values.first {
+                if let famName = md.familyName, famName.isEmpty == false, famName.lowercased() != "unknown" {
+                    baseName = famName
+                } else {
+                    let fam = md.family
+                    if fam.isEmpty == false {
+                        baseName = fam.replacingOccurrences(of: "_", with: " ").capitalized
+                    }
+                }
+            }
+            // Ensure proper casing for iPhone family
+            if baseName.lowercased() == "iphone" { baseName = "iPhone" }
+            // Derive variant from token suffix (e.g., "iphone-17-pro" -> "17 Pro")
+            var variant: String = ""
+            if token.lowercased().hasPrefix("iphone-") {
+                let suffix = String(token.dropFirst("iphone-".count))
+                if suffix.isEmpty == false {
+                    variant = suffix.replacingOccurrences(of: "-", with: " ").capitalized
+                }
+            }
+            // Compose final name
+            let finalName = variant.isEmpty ? baseName : "\(baseName) \(variant)"
+            names[token] = sanitizeModelTitle(finalName)
+        }
+        phoneTokenNames = names
+        // Load any previously-saved per-country token selection
+        let perCountryKey = "preferredPhoneToken.\(preferredCountry.uppercased())"
+        if let saved = UserDefaults.standard.string(forKey: perCountryKey), availablePhoneTokens.contains(saved) {
+            preferredPhoneToken = saved
+        } else if preferredPhoneToken.isEmpty || availablePhoneTokens.contains(preferredPhoneToken) == false {
+            // Keep selection stable when possible; if current selection is missing, pick first available
+            preferredPhoneToken = availablePhoneTokens.first ?? ""
+        }
+    }
+
+    @MainActor func loadMacTokens() async {
+        guard let country = Countries[preferredCountry] ?? Countries[preferredCountry.uppercased()] else { return }
+        availableMacTokens = JSONCatalogMac.categoriesSourcePages(for: country)
+        var names: [String: String] = [:]
+        for token in availableMacTokens {
+            // Prefer JSON-provided token display if available
+            if let explicit = JSONCatalogMac.tokenDisplayName(for: country, sourcePage: token), explicit.isEmpty == false {
+                names[token] = explicit
+                continue
+            }
+            // Fallback: prettify token
+            names[token] = token.replacingOccurrences(of: "-", with: " ").capitalized
+        }
+        macTokenNames = names
+        // Per-country persisted selection
+        let perCountryKey = "preferredMacToken.\(preferredCountry.uppercased())"
+        if let saved = UserDefaults.standard.string(forKey: perCountryKey), availableMacTokens.contains(saved) {
+            preferredMacToken = saved
+        } else if preferredMacToken.isEmpty || availableMacTokens.contains(preferredMacToken) == false {
+            preferredMacToken = availableMacTokens.first ?? ""
+        }
+    }
+
+    @MainActor func loadiPadTokens() async {
+        guard let country = Countries[preferredCountry] ?? Countries[preferredCountry.uppercased()] else { return }
+        availableiPadTokens = JSONCatalogiPad.categoriesSourcePages(for: country)
+        var names: [String: String] = [:]
+        for token in availableiPadTokens {
+            if let explicit = JSONCatalogiPad.tokenDisplayName(for: country, sourcePage: token), explicit.isEmpty == false {
+                names[token] = explicit
+                continue
+            }
+            names[token] = token.replacingOccurrences(of: "-", with: " ").capitalized
+        }
+        iPadTokenNames = names
+        let perCountryKey = "preferrediPadToken.\(preferredCountry.uppercased())"
+        if let saved = UserDefaults.standard.string(forKey: perCountryKey), availableiPadTokens.contains(saved) {
+            preferrediPadToken = saved
+        } else if preferrediPadToken.isEmpty || availableiPadTokens.contains(preferrediPadToken) == false {
+            preferrediPadToken = availableiPadTokens.first ?? ""
+        }
+    }
+
+    @MainActor func loadAirPodsTokens() async {
+        guard let country = Countries[preferredCountry] ?? Countries[preferredCountry.uppercased()] else { return }
+        availableAirPodsTokens = JSONCatalogAirPods.categoriesSourcePages(for: country)
+        var names: [String: String] = [:]
+        for token in availableAirPodsTokens {
+            if let explicit = JSONCatalogAirPods.tokenDisplayName(for: country, sourcePage: token), explicit.isEmpty == false {
+                names[token] = explicit
+                continue
+            }
+            names[token] = token.replacingOccurrences(of: "-", with: " ").capitalized
+        }
+        airpodsTokenNames = names
+        let perCountryKey = "preferredAirPodsToken.\(preferredCountry.uppercased())"
+        if let saved = UserDefaults.standard.string(forKey: perCountryKey), availableAirPodsTokens.contains(saved) {
+            preferredAirPodsToken = saved
+        } else if preferredAirPodsToken.isEmpty || availableAirPodsTokens.contains(preferredAirPodsToken) == false {
+            preferredAirPodsToken = availableAirPodsTokens.first ?? ""
+        }
+    }
+
+    @MainActor func loadHomePodTokens() async {
+        guard let country = Countries[preferredCountry] ?? Countries[preferredCountry.uppercased()] else { return }
+        availableHomePodTokens = JSONCatalogHomePod.categoriesSourcePages(for: country)
+        var names: [String: String] = [:]
+        for token in availableHomePodTokens {
+            if let explicit = JSONCatalogHomePod.tokenDisplayName(for: country, sourcePage: token), explicit.isEmpty == false {
+                names[token] = explicit
+                continue
+            }
+            names[token] = token.replacingOccurrences(of: "-", with: " ").capitalized
+        }
+        homepodTokenNames = names
+        let perCountryKey = "preferredHomePodToken.\(preferredCountry.uppercased())"
+        if let saved = UserDefaults.standard.string(forKey: perCountryKey), availableHomePodTokens.contains(saved) {
+            preferredHomePodToken = saved
+        } else if preferredHomePodToken.isEmpty || availableHomePodTokens.contains(preferredHomePodToken) == false {
+            preferredHomePodToken = availableHomePodTokens.first ?? ""
+        }
+    }
+
+    @MainActor func loadAVPTokens() async {
+        guard let country = Countries[preferredCountry] ?? Countries[preferredCountry.uppercased()] else { return }
+        availableAVPTokens = JSONCatalogAVP.categoriesSourcePages(for: country)
+        var names: [String: String] = [:]
+        for token in availableAVPTokens {
+            if let explicit = JSONCatalogAVP.tokenDisplayName(for: country, sourcePage: token), explicit.isEmpty == false {
+                names[token] = explicit
+                continue
+            }
+            names[token] = token.replacingOccurrences(of: "-", with: " ").capitalized
+        }
+        avpTokenNames = names
+        let perCountryKey = "preferredAVPToken.\(preferredCountry.uppercased())"
+        if let saved = UserDefaults.standard.string(forKey: perCountryKey), availableAVPTokens.contains(saved) {
+            preferredAVPToken = saved
+        } else if preferredAVPToken.isEmpty || availableAVPTokens.contains(preferredAVPToken) == false {
+            preferredAVPToken = availableAVPTokens.first ?? ""
+        }
+    }
+
+    private func displayName(forToken token: String) -> String {
+        if let name = watchTokenNames[token], name.isEmpty == false { return name }
+        // Fallback: prettify token string
+        return token.replacingOccurrences(of: "-", with: " ").capitalized
     }
     
     func loadStores(filterText: String?) async {
@@ -325,6 +874,153 @@ struct SettingsView: View {
         for var store in allStores {
             store.isSelected = store.storeNumber == preferredStoreNumber
         }
+    }
+
+    // MARK: - Lifecycle helpers used in view modifiers
+    private func onAppearSetup() {
+        loadCountries()
+        Task { await loadSkus() }
+        Task { await loadStores(filterText: nil) }
+        Task { await model.fetchLatestGithubRelease() }
+        Task { await loadWatchTokens() }
+        Task { await loadPhoneTokens() }
+        Task { await loadMacTokens() }
+        Task { await loadiPadTokens() }
+        Task { await loadAirPodsTokens() }
+        Task { await loadHomePodTokens() }
+        Task { await loadAVPTokens() }
+    }
+
+    private func handleSelectedCountryIndexChange(_ newValue: Int) {
+        let newCountry = OrderedCountries[newValue]
+        preferredCountry = newCountry
+        Task { await loadWatchTokens() }
+        Task { await loadPhoneTokens() }
+        Task { await loadMacTokens() }
+        Task { await loadiPadTokens() }
+        Task { await loadAirPodsTokens() }
+        Task { await loadHomePodTokens() }
+        Task { await loadAVPTokens() }
+    }
+
+    private func handleAllModelsChange(_ models: [ProductModel]) {
+        let favoritedModels = models.filter { $0.isFavorite }
+        preferredSKUs = favoritedModels.map { $0.sku }.joined(separator: ",")
+    }
+
+    private func handleStoreSearchTextChange(_ newText: String) {
+        if newText.isEmpty {
+            Task { await loadStores(filterText: nil) }
+        } else {
+            Task { await loadStores(filterText: newText) }
+        }
+    }
+
+    private func handleAllStoresChange(_ newStores: [StoreWithSelection]) {
+        let currentSelected = selectedStore
+        for store in newStores where store.isSelected && store.storeNumber != currentSelected {
+            selectedStore = store.storeNumber
+        }
+        if preferredStoreNumber != selectedStore { preferredStoreNumber = selectedStore }
+        Task { await loadStores(filterText: storeSearchText) }
+    }
+
+    private func handlePreferredProductTypeChange(_ newType: String) {
+        preferredSKUs = ""
+        Task { await loadSkus() }
+        model.clearCurrentAvailableParts()
+        Task { await model.fetchLatestInventory() }
+        Task { await loadWatchTokens() }
+        Task { await loadPhoneTokens() }
+        Task { await loadMacTokens() }
+        Task { await loadiPadTokens() }
+        Task { await loadAirPodsTokens() }
+        Task { await loadHomePodTokens() }
+        Task { await loadAVPTokens() }
+    }
+
+    private func handlePreferredStoreNumberChange() {
+        Task { await model.updateStoreName() }
+        Task { await model.fetchLatestInventory() }
+    }
+
+    private func handlePreferredUpdateIntervalChange() {
+        Task { await model.fetchLatestInventory() }
+    }
+
+    private func handlePreferredCountryChange() {
+        storeSearchText = ""
+        Task { await loadStores(filterText: storeSearchText) }
+        Task { await loadSkus() }
+        Task { await selectDefaultStoreForNewCountry() }
+        Task { await loadWatchTokens() }
+        Task { await loadPhoneTokens() }
+        Task { await loadMacTokens() }
+        Task { await loadiPadTokens() }
+        Task { await loadAirPodsTokens() }
+        Task { await loadHomePodTokens() }
+        Task { await loadAVPTokens() }
+    }
+
+    private func handleReloadInventory() {
+        Task { await model.fetchLatestInventory() }
+    }
+
+    private func handlePreferredWatchTokenChange() {
+        Task { await loadSkus() }
+        model.clearCurrentAvailableParts()
+        Task { await model.fetchLatestInventory() }
+    }
+
+    private func handlePreferredPhoneTokenChange() {
+        // Persist per-country selection for iPhone token
+        let perCountryKey = "preferredPhoneToken.\(preferredCountry.uppercased())"
+        UserDefaults.standard.set(preferredPhoneToken, forKey: perCountryKey)
+        Task { await loadSkus() }
+        model.clearCurrentAvailableParts()
+        Task { await model.fetchLatestInventory() }
+    }
+
+    private func handlePreferredMacTokenChange() {
+        // Persist per-country selection for Mac token
+        let perCountryKey = "preferredMacToken.\(preferredCountry.uppercased())"
+        UserDefaults.standard.set(preferredMacToken, forKey: perCountryKey)
+        Task { await loadSkus() }
+        model.clearCurrentAvailableParts()
+        Task { await model.fetchLatestInventory() }
+    }
+
+    private func handlePreferrediPadTokenChange() {
+        // Persist per-country selection for iPad token
+        let perCountryKey = "preferrediPadToken.\(preferredCountry.uppercased())"
+        UserDefaults.standard.set(preferrediPadToken, forKey: perCountryKey)
+        Task { await loadSkus() }
+        model.clearCurrentAvailableParts()
+        Task { await model.fetchLatestInventory() }
+    }
+
+    private func handlePreferredAirPodsTokenChange() {
+        let perCountryKey = "preferredAirPodsToken.\(preferredCountry.uppercased())"
+        UserDefaults.standard.set(preferredAirPodsToken, forKey: perCountryKey)
+        Task { await loadSkus() }
+        model.clearCurrentAvailableParts()
+        Task { await model.fetchLatestInventory() }
+    }
+
+    private func handlePreferredHomePodTokenChange() {
+        let perCountryKey = "preferredHomePodToken.\(preferredCountry.uppercased())"
+        UserDefaults.standard.set(preferredHomePodToken, forKey: perCountryKey)
+        Task { await loadSkus() }
+        model.clearCurrentAvailableParts()
+        Task { await model.fetchLatestInventory() }
+    }
+
+    private func handlePreferredAVPTokenChange() {
+        let perCountryKey = "preferredAVPToken.\(preferredCountry.uppercased())"
+        UserDefaults.standard.set(preferredAVPToken, forKey: perCountryKey)
+        Task { await loadSkus() }
+        model.clearCurrentAvailableParts()
+        Task { await model.fetchLatestInventory() }
     }
 }
 

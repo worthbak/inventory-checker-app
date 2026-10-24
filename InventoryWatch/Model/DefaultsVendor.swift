@@ -8,10 +8,41 @@
 import Foundation
 import Combine
 
+// Minimal product family selector for token-driven UI
+enum ProductFamily: String, Codable, CaseIterable, Identifiable {
+    case watch = "watch"
+    case iphone = "iphone"
+    case mac = "mac"
+    case ipad = "ipad"
+    case airpods = "airpods"
+    case homepod = "homepod"
+    case avp = "avp"
+    var id: Self { self }
+    var isWatch: Bool { self == .watch }
+    var isIPhone: Bool { self == .iphone }
+    var isMac: Bool { self == .mac }
+    var isIPad: Bool { self == .ipad }
+    var isAirPods: Bool { self == .airpods }
+    var isHomePod: Bool { self == .homepod }
+    var isAVP: Bool { self == .avp }
+
+    var displayName: String {
+        switch self {
+        case .watch: return "Apple Watch"
+        case .iphone: return "iPhone"
+        case .mac: return "Mac"
+        case .ipad: return "iPad"
+        case .airpods: return "AirPods"
+        case .homepod: return "HomePod"
+        case .avp: return "Apple Vision Pro"
+        }
+    }
+}
+
 extension UserDefaults {
     
     @objc dynamic var preferredStoreNumber: String {
-        get { string(forKey: "preferredStoreNumber") ?? "R032" }
+        get { string(forKey: "preferredStoreNumber") ?? "" }
         set { setValue(newValue, forKey: "preferredStoreNumber") }
     }
     
@@ -44,10 +75,22 @@ struct DefaultsVendor {
         return Countries[value] ?? USData
     }
     
-    var preferredProductType: ProductType {
-        let value = UserDefaults.standard.string(forKey: "preferredProductType") ?? "MacBookPro"
-        
-        return ProductType(rawValue: value) ?? .MacBookPro
+    var preferredProductFamily: ProductFamily {
+        // Reuse same storage key for backward compatibility
+        let value = UserDefaults.standard.string(forKey: "preferredProductType") ?? ProductFamily.iphone.rawValue
+        if let fam = ProductFamily(rawValue: value) { return fam }
+        // Legacy ProductType raw values
+        switch value {
+        case "MacBookPro", "M2MacBookPro13", "M2MacBookAir", "MacStudio", "StudioDisplay":
+            return .mac
+        case "iPadMiniWifi", "iPadMiniCellular", "iPad10thGenWifi", "iPad10thGenCellular",
+             "iPadProM2_11in_Wifi", "iPadProM2_11in_Cellular", "iPadProM2_13in_Wifi", "iPadProM2_13in_Cellular":
+            return .ipad
+        case "AppleWatchUltra":
+            return .watch
+        default:
+            return .iphone
+        }
     }
     
     var countryPathElement: String {
@@ -55,18 +98,18 @@ struct DefaultsVendor {
         if country.shortcode == "US" {
             return ""
         } else {
-            return country.shortcode + "/"
+            return country.shortcode.lowercased() + "/"
         }
     }
     
     var preferredStoreNumber: String {
         get { return UserDefaults.standard.preferredStoreNumber }
-        set { UserDefaults.standard.preferredStoreNumber = newValue }
+        nonmutating set { UserDefaults.standard.preferredStoreNumber = newValue }
     }
     
     var lastUpdateDate: String? {
         get { return UserDefaults.standard.lastUpdateDate }
-        set { UserDefaults.standard.lastUpdateDate = newValue }
+        nonmutating set { UserDefaults.standard.lastUpdateDate = newValue }
     }
     
     // unused - keeping this around as an example implementation
@@ -113,5 +156,41 @@ struct DefaultsVendor {
     
     var notifyOnlyForPreferredModels: Bool {
         UserDefaults.standard.bool(forKey: "notifyOnlyForPreferredModels")
+    }
+
+    var notificationCooldownHours: Int {
+        let val = UserDefaults.standard.integer(forKey: "notificationCooldownHours")
+        return val > 0 ? val : 24
+    }
+
+    // Token-driven Apple Watch selection
+    var preferredWatchToken: String {
+        UserDefaults.standard.string(forKey: "preferredWatchToken") ?? ""
+    }
+
+    // Token-driven iPhone selection
+    var preferredPhoneToken: String {
+        UserDefaults.standard.string(forKey: "preferredPhoneToken") ?? ""
+    }
+
+    // Token-driven Mac selection
+    var preferredMacToken: String {
+        UserDefaults.standard.string(forKey: "preferredMacToken") ?? ""
+    }
+
+    var preferrediPadToken: String {
+        UserDefaults.standard.string(forKey: "preferrediPadToken") ?? ""
+    }
+
+    var preferredAirPodsToken: String {
+        UserDefaults.standard.string(forKey: "preferredAirPodsToken") ?? ""
+    }
+
+    var preferredHomePodToken: String {
+        UserDefaults.standard.string(forKey: "preferredHomePodToken") ?? ""
+    }
+
+    var preferredAVPToken: String {
+        UserDefaults.standard.string(forKey: "preferredAVPToken") ?? ""
     }
 }

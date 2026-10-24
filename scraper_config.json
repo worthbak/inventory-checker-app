@@ -1,0 +1,429 @@
+{
+  "http_delay": 0.25,
+  "http_retries": 3,
+  "http_headers": {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+    "Accept-Language": "en-US,en;q=0.5",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Connection": "keep-alive",
+    "Upgrade-Insecure-Requests": "1"
+  },
+  "regions": [
+    {
+      "url_prefix": "https://www.apple.com/at/",
+      "suffix": "ZD/A",
+      "name": "Austria",
+      "code": "at"
+    },
+    {
+      "url_prefix": "https://www.apple.com/",
+      "suffix": "LL/A",
+      "name": "US",
+      "code": "us"
+    },
+    {
+      "url_prefix": "https://www.apple.com/uk/",
+      "suffix": "QN/A",
+      "name": "UK",
+      "code": "uk"
+    },
+    {
+      "url_prefix": "https://www.apple.com/au/",
+      "suffix": "X/A",
+      "name": "Australia",
+      "code": "au"
+    },
+    {
+      "url_prefix": "https://www.apple.com/ca/",
+      "suffix": "LL/A",
+      "name": "Canada",
+      "code": "ca"
+    },
+    {
+      "url_prefix": "https://www.apple.com/de/",
+      "suffix": "ZD/A",
+      "name": "Germany",
+      "code": "de"
+    },
+    {
+      "url_prefix": "https://www.apple.com/fr/",
+      "suffix": "FN/A",
+      "name": "France",
+      "code": "fr"
+    },
+    {
+      "url_prefix": "https://www.apple.com/it/",
+      "suffix": "T/A",
+      "name": "Italy",
+      "code": "it"
+    },
+    {
+      "url_prefix": "https://www.apple.com/es/",
+      "suffix": "Y/A",
+      "name": "Spain",
+      "code": "es"
+    },
+    {
+      "url_prefix": "https://www.apple.com/nl/",
+      "suffix": "ZD/A",
+      "name": "Netherlands",
+      "code": "nl"
+    },
+    {
+      "url_prefix": "https://www.apple.com/be-nl/",
+      "suffix": "ZD/A",
+      "name": "Belgium (Netherlands)",
+      "code": "be-nl"
+    },
+    {
+        "url_prefix": "https://www.apple.com/be-fr/",
+        "suffix": "ZD/A",
+        "name": "Belgium (French)",
+        "code": "be-fr"
+      },
+    {
+        "url_prefix": "https://www.apple.com/ch-de/",
+        "suffix": "ZD/A",
+        "name": "Switzerland (German)",
+        "code": "ch-de"
+      },
+      {
+        "url_prefix": "https://www.apple.com/ch-fr/",
+        "suffix": "ZD/A",
+        "name": "Switzerland (French)",
+        "code": "ch-fr"
+      },
+    {
+      "url_prefix": "https://www.apple.com/se/",
+      "suffix": "KS/A",
+      "name": "Sweden",
+      "code": "se"
+    },
+    {
+      "url_prefix": "https://www.apple.com/dk/",
+      "suffix": "KN/A",
+      "name": "Denmark",
+      "code": "dk"
+    },
+    {
+      "url_prefix": "https://www.apple.com/no/",
+      "suffix": "KN/A",
+      "name": "Norway",
+      "code": "no"
+    },
+    {
+      "url_prefix": "https://www.apple.com/fi/",
+      "suffix": "KS/A",
+      "name": "Finland",
+      "code": "fi"
+    },
+    {
+      "url_prefix": "https://www.apple.com/jp/",
+      "suffix": "J/A",
+      "name": "Japan",
+      "code": "jp"
+    },
+    {
+      "url_prefix": "https://www.apple.com/kr/",
+      "suffix": "KH/A",
+      "name": "South Korea",
+      "code": "kr"
+    },
+    {
+      "url_prefix": "https://www.apple.com/hk/",
+      "suffix": "ZP/A",
+      "name": "Hong Kong",
+      "code": "hk"
+    },
+    {
+      "url_prefix": "https://www.apple.com/sg/",
+      "suffix": "ZP/A",
+      "name": "Singapore",
+      "code": "sg"
+    },
+    {
+      "url_prefix": "https://www.apple.com/tw/",
+      "suffix": "TA/A",
+      "name": "Taiwan",
+      "code": "tw"
+    },
+    {
+      "url_prefix": "https://www.apple.com/th/",
+      "suffix": "TH/A",
+      "name": "Thailand",
+      "code": "th"
+    },
+    {
+      "url_prefix": "https://www.apple.com/my/",
+      "suffix": "MY/A",
+      "name": "Malaysia",
+      "code": "my"
+    },
+    {
+      "url_prefix": "https://www.apple.com/in/",
+      "suffix": "HN/A",
+      "name": "India",
+      "code": "in"
+    },
+    {
+      "url_prefix": "https://www.apple.com/ae/",
+      "suffix": "AB/A",
+      "name": "UAE",
+      "code": "ae"
+    },
+    {
+      "url_prefix": "https://www.apple.com/sa/",
+      "suffix": "AB/A",
+      "name": "Saudi Arabia",
+      "code": "sa"
+    },
+    {
+      "url_prefix": "https://www.apple.com/tr/",
+      "suffix": "TU/A",
+      "name": "Turkey",
+      "code": "tr"
+    },
+    {
+      "url_prefix": "https://www.apple.com/za/",
+      "suffix": "ZA/A",
+      "name": "South Africa",
+      "code": "za"
+    },
+    {
+      "url_prefix": "https://www.apple.com/br/",
+      "suffix": "BZ/A",
+      "name": "Brazil",
+      "code": "br"
+    },
+    {
+      "url_prefix": "https://www.apple.com/mx/",
+      "suffix": "LA/A",
+      "name": "Mexico",
+      "code": "mx"
+    },
+    {
+      "url_prefix": "https://www.apple.com.cn/",
+      "suffix": "CH/A",
+      "name": "China",
+      "code": "cn"
+    }
+  ],
+  "categories": [
+    {
+      "family": "iphone",
+      "entrypoints": ["shop/buy-iphone"]
+    },
+    {
+      "family": "watch",
+      "entrypoints": ["shop/buy-watch"]
+    },
+    {
+      "family": "mac",
+      "entrypoints": ["shop/buy-mac"]
+    },
+    {
+      "family": "ipad",
+      "entrypoints": ["shop/buy-ipad"]
+    },
+    {
+      "family": "homepod",
+      "entrypoints": ["shop/buy-homepod/homepod", "shop/buy-homepod/homepod-mini"],
+      "manual_tokens": ["homepod", "homepod-mini"]
+    },
+    {
+      "family": "airpods",
+      "entrypoints": ["shop/buy-airpods/airpods-pro-3", "shop/buy-airpods/airpods-5", "shop/buy-airpods/airpods-max-2"],
+      "manual_tokens": ["airpods-pro-3", "airpods-5", "airpods-max-2"]
+    },
+    {
+      "family": "avp",
+      "entrypoints": ["shop/buy-vision"]
+    }
+  ],
+  "model_variants": {
+    "iphone": {
+      "variant_patterns": [
+        {
+          "family_key": "promax",
+          "suffix": "Pro Max",
+          "priority": 1
+        },
+        {
+          "family_key": "pro",
+          "suffix": "Pro",
+          "priority": 2
+        },
+        {
+          "family_key": "plus",
+          "suffix": "Plus",
+          "priority": 3
+        },
+        {
+          "family_key": "air",
+          "suffix": "Air",
+          "priority": 4
+        },
+        {
+          "family_key": "mini",
+          "suffix": "mini",
+          "priority": 5
+        }
+      ]
+    },
+    "ipad": {
+      "variant_patterns": [
+        {
+          "family_key": "pro",
+          "suffix": "Pro",
+          "priority": 1
+        },
+        {
+          "family_key": "air",
+          "suffix": "Air",
+          "priority": 2
+        },
+        {
+          "family_key": "mini",
+          "suffix": "mini",
+          "priority": 3
+        }
+      ]
+    },
+    "mac": {
+      "variant_patterns": [
+        {
+          "family_key": "pro",
+          "suffix": "Pro",
+          "priority": 1
+        },
+        {
+          "family_key": "air",
+          "suffix": "Air",
+          "priority": 2
+        },
+        {
+          "family_key": "studio",
+          "suffix": "Studio",
+          "priority": 3
+        },
+        {
+          "family_key": "mini",
+          "suffix": "mini",
+          "priority": 4
+        }
+      ]
+    },
+    "watch": {
+      "variant_patterns": [
+        {
+          "family_key": "ultra",
+          "suffix": "Ultra",
+          "priority": 1
+        },
+        {
+          "family_key": "se",
+          "suffix": "SE",
+          "priority": 2
+        }
+      ]
+    }
+  },
+  "families": {
+    "iphone": {
+      "display_name": "iPhone",
+      "file_prefix": "iPhone",
+      "part_number_prefix": null,
+      "retry_full_price": false,
+      "skip_screensize_extraction": false,
+      "prune_keep_incomplete": false,
+      "prune_keep_regional_name": false,
+      "post_filter_keep_minimal": false,
+      "bto_extraction": false,
+      "handler": "IPhoneHandler"
+    },
+    "watch": {
+      "display_name": "Apple Watch",
+      "file_prefix": "AppleWatch",
+      "part_number_prefix": null,
+      "retry_full_price": true,
+      "skip_screensize_extraction": false,
+      "prune_keep_incomplete": true,
+      "prune_keep_regional_name": false,
+      "post_filter_keep_minimal": false,
+      "bto_extraction": false,
+      "handler": "WatchHandler"
+    },
+    "mac": {
+      "display_name": "Mac",
+      "file_prefix": "Mac",
+      "part_number_prefix": "M",
+      "retry_full_price": false,
+      "skip_screensize_extraction": true,
+      "prune_keep_incomplete": true,
+      "prune_keep_regional_name": true,
+      "post_filter_keep_minimal": true,
+      "bto_extraction": true,
+      "handler": "MacHandler"
+    },
+    "ipad": {
+      "display_name": "iPad",
+      "file_prefix": "iPad",
+      "part_number_prefix": null,
+      "retry_full_price": false,
+      "skip_screensize_extraction": false,
+      "prune_keep_incomplete": true,
+      "prune_keep_regional_name": true,
+      "post_filter_keep_minimal": true,
+      "bto_extraction": false,
+      "handler": "IPadHandler"
+    },
+    "airpods": {
+      "display_name": "AirPods",
+      "file_prefix": "AirPods",
+      "part_number_prefix": null,
+      "retry_full_price": false,
+      "skip_screensize_extraction": false,
+      "prune_keep_incomplete": true,
+      "prune_keep_regional_name": true,
+      "post_filter_keep_minimal": true,
+      "bto_extraction": false,
+      "handler": "AirPodsHandler"
+    },
+    "homepod": {
+      "display_name": "HomePod",
+      "file_prefix": "HomePod",
+      "part_number_prefix": null,
+      "retry_full_price": false,
+      "skip_screensize_extraction": false,
+      "prune_keep_incomplete": true,
+      "prune_keep_regional_name": true,
+      "post_filter_keep_minimal": true,
+      "bto_extraction": false,
+      "handler": "HomePodHandler"
+    },
+    "avp": {
+      "display_name": "Apple Vision Pro",
+      "file_prefix": "AppleVisionPro",
+      "part_number_prefix": null,
+      "retry_full_price": false,
+      "skip_screensize_extraction": false,
+      "prune_keep_incomplete": true,
+      "prune_keep_regional_name": true,
+      "post_filter_keep_minimal": true,
+      "bto_extraction": false,
+      "handler": "AVPHandler"
+    }
+  },
+  "token_display_overrides": {
+    "imac": "iMac",
+    "ipad": "iPad",
+    "iphone": "iPhone",
+    "macbook": "MacBook",
+    "macmini": "Macmini",
+    "macstudio": "MacStudio",
+    "homepod": "HomePod",
+    "homepodmini": "HomePodmini",
+    "airpods": "AirPods"
+  }
+}

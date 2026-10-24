@@ -1,0 +1,5933 @@
+{
+  "_meta": {
+    "family": "iphone",
+    "generated_at": "2026-10-16T13:58:00.633623+00:00",
+    "regions_scraped": 33,
+    "scraper_version": "1.0",
+    "token": "iphone-air"
+  },
+  "country_mappings": {
+    "ae": {
+      "localization": {
+        "token_display": {
+          "iphone-air": "iPhone Air"
+        }
+      },
+      "shop_paths": {
+        "iphone-air": "shop/buy-iphone/iphone-air"
+      }
+    },
+    "at": {
+      "localization": {
+        "token_display": {
+          "iphone-air": "iPhone Air"
+        }
+      },
+      "shop_paths": {
+        "iphone-air": "shop/buy-iphone/iphone-air"
+      }
+    },
+    "au": {
+      "localization": {
+        "token_display": {
+          "iphone-air": "iPhone Air"
+        }
+      },
+      "shop_paths": {
+        "iphone-air": "shop/buy-iphone/iphone-air"
+      }
+    },
+    "be-fr": {
+      "localization": {
+        "token_display": {
+          "iphone-air": "iPhone Air"
+        }
+      },
+      "shop_paths": {
+        "iphone-air": "shop/buy-iphone/iphone-air"
+      }
+    },
+    "be-nl": {
+      "localization": {
+        "token_display": {
+          "iphone-air": "iPhone Air"
+        }
+      },
+      "shop_paths": {
+        "iphone-air": "shop/buy-iphone/iphone-air"
+      }
+    },
+    "br": {
+      "localization": {
+        "token_display": {
+          "iphone-air": "iPhone Air"
+        }
+      },
+      "shop_paths": {
+        "iphone-air": "shop/buy-iphone/iphone-air"
+      }
+    },
+    "ca": {
+      "localization": {
+        "token_display": {
+          "iphone-air": "iPhone Air"
+        }
+      },
+      "shop_paths": {
+        "iphone-air": "shop/buy-iphone/iphone-air"
+      }
+    },
+    "ch-de": {
+      "localization": {
+        "token_display": {
+          "iphone-air": "iPhone Air"
+        }
+      },
+      "shop_paths": {
+        "iphone-air": "shop/buy-iphone/iphone-air"
+      }
+    },
+    "ch-fr": {
+      "localization": {
+        "token_display": {
+          "iphone-air": "iPhone Air"
+        }
+      },
+      "shop_paths": {
+        "iphone-air": "shop/buy-iphone/iphone-air"
+      }
+    },
+    "cn": {
+      "localization": {
+        "token_display": {
+          "iphone-air": "iPhone Air"
+        }
+      },
+      "shop_paths": {
+        "iphone-air": "shop/buy-iphone/iphone-air"
+      }
+    },
+    "de": {
+      "localization": {
+        "token_display": {
+          "iphone-air": "iPhone Air"
+        }
+      },
+      "shop_paths": {
+        "iphone-air": "shop/buy-iphone/iphone-air"
+      }
+    },
+    "dk": {
+      "localization": {
+        "token_display": {
+          "iphone-air": "iPhone Air"
+        }
+      },
+      "shop_paths": {
+        "iphone-air": "shop/buy-iphone/iphone-air"
+      }
+    },
+    "es": {
+      "localization": {
+        "token_display": {
+          "iphone-air": "iPhone Air"
+        }
+      },
+      "shop_paths": {
+        "iphone-air": "shop/buy-iphone/iphone-air"
+      }
+    },
+    "fi": {
+      "localization": {
+        "token_display": {
+          "iphone-air": "iPhone Air"
+        }
+      },
+      "shop_paths": {
+        "iphone-air": "shop/buy-iphone/iphone-air"
+      }
+    },
+    "fr": {
+      "localization": {
+        "token_display": {
+          "iphone-air": "iPhone Air"
+        }
+      },
+      "shop_paths": {
+        "iphone-air": "shop/buy-iphone/iphone-air"
+      }
+    },
+    "hk": {
+      "localization": {
+        "token_display": {
+          "iphone-air": "iPhone Air"
+        }
+      },
+      "shop_paths": {
+        "iphone-air": "shop/buy-iphone/iphone-air"
+      }
+    },
+    "in": {
+      "localization": {
+        "token_display": {
+          "iphone-air": "iPhone Air"
+        }
+      },
+      "shop_paths": {
+        "iphone-air": "shop/buy-iphone/iphone-air"
+      }
+    },
+    "it": {
+      "localization": {
+        "token_display": {
+          "iphone-air": "iPhone Air"
+        }
+      },
+      "shop_paths": {
+        "iphone-air": "shop/buy-iphone/iphone-air"
+      }
+    },
+    "jp": {
+      "localization": {
+        "token_display": {
+          "iphone-air": "iPhone Air"
+        }
+      },
+      "shop_paths": {
+        "iphone-air": "shop/buy-iphone/iphone-air"
+      }
+    },
+    "kr": {
+      "localization": {
+        "token_display": {
+          "iphone-air": "iPhone Air"
+        }
+      },
+      "shop_paths": {
+        "iphone-air": "shop/buy-iphone/iphone-air"
+      }
+    },
+    "mx": {
+      "localization": {
+        "token_display": {
+          "iphone-air": "iPhone Air"
+        }
+      },
+      "shop_paths": {
+        "iphone-air": "shop/buy-iphone/iphone-air"
+      }
+    },
+    "my": {
+      "localization": {
+        "token_display": {
+          "iphone-air": "iPhone Air"
+        }
+      },
+      "shop_paths": {
+        "iphone-air": "shop/buy-iphone/iphone-air"
+      }
+    },
+    "nl": {
+      "localization": {
+        "token_display": {
+          "iphone-air": "iPhone Air"
+        }
+      },
+      "shop_paths": {
+        "iphone-air": "shop/buy-iphone/iphone-air"
+      }
+    },
+    "no": {
+      "localization": {
+        "token_display": {
+          "iphone-air": "iPhone Air"
+        }
+      },
+      "shop_paths": {
+        "iphone-air": "shop/buy-iphone/iphone-air"
+      }
+    },
+    "sa": {
+      "localization": {
+        "token_display": {
+          "iphone-air": "iPhone Air"
+        }
+      },
+      "shop_paths": {
+        "iphone-air": "shop/buy-iphone/iphone-air"
+      }
+    },
+    "se": {
+      "localization": {
+        "token_display": {
+          "iphone-air": "iPhone Air"
+        }
+      },
+      "shop_paths": {
+        "iphone-air": "shop/buy-iphone/iphone-air"
+      }
+    },
+    "sg": {
+      "localization": {
+        "token_display": {
+          "iphone-air": "iPhone Air"
+        }
+      },
+      "shop_paths": {
+        "iphone-air": "shop/buy-iphone/iphone-air"
+      }
+    },
+    "th": {
+      "localization": {
+        "token_display": {
+          "iphone-air": "iPhone Air"
+        }
+      },
+      "shop_paths": {
+        "iphone-air": "shop/buy-iphone/iphone-air"
+      }
+    },
+    "tr": {
+      "localization": {
+        "token_display": {
+          "iphone-air": "iPhone Air"
+        }
+      },
+      "shop_paths": {
+        "iphone-air": "shop/buy-iphone/iphone-air"
+      }
+    },
+    "tw": {
+      "localization": {
+        "token_display": {
+          "iphone-air": "iPhone Air"
+        }
+      },
+      "shop_paths": {
+        "iphone-air": "shop/buy-iphone/iphone-air"
+      }
+    },
+    "uk": {
+      "localization": {
+        "token_display": {
+          "iphone-air": "iPhone Air"
+        }
+      },
+      "shop_paths": {
+        "iphone-air": "shop/buy-iphone/iphone-air"
+      }
+    },
+    "us": {
+      "localization": {
+        "token_display": {
+          "iphone-air": "iPhone Air"
+        }
+      },
+      "shop_paths": {
+        "iphone-air": "shop/buy-iphone/iphone-air"
+      }
+    }
+  },
+  "discovered_models": {
+    "ae": {
+      "iphone-air": {
+        "skus": {
+          "MG184AH/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Space Black",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG184AH/A"
+          },
+          "MG194AH/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Cloud White",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG194AH/A"
+          },
+          "MG1A4AH/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Light Gold",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG1A4AH/A"
+          },
+          "MG1D4AH/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Sky Blue",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG1D4AH/A"
+          },
+          "MG1E4AH/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Space Black",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG1E4AH/A"
+          },
+          "MG1G4AH/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Cloud White",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG1G4AH/A"
+          },
+          "MG1H4AH/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Light Gold",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG1H4AH/A"
+          },
+          "MG1J4AH/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Sky Blue",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG1J4AH/A"
+          },
+          "MG1L4AH/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Space Black",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG1L4AH/A"
+          },
+          "MG1N4AH/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Cloud White",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG1N4AH/A"
+          },
+          "MG1P4AH/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Light Gold",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG1P4AH/A"
+          },
+          "MG1Q4AH/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Sky Blue",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG1Q4AH/A"
+          }
+        },
+        "url": "https://www.apple.com/ae/shop/buy-iphone/iphone-air"
+      }
+    },
+    "at": {
+      "iphone-air": {
+        "skus": {
+          "MG2L4ZD/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Space Schwarz",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2L4ZD/A"
+          },
+          "MG2M4ZD/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Wolkenweiß",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2M4ZD/A"
+          },
+          "MG2N4ZD/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Lichtgold",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2N4ZD/A"
+          },
+          "MG2P4ZD/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Himmelblau",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2P4ZD/A"
+          },
+          "MG2Q4ZD/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Space Schwarz",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2Q4ZD/A"
+          },
+          "MG2T4ZD/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Wolkenweiß",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2T4ZD/A"
+          },
+          "MG2U4ZD/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Lichtgold",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2U4ZD/A"
+          },
+          "MG2V4ZD/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Himmelblau",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2V4ZD/A"
+          },
+          "MG2W4ZD/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Space Schwarz",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2W4ZD/A"
+          },
+          "MG2X4ZD/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Wolkenweiß",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2X4ZD/A"
+          },
+          "MG2Y4ZD/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Lichtgold",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2Y4ZD/A"
+          },
+          "MG304ZD/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Himmelblau",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG304ZD/A"
+          }
+        },
+        "url": "https://www.apple.com/at/shop/buy-iphone/iphone-air"
+      }
+    },
+    "au": {
+      "iphone-air": {
+        "skus": {
+          "MG2L4X/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Space Black",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2L4X/A"
+          },
+          "MG2M4X/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Cloud White",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2M4X/A"
+          },
+          "MG2N4X/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Light Gold",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2N4X/A"
+          },
+          "MG2P4X/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Sky Blue",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2P4X/A"
+          },
+          "MG2Q4X/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Space Black",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2Q4X/A"
+          },
+          "MG2T4X/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Cloud White",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2T4X/A"
+          },
+          "MG2U4X/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Light Gold",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2U4X/A"
+          },
+          "MG2V4X/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Sky Blue",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2V4X/A"
+          },
+          "MG2W4X/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Space Black",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2W4X/A"
+          },
+          "MG2X4X/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Cloud White",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2X4X/A"
+          },
+          "MG2Y4X/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Light Gold",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2Y4X/A"
+          },
+          "MG304X/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Sky Blue",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG304X/A"
+          }
+        },
+        "url": "https://www.apple.com/au/shop/buy-iphone/iphone-air"
+      }
+    },
+    "be-fr": {
+      "iphone-air": {
+        "skus": {
+          "MG2L4ZD/A": {
+            "capacity": "256 Go",
+            "colorDisplay": "Noir sidéral",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2L4ZD/A"
+          },
+          "MG2M4ZD/A": {
+            "capacity": "256 Go",
+            "colorDisplay": "Blanc nuage",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2M4ZD/A"
+          },
+          "MG2N4ZD/A": {
+            "capacity": "256 Go",
+            "colorDisplay": "Or clair",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2N4ZD/A"
+          },
+          "MG2P4ZD/A": {
+            "capacity": "256 Go",
+            "colorDisplay": "Bleu ciel",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2P4ZD/A"
+          },
+          "MG2Q4ZD/A": {
+            "capacity": "512 Go",
+            "colorDisplay": "Noir sidéral",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2Q4ZD/A"
+          },
+          "MG2T4ZD/A": {
+            "capacity": "512 Go",
+            "colorDisplay": "Blanc nuage",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2T4ZD/A"
+          },
+          "MG2U4ZD/A": {
+            "capacity": "512 Go",
+            "colorDisplay": "Or clair",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2U4ZD/A"
+          },
+          "MG2V4ZD/A": {
+            "capacity": "512 Go",
+            "colorDisplay": "Bleu ciel",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2V4ZD/A"
+          },
+          "MG2W4ZD/A": {
+            "capacity": "1To",
+            "colorDisplay": "Noir sidéral",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2W4ZD/A"
+          },
+          "MG2X4ZD/A": {
+            "capacity": "1To",
+            "colorDisplay": "Blanc nuage",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2X4ZD/A"
+          },
+          "MG2Y4ZD/A": {
+            "capacity": "1To",
+            "colorDisplay": "Or clair",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2Y4ZD/A"
+          },
+          "MG304ZD/A": {
+            "capacity": "1To",
+            "colorDisplay": "Bleu ciel",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG304ZD/A"
+          }
+        },
+        "url": "https://www.apple.com/be-fr/shop/buy-iphone/iphone-air"
+      }
+    },
+    "be-nl": {
+      "iphone-air": {
+        "skus": {
+          "MG2L4ZD/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Spacezwart",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2L4ZD/A"
+          },
+          "MG2M4ZD/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Wolkenwit",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2M4ZD/A"
+          },
+          "MG2N4ZD/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Lichtgoud",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2N4ZD/A"
+          },
+          "MG2P4ZD/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Hemelsblauw",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2P4ZD/A"
+          },
+          "MG2Q4ZD/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Spacezwart",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2Q4ZD/A"
+          },
+          "MG2T4ZD/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Wolkenwit",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2T4ZD/A"
+          },
+          "MG2U4ZD/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Lichtgoud",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2U4ZD/A"
+          },
+          "MG2V4ZD/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Hemelsblauw",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2V4ZD/A"
+          },
+          "MG2W4ZD/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Spacezwart",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2W4ZD/A"
+          },
+          "MG2X4ZD/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Wolkenwit",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2X4ZD/A"
+          },
+          "MG2Y4ZD/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Lichtgoud",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2Y4ZD/A"
+          },
+          "MG304ZD/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Hemelsblauw",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG304ZD/A"
+          }
+        },
+        "url": "https://www.apple.com/be-nl/shop/buy-iphone/iphone-air"
+      }
+    },
+    "br": {
+      "iphone-air": {
+        "skus": {
+          "MG2L4BE/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Preto-espacial",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2L4BE/A"
+          },
+          "MG2M4BE/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Branco-nuvem",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2M4BE/A"
+          },
+          "MG2N4BE/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Dourado-claro",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2N4BE/A"
+          },
+          "MG2P4BE/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Azul-céu",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2P4BE/A"
+          },
+          "MG2Q4BE/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Preto-espacial",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2Q4BE/A"
+          },
+          "MG2T4BE/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Branco-nuvem",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2T4BE/A"
+          },
+          "MG2U4BE/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Dourado-claro",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2U4BE/A"
+          },
+          "MG2V4BE/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Azul-céu",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2V4BE/A"
+          },
+          "MG2W4BE/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Preto-espacial",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2W4BE/A"
+          },
+          "MG2X4BE/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Branco-nuvem",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2X4BE/A"
+          },
+          "MG2Y4BE/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Dourado-claro",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2Y4BE/A"
+          },
+          "MG304BE/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Azul-céu",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG304BE/A"
+          }
+        },
+        "url": "https://www.apple.com/br/shop/buy-iphone/iphone-air"
+      }
+    },
+    "ca": {
+      "iphone-air": {
+        "skus": {
+          "MG184VC/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Space Black",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG184VC/A"
+          },
+          "MG194VC/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Cloud White",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG194VC/A"
+          },
+          "MG1A4VC/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Light Gold",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG1A4VC/A"
+          },
+          "MG1D4VC/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Sky Blue",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG1D4VC/A"
+          },
+          "MG1E4VC/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Space Black",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG1E4VC/A"
+          },
+          "MG1G4VC/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Cloud White",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG1G4VC/A"
+          },
+          "MG1H4VC/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Light Gold",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG1H4VC/A"
+          },
+          "MG1J4VC/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Sky Blue",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG1J4VC/A"
+          },
+          "MG1L4VC/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Space Black",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG1L4VC/A"
+          },
+          "MG1N4VC/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Cloud White",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG1N4VC/A"
+          },
+          "MG1P4VC/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Light Gold",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG1P4VC/A"
+          },
+          "MG1Q4VC/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Sky Blue",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG1Q4VC/A"
+          }
+        },
+        "url": "https://www.apple.com/ca/shop/buy-iphone/iphone-air"
+      }
+    },
+    "ch-de": {
+      "iphone-air": {
+        "skus": {
+          "MG2L4QL/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Space Schwarz",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2L4QL/A"
+          },
+          "MG2M4QL/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Wolkenweiß",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2M4QL/A"
+          },
+          "MG2N4QL/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Lichtgold",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2N4QL/A"
+          },
+          "MG2P4QL/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Himmelblau",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2P4QL/A"
+          },
+          "MG2Q4QL/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Space Schwarz",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2Q4QL/A"
+          },
+          "MG2T4QL/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Wolkenweiß",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2T4QL/A"
+          },
+          "MG2U4QL/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Lichtgold",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2U4QL/A"
+          },
+          "MG2V4QL/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Himmelblau",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2V4QL/A"
+          },
+          "MG2W4QL/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Space Schwarz",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2W4QL/A"
+          },
+          "MG2X4QL/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Wolkenweiß",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2X4QL/A"
+          },
+          "MG2Y4QL/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Lichtgold",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2Y4QL/A"
+          },
+          "MG304QL/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Himmelblau",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG304QL/A"
+          }
+        },
+        "url": "https://www.apple.com/ch-de/shop/buy-iphone/iphone-air"
+      }
+    },
+    "ch-fr": {
+      "iphone-air": {
+        "skus": {
+          "MG2L4QL/A": {
+            "capacity": "256 Go",
+            "colorDisplay": "Noir sidéral",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2L4QL/A"
+          },
+          "MG2M4QL/A": {
+            "capacity": "256 Go",
+            "colorDisplay": "Blanc nuage",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2M4QL/A"
+          },
+          "MG2N4QL/A": {
+            "capacity": "256 Go",
+            "colorDisplay": "Or clair",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2N4QL/A"
+          },
+          "MG2P4QL/A": {
+            "capacity": "256 Go",
+            "colorDisplay": "Bleu ciel",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2P4QL/A"
+          },
+          "MG2Q4QL/A": {
+            "capacity": "512 Go",
+            "colorDisplay": "Noir sidéral",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2Q4QL/A"
+          },
+          "MG2T4QL/A": {
+            "capacity": "512 Go",
+            "colorDisplay": "Blanc nuage",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2T4QL/A"
+          },
+          "MG2U4QL/A": {
+            "capacity": "512 Go",
+            "colorDisplay": "Or clair",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2U4QL/A"
+          },
+          "MG2V4QL/A": {
+            "capacity": "512 Go",
+            "colorDisplay": "Bleu ciel",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2V4QL/A"
+          },
+          "MG2W4QL/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Noir sidéral",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2W4QL/A"
+          },
+          "MG2X4QL/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Blanc nuage",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2X4QL/A"
+          },
+          "MG2Y4QL/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Or clair",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2Y4QL/A"
+          },
+          "MG304QL/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Bleu ciel",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG304QL/A"
+          }
+        },
+        "url": "https://www.apple.com/ch-fr/shop/buy-iphone/iphone-air"
+      }
+    },
+    "cn": {
+      "iphone-air": {
+        "skus": {
+          "MG314CH/A": {
+            "capacity": "256GB",
+            "colorDisplay": "深空黑色",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG314CH/A"
+          },
+          "MG334CH/A": {
+            "capacity": "256GB",
+            "colorDisplay": "云白色",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG334CH/A"
+          },
+          "MG344CH/A": {
+            "capacity": "256GB",
+            "colorDisplay": "浅金色",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG344CH/A"
+          },
+          "MG364CH/A": {
+            "capacity": "256GB",
+            "colorDisplay": "天蓝色",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG364CH/A"
+          },
+          "MG374CH/A": {
+            "capacity": "512GB",
+            "colorDisplay": "深空黑色",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG374CH/A"
+          },
+          "MG394CH/A": {
+            "capacity": "512GB",
+            "colorDisplay": "云白色",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG394CH/A"
+          },
+          "MG3A4CH/A": {
+            "capacity": "512GB",
+            "colorDisplay": "浅金色",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG3A4CH/A"
+          },
+          "MG3C4CH/A": {
+            "capacity": "512GB",
+            "colorDisplay": "天蓝色",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG3C4CH/A"
+          },
+          "MG3D4CH/A": {
+            "capacity": "1TB",
+            "colorDisplay": "深空黑色",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG3D4CH/A"
+          },
+          "MG3E4CH/A": {
+            "capacity": "1TB",
+            "colorDisplay": "云白色",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG3E4CH/A"
+          },
+          "MG3F4CH/A": {
+            "capacity": "1TB",
+            "colorDisplay": "浅金色",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG3F4CH/A"
+          },
+          "MG3G4CH/A": {
+            "capacity": "1TB",
+            "colorDisplay": "天蓝色",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG3G4CH/A"
+          }
+        },
+        "url": "https://www.apple.com/cn/shop/buy-iphone/iphone-air"
+      }
+    },
+    "de": {
+      "iphone-air": {
+        "skus": {
+          "MG2L4ZD/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Space Schwarz",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2L4ZD/A"
+          },
+          "MG2M4ZD/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Wolkenweiß",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2M4ZD/A"
+          },
+          "MG2N4ZD/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Lichtgold",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2N4ZD/A"
+          },
+          "MG2P4ZD/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Himmelblau",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2P4ZD/A"
+          },
+          "MG2Q4ZD/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Space Schwarz",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2Q4ZD/A"
+          },
+          "MG2T4ZD/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Wolkenweiß",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2T4ZD/A"
+          },
+          "MG2U4ZD/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Lichtgold",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2U4ZD/A"
+          },
+          "MG2V4ZD/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Himmelblau",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2V4ZD/A"
+          },
+          "MG2W4ZD/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Space Schwarz",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2W4ZD/A"
+          },
+          "MG2X4ZD/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Wolkenweiß",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2X4ZD/A"
+          },
+          "MG2Y4ZD/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Lichtgold",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2Y4ZD/A"
+          },
+          "MG304ZD/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Himmelblau",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG304ZD/A"
+          }
+        },
+        "url": "https://www.apple.com/de/shop/buy-iphone/iphone-air"
+      }
+    },
+    "dk": {
+      "iphone-air": {
+        "skus": {
+          "MG2L4QN/A": {
+            "capacity": "256GB",
+            "colorDisplay": "space black",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2L4QN/A"
+          },
+          "MG2M4QN/A": {
+            "capacity": "256GB",
+            "colorDisplay": "skyhvid",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2M4QN/A"
+          },
+          "MG2N4QN/A": {
+            "capacity": "256GB",
+            "colorDisplay": "lyst guld",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2N4QN/A"
+          },
+          "MG2P4QN/A": {
+            "capacity": "256GB",
+            "colorDisplay": "himmelblå",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2P4QN/A"
+          },
+          "MG2Q4QN/A": {
+            "capacity": "512GB",
+            "colorDisplay": "space black",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2Q4QN/A"
+          },
+          "MG2T4QN/A": {
+            "capacity": "512GB",
+            "colorDisplay": "skyhvid",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2T4QN/A"
+          },
+          "MG2U4QN/A": {
+            "capacity": "512GB",
+            "colorDisplay": "lyst guld",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2U4QN/A"
+          },
+          "MG2V4QN/A": {
+            "capacity": "512GB",
+            "colorDisplay": "himmelblå",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2V4QN/A"
+          },
+          "MG2W4QN/A": {
+            "capacity": "1TB",
+            "colorDisplay": "space black",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2W4QN/A"
+          },
+          "MG2X4QN/A": {
+            "capacity": "1TB",
+            "colorDisplay": "skyhvid",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2X4QN/A"
+          },
+          "MG2Y4QN/A": {
+            "capacity": "1TB",
+            "colorDisplay": "lyst guld",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2Y4QN/A"
+          },
+          "MG304QN/A": {
+            "capacity": "1TB",
+            "colorDisplay": "himmelblå",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG304QN/A"
+          }
+        },
+        "url": "https://www.apple.com/dk/shop/buy-iphone/iphone-air"
+      }
+    },
+    "es": {
+      "iphone-air": {
+        "skus": {
+          "MG2L4QL/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Negro espacial",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2L4QL/A"
+          },
+          "MG2M4QL/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Blanco nube",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2M4QL/A"
+          },
+          "MG2N4QL/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Dorado claro",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2N4QL/A"
+          },
+          "MG2P4QL/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Azul cielo",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2P4QL/A"
+          },
+          "MG2Q4QL/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Negro espacial",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2Q4QL/A"
+          },
+          "MG2T4QL/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Blanco nube",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2T4QL/A"
+          },
+          "MG2U4QL/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Dorado claro",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2U4QL/A"
+          },
+          "MG2V4QL/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Azul cielo",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2V4QL/A"
+          },
+          "MG2W4QL/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Negro espacial",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2W4QL/A"
+          },
+          "MG2X4QL/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Blanco nube",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2X4QL/A"
+          },
+          "MG2Y4QL/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Dorado claro",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2Y4QL/A"
+          },
+          "MG304QL/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Azul cielo",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG304QL/A"
+          }
+        },
+        "url": "https://www.apple.com/es/shop/buy-iphone/iphone-air"
+      }
+    },
+    "fi": {
+      "iphone-air": {
+        "skus": {
+          "MG2L4QN/A": {
+            "capacity": "256 Gt",
+            "colorDisplay": "Tähtimusta",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2L4QN/A"
+          },
+          "MG2M4QN/A": {
+            "capacity": "256 Gt",
+            "colorDisplay": "Poudan­valkea",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2M4QN/A"
+          },
+          "MG2N4QN/A": {
+            "capacity": "256 Gt",
+            "colorDisplay": "Vaalea kulta",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2N4QN/A"
+          },
+          "MG2P4QN/A": {
+            "capacity": "256 Gt",
+            "colorDisplay": "Taivaan­sininen",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2P4QN/A"
+          },
+          "MG2Q4QN/A": {
+            "capacity": "512 Gt",
+            "colorDisplay": "Tähtimusta",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2Q4QN/A"
+          },
+          "MG2T4QN/A": {
+            "capacity": "512 Gt",
+            "colorDisplay": "Poudan­valkea",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2T4QN/A"
+          },
+          "MG2U4QN/A": {
+            "capacity": "512 Gt",
+            "colorDisplay": "Vaalea kulta",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2U4QN/A"
+          },
+          "MG2V4QN/A": {
+            "capacity": "512 Gt",
+            "colorDisplay": "Taivaan­sininen",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2V4QN/A"
+          },
+          "MG2W4QN/A": {
+            "capacity": "1 Tt",
+            "colorDisplay": "Tähtimusta",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2W4QN/A"
+          },
+          "MG2X4QN/A": {
+            "capacity": "1 Tt",
+            "colorDisplay": "Poudan­valkea",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2X4QN/A"
+          },
+          "MG2Y4QN/A": {
+            "capacity": "1 Tt",
+            "colorDisplay": "Vaalea kulta",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2Y4QN/A"
+          },
+          "MG304QN/A": {
+            "capacity": "1 Tt",
+            "colorDisplay": "Taivaan­sininen",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG304QN/A"
+          }
+        },
+        "url": "https://www.apple.com/fi/shop/buy-iphone/iphone-air"
+      }
+    },
+    "fr": {
+      "iphone-air": {
+        "skus": {
+          "MG2L4F/A": {
+            "capacity": "256 Go",
+            "colorDisplay": "Noir sidéral",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2L4F/A"
+          },
+          "MG2M4F/A": {
+            "capacity": "256 Go",
+            "colorDisplay": "Blanc nuage",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2M4F/A"
+          },
+          "MG2N4F/A": {
+            "capacity": "256 Go",
+            "colorDisplay": "Or clair",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2N4F/A"
+          },
+          "MG2P4F/A": {
+            "capacity": "256 Go",
+            "colorDisplay": "Bleu ciel",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2P4F/A"
+          },
+          "MG2Q4F/A": {
+            "capacity": "512 Go",
+            "colorDisplay": "Noir sidéral",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2Q4F/A"
+          },
+          "MG2T4F/A": {
+            "capacity": "512 Go",
+            "colorDisplay": "Blanc nuage",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2T4F/A"
+          },
+          "MG2U4F/A": {
+            "capacity": "512 Go",
+            "colorDisplay": "Or clair",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2U4F/A"
+          },
+          "MG2V4F/A": {
+            "capacity": "512 Go",
+            "colorDisplay": "Bleu ciel",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2V4F/A"
+          },
+          "MG2W4F/A": {
+            "capacity": "1 To",
+            "colorDisplay": "Noir sidéral",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2W4F/A"
+          },
+          "MG2X4F/A": {
+            "capacity": "1 To",
+            "colorDisplay": "Blanc nuage",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2X4F/A"
+          },
+          "MG2Y4F/A": {
+            "capacity": "1 To",
+            "colorDisplay": "Or clair",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2Y4F/A"
+          },
+          "MG304F/A": {
+            "capacity": "1 To",
+            "colorDisplay": "Bleu ciel",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG304F/A"
+          }
+        },
+        "url": "https://www.apple.com/fr/shop/buy-iphone/iphone-air"
+      }
+    },
+    "hk": {
+      "iphone-air": {
+        "skus": {
+          "MG2L4ZA/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Space Black",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2L4ZA/A"
+          },
+          "MG2M4ZA/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Cloud White",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2M4ZA/A"
+          },
+          "MG2N4ZA/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Light Gold",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2N4ZA/A"
+          },
+          "MG2P4ZA/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Sky Blue",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2P4ZA/A"
+          },
+          "MG2Q4ZA/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Space Black",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2Q4ZA/A"
+          },
+          "MG2T4ZA/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Cloud White",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2T4ZA/A"
+          },
+          "MG2U4ZA/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Light Gold",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2U4ZA/A"
+          },
+          "MG2V4ZA/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Sky Blue",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2V4ZA/A"
+          },
+          "MG2W4ZA/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Space Black",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2W4ZA/A"
+          },
+          "MG2X4ZA/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Cloud White",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2X4ZA/A"
+          },
+          "MG2Y4ZA/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Light Gold",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2Y4ZA/A"
+          },
+          "MG304ZA/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Sky Blue",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG304ZA/A"
+          }
+        },
+        "url": "https://www.apple.com/hk/shop/buy-iphone/iphone-air"
+      }
+    },
+    "in": {
+      "iphone-air": {
+        "skus": {
+          "MG2L4HN/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Space Black",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2L4HN/A"
+          },
+          "MG2M4HN/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Cloud White",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2M4HN/A"
+          },
+          "MG2N4HN/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Light Gold",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2N4HN/A"
+          },
+          "MG2P4HN/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Sky Blue",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2P4HN/A"
+          },
+          "MG2Q4HN/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Space Black",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2Q4HN/A"
+          },
+          "MG2T4HN/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Cloud White",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2T4HN/A"
+          },
+          "MG2U4HN/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Light Gold",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2U4HN/A"
+          },
+          "MG2V4HN/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Sky Blue",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2V4HN/A"
+          },
+          "MG2W4HN/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Space Black",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2W4HN/A"
+          },
+          "MG2X4HN/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Cloud White",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2X4HN/A"
+          },
+          "MG2Y4HN/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Light Gold",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2Y4HN/A"
+          },
+          "MG304HN/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Sky Blue",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG304HN/A"
+          }
+        },
+        "url": "https://www.apple.com/in/shop/buy-iphone/iphone-air"
+      }
+    },
+    "it": {
+      "iphone-air": {
+        "skus": {
+          "MG2L4QL/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Nero siderale",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2L4QL/A"
+          },
+          "MG2M4QL/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Bianco nuvola",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2M4QL/A"
+          },
+          "MG2N4QL/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Oro chiaro",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2N4QL/A"
+          },
+          "MG2P4QL/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Celeste",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2P4QL/A"
+          },
+          "MG2Q4QL/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Nero siderale",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2Q4QL/A"
+          },
+          "MG2T4QL/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Bianco nuvola",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2T4QL/A"
+          },
+          "MG2U4QL/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Oro chiaro",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2U4QL/A"
+          },
+          "MG2V4QL/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Celeste",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2V4QL/A"
+          },
+          "MG2W4QL/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Nero siderale",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2W4QL/A"
+          },
+          "MG2X4QL/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Bianco nuvola",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2X4QL/A"
+          },
+          "MG2Y4QL/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Oro chiaro",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2Y4QL/A"
+          },
+          "MG304QL/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Celeste",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG304QL/A"
+          }
+        },
+        "url": "https://www.apple.com/it/shop/buy-iphone/iphone-air"
+      }
+    },
+    "jp": {
+      "iphone-air": {
+        "skus": {
+          "MG274J/A": {
+            "capacity": "256GB",
+            "colorDisplay": "スペースブラック",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG274J/A"
+          },
+          "MG284J/A": {
+            "capacity": "256GB",
+            "colorDisplay": "クラウドホワイト",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG284J/A"
+          },
+          "MG294J/A": {
+            "capacity": "256GB",
+            "colorDisplay": "ライトゴールド",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG294J/A"
+          },
+          "MG2A4J/A": {
+            "capacity": "256GB",
+            "colorDisplay": "スカイブルー",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2A4J/A"
+          },
+          "MG2C4J/A": {
+            "capacity": "512GB",
+            "colorDisplay": "スペースブラック",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2C4J/A"
+          },
+          "MG2D4J/A": {
+            "capacity": "512GB",
+            "colorDisplay": "クラウドホワイト",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2D4J/A"
+          },
+          "MG2E4J/A": {
+            "capacity": "512GB",
+            "colorDisplay": "ライトゴールド",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2E4J/A"
+          },
+          "MG2F4J/A": {
+            "capacity": "512GB",
+            "colorDisplay": "スカイブルー",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2F4J/A"
+          },
+          "MG2G4J/A": {
+            "capacity": "1TB",
+            "colorDisplay": "スペースブラック",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2G4J/A"
+          },
+          "MG2H4J/A": {
+            "capacity": "1TB",
+            "colorDisplay": "クラウドホワイト",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2H4J/A"
+          },
+          "MG2J4J/A": {
+            "capacity": "1TB",
+            "colorDisplay": "ライトゴールド",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2J4J/A"
+          },
+          "MG2K4J/A": {
+            "capacity": "1TB",
+            "colorDisplay": "スカイブルー",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2K4J/A"
+          }
+        },
+        "url": "https://www.apple.com/jp/shop/buy-iphone/iphone-air"
+      }
+    },
+    "kr": {
+      "iphone-air": {
+        "skus": {
+          "MG2L4KH/A": {
+            "capacity": "256GB",
+            "colorDisplay": "스페이스 블랙",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2L4KH/A"
+          },
+          "MG2M4KH/A": {
+            "capacity": "256GB",
+            "colorDisplay": "클라우드 화이트",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2M4KH/A"
+          },
+          "MG2N4KH/A": {
+            "capacity": "256GB",
+            "colorDisplay": "라이트 골드",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2N4KH/A"
+          },
+          "MG2P4KH/A": {
+            "capacity": "256GB",
+            "colorDisplay": "스카이 블루",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2P4KH/A"
+          },
+          "MG2Q4KH/A": {
+            "capacity": "512GB",
+            "colorDisplay": "스페이스 블랙",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2Q4KH/A"
+          },
+          "MG2T4KH/A": {
+            "capacity": "512GB",
+            "colorDisplay": "클라우드 화이트",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2T4KH/A"
+          },
+          "MG2U4KH/A": {
+            "capacity": "512GB",
+            "colorDisplay": "라이트 골드",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2U4KH/A"
+          },
+          "MG2V4KH/A": {
+            "capacity": "512GB",
+            "colorDisplay": "스카이 블루",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2V4KH/A"
+          },
+          "MG2W4KH/A": {
+            "capacity": "1TB",
+            "colorDisplay": "스페이스 블랙",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2W4KH/A"
+          },
+          "MG2X4KH/A": {
+            "capacity": "1TB",
+            "colorDisplay": "클라우드 화이트",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2X4KH/A"
+          },
+          "MG2Y4KH/A": {
+            "capacity": "1TB",
+            "colorDisplay": "라이트 골드",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2Y4KH/A"
+          },
+          "MG304KH/A": {
+            "capacity": "1TB",
+            "colorDisplay": "스카이 블루",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG304KH/A"
+          }
+        },
+        "url": "https://www.apple.com/kr/shop/buy-iphone/iphone-air"
+      }
+    },
+    "mx": {
+      "iphone-air": {
+        "skus": {
+          "MG184E/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Negro espacial",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG184E/A"
+          },
+          "MG194E/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Blanco nube",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG194E/A"
+          },
+          "MG1A4E/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Oro claro",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG1A4E/A"
+          },
+          "MG1D4E/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Azul cielo",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG1D4E/A"
+          },
+          "MG1E4E/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Negro espacial",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG1E4E/A"
+          },
+          "MG1G4E/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Blanco nube",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG1G4E/A"
+          },
+          "MG1H4E/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Oro claro",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG1H4E/A"
+          },
+          "MG1J4E/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Azul cielo",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG1J4E/A"
+          },
+          "MG1L4E/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Negro espacial",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG1L4E/A"
+          },
+          "MG1N4E/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Blanco nube",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG1N4E/A"
+          },
+          "MG1P4E/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Oro claro",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG1P4E/A"
+          },
+          "MG1Q4E/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Azul cielo",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG1Q4E/A"
+          }
+        },
+        "url": "https://www.apple.com/mx/shop/buy-iphone/iphone-air"
+      }
+    },
+    "my": {
+      "iphone-air": {
+        "skus": {
+          "MG2L4X/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Space Black",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2L4X/A"
+          },
+          "MG2M4X/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Cloud White",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2M4X/A"
+          },
+          "MG2N4X/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Light Gold",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2N4X/A"
+          },
+          "MG2P4X/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Sky Blue",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2P4X/A"
+          },
+          "MG2Q4X/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Space Black",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2Q4X/A"
+          },
+          "MG2T4X/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Cloud White",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2T4X/A"
+          },
+          "MG2U4X/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Light Gold",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2U4X/A"
+          },
+          "MG2V4X/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Sky Blue",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2V4X/A"
+          },
+          "MG2W4X/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Space Black",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2W4X/A"
+          },
+          "MG2X4X/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Cloud White",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2X4X/A"
+          },
+          "MG2Y4X/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Light Gold",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2Y4X/A"
+          },
+          "MG304X/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Sky Blue",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG304X/A"
+          }
+        },
+        "url": "https://www.apple.com/my/shop/buy-iphone/iphone-air"
+      }
+    },
+    "nl": {
+      "iphone-air": {
+        "skus": {
+          "MG2L4ZD/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Spacezwart",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2L4ZD/A"
+          },
+          "MG2M4ZD/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Wolkenwit",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2M4ZD/A"
+          },
+          "MG2N4ZD/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Lichtgoud",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2N4ZD/A"
+          },
+          "MG2P4ZD/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Hemelsblauw",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2P4ZD/A"
+          },
+          "MG2Q4ZD/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Spacezwart",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2Q4ZD/A"
+          },
+          "MG2T4ZD/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Wolkenwit",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2T4ZD/A"
+          },
+          "MG2U4ZD/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Lichtgoud",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2U4ZD/A"
+          },
+          "MG2V4ZD/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Hemelsblauw",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2V4ZD/A"
+          },
+          "MG2W4ZD/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Spacezwart",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2W4ZD/A"
+          },
+          "MG2X4ZD/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Wolkenwit",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2X4ZD/A"
+          },
+          "MG2Y4ZD/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Lichtgoud",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2Y4ZD/A"
+          },
+          "MG304ZD/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Hemelsblauw",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG304ZD/A"
+          }
+        },
+        "url": "https://www.apple.com/nl/shop/buy-iphone/iphone-air"
+      }
+    },
+    "no": {
+      "iphone-air": {
+        "skus": {
+          "MG2L4QN/A": {
+            "capacity": "256GB",
+            "colorDisplay": "stellarsvart",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2L4QN/A"
+          },
+          "MG2M4QN/A": {
+            "capacity": "256GB",
+            "colorDisplay": "skyhvit",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2M4QN/A"
+          },
+          "MG2N4QN/A": {
+            "capacity": "256GB",
+            "colorDisplay": "lys gull",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2N4QN/A"
+          },
+          "MG2P4QN/A": {
+            "capacity": "256GB",
+            "colorDisplay": "himmelblå",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2P4QN/A"
+          },
+          "MG2Q4QN/A": {
+            "capacity": "512GB",
+            "colorDisplay": "stellarsvart",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2Q4QN/A"
+          },
+          "MG2T4QN/A": {
+            "capacity": "512GB",
+            "colorDisplay": "skyhvit",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2T4QN/A"
+          },
+          "MG2U4QN/A": {
+            "capacity": "512GB",
+            "colorDisplay": "lys gull",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2U4QN/A"
+          },
+          "MG2V4QN/A": {
+            "capacity": "512GB",
+            "colorDisplay": "himmelblå",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2V4QN/A"
+          },
+          "MG2W4QN/A": {
+            "capacity": "1TB",
+            "colorDisplay": "stellarsvart",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2W4QN/A"
+          },
+          "MG2X4QN/A": {
+            "capacity": "1TB",
+            "colorDisplay": "skyhvit",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2X4QN/A"
+          },
+          "MG2Y4QN/A": {
+            "capacity": "1TB",
+            "colorDisplay": "lys gull",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2Y4QN/A"
+          },
+          "MG304QN/A": {
+            "capacity": "1TB",
+            "colorDisplay": "himmelblå",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG304QN/A"
+          }
+        },
+        "url": "https://www.apple.com/no/shop/buy-iphone/iphone-air"
+      }
+    },
+    "sa": {
+      "iphone-air": {
+        "skus": {
+          "MG184AH/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Space Black",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG184AH/A"
+          },
+          "MG194AH/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Cloud White",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG194AH/A"
+          },
+          "MG1A4AH/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Light Gold",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG1A4AH/A"
+          },
+          "MG1D4AH/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Sky Blue",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG1D4AH/A"
+          },
+          "MG1E4AH/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Space Black",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG1E4AH/A"
+          },
+          "MG1G4AH/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Cloud White",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG1G4AH/A"
+          },
+          "MG1H4AH/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Light Gold",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG1H4AH/A"
+          },
+          "MG1J4AH/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Sky Blue",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG1J4AH/A"
+          },
+          "MG1L4AH/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Space Black",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG1L4AH/A"
+          },
+          "MG1N4AH/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Cloud White",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG1N4AH/A"
+          },
+          "MG1P4AH/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Light Gold",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG1P4AH/A"
+          },
+          "MG1Q4AH/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Sky Blue",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG1Q4AH/A"
+          }
+        },
+        "url": "https://www.apple.com/sa/shop/buy-iphone/iphone-air"
+      }
+    },
+    "se": {
+      "iphone-air": {
+        "skus": {
+          "MG2L4QN/A": {
+            "capacity": "256GB",
+            "colorDisplay": "rymdsvart",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2L4QN/A"
+          },
+          "MG2M4QN/A": {
+            "capacity": "256GB",
+            "colorDisplay": "molnvit",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2M4QN/A"
+          },
+          "MG2N4QN/A": {
+            "capacity": "256GB",
+            "colorDisplay": "ljust guld",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2N4QN/A"
+          },
+          "MG2P4QN/A": {
+            "capacity": "256GB",
+            "colorDisplay": "himmelsblå",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2P4QN/A"
+          },
+          "MG2Q4QN/A": {
+            "capacity": "512GB",
+            "colorDisplay": "rymdsvart",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2Q4QN/A"
+          },
+          "MG2T4QN/A": {
+            "capacity": "512GB",
+            "colorDisplay": "molnvit",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2T4QN/A"
+          },
+          "MG2U4QN/A": {
+            "capacity": "512GB",
+            "colorDisplay": "ljust guld",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2U4QN/A"
+          },
+          "MG2V4QN/A": {
+            "capacity": "512GB",
+            "colorDisplay": "himmelsblå",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2V4QN/A"
+          },
+          "MG2W4QN/A": {
+            "capacity": "1TB",
+            "colorDisplay": "rymdsvart",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2W4QN/A"
+          },
+          "MG2X4QN/A": {
+            "capacity": "1TB",
+            "colorDisplay": "molnvit",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2X4QN/A"
+          },
+          "MG2Y4QN/A": {
+            "capacity": "1TB",
+            "colorDisplay": "ljust guld",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2Y4QN/A"
+          },
+          "MG304QN/A": {
+            "capacity": "1TB",
+            "colorDisplay": "himmelsblå",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG304QN/A"
+          }
+        },
+        "url": "https://www.apple.com/se/shop/buy-iphone/iphone-air"
+      }
+    },
+    "sg": {
+      "iphone-air": {
+        "skus": {
+          "MG2L4X/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Space Black",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2L4X/A"
+          },
+          "MG2M4X/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Cloud White",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2M4X/A"
+          },
+          "MG2N4X/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Light Gold",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2N4X/A"
+          },
+          "MG2P4X/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Sky Blue",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2P4X/A"
+          },
+          "MG2Q4X/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Space Black",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2Q4X/A"
+          },
+          "MG2T4X/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Cloud White",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2T4X/A"
+          },
+          "MG2U4X/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Light Gold",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2U4X/A"
+          },
+          "MG2V4X/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Sky Blue",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2V4X/A"
+          },
+          "MG2W4X/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Space Black",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2W4X/A"
+          },
+          "MG2X4X/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Cloud White",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2X4X/A"
+          },
+          "MG2Y4X/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Light Gold",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2Y4X/A"
+          },
+          "MG304X/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Sky Blue",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG304X/A"
+          }
+        },
+        "url": "https://www.apple.com/sg/shop/buy-iphone/iphone-air"
+      }
+    },
+    "th": {
+      "iphone-air": {
+        "skus": {
+          "MG2L4ZP/A": {
+            "capacity": "256GB",
+            "colorDisplay": "ดำสเปซแบล็ค",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2L4ZP/A"
+          },
+          "MG2M4ZP/A": {
+            "capacity": "256GB",
+            "colorDisplay": "ขาวปุยเมฆ",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2M4ZP/A"
+          },
+          "MG2N4ZP/A": {
+            "capacity": "256GB",
+            "colorDisplay": "ทองอ่อน",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2N4ZP/A"
+          },
+          "MG2P4ZP/A": {
+            "capacity": "256GB",
+            "colorDisplay": "สกายบลู",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2P4ZP/A"
+          },
+          "MG2Q4ZP/A": {
+            "capacity": "512GB",
+            "colorDisplay": "ดำสเปซแบล็ค",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2Q4ZP/A"
+          },
+          "MG2T4ZP/A": {
+            "capacity": "512GB",
+            "colorDisplay": "ขาวปุยเมฆ",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2T4ZP/A"
+          },
+          "MG2U4ZP/A": {
+            "capacity": "512GB",
+            "colorDisplay": "ทองอ่อน",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2U4ZP/A"
+          },
+          "MG2V4ZP/A": {
+            "capacity": "512GB",
+            "colorDisplay": "สกายบลู",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2V4ZP/A"
+          },
+          "MG2W4ZP/A": {
+            "capacity": "1TB",
+            "colorDisplay": "ดำสเปซแบล็ค",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2W4ZP/A"
+          },
+          "MG2X4ZP/A": {
+            "capacity": "1TB",
+            "colorDisplay": "ขาวปุยเมฆ",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2X4ZP/A"
+          },
+          "MG2Y4ZP/A": {
+            "capacity": "1TB",
+            "colorDisplay": "ทองอ่อน",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2Y4ZP/A"
+          },
+          "MG304ZP/A": {
+            "capacity": "1TB",
+            "colorDisplay": "สกายบลู",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG304ZP/A"
+          }
+        },
+        "url": "https://www.apple.com/th/shop/buy-iphone/iphone-air"
+      }
+    },
+    "tr": {
+      "iphone-air": {
+        "skus": {
+          "MG2L4TU/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Uzay Siyahı",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2L4TU/A"
+          },
+          "MG2M4TU/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Pamuk Beyazı",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2M4TU/A"
+          },
+          "MG2N4TU/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Uçuk Altın Rengi",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2N4TU/A"
+          },
+          "MG2P4TU/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Gök Mavisi",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2P4TU/A"
+          },
+          "MG2Q4TU/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Uzay Siyahı",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2Q4TU/A"
+          },
+          "MG2T4TU/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Pamuk Beyazı",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2T4TU/A"
+          },
+          "MG2U4TU/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Uçuk Altın Rengi",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2U4TU/A"
+          },
+          "MG2V4TU/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Gök Mavisi",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2V4TU/A"
+          },
+          "MG2W4TU/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Uzay Siyahı",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2W4TU/A"
+          },
+          "MG2X4TU/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Pamuk Beyazı",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2X4TU/A"
+          },
+          "MG2Y4TU/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Uçuk Altın Rengi",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2Y4TU/A"
+          },
+          "MG304TU/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Gök Mavisi",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG304TU/A"
+          }
+        },
+        "url": "https://www.apple.com/tr/shop/buy-iphone/iphone-air"
+      }
+    },
+    "tw": {
+      "iphone-air": {
+        "skus": {
+          "MG2L4ZP/A": {
+            "capacity": "256GB",
+            "colorDisplay": "太空黑色",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2L4ZP/A"
+          },
+          "MG2M4ZP/A": {
+            "capacity": "256GB",
+            "colorDisplay": "雲白色",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2M4ZP/A"
+          },
+          "MG2N4ZP/A": {
+            "capacity": "256GB",
+            "colorDisplay": "淺金色",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2N4ZP/A"
+          },
+          "MG2P4ZP/A": {
+            "capacity": "256GB",
+            "colorDisplay": "天藍色",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2P4ZP/A"
+          },
+          "MG2Q4ZP/A": {
+            "capacity": "512GB",
+            "colorDisplay": "太空黑色",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2Q4ZP/A"
+          },
+          "MG2T4ZP/A": {
+            "capacity": "512GB",
+            "colorDisplay": "雲白色",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2T4ZP/A"
+          },
+          "MG2U4ZP/A": {
+            "capacity": "512GB",
+            "colorDisplay": "淺金色",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2U4ZP/A"
+          },
+          "MG2V4ZP/A": {
+            "capacity": "512GB",
+            "colorDisplay": "天藍色",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2V4ZP/A"
+          },
+          "MG2W4ZP/A": {
+            "capacity": "1TB",
+            "colorDisplay": "太空黑色",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2W4ZP/A"
+          },
+          "MG2X4ZP/A": {
+            "capacity": "1TB",
+            "colorDisplay": "雲白色",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2X4ZP/A"
+          },
+          "MG2Y4ZP/A": {
+            "capacity": "1TB",
+            "colorDisplay": "淺金色",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2Y4ZP/A"
+          },
+          "MG304ZP/A": {
+            "capacity": "1TB",
+            "colorDisplay": "天藍色",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG304ZP/A"
+          }
+        },
+        "url": "https://www.apple.com/tw/shop/buy-iphone/iphone-air"
+      }
+    },
+    "uk": {
+      "iphone-air": {
+        "skus": {
+          "MG2L4QN/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Space Black",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2L4QN/A"
+          },
+          "MG2M4QN/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Cloud White",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2M4QN/A"
+          },
+          "MG2N4QN/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Light Gold",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2N4QN/A"
+          },
+          "MG2P4QN/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Sky Blue",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2P4QN/A"
+          },
+          "MG2Q4QN/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Space Black",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2Q4QN/A"
+          },
+          "MG2T4QN/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Cloud White",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2T4QN/A"
+          },
+          "MG2U4QN/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Light Gold",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2U4QN/A"
+          },
+          "MG2V4QN/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Sky Blue",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2V4QN/A"
+          },
+          "MG2W4QN/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Space Black",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2W4QN/A"
+          },
+          "MG2X4QN/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Cloud White",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2X4QN/A"
+          },
+          "MG2Y4QN/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Light Gold",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG2Y4QN/A"
+          },
+          "MG304QN/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Sky Blue",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG304QN/A"
+          }
+        },
+        "url": "https://www.apple.com/uk/shop/buy-iphone/iphone-air"
+      }
+    },
+    "us": {
+      "iphone-air": {
+        "skus": {
+          "MG184LL/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Space Black",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG184LL/A"
+          },
+          "MG194LL/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Cloud White",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG194LL/A"
+          },
+          "MG1A4LL/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Light Gold",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG1A4LL/A"
+          },
+          "MG1D4LL/A": {
+            "capacity": "256GB",
+            "colorDisplay": "Sky Blue",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG1D4LL/A"
+          },
+          "MG1E4LL/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Space Black",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG1E4LL/A"
+          },
+          "MG1G4LL/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Cloud White",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG1G4LL/A"
+          },
+          "MG1H4LL/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Light Gold",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG1H4LL/A"
+          },
+          "MG1J4LL/A": {
+            "capacity": "512GB",
+            "colorDisplay": "Sky Blue",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG1J4LL/A"
+          },
+          "MG1L4LL/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Space Black",
+            "colorKey": "spaceblack",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG1L4LL/A"
+          },
+          "MG1N4LL/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Cloud White",
+            "colorKey": "cloudwhite",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG1N4LL/A"
+          },
+          "MG1P4LL/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Light Gold",
+            "colorKey": "lightgold",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG1P4LL/A"
+          },
+          "MG1Q4LL/A": {
+            "capacity": "1TB",
+            "colorDisplay": "Sky Blue",
+            "colorKey": "skyblue",
+            "dimensionScreensize": "",
+            "family": "iphoneair",
+            "familyName": "iPhone Air",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "iphone"
+            },
+            "name": "",
+            "partNumber": "MG1Q4LL/A"
+          }
+        },
+        "url": "https://www.apple.com/us/shop/buy-iphone/iphone-air"
+      }
+    }
+  }
+}

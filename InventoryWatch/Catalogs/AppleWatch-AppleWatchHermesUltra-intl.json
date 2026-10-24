@@ -1,0 +1,899 @@
+{
+  "_meta": {
+    "family": "watch",
+    "generated_at": "2026-10-16T12:24:49.145486+00:00",
+    "regions_scraped": 33,
+    "scraper_version": "1.0",
+    "token": "apple-watch-hermes-ultra"
+  },
+  "country_mappings": {
+    "ae": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes-ultra": "Apple Watch Hermes Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes-ultra": "shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    },
+    "at": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes-ultra": "Apple Watch Hermes Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes-ultra": "shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    },
+    "au": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes-ultra": "Apple Watch Hermes Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes-ultra": "shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    },
+    "be-fr": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes-ultra": "Apple Watch Hermes Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes-ultra": "shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    },
+    "be-nl": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes-ultra": "Apple Watch Hermes Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes-ultra": "shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    },
+    "br": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes-ultra": "Apple Watch Hermes Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes-ultra": "shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    },
+    "ca": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes-ultra": "Apple Watch Hermes Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes-ultra": "shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    },
+    "ch-de": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes-ultra": "Apple Watch Hermes Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes-ultra": "shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    },
+    "ch-fr": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes-ultra": "Apple Watch Hermes Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes-ultra": "shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    },
+    "cn": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes-ultra": "Apple Watch Hermes Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes-ultra": "shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    },
+    "de": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes-ultra": "Apple Watch Hermes Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes-ultra": "shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    },
+    "dk": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes-ultra": "Apple Watch Hermes Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes-ultra": "shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    },
+    "es": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes-ultra": "Apple Watch Hermes Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes-ultra": "shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    },
+    "fi": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes-ultra": "Apple Watch Hermes Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes-ultra": "shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    },
+    "fr": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes-ultra": "Apple Watch Hermes Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes-ultra": "shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    },
+    "hk": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes-ultra": "Apple Watch Hermes Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes-ultra": "shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    },
+    "in": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes-ultra": "Apple Watch Hermes Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes-ultra": "shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    },
+    "it": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes-ultra": "Apple Watch Hermes Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes-ultra": "shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    },
+    "jp": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes-ultra": "Apple Watch Hermes Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes-ultra": "shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    },
+    "kr": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes-ultra": "Apple Watch Hermes Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes-ultra": "shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    },
+    "mx": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes-ultra": "Apple Watch Hermes Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes-ultra": "shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    },
+    "my": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes-ultra": "Apple Watch Hermes Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes-ultra": "shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    },
+    "nl": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes-ultra": "Apple Watch Hermes Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes-ultra": "shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    },
+    "no": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes-ultra": "Apple Watch Hermes Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes-ultra": "shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    },
+    "sa": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes-ultra": "Apple Watch Hermes Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes-ultra": "shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    },
+    "se": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes-ultra": "Apple Watch Hermes Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes-ultra": "shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    },
+    "sg": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes-ultra": "Apple Watch Hermes Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes-ultra": "shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    },
+    "th": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes-ultra": "Apple Watch Hermes Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes-ultra": "shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    },
+    "tr": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes-ultra": "Apple Watch Hermes Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes-ultra": "shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    },
+    "tw": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes-ultra": "Apple Watch Hermes Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes-ultra": "shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    },
+    "uk": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes-ultra": "Apple Watch Hermes Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes-ultra": "shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    },
+    "us": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes-ultra": "Apple Watch Hermes Ultra"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes-ultra": "shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    }
+  },
+  "discovered_models": {
+    "ae": {
+      "apple-watch-hermes-ultra": {
+        "skus": {
+          "MJCY4AF/A": {
+            "capacity": "",
+            "colorDisplay": "Natural",
+            "colorKey": "natural",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Natural",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Natural",
+            "partNumber": "MJCY4AF/A"
+          }
+        },
+        "url": "https://www.apple.com/ae/shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    },
+    "at": {
+      "apple-watch-hermes-ultra": {
+        "skus": {},
+        "url": "https://www.apple.com/at/shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    },
+    "au": {
+      "apple-watch-hermes-ultra": {
+        "skus": {
+          "MJCY4X/A": {
+            "capacity": "",
+            "colorDisplay": "Natural",
+            "colorKey": "natural",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Natural",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Natural",
+            "partNumber": "MJCY4X/A"
+          }
+        },
+        "url": "https://www.apple.com/au/shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    },
+    "be-fr": {
+      "apple-watch-hermes-ultra": {
+        "skus": {},
+        "url": "https://www.apple.com/be-fr/shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    },
+    "be-nl": {
+      "apple-watch-hermes-ultra": {
+        "skus": {},
+        "url": "https://www.apple.com/be-nl/shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    },
+    "br": {
+      "apple-watch-hermes-ultra": {
+        "skus": {},
+        "url": "https://www.apple.com/br/shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    },
+    "ca": {
+      "apple-watch-hermes-ultra": {
+        "skus": {
+          "MJCY4VC/A": {
+            "capacity": "",
+            "colorDisplay": "Natural",
+            "colorKey": "natural",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Natural",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Natural",
+            "partNumber": "MJCY4VC/A"
+          }
+        },
+        "url": "https://www.apple.com/ca/shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    },
+    "ch-de": {
+      "apple-watch-hermes-ultra": {
+        "skus": {
+          "MJCY4QF/A": {
+            "capacity": "",
+            "colorDisplay": "Natur",
+            "colorKey": "natural",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Natur",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Natur",
+            "partNumber": "MJCY4QF/A"
+          }
+        },
+        "url": "https://www.apple.com/ch-de/shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    },
+    "ch-fr": {
+      "apple-watch-hermes-ultra": {
+        "skus": {
+          "MJCY4QF/A": {
+            "capacity": "",
+            "colorDisplay": "Naturel",
+            "colorKey": "natural",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Naturel",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Naturel",
+            "partNumber": "MJCY4QF/A"
+          }
+        },
+        "url": "https://www.apple.com/ch-fr/shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    },
+    "cn": {
+      "apple-watch-hermes-ultra": {
+        "skus": {
+          "MJE04CH/B": {
+            "capacity": "",
+            "colorDisplay": "原色",
+            "colorKey": "natural",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "AppleCare+ 服务计划如何保障你的 Watch",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "原色",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "AppleCare+ 服务计划如何保障你的 Watch 49mm 原色",
+            "partNumber": "MJE04CH/B"
+          }
+        },
+        "url": "https://www.apple.com/cn/shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    },
+    "de": {
+      "apple-watch-hermes-ultra": {
+        "skus": {
+          "MJCY4QF/A": {
+            "capacity": "",
+            "colorDisplay": "Natur",
+            "colorKey": "natural",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Natur",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Natur",
+            "partNumber": "MJCY4QF/A"
+          }
+        },
+        "url": "https://www.apple.com/de/shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    },
+    "dk": {
+      "apple-watch-hermes-ultra": {
+        "skus": {},
+        "url": "https://www.apple.com/dk/shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    },
+    "es": {
+      "apple-watch-hermes-ultra": {
+        "skus": {
+          "MJCY4QL/A": {
+            "capacity": "",
+            "colorDisplay": "Natural",
+            "colorKey": "natural",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Natural",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Natural",
+            "partNumber": "MJCY4QL/A"
+          }
+        },
+        "url": "https://www.apple.com/es/shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    },
+    "fi": {
+      "apple-watch-hermes-ultra": {
+        "skus": {},
+        "url": "https://www.apple.com/fi/shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    },
+    "fr": {
+      "apple-watch-hermes-ultra": {
+        "skus": {
+          "MJCY4QF/A": {
+            "capacity": "",
+            "colorDisplay": "Naturel",
+            "colorKey": "natural",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Naturel",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Naturel",
+            "partNumber": "MJCY4QF/A"
+          }
+        },
+        "url": "https://www.apple.com/fr/shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    },
+    "hk": {
+      "apple-watch-hermes-ultra": {
+        "skus": {
+          "MJCY4X/A": {
+            "capacity": "",
+            "colorDisplay": "Natural",
+            "colorKey": "natural",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Natural",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Natural",
+            "partNumber": "MJCY4X/A"
+          }
+        },
+        "url": "https://www.apple.com/hk/shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    },
+    "in": {
+      "apple-watch-hermes-ultra": {
+        "skus": {},
+        "url": "https://www.apple.com/in/shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    },
+    "it": {
+      "apple-watch-hermes-ultra": {
+        "skus": {
+          "MJCY4QL/A": {
+            "capacity": "",
+            "colorDisplay": "Naturale",
+            "colorKey": "natural",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Naturale",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Naturale",
+            "partNumber": "MJCY4QL/A"
+          }
+        },
+        "url": "https://www.apple.com/it/shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    },
+    "jp": {
+      "apple-watch-hermes-ultra": {
+        "skus": {
+          "MJCY4J/A": {
+            "capacity": "",
+            "colorDisplay": "ナチュラル",
+            "colorKey": "natural",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "ナチュラル",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm ナチュラル",
+            "partNumber": "MJCY4J/A"
+          }
+        },
+        "url": "https://www.apple.com/jp/shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    },
+    "kr": {
+      "apple-watch-hermes-ultra": {
+        "skus": {
+          "MJCY4KH/A": {
+            "capacity": "",
+            "colorDisplay": "내추럴",
+            "colorKey": "natural",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "내추럴",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm 내추럴",
+            "partNumber": "MJCY4KH/A"
+          }
+        },
+        "url": "https://www.apple.com/kr/shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    },
+    "mx": {
+      "apple-watch-hermes-ultra": {
+        "skus": {
+          "MJCY4LZ/A": {
+            "capacity": "",
+            "colorDisplay": "Natural",
+            "colorKey": "natural",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Natural",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Natural",
+            "partNumber": "MJCY4LZ/A"
+          }
+        },
+        "url": "https://www.apple.com/mx/shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    },
+    "my": {
+      "apple-watch-hermes-ultra": {
+        "skus": {
+          "MJCY4X/A": {
+            "capacity": "",
+            "colorDisplay": "Natural",
+            "colorKey": "natural",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Natural",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Natural",
+            "partNumber": "MJCY4X/A"
+          }
+        },
+        "url": "https://www.apple.com/my/shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    },
+    "nl": {
+      "apple-watch-hermes-ultra": {
+        "skus": {},
+        "url": "https://www.apple.com/nl/shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    },
+    "no": {
+      "apple-watch-hermes-ultra": {
+        "skus": {},
+        "url": "https://www.apple.com/no/shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    },
+    "sa": {
+      "apple-watch-hermes-ultra": {
+        "skus": {
+          "MJCY4AF/A": {
+            "capacity": "",
+            "colorDisplay": "Natural",
+            "colorKey": "natural",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Natural",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Natural",
+            "partNumber": "MJCY4AF/A"
+          }
+        },
+        "url": "https://www.apple.com/sa/shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    },
+    "se": {
+      "apple-watch-hermes-ultra": {
+        "skus": {
+          "MJCY4KS/A": {
+            "capacity": "",
+            "colorDisplay": "naturlig",
+            "colorKey": "natural",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "naturlig",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm naturlig",
+            "partNumber": "MJCY4KS/A"
+          }
+        },
+        "url": "https://www.apple.com/se/shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    },
+    "sg": {
+      "apple-watch-hermes-ultra": {
+        "skus": {
+          "MJCY4X/A": {
+            "capacity": "",
+            "colorDisplay": "Natural",
+            "colorKey": "natural",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Natural",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Natural",
+            "partNumber": "MJCY4X/A"
+          }
+        },
+        "url": "https://www.apple.com/sg/shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    },
+    "th": {
+      "apple-watch-hermes-ultra": {
+        "skus": {
+          "MJCY4SA/A": {
+            "capacity": "",
+            "colorDisplay": "ธรรมชาติ",
+            "colorKey": "natural",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "ธรรมชาติ",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm ธรรมชาติ",
+            "partNumber": "MJCY4SA/A"
+          }
+        },
+        "url": "https://www.apple.com/th/shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    },
+    "tr": {
+      "apple-watch-hermes-ultra": {
+        "skus": {},
+        "url": "https://www.apple.com/tr/shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    },
+    "tw": {
+      "apple-watch-hermes-ultra": {
+        "skus": {
+          "MJCY4TA/A": {
+            "capacity": "",
+            "colorDisplay": "原色",
+            "colorKey": "natural",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "原色",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm 原色",
+            "partNumber": "MJCY4TA/A"
+          }
+        },
+        "url": "https://www.apple.com/tw/shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    },
+    "uk": {
+      "apple-watch-hermes-ultra": {
+        "skus": {
+          "MJCY4DH/A": {
+            "capacity": "",
+            "colorDisplay": "Natural",
+            "colorKey": "natural",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Natural",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Natural",
+            "partNumber": "MJCY4DH/A"
+          }
+        },
+        "url": "https://www.apple.com/uk/shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    },
+    "us": {
+      "apple-watch-hermes-ultra": {
+        "skus": {
+          "MJCY4LS/A": {
+            "capacity": "",
+            "colorDisplay": "Natural",
+            "colorKey": "natural",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Ultra 4",
+            "metadata": {
+              "caseSize": "49mm",
+              "color": "Natural",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Ultra 4 49mm Natural",
+            "partNumber": "MJCY4LS/A"
+          }
+        },
+        "url": "https://www.apple.com/us/shop/buy-watch/apple-watch-hermes-ultra"
+      }
+    }
+  }
+}

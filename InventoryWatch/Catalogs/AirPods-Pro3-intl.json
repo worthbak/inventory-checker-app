@@ -1,0 +1,1005 @@
+{
+  "_meta": {
+    "family": "airpods",
+    "generated_at": "2026-10-16T13:59:43.032052+00:00",
+    "regions_scraped": 33,
+    "scraper_version": "1.0",
+    "token": "airpods-pro-3"
+  },
+  "country_mappings": {
+    "ae": {
+      "localization": {
+        "token_display": {
+          "airpods-pro-3": "AirPods Pro 3"
+        }
+      },
+      "shop_paths": {
+        "airpods-pro-3": "shop/buy-airpods/airpods-pro-3"
+      }
+    },
+    "at": {
+      "localization": {
+        "token_display": {
+          "airpods-pro-3": "AirPods Pro 3"
+        }
+      },
+      "shop_paths": {
+        "airpods-pro-3": "shop/buy-airpods/airpods-pro-3"
+      }
+    },
+    "au": {
+      "localization": {
+        "token_display": {
+          "airpods-pro-3": "AirPods Pro 3"
+        }
+      },
+      "shop_paths": {
+        "airpods-pro-3": "shop/buy-airpods/airpods-pro-3"
+      }
+    },
+    "be-fr": {
+      "localization": {
+        "token_display": {
+          "airpods-pro-3": "AirPods Pro 3"
+        }
+      },
+      "shop_paths": {
+        "airpods-pro-3": "shop/buy-airpods/airpods-pro-3"
+      }
+    },
+    "be-nl": {
+      "localization": {
+        "token_display": {
+          "airpods-pro-3": "AirPods Pro 3"
+        }
+      },
+      "shop_paths": {
+        "airpods-pro-3": "shop/buy-airpods/airpods-pro-3"
+      }
+    },
+    "br": {
+      "localization": {
+        "token_display": {
+          "airpods-pro-3": "AirPods Pro 3"
+        }
+      },
+      "shop_paths": {
+        "airpods-pro-3": "shop/buy-airpods/airpods-pro-3"
+      }
+    },
+    "ca": {
+      "localization": {
+        "token_display": {
+          "airpods-pro-3": "AirPods Pro 3"
+        }
+      },
+      "shop_paths": {
+        "airpods-pro-3": "shop/buy-airpods/airpods-pro-3"
+      }
+    },
+    "ch-de": {
+      "localization": {
+        "token_display": {
+          "airpods-pro-3": "AirPods Pro 3"
+        }
+      },
+      "shop_paths": {
+        "airpods-pro-3": "shop/buy-airpods/airpods-pro-3"
+      }
+    },
+    "ch-fr": {
+      "localization": {
+        "token_display": {
+          "airpods-pro-3": "AirPods Pro 3"
+        }
+      },
+      "shop_paths": {
+        "airpods-pro-3": "shop/buy-airpods/airpods-pro-3"
+      }
+    },
+    "cn": {
+      "localization": {
+        "token_display": {
+          "airpods-pro-3": "AirPods Pro 3"
+        }
+      },
+      "shop_paths": {
+        "airpods-pro-3": "shop/buy-airpods/airpods-pro-3"
+      }
+    },
+    "de": {
+      "localization": {
+        "token_display": {
+          "airpods-pro-3": "AirPods Pro 3"
+        }
+      },
+      "shop_paths": {
+        "airpods-pro-3": "shop/buy-airpods/airpods-pro-3"
+      }
+    },
+    "dk": {
+      "localization": {
+        "token_display": {
+          "airpods-pro-3": "AirPods Pro 3"
+        }
+      },
+      "shop_paths": {
+        "airpods-pro-3": "shop/buy-airpods/airpods-pro-3"
+      }
+    },
+    "es": {
+      "localization": {
+        "token_display": {
+          "airpods-pro-3": "AirPods Pro 3"
+        }
+      },
+      "shop_paths": {
+        "airpods-pro-3": "shop/buy-airpods/airpods-pro-3"
+      }
+    },
+    "fi": {
+      "localization": {
+        "token_display": {
+          "airpods-pro-3": "AirPods Pro 3"
+        }
+      },
+      "shop_paths": {
+        "airpods-pro-3": "shop/buy-airpods/airpods-pro-3"
+      }
+    },
+    "fr": {
+      "localization": {
+        "token_display": {
+          "airpods-pro-3": "AirPods Pro 3"
+        }
+      },
+      "shop_paths": {
+        "airpods-pro-3": "shop/buy-airpods/airpods-pro-3"
+      }
+    },
+    "hk": {
+      "localization": {
+        "token_display": {
+          "airpods-pro-3": "AirPods Pro 3"
+        }
+      },
+      "shop_paths": {
+        "airpods-pro-3": "shop/buy-airpods/airpods-pro-3"
+      }
+    },
+    "in": {
+      "localization": {
+        "token_display": {
+          "airpods-pro-3": "AirPods Pro 3"
+        }
+      },
+      "shop_paths": {
+        "airpods-pro-3": "shop/buy-airpods/airpods-pro-3"
+      }
+    },
+    "it": {
+      "localization": {
+        "token_display": {
+          "airpods-pro-3": "AirPods Pro 3"
+        }
+      },
+      "shop_paths": {
+        "airpods-pro-3": "shop/buy-airpods/airpods-pro-3"
+      }
+    },
+    "jp": {
+      "localization": {
+        "token_display": {
+          "airpods-pro-3": "AirPods Pro 3"
+        }
+      },
+      "shop_paths": {
+        "airpods-pro-3": "shop/buy-airpods/airpods-pro-3"
+      }
+    },
+    "kr": {
+      "localization": {
+        "token_display": {
+          "airpods-pro-3": "AirPods Pro 3"
+        }
+      },
+      "shop_paths": {
+        "airpods-pro-3": "shop/buy-airpods/airpods-pro-3"
+      }
+    },
+    "mx": {
+      "localization": {
+        "token_display": {
+          "airpods-pro-3": "AirPods Pro 3"
+        }
+      },
+      "shop_paths": {
+        "airpods-pro-3": "shop/buy-airpods/airpods-pro-3"
+      }
+    },
+    "my": {
+      "localization": {
+        "token_display": {
+          "airpods-pro-3": "AirPods Pro 3"
+        }
+      },
+      "shop_paths": {
+        "airpods-pro-3": "shop/buy-airpods/airpods-pro-3"
+      }
+    },
+    "nl": {
+      "localization": {
+        "token_display": {
+          "airpods-pro-3": "AirPods Pro 3"
+        }
+      },
+      "shop_paths": {
+        "airpods-pro-3": "shop/buy-airpods/airpods-pro-3"
+      }
+    },
+    "no": {
+      "localization": {
+        "token_display": {
+          "airpods-pro-3": "AirPods Pro 3"
+        }
+      },
+      "shop_paths": {
+        "airpods-pro-3": "shop/buy-airpods/airpods-pro-3"
+      }
+    },
+    "sa": {
+      "localization": {
+        "token_display": {
+          "airpods-pro-3": "AirPods Pro 3"
+        }
+      },
+      "shop_paths": {
+        "airpods-pro-3": "shop/buy-airpods/airpods-pro-3"
+      }
+    },
+    "se": {
+      "localization": {
+        "token_display": {
+          "airpods-pro-3": "AirPods Pro 3"
+        }
+      },
+      "shop_paths": {
+        "airpods-pro-3": "shop/buy-airpods/airpods-pro-3"
+      }
+    },
+    "sg": {
+      "localization": {
+        "token_display": {
+          "airpods-pro-3": "AirPods Pro 3"
+        }
+      },
+      "shop_paths": {
+        "airpods-pro-3": "shop/buy-airpods/airpods-pro-3"
+      }
+    },
+    "th": {
+      "localization": {
+        "token_display": {
+          "airpods-pro-3": "AirPods Pro 3"
+        }
+      },
+      "shop_paths": {
+        "airpods-pro-3": "shop/buy-airpods/airpods-pro-3"
+      }
+    },
+    "tr": {
+      "localization": {
+        "token_display": {
+          "airpods-pro-3": "AirPods Pro 3"
+        }
+      },
+      "shop_paths": {
+        "airpods-pro-3": "shop/buy-airpods/airpods-pro-3"
+      }
+    },
+    "tw": {
+      "localization": {
+        "token_display": {
+          "airpods-pro-3": "AirPods Pro 3"
+        }
+      },
+      "shop_paths": {
+        "airpods-pro-3": "shop/buy-airpods/airpods-pro-3"
+      }
+    },
+    "uk": {
+      "localization": {
+        "token_display": {
+          "airpods-pro-3": "AirPods Pro 3"
+        }
+      },
+      "shop_paths": {
+        "airpods-pro-3": "shop/buy-airpods/airpods-pro-3"
+      }
+    },
+    "us": {
+      "localization": {
+        "token_display": {
+          "airpods-pro-3": "AirPods Pro 3"
+        }
+      },
+      "shop_paths": {
+        "airpods-pro-3": "shop/buy-airpods/airpods-pro-3"
+      }
+    }
+  },
+  "discovered_models": {
+    "ae": {
+      "airpods-pro-3": {
+        "skus": {
+          "MFHP4ZE/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "airpods",
+            "familyName": "AirPods Pro 3",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
+            },
+            "name": "AirPods Pro 3",
+            "partNumber": "MFHP4ZE/A"
+          }
+        },
+        "url": "https://www.apple.com/ae/shop/buy-airpods/airpods-pro-3"
+      }
+    },
+    "at": {
+      "airpods-pro-3": {
+        "skus": {
+          "MFHP4ZM/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "airpods",
+            "familyName": "AirPods Pro 3",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
+            },
+            "name": "AirPods Pro 3",
+            "partNumber": "MFHP4ZM/A"
+          }
+        },
+        "url": "https://www.apple.com/at/shop/buy-airpods/airpods-pro-3"
+      }
+    },
+    "au": {
+      "airpods-pro-3": {
+        "skus": {
+          "MFHP4X/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "airpods",
+            "familyName": "AirPods Pro 3",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
+            },
+            "name": "AirPods Pro 3",
+            "partNumber": "MFHP4X/A"
+          }
+        },
+        "url": "https://www.apple.com/au/shop/buy-airpods/airpods-pro-3"
+      }
+    },
+    "be-fr": {
+      "airpods-pro-3": {
+        "skus": {
+          "MFHP4ZM/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "airpods",
+            "familyName": "AirPods Pro 3",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
+            },
+            "name": "AirPods Pro 3",
+            "partNumber": "MFHP4ZM/A"
+          }
+        },
+        "url": "https://www.apple.com/be-fr/shop/buy-airpods/airpods-pro-3"
+      }
+    },
+    "be-nl": {
+      "airpods-pro-3": {
+        "skus": {
+          "MFHP4ZM/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "airpods",
+            "familyName": "AirPods Pro 3",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
+            },
+            "name": "AirPods Pro 3",
+            "partNumber": "MFHP4ZM/A"
+          }
+        },
+        "url": "https://www.apple.com/be-nl/shop/buy-airpods/airpods-pro-3"
+      }
+    },
+    "br": {
+      "airpods-pro-3": {
+        "skus": {
+          "MFHP4BZ/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "airpods",
+            "familyName": "AirPods Pro 3",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
+            },
+            "name": "AirPods Pro 3",
+            "partNumber": "MFHP4BZ/A"
+          }
+        },
+        "url": "https://www.apple.com/br/shop/buy-airpods/airpods-pro-3"
+      }
+    },
+    "ca": {
+      "airpods-pro-3": {
+        "skus": {
+          "MFHP4AM/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "airpods",
+            "familyName": "AirPods Pro 3",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
+            },
+            "name": "AirPods Pro 3",
+            "partNumber": "MFHP4AM/A"
+          }
+        },
+        "url": "https://www.apple.com/ca/shop/buy-airpods/airpods-pro-3"
+      }
+    },
+    "ch-de": {
+      "airpods-pro-3": {
+        "skus": {
+          "MFHP4ZM/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "airpods",
+            "familyName": "AirPods Pro 3",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
+            },
+            "name": "AirPods Pro 3",
+            "partNumber": "MFHP4ZM/A"
+          }
+        },
+        "url": "https://www.apple.com/ch-de/shop/buy-airpods/airpods-pro-3"
+      }
+    },
+    "ch-fr": {
+      "airpods-pro-3": {
+        "skus": {
+          "MFHP4ZM/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "airpods",
+            "familyName": "AirPods Pro 3",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
+            },
+            "name": "AirPods Pro 3",
+            "partNumber": "MFHP4ZM/A"
+          }
+        },
+        "url": "https://www.apple.com/ch-fr/shop/buy-airpods/airpods-pro-3"
+      }
+    },
+    "cn": {
+      "airpods-pro-3": {
+        "skus": {
+          "MFHP4CH/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "airpods",
+            "familyName": "AirPods Pro 3",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
+            },
+            "name": "AirPods Pro 3",
+            "partNumber": "MFHP4CH/A"
+          }
+        },
+        "url": "https://www.apple.com/cn/shop/buy-airpods/airpods-pro-3"
+      }
+    },
+    "de": {
+      "airpods-pro-3": {
+        "skus": {
+          "MFHP4ZM/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "airpods",
+            "familyName": "AirPods Pro 3",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
+            },
+            "name": "AirPods Pro 3",
+            "partNumber": "MFHP4ZM/A"
+          }
+        },
+        "url": "https://www.apple.com/de/shop/buy-airpods/airpods-pro-3"
+      }
+    },
+    "dk": {
+      "airpods-pro-3": {
+        "skus": {
+          "MFHP4DN/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "airpods",
+            "familyName": "AirPods Pro 3",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
+            },
+            "name": "AirPods Pro 3",
+            "partNumber": "MFHP4DN/A"
+          }
+        },
+        "url": "https://www.apple.com/dk/shop/buy-airpods/airpods-pro-3"
+      }
+    },
+    "es": {
+      "airpods-pro-3": {
+        "skus": {
+          "MFHP4ZM/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "airpods",
+            "familyName": "AirPods Pro 3",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
+            },
+            "name": "AirPods Pro 3",
+            "partNumber": "MFHP4ZM/A"
+          }
+        },
+        "url": "https://www.apple.com/es/shop/buy-airpods/airpods-pro-3"
+      }
+    },
+    "fi": {
+      "airpods-pro-3": {
+        "skus": {
+          "MFHP4DN/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "airpods",
+            "familyName": "AirPods Pro 3",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
+            },
+            "name": "AirPods Pro 3",
+            "partNumber": "MFHP4DN/A"
+          }
+        },
+        "url": "https://www.apple.com/fi/shop/buy-airpods/airpods-pro-3"
+      }
+    },
+    "fr": {
+      "airpods-pro-3": {
+        "skus": {
+          "MFHP4ZM/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "airpods",
+            "familyName": "AirPods Pro 3",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
+            },
+            "name": "AirPods Pro 3",
+            "partNumber": "MFHP4ZM/A"
+          }
+        },
+        "url": "https://www.apple.com/fr/shop/buy-airpods/airpods-pro-3"
+      }
+    },
+    "hk": {
+      "airpods-pro-3": {
+        "skus": {
+          "MFHP4ZP/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "airpods",
+            "familyName": "AirPods Pro 3",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
+            },
+            "name": "AirPods Pro 3",
+            "partNumber": "MFHP4ZP/A"
+          }
+        },
+        "url": "https://www.apple.com/hk/shop/buy-airpods/airpods-pro-3"
+      }
+    },
+    "in": {
+      "airpods-pro-3": {
+        "skus": {
+          "MFHP4HN/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "airpods",
+            "familyName": "AirPods Pro 3",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
+            },
+            "name": "AirPods Pro 3",
+            "partNumber": "MFHP4HN/A"
+          }
+        },
+        "url": "https://www.apple.com/in/shop/buy-airpods/airpods-pro-3"
+      }
+    },
+    "it": {
+      "airpods-pro-3": {
+        "skus": {
+          "MFHP4ZM/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "airpods",
+            "familyName": "AirPods Pro 3",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
+            },
+            "name": "AirPods Pro 3",
+            "partNumber": "MFHP4ZM/A"
+          }
+        },
+        "url": "https://www.apple.com/it/shop/buy-airpods/airpods-pro-3"
+      }
+    },
+    "jp": {
+      "airpods-pro-3": {
+        "skus": {
+          "MFHP4J/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "airpods",
+            "familyName": "AirPods Pro 3",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
+            },
+            "name": "AirPods Pro 3",
+            "partNumber": "MFHP4J/A"
+          }
+        },
+        "url": "https://www.apple.com/jp/shop/buy-airpods/airpods-pro-3"
+      }
+    },
+    "kr": {
+      "airpods-pro-3": {
+        "skus": {
+          "MFHP4KH/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "airpods",
+            "familyName": "AirPods Pro 3",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
+            },
+            "name": "AirPods Pro 3",
+            "partNumber": "MFHP4KH/A"
+          }
+        },
+        "url": "https://www.apple.com/kr/shop/buy-airpods/airpods-pro-3"
+      }
+    },
+    "mx": {
+      "airpods-pro-3": {
+        "skus": {
+          "MFHP4BE/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "airpods",
+            "familyName": "AirPods Pro 3",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
+            },
+            "name": "AirPods Pro 3",
+            "partNumber": "MFHP4BE/A"
+          }
+        },
+        "url": "https://www.apple.com/mx/shop/buy-airpods/airpods-pro-3"
+      }
+    },
+    "my": {
+      "airpods-pro-3": {
+        "skus": {
+          "MFHP4ZA/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "airpods",
+            "familyName": "AirPods Pro 3",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
+            },
+            "name": "AirPods Pro 3",
+            "partNumber": "MFHP4ZA/A"
+          }
+        },
+        "url": "https://www.apple.com/my/shop/buy-airpods/airpods-pro-3"
+      }
+    },
+    "nl": {
+      "airpods-pro-3": {
+        "skus": {
+          "MFHP4ZM/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "airpods",
+            "familyName": "AirPods Pro 3",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
+            },
+            "name": "AirPods Pro 3",
+            "partNumber": "MFHP4ZM/A"
+          }
+        },
+        "url": "https://www.apple.com/nl/shop/buy-airpods/airpods-pro-3"
+      }
+    },
+    "no": {
+      "airpods-pro-3": {
+        "skus": {
+          "MFHP4DN/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "airpods",
+            "familyName": "AirPods Pro 3",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
+            },
+            "name": "AirPods Pro 3",
+            "partNumber": "MFHP4DN/A"
+          }
+        },
+        "url": "https://www.apple.com/no/shop/buy-airpods/airpods-pro-3"
+      }
+    },
+    "sa": {
+      "airpods-pro-3": {
+        "skus": {
+          "MFHP4ZE/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "airpods",
+            "familyName": "AirPods Pro 3",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
+            },
+            "name": "AirPods Pro 3",
+            "partNumber": "MFHP4ZE/A"
+          }
+        },
+        "url": "https://www.apple.com/sa/shop/buy-airpods/airpods-pro-3"
+      }
+    },
+    "se": {
+      "airpods-pro-3": {
+        "skus": {
+          "MFHP4DN/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "airpods",
+            "familyName": "AirPods Pro 3",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
+            },
+            "name": "AirPods Pro 3",
+            "partNumber": "MFHP4DN/A"
+          }
+        },
+        "url": "https://www.apple.com/se/shop/buy-airpods/airpods-pro-3"
+      }
+    },
+    "sg": {
+      "airpods-pro-3": {
+        "skus": {
+          "MFHP4ZA/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "airpods",
+            "familyName": "AirPods Pro 3",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
+            },
+            "name": "AirPods Pro 3",
+            "partNumber": "MFHP4ZA/A"
+          }
+        },
+        "url": "https://www.apple.com/sg/shop/buy-airpods/airpods-pro-3"
+      }
+    },
+    "th": {
+      "airpods-pro-3": {
+        "skus": {
+          "MFHP4ZA/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "airpods",
+            "familyName": "AirPods Pro 3",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
+            },
+            "name": "AirPods Pro 3",
+            "partNumber": "MFHP4ZA/A"
+          }
+        },
+        "url": "https://www.apple.com/th/shop/buy-airpods/airpods-pro-3"
+      }
+    },
+    "tr": {
+      "airpods-pro-3": {
+        "skus": {
+          "MFHP4TU/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "airpods",
+            "familyName": "AirPods Pro 3",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
+            },
+            "name": "AirPods Pro 3",
+            "partNumber": "MFHP4TU/A"
+          }
+        },
+        "url": "https://www.apple.com/tr/shop/buy-airpods/airpods-pro-3"
+      }
+    },
+    "tw": {
+      "airpods-pro-3": {
+        "skus": {
+          "MFHP4TA/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "airpods",
+            "familyName": "AirPods Pro 3",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
+            },
+            "name": "AirPods Pro 3",
+            "partNumber": "MFHP4TA/A"
+          }
+        },
+        "url": "https://www.apple.com/tw/shop/buy-airpods/airpods-pro-3"
+      }
+    },
+    "uk": {
+      "airpods-pro-3": {
+        "skus": {
+          "MFHP4ZM/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "airpods",
+            "familyName": "AirPods Pro 3",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
+            },
+            "name": "AirPods Pro 3",
+            "partNumber": "MFHP4ZM/A"
+          }
+        },
+        "url": "https://www.apple.com/uk/shop/buy-airpods/airpods-pro-3"
+      }
+    },
+    "us": {
+      "airpods-pro-3": {
+        "skus": {
+          "MFHP4LL/A": {
+            "capacity": "",
+            "colorDisplay": "",
+            "colorKey": "",
+            "dimensionScreensize": "",
+            "family": "airpods",
+            "familyName": "AirPods Pro 3",
+            "metadata": {
+              "isRealPartNumber": true,
+              "sourcePage": "airpods"
+            },
+            "name": "AirPods Pro 3",
+            "partNumber": "MFHP4LL/A"
+          }
+        },
+        "url": "https://www.apple.com/us/shop/buy-airpods/airpods-pro-3"
+      }
+    }
+  }
+}

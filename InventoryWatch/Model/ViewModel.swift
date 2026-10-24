@@ -13,7 +13,7 @@ final class ViewModel: ObservableObject {
     private let fulfillmentModel = FulfillmentModel()
     private let githubModel = GithubModel()
     private let notificationSender = NotificationSender()
-    private var defaultsVendor = DefaultsVendor()
+    let defaultsVendor = DefaultsVendor()
     
     private var updateTimer: Timer?
     
@@ -22,6 +22,7 @@ final class ViewModel: ObservableObject {
     @Published var hasLatestVersion = true
     @Published var errorState: AppError?
     @Published var preferredStoreName: String? = nil
+    @Published var pickupErrorKeys: [String] = []
     
     var skuDataForPreferredProduct: SKUData {
         get async throws {
@@ -78,10 +79,12 @@ final class ViewModel: ObservableObject {
         latestTask = Task {
             
             do {
-                hasLatestVersion = try await githubModel.hasLatestGithubRelease()
+                hasLatestVersion = (try? await githubModel.hasLatestGithubRelease()) ?? true
                 updateErrorState(to: .none, deactivateLoadingState: false)
                 
                 availableParts = try await fulfillmentModel.fetchInventory()
+                // Surface any Apple pickup API error keys (e.g., invalidLocalModelStore)
+                pickupErrorKeys = await fulfillmentModel.lastPickupErrorKeys
                 try Task.checkCancellation()
                 updateErrorState(to: .none)
                 
@@ -176,7 +179,7 @@ final class ViewModel: ObservableObject {
         if defaultsVendor.preferredUpdateInterval > 0, updateTimer == nil {
             let interval = Double(defaultsVendor.preferredUpdateInterval * 60)
             updateTimer = Timer.scheduledTimer(withTimeInterval: interval, repeats: true, block: { _ in
-                Task { [weak self] in await self?.fetchLatestInventory() }
+                Task { await self.fetchLatestInventory() }
             })
         }
     }

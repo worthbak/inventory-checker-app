@@ -1,0 +1,2043 @@
+{
+  "_meta": {
+    "family": "watch",
+    "generated_at": "2026-10-16T12:23:48.724085+00:00",
+    "regions_scraped": 33,
+    "scraper_version": "1.0",
+    "token": "apple-watch-hermes"
+  },
+  "country_mappings": {
+    "ae": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes": "Apple Watch Hermes"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes": "shop/buy-watch/apple-watch-hermes"
+      }
+    },
+    "at": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes": "Apple Watch Hermes"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes": "shop/buy-watch/apple-watch-hermes"
+      }
+    },
+    "au": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes": "Apple Watch Hermes"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes": "shop/buy-watch/apple-watch-hermes"
+      }
+    },
+    "be-fr": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes": "Apple Watch Hermes"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes": "shop/buy-watch/apple-watch-hermes"
+      }
+    },
+    "be-nl": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes": "Apple Watch Hermes"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes": "shop/buy-watch/apple-watch-hermes"
+      }
+    },
+    "br": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes": "Apple Watch Hermes"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes": "shop/buy-watch/apple-watch-hermes"
+      }
+    },
+    "ca": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes": "Apple Watch Hermes"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes": "shop/buy-watch/apple-watch-hermes"
+      }
+    },
+    "ch-de": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes": "Apple Watch Hermes"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes": "shop/buy-watch/apple-watch-hermes"
+      }
+    },
+    "ch-fr": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes": "Apple Watch Hermes"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes": "shop/buy-watch/apple-watch-hermes"
+      }
+    },
+    "cn": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes": "Apple Watch Hermes"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes": "shop/buy-watch/apple-watch-hermes"
+      }
+    },
+    "de": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes": "Apple Watch Hermes"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes": "shop/buy-watch/apple-watch-hermes"
+      }
+    },
+    "dk": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes": "Apple Watch Hermes"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes": "shop/buy-watch/apple-watch-hermes"
+      }
+    },
+    "es": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes": "Apple Watch Hermes"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes": "shop/buy-watch/apple-watch-hermes"
+      }
+    },
+    "fi": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes": "Apple Watch Hermes"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes": "shop/buy-watch/apple-watch-hermes"
+      }
+    },
+    "fr": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes": "Apple Watch Hermes"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes": "shop/buy-watch/apple-watch-hermes"
+      }
+    },
+    "hk": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes": "Apple Watch Hermes"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes": "shop/buy-watch/apple-watch-hermes"
+      }
+    },
+    "in": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes": "Apple Watch Hermes"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes": "shop/buy-watch/apple-watch-hermes"
+      }
+    },
+    "it": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes": "Apple Watch Hermes"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes": "shop/buy-watch/apple-watch-hermes"
+      }
+    },
+    "jp": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes": "Apple Watch Hermes"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes": "shop/buy-watch/apple-watch-hermes"
+      }
+    },
+    "kr": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes": "Apple Watch Hermes"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes": "shop/buy-watch/apple-watch-hermes"
+      }
+    },
+    "mx": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes": "Apple Watch Hermes"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes": "shop/buy-watch/apple-watch-hermes"
+      }
+    },
+    "my": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes": "Apple Watch Hermes"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes": "shop/buy-watch/apple-watch-hermes"
+      }
+    },
+    "nl": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes": "Apple Watch Hermes"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes": "shop/buy-watch/apple-watch-hermes"
+      }
+    },
+    "no": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes": "Apple Watch Hermes"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes": "shop/buy-watch/apple-watch-hermes"
+      }
+    },
+    "sa": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes": "Apple Watch Hermes"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes": "shop/buy-watch/apple-watch-hermes"
+      }
+    },
+    "se": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes": "Apple Watch Hermes"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes": "shop/buy-watch/apple-watch-hermes"
+      }
+    },
+    "sg": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes": "Apple Watch Hermes"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes": "shop/buy-watch/apple-watch-hermes"
+      }
+    },
+    "th": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes": "Apple Watch Hermes"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes": "shop/buy-watch/apple-watch-hermes"
+      }
+    },
+    "tr": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes": "Apple Watch Hermes"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes": "shop/buy-watch/apple-watch-hermes"
+      }
+    },
+    "tw": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes": "Apple Watch Hermes"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes": "shop/buy-watch/apple-watch-hermes"
+      }
+    },
+    "uk": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes": "Apple Watch Hermes"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes": "shop/buy-watch/apple-watch-hermes"
+      }
+    },
+    "us": {
+      "localization": {
+        "token_display": {
+          "apple-watch-hermes": "Apple Watch Hermes"
+        }
+      },
+      "shop_paths": {
+        "apple-watch-hermes": "shop/buy-watch/apple-watch-hermes"
+      }
+    }
+  },
+  "discovered_models": {
+    "ae": {
+      "apple-watch-hermes": {
+        "skus": {
+          "MJJX4AF/A": {
+            "capacity": "",
+            "colorDisplay": "Radiant Gold",
+            "colorKey": "radiantgold",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "42mm",
+              "color": "Radiant Gold",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 42mm titanium Radiant Gold",
+            "partNumber": "MJJX4AF/A"
+          },
+          "MJJY4AF/A": {
+            "capacity": "",
+            "colorDisplay": "Silver",
+            "colorKey": "silver",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "42mm",
+              "color": "Silver",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 42mm titanium Silver",
+            "partNumber": "MJJY4AF/A"
+          },
+          "MJK04AF/A": {
+            "capacity": "",
+            "colorDisplay": "Radiant Gold",
+            "colorKey": "radiantgold",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "46mm",
+              "color": "Radiant Gold",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 46mm titanium Radiant Gold",
+            "partNumber": "MJK04AF/A"
+          },
+          "MJK14AF/A": {
+            "capacity": "",
+            "colorDisplay": "Silver",
+            "colorKey": "silver",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "46mm",
+              "color": "Silver",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 46mm titanium Silver",
+            "partNumber": "MJK14AF/A"
+          }
+        },
+        "url": "https://www.apple.com/ae/shop/buy-watch/apple-watch-hermes"
+      }
+    },
+    "at": {
+      "apple-watch-hermes": {
+        "skus": {},
+        "url": "https://www.apple.com/at/shop/buy-watch/apple-watch-hermes"
+      }
+    },
+    "au": {
+      "apple-watch-hermes": {
+        "skus": {
+          "MJJX4X/A": {
+            "capacity": "",
+            "colorDisplay": "Radiant Gold",
+            "colorKey": "radiantgold",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "42mm",
+              "color": "Radiant Gold",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 42mm titanium Radiant Gold",
+            "partNumber": "MJJX4X/A"
+          },
+          "MJJY4X/A": {
+            "capacity": "",
+            "colorDisplay": "Silver",
+            "colorKey": "silver",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "42mm",
+              "color": "Silver",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 42mm titanium Silver",
+            "partNumber": "MJJY4X/A"
+          },
+          "MJK04X/A": {
+            "capacity": "",
+            "colorDisplay": "Radiant Gold",
+            "colorKey": "radiantgold",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "46mm",
+              "color": "Radiant Gold",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 46mm titanium Radiant Gold",
+            "partNumber": "MJK04X/A"
+          },
+          "MJK14X/A": {
+            "capacity": "",
+            "colorDisplay": "Silver",
+            "colorKey": "silver",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "46mm",
+              "color": "Silver",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 46mm titanium Silver",
+            "partNumber": "MJK14X/A"
+          }
+        },
+        "url": "https://www.apple.com/au/shop/buy-watch/apple-watch-hermes"
+      }
+    },
+    "be-fr": {
+      "apple-watch-hermes": {
+        "skus": {},
+        "url": "https://www.apple.com/be-fr/shop/buy-watch/apple-watch-hermes"
+      }
+    },
+    "be-nl": {
+      "apple-watch-hermes": {
+        "skus": {},
+        "url": "https://www.apple.com/be-nl/shop/buy-watch/apple-watch-hermes"
+      }
+    },
+    "br": {
+      "apple-watch-hermes": {
+        "skus": {},
+        "url": "https://www.apple.com/br/shop/buy-watch/apple-watch-hermes"
+      }
+    },
+    "ca": {
+      "apple-watch-hermes": {
+        "skus": {
+          "MJJX4VC/A": {
+            "capacity": "",
+            "colorDisplay": "Radiant Gold",
+            "colorKey": "radiantgold",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "42mm",
+              "color": "Radiant Gold",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 42mm titanium Radiant Gold",
+            "partNumber": "MJJX4VC/A"
+          },
+          "MJJY4VC/A": {
+            "capacity": "",
+            "colorDisplay": "Silver",
+            "colorKey": "silver",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "42mm",
+              "color": "Silver",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 42mm titanium Silver",
+            "partNumber": "MJJY4VC/A"
+          },
+          "MJK04VC/A": {
+            "capacity": "",
+            "colorDisplay": "Radiant Gold",
+            "colorKey": "radiantgold",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "46mm",
+              "color": "Radiant Gold",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 46mm titanium Radiant Gold",
+            "partNumber": "MJK04VC/A"
+          },
+          "MJK14VC/A": {
+            "capacity": "",
+            "colorDisplay": "Silver",
+            "colorKey": "silver",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "46mm",
+              "color": "Silver",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 46mm titanium Silver",
+            "partNumber": "MJK14VC/A"
+          }
+        },
+        "url": "https://www.apple.com/ca/shop/buy-watch/apple-watch-hermes"
+      }
+    },
+    "ch-de": {
+      "apple-watch-hermes": {
+        "skus": {
+          "MJJX4ZR/A": {
+            "capacity": "",
+            "colorDisplay": "Brillantgold",
+            "colorKey": "radiantgold",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "42mm",
+              "color": "Brillantgold",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 42mm titanium Brillantgold",
+            "partNumber": "MJJX4ZR/A"
+          },
+          "MJJY4ZR/A": {
+            "capacity": "",
+            "colorDisplay": "Silber",
+            "colorKey": "silver",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "42mm",
+              "color": "Silber",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 42mm titanium Silber",
+            "partNumber": "MJJY4ZR/A"
+          },
+          "MJK04ZR/A": {
+            "capacity": "",
+            "colorDisplay": "Brillantgold",
+            "colorKey": "radiantgold",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "46mm",
+              "color": "Brillantgold",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 46mm titanium Brillantgold",
+            "partNumber": "MJK04ZR/A"
+          },
+          "MJK14ZR/A": {
+            "capacity": "",
+            "colorDisplay": "Silber",
+            "colorKey": "silver",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "46mm",
+              "color": "Silber",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 46mm titanium Silber",
+            "partNumber": "MJK14ZR/A"
+          }
+        },
+        "url": "https://www.apple.com/ch-de/shop/buy-watch/apple-watch-hermes"
+      }
+    },
+    "ch-fr": {
+      "apple-watch-hermes": {
+        "skus": {
+          "MJJX4ZR/A": {
+            "capacity": "",
+            "colorDisplay": "Or brillant",
+            "colorKey": "radiantgold",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "42mm",
+              "color": "Or brillant",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 42mm titanium Or brillant",
+            "partNumber": "MJJX4ZR/A"
+          },
+          "MJJY4ZR/A": {
+            "capacity": "",
+            "colorDisplay": "Argent",
+            "colorKey": "silver",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "42mm",
+              "color": "Argent",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 42mm titanium Argent",
+            "partNumber": "MJJY4ZR/A"
+          },
+          "MJK04ZR/A": {
+            "capacity": "",
+            "colorDisplay": "Or brillant",
+            "colorKey": "radiantgold",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "46mm",
+              "color": "Or brillant",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 46mm titanium Or brillant",
+            "partNumber": "MJK04ZR/A"
+          },
+          "MJK14ZR/A": {
+            "capacity": "",
+            "colorDisplay": "Argent",
+            "colorKey": "silver",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "46mm",
+              "color": "Argent",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 46mm titanium Argent",
+            "partNumber": "MJK14ZR/A"
+          }
+        },
+        "url": "https://www.apple.com/ch-fr/shop/buy-watch/apple-watch-hermes"
+      }
+    },
+    "cn": {
+      "apple-watch-hermes": {
+        "skus": {
+          "MJKL4CH/B": {
+            "capacity": "",
+            "colorDisplay": "炫金色",
+            "colorKey": "radiantgold",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès Series 12",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "42mm",
+              "color": "炫金色",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès Series 12 42mm titanium 炫金色",
+            "partNumber": "MJKL4CH/B"
+          },
+          "MJKM4CH/B": {
+            "capacity": "",
+            "colorDisplay": "银色",
+            "colorKey": "silver",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès Series 12",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "42mm",
+              "color": "银色",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès Series 12 42mm titanium 银色",
+            "partNumber": "MJKM4CH/B"
+          },
+          "MJKN4CH/B": {
+            "capacity": "",
+            "colorDisplay": "炫金色",
+            "colorKey": "radiantgold",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès Series 12",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "46mm",
+              "color": "炫金色",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès Series 12 46mm titanium 炫金色",
+            "partNumber": "MJKN4CH/B"
+          },
+          "MJKP4CH/B": {
+            "capacity": "",
+            "colorDisplay": "银色",
+            "colorKey": "silver",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès Series 12",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "46mm",
+              "color": "银色",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès Series 12 46mm titanium 银色",
+            "partNumber": "MJKP4CH/B"
+          }
+        },
+        "url": "https://www.apple.com/cn/shop/buy-watch/apple-watch-hermes"
+      }
+    },
+    "de": {
+      "apple-watch-hermes": {
+        "skus": {
+          "MJJX4ZR/A": {
+            "capacity": "",
+            "colorDisplay": "Brillantgold",
+            "colorKey": "radiantgold",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "42mm",
+              "color": "Brillantgold",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 42mm titanium Brillantgold",
+            "partNumber": "MJJX4ZR/A"
+          },
+          "MJJY4ZR/A": {
+            "capacity": "",
+            "colorDisplay": "Silber",
+            "colorKey": "silver",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "42mm",
+              "color": "Silber",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 42mm titanium Silber",
+            "partNumber": "MJJY4ZR/A"
+          },
+          "MJK04ZR/A": {
+            "capacity": "",
+            "colorDisplay": "Brillantgold",
+            "colorKey": "radiantgold",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "46mm",
+              "color": "Brillantgold",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 46mm titanium Brillantgold",
+            "partNumber": "MJK04ZR/A"
+          },
+          "MJK14ZR/A": {
+            "capacity": "",
+            "colorDisplay": "Silber",
+            "colorKey": "silver",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "46mm",
+              "color": "Silber",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 46mm titanium Silber",
+            "partNumber": "MJK14ZR/A"
+          }
+        },
+        "url": "https://www.apple.com/de/shop/buy-watch/apple-watch-hermes"
+      }
+    },
+    "dk": {
+      "apple-watch-hermes": {
+        "skus": {},
+        "url": "https://www.apple.com/dk/shop/buy-watch/apple-watch-hermes"
+      }
+    },
+    "es": {
+      "apple-watch-hermes": {
+        "skus": {
+          "MJJX4QL/A": {
+            "capacity": "",
+            "colorDisplay": "Oro brillante",
+            "colorKey": "radiantgold",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "42mm",
+              "color": "Oro brillante",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 42mm titanium Oro brillante",
+            "partNumber": "MJJX4QL/A"
+          },
+          "MJJY4QL/A": {
+            "capacity": "",
+            "colorDisplay": "Plata",
+            "colorKey": "silver",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "42mm",
+              "color": "Plata",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 42mm titanium Plata",
+            "partNumber": "MJJY4QL/A"
+          },
+          "MJK04QL/A": {
+            "capacity": "",
+            "colorDisplay": "Oro brillante",
+            "colorKey": "radiantgold",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "46mm",
+              "color": "Oro brillante",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 46mm titanium Oro brillante",
+            "partNumber": "MJK04QL/A"
+          },
+          "MJK14QL/A": {
+            "capacity": "",
+            "colorDisplay": "Plata",
+            "colorKey": "silver",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "46mm",
+              "color": "Plata",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 46mm titanium Plata",
+            "partNumber": "MJK14QL/A"
+          }
+        },
+        "url": "https://www.apple.com/es/shop/buy-watch/apple-watch-hermes"
+      }
+    },
+    "fi": {
+      "apple-watch-hermes": {
+        "skus": {},
+        "url": "https://www.apple.com/fi/shop/buy-watch/apple-watch-hermes"
+      }
+    },
+    "fr": {
+      "apple-watch-hermes": {
+        "skus": {
+          "MJJX4ZR/A": {
+            "capacity": "",
+            "colorDisplay": "Or brillant",
+            "colorKey": "radiantgold",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "42mm",
+              "color": "Or brillant",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 42mm titanium Or brillant",
+            "partNumber": "MJJX4ZR/A"
+          },
+          "MJJY4ZR/A": {
+            "capacity": "",
+            "colorDisplay": "Argent",
+            "colorKey": "silver",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "42mm",
+              "color": "Argent",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 42mm titanium Argent",
+            "partNumber": "MJJY4ZR/A"
+          },
+          "MJK04ZR/A": {
+            "capacity": "",
+            "colorDisplay": "Or brillant",
+            "colorKey": "radiantgold",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "46mm",
+              "color": "Or brillant",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 46mm titanium Or brillant",
+            "partNumber": "MJK04ZR/A"
+          },
+          "MJK14ZR/A": {
+            "capacity": "",
+            "colorDisplay": "Argent",
+            "colorKey": "silver",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "46mm",
+              "color": "Argent",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 46mm titanium Argent",
+            "partNumber": "MJK14ZR/A"
+          }
+        },
+        "url": "https://www.apple.com/fr/shop/buy-watch/apple-watch-hermes"
+      }
+    },
+    "hk": {
+      "apple-watch-hermes": {
+        "skus": {
+          "MJJX4X/A": {
+            "capacity": "",
+            "colorDisplay": "Radiant Gold",
+            "colorKey": "radiantgold",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "42mm",
+              "color": "Radiant Gold",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 42mm titanium Radiant Gold",
+            "partNumber": "MJJX4X/A"
+          },
+          "MJJY4X/A": {
+            "capacity": "",
+            "colorDisplay": "Silver",
+            "colorKey": "silver",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "42mm",
+              "color": "Silver",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 42mm titanium Silver",
+            "partNumber": "MJJY4X/A"
+          },
+          "MJK04X/A": {
+            "capacity": "",
+            "colorDisplay": "Radiant Gold",
+            "colorKey": "radiantgold",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "46mm",
+              "color": "Radiant Gold",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 46mm titanium Radiant Gold",
+            "partNumber": "MJK04X/A"
+          },
+          "MJK14X/A": {
+            "capacity": "",
+            "colorDisplay": "Silver",
+            "colorKey": "silver",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "46mm",
+              "color": "Silver",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 46mm titanium Silver",
+            "partNumber": "MJK14X/A"
+          }
+        },
+        "url": "https://www.apple.com/hk/shop/buy-watch/apple-watch-hermes"
+      }
+    },
+    "in": {
+      "apple-watch-hermes": {
+        "skus": {},
+        "url": "https://www.apple.com/in/shop/buy-watch/apple-watch-hermes"
+      }
+    },
+    "it": {
+      "apple-watch-hermes": {
+        "skus": {
+          "MJJX4QL/A": {
+            "capacity": "",
+            "colorDisplay": "Oro brillante",
+            "colorKey": "radiantgold",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "42mm",
+              "color": "Oro brillante",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 42mm titanium Oro brillante",
+            "partNumber": "MJJX4QL/A"
+          },
+          "MJJY4QL/A": {
+            "capacity": "",
+            "colorDisplay": "Argento",
+            "colorKey": "silver",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "42mm",
+              "color": "Argento",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 42mm titanium Argento",
+            "partNumber": "MJJY4QL/A"
+          },
+          "MJK04QL/A": {
+            "capacity": "",
+            "colorDisplay": "Oro brillante",
+            "colorKey": "radiantgold",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "46mm",
+              "color": "Oro brillante",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 46mm titanium Oro brillante",
+            "partNumber": "MJK04QL/A"
+          },
+          "MJK14QL/A": {
+            "capacity": "",
+            "colorDisplay": "Argento",
+            "colorKey": "silver",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "46mm",
+              "color": "Argento",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 46mm titanium Argento",
+            "partNumber": "MJK14QL/A"
+          }
+        },
+        "url": "https://www.apple.com/it/shop/buy-watch/apple-watch-hermes"
+      }
+    },
+    "jp": {
+      "apple-watch-hermes": {
+        "skus": {
+          "MJJX4X/A": {
+            "capacity": "",
+            "colorDisplay": "ラディアントゴールド",
+            "colorKey": "radiantgold",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "42mm",
+              "color": "ラディアントゴールド",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 42mm titanium ラディアントゴールド",
+            "partNumber": "MJJX4X/A"
+          },
+          "MJJY4X/A": {
+            "capacity": "",
+            "colorDisplay": "シルバー",
+            "colorKey": "silver",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "42mm",
+              "color": "シルバー",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 42mm titanium シルバー",
+            "partNumber": "MJJY4X/A"
+          },
+          "MJK04X/A": {
+            "capacity": "",
+            "colorDisplay": "ラディアントゴールド",
+            "colorKey": "radiantgold",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "46mm",
+              "color": "ラディアントゴールド",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 46mm titanium ラディアントゴールド",
+            "partNumber": "MJK04X/A"
+          },
+          "MJK14X/A": {
+            "capacity": "",
+            "colorDisplay": "シルバー",
+            "colorKey": "silver",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "46mm",
+              "color": "シルバー",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 46mm titanium シルバー",
+            "partNumber": "MJK14X/A"
+          }
+        },
+        "url": "https://www.apple.com/jp/shop/buy-watch/apple-watch-hermes"
+      }
+    },
+    "kr": {
+      "apple-watch-hermes": {
+        "skus": {
+          "MJJX4KH/A": {
+            "capacity": "",
+            "colorDisplay": "래디언트 골드",
+            "colorKey": "radiantgold",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "42mm",
+              "color": "래디언트 골드",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 42mm titanium 래디언트 골드",
+            "partNumber": "MJJX4KH/A"
+          },
+          "MJJY4KH/A": {
+            "capacity": "",
+            "colorDisplay": "실버",
+            "colorKey": "silver",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "42mm",
+              "color": "실버",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 42mm titanium 실버",
+            "partNumber": "MJJY4KH/A"
+          },
+          "MJK04KH/A": {
+            "capacity": "",
+            "colorDisplay": "래디언트 골드",
+            "colorKey": "radiantgold",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "46mm",
+              "color": "래디언트 골드",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 46mm titanium 래디언트 골드",
+            "partNumber": "MJK04KH/A"
+          },
+          "MJK14KH/A": {
+            "capacity": "",
+            "colorDisplay": "실버",
+            "colorKey": "silver",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "46mm",
+              "color": "실버",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 46mm titanium 실버",
+            "partNumber": "MJK14KH/A"
+          }
+        },
+        "url": "https://www.apple.com/kr/shop/buy-watch/apple-watch-hermes"
+      }
+    },
+    "mx": {
+      "apple-watch-hermes": {
+        "skus": {
+          "MJJX4LZ/A": {
+            "capacity": "",
+            "colorDisplay": "Oro radiante",
+            "colorKey": "radiantgold",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "42mm",
+              "color": "Oro radiante",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 42mm titanium Oro radiante",
+            "partNumber": "MJJX4LZ/A"
+          },
+          "MJJY4LZ/A": {
+            "capacity": "",
+            "colorDisplay": "Color plata",
+            "colorKey": "silver",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "42mm",
+              "color": "Color plata",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 42mm titanium Color plata",
+            "partNumber": "MJJY4LZ/A"
+          },
+          "MJK04LZ/A": {
+            "capacity": "",
+            "colorDisplay": "Oro radiante",
+            "colorKey": "radiantgold",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "46mm",
+              "color": "Oro radiante",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 46mm titanium Oro radiante",
+            "partNumber": "MJK04LZ/A"
+          },
+          "MJK14LZ/A": {
+            "capacity": "",
+            "colorDisplay": "Color plata",
+            "colorKey": "silver",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "46mm",
+              "color": "Color plata",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 46mm titanium Color plata",
+            "partNumber": "MJK14LZ/A"
+          }
+        },
+        "url": "https://www.apple.com/mx/shop/buy-watch/apple-watch-hermes"
+      }
+    },
+    "my": {
+      "apple-watch-hermes": {
+        "skus": {
+          "MJJX4X/A": {
+            "capacity": "",
+            "colorDisplay": "Radiant Gold",
+            "colorKey": "radiantgold",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "42mm",
+              "color": "Radiant Gold",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 42mm titanium Radiant Gold",
+            "partNumber": "MJJX4X/A"
+          },
+          "MJJY4X/A": {
+            "capacity": "",
+            "colorDisplay": "Silver",
+            "colorKey": "silver",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "42mm",
+              "color": "Silver",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 42mm titanium Silver",
+            "partNumber": "MJJY4X/A"
+          },
+          "MJK04X/A": {
+            "capacity": "",
+            "colorDisplay": "Radiant Gold",
+            "colorKey": "radiantgold",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "46mm",
+              "color": "Radiant Gold",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 46mm titanium Radiant Gold",
+            "partNumber": "MJK04X/A"
+          },
+          "MJK14X/A": {
+            "capacity": "",
+            "colorDisplay": "Silver",
+            "colorKey": "silver",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "46mm",
+              "color": "Silver",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 46mm titanium Silver",
+            "partNumber": "MJK14X/A"
+          }
+        },
+        "url": "https://www.apple.com/my/shop/buy-watch/apple-watch-hermes"
+      }
+    },
+    "nl": {
+      "apple-watch-hermes": {
+        "skus": {},
+        "url": "https://www.apple.com/nl/shop/buy-watch/apple-watch-hermes"
+      }
+    },
+    "no": {
+      "apple-watch-hermes": {
+        "skus": {},
+        "url": "https://www.apple.com/no/shop/buy-watch/apple-watch-hermes"
+      }
+    },
+    "sa": {
+      "apple-watch-hermes": {
+        "skus": {
+          "MJJX4AF/A": {
+            "capacity": "",
+            "colorDisplay": "Radiant Gold",
+            "colorKey": "radiantgold",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "42mm",
+              "color": "Radiant Gold",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 42mm titanium Radiant Gold",
+            "partNumber": "MJJX4AF/A"
+          },
+          "MJJY4AF/A": {
+            "capacity": "",
+            "colorDisplay": "Silver",
+            "colorKey": "silver",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "42mm",
+              "color": "Silver",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 42mm titanium Silver",
+            "partNumber": "MJJY4AF/A"
+          },
+          "MJK04AF/A": {
+            "capacity": "",
+            "colorDisplay": "Radiant Gold",
+            "colorKey": "radiantgold",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "46mm",
+              "color": "Radiant Gold",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 46mm titanium Radiant Gold",
+            "partNumber": "MJK04AF/A"
+          },
+          "MJK14AF/A": {
+            "capacity": "",
+            "colorDisplay": "Silver",
+            "colorKey": "silver",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "46mm",
+              "color": "Silver",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 46mm titanium Silver",
+            "partNumber": "MJK14AF/A"
+          }
+        },
+        "url": "https://www.apple.com/sa/shop/buy-watch/apple-watch-hermes"
+      }
+    },
+    "se": {
+      "apple-watch-hermes": {
+        "skus": {
+          "MJJX4QN/A": {
+            "capacity": "",
+            "colorDisplay": "skinande guld",
+            "colorKey": "radiantgold",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "42mm",
+              "color": "skinande guld",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 42mm titanium skinande guld",
+            "partNumber": "MJJX4QN/A"
+          },
+          "MJJY4QN/A": {
+            "capacity": "",
+            "colorDisplay": "silver",
+            "colorKey": "silver",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "42mm",
+              "color": "silver",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 42mm titanium silver",
+            "partNumber": "MJJY4QN/A"
+          },
+          "MJK04QN/A": {
+            "capacity": "",
+            "colorDisplay": "skinande guld",
+            "colorKey": "radiantgold",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "46mm",
+              "color": "skinande guld",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 46mm titanium skinande guld",
+            "partNumber": "MJK04QN/A"
+          },
+          "MJK14QN/A": {
+            "capacity": "",
+            "colorDisplay": "silver",
+            "colorKey": "silver",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "46mm",
+              "color": "silver",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 46mm titanium silver",
+            "partNumber": "MJK14QN/A"
+          }
+        },
+        "url": "https://www.apple.com/se/shop/buy-watch/apple-watch-hermes"
+      }
+    },
+    "sg": {
+      "apple-watch-hermes": {
+        "skus": {
+          "MJJX4X/A": {
+            "capacity": "",
+            "colorDisplay": "Radiant Gold",
+            "colorKey": "radiantgold",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "42mm",
+              "color": "Radiant Gold",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 42mm titanium Radiant Gold",
+            "partNumber": "MJJX4X/A"
+          },
+          "MJJY4X/A": {
+            "capacity": "",
+            "colorDisplay": "Silver",
+            "colorKey": "silver",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "42mm",
+              "color": "Silver",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 42mm titanium Silver",
+            "partNumber": "MJJY4X/A"
+          },
+          "MJK04X/A": {
+            "capacity": "",
+            "colorDisplay": "Radiant Gold",
+            "colorKey": "radiantgold",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "46mm",
+              "color": "Radiant Gold",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 46mm titanium Radiant Gold",
+            "partNumber": "MJK04X/A"
+          },
+          "MJK14X/A": {
+            "capacity": "",
+            "colorDisplay": "Silver",
+            "colorKey": "silver",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "46mm",
+              "color": "Silver",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 46mm titanium Silver",
+            "partNumber": "MJK14X/A"
+          }
+        },
+        "url": "https://www.apple.com/sg/shop/buy-watch/apple-watch-hermes"
+      }
+    },
+    "th": {
+      "apple-watch-hermes": {
+        "skus": {
+          "MJJX4SA/A": {
+            "capacity": "",
+            "colorDisplay": "เรเดียนท์โกลด์",
+            "colorKey": "radiantgold",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "42mm",
+              "color": "เรเดียนท์โกลด์",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 42mm titanium เรเดียนท์โกลด์",
+            "partNumber": "MJJX4SA/A"
+          },
+          "MJJY4SA/A": {
+            "capacity": "",
+            "colorDisplay": "เงิน",
+            "colorKey": "silver",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "42mm",
+              "color": "เงิน",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 42mm titanium เงิน",
+            "partNumber": "MJJY4SA/A"
+          },
+          "MJK04SA/A": {
+            "capacity": "",
+            "colorDisplay": "เรเดียนท์โกลด์",
+            "colorKey": "radiantgold",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "46mm",
+              "color": "เรเดียนท์โกลด์",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 46mm titanium เรเดียนท์โกลด์",
+            "partNumber": "MJK04SA/A"
+          },
+          "MJK14SA/A": {
+            "capacity": "",
+            "colorDisplay": "เงิน",
+            "colorKey": "silver",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "46mm",
+              "color": "เงิน",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 46mm titanium เงิน",
+            "partNumber": "MJK14SA/A"
+          }
+        },
+        "url": "https://www.apple.com/th/shop/buy-watch/apple-watch-hermes"
+      }
+    },
+    "tr": {
+      "apple-watch-hermes": {
+        "skus": {},
+        "url": "https://www.apple.com/tr/shop/buy-watch/apple-watch-hermes"
+      }
+    },
+    "tw": {
+      "apple-watch-hermes": {
+        "skus": {
+          "MJJX4TA/A": {
+            "capacity": "",
+            "colorDisplay": "燦金色",
+            "colorKey": "radiantgold",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "42mm",
+              "color": "燦金色",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 42mm titanium 燦金色",
+            "partNumber": "MJJX4TA/A"
+          },
+          "MJJY4TA/A": {
+            "capacity": "",
+            "colorDisplay": "銀色",
+            "colorKey": "silver",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "42mm",
+              "color": "銀色",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 42mm titanium 銀色",
+            "partNumber": "MJJY4TA/A"
+          },
+          "MJK04TA/A": {
+            "capacity": "",
+            "colorDisplay": "燦金色",
+            "colorKey": "radiantgold",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "46mm",
+              "color": "燦金色",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 46mm titanium 燦金色",
+            "partNumber": "MJK04TA/A"
+          },
+          "MJK14TA/A": {
+            "capacity": "",
+            "colorDisplay": "銀色",
+            "colorKey": "silver",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "46mm",
+              "color": "銀色",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 46mm titanium 銀色",
+            "partNumber": "MJK14TA/A"
+          }
+        },
+        "url": "https://www.apple.com/tw/shop/buy-watch/apple-watch-hermes"
+      }
+    },
+    "uk": {
+      "apple-watch-hermes": {
+        "skus": {
+          "MJJX4MP/A": {
+            "capacity": "",
+            "colorDisplay": "Radiant Gold",
+            "colorKey": "radiantgold",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "42mm",
+              "color": "Radiant Gold",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 42mm titanium Radiant Gold",
+            "partNumber": "MJJX4MP/A"
+          },
+          "MJJY4MP/A": {
+            "capacity": "",
+            "colorDisplay": "Silver",
+            "colorKey": "silver",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "42mm",
+              "color": "Silver",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 42mm titanium Silver",
+            "partNumber": "MJJY4MP/A"
+          },
+          "MJK04MP/A": {
+            "capacity": "",
+            "colorDisplay": "Radiant Gold",
+            "colorKey": "radiantgold",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "46mm",
+              "color": "Radiant Gold",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 46mm titanium Radiant Gold",
+            "partNumber": "MJK04MP/A"
+          },
+          "MJK14MP/A": {
+            "capacity": "",
+            "colorDisplay": "Silver",
+            "colorKey": "silver",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "46mm",
+              "color": "Silver",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 46mm titanium Silver",
+            "partNumber": "MJK14MP/A"
+          }
+        },
+        "url": "https://www.apple.com/uk/shop/buy-watch/apple-watch-hermes"
+      }
+    },
+    "us": {
+      "apple-watch-hermes": {
+        "skus": {
+          "MJJX4LS/A": {
+            "capacity": "",
+            "colorDisplay": "Radiant Gold",
+            "colorKey": "radiantgold",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "42mm",
+              "color": "Radiant Gold",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 42mm titanium Radiant Gold",
+            "partNumber": "MJJX4LS/A"
+          },
+          "MJJY4LS/A": {
+            "capacity": "",
+            "colorDisplay": "Silver",
+            "colorKey": "silver",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "42mm",
+              "color": "Silver",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 42mm titanium Silver",
+            "partNumber": "MJJY4LS/A"
+          },
+          "MJK04LS/A": {
+            "capacity": "",
+            "colorDisplay": "Radiant Gold",
+            "colorKey": "radiantgold",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "46mm",
+              "color": "Radiant Gold",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 46mm titanium Radiant Gold",
+            "partNumber": "MJK04LS/A"
+          },
+          "MJK14LS/A": {
+            "capacity": "",
+            "colorDisplay": "Silver",
+            "colorKey": "silver",
+            "dimensionScreensize": "",
+            "family": "watch",
+            "familyName": "Apple Watch Hermès‏",
+            "metadata": {
+              "caseMaterial": "titanium",
+              "caseSize": "46mm",
+              "color": "Silver",
+              "isRealPartNumber": true,
+              "sourcePage": "watch"
+            },
+            "name": "Apple Watch Hermès‏ 46mm titanium Silver",
+            "partNumber": "MJK14LS/A"
+          }
+        },
+        "url": "https://www.apple.com/us/shop/buy-watch/apple-watch-hermes"
+      }
+    }
+  }
+}
