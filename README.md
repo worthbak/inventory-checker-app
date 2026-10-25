@@ -2,6 +2,11 @@
 
 macOS app to monitor Apple Store pickup availability for iPhone, Apple Watch, Mac, iPad, AirPods, HomePod, and Apple Vision Pro.
 
+> **Originally created by [Worth Baker](https://github.com/worthbak) (@worthbak).**
+> The project was handed over to [@drallgood](https://github.com/drallgood) for continued
+> maintenance, and this repository was transferred with its full history, issues, and
+> contributors intact. Thank you, Worth, for building InventoryWatch and letting it keep growing.
+
 ## Features
 
 - Real-time inventory checking across Apple Store locations
@@ -205,6 +210,22 @@ xcodebuild test -project InventoryWatch.xcodeproj -scheme InventoryWatch
 Tests cover catalog JSON parsing, country data loading, product family resolution,
 SKU lookup, saved-search round trips and migration, pickup request/response
 handling, request cooldowns, and human-readable store labels.
+
+## Credits
+
+- **Worth Baker ([@worthbak](https://github.com/worthbak))** — original author of InventoryWatch.
+  Worth started the project in November 2021 and authored 167 commits in this
+  repository, maintaining it through v0.3.1. The project was handed over for continued
+  maintenance in 2026; the repository and its open issues were transferred intact from
+  `worthbak/inventory-checker-app`, so the history here is his work as much as the current
+  maintainer's. Thank you, Worth — for building this and for letting it keep going.
+- **[@drallgood](https://github.com/drallgood)** — current maintainer, responsible for the
+  v3.0 rewrite, multi-search support, and the signed, notarized release pipeline.
+- **Brad Bergeron, Pedro Teixeira, and Andre Briggs** — additional contributors whose work is
+  part of this repository's history.
+
+Thanks to everyone who filed an issue, sent a pull request, or reported a bug — this app is
+better because of you.
 
 ## Intentional Hardcodes
 

@@ -23,7 +23,7 @@
 	<key>LSMinimumSystemVersion</key>
 	<string>$(MACOSX_DEPLOYMENT_TARGET)</string>
 	<key>NSHumanReadableCopyright</key>
-	<string></string>
+	<string>Copyright (c) 2021-2026 Worth Baker and InventoryWatch contributors.</string>
 	<key>SUFeedURL</key>
 	<string>https://drallgood.github.io/inventory-checker-app/appcast.xml</string>
 	<key>SUPublicEDKey</key>

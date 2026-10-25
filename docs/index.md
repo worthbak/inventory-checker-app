@@ -1,3 +1,13 @@
+---
+image:
+  path: https://drallgood.github.io/inventory-checker-app/logo.png
+  width: 512
+  height: 512
+  alt: InventoryWatch app icon
+twitter:
+  card: summary
+---
+
 # InventoryWatch
 
 A macOS app to monitor Apple Store pickup availability for iPhone, Apple Watch, Mac, iPad, AirPods, HomePod, and Apple Vision Pro.
