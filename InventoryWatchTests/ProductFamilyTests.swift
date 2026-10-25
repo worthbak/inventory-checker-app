@@ -25,6 +25,21 @@ struct ProductFamilyTests {
         #expect(ProductFamily.avp.displayName == "Apple Vision Pro")
     }
 
+    @Test func searchDisplayNameDoesNotRepeatFamily() {
+        #expect(ProductFamily.iphone.searchDisplayName(modelName: "iPhone Duo") == "iPhone Duo")
+        #expect(ProductFamily.mac.searchDisplayName(modelName: "MacBook Air") == "MacBook Air")
+        for family in ProductFamily.allCases {
+            let name = "\(family.displayName) Pro"
+            #expect(family.searchDisplayName(modelName: name) == name)
+        }
+        #expect(ProductFamily.iphone.searchDisplayName(modelName: "Iphone Duo") == "Iphone Duo")
+    }
+
+    @Test func searchDisplayNameKeepsFamilyForShortModelNames() {
+        #expect(ProductFamily.watch.searchDisplayName(modelName: "Ultra") == "Apple Watch Ultra")
+        #expect(ProductFamily.iphone.searchDisplayName(modelName: "17 Pro") == "iPhone 17 Pro")
+    }
+
     @Test func isPropertiesAreMutuallyExclusive() {
         let all: [ProductFamily] = [.watch, .iphone, .mac, .ipad, .airpods, .homepod, .avp]
         for family in all {
