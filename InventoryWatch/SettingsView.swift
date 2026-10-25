@@ -1070,7 +1070,6 @@ struct SettingsView: View {
         Task {
             defer {
                 if selectedSearchID == search.id,
-                   preferredCountry == targetCountry,
                    searchLoadGeneration == generation {
                     isLoadingSearchConfiguration = false
                 }
@@ -1100,6 +1099,17 @@ struct SettingsView: View {
             let storeNumber = stores.first?.id ?? ""
             preferredStoreNumber = storeNumber
             selectedStore = storeNumber
+            await loadStores(
+                for: targetCountry,
+                filterText: storeSearchText,
+                searchID: search.id,
+                generation: generation
+            )
+            guard isCurrentCountryChange(searchID: search.id, countryCode: targetCountry, generation: generation) else { return }
+
+            await loadAllTokens(searchID: search.id, generation: generation)
+            guard isCurrentCountryChange(searchID: search.id, countryCode: targetCountry, generation: generation) else { return }
+
             await loadSkus(searchID: search.id, generation: generation)
             guard isCurrentCountryChange(searchID: search.id, countryCode: targetCountry, generation: generation) else { return }
 

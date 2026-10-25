@@ -8,6 +8,41 @@
 import Foundation
 import Combine
 
+enum LegacyPreferencesMigration {
+    static let previousBundleIdentifier = "com.worthbak.InventoryWatch"
+
+    private static let migrationKey = "didMigratePreferencesFrom.\(previousBundleIdentifier)"
+
+    static func migrateIfNeeded() {
+        guard let currentBundleIdentifier = Bundle.main.bundleIdentifier else {
+            preconditionFailure("The app bundle identifier is unavailable.")
+        }
+        migrate(
+            using: .standard,
+            from: previousBundleIdentifier,
+            to: currentBundleIdentifier
+        )
+    }
+
+    @discardableResult
+    static func migrate(
+        using defaults: UserDefaults,
+        from oldDomain: String,
+        to newDomain: String
+    ) -> Bool {
+        var newPreferences = defaults.persistentDomain(forName: newDomain) ?? [:]
+        guard newPreferences[migrationKey] == nil else { return false }
+
+        let oldPreferences = defaults.persistentDomain(forName: oldDomain) ?? [:]
+        for (key, value) in oldPreferences where newPreferences[key] == nil {
+            newPreferences[key] = value
+        }
+        newPreferences[migrationKey] = true
+        defaults.setPersistentDomain(newPreferences, forName: newDomain)
+        return oldPreferences.isEmpty == false
+    }
+}
+
 // Minimal product family selector for token-driven UI
 enum ProductFamily: String, Codable, CaseIterable, Identifiable {
     case watch = "watch"

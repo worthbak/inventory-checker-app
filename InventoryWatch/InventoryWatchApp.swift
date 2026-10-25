@@ -84,8 +84,14 @@ final class AppUpdater: NSObject, ObservableObject, SPUUpdaterDelegate {
 
 @main
 struct InventoryWatchApp: App {
-    @StateObject var model = ViewModel()
-    @StateObject private var updater = AppUpdater()
+    @StateObject var model: ViewModel
+    @StateObject private var updater: AppUpdater
+
+    init() {
+        LegacyPreferencesMigration.migrateIfNeeded()
+        _model = StateObject(wrappedValue: ViewModel())
+        _updater = StateObject(wrappedValue: AppUpdater())
+    }
     
     var body: some Scene {
         WindowGroup {

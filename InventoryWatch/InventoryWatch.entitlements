@@ -16,6 +16,7 @@
 	<key>com.apple.security.temporary-exception.shared-preference.read-write</key>
 	<array>
 		<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+		<string>com.worthbak.InventoryWatch</string>
 	</array>
 </dict>
 </plist>

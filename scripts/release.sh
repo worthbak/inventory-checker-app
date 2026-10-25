@@ -144,6 +144,7 @@ fi
 
 VERSION="$(/usr/libexec/PlistBuddy -c 'Print :CFBundleShortVersionString' "$APP/Contents/Info.plist")"
 BUILD_VERSION="$(/usr/libexec/PlistBuddy -c 'Print :CFBundleVersion' "$APP/Contents/Info.plist")"
+MINIMUM_SYSTEM_VERSION="$(/usr/libexec/PlistBuddy -c 'Print :LSMinimumSystemVersion' "$APP/Contents/Info.plist")"
 RELEASE_TAG="${RELEASE_TAG:-v$VERSION}"
 if [[ ! "$RELEASE_TAG" =~ ^[A-Za-z0-9._-]+$ ]]; then
     echo "Error: RELEASE_TAG may only contain letters, numbers, dots, underscores, and hyphens." >&2
@@ -158,6 +159,7 @@ APPCAST_ITEM="$OUTPUT/appcast-item.xml"
     printf '            <title>InventoryWatch %s</title>\n' "$VERSION"
     printf '            <sparkle:version>%s</sparkle:version>\n' "$BUILD_VERSION"
     printf '            <sparkle:shortVersionString>%s</sparkle:shortVersionString>\n' "$VERSION"
+    printf '            <sparkle:minimumSystemVersion>%s</sparkle:minimumSystemVersion>\n' "$MINIMUM_SYSTEM_VERSION"
     if [[ "$RELEASE_CHANNEL" == beta ]]; then
         printf '            <sparkle:channel>beta</sparkle:channel>\n'
     fi
