@@ -9,5 +9,15 @@
         <description>InventoryWatch release updates</description>
         <language>en</language>
         <!-- Omit sparkle:channel for stable releases; use <sparkle:channel>beta</sparkle:channel> for beta releases. -->
-    </channel>
+            <item>
+            <title>InventoryWatch 3.0.0-RC.2</title>
+            <sparkle:version>3</sparkle:version>
+            <sparkle:shortVersionString>3.0.0-RC.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:channel>beta</sparkle:channel>
+            <pubDate>Sun, 25 Oct 2026 19:32:45 +0000</pubDate>
+            <enclosure url="https://github.com/drallgood/inventory-checker-app/releases/download/v3.0.0-RC.2-build.3/InventoryWatch.zip"
+                       sparkle:edSignature="APUuHnbzaVLRyS1vaUHsfLvh2MIzLhjePp/vKMsEMknCRK2KVccJDHcvoY0chMzQxRRlIMdEvixo2lgvspViCA==" length="2288546" type="application/octet-stream" />
+        </item>
+</channel>
 </rss>
