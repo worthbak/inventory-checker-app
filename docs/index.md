@@ -44,7 +44,7 @@ See [README.md](../README.md) for full documentation, architecture, and scraper 
 - Searches sharing a country/store use a combined pickup request; different locations are queried separately.
 - Country changes validate catalog availability before saving, and preferred-model selections survive product changes.
 - Refresh triggers are coalesced, duplicate availability is removed from notifications, and blocked requests use a session-wide cooldown that honors supported `Retry-After` headers.
-- Release tooling builds, signs, notarizes, and packages universal macOS releases and generates signed Sparkle appcast items. Publishing the ZIP and feed remains a separate step.
+- Release tooling tests, builds, signs, notarizes, publishes GitHub releases, and updates the signed Sparkle appcast on GitHub Pages.
 
 See the [changelog](../CHANGELOG.md) for change history and the [README](../README.md) for search, update-channel, and release instructions.
 

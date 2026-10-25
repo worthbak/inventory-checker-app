@@ -109,20 +109,14 @@ Stable updates are published without a `sparkle:channel` element; beta updates i
 Generate a Sparkle EdDSA key pair with Sparkle's `generate_keys` tool and keep the private key in the login Keychain used for releases (never commit it). Configure the app's `SPARKLE_PUBLIC_ED_KEY` Xcode build setting with the matching public key. The updater remains disabled until a valid public key is configured.
 
 Sparkle replaces the previous GitHub-tag version check. The checked-in appcast
-is a template with no release items; update delivery also requires publishing a
-signed release and adding its generated item to the feed.
+starts with no release items; the release script publishes the first signed
+release and updates the feed automatically.
 
 ### Sign and notarize a release
 
 For direct distribution outside the Mac App Store, use [`scripts/release.sh`](scripts/release.sh). It requires full Xcode, an active Apple Developer Program membership, and a **Developer ID Application** certificate with its private key installed in your login Keychain. An Apple Development certificate is not sufficient.
 
-1. Check that your distribution identity is available:
-
-   ```bash
-   security find-identity -v -p codesigning
-   ```
-
-2. Store notarization credentials in Keychain with an app-specific password and your Apple Developer team ID:
+1. Store notarization credentials in Keychain once with an app-specific password and your Apple Developer team ID:
 
    ```bash
    xcrun notarytool store-credentials inventorywatch-notary \
@@ -132,34 +126,29 @@ For direct distribution outside the Mac App Store, use [`scripts/release.sh`](sc
 
    Enter the app-specific password at the secure terminal prompt. Do not put passwords, private keys, or certificate exports in the repository or chat.
 
-3. Increase `CURRENT_PROJECT_VERSION` for the release, run the unit tests, then build and notarize. Supply the public Sparkle key and choose a channel:
+2. Configure the matching Sparkle public key in the Xcode `SPARKLE_PUBLIC_ED_KEY` build setting (it is safe to store the public key in the project) or export it in your shell. Keep the private key in the login Keychain. Authenticate the GitHub CLI once with `gh auth login`, enable GitHub Pages for the `main` branch's `docs/` directory, then run the release command from a clean, up-to-date `main` checkout:
 
    ```bash
-   TEAM_ID=YOUR_TEAM_ID \
    SPARKLE_PUBLIC_ED_KEY=YOUR_PUBLIC_KEY \
    RELEASE_CHANNEL=stable \
    bash scripts/release.sh
    ```
 
-   Set `RELEASE_CHANNEL=beta` for beta releases. The script builds a universal Apple Silicon/Intel archive, verifies the Developer ID signature, notarizes and staples the app, checks Gatekeeper, and creates `InventoryWatch.zip` plus a SHA-256 checksum. It also signs the ZIP with Sparkle and writes a channel-aware appcast item to the run's `appcast-item.xml`.
+   The script detects the Apple team ID from the Xcode project, runs the test suite, increments and commits the build number, signs the Sparkle helper tools and app, notarizes and staples the archive, and checks Gatekeeper. It then creates a uniquely tagged GitHub release with the ZIP and checksum, updates the appcast, and pushes both commits so GitHub Pages publishes the update feed. Set `RELEASE_CHANNEL=beta` for a beta release.
 
-4. Upload only `InventoryWatch.zip` to the matching GitHub release tag. Add the generated `<item>` to [`docs/appcast.xml`](./docs/appcast.xml), preserving its Sparkle namespace declarations, then publish the `docs/` site through GitHub Pages. The script does not publish GitHub releases or deploy GitHub Pages automatically.
-
-To verify local signing without submitting to Apple or creating a distributable ZIP:
+To run tests and verify signing without incrementing the build number, notarizing, or publishing:
 
 ```bash
-TEAM_ID=YOUR_TEAM_ID \
 SPARKLE_PUBLIC_ED_KEY=YOUR_PUBLIC_KEY \
 bash scripts/release.sh --build-only
 ```
 
-Use `SIGNING_IDENTITY` to select a specific Developer ID Application identity or `NOTARY_PROFILE` to select another saved Keychain profile. The script retains build output and diagnostic logs under the ignored `build/release/` directory.
+The team ID is inferred from the Xcode project; `TEAM_ID` can override it. Use `SIGNING_IDENTITY` to select a specific Developer ID Application identity or `NOTARY_PROFILE` to select another saved Keychain profile. `RELEASE_REPOSITORY`, `RELEASE_REMOTE`, and `RELEASE_BRANCH` can override the publishing destination. `RELEASE_TAG` can override the generated tag. The script retains build output and diagnostic logs under the ignored `build/release/` directory.
 
-`RELEASE_TAG` defaults to `v<marketing version>` and can be overridden for a
-different GitHub release tag. Generated download URLs point to
-`drallgood/inventory-checker-app`. If the repository or GitHub Pages domain
-changes, update the generated download URL and the app's `SUFeedURL` before
-distributing updates.
+The release command pushes two small commits to the release branch: the new
+build number and the appcast item. Ensure the GitHub Pages source is configured
+to publish `main/docs`, and keep the repository and Pages domain consistent
+with the app's `SUFeedURL`.
 
 ### Scrape product data
 
