@@ -11,7 +11,7 @@ struct NotificationSender {
     
     private let defaultsVendor = DefaultsVendor()
     
-    func sendNotificationIfNeeded(availableParts: [(FulfillmentStore, [PartAvailability])], skuData: SKUData) async {
+    func sendNotificationIfNeeded(availableParts: [(FulfillmentStore, [PartAvailability])], skuData: SKUData, searches: [SearchConfiguration]) async {
         var hasPreferredModel = false
         let preferredModels = defaultsVendor.preferredSKUs
         for model in availableParts {
@@ -32,12 +32,12 @@ struct NotificationSender {
             return
         }
         
-        let message = self.generateNotificationText(from: availableParts, skuData: skuData, preferredModels: preferredModels)
-        let title = await generateNotificationTitle(hasPreferredModel: hasPreferredModel, availableParts: availableParts, skuData: skuData)
+        let message = self.generateNotificationText(from: availableParts, skuData: skuData, preferredModels: preferredModels, searches: searches)
+        let title = await generateNotificationTitle(hasPreferredModel: hasPreferredModel, availableParts: availableParts, skuData: skuData, searches: searches)
         await NotificationManager.shared.sendNotification(title: title, body: message)
     }
     
-    private func generateNotificationText(from data: [(FulfillmentStore, [PartAvailability])], skuData: SKUData, preferredModels: Set<String>) -> String {
+    private func generateNotificationText(from data: [(FulfillmentStore, [PartAvailability])], skuData: SKUData, preferredModels: Set<String>, searches: [SearchConfiguration]) -> String {
         guard data.isEmpty == false else {
             return "No inventory currently available at nearby stores"
         }
@@ -69,12 +69,13 @@ struct NotificationSender {
             return "No preferred models available at this time"
         }
         
-        let family = DefaultsVendor().preferredProductFamily
         let topModels = sortedModels.prefix(3).map { (part, count) in
             var shortName = part.partName
-            let prefix = "\(family.displayName) "
-            if shortName.hasPrefix(prefix) {
-                shortName = String(shortName.dropFirst(prefix.count))
+            if searches.count == 1, let family = searches.first?.family {
+                let prefix = "\(family.displayName) "
+                if shortName.hasPrefix(prefix) {
+                    shortName = String(shortName.dropFirst(prefix.count))
+                }
             }
             return "\(shortName) (×\(count))"
         }
@@ -86,14 +87,15 @@ struct NotificationSender {
         return message.trimmingCharacters(in: .whitespaces)
     }
     
-    private func generateNotificationTitle(hasPreferredModel: Bool, availableParts: [(FulfillmentStore, [PartAvailability])], skuData: SKUData) async -> String {
+    private func generateNotificationTitle(hasPreferredModel: Bool, availableParts: [(FulfillmentStore, [PartAvailability])], skuData: SKUData, searches: [SearchConfiguration]) async -> String {
         let totalModels = availableParts.reduce(0) { total, storeParts in
             total + storeParts.1.count
         }
         
-        // Determine product type from active family
-        let productName = await getProductName(from: skuData)
-        let productEmoji = getProductEmojiFromSKUData(skuData)
+        let productName = searches.count == 1
+            ? await getProductName(for: searches[0], skuData: skuData)
+            : "Apple Products"
+        let productEmoji = searches.count == 1 ? getProductEmoji(for: searches[0].family) : "📦"
         
         if hasPreferredModel {
             let emojis = ["🎉", "✨", "🔥", "⚡️", "🚀"]
@@ -108,18 +110,12 @@ struct NotificationSender {
         }
     }
     
-    private func getProductName(from skuData: SKUData) async -> String {
-        // Respect the active product family for notification labeling
-        let defaults = DefaultsVendor()
-        let family = defaults.preferredProductFamily
+    private func getProductName(for search: SearchConfiguration, skuData: SKUData) async -> String {
+        let family = search.family
+        let country = Countries[search.countryCode] ?? defaultsVendor.preferredCountry
         if family.isWatch {
-            // If a Watch token is selected, derive the base display name from JSON (family/familyName + token variant)
-            let token = defaults.preferredWatchToken
-            if token.isEmpty == false {
-                let country = defaults.preferredCountry
-                if let display = await displayNameForWatchToken(token: token, country: country) {
-                    return display
-                }
+            if let display = await displayNameForWatchToken(token: search.token, country: country) {
+                return display
             }
             return "Apple Watch"
         }
@@ -130,43 +126,26 @@ struct NotificationSender {
             return "Mac"
         }
         if family.isIPad {
-            // If an iPad token is selected, derive display name from JSON
-            let token = defaults.preferrediPadToken
-            if token.isEmpty == false {
-                let country = defaults.preferredCountry
-                if let display = await displayNameForiPadToken(token: token, country: country) {
-                    return display
-                }
+            if let display = await displayNameForiPadToken(token: search.token, country: country) {
+                return display
             }
             return "iPad"
         }
         if family.isAirPods {
-            let token = defaults.preferredAirPodsToken
-            if token.isEmpty == false {
-                let country = defaults.preferredCountry
-                if let display = await displayNameForAirPodsToken(token: token, country: country) {
-                    return display
-                }
+            if let display = await displayNameForAirPodsToken(token: search.token, country: country) {
+                return display
             }
             return "AirPods"
         }
         if family.isHomePod {
-            let token = defaults.preferredHomePodToken
-            if token.isEmpty == false {
-                let country = defaults.preferredCountry
-                if let display = await displayNameForHomePodToken(token: token, country: country) {
-                    return display
-                }
+            if let display = await displayNameForHomePodToken(token: search.token, country: country) {
+                return display
             }
             return "HomePod"
         }
         if family.isAVP {
-            let token = defaults.preferredAVPToken
-            if token.isEmpty == false {
-                let country = defaults.preferredCountry
-                if let display = await displayNameForAVPToken(token: token, country: country) {
-                    return display
-                }
+            if let display = await displayNameForAVPToken(token: search.token, country: country) {
+                return display
             }
             return "Apple Vision Pro"
         }
@@ -262,9 +241,7 @@ struct NotificationSender {
         }
     }
     
-    private func getProductEmojiFromSKUData(_ skuData: SKUData) -> String {
-        // Emoji should reflect the active product family
-        let family = DefaultsVendor().preferredProductFamily
+    private func getProductEmoji(for family: ProductFamily) -> String {
         if family.isWatch { return "⌚️" }
         if family.isIPhone { return "📱" }
         if family.isMac { return "💻" }

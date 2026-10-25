@@ -8,6 +8,41 @@
 import Foundation
 import Combine
 
+enum LegacyPreferencesMigration {
+    static let previousBundleIdentifier = "com.worthbak.InventoryWatch"
+
+    private static let migrationKey = "didMigratePreferencesFrom.\(previousBundleIdentifier)"
+
+    static func migrateIfNeeded() {
+        guard let currentBundleIdentifier = Bundle.main.bundleIdentifier else {
+            preconditionFailure("The app bundle identifier is unavailable.")
+        }
+        migrate(
+            using: .standard,
+            from: previousBundleIdentifier,
+            to: currentBundleIdentifier
+        )
+    }
+
+    @discardableResult
+    static func migrate(
+        using defaults: UserDefaults,
+        from oldDomain: String,
+        to newDomain: String
+    ) -> Bool {
+        var newPreferences = defaults.persistentDomain(forName: newDomain) ?? [:]
+        guard newPreferences[migrationKey] == nil else { return false }
+
+        let oldPreferences = defaults.persistentDomain(forName: oldDomain) ?? [:]
+        for (key, value) in oldPreferences where newPreferences[key] == nil {
+            newPreferences[key] = value
+        }
+        newPreferences[migrationKey] = true
+        defaults.setPersistentDomain(newPreferences, forName: newDomain)
+        return oldPreferences.isEmpty == false
+    }
+}
+
 // Minimal product family selector for token-driven UI
 enum ProductFamily: String, Codable, CaseIterable, Identifiable {
     case watch = "watch"
@@ -26,6 +61,13 @@ enum ProductFamily: String, Codable, CaseIterable, Identifiable {
     var isHomePod: Bool { self == .homepod }
     var isAVP: Bool { self == .avp }
 
+    func searchDisplayName(modelName: String) -> String {
+        if modelName.lowercased().hasPrefix(displayName.lowercased()) {
+            return modelName
+        }
+        return "\(displayName) \(modelName)"
+    }
+
     var displayName: String {
         switch self {
         case .watch: return "Apple Watch"
@@ -36,6 +78,39 @@ enum ProductFamily: String, Codable, CaseIterable, Identifiable {
         case .homepod: return "HomePod"
         case .avp: return "Apple Vision Pro"
         }
+    }
+}
+
+struct SearchConfiguration: Codable, Hashable, Identifiable {
+    var id: UUID
+    var family: ProductFamily
+    var token: String
+    var countryCode: String
+    var storeNumber: String
+
+    init(
+        id: UUID = UUID(),
+        family: ProductFamily,
+        token: String,
+        countryCode: String = "US",
+        storeNumber: String = ""
+    ) {
+        self.id = id
+        self.family = family
+        self.token = token
+        self.countryCode = countryCode
+        self.storeNumber = storeNumber
+    }
+
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        id = try container.decodeIfPresent(UUID.self, forKey: .id) ?? UUID()
+        family = try container.decode(ProductFamily.self, forKey: .family)
+        token = try container.decode(String.self, forKey: .token)
+        countryCode = try container.decodeIfPresent(String.self, forKey: .countryCode)
+            ?? (UserDefaults.standard.string(forKey: "preferredCountry") ?? "US")
+        storeNumber = try container.decodeIfPresent(String.self, forKey: .storeNumber)
+            ?? UserDefaults.standard.preferredStoreNumber
     }
 }
 

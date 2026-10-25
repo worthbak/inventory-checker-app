@@ -44,10 +44,9 @@ struct SettingsView: View {
     }
     
     @EnvironmentObject var model: ViewModel
-    @Environment(\.openURL) var openURL
     
-    @AppStorage("preferredCountry") private var preferredCountry = "US"
-    @AppStorage("preferredStoreNumber") private var preferredStoreNumber = ""
+    @State private var preferredCountry = "US"
+    @State private var preferredStoreNumber = ""
     @AppStorage("preferredSKUs") private var preferredSKUs: String = ""
     @AppStorage("preferredUpdateInterval") private var preferredUpdateInterval: Int = 1
     @AppStorage("preferredProductType") private var preferredProductType: String = ProductFamily.iphone.rawValue
@@ -66,6 +65,9 @@ struct SettingsView: View {
     @AppStorage("shouldIncludeNearbyStores") private var shouldIncludeNearbyStores: Bool = true
     
     @State private var selectedCountryIndex = 0
+    @State private var selectedSearchID: UUID?
+    @State private var isLoadingSearchConfiguration = false
+    @State private var searchLoadGeneration = 0
     @State private var allModels: [ProductModel] = []
     @State private var allStores: [StoreWithSelection] = []
     @State private var storeSearchText: String = ""
@@ -86,34 +88,50 @@ struct SettingsView: View {
     @State private var avpTokenNames: [String: String] = [:]
     
     var body: some View {
-        VStack(alignment: .leading) {
-            if model.pickupErrorKeys.isEmpty == false {
-                HStack(spacing: 8) {
-                    Image(systemName: "exclamationmark.triangle.fill")
-                    Text("Apple pickup API warning: \(model.pickupErrorKeys.joined(separator: ", "))")
+        NavigationSplitView {
+            searchesSidebar
+                .navigationSplitViewColumnWidth(min: 200, ideal: 250)
+        } detail: {
+            VStack(alignment: .leading) {
+                if model.pickupErrorKeys.isEmpty == false {
+                    HStack(spacing: 8) {
+                        Image(systemName: "exclamationmark.triangle.fill")
+                        Text("Apple pickup API warning: \(model.pickupErrorKeys.joined(separator: ", "))")
+                    }
+                    .foregroundColor(.orange)
+                    .padding(.bottom, 6)
                 }
-                .foregroundColor(.orange)
-                .padding(.bottom, 6)
+                if selectedSearchID == nil {
+                    ContentUnavailableView(
+                        "No Search Selected",
+                        systemImage: "magnifyingglass",
+                        description: Text("Create a search to monitor a product and store.")
+                    )
+                } else {
+                    VStack(alignment: .leading) {
+                        topControls
+                        modelsAndStores
+                            .padding(.top, 8)
+                    }
+                    .disabled(isLoadingSearchConfiguration)
+                }
             }
-            topControls
-            modelsAndStores
-                .padding(.top, 8)
+            .padding()
         }
-        .padding()
         .frame(
-            minWidth: 500,
+            minWidth: 850,
             maxWidth: .infinity,
             minHeight: 600,
             maxHeight: .infinity,
             alignment: .center
         )
         .onAppear { onAppearSetup() }
+        .onChange(of: selectedSearchID) { _, newValue in handleSelectedSearchChange(newValue) }
         .onChange(of: selectedCountryIndex) { _, newValue in handleSelectedCountryIndexChange(newValue) }
         .onChange(of: allModels) { _, newValue in handleAllModelsChange(newValue) }
         .onChange(of: storeSearchText) { _, newValue in handleStoreSearchTextChange(newValue) }
-        .onChange(of: allStores) { _, newValue in handleAllStoresChange(newValue) }
         .onChange(of: preferredProductType) { _, newValue in handlePreferredProductTypeChange(newValue) }
-        .onChange(of: preferredStoreNumber) { handlePreferredStoreNumberChange() }
+        .onChange(of: preferredStoreNumber) { saveSelectedSearch() }
         .onChange(of: preferredUpdateInterval) { handlePreferredUpdateIntervalChange() }
         .onChange(of: preferredCountry) { handlePreferredCountryChange() }
         .onChange(of: showResultsOnlyForPreferredModels) { handleReloadInventory() }
@@ -130,19 +148,58 @@ struct SettingsView: View {
     // Break complex views into smaller computed blocks to assist the type-checker
     @ViewBuilder private var topControls: some View {
         HStack(alignment: .top, spacing: 24) {
-            leftControlsView
-                .fixedSize()
-                .padding(.leading, 8)
-                .padding(.bottom, 8)
-            rightControlsView
+            leftControlsView.frame(maxWidth: .infinity, alignment: .leading)
+            rightControlsView.frame(maxWidth: .infinity, alignment: .leading)
         }
     }
 
     @ViewBuilder private var modelsAndStores: some View {
-        HStack {
-            preferredModelsList
+        HStack(alignment: .top, spacing: 24) {
             preferredStoreList
+                .frame(maxWidth: .infinity)
+            preferredModelsList
+                .frame(maxWidth: .infinity)
         }
+    }
+
+    @ViewBuilder private var searchesSidebar: some View {
+        VStack(spacing: 0) {
+            List(selection: $selectedSearchID) {
+                ForEach(model.searchConfigurations) { search in
+                    Text(searchDisplayName(search))
+                        .lineLimit(2)
+                        .tag(search.id)
+                        .contextMenu {
+                            Button("Delete Search", role: .destructive) {
+                                model.removeSearchConfiguration(search)
+                                if selectedSearchID == search.id {
+                                    selectedSearchID = model.searchConfigurations.first?.id
+                                }
+                            }
+                        }
+                }
+            }
+            HStack {
+                Button {
+                    createSearch()
+                } label: {
+                    Label("New Search", systemImage: "plus")
+                }
+                .disabled(currentSearchConfiguration == nil)
+                Spacer()
+                if let search = selectedSearch {
+                    Button(role: .destructive) {
+                        model.removeSearchConfiguration(search)
+                        selectedSearchID = model.searchConfigurations.first(where: { $0.id != search.id })?.id
+                    } label: {
+                        Image(systemName: "trash")
+                    }
+                    .help("Delete selected search")
+                }
+            }
+            .padding(10)
+        }
+        .navigationTitle("Searches")
     }
 
     // MARK: - Extracted subviews
@@ -188,25 +245,15 @@ struct SettingsView: View {
                 Text("Include results from nearby stores")
             }
             
-            if model.hasLatestVersion == false {
-                Link(destination: URL(string: "https://worthbak.github.io/inventory-checker-app/")!) {
-                    HStack(spacing: 4) {
-                        Text("A new version of InventoryWatch is available - click here to download.")
-                        Image(systemName: "arrow.forward.circle")
-                    }
-                    .font(.headline)
-                }
-                .padding(.top, 16)
-            }
         }
     }
 
     @ViewBuilder private var preferredModelsList: some View {
         VStack(alignment: .leading) {
-            Text("Preferred Model(s)")
+            Text("Preferred Models")
                 .font(.headline)
             
-            Text("Only certain model configurations are stocked in-stores. If you believe a configuration is missing, [please open an issue](https://github.com/worthbak/inventory-checker-app/issues).")
+            Text("Only certain model configurations are stocked in-stores. If you believe a configuration is missing, [please open an issue](https://github.com/drallgood/inventory-checker-app/issues).")
                 .font(.caption).italic()
             
             List {
@@ -222,19 +269,31 @@ struct SettingsView: View {
 
     @ViewBuilder private var preferredStoreList: some View {
         VStack(alignment: .leading) {
-            Text("Preferred Store")
+            Text("Store for This Search")
                 .font(.headline)
             
             TextField("Filter by store name, city, state, or province", text: $storeSearchText)
                 .padding(.top, -5)
             
             List {
-                ForEach($allStores) { store in
-                    Toggle(isOn: store.isSelected) {
-                        let wrapped = store.wrappedValue
-                        Text("\(Text(wrapped.storeName).bold()) - \(wrapped.store.address.cityStateDisplay)")
-                            .padding(.leading, 4)
+                ForEach(allStores) { store in
+                    Button {
+                        selectedStore = store.storeNumber
+                        preferredStoreNumber = store.storeNumber
+                        allStores = allStores.map { candidate in
+                            var updated = candidate
+                            updated.isSelected = candidate.storeNumber == store.storeNumber
+                            return updated
+                        }
+                    } label: {
+                        HStack {
+                            Image(systemName: store.isSelected ? "largecircle.fill.circle" : "circle")
+                                .foregroundColor(store.isSelected ? .accentColor : .secondary)
+                            Text("\(Text(store.storeName).bold()) - \(store.store.address.cityStateDisplay)")
+                                .padding(.leading, 4)
+                        }
                     }
+                    .buttonStyle(.plain)
                 }
             }
         }
@@ -501,8 +560,55 @@ struct SettingsView: View {
             }
         }
     }
+
+    private var currentSearchConfiguration: SearchConfiguration? {
+        guard let family = ProductFamily(rawValue: preferredProductType) else { return nil }
+        let token: String
+        switch family {
+        case .watch: token = preferredWatchToken
+        case .iphone: token = preferredPhoneToken
+        case .mac: token = preferredMacToken
+        case .ipad: token = preferrediPadToken
+        case .airpods: token = preferredAirPodsToken
+        case .homepod: token = preferredHomePodToken
+        case .avp: token = preferredAVPToken
+        }
+        guard token.isEmpty == false else { return nil }
+        return SearchConfiguration(
+            family: family,
+            token: token,
+            countryCode: preferredCountry,
+            storeNumber: preferredStoreNumber
+        )
+    }
+
+    private var selectedSearch: SearchConfiguration? {
+        model.searchConfigurations.first { $0.id == selectedSearchID }
+    }
+
+    private func createSearch() {
+        guard let configuration = currentSearchConfiguration else { return }
+        model.addSearchConfiguration(configuration)
+        selectedSearchID = configuration.id
+    }
+
+    private func searchDisplayName(_ search: SearchConfiguration) -> String {
+        let tokenName: String
+        switch search.family {
+        case .watch: tokenName = watchTokenNames[search.token] ?? displayName(forToken: search.token)
+        case .iphone: tokenName = phoneTokenNames[search.token] ?? search.token
+        case .mac: tokenName = macTokenNames[search.token] ?? search.token
+        case .ipad: tokenName = iPadTokenNames[search.token] ?? search.token
+        case .airpods: tokenName = airpodsTokenNames[search.token] ?? search.token
+        case .homepod: tokenName = homepodTokenNames[search.token] ?? search.token
+        case .avp: tokenName = avpTokenNames[search.token] ?? search.token
+        }
+        let countryName = Countries[search.countryCode]?.name ?? search.countryCode
+        return "\(search.family.searchDisplayName(modelName: tokenName)) · \(countryName)"
+    }
     
-    func loadSkus() async {
+    func loadSkus(searchID: UUID? = nil, generation: Int? = nil) async {
+        guard isCurrentSearchLoad(searchID: searchID, generation: generation) else { return }
         let favoriteSkus = Set<String>(preferredSKUs.components(separatedBy: ","))
         // Resolve the preferred product type
         let family = ProductFamily(rawValue: preferredProductType)
@@ -592,7 +698,8 @@ struct SettingsView: View {
             }
         }
         // Fallback for non-watch (existing async path)
-        guard let skuData = try? await model.skuDataForPreferredProduct else { return }
+        guard let skuData = try? await model.skuDataForPreferredProduct,
+              isCurrentSearchLoad(searchID: searchID, generation: generation) else { return }
         allModels = skuData.orderedSKUs.map { sku in
             let name = skuData.productName(forSKU: sku) ?? sku
             return ProductModel(sku: sku, name: name, isFavorite: favoriteSkus.contains(sku))
@@ -822,12 +929,20 @@ struct SettingsView: View {
         return token.replacingOccurrences(of: "-", with: " ").capitalized
     }
     
-    func loadStores(filterText: String?) async {
+    func loadStores(
+        for countryCode: String,
+        filterText: String?,
+        searchID: UUID? = nil,
+        generation: Int? = nil
+    ) async {
         if selectedStore.isEmpty {
             selectedStore = preferredStoreNumber
         }
         
-        let storesJson = await model.storesForCurrentCountry
+        let storesJson = await model.stores(for: countryCode)
+        guard preferredCountry == countryCode,
+              searchID == nil || selectedSearchID == searchID,
+              generation == nil || searchLoadGeneration == generation else { return }
         let stores: [StoreWithSelection] = storesJson.map { store in
             StoreWithSelection(
                 store: store,
@@ -864,84 +979,75 @@ struct SettingsView: View {
     }
     
     func selectDefaultStoreForNewCountry() async {
-        guard let defaultStore = await model.getDefaultStoreForCurrentCountry() else {
-            return
-        }
-        
+        let countryCode = preferredCountry
+        let searchID = selectedSearchID
+        let generation = searchLoadGeneration
+        let stores = await model.stores(for: countryCode)
+        guard preferredCountry == countryCode,
+              selectedSearchID == searchID,
+              searchLoadGeneration == generation else { return }
+        guard let defaultStore = stores.first else { return }
         preferredStoreNumber = defaultStore.storeNumber
         selectedStore = preferredStoreNumber
-        
-        for var store in allStores {
-            store.isSelected = store.storeNumber == preferredStoreNumber
-        }
+        await loadStores(
+            for: countryCode,
+            filterText: storeSearchText,
+            searchID: searchID,
+            generation: generation
+        )
     }
 
     // MARK: - Lifecycle helpers used in view modifiers
     private func onAppearSetup() {
         loadCountries()
-        Task { await loadSkus() }
-        Task { await loadStores(filterText: nil) }
-        Task { await model.fetchLatestGithubRelease() }
-        Task { await loadWatchTokens() }
-        Task { await loadPhoneTokens() }
-        Task { await loadMacTokens() }
-        Task { await loadiPadTokens() }
-        Task { await loadAirPodsTokens() }
-        Task { await loadHomePodTokens() }
-        Task { await loadAVPTokens() }
+        if let firstSearch = model.searchConfigurations.first {
+            selectedSearchID = firstSearch.id
+        } else {
+            preferredCountry = UserDefaults.standard.string(forKey: "preferredCountry") ?? "US"
+            preferredStoreNumber = UserDefaults.standard.string(forKey: "preferredStoreNumber") ?? ""
+            preferredProductType = model.defaultsVendor.preferredProductFamily.rawValue
+            selectedCountryIndex = OrderedCountries.firstIndex(of: preferredCountry) ?? 0
+            Task {
+                await loadAllTokens()
+                await loadSkus()
+                await loadStores(for: preferredCountry, filterText: nil)
+                if preferredStoreNumber.isEmpty {
+                    await selectDefaultStoreForNewCountry()
+                }
+            }
+        }
     }
 
     private func handleSelectedCountryIndexChange(_ newValue: Int) {
+        guard OrderedCountries.indices.contains(newValue) else { return }
         let newCountry = OrderedCountries[newValue]
-        preferredCountry = newCountry
-        Task { await loadWatchTokens() }
-        Task { await loadPhoneTokens() }
-        Task { await loadMacTokens() }
-        Task { await loadiPadTokens() }
-        Task { await loadAirPodsTokens() }
-        Task { await loadHomePodTokens() }
-        Task { await loadAVPTokens() }
+        if preferredCountry != newCountry {
+            preferredCountry = newCountry
+        }
     }
 
     private func handleAllModelsChange(_ models: [ProductModel]) {
+        let visibleSKUs = Set(models.map(\.sku))
+        let existingFavorites = Set(preferredSKUs.split(separator: ",").map(String.init))
         let favoritedModels = models.filter { $0.isFavorite }
-        preferredSKUs = favoritedModels.map { $0.sku }.joined(separator: ",")
+        let retainedFavorites = existingFavorites.subtracting(visibleSKUs)
+        preferredSKUs = (retainedFavorites.union(favoritedModels.map(\.sku))).sorted().joined(separator: ",")
     }
 
     private func handleStoreSearchTextChange(_ newText: String) {
         if newText.isEmpty {
-            Task { await loadStores(filterText: nil) }
+            Task { await loadStores(for: preferredCountry, filterText: nil) }
         } else {
-            Task { await loadStores(filterText: newText) }
+            Task { await loadStores(for: preferredCountry, filterText: newText) }
         }
-    }
-
-    private func handleAllStoresChange(_ newStores: [StoreWithSelection]) {
-        let currentSelected = selectedStore
-        for store in newStores where store.isSelected && store.storeNumber != currentSelected {
-            selectedStore = store.storeNumber
-        }
-        if preferredStoreNumber != selectedStore { preferredStoreNumber = selectedStore }
-        Task { await loadStores(filterText: storeSearchText) }
     }
 
     private func handlePreferredProductTypeChange(_ newType: String) {
-        preferredSKUs = ""
-        Task { await loadSkus() }
-        model.clearCurrentAvailableParts()
-        Task { await model.fetchLatestInventory() }
-        Task { await loadWatchTokens() }
-        Task { await loadPhoneTokens() }
-        Task { await loadMacTokens() }
-        Task { await loadiPadTokens() }
-        Task { await loadAirPodsTokens() }
-        Task { await loadHomePodTokens() }
-        Task { await loadAVPTokens() }
-    }
-
-    private func handlePreferredStoreNumberChange() {
-        Task { await model.updateStoreName() }
-        Task { await model.fetchLatestInventory() }
+        guard isLoadingSearchConfiguration == false else { return }
+        Task {
+            await loadSkus()
+            saveSelectedSearch()
+        }
     }
 
     private func handlePreferredUpdateIntervalChange() {
@@ -949,17 +1055,171 @@ struct SettingsView: View {
     }
 
     private func handlePreferredCountryChange() {
+        guard isLoadingSearchConfiguration == false else { return }
+        guard let search = selectedSearch,
+              search.countryCode != preferredCountry else { return }
+
+        let targetCountry = preferredCountry
+        searchLoadGeneration += 1
+        let generation = searchLoadGeneration
+        isLoadingSearchConfiguration = true
         storeSearchText = ""
-        Task { await loadStores(filterText: storeSearchText) }
-        Task { await loadSkus() }
-        Task { await selectDefaultStoreForNewCountry() }
-        Task { await loadWatchTokens() }
-        Task { await loadPhoneTokens() }
-        Task { await loadMacTokens() }
-        Task { await loadiPadTokens() }
-        Task { await loadAirPodsTokens() }
-        Task { await loadHomePodTokens() }
-        Task { await loadAVPTokens() }
+        preferredStoreNumber = ""
+        selectedStore = ""
+
+        Task {
+            defer {
+                if selectedSearchID == search.id,
+                   searchLoadGeneration == generation {
+                    isLoadingSearchConfiguration = false
+                }
+            }
+
+            guard isCurrentCountryChange(searchID: search.id, countryCode: targetCountry, generation: generation) else { return }
+            await loadTokens(for: search.family, searchID: search.id, generation: generation)
+            guard isCurrentCountryChange(searchID: search.id, countryCode: targetCountry, generation: generation) else { return }
+
+            let token = selectedToken(for: search.family)
+            let country = Countries[targetCountry]
+            guard token.isEmpty == false,
+                  availableTokens(for: search.family).contains(token),
+                  let country,
+                  hasCatalogSKUs(for: search.family, token: token, country: country) else {
+                await restoreSearchAfterUnsupportedCountryChange(
+                    search,
+                    expectedCountryCode: targetCountry,
+                    generation: generation
+                )
+                return
+            }
+
+            let stores = await model.stores(for: targetCountry)
+            guard isCurrentCountryChange(searchID: search.id, countryCode: targetCountry, generation: generation) else { return }
+
+            let storeNumber = stores.first?.id ?? ""
+            preferredStoreNumber = storeNumber
+            selectedStore = storeNumber
+            await loadStores(
+                for: targetCountry,
+                filterText: storeSearchText,
+                searchID: search.id,
+                generation: generation
+            )
+            guard isCurrentCountryChange(searchID: search.id, countryCode: targetCountry, generation: generation) else { return }
+
+            await loadAllTokens(searchID: search.id, generation: generation)
+            guard isCurrentCountryChange(searchID: search.id, countryCode: targetCountry, generation: generation) else { return }
+
+            await loadSkus(searchID: search.id, generation: generation)
+            guard isCurrentCountryChange(searchID: search.id, countryCode: targetCountry, generation: generation) else { return }
+
+            model.updateSearchConfiguration(
+                SearchConfiguration(
+                    id: search.id,
+                    family: search.family,
+                    token: token,
+                    countryCode: targetCountry,
+                    storeNumber: storeNumber
+                )
+            )
+        }
+    }
+
+    private func isCurrentCountryChange(searchID: UUID, countryCode: String, generation: Int) -> Bool {
+        isCurrentSearchLoad(searchID: searchID, generation: generation)
+            && preferredCountry == countryCode
+    }
+
+    private func isCurrentSearchLoad(searchID: UUID?, generation: Int?) -> Bool {
+        (searchID == nil || selectedSearchID == searchID)
+            && (generation == nil || searchLoadGeneration == generation)
+    }
+
+    private func restoreSearchAfterUnsupportedCountryChange(
+        _ search: SearchConfiguration,
+        expectedCountryCode: String,
+        generation: Int
+    ) async {
+        guard isCurrentCountryChange(
+            searchID: search.id,
+            countryCode: expectedCountryCode,
+            generation: generation
+        ) else { return }
+
+        preferredCountry = search.countryCode
+        selectedCountryIndex = OrderedCountries.firstIndex(of: search.countryCode) ?? 0
+        preferredProductType = search.family.rawValue
+        preferredStoreNumber = search.storeNumber
+        selectedStore = search.storeNumber
+        await loadTokens(for: search.family, searchID: search.id, generation: generation)
+        guard selectedSearchID == search.id,
+              preferredCountry == search.countryCode,
+              searchLoadGeneration == generation else { return }
+        setDraftToken(search.token, for: search.family)
+        await loadSkus(searchID: search.id, generation: generation)
+        guard selectedSearchID == search.id, searchLoadGeneration == generation else { return }
+        await loadStores(
+            for: search.countryCode,
+            filterText: nil,
+            searchID: search.id,
+            generation: generation
+        )
+    }
+
+    private func loadTokens(
+        for family: ProductFamily,
+        searchID: UUID? = nil,
+        generation: Int? = nil
+    ) async {
+        guard isCurrentSearchLoad(searchID: searchID, generation: generation) else { return }
+        switch family {
+        case .watch: await loadWatchTokens()
+        case .iphone: await loadPhoneTokens()
+        case .mac: await loadMacTokens()
+        case .ipad: await loadiPadTokens()
+        case .airpods: await loadAirPodsTokens()
+        case .homepod: await loadHomePodTokens()
+        case .avp: await loadAVPTokens()
+        }
+    }
+
+    private func selectedToken(for family: ProductFamily) -> String {
+        switch family {
+        case .watch: preferredWatchToken
+        case .iphone: preferredPhoneToken
+        case .mac: preferredMacToken
+        case .ipad: preferrediPadToken
+        case .airpods: preferredAirPodsToken
+        case .homepod: preferredHomePodToken
+        case .avp: preferredAVPToken
+        }
+    }
+
+    private func availableTokens(for family: ProductFamily) -> [String] {
+        switch family {
+        case .watch: availableWatchTokens
+        case .iphone: availablePhoneTokens
+        case .mac: availableMacTokens
+        case .ipad: availableiPadTokens
+        case .airpods: availableAirPodsTokens
+        case .homepod: availableHomePodTokens
+        case .avp: availableAVPTokens
+        }
+    }
+
+    private func hasCatalogSKUs(for family: ProductFamily, token: String, country: Country) -> Bool {
+        let loader = SKUDataLoader()
+        let skuData: SKUData?
+        switch family {
+        case .watch: skuData = loader.watchSKUData(forToken: token, country: country)
+        case .iphone: skuData = loader.phoneSKUData(forToken: token, country: country)
+        case .mac: skuData = loader.macSKUData(forToken: token, country: country)
+        case .ipad: skuData = loader.ipadSKUData(forToken: token, country: country)
+        case .airpods: skuData = loader.airpodsSKUData(forToken: token, country: country)
+        case .homepod: skuData = loader.homepodSKUData(forToken: token, country: country)
+        case .avp: skuData = loader.avpSKUData(forToken: token, country: country)
+        }
+        return skuData?.orderedSKUs.isEmpty == false
     }
 
     private func handleReloadInventory() {
@@ -967,60 +1227,95 @@ struct SettingsView: View {
     }
 
     private func handlePreferredWatchTokenChange() {
-        Task { await loadSkus() }
-        model.clearCurrentAvailableParts()
-        Task { await model.fetchLatestInventory() }
+        guard isLoadingSearchConfiguration == false else { return }
+        Task { await loadSkus(); saveSelectedSearch() }
     }
 
-    private func handlePreferredPhoneTokenChange() {
-        // Persist per-country selection for iPhone token
-        let perCountryKey = "preferredPhoneToken.\(preferredCountry.uppercased())"
-        UserDefaults.standard.set(preferredPhoneToken, forKey: perCountryKey)
-        Task { await loadSkus() }
-        model.clearCurrentAvailableParts()
-        Task { await model.fetchLatestInventory() }
+    private func handlePreferredPhoneTokenChange() { handlePreferredWatchTokenChange() }
+    private func handlePreferredMacTokenChange() { handlePreferredWatchTokenChange() }
+    private func handlePreferrediPadTokenChange() { handlePreferredWatchTokenChange() }
+    private func handlePreferredAirPodsTokenChange() { handlePreferredWatchTokenChange() }
+    private func handlePreferredHomePodTokenChange() { handlePreferredWatchTokenChange() }
+    private func handlePreferredAVPTokenChange() { handlePreferredWatchTokenChange() }
+
+    private func handleSelectedSearchChange(_ id: UUID?) {
+        guard let id else { return }
+        Task { await loadSearchConfiguration(id: id) }
     }
 
-    private func handlePreferredMacTokenChange() {
-        // Persist per-country selection for Mac token
-        let perCountryKey = "preferredMacToken.\(preferredCountry.uppercased())"
-        UserDefaults.standard.set(preferredMacToken, forKey: perCountryKey)
-        Task { await loadSkus() }
-        model.clearCurrentAvailableParts()
-        Task { await model.fetchLatestInventory() }
+    private func loadSearchConfiguration(id: UUID) async {
+        guard selectedSearchID == id,
+              let search = model.searchConfigurations.first(where: { $0.id == id }) else { return }
+        searchLoadGeneration += 1
+        let generation = searchLoadGeneration
+        defer {
+            if searchLoadGeneration == generation {
+                isLoadingSearchConfiguration = false
+            }
+        }
+        isLoadingSearchConfiguration = true
+        preferredCountry = search.countryCode
+        preferredStoreNumber = search.storeNumber
+        selectedStore = search.storeNumber
+        preferredProductType = search.family.rawValue
+        selectedCountryIndex = OrderedCountries.firstIndex(of: search.countryCode) ?? 0
+        await loadAllTokens(searchID: id, generation: generation)
+        guard isCurrentSearchLoad(searchID: id, generation: generation) else { return }
+        setDraftToken(search.token, for: search.family)
+        await loadSkus(searchID: id, generation: generation)
+        guard isCurrentSearchLoad(searchID: id, generation: generation) else { return }
+        await loadStores(
+            for: search.countryCode,
+            filterText: nil,
+            searchID: id,
+            generation: generation
+        )
+        guard isCurrentSearchLoad(searchID: id, generation: generation) else { return }
+        await Task.yield()
     }
 
-    private func handlePreferrediPadTokenChange() {
-        // Persist per-country selection for iPad token
-        let perCountryKey = "preferrediPadToken.\(preferredCountry.uppercased())"
-        UserDefaults.standard.set(preferrediPadToken, forKey: perCountryKey)
-        Task { await loadSkus() }
-        model.clearCurrentAvailableParts()
-        Task { await model.fetchLatestInventory() }
+    private func saveSelectedSearch() {
+        guard isLoadingSearchConfiguration == false,
+              let currentSearchConfiguration,
+              let selectedSearchID else { return }
+        model.updateSearchConfiguration(
+            SearchConfiguration(
+                id: selectedSearchID,
+                family: currentSearchConfiguration.family,
+                token: currentSearchConfiguration.token,
+                countryCode: preferredCountry,
+                storeNumber: preferredStoreNumber
+            )
+        )
     }
 
-    private func handlePreferredAirPodsTokenChange() {
-        let perCountryKey = "preferredAirPodsToken.\(preferredCountry.uppercased())"
-        UserDefaults.standard.set(preferredAirPodsToken, forKey: perCountryKey)
-        Task { await loadSkus() }
-        model.clearCurrentAvailableParts()
-        Task { await model.fetchLatestInventory() }
+    private func setDraftToken(_ token: String, for family: ProductFamily) {
+        switch family {
+        case .watch: preferredWatchToken = token
+        case .iphone: preferredPhoneToken = token
+        case .mac: preferredMacToken = token
+        case .ipad: preferrediPadToken = token
+        case .airpods: preferredAirPodsToken = token
+        case .homepod: preferredHomePodToken = token
+        case .avp: preferredAVPToken = token
+        }
     }
 
-    private func handlePreferredHomePodTokenChange() {
-        let perCountryKey = "preferredHomePodToken.\(preferredCountry.uppercased())"
-        UserDefaults.standard.set(preferredHomePodToken, forKey: perCountryKey)
-        Task { await loadSkus() }
-        model.clearCurrentAvailableParts()
-        Task { await model.fetchLatestInventory() }
-    }
-
-    private func handlePreferredAVPTokenChange() {
-        let perCountryKey = "preferredAVPToken.\(preferredCountry.uppercased())"
-        UserDefaults.standard.set(preferredAVPToken, forKey: perCountryKey)
-        Task { await loadSkus() }
-        model.clearCurrentAvailableParts()
-        Task { await model.fetchLatestInventory() }
+    private func loadAllTokens(searchID: UUID? = nil, generation: Int? = nil) async {
+        guard isCurrentSearchLoad(searchID: searchID, generation: generation) else { return }
+        await loadWatchTokens()
+        guard isCurrentSearchLoad(searchID: searchID, generation: generation) else { return }
+        await loadPhoneTokens()
+        guard isCurrentSearchLoad(searchID: searchID, generation: generation) else { return }
+        await loadMacTokens()
+        guard isCurrentSearchLoad(searchID: searchID, generation: generation) else { return }
+        await loadiPadTokens()
+        guard isCurrentSearchLoad(searchID: searchID, generation: generation) else { return }
+        await loadAirPodsTokens()
+        guard isCurrentSearchLoad(searchID: searchID, generation: generation) else { return }
+        await loadHomePodTokens()
+        guard isCurrentSearchLoad(searchID: searchID, generation: generation) else { return }
+        await loadAVPTokens()
     }
 }
 

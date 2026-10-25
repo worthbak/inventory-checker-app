@@ -25,6 +25,21 @@ struct ProductFamilyTests {
         #expect(ProductFamily.avp.displayName == "Apple Vision Pro")
     }
 
+    @Test func searchDisplayNameDoesNotRepeatFamily() {
+        #expect(ProductFamily.iphone.searchDisplayName(modelName: "iPhone Duo") == "iPhone Duo")
+        #expect(ProductFamily.mac.searchDisplayName(modelName: "MacBook Air") == "MacBook Air")
+        for family in ProductFamily.allCases {
+            let name = "\(family.displayName) Pro"
+            #expect(family.searchDisplayName(modelName: name) == name)
+        }
+        #expect(ProductFamily.iphone.searchDisplayName(modelName: "Iphone Duo") == "Iphone Duo")
+    }
+
+    @Test func searchDisplayNameKeepsFamilyForShortModelNames() {
+        #expect(ProductFamily.watch.searchDisplayName(modelName: "Ultra") == "Apple Watch Ultra")
+        #expect(ProductFamily.iphone.searchDisplayName(modelName: "17 Pro") == "iPhone 17 Pro")
+    }
+
     @Test func isPropertiesAreMutuallyExclusive() {
         let all: [ProductFamily] = [.watch, .iphone, .mac, .ipad, .airpods, .homepod, .avp]
         for family in all {
@@ -38,5 +53,38 @@ struct ProductFamilyTests {
             if family.isAVP { count += 1 }
             #expect(count == 1, "\(family) should have exactly one isX property true")
         }
+    }
+
+    @Test func searchConfigurationsSupportMultipleFamiliesAndRoundTrip() throws {
+        let searches = [
+            SearchConfiguration(family: .iphone, token: "iphone-17", countryCode: "US", storeNumber: "R001"),
+            SearchConfiguration(family: .watch, token: "apple-watch", countryCode: "CA", storeNumber: "R002")
+        ]
+        let encoded = try JSONEncoder().encode(searches)
+        let decoded = try JSONDecoder().decode([SearchConfiguration].self, from: encoded)
+
+        #expect(decoded == searches)
+        #expect(Set(decoded.map(\.id)).count == 2)
+        #expect(decoded.map(\.countryCode) == ["US", "CA"])
+        #expect(decoded.map(\.storeNumber) == ["R001", "R002"])
+    }
+
+    @Test func searchConfigurationIdentityIncludesFamilyAndToken() {
+        let phone = SearchConfiguration(family: .iphone, token: "iphone-17")
+        let anotherPhone = SearchConfiguration(family: .iphone, token: "iphone-17-pro")
+        let watch = SearchConfiguration(family: .watch, token: "iphone-17")
+
+        #expect(phone != anotherPhone)
+        #expect(phone != watch)
+    }
+
+    @Test func searchConfigurationDecodesPreviousFormat() throws {
+        let data = Data(#"{"family":"iphone","token":"iphone-17"}"#.utf8)
+        let decoded = try JSONDecoder().decode(SearchConfiguration.self, from: data)
+
+        #expect(decoded.family == .iphone)
+        #expect(decoded.token == "iphone-17")
+        #expect(decoded.countryCode == (UserDefaults.standard.string(forKey: "preferredCountry") ?? "US"))
+        #expect(decoded.storeNumber == UserDefaults.standard.preferredStoreNumber)
     }
 }

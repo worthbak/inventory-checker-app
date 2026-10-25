@@ -7,6 +7,40 @@
 
 import Foundation
 
+struct PickupRequestCooldown {
+    private(set) var nextAllowedAt: Date?
+
+    func check(now: Date = Date()) throws {
+        if let nextAllowedAt, nextAllowedAt > now {
+            throw AppError.pickupCooldown(until: nextAllowedAt)
+        }
+    }
+
+    mutating func recordBlock(now: Date = Date(), retryAfter: Date? = nil) {
+        deferRequests(until: max(now.addingTimeInterval(60), retryAfter ?? now))
+    }
+
+    mutating func deferRequests(until date: Date) {
+        nextAllowedAt = max(nextAllowedAt ?? date, date)
+    }
+
+    mutating func recordSuccess() {
+        nextAllowedAt = nil
+    }
+
+    static func retryAfterDate(_ value: String, now: Date = Date()) -> Date? {
+        let trimmed = value.trimmingCharacters(in: .whitespacesAndNewlines)
+        if !trimmed.isEmpty, trimmed.allSatisfy({ $0.isASCII && $0.isNumber }),
+           let seconds = TimeInterval(trimmed), seconds.isFinite {
+            return now.addingTimeInterval(seconds)
+        }
+        let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "en_US_POSIX")
+        formatter.timeZone = TimeZone(secondsFromGMT: 0)
+        formatter.dateFormat = "EEE, dd MMM yyyy HH:mm:ss z"
+        return formatter.date(from: trimmed)
+    }
+}
 
 actor FulfillmentModel {
     
@@ -16,8 +50,7 @@ actor FulfillmentModel {
     private var lastPickupRequestTime: Date = .distantPast
     private var lastStoreListRequestTime: Date = .distantPast
     private let minimumRequestInterval: TimeInterval = 3.0
-    private let maxRetries = 3
-    private let baseRetryDelay: TimeInterval = 5.0
+    private var pickupCooldown = PickupRequestCooldown()
     
     var skuDataForPreferredProduct: SKUData {
         get async throws {
@@ -30,7 +63,13 @@ actor FulfillmentModel {
     // Latest pickup API error keys (e.g., ["invalidLocalModelStore"]) captured from Apple JSON
     private(set) var lastPickupErrorKeys: [String] = []
     
-    var session: URLSession {
+    let session: URLSession
+
+    init(session: URLSession? = nil) {
+        self.session = session ?? Self.makeSession()
+    }
+
+    private static func makeSession() -> URLSession {
         let c = URLSessionConfiguration.ephemeral
         c.httpAdditionalHeaders = [:]
         c.requestCachePolicy = .reloadIgnoringLocalAndRemoteCacheData
@@ -57,14 +96,14 @@ actor FulfillmentModel {
         return filterModels
     }
     
-    func loadStoresByCountry() async throws -> [String: StoreCountry] {
-        if cachedStoreData.isEmpty == false {
+    func loadStoresByCountry(country: Country) async throws -> [String: StoreCountry] {
+        if cachedStoreData[country.locale] != nil {
             return cachedStoreData
         }
 
         do {
             // Try loading remote stores first
-            let url = URL(string: "https://www.apple.com/rsp-web/store-list?locale=\(defaultsVendor.preferredCountry.locale)")!
+            let url = URL(string: "https://www.apple.com/rsp-web/store-list?locale=\(country.locale)")!
             var request = URLRequest(url: url)
             applyBrowserHeaders(to: &request)
             
@@ -86,8 +125,8 @@ actor FulfillmentModel {
             }
             
             let jsonStores = try decoder.decode(StoreBootstrap.self, from: data)
-            cachedStoreData = jsonStores.countryData
-            return jsonStores.countryData
+            cachedStoreData.merge(jsonStores.countryData) { _, new in new }
+            if cachedStoreData[country.locale] != nil { return cachedStoreData }
         } catch {
             print("Store list API error: \(error)")
         }
@@ -102,7 +141,7 @@ actor FulfillmentModel {
                 let jsonStores = try decoder.decode(StoreBootstrap.self, from: data)
                 cachedStoreData = jsonStores.countryData
                 print("✅ Using comprehensive global store data (536 stores across 26 countries)")
-                return jsonStores.countryData
+                if cachedStoreData[country.locale] != nil { return cachedStoreData }
             } catch {
                 print("⚠️ Failed to load global store data, trying local fallback: \(error)")
             }
@@ -115,7 +154,8 @@ actor FulfillmentModel {
                 let jsonStores = try decoder.decode(StoreBootstrap.self, from: data)
                 cachedStoreData = jsonStores.countryData
                 print("✅ Using local store bootstrap data")
-                return jsonStores.countryData
+                if cachedStoreData[country.locale] != nil { return cachedStoreData }
+                throw AppError.invalidProjectState
             } catch {
                 print("❌ Failed to load local store data: \(error)")
                 throw error
@@ -125,120 +165,159 @@ actor FulfillmentModel {
         }
     }
     
-    func fetchInventory() async throws -> [(FulfillmentStore, [PartAvailability])] {
-        let countryPath = defaultsVendor.countryPathElement.lowercased()
-        let urlRoot = "https://www.apple.com/\(countryPath)shop/retail/pickup-message?"
-        let query = try await generateQueryString(includeStore: true, location: nil)
-        
-        guard let apiURL = URL(string: urlRoot + query) else {
-            throw AppError.couldNotGenerateURL
-        }
-        
-        print("🌐 Pickup URL: \(apiURL.absoluteString)")
-        
-        for attempt in 0..<maxRetries {
-            if attempt > 0 {
-                let delay = baseRetryDelay * pow(2.0, Double(attempt - 1))
-                let jitter = Double.random(in: 0..<delay * 0.3)
-                let totalDelay = delay + jitter
-                print("⏳ Retry \(attempt)/\(maxRetries) after \(Int(totalDelay))s (backoff + jitter)")
-                try await Task.sleep(nanoseconds: UInt64(totalDelay * 1_000_000_000))
-            }
-            
-            let timeSinceLastPickup = Date().timeIntervalSince(lastPickupRequestTime)
-            if timeSinceLastPickup < minimumRequestInterval {
-                let waitTime = minimumRequestInterval - timeSinceLastPickup
-                try await Task.sleep(nanoseconds: UInt64(waitTime * 1_000_000_000))
-            }
-            lastPickupRequestTime = Date()
+    func fetchInventory(searches: [SearchConfiguration]) async throws -> (searchResults: [SearchInventoryResult], skuData: SKUData) {
+        guard searches.isEmpty == false else { throw AppError.productNotAvailableInRegion }
+        try pickupCooldown.check()
+        let groupedSearches = Dictionary(grouping: searches) { "\($0.countryCode):\($0.storeNumber)" }
+        var searchResults: [SearchInventoryResult] = []
+        var pickupErrors: [String] = []
+        var combinedLookup: [String: String] = [:]
+        var combinedOrder: [String] = []
+        lastPickupErrorKeys = []
 
-            var request = URLRequest(url: apiURL)
-            applyBrowserHeaders(to: &request)
-            request.httpShouldHandleCookies = false
-
-            let s = session
-            let (data, response) = try await s.data(for: request, delegate: nil)
-            let httpResponse = response as? HTTPURLResponse
-            let status = httpResponse?.statusCode ?? 0
-            print("📥 Pickup response: status=\(status), bytes=\(data.count)")
-            
-            if status == 541 {
-                print("⚠️ Got 541 (bot detected), will retry")
+        for group in groupedSearches.values {
+            guard let firstSearch = group.first,
+                  let country = Countries[firstSearch.countryCode] else {
+                throw AppError.invalidProjectState
+            }
+            guard let (query, groupSKUData, searchSKUs) = try await generateQueryString(
+                searches: group,
+                country: country,
+                storeNumber: firstSearch.storeNumber
+            ) else {
+                searchResults.append(contentsOf: group.map {
+                    SearchInventoryResult(search: $0, availableParts: [])
+                })
                 continue
             }
+            let countryPath = country.shortcode == "US" ? "" : "\(country.shortcode.lowercased())/"
+            let urlRoot = "https://www.apple.com/\(countryPath)shop/retail/pickup-message?"
+            guard let apiURL = URL(string: urlRoot + query) else {
+                throw AppError.couldNotGenerateURL
+            }
 
-            let parsed = try await parseStoreResponse(data, response: httpResponse, filterForModels: modelParsingFilter)
-            return parsed
+            let stores = try await fetchInventory(
+                from: apiURL,
+                skuData: groupSKUData,
+                preferredStoreNumber: firstSearch.storeNumber
+            )
+            pickupErrors.append(contentsOf: lastPickupErrorKeys)
+            for search in group {
+                let matchingSKUs = Set((await skuData(for: search, country: country))?.orderedSKUs ?? [])
+                var searchMatchingSKUs = matchingSKUs
+                if let customSku = defaultsVendor.customSkuData?.sku {
+                    searchMatchingSKUs.insert(customSku)
+                }
+                let filteredStores = stores.compactMap { store, parts -> (FulfillmentStore, [PartAvailability])? in
+                    let matchingParts = parts.filter { searchMatchingSKUs.contains($0.partNumber) }
+                    guard matchingParts.isEmpty == false else { return nil }
+                    return (store, matchingParts)
+                }
+                searchResults.append(SearchInventoryResult(search: search, availableParts: filteredStores))
+            }
+            for sku in searchSKUs {
+                guard combinedOrder.contains(sku) == false else { continue }
+                combinedOrder.append(sku)
+                if let name = groupSKUData.productName(forSKU: sku) {
+                    combinedLookup[sku] = name
+                }
+            }
         }
-        
-        throw AppError.botDetected
-    }
-    
-    func getDefaultStoreForCurrentCountry() async throws -> RetailStore? {
-        let storesByCountry = try await loadStoresByCountry()
-        guard let stores = storesByCountry[defaultsVendor.preferredCountry.locale]?.stores else {
-            throw AppError.invalidProjectState
-        }
-        
-        return stores.first
-    }
-    
-    private func generateQueryString(includeStore: Bool = true, location: String?) async throws -> String {
-        // Build SKU list using token-driven path respecting active product family
-        let country = defaultsVendor.preferredCountry
-        let family = defaultsVendor.preferredProductFamily
-        let watchToken = defaultsVendor.preferredWatchToken
-        let iPhoneToken = defaultsVendor.preferredPhoneToken
-        let macToken = defaultsVendor.preferredMacToken
-        let iPadToken = defaultsVendor.preferrediPadToken
-        let airpodsToken = defaultsVendor.preferredAirPodsToken
-        let homepodToken = defaultsVendor.preferredHomePodToken
-        let avpToken = defaultsVendor.preferredAVPToken
 
-        func resolveFamilySKU(token: String, familyCheck: Bool, loader: () async -> SKUData?) async throws -> [String]? {
-            guard familyCheck, token.isEmpty == false else { return nil }
-            guard let data = await loader() else {
+        lastPickupErrorKeys = Array(Set(pickupErrors)).sorted()
+        return (searchResults, SKUData(orderedSKUs: combinedOrder, lookup: combinedLookup))
+    }
+
+    private func fetchInventory(
+        from apiURL: URL,
+        skuData: SKUData,
+        preferredStoreNumber: String
+    ) async throws -> [(FulfillmentStore, [PartAvailability])] {
+        try pickupCooldown.check()
+        let timeSinceLastPickup = Date().timeIntervalSince(lastPickupRequestTime)
+        if timeSinceLastPickup < minimumRequestInterval {
+            let waitTime = minimumRequestInterval - timeSinceLastPickup
+            try await Task.sleep(nanoseconds: UInt64(waitTime * 1_000_000_000))
+        }
+        try Task.checkCancellation()
+        try pickupCooldown.check()
+        lastPickupRequestTime = Date()
+
+        print("🌐 Pickup URL: \(apiURL.absoluteString)")
+        var request = URLRequest(url: apiURL)
+        applyBrowserHeaders(to: &request)
+        request.httpShouldHandleCookies = false
+
+        let (data, response) = try await session.data(for: request, delegate: nil)
+        let httpResponse = response as? HTTPURLResponse
+        let status = httpResponse?.statusCode ?? 0
+        print("📥 Pickup response: status=\(status), bytes=\(data.count), content-type=\(httpResponse?.value(forHTTPHeaderField: "Content-Type") ?? "unknown")")
+        let now = Date()
+        let retryAfter = httpResponse?.value(forHTTPHeaderField: "Retry-After").flatMap {
+            let date = PickupRequestCooldown.retryAfterDate($0, now: now)
+            if date == nil { print("Invalid Retry-After header: \($0)") }
+            return date
+        }
+        if status == 541 {
+            pickupCooldown.recordBlock(now: now, retryAfter: retryAfter)
+            try pickupCooldown.check(now: now)
+        } else if status == 429 || (status == 503 && retryAfter != nil) {
+            pickupCooldown.deferRequests(until: max(retryAfter ?? now.addingTimeInterval(60), now.addingTimeInterval(1)))
+            try pickupCooldown.check(now: now)
+        }
+        if let error = errorForStatusCode(status) { throw error }
+
+        do {
+            let stores = try parseStoreResponse(
+                data,
+                response: httpResponse,
+                filterForModels: modelParsingFilter,
+                skuData: skuData,
+                preferredStoreNumber: preferredStoreNumber
+            )
+            pickupCooldown.recordSuccess()
+            return stores
+        } catch AppError.botDetected {
+            pickupCooldown.recordBlock(now: now, retryAfter: retryAfter)
+            try pickupCooldown.check(now: now)
+            throw AppError.botDetected
+        }
+    }
+
+    private func generateQueryString(
+        searches: [SearchConfiguration],
+        country: Country,
+        storeNumber: String
+    ) async throws -> (String, SKUData, [String])? {
+        guard searches.isEmpty == false else { throw AppError.productNotAvailableInRegion }
+
+        var searchData: [(SearchConfiguration, SKUData)] = []
+        for search in searches {
+            guard search.token.isEmpty == false,
+                  let data = await skuData(for: search, country: country) else {
                 throw AppError.productNotAvailableInRegion
             }
-            return data.orderedSKUs
+            searchData.append((search, data))
         }
 
-        var resolvedSKUs: [String] = []
-        if let skus = try await resolveFamilySKU(token: watchToken, familyCheck: family.isWatch, loader: { await SKUDataLoader().watchSKUData(forToken: watchToken, country: country) }) {
-            resolvedSKUs = skus
-        } else if let skus = try await resolveFamilySKU(token: iPhoneToken, familyCheck: family.isIPhone, loader: { await SKUDataLoader().phoneSKUData(forToken: iPhoneToken, country: country) }) {
-            resolvedSKUs = skus
-        } else if let skus = try await resolveFamilySKU(token: macToken, familyCheck: family.isMac, loader: { await SKUDataLoader().macSKUData(forToken: macToken, country: country) }) {
-            resolvedSKUs = skus
-        } else if let skus = try await resolveFamilySKU(token: iPadToken, familyCheck: family.isIPad, loader: { await SKUDataLoader().ipadSKUData(forToken: iPadToken, country: country) }) {
-            resolvedSKUs = skus
-        } else if let skus = try await resolveFamilySKU(token: airpodsToken, familyCheck: family.isAirPods, loader: { await SKUDataLoader().airpodsSKUData(forToken: airpodsToken, country: country) }) {
-            resolvedSKUs = skus
-        } else if let skus = try await resolveFamilySKU(token: homepodToken, familyCheck: family.isHomePod, loader: { await SKUDataLoader().homepodSKUData(forToken: homepodToken, country: country) }) {
-            resolvedSKUs = skus
-        } else if let skus = try await resolveFamilySKU(token: avpToken, familyCheck: family.isAVP, loader: { await SKUDataLoader().avpSKUData(forToken: avpToken, country: country) }) {
-            resolvedSKUs = skus
-        } else {
-            // Fallback: try whichever token is set, else empty
-            if watchToken.isEmpty == false, let data = await SKUDataLoader().watchSKUData(forToken: watchToken, country: country) {
-                resolvedSKUs = data.orderedSKUs
-            } else if iPhoneToken.isEmpty == false, let data = await SKUDataLoader().phoneSKUData(forToken: iPhoneToken, country: country) {
-                resolvedSKUs = data.orderedSKUs
-            } else if macToken.isEmpty == false, let data = await SKUDataLoader().macSKUData(forToken: macToken, country: country) {
-                resolvedSKUs = data.orderedSKUs
-            } else if iPadToken.isEmpty == false, let data = await SKUDataLoader().ipadSKUData(forToken: iPadToken, country: country) {
-                resolvedSKUs = data.orderedSKUs
-            } else if airpodsToken.isEmpty == false, let data = await SKUDataLoader().airpodsSKUData(forToken: airpodsToken, country: country) {
-                resolvedSKUs = data.orderedSKUs
-            } else if homepodToken.isEmpty == false, let data = await SKUDataLoader().homepodSKUData(forToken: homepodToken, country: country) {
-                resolvedSKUs = data.orderedSKUs
-            } else if avpToken.isEmpty == false, let data = await SKUDataLoader().avpSKUData(forToken: avpToken, country: country) {
-                resolvedSKUs = data.orderedSKUs
-            } else {
-                let data = try await skuDataLoader.skuDataForPreferredProduct
-                resolvedSKUs = data.orderedSKUs
+        let combinedSKUData = SKUData(
+            orderedSKUs: unique(searchData.flatMap { $0.1.orderedSKUs }),
+            lookup: searchData.reduce(into: [String: String]()) { lookup, search in
+                for sku in search.1.orderedSKUs {
+                    if let name = search.1.productName(forSKU: sku) {
+                        lookup[sku] = name
+                    }
+                }
             }
+        )
+        let resolvedSKUs = try searchData.flatMap { entry -> [String] in
+            let (search, data) = entry
+            guard search.family.isMac else { return data.orderedSKUs }
+            let fullPartNumbers = data.orderedSKUs.filter { $0.contains("/") }
+            guard fullPartNumbers.isEmpty == false else { throw AppError.invalidCatalogData }
+            return fullPartNumbers
         }
+        let resolvedSKUSet = Set(resolvedSKUs)
 
         // Build final SKU order depending on user preference
         // When "Only show results for preferred models" is enabled, restrict to preferred SKUs (plus custom)
@@ -248,16 +327,15 @@ actor FulfillmentModel {
         if showOnlyPreferred {
             // Preserve deterministic order based on the user's stored CSV order
             let preferredCsv = UserDefaults.standard.string(forKey: "preferredSKUs") ?? ""
-            let preferredList = preferredCsv.split(separator: ",").map { String($0) }.filter { !$0.isEmpty }
+            let preferredList = preferredCsv.split(separator: ",").map { String($0) }.filter { resolvedSKUSet.contains($0) }
             allSkus.append(contentsOf: preferredList)
         } else {
-            // 1) All preferred SKUs exactly as the user selected (order preserved as stored, best-effort)
-            // 2) Remaining resolved SKUs (from token/product) not already included
+            // Keep selected favorites first, then include the remaining SKUs from every search.
             if preferred.isEmpty == false {
                 let preferredCsv = UserDefaults.standard.string(forKey: "preferredSKUs") ?? ""
-                let preferredList = preferredCsv.split(separator: ",").map { String($0) }.filter { !$0.isEmpty }
+                let preferredList = preferredCsv.split(separator: ",").map { String($0) }.filter { resolvedSKUSet.contains($0) }
                 allSkus.append(contentsOf: preferredList)
-                let remainder = resolvedSKUs.filter { sku in preferred.contains(sku) == false }
+                let remainder = resolvedSKUs.filter { preferred.contains($0) == false }
                 allSkus.append(contentsOf: remainder)
             } else {
                 allSkus = resolvedSKUs
@@ -275,25 +353,12 @@ actor FulfillmentModel {
             return true
         }
 
-        // Mac-specific: pickup-message requires full Apple part numbers (contain a '/').
-        // Many Mac catalogs encode only base codes (e.g., MW2X3) which produce empty results.
-        if family.isMac {
-            let full = allSkus.filter { $0.contains("/") }
-            if full.isEmpty {
-                print("⚠️ Mac catalog SKUs are missing full part numbers. First few SKUs: \(allSkus.prefix(5).joined(separator: ", "))")
-                throw AppError.invalidCatalogData
-            }
-            allSkus = full
-        }
-
-        guard allSkus.isEmpty == false else {
-            throw AppError.productNotAvailableInRegion
-        }
+        guard allSkus.isEmpty == false else { return nil }
 
         var queryItems: [String] = ["fae=true"]
 
-        if includeStore && !defaultsVendor.preferredStoreNumber.isEmpty {
-            queryItems.append("store=\(defaultsVendor.preferredStoreNumber)")
+        if !storeNumber.isEmpty {
+            queryItems.append("store=\(storeNumber)")
         }
 
         queryItems.append("searchNearby=\(defaultsVendor.shouldIncludeNearbyStores)")
@@ -315,10 +380,33 @@ actor FulfillmentModel {
         queryItems.append("mts.1=sticky")
         queryItems.append("fts=true")
         
-        return queryItems.joined(separator: "&")
+        return (queryItems.joined(separator: "&"), combinedSKUData, allSkus)
+    }
+
+    private func skuData(for search: SearchConfiguration, country: Country) async -> SKUData? {
+        switch search.family {
+        case .watch: return await skuDataLoader.watchSKUData(forToken: search.token, country: country)
+        case .iphone: return await skuDataLoader.phoneSKUData(forToken: search.token, country: country)
+        case .mac: return await skuDataLoader.macSKUData(forToken: search.token, country: country)
+        case .ipad: return await skuDataLoader.ipadSKUData(forToken: search.token, country: country)
+        case .airpods: return await skuDataLoader.airpodsSKUData(forToken: search.token, country: country)
+        case .homepod: return await skuDataLoader.homepodSKUData(forToken: search.token, country: country)
+        case .avp: return await skuDataLoader.avpSKUData(forToken: search.token, country: country)
+        }
+    }
+
+    private func unique(_ values: [String]) -> [String] {
+        var seen = Set<String>()
+        return values.filter { seen.insert($0).inserted }
     }
     
-    private func parseStoreResponse(_ responseData: Data?, response: HTTPURLResponse?, filterForModels: Set<String>?) async throws -> [(FulfillmentStore, [PartAvailability])] {
+    private func parseStoreResponse(
+        _ responseData: Data?,
+        response: HTTPURLResponse?,
+        filterForModels: Set<String>?,
+        skuData: SKUData,
+        preferredStoreNumber: String
+    ) throws -> [(FulfillmentStore, [PartAvailability])] {
         guard let responseData = responseData else {
             throw errorForStatusCode(response?.statusCode) ?? AppError.invalidStoreResponse
         }
@@ -372,7 +460,6 @@ actor FulfillmentModel {
             throw AppError.unexpectedJSONStructure
         }
         
-        let skuData = try await skuDataForPreferredProduct
         let collectedStores: [FulfillmentStore] = storeList.compactMap { storeJSON -> FulfillmentStore? in
             guard let name = storeJSON["storeName"] as? String else { return nil }
             guard let number = storeJSON["storeNumber"] as? String else { return nil }
@@ -413,15 +500,19 @@ actor FulfillmentModel {
             return FulfillmentStore(store: retailStore, partsAvailability: parsedParts)
         }
         
-        return self.parseAvailableModels(from: collectedStores, filterForModels: filterForModels)
+        return self.parseAvailableModels(
+            from: collectedStores,
+            filterForModels: filterForModels,
+            preferredStoreNumber: preferredStoreNumber
+        )
     }
     
-    private func parseAvailableModels(from stores: [FulfillmentStore], filterForModels: Set<String>?) -> [(FulfillmentStore, [PartAvailability])] {
+    private func parseAvailableModels(
+        from stores: [FulfillmentStore],
+        filterForModels: Set<String>?,
+        preferredStoreNumber: String
+    ) -> [(FulfillmentStore, [PartAvailability])] {
         let allAvailableModels: [(FulfillmentStore, [PartAvailability])] = stores
-            .sorted(by: { first, _ in
-                // always put preferred store first
-                return first.storeNumber == defaultsVendor.preferredStoreNumber
-            })
             .compactMap { store in
                 let rv: [PartAvailability] = store.partsAvailability.filter { part in
                     switch part.availability {
@@ -443,7 +534,15 @@ actor FulfillmentModel {
                 }
             }
         
-        return allAvailableModels
+        let prioritizedModels = allAvailableModels.enumerated().sorted { first, second in
+            let firstIsPreferred = first.element.0.storeNumber == preferredStoreNumber
+            let secondIsPreferred = second.element.0.storeNumber == preferredStoreNumber
+            if firstIsPreferred != secondIsPreferred {
+                return firstIsPreferred
+            }
+            return first.offset < second.offset
+        }
+        return prioritizedModels.map(\.element)
     }
     
     private func errorForStatusCode(_ statusCode: Int?) -> AppError? {
@@ -452,6 +551,12 @@ actor FulfillmentModel {
         }
         
         switch statusCode {
+        case 403:
+            return .accessDenied
+        case 404:
+            return .resourceNotFound
+        case 429:
+            return .rateLimited
         case 541:
             return .botDetected
         case 500...599:

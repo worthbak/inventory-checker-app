@@ -5,17 +5,59 @@ macOS app to monitor Apple Store pickup availability for iPhone, Apple Watch, Ma
 ## Features
 
 - Real-time inventory checking across Apple Store locations
+- Multiple saved searches, each with its own country and store
+- Master-detail search settings with immediate saving, plus separate inventory results for each search
 - Per-country store selection (35+ countries, including multi-language stores in Belgium and Switzerland)
 - Per-model token selection for all Apple product families (iPhone, iPad, Mac, Apple Watch, AirPods, HomePod, Apple Vision Pro)
 - Configurable update intervals with notifications
+- Automatic app update checks and signed update installation through Sparkle
+- Stable and beta update channels
 - All product data is scraped from Apple's official buy pages — no hardcoded SKUs
+
+See the [changelog](CHANGELOG.md) for change history and [historical refactoring notes](REFACTORING_NOTES.md) for the earlier architecture and scraper work.
+
+## Managing searches
+
+Open Settings using the gear button. The sidebar lists saved searches; select one
+to edit its product family, model, country, and store in the detail pane. Changes
+save immediately. **New Search** creates another search from the current product
+and location selections; edit the new entry to monitor a different product or
+location. Use the trash button or **Delete Search** context-menu action to remove
+the selected search.
+
+Each search has its own country and store, so you can monitor different products
+and countries at the same time. Changing country loads that country's model
+choices and selects its first available store; choose another store as needed.
+If the selected family has no usable catalog data there, the app restores the
+previous search instead of saving an unsupported setup.
+
+The inventory window groups results by search. Store labels show a recognizable
+name and city, for example **Near Apple Memorial City — Houston, TX**. **Near**
+means the shared **Include results from nearby stores** setting is enabled;
+**At** means only the selected store is requested. A search without a store shows
+**No store selected**; an unresolved store name temporarily falls back to its ID.
+
+Product, country, and store are per-search settings. Refresh interval,
+preferred-model filtering, notification filtering, nearby-store inclusion, custom
+SKU, and text size remain app-wide settings. Preferred-model selections are kept
+when switching products. Notifications deduplicate availability shared by
+overlapping searches.
+
+Existing single-search preferences and older saved searches migrate
+automatically, retaining their previous country and store. On first launch
+after the bundle identifier change, preferences from the previous app
+identifier are imported without overwriting values already saved by the new
+identifier. Searches with the same country and store share a pickup request;
+other locations are queried separately.
 
 ## Architecture
 
 - **SwiftUI** macOS app with MVVM + Actor model
+- **Sparkle** for signed app updates from the GitHub Pages appcast
 - Product/SKU data loaded from JSON catalog files (`InventoryWatch/Catalogs/`)
 - Python scraper (`scrape_models.py`) generates catalog JSONs from Apple's regional buy pages
 - Store data from Apple's `rsp-web/store-list` API with local JSON fallback
+- Saved searches persist with stable identities; inventory results are scoped to each search
 - All configuration driven by JSON: product families, countries, SKU data, store locations
 
 ## Project Structure
@@ -54,7 +96,70 @@ open InventoryWatch.xcodeproj
 # Build (Cmd+B) then Run (Cmd+R) in Xcode
 ```
 
-Requires Xcode 15+ and macOS 14+.
+Use a current Xcode installation and a macOS version supported by its SDK. The
+app target uses Xcode's recommended macOS deployment target; the test target
+currently requires macOS 27.0.
+
+### App updates
+
+InventoryWatch checks the update feed daily and offers new releases for installation. Choose **InventoryWatch > Check for Updates…** to check manually. Choose **InventoryWatch > Update Channel** to switch between **Stable** and **Beta**.
+
+Stable updates are published without a `sparkle:channel` element; beta updates include `<sparkle:channel>beta</sparkle:channel>`. Beta users receive beta updates and stable releases. Stable users only receive stable releases.
+
+Generate a Sparkle EdDSA key pair with Sparkle's `generate_keys` tool and keep the private key in the login Keychain used for releases (never commit it). Configure the app's `SPARKLE_PUBLIC_ED_KEY` Xcode build setting with the matching public key. The updater remains disabled until a valid public key is configured.
+
+Sparkle replaces the previous GitHub-tag version check. The checked-in appcast
+is a template with no release items; update delivery also requires publishing a
+signed release and adding its generated item to the feed.
+
+### Sign and notarize a release
+
+For direct distribution outside the Mac App Store, use [`scripts/release.sh`](scripts/release.sh). It requires full Xcode, an active Apple Developer Program membership, and a **Developer ID Application** certificate with its private key installed in your login Keychain. An Apple Development certificate is not sufficient.
+
+1. Check that your distribution identity is available:
+
+   ```bash
+   security find-identity -v -p codesigning
+   ```
+
+2. Store notarization credentials in Keychain with an app-specific password and your Apple Developer team ID:
+
+   ```bash
+   xcrun notarytool store-credentials inventorywatch-notary \
+     --apple-id 'you@example.com' \
+     --team-id 'YOUR_TEAM_ID'
+   ```
+
+   Enter the app-specific password at the secure terminal prompt. Do not put passwords, private keys, or certificate exports in the repository or chat.
+
+3. Increase `CURRENT_PROJECT_VERSION` for the release, run the unit tests, then build and notarize. Supply the public Sparkle key and choose a channel:
+
+   ```bash
+   TEAM_ID=YOUR_TEAM_ID \
+   SPARKLE_PUBLIC_ED_KEY=YOUR_PUBLIC_KEY \
+   RELEASE_CHANNEL=stable \
+   bash scripts/release.sh
+   ```
+
+   Set `RELEASE_CHANNEL=beta` for beta releases. The script builds a universal Apple Silicon/Intel archive, verifies the Developer ID signature, notarizes and staples the app, checks Gatekeeper, and creates `InventoryWatch.zip` plus a SHA-256 checksum. It also signs the ZIP with Sparkle and writes a channel-aware appcast item to the run's `appcast-item.xml`.
+
+4. Upload only `InventoryWatch.zip` to the matching GitHub release tag. Add the generated `<item>` to [`docs/appcast.xml`](./docs/appcast.xml), preserving its Sparkle namespace declarations, then publish the `docs/` site through GitHub Pages. The script does not publish GitHub releases or deploy GitHub Pages automatically.
+
+To verify local signing without submitting to Apple or creating a distributable ZIP:
+
+```bash
+TEAM_ID=YOUR_TEAM_ID \
+SPARKLE_PUBLIC_ED_KEY=YOUR_PUBLIC_KEY \
+bash scripts/release.sh --build-only
+```
+
+Use `SIGNING_IDENTITY` to select a specific Developer ID Application identity or `NOTARY_PROFILE` to select another saved Keychain profile. The script retains build output and diagnostic logs under the ignored `build/release/` directory.
+
+`RELEASE_TAG` defaults to `v<marketing version>` and can be overridden for a
+different GitHub release tag. Generated download URLs point to
+`drallgood/inventory-checker-app`. If the repository or GitHub Pages domain
+changes, update the generated download URL and the app's `SUFeedURL` before
+distributing updates.
 
 ### Scrape product data
 
@@ -108,17 +213,36 @@ All configuration is JSON-driven:
 xcodebuild test -project InventoryWatch.xcodeproj -scheme InventoryWatch
 ```
 
-Tests cover catalog JSON parsing, country data loading, product family resolution, and SKU validation.
+Tests cover catalog JSON parsing, country data loading, product family resolution,
+SKU lookup, saved-search round trips and migration, pickup request/response
+handling, request cooldowns, and human-readable store labels.
 
 ## Intentional Hardcodes
 
 A few values are intentionally hardcoded because they represent Apple's API contract or operational defaults:
 
 - Apple pickup API query params (`fae=true`, `little=false`, etc.) — API protocol, not configuration
-- HTTP timeout (30s) and connection limit (HTTP/1.1) — required for Akamai anti-bot compatibility
-- User-Agent and Accept headers — must match browser behavior to pass bot detection
+- HTTP timeout (30s) and a reused ephemeral URLSession for connection reuse
+- User-Agent and Accept headers — request metadata, not a guarantee of acceptance by bot protection
 - Notification cleanup window (7 days) — reasonable default
 - Update interval default (5 minutes) — avoids excessive API calls
+
+### Blocked inventory requests
+
+An HTTP 541 response pauses all pickup searches for 60 seconds instead of triggering
+immediate retries. The pause does not escalate and is kept only in memory for the
+current app session. It applies to manual refresh and configuration changes.
+This is a conservative application default, not an Apple-published limit.
+
+The app honors `Retry-After` (seconds or an HTTP date) on 541, 429, and 503 responses,
+using longer server delays in preference to the 60-second pause. A 429 without a
+valid delay pauses checks for one minute. The error message shows when requests
+are permitted again; automatic checks resume on the next scheduled refresh after
+that time. Existing results are retained on refresh errors and may be stale.
+Overlapping refresh triggers are coalesced, and configuration changes made during
+a request are checked after it completes rather than starting parallel requests.
+URLSession cannot execute browser JavaScript challenges, and these measures do not
+guarantee access to Apple's endpoint.
 
 ## Scraper Config Reference
 
@@ -126,7 +250,8 @@ A few values are intentionally hardcoded because they represent Apple's API cont
 
 ### `http_headers`
 
-HTTP headers sent with every request to pass Apple's bot detection. Change these only if the User-Agent or Accept headers become outdated and Apple starts blocking the scraper.
+HTTP headers sent by the Python scraper. Browser-like headers alone do not guarantee
+acceptance by Apple's bot protection.
 
 ### `regions`
 

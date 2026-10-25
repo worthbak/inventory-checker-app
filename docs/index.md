@@ -2,26 +2,29 @@
 
 A macOS app to monitor Apple Store pickup availability for iPhone, Apple Watch, Mac, iPad, AirPods, HomePod, and Apple Vision Pro.
 
-This is the open-source version of InventoryWatch. For the latest commercial release with web access, email/SMS notifications, and multi-search support, visit [InventoryWatch.app](https://inventorywatch.app).
+This is the open-source macOS version of InventoryWatch, including multiple saved searches. For the commercial service with web access and email/SMS notifications, visit [InventoryWatch.app](https://inventorywatch.app).
 
 ## Features
 
 - Real-time inventory checking across Apple Store locations in 35+ countries
 - Support for all Apple product families: iPhone, iPad, Mac, Apple Watch, AirPods, HomePod, Apple Vision Pro
 - Per-model and per-country token selection with persistent preferences
+- Multiple saved searches with independent country/store selections and a master-detail Settings editor
+- Separate results for each search, with readable store names and locations
 - Configurable update intervals with macOS notifications
+- Signed app updates through Sparkle, with stable and beta channels once a release feed is configured and published
 - All product data scraped from Apple's official buy pages — no hardcoded SKUs
 
 ## Quick Start
 
 ```bash
 # Clone and build
-git clone https://github.com/worthbak/inventory-checker-app.git
+git clone https://github.com/drallgood/inventory-checker-app.git
 cd inventory-checker-app
 open InventoryWatch.xcodeproj  # Build (Cmd+B) then Run (Cmd+R)
 ```
 
-Requires Xcode 15+ and macOS 14+.
+Use a current Xcode installation and a macOS version supported by its SDK. The app uses Xcode's recommended deployment target; the test target currently requires macOS 27.0.
 
 ### Regenerate Product Data
 
@@ -35,6 +38,18 @@ See [README.md](../README.md) for full documentation, architecture, and scraper 
 
 ## Project Status
 
+### Search management and reliability
+
+- Existing searches migrate automatically to the new independent search format.
+- Searches sharing a country/store use a combined pickup request; different locations are queried separately.
+- Country changes validate catalog availability before saving, and preferred-model selections survive product changes.
+- Refresh triggers are coalesced, duplicate availability is removed from notifications, and blocked requests use a session-wide cooldown that honors supported `Retry-After` headers.
+- Release tooling builds, signs, notarizes, and packages universal macOS releases and generates signed Sparkle appcast items. Publishing the ZIP and feed remains a separate step.
+
+See the [changelog](../CHANGELOG.md) for change history and the [README](../README.md) for search, update-channel, and release instructions.
+
+### Earlier refactoring
+
 Actively maintained as of 2025 with major refactoring completed:
 
 - **Config-driven Python scraper**: `scrape_models.py` + `family_handlers.py` + `scraper_config.json` generates all catalog JSONs from Apple.com
@@ -43,4 +58,4 @@ Actively maintained as of 2025 with major refactoring completed:
 - **Multi-language stores**: Belgian (Dutch/French) and Swiss (German/French) dual-language store support
 - **Anti-bot hardening**: Proper HTTP/1.1 handling and backoff for Apple's Akamai CDN
 
-For a detailed changelog, see [REFACTORING_NOTES.md](../REFACTORING_NOTES.md).
+For historical architecture and scraper details, see [REFACTORING_NOTES.md](../REFACTORING_NOTES.md).

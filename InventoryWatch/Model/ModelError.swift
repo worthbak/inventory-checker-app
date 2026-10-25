@@ -21,6 +21,7 @@ enum AppError: Swift.Error, LocalizedError {
     case resourceNotFound
     case rateLimited
     case botDetected
+    case pickupCooldown(until: Date)
     case productNotAvailableInRegion
     case generic(Error?)
     
@@ -50,11 +51,13 @@ enum AppError: Swift.Error, LocalizedError {
         case .rateLimited:
             return "Too many requests sent to Apple's servers. Please wait a few minutes before trying again."
         case .botDetected:
-            return "Apple's bot protection blocked this request (541). The scraper will retry automatically with backoff."
+            return "Apple's bot protection blocked this request. Please wait before checking again."
+        case .pickupCooldown(let until):
+            return "Apple blocked or throttled inventory requests. Pickup checks are paused until \(until.formatted(date: .abbreviated, time: .standard)). Automatic checks resume on the next scheduled refresh after that time; manual refresh also respects this pause. Previously displayed results may be out of date."
         case .productNotAvailableInRegion:
             return "This product is not available in the selected country. Please choose another product or country."
         case .invalidLocalModelStore, .invalidProjectState, .failedToParseGithubVersion:
-            return "InventoryWatch has invalid or corrupted local data. Please contact the developer (@worthbak)."
+            return "InventoryWatch has invalid or corrupted local data. Please contact the developer (@drallgood)."
         case .generic(let optional):
             return "A network error occurred. Details: \(optional?.localizedDescription ?? "unknown")"
         }

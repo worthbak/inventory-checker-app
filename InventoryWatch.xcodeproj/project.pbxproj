@@ -11,7 +11,6 @@
 		385886AD290827A6003D3C80 /* ModelError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385886AC290827A6003D3C80 /* ModelError.swift */; };
 		385886AF290827D6003D3C80 /* SKUDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385886AE290827D6003D3C80 /* SKUDataLoader.swift */; };
 		385886B12908280E003D3C80 /* FulfillmentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385886B02908280E003D3C80 /* FulfillmentModel.swift */; };
-		385886B32908281F003D3C80 /* GithubModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385886B22908281F003D3C80 /* GithubModel.swift */; };
 		385886B529082831003D3C80 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385886B429082831003D3C80 /* ViewModel.swift */; };
 		385886B72908283F003D3C80 /* DefaultsVendor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385886B62908283F003D3C80 /* DefaultsVendor.swift */; };
 		386FDC572739DA7300C1BAC2 /* InventoryWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386FDC562739DA7300C1BAC2 /* InventoryWatchApp.swift */; };
@@ -22,7 +21,6 @@
 		386FDC6A273A200000C1BAC2 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386FDC69273A200000C1BAC2 /* NotificationManager.swift */; };
 		3885D54C2891711E00BD6A78 /* FulfillmentStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3885D54B2891711E00BD6A78 /* FulfillmentStore.swift */; };
 		3885D54E2891713200BD6A78 /* PartAvailability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3885D54D2891713200BD6A78 /* PartAvailability.swift */; };
-		3885D5542891719600BD6A78 /* GithubTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3885D5532891719600BD6A78 /* GithubTag.swift */; };
 		3891902D28E882070051FE3A /* Stores_LocalBootstrap.json in Resources */ = {isa = PBXBuildFile; fileRef = 3891902C28E882070051FE3A /* Stores_LocalBootstrap.json */; };
 		3891902F28E8831B0051FE3A /* StoreBootstrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3891902E28E8831B0051FE3A /* StoreBootstrap.swift */; };
 		3895BE92290ACE5000FBC188 /* AppleWatchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3895BE91290ACE5000FBC188 /* AppleWatchData.swift */; };
@@ -74,6 +72,7 @@
 		46F13B112E80009000CBE7DB /* iPad-Air-intl.json in Resources */ = {isa = PBXBuildFile; fileRef = 46F13B102E80009000CBE7DB /* iPad-Air-intl.json */; };
 		46F13B132E8000A000CBE7DB /* iPad-Ipad-intl.json in Resources */ = {isa = PBXBuildFile; fileRef = 46F13B122E8000A000CBE7DB /* iPad-Ipad-intl.json */; };
 		46F13B152E8000B000CBE7DB /* iPad-Mini-intl.json in Resources */ = {isa = PBXBuildFile; fileRef = 46F13B142E8000B000CBE7DB /* iPad-Mini-intl.json */; };
+		A10000000000000000000001 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = A10000000000000000000003 /* Sparkle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,7 +90,6 @@
 		385886AC290827A6003D3C80 /* ModelError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelError.swift; sourceTree = "<group>"; };
 		385886AE290827D6003D3C80 /* SKUDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKUDataLoader.swift; sourceTree = "<group>"; };
 		385886B02908280E003D3C80 /* FulfillmentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FulfillmentModel.swift; sourceTree = "<group>"; };
-		385886B22908281F003D3C80 /* GithubModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubModel.swift; sourceTree = "<group>"; };
 		385886B429082831003D3C80 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		385886B62908283F003D3C80 /* DefaultsVendor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsVendor.swift; sourceTree = "<group>"; };
 		386FDC532739DA7300C1BAC2 /* InventoryWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InventoryWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,7 +102,6 @@
 		386FDC69273A200000C1BAC2 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		3885D54B2891711E00BD6A78 /* FulfillmentStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FulfillmentStore.swift; sourceTree = "<group>"; };
 		3885D54D2891713200BD6A78 /* PartAvailability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartAvailability.swift; sourceTree = "<group>"; };
-		3885D5532891719600BD6A78 /* GithubTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubTag.swift; sourceTree = "<group>"; };
 		3891902C28E882070051FE3A /* Stores_LocalBootstrap.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Stores_LocalBootstrap.json; sourceTree = "<group>"; };
 		3891902E28E8831B0051FE3A /* StoreBootstrap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreBootstrap.swift; sourceTree = "<group>"; };
 		3895BE91290ACE5000FBC188 /* AppleWatchData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleWatchData.swift; sourceTree = "<group>"; };
@@ -157,6 +154,7 @@
 		46F13B102E80009000CBE7DB /* iPad-Air-intl.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "iPad-Air-intl.json"; sourceTree = "<group>"; };
 		46F13B122E8000A000CBE7DB /* iPad-Ipad-intl.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "iPad-Ipad-intl.json"; sourceTree = "<group>"; };
 		46F13B142E8000B000CBE7DB /* iPad-Mini-intl.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "iPad-Mini-intl.json"; sourceTree = "<group>"; };
+		A10000000000000000000004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -168,6 +166,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A10000000000000000000001 /* Sparkle in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,7 +187,6 @@
 				3891902E28E8831B0051FE3A /* StoreBootstrap.swift */,
 				3895BE91290ACE5000FBC188 /* AppleWatchData.swift */,
 				3885D54D2891713200BD6A78 /* PartAvailability.swift */,
-				3885D5532891719600BD6A78 /* GithubTag.swift */,
 			);
 			path = ModelTypes;
 			sourceTree = "<group>";
@@ -226,6 +224,7 @@
 				386FDC5A2739DA7300C1BAC2 /* Assets.xcassets */,
 				38E4279D273EF542006BF6D7 /* Credits.rtf */,
 				386FDC5F2739DA7300C1BAC2 /* InventoryWatch.entitlements */,
+				A10000000000000000000004 /* Info.plist */,
 				386FDC5C2739DA7300C1BAC2 /* Preview Content */,
 			);
 			path = InventoryWatch;
@@ -250,7 +249,6 @@
 				38D307DA2745E2E700A0686D /* Analytics.swift */,
 				385886AC290827A6003D3C80 /* ModelError.swift */,
 				385886B62908283F003D3C80 /* DefaultsVendor.swift */,
-				385886B22908281F003D3C80 /* GithubModel.swift */,
 				385886AE290827D6003D3C80 /* SKUDataLoader.swift */,
 				385886B02908280E003D3C80 /* FulfillmentModel.swift */,
 				3895BE93290B101B00FBC188 /* NotificationSender.swift */,
@@ -330,6 +328,9 @@
 			dependencies = (
 			);
 			name = InventoryWatch;
+			packageProductDependencies = (
+				A10000000000000000000003 /* Sparkle */,
+			);
 			productName = InventoryWatch;
 			productReference = 386FDC532739DA7300C1BAC2 /* InventoryWatch.app */;
 			productType = "com.apple.product-type.application";
@@ -385,6 +386,9 @@
 				Base,
 			);
 			mainGroup = 386FDC4A2739DA7300C1BAC2;
+			packageReferences = (
+				A10000000000000000000002 /* XCRemoteSwiftPackageReference "Sparkle" */,
+			);
 			productRefGroup = 386FDC542739DA7300C1BAC2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -479,10 +483,8 @@
 				46F13B092E80005000CBE7DB /* ProductAvailabilityList.swift in Sources */,
 				46F13B0B2E80006000CBE7DB /* JSONCatalogiPad.swift in Sources */,
 				385886B12908280E003D3C80 /* FulfillmentModel.swift in Sources */,
-				3885D5542891719600BD6A78 /* GithubTag.swift in Sources */,
 				3895BE92290ACE5000FBC188 /* AppleWatchData.swift in Sources */,
 				38D0C3A2273C60B500A7DE65 /* Countries.swift in Sources */,
-				385886B32908281F003D3C80 /* GithubModel.swift in Sources */,
 				386FDC572739DA7300C1BAC2 /* InventoryWatchApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -645,7 +647,8 @@
 				ENABLE_APP_SANDBOX = NO;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = InventoryWatch/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.shopping";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -654,8 +657,9 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MARKETING_VERSION = "3.0-RC1";
-				PRODUCT_BUNDLE_IDENTIFIER = com.worthbak.InventoryWatch;
+				PRODUCT_BUNDLE_IDENTIFIER = net.brendamour.InventoryWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPARKLE_PUBLIC_ED_KEY = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_STRICT_CONCURRENCY = complete;
 				SWIFT_VERSION = 5.0;
@@ -677,7 +681,8 @@
 				ENABLE_APP_SANDBOX = NO;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = InventoryWatch/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.shopping";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -686,8 +691,9 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MARKETING_VERSION = "3.0-RC1";
-				PRODUCT_BUNDLE_IDENTIFIER = com.worthbak.InventoryWatch;
+				PRODUCT_BUNDLE_IDENTIFIER = net.brendamour.InventoryWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPARKLE_PUBLIC_ED_KEY = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_STRICT_CONCURRENCY = complete;
 				SWIFT_VERSION = 5.0;
@@ -707,7 +713,7 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = 27.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.worthbak.InventoryWatchTests;
+				PRODUCT_BUNDLE_IDENTIFIER = net.brendamour.InventoryWatchTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
@@ -732,7 +738,7 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = 27.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.worthbak.InventoryWatchTests;
+				PRODUCT_BUNDLE_IDENTIFIER = net.brendamour.InventoryWatchTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -774,6 +780,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A10000000000000000000002 /* XCRemoteSwiftPackageReference "Sparkle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sparkle-project/Sparkle";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.6.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A10000000000000000000003 /* Sparkle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A10000000000000000000002 /* XCRemoteSwiftPackageReference "Sparkle" */;
+			productName = Sparkle;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 386FDC4B2739DA7300C1BAC2 /* Project object */;
 }
