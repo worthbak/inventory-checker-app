@@ -21,7 +21,6 @@
 		386FDC6A273A200000C1BAC2 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386FDC69273A200000C1BAC2 /* NotificationManager.swift */; };
 		3885D54C2891711E00BD6A78 /* FulfillmentStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3885D54B2891711E00BD6A78 /* FulfillmentStore.swift */; };
 		3885D54E2891713200BD6A78 /* PartAvailability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3885D54D2891713200BD6A78 /* PartAvailability.swift */; };
-		A10000000000000000000001 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = A10000000000000000000003 /* Sparkle */; };
 		3891902D28E882070051FE3A /* Stores_LocalBootstrap.json in Resources */ = {isa = PBXBuildFile; fileRef = 3891902C28E882070051FE3A /* Stores_LocalBootstrap.json */; };
 		3891902F28E8831B0051FE3A /* StoreBootstrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3891902E28E8831B0051FE3A /* StoreBootstrap.swift */; };
 		3895BE92290ACE5000FBC188 /* AppleWatchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3895BE91290ACE5000FBC188 /* AppleWatchData.swift */; };
@@ -73,6 +72,7 @@
 		46F13B112E80009000CBE7DB /* iPad-Air-intl.json in Resources */ = {isa = PBXBuildFile; fileRef = 46F13B102E80009000CBE7DB /* iPad-Air-intl.json */; };
 		46F13B132E8000A000CBE7DB /* iPad-Ipad-intl.json in Resources */ = {isa = PBXBuildFile; fileRef = 46F13B122E8000A000CBE7DB /* iPad-Ipad-intl.json */; };
 		46F13B152E8000B000CBE7DB /* iPad-Mini-intl.json in Resources */ = {isa = PBXBuildFile; fileRef = 46F13B142E8000B000CBE7DB /* iPad-Mini-intl.json */; };
+		A10000000000000000000001 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = A10000000000000000000003 /* Sparkle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,7 +98,6 @@
 		386FDC5A2739DA7300C1BAC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		386FDC5D2739DA7300C1BAC2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		386FDC5F2739DA7300C1BAC2 /* InventoryWatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InventoryWatch.entitlements; sourceTree = "<group>"; };
-		A10000000000000000000004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		386FDC67273A18F800C1BAC2 /* SKUData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKUData.swift; sourceTree = "<group>"; };
 		386FDC69273A200000C1BAC2 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		3885D54B2891711E00BD6A78 /* FulfillmentStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FulfillmentStore.swift; sourceTree = "<group>"; };
@@ -155,6 +154,7 @@
 		46F13B102E80009000CBE7DB /* iPad-Air-intl.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "iPad-Air-intl.json"; sourceTree = "<group>"; };
 		46F13B122E8000A000CBE7DB /* iPad-Ipad-intl.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "iPad-Ipad-intl.json"; sourceTree = "<group>"; };
 		46F13B142E8000B000CBE7DB /* iPad-Mini-intl.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "iPad-Mini-intl.json"; sourceTree = "<group>"; };
+		A10000000000000000000004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -327,10 +327,10 @@
 			);
 			dependencies = (
 			);
+			name = InventoryWatch;
 			packageProductDependencies = (
 				A10000000000000000000003 /* Sparkle */,
 			);
-			name = InventoryWatch;
 			productName = InventoryWatch;
 			productReference = 386FDC532739DA7300C1BAC2 /* InventoryWatch.app */;
 			productType = "com.apple.product-type.application";
@@ -657,7 +657,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MARKETING_VERSION = "3.0-RC1";
-				PRODUCT_BUNDLE_IDENTIFIER = com.worthbak.InventoryWatch;
+				PRODUCT_BUNDLE_IDENTIFIER = net.brendamour.InventoryWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SPARKLE_PUBLIC_ED_KEY = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -691,7 +691,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MARKETING_VERSION = "3.0-RC1";
-				PRODUCT_BUNDLE_IDENTIFIER = com.worthbak.InventoryWatch;
+				PRODUCT_BUNDLE_IDENTIFIER = net.brendamour.InventoryWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SPARKLE_PUBLIC_ED_KEY = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -713,7 +713,7 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = 27.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.worthbak.InventoryWatchTests;
+				PRODUCT_BUNDLE_IDENTIFIER = net.brendamour.InventoryWatchTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
@@ -738,7 +738,7 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = 27.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.worthbak.InventoryWatchTests;
+				PRODUCT_BUNDLE_IDENTIFIER = net.brendamour.InventoryWatchTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -780,6 +780,8 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
 		A10000000000000000000002 /* XCRemoteSwiftPackageReference "Sparkle" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/sparkle-project/Sparkle";
@@ -788,11 +790,15 @@
 				minimumVersion = 2.6.4;
 			};
 		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
 		A10000000000000000000003 /* Sparkle */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A10000000000000000000002 /* XCRemoteSwiftPackageReference "Sparkle" */;
 			productName = Sparkle;
 		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 386FDC4B2739DA7300C1BAC2 /* Project object */;
 }
