@@ -604,7 +604,7 @@ struct SettingsView: View {
         case .avp: tokenName = avpTokenNames[search.token] ?? search.token
         }
         let countryName = Countries[search.countryCode]?.name ?? search.countryCode
-        return "\(search.family.displayName) · \(tokenName) · \(countryName)"
+        return "\(search.family.searchDisplayName(modelName: tokenName)) · \(countryName)"
     }
     
     func loadSkus(searchID: UUID? = nil, generation: Int? = nil) async {

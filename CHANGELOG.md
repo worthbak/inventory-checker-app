@@ -25,6 +25,7 @@
 
 ### Fixed
 
+- Search headings and sidebar labels no longer repeat the product family when it is already part of the model name.
 - Pickup warnings are collected across location groups, and the configured store is prioritized within its search's results.
 - Refresh errors retain existing results, which may be stale, rather than replacing them with a successful-looking empty result.
 - The SKU-name regression test now uses the existing SKU lookup API, allowing the test target to compile instead of leaving an incomplete unsigned test bundle after a failed build.

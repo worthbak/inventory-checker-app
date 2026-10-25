@@ -26,6 +26,13 @@ enum ProductFamily: String, Codable, CaseIterable, Identifiable {
     var isHomePod: Bool { self == .homepod }
     var isAVP: Bool { self == .avp }
 
+    func searchDisplayName(modelName: String) -> String {
+        if modelName.lowercased().hasPrefix(displayName.lowercased()) {
+            return modelName
+        }
+        return "\(displayName) \(modelName)"
+    }
+
     var displayName: String {
         switch self {
         case .watch: return "Apple Watch"

@@ -292,7 +292,9 @@ struct ContentView: View {
         case .avp:
             name = displayNameForAVPToken(token: search.token, country: country)
         }
-        return "\(search.family.displayName) \(name ?? search.token.replacingOccurrences(of: "-", with: " ").capitalized)"
+        return search.family.searchDisplayName(
+            modelName: name ?? search.token.replacingOccurrences(of: "-", with: " ").capitalized
+        )
     }
 }
 
