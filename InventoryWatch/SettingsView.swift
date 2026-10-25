@@ -253,7 +253,7 @@ struct SettingsView: View {
             Text("Preferred Models")
                 .font(.headline)
             
-            Text("Only certain model configurations are stocked in-stores. If you believe a configuration is missing, [please open an issue](https://github.com/worthbak/inventory-checker-app/issues).")
+            Text("Only certain model configurations are stocked in-stores. If you believe a configuration is missing, [please open an issue](https://github.com/drallgood/inventory-checker-app/issues).")
                 .font(.caption).italic()
             
             List {

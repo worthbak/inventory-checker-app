@@ -19,7 +19,7 @@ This is the open-source macOS version of InventoryWatch, including multiple save
 
 ```bash
 # Clone and build
-git clone https://github.com/worthbak/inventory-checker-app.git
+git clone https://github.com/drallgood/inventory-checker-app.git
 cd inventory-checker-app
 open InventoryWatch.xcodeproj  # Build (Cmd+B) then Run (Cmd+R)
 ```

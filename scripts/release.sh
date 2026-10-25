@@ -162,7 +162,7 @@ APPCAST_ITEM="$OUTPUT/appcast-item.xml"
         printf '            <sparkle:channel>beta</sparkle:channel>\n'
     fi
     printf '            <pubDate>%s</pubDate>\n' "$PUBLISHED_AT"
-    printf '            <enclosure url="https://github.com/worthbak/inventory-checker-app/releases/download/%s/InventoryWatch.zip"\n' "$RELEASE_TAG"
+    printf '            <enclosure url="https://github.com/drallgood/inventory-checker-app/releases/download/%s/InventoryWatch.zip"\n' "$RELEASE_TAG"
     printf '                       sparkle:edSignature="%s" length="%s" type="application/octet-stream" />\n' "$ED_SIGNATURE" "$ARCHIVE_LENGTH"
     printf '        </item>\n'
 } >"$APPCAST_ITEM"

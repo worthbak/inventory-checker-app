@@ -155,8 +155,9 @@ Use `SIGNING_IDENTITY` to select a specific Developer ID Application identity or
 
 `RELEASE_TAG` defaults to `v<marketing version>` and can be overridden for a
 different GitHub release tag. Generated download URLs point to
-`worthbak/inventory-checker-app`; fork maintainers must adjust that URL and the
-app's `SUFeedURL` before distributing updates from their own repository.
+`drallgood/inventory-checker-app`. If the repository or GitHub Pages domain
+changes, update the generated download URL and the app's `SUFeedURL` before
+distributing updates.
 
 ### Scrape product data
 

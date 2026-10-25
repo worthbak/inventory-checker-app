@@ -25,7 +25,7 @@
 	<key>NSHumanReadableCopyright</key>
 	<string></string>
 	<key>SUFeedURL</key>
-	<string>https://worthbak.github.io/inventory-checker-app/appcast.xml</string>
+	<string>https://drallgood.github.io/inventory-checker-app/appcast.xml</string>
 	<key>SUPublicEDKey</key>
 	<string>$(SPARKLE_PUBLIC_ED_KEY)</string>
 	<key>SUEnableInstallerLauncherService</key>
