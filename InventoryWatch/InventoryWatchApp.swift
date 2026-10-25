@@ -7,6 +7,7 @@
 
 import SwiftUI
 import Sparkle
+import Combine
 
 enum UpdateChannel: String, CaseIterable, Identifiable {
     case stable
@@ -19,6 +20,8 @@ enum UpdateChannel: String, CaseIterable, Identifiable {
 final class AppUpdater: NSObject, ObservableObject, SPUUpdaterDelegate {
     private var controller: SPUStandardUpdaterController?
     @Published private(set) var selectedChannel: UpdateChannel
+    @Published private(set) var canCheckForUpdates = false
+    private var updaterAvailabilityObservation: AnyCancellable?
 
     override init() {
         let savedChannel = UserDefaults.standard.string(forKey: "sparkleUpdateChannel")
@@ -42,15 +45,18 @@ final class AppUpdater: NSObject, ObservableObject, SPUUpdaterDelegate {
         )
         controller.updater.automaticallyChecksForUpdates = true
         controller.updater.updateCheckInterval = 86_400
+        canCheckForUpdates = controller.updater.canCheckForUpdates
+        updaterAvailabilityObservation = controller.updater
+            .publisher(for: \.canCheckForUpdates)
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] canCheck in
+                self?.canCheckForUpdates = canCheck
+            }
         self.controller = controller
     }
 
     func allowedChannels(for updater: SPUUpdater) -> Set<String> {
         selectedChannel == .beta ? ["beta"] : []
-    }
-
-    var canCheckForUpdates: Bool {
-        controller?.updater.canCheckForUpdates == true
     }
 
     func checkForUpdates() {

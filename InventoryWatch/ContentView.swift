@@ -67,6 +67,7 @@ struct ContentView: View {
                                 .map(String.init)
                                 .filter { !$0.isEmpty }
                         )
+                        let displayedPreferredSKUs: Set<String> = onlyShowingPreferredResults ? preferredSkus : []
 
                         ForEach(model.searchConfigurations) { search in
                             if let country = Countries[search.countryCode] {
@@ -88,7 +89,7 @@ struct ContentView: View {
                                         country: country,
                                         availableSkus: availableSkus,
                                         pickupInfo: pickupInfo,
-                                        preferredSkus: preferredSkus
+                                        preferredSkus: displayedPreferredSKUs
                                     )
                                     Text("\(shouldIncludeNearbyStores ? "Near" : "At") store \(search.storeNumber.isEmpty ? "all stores" : search.storeNumber)")
                                         .font(.caption)

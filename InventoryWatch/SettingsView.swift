@@ -108,9 +108,12 @@ struct SettingsView: View {
                         description: Text("Create a search to monitor a product and store.")
                     )
                 } else {
-                    topControls
-                    modelsAndStores
-                        .padding(.top, 8)
+                    VStack(alignment: .leading) {
+                        topControls
+                        modelsAndStores
+                            .padding(.top, 8)
+                    }
+                    .disabled(isLoadingSearchConfiguration)
                 }
             }
             .padding()
@@ -924,13 +927,20 @@ struct SettingsView: View {
         return token.replacingOccurrences(of: "-", with: " ").capitalized
     }
     
-    func loadStores(for countryCode: String, filterText: String?) async {
+    func loadStores(
+        for countryCode: String,
+        filterText: String?,
+        searchID: UUID? = nil,
+        generation: Int? = nil
+    ) async {
         if selectedStore.isEmpty {
             selectedStore = preferredStoreNumber
         }
         
         let storesJson = await model.stores(for: countryCode)
-        guard preferredCountry == countryCode else { return }
+        guard preferredCountry == countryCode,
+              searchID == nil || selectedSearchID == searchID,
+              generation == nil || searchLoadGeneration == generation else { return }
         let stores: [StoreWithSelection] = storesJson.map { store in
             StoreWithSelection(
                 store: store,
@@ -1088,7 +1098,12 @@ struct SettingsView: View {
         setDraftToken(search.token, for: search.family)
         await loadSkus()
         guard selectedSearchID == id else { return }
-        await loadStores(for: search.countryCode, filterText: nil)
+        await loadStores(
+            for: search.countryCode,
+            filterText: nil,
+            searchID: id,
+            generation: generation
+        )
         guard selectedSearchID == id else { return }
         await Task.yield()
     }

@@ -14,6 +14,12 @@ struct SearchInventoryResult: Identifiable {
     var id: UUID { search.id }
 }
 
+private struct AvailabilityIdentity: Hashable {
+    let countryCode: String
+    let storeNumber: String
+    let partNumber: String
+}
+
 @MainActor
 final class ViewModel: ObservableObject {
     
@@ -157,8 +163,22 @@ final class ViewModel: ObservableObject {
                 
                 refreshLastUpdateTime()
                 
+                var seenAvailability = Set<AvailabilityIdentity>()
+                let notificationAvailability = result.searchResults.flatMap { searchResult in
+                    searchResult.availableParts.compactMap { store, parts -> (FulfillmentStore, [PartAvailability])? in
+                        let uniqueParts = parts.filter { part in
+                            seenAvailability.insert(AvailabilityIdentity(
+                                countryCode: searchResult.search.countryCode,
+                                storeNumber: store.storeNumber,
+                                partNumber: part.partNumber
+                            )).inserted
+                        }
+                        guard uniqueParts.isEmpty == false else { return nil }
+                        return (store, uniqueParts)
+                    }
+                }
                 await notificationSender.sendNotificationIfNeeded(
-                    availableParts: result.searchResults.flatMap(\.availableParts),
+                    availableParts: notificationAvailability,
                     skuData: result.skuData,
                     searches: searches
                 )

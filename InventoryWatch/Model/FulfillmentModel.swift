@@ -180,11 +180,16 @@ actor FulfillmentModel {
                   let country = Countries[firstSearch.countryCode] else {
                 throw AppError.invalidProjectState
             }
-            let (query, groupSKUData, searchSKUs) = try await generateQueryString(
+            guard let (query, groupSKUData, searchSKUs) = try await generateQueryString(
                 searches: group,
                 country: country,
                 storeNumber: firstSearch.storeNumber
-            )
+            ) else {
+                searchResults.append(contentsOf: group.map {
+                    SearchInventoryResult(search: $0, availableParts: [])
+                })
+                continue
+            }
             let countryPath = country.shortcode == "US" ? "" : "\(country.shortcode.lowercased())/"
             let urlRoot = "https://www.apple.com/\(countryPath)shop/retail/pickup-message?"
             guard let apiURL = URL(string: urlRoot + query) else {
@@ -195,8 +200,12 @@ actor FulfillmentModel {
             pickupErrors.append(contentsOf: lastPickupErrorKeys)
             for search in group {
                 let matchingSKUs = Set((await skuData(for: search, country: country))?.orderedSKUs ?? [])
+                var searchMatchingSKUs = matchingSKUs
+                if let customSku = defaultsVendor.customSkuData?.sku {
+                    searchMatchingSKUs.insert(customSku)
+                }
                 let filteredStores = stores.compactMap { store, parts -> (FulfillmentStore, [PartAvailability])? in
-                    let matchingParts = parts.filter { matchingSKUs.contains($0.partNumber) }
+                    let matchingParts = parts.filter { searchMatchingSKUs.contains($0.partNumber) }
                     guard matchingParts.isEmpty == false else { return nil }
                     return (store, matchingParts)
                 }
@@ -265,7 +274,7 @@ actor FulfillmentModel {
         searches: [SearchConfiguration],
         country: Country,
         storeNumber: String
-    ) async throws -> (String, SKUData, [String]) {
+    ) async throws -> (String, SKUData, [String])? {
         guard searches.isEmpty == false else { throw AppError.productNotAvailableInRegion }
 
         var searchData: [(SearchConfiguration, SKUData)] = []
@@ -330,9 +339,7 @@ actor FulfillmentModel {
             return true
         }
 
-        guard allSkus.isEmpty == false else {
-            throw AppError.productNotAvailableInRegion
-        }
+        guard allSkus.isEmpty == false else { return nil }
 
         var queryItems: [String] = ["fae=true"]
 
