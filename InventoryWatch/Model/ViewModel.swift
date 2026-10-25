@@ -18,7 +18,6 @@ struct SearchInventoryResult: Identifiable {
 final class ViewModel: ObservableObject {
     
     private let fulfillmentModel = FulfillmentModel()
-    private let githubModel = GithubModel()
     private let notificationSender = NotificationSender()
     let defaultsVendor = DefaultsVendor()
     
@@ -26,7 +25,6 @@ final class ViewModel: ObservableObject {
     
     @Published var searchResults: [SearchInventoryResult] = []
     @Published var isLoading = false
-    @Published var hasLatestVersion = true
     @Published var errorState: AppError?
     @Published var pickupErrorKeys: [String] = []
     @Published private(set) var searchConfigurations: [SearchConfiguration] = []
@@ -140,7 +138,6 @@ final class ViewModel: ObservableObject {
         latestTask = Task {
             
             do {
-                hasLatestVersion = (try? await githubModel.hasLatestGithubRelease()) ?? true
                 updateErrorState(to: .none, deactivateLoadingState: false)
                 
                 let result = try await fulfillmentModel.fetchInventory(searches: searches)
@@ -177,12 +174,6 @@ final class ViewModel: ObservableObject {
     
     func clearSearchResults() {
         searchResults = []
-    }
-    
-    func fetchLatestGithubRelease() async {
-        if let latest = try? await githubModel.hasLatestGithubRelease() {
-            hasLatestVersion = latest
-        }
     }
     
     func updateErrorState(to error: Error?, deactivateLoadingState: Bool = true) {

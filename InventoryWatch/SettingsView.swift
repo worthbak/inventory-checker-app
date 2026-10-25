@@ -44,7 +44,6 @@ struct SettingsView: View {
     }
     
     @EnvironmentObject var model: ViewModel
-    @Environment(\.openURL) var openURL
     
     @State private var preferredCountry = "US"
     @State private var preferredStoreNumber = ""
@@ -243,16 +242,6 @@ struct SettingsView: View {
                 Text("Include results from nearby stores")
             }
             
-            if model.hasLatestVersion == false {
-                Link(destination: URL(string: "https://worthbak.github.io/inventory-checker-app/")!) {
-                    HStack(spacing: 4) {
-                        Text("A new version of InventoryWatch is available - click here to download.")
-                        Image(systemName: "arrow.forward.circle")
-                    }
-                    .font(.headline)
-                }
-                .padding(.top, 16)
-            }
         }
     }
 
@@ -990,7 +979,6 @@ struct SettingsView: View {
     // MARK: - Lifecycle helpers used in view modifiers
     private func onAppearSetup() {
         loadCountries()
-        Task { await model.fetchLatestGithubRelease() }
         if let firstSearch = model.searchConfigurations.first {
             selectedSearchID = firstSearch.id
         } else {

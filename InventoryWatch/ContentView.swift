@@ -22,18 +22,10 @@ struct ContentView: View {
     var body: some View {
         VStack {
             HStack {
-                ZStack {
-                    if model.hasLatestVersion == false {
-                        Text("!")
-                            .bold()
-                            .foregroundColor(.blue)
-                            .offset(x: 8, y: -8)
-                    }
-                    SettingsLink {
-                        Image(systemName: "gearshape.fill")
-                    }
-                    .padding()
+                SettingsLink {
+                    Image(systemName: "gearshape.fill")
                 }
+                .padding()
 
                 Spacer()
 

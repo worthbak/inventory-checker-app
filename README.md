@@ -9,11 +9,13 @@ macOS app to monitor Apple Store pickup availability for iPhone, Apple Watch, Ma
 - Per-country store selection (35+ countries, including multi-language stores in Belgium and Switzerland)
 - Per-model token selection for all Apple product families (iPhone, iPad, Mac, Apple Watch, AirPods, HomePod, Apple Vision Pro)
 - Configurable update intervals with notifications
+- Automatic app update checks and signed update installation through Sparkle
 - All product data is scraped from Apple's official buy pages — no hardcoded SKUs
 
 ## Architecture
 
 - **SwiftUI** macOS app with MVVM + Actor model
+- **Sparkle** for signed app updates from the GitHub Pages appcast
 - Product/SKU data loaded from JSON catalog files (`InventoryWatch/Catalogs/`)
 - Python scraper (`scrape_models.py`) generates catalog JSONs from Apple's regional buy pages
 - Store data from Apple's `rsp-web/store-list` API with local JSON fallback
@@ -56,6 +58,57 @@ open InventoryWatch.xcodeproj
 ```
 
 Requires Xcode 15+ and macOS 14+.
+
+### App updates
+
+InventoryWatch checks the update feed daily and offers new releases for installation. Choose **InventoryWatch > Check for Updates…** to check manually. Choose **InventoryWatch > Update Channel** to switch between **Stable** and **Beta**.
+
+Stable updates are published without a `sparkle:channel` element; beta updates include `<sparkle:channel>beta</sparkle:channel>`. Beta users receive beta updates and stable releases. Stable users only receive stable releases.
+
+Generate a Sparkle EdDSA key pair with Sparkle's `generate_keys` tool and keep the private key in the login Keychain used for releases (never commit it). Configure the app's `SPARKLE_PUBLIC_ED_KEY` Xcode build setting with the matching public key. The updater remains disabled until a valid public key is configured.
+
+### Sign and notarize a release
+
+For direct distribution outside the Mac App Store, use [`scripts/release.sh`](scripts/release.sh). It requires full Xcode, an active Apple Developer Program membership, and a **Developer ID Application** certificate with its private key installed in your login Keychain. An Apple Development certificate is not sufficient.
+
+1. Check that your distribution identity is available:
+
+   ```bash
+   security find-identity -v -p codesigning
+   ```
+
+2. Store notarization credentials in Keychain with an app-specific password and your Apple Developer team ID:
+
+   ```bash
+   xcrun notarytool store-credentials inventorywatch-notary \
+     --apple-id 'you@example.com' \
+     --team-id 'YOUR_TEAM_ID'
+   ```
+
+   Enter the app-specific password at the secure terminal prompt. Do not put passwords, private keys, or certificate exports in the repository or chat.
+
+3. Increase `CURRENT_PROJECT_VERSION` for the release, run the unit tests, then build and notarize. Supply the public Sparkle key and choose a channel:
+
+   ```bash
+   TEAM_ID=YOUR_TEAM_ID \
+   SPARKLE_PUBLIC_ED_KEY=YOUR_PUBLIC_KEY \
+   RELEASE_CHANNEL=stable \
+   bash scripts/release.sh
+   ```
+
+   Set `RELEASE_CHANNEL=beta` for beta releases. The script builds a universal Apple Silicon/Intel archive, verifies the Developer ID signature, notarizes and staples the app, checks Gatekeeper, and creates `InventoryWatch.zip` plus a SHA-256 checksum. It also signs the ZIP with Sparkle and writes a channel-aware appcast item to the run's `appcast-item.xml`.
+
+4. Upload only `InventoryWatch.zip` to the matching GitHub release tag. Add the generated `<item>` to [`docs/appcast.xml`](./docs/appcast.xml), preserving its Sparkle namespace declarations, then publish the `docs/` site through GitHub Pages. The script does not publish GitHub releases or deploy GitHub Pages automatically.
+
+To verify local signing without submitting to Apple or creating a distributable ZIP:
+
+```bash
+TEAM_ID=YOUR_TEAM_ID \
+SPARKLE_PUBLIC_ED_KEY=YOUR_PUBLIC_KEY \
+bash scripts/release.sh --build-only
+```
+
+Use `SIGNING_IDENTITY` to select a specific Developer ID Application identity or `NOTARY_PROFILE` to select another saved Keychain profile. The script retains build output and diagnostic logs under the ignored `build/release/` directory.
 
 ### Scrape product data
 
