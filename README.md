@@ -169,10 +169,27 @@ Tests cover catalog JSON parsing, country data loading, product family resolutio
 A few values are intentionally hardcoded because they represent Apple's API contract or operational defaults:
 
 - Apple pickup API query params (`fae=true`, `little=false`, etc.) — API protocol, not configuration
-- HTTP timeout (30s) and connection limit (HTTP/1.1) — required for Akamai anti-bot compatibility
-- User-Agent and Accept headers — must match browser behavior to pass bot detection
+- HTTP timeout (30s) and a reused ephemeral URLSession for connection reuse
+- User-Agent and Accept headers — request metadata, not a guarantee of acceptance by bot protection
 - Notification cleanup window (7 days) — reasonable default
 - Update interval default (5 minutes) — avoids excessive API calls
+
+### Blocked inventory requests
+
+An HTTP 541 response pauses all pickup searches for 60 seconds instead of triggering
+immediate retries. The pause does not escalate and is kept only in memory for the
+current app session. It applies to manual refresh and configuration changes.
+This is a conservative application default, not an Apple-published limit.
+
+The app honors `Retry-After` (seconds or an HTTP date) on 541, 429, and 503 responses,
+using longer server delays in preference to the 60-second pause. A 429 without a
+valid delay pauses checks for one minute. The error message shows when requests
+are permitted again; automatic checks resume on the next scheduled refresh after
+that time. Existing results are retained on refresh errors and may be stale.
+Overlapping refresh triggers are coalesced, and configuration changes made during
+a request are checked after it completes rather than starting parallel requests.
+URLSession cannot execute browser JavaScript challenges, and these measures do not
+guarantee access to Apple's endpoint.
 
 ## Scraper Config Reference
 
@@ -180,7 +197,8 @@ A few values are intentionally hardcoded because they represent Apple's API cont
 
 ### `http_headers`
 
-HTTP headers sent with every request to pass Apple's bot detection. Change these only if the User-Agent or Accept headers become outdated and Apple starts blocking the scraper.
+HTTP headers sent by the Python scraper. Browser-like headers alone do not guarantee
+acceptance by Apple's bot protection.
 
 ### `regions`
 

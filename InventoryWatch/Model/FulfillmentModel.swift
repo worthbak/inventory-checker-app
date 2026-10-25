@@ -7,6 +7,40 @@
 
 import Foundation
 
+struct PickupRequestCooldown {
+    private(set) var nextAllowedAt: Date?
+
+    func check(now: Date = Date()) throws {
+        if let nextAllowedAt, nextAllowedAt > now {
+            throw AppError.pickupCooldown(until: nextAllowedAt)
+        }
+    }
+
+    mutating func recordBlock(now: Date = Date(), retryAfter: Date? = nil) {
+        deferRequests(until: max(now.addingTimeInterval(60), retryAfter ?? now))
+    }
+
+    mutating func deferRequests(until date: Date) {
+        nextAllowedAt = max(nextAllowedAt ?? date, date)
+    }
+
+    mutating func recordSuccess() {
+        nextAllowedAt = nil
+    }
+
+    static func retryAfterDate(_ value: String, now: Date = Date()) -> Date? {
+        let trimmed = value.trimmingCharacters(in: .whitespacesAndNewlines)
+        if !trimmed.isEmpty, trimmed.allSatisfy({ $0.isASCII && $0.isNumber }),
+           let seconds = TimeInterval(trimmed), seconds.isFinite {
+            return now.addingTimeInterval(seconds)
+        }
+        let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "en_US_POSIX")
+        formatter.timeZone = TimeZone(secondsFromGMT: 0)
+        formatter.dateFormat = "EEE, dd MMM yyyy HH:mm:ss z"
+        return formatter.date(from: trimmed)
+    }
+}
 
 actor FulfillmentModel {
     
@@ -16,8 +50,7 @@ actor FulfillmentModel {
     private var lastPickupRequestTime: Date = .distantPast
     private var lastStoreListRequestTime: Date = .distantPast
     private let minimumRequestInterval: TimeInterval = 3.0
-    private let maxRetries = 3
-    private let baseRetryDelay: TimeInterval = 5.0
+    private var pickupCooldown = PickupRequestCooldown()
     
     var skuDataForPreferredProduct: SKUData {
         get async throws {
@@ -30,7 +63,13 @@ actor FulfillmentModel {
     // Latest pickup API error keys (e.g., ["invalidLocalModelStore"]) captured from Apple JSON
     private(set) var lastPickupErrorKeys: [String] = []
     
-    var session: URLSession {
+    let session: URLSession
+
+    init(session: URLSession? = nil) {
+        self.session = session ?? Self.makeSession()
+    }
+
+    private static func makeSession() -> URLSession {
         let c = URLSessionConfiguration.ephemeral
         c.httpAdditionalHeaders = [:]
         c.requestCachePolicy = .reloadIgnoringLocalAndRemoteCacheData
@@ -128,6 +167,7 @@ actor FulfillmentModel {
     
     func fetchInventory(searches: [SearchConfiguration]) async throws -> (searchResults: [SearchInventoryResult], skuData: SKUData) {
         guard searches.isEmpty == false else { throw AppError.productNotAvailableInRegion }
+        try pickupCooldown.check()
         let groupedSearches = Dictionary(grouping: searches) { "\($0.countryCode):\($0.storeNumber)" }
         var searchResults: [SearchInventoryResult] = []
         var pickupErrors: [String] = []
@@ -176,37 +216,49 @@ actor FulfillmentModel {
     }
 
     private func fetchInventory(from apiURL: URL, skuData: SKUData) async throws -> [(FulfillmentStore, [PartAvailability])] {
-        print("🌐 Pickup URL: \(apiURL.absoluteString)")
-
-        for attempt in 0..<maxRetries {
-            if attempt > 0 {
-                let delay = baseRetryDelay * pow(2.0, Double(attempt - 1))
-                let jitter = Double.random(in: 0..<delay * 0.3)
-                let totalDelay = delay + jitter
-                print("⏳ Retry \(attempt)/\(maxRetries) after \(Int(totalDelay))s (backoff + jitter)")
-                try await Task.sleep(nanoseconds: UInt64(totalDelay * 1_000_000_000))
-            }
-
-            let timeSinceLastPickup = Date().timeIntervalSince(lastPickupRequestTime)
-            if timeSinceLastPickup < minimumRequestInterval {
-                let waitTime = minimumRequestInterval - timeSinceLastPickup
-                try await Task.sleep(nanoseconds: UInt64(waitTime * 1_000_000_000))
-            }
-            lastPickupRequestTime = Date()
-
-            var request = URLRequest(url: apiURL)
-            applyBrowserHeaders(to: &request)
-            request.httpShouldHandleCookies = false
-
-            let (data, response) = try await session.data(for: request, delegate: nil)
-            let httpResponse = response as? HTTPURLResponse
-            let status = httpResponse?.statusCode ?? 0
-            print("📥 Pickup response: status=\(status), bytes=\(data.count)")
-            if status == 541 { continue }
-
-            return try parseStoreResponse(data, response: httpResponse, filterForModels: modelParsingFilter, skuData: skuData)
+        try pickupCooldown.check()
+        let timeSinceLastPickup = Date().timeIntervalSince(lastPickupRequestTime)
+        if timeSinceLastPickup < minimumRequestInterval {
+            let waitTime = minimumRequestInterval - timeSinceLastPickup
+            try await Task.sleep(nanoseconds: UInt64(waitTime * 1_000_000_000))
         }
-        throw AppError.botDetected
+        try Task.checkCancellation()
+        try pickupCooldown.check()
+        lastPickupRequestTime = Date()
+
+        print("🌐 Pickup URL: \(apiURL.absoluteString)")
+        var request = URLRequest(url: apiURL)
+        applyBrowserHeaders(to: &request)
+        request.httpShouldHandleCookies = false
+
+        let (data, response) = try await session.data(for: request, delegate: nil)
+        let httpResponse = response as? HTTPURLResponse
+        let status = httpResponse?.statusCode ?? 0
+        print("📥 Pickup response: status=\(status), bytes=\(data.count), content-type=\(httpResponse?.value(forHTTPHeaderField: "Content-Type") ?? "unknown")")
+        let now = Date()
+        let retryAfter = httpResponse?.value(forHTTPHeaderField: "Retry-After").flatMap {
+            let date = PickupRequestCooldown.retryAfterDate($0, now: now)
+            if date == nil { print("Invalid Retry-After header: \($0)") }
+            return date
+        }
+        if status == 541 {
+            pickupCooldown.recordBlock(now: now, retryAfter: retryAfter)
+            try pickupCooldown.check(now: now)
+        } else if status == 429 || (status == 503 && retryAfter != nil) {
+            pickupCooldown.deferRequests(until: max(retryAfter ?? now.addingTimeInterval(60), now.addingTimeInterval(1)))
+            try pickupCooldown.check(now: now)
+        }
+        if let error = errorForStatusCode(status) { throw error }
+
+        do {
+            let stores = try parseStoreResponse(data, response: httpResponse, filterForModels: modelParsingFilter, skuData: skuData)
+            pickupCooldown.recordSuccess()
+            return stores
+        } catch AppError.botDetected {
+            pickupCooldown.recordBlock(now: now, retryAfter: retryAfter)
+            try pickupCooldown.check(now: now)
+            throw AppError.botDetected
+        }
     }
 
     private func generateQueryString(
@@ -460,6 +512,12 @@ actor FulfillmentModel {
         }
         
         switch statusCode {
+        case 403:
+            return .accessDenied
+        case 404:
+            return .resourceNotFound
+        case 429:
+            return .rateLimited
         case 541:
             return .botDetected
         case 500...599:

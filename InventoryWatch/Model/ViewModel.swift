@@ -17,7 +17,7 @@ struct SearchInventoryResult: Identifiable {
 @MainActor
 final class ViewModel: ObservableObject {
     
-    private let fulfillmentModel = FulfillmentModel()
+    private let fulfillmentModel: FulfillmentModel
     private let notificationSender = NotificationSender()
     let defaultsVendor = DefaultsVendor()
     
@@ -36,7 +36,8 @@ final class ViewModel: ObservableObject {
         }
     }
     
-    init() {
+    init(fulfillmentModel: FulfillmentModel = FulfillmentModel()) {
+        self.fulfillmentModel = fulfillmentModel
         if let savedConfigurations = UserDefaults.standard.data(forKey: "searchConfigurations") {
             do {
                 let decoded = try JSONDecoder().decode([SearchConfiguration].self, from: savedConfigurations)
@@ -111,11 +112,13 @@ final class ViewModel: ObservableObject {
     }
 
     private var latestTask: Task<(), Never>? = nil
+    private var refreshPending = false
     
     func fetchLatestInventory() async {
-        if let task = latestTask {
-            task.cancel()
-            latestTask = nil
+        if latestTask != nil {
+            // Coalesce configuration changes without cancelling a request already on the wire.
+            refreshPending = true
+            return
         }
 
         if let searchConfigurationLoadError {
@@ -143,6 +146,10 @@ final class ViewModel: ObservableObject {
                 let result = try await fulfillmentModel.fetchInventory(searches: searches)
                 let pickupErrors = await fulfillmentModel.lastPickupErrorKeys
                 try Task.checkCancellation()
+                guard searches == searchConfigurations else {
+                    finishInventoryFetch()
+                    return
+                }
                 searchResults = result.searchResults
                 // Surface any Apple pickup API error keys (e.g., invalidLocalModelStore)
                 pickupErrorKeys = pickupErrors
@@ -158,17 +165,22 @@ final class ViewModel: ObservableObject {
                 
                 print("successful update at \(defaultsVendor.lastUpdateDate ?? "unknown time")")
             } catch {
-                if error is CancellationError {
-                    print("task cancelled - suppressing thrown CancellationError and returning")
-                    return
-                } else {
+                if searches == searchConfigurations {
                     updateErrorState(to: error)
                 }
             }
-            
-            isLoading = false
-            latestTask = nil
-            resetTimer()
+
+            finishInventoryFetch()
+        }
+    }
+
+    private func finishInventoryFetch() {
+        isLoading = false
+        latestTask = nil
+        resetTimer()
+        if refreshPending {
+            refreshPending = false
+            Task { await fetchLatestInventory() }
         }
     }
     
