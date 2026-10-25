@@ -48,7 +48,7 @@ RELEASE_BRANCH="${RELEASE_BRANCH:-main}"
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$ROOT"
 
-for command in xcodebuild xcrun codesign lipo spctl gh git python3; do
+for command in xcodebuild xcrun codesign lipo spctl python3; do
     command -v "$command" >/dev/null || {
         echo "Error: required command not found: $command." >&2
         exit 1
@@ -77,6 +77,12 @@ fi
 xcrun --find notarytool >/dev/null
 xcrun --find stapler >/dev/null
 if [[ "$BUILD_ONLY" == false ]]; then
+    for command in gh git; do
+        command -v "$command" >/dev/null || {
+            echo "Error: required publishing command not found: $command." >&2
+            exit 1
+        }
+    done
     gh auth status --hostname github.com
     if [[ -n "$(git status --porcelain)" ]]; then
         echo "Error: release from a clean worktree; commit or stash all changes first." >&2
@@ -108,6 +114,19 @@ if [[ "$BUILD_ONLY" == false ]]; then
         echo "Error: push remote '$RELEASE_REMOTE' points to '$REMOTE_REPOSITORY', not '$RELEASE_REPOSITORY'." >&2
         exit 1
     fi
+    PUSH_URLS="$(git remote get-url --push --all "$RELEASE_REMOTE")"
+    if [[ -z "$PUSH_URLS" ]]; then
+        echo "Error: remote '$RELEASE_REMOTE' has no push URL." >&2
+        exit 1
+    fi
+    while IFS= read -r push_url; do
+        PUSH_REPOSITORY="$(printf '%s\n' "$push_url" |
+            sed -E 's#^.*github\.com[:/]##; s#\.git$##')"
+        if [[ "$PUSH_REPOSITORY" != "$RELEASE_REPOSITORY" ]]; then
+            echo "Error: push URL '$push_url' points to '$PUSH_REPOSITORY', not '$RELEASE_REPOSITORY'." >&2
+            exit 1
+        fi
+    done <<< "$PUSH_URLS"
     if [[ "$(gh repo view "$RELEASE_REPOSITORY" --json nameWithOwner --jq .nameWithOwner)" != "$RELEASE_REPOSITORY" ]]; then
         echo "Error: GitHub repository lookup did not match '$RELEASE_REPOSITORY'." >&2
         exit 1
@@ -197,6 +216,7 @@ xcodebuild archive \
 
 SPARKLE_FRAMEWORK="$APP/Contents/Frameworks/Sparkle.framework"
 SPARKLE_VERSION="$SPARKLE_FRAMEWORK/Versions/B"
+SPARKLE_CHECKOUT="$OUTPUT/DerivedData/SourcePackages/checkouts/Sparkle"
 APP_ENTITLEMENTS="$OUTPUT/app-entitlements.plist"
 codesign -d --entitlements :- "$APP" >"$APP_ENTITLEMENTS"
 
@@ -209,7 +229,16 @@ verify_release_signature() {
 
 for helper_bundle in "$SPARKLE_VERSION/Updater.app" "$SPARKLE_VERSION"/XPCServices/*.xpc; do
     [[ -d "$helper_bundle" ]] || continue
-    codesign --force --options runtime --timestamp \
+    HELPER_SIGN_ARGS=(--force --options runtime --timestamp)
+    if [[ "$(basename "$helper_bundle")" == "Downloader.xpc" ]]; then
+        DOWNLOADER_ENTITLEMENTS="$SPARKLE_CHECKOUT/Downloader/Downloader.entitlements"
+        if [[ ! -f "$DOWNLOADER_ENTITLEMENTS" ]]; then
+            echo "Error: Sparkle Downloader entitlements not found at $DOWNLOADER_ENTITLEMENTS." >&2
+            exit 1
+        fi
+        HELPER_SIGN_ARGS+=(--entitlements "$DOWNLOADER_ENTITLEMENTS")
+    fi
+    codesign "${HELPER_SIGN_ARGS[@]}" \
         --sign "$SIGNING_IDENTITY" "$helper_bundle"
     verify_release_signature "$helper_bundle"
 done
@@ -350,6 +379,7 @@ fi
 git add InventoryWatch.xcodeproj/project.pbxproj
 git commit -m "Bump release build number to $BUILD_VERSION" \
     -m "Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>"
+RELEASE_COMMIT="$(git rev-parse HEAD)"
 git push "$RELEASE_REMOTE" "$RELEASE_BRANCH"
 
 GH_RELEASE_ARGS=(
@@ -357,7 +387,7 @@ GH_RELEASE_ARGS=(
     "$RELEASE_ZIP"
     "$OUTPUT/InventoryWatch.zip.sha256"
     --repo "$RELEASE_REPOSITORY"
-    --target "$RELEASE_BRANCH"
+    --target "$RELEASE_COMMIT"
     --title "InventoryWatch $VERSION (build $BUILD_VERSION)"
     --generate-notes
 )
