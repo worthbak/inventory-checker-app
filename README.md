@@ -6,11 +6,47 @@ macOS app to monitor Apple Store pickup availability for iPhone, Apple Watch, Ma
 
 - Real-time inventory checking across Apple Store locations
 - Multiple saved searches, each with its own country and store
+- Master-detail search settings with immediate saving, plus separate inventory results for each search
 - Per-country store selection (35+ countries, including multi-language stores in Belgium and Switzerland)
 - Per-model token selection for all Apple product families (iPhone, iPad, Mac, Apple Watch, AirPods, HomePod, Apple Vision Pro)
 - Configurable update intervals with notifications
 - Automatic app update checks and signed update installation through Sparkle
+- Stable and beta update channels
 - All product data is scraped from Apple's official buy pages — no hardcoded SKUs
+
+See the [changelog](CHANGELOG.md) for change history and [historical refactoring notes](REFACTORING_NOTES.md) for the earlier architecture and scraper work.
+
+## Managing searches
+
+Open Settings using the gear button. The sidebar lists saved searches; select one
+to edit its product family, model, country, and store in the detail pane. Changes
+save immediately. **New Search** creates another search from the current product
+and location selections; edit the new entry to monitor a different product or
+location. Use the trash button or **Delete Search** context-menu action to remove
+the selected search.
+
+Each search has its own country and store, so you can monitor different products
+and countries at the same time. Changing country loads that country's model
+choices and selects its first available store; choose another store as needed.
+If the selected family has no usable catalog data there, the app restores the
+previous search instead of saving an unsupported setup.
+
+The inventory window groups results by search. Store labels show a recognizable
+name and city, for example **Near Apple Memorial City — Houston, TX**. **Near**
+means the shared **Include results from nearby stores** setting is enabled;
+**At** means only the selected store is requested. A search without a store shows
+**No store selected**; an unresolved store name temporarily falls back to its ID.
+
+Product, country, and store are per-search settings. Refresh interval,
+preferred-model filtering, notification filtering, nearby-store inclusion, custom
+SKU, and text size remain app-wide settings. Preferred-model selections are kept
+when switching products. Notifications deduplicate availability shared by
+overlapping searches.
+
+Existing single-search preferences and older saved searches migrate
+automatically, retaining their previous country and store. Searches with the
+same country and store share a pickup request; other locations are queried
+separately.
 
 ## Architecture
 
@@ -19,6 +55,7 @@ macOS app to monitor Apple Store pickup availability for iPhone, Apple Watch, Ma
 - Product/SKU data loaded from JSON catalog files (`InventoryWatch/Catalogs/`)
 - Python scraper (`scrape_models.py`) generates catalog JSONs from Apple's regional buy pages
 - Store data from Apple's `rsp-web/store-list` API with local JSON fallback
+- Saved searches persist with stable identities; inventory results are scoped to each search
 - All configuration driven by JSON: product families, countries, SKU data, store locations
 
 ## Project Structure
@@ -57,7 +94,9 @@ open InventoryWatch.xcodeproj
 # Build (Cmd+B) then Run (Cmd+R) in Xcode
 ```
 
-Requires Xcode 15+ and macOS 14+.
+Use a current Xcode installation and a macOS version supported by its SDK. The
+app target uses Xcode's recommended macOS deployment target; the test target
+currently requires macOS 27.0.
 
 ### App updates
 
@@ -66,6 +105,10 @@ InventoryWatch checks the update feed daily and offers new releases for installa
 Stable updates are published without a `sparkle:channel` element; beta updates include `<sparkle:channel>beta</sparkle:channel>`. Beta users receive beta updates and stable releases. Stable users only receive stable releases.
 
 Generate a Sparkle EdDSA key pair with Sparkle's `generate_keys` tool and keep the private key in the login Keychain used for releases (never commit it). Configure the app's `SPARKLE_PUBLIC_ED_KEY` Xcode build setting with the matching public key. The updater remains disabled until a valid public key is configured.
+
+Sparkle replaces the previous GitHub-tag version check. The checked-in appcast
+is a template with no release items; update delivery also requires publishing a
+signed release and adding its generated item to the feed.
 
 ### Sign and notarize a release
 
@@ -109,6 +152,11 @@ bash scripts/release.sh --build-only
 ```
 
 Use `SIGNING_IDENTITY` to select a specific Developer ID Application identity or `NOTARY_PROFILE` to select another saved Keychain profile. The script retains build output and diagnostic logs under the ignored `build/release/` directory.
+
+`RELEASE_TAG` defaults to `v<marketing version>` and can be overridden for a
+different GitHub release tag. Generated download URLs point to
+`worthbak/inventory-checker-app`; fork maintainers must adjust that URL and the
+app's `SUFeedURL` before distributing updates from their own repository.
 
 ### Scrape product data
 
@@ -162,7 +210,9 @@ All configuration is JSON-driven:
 xcodebuild test -project InventoryWatch.xcodeproj -scheme InventoryWatch
 ```
 
-Tests cover catalog JSON parsing, country data loading, product family resolution, and SKU validation.
+Tests cover catalog JSON parsing, country data loading, product family resolution,
+SKU lookup, saved-search round trips and migration, pickup request/response
+handling, request cooldowns, and human-readable store labels.
 
 ## Intentional Hardcodes
 
