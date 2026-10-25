@@ -607,7 +607,8 @@ struct SettingsView: View {
         return "\(search.family.displayName) · \(tokenName) · \(countryName)"
     }
     
-    func loadSkus() async {
+    func loadSkus(searchID: UUID? = nil, generation: Int? = nil) async {
+        guard isCurrentSearchLoad(searchID: searchID, generation: generation) else { return }
         let favoriteSkus = Set<String>(preferredSKUs.components(separatedBy: ","))
         // Resolve the preferred product type
         let family = ProductFamily(rawValue: preferredProductType)
@@ -697,7 +698,8 @@ struct SettingsView: View {
             }
         }
         // Fallback for non-watch (existing async path)
-        guard let skuData = try? await model.skuDataForPreferredProduct else { return }
+        guard let skuData = try? await model.skuDataForPreferredProduct,
+              isCurrentSearchLoad(searchID: searchID, generation: generation) else { return }
         allModels = skuData.orderedSKUs.map { sku in
             let name = skuData.productName(forSKU: sku) ?? sku
             return ProductModel(sku: sku, name: name, isFavorite: favoriteSkus.contains(sku))
@@ -978,12 +980,21 @@ struct SettingsView: View {
     
     func selectDefaultStoreForNewCountry() async {
         let countryCode = preferredCountry
+        let searchID = selectedSearchID
+        let generation = searchLoadGeneration
         let stores = await model.stores(for: countryCode)
-        guard preferredCountry == countryCode else { return }
+        guard preferredCountry == countryCode,
+              selectedSearchID == searchID,
+              searchLoadGeneration == generation else { return }
         guard let defaultStore = stores.first else { return }
         preferredStoreNumber = defaultStore.storeNumber
         selectedStore = preferredStoreNumber
-        await loadStores(for: countryCode, filterText: storeSearchText)
+        await loadStores(
+            for: countryCode,
+            filterText: storeSearchText,
+            searchID: searchID,
+            generation: generation
+        )
     }
 
     // MARK: - Lifecycle helpers used in view modifiers
@@ -1058,12 +1069,15 @@ struct SettingsView: View {
 
         Task {
             defer {
-                if searchLoadGeneration == generation {
+                if selectedSearchID == search.id,
+                   preferredCountry == targetCountry,
+                   searchLoadGeneration == generation {
                     isLoadingSearchConfiguration = false
                 }
             }
 
-            await loadTokens(for: search.family)
+            guard isCurrentCountryChange(searchID: search.id, countryCode: targetCountry, generation: generation) else { return }
+            await loadTokens(for: search.family, searchID: search.id, generation: generation)
             guard isCurrentCountryChange(searchID: search.id, countryCode: targetCountry, generation: generation) else { return }
 
             let token = selectedToken(for: search.family)
@@ -1072,7 +1086,11 @@ struct SettingsView: View {
                   availableTokens(for: search.family).contains(token),
                   let country,
                   hasCatalogSKUs(for: search.family, token: token, country: country) else {
-                await restoreSearchAfterUnsupportedCountryChange(search, generation: generation)
+                await restoreSearchAfterUnsupportedCountryChange(
+                    search,
+                    expectedCountryCode: targetCountry,
+                    generation: generation
+                )
                 return
             }
 
@@ -1082,7 +1100,7 @@ struct SettingsView: View {
             let storeNumber = stores.first?.id ?? ""
             preferredStoreNumber = storeNumber
             selectedStore = storeNumber
-            await loadSkus()
+            await loadSkus(searchID: search.id, generation: generation)
             guard isCurrentCountryChange(searchID: search.id, countryCode: targetCountry, generation: generation) else { return }
 
             model.updateSearchConfiguration(
@@ -1098,21 +1116,37 @@ struct SettingsView: View {
     }
 
     private func isCurrentCountryChange(searchID: UUID, countryCode: String, generation: Int) -> Bool {
-        selectedSearchID == searchID
+        isCurrentSearchLoad(searchID: searchID, generation: generation)
             && preferredCountry == countryCode
-            && searchLoadGeneration == generation
     }
 
-    private func restoreSearchAfterUnsupportedCountryChange(_ search: SearchConfiguration, generation: Int) async {
+    private func isCurrentSearchLoad(searchID: UUID?, generation: Int?) -> Bool {
+        (searchID == nil || selectedSearchID == searchID)
+            && (generation == nil || searchLoadGeneration == generation)
+    }
+
+    private func restoreSearchAfterUnsupportedCountryChange(
+        _ search: SearchConfiguration,
+        expectedCountryCode: String,
+        generation: Int
+    ) async {
+        guard isCurrentCountryChange(
+            searchID: search.id,
+            countryCode: expectedCountryCode,
+            generation: generation
+        ) else { return }
+
         preferredCountry = search.countryCode
         selectedCountryIndex = OrderedCountries.firstIndex(of: search.countryCode) ?? 0
         preferredProductType = search.family.rawValue
         preferredStoreNumber = search.storeNumber
         selectedStore = search.storeNumber
-        await loadTokens(for: search.family)
-        guard selectedSearchID == search.id, searchLoadGeneration == generation else { return }
+        await loadTokens(for: search.family, searchID: search.id, generation: generation)
+        guard selectedSearchID == search.id,
+              preferredCountry == search.countryCode,
+              searchLoadGeneration == generation else { return }
         setDraftToken(search.token, for: search.family)
-        await loadSkus()
+        await loadSkus(searchID: search.id, generation: generation)
         guard selectedSearchID == search.id, searchLoadGeneration == generation else { return }
         await loadStores(
             for: search.countryCode,
@@ -1122,7 +1156,12 @@ struct SettingsView: View {
         )
     }
 
-    private func loadTokens(for family: ProductFamily) async {
+    private func loadTokens(
+        for family: ProductFamily,
+        searchID: UUID? = nil,
+        generation: Int? = nil
+    ) async {
+        guard isCurrentSearchLoad(searchID: searchID, generation: generation) else { return }
         switch family {
         case .watch: await loadWatchTokens()
         case .iphone: await loadPhoneTokens()
@@ -1195,7 +1234,8 @@ struct SettingsView: View {
     }
 
     private func loadSearchConfiguration(id: UUID) async {
-        guard let search = model.searchConfigurations.first(where: { $0.id == id }) else { return }
+        guard selectedSearchID == id,
+              let search = model.searchConfigurations.first(where: { $0.id == id }) else { return }
         searchLoadGeneration += 1
         let generation = searchLoadGeneration
         defer {
@@ -1209,18 +1249,18 @@ struct SettingsView: View {
         selectedStore = search.storeNumber
         preferredProductType = search.family.rawValue
         selectedCountryIndex = OrderedCountries.firstIndex(of: search.countryCode) ?? 0
-        await loadAllTokens()
-        guard selectedSearchID == id else { return }
+        await loadAllTokens(searchID: id, generation: generation)
+        guard isCurrentSearchLoad(searchID: id, generation: generation) else { return }
         setDraftToken(search.token, for: search.family)
-        await loadSkus()
-        guard selectedSearchID == id else { return }
+        await loadSkus(searchID: id, generation: generation)
+        guard isCurrentSearchLoad(searchID: id, generation: generation) else { return }
         await loadStores(
             for: search.countryCode,
             filterText: nil,
             searchID: id,
             generation: generation
         )
-        guard selectedSearchID == id else { return }
+        guard isCurrentSearchLoad(searchID: id, generation: generation) else { return }
         await Task.yield()
     }
 
@@ -1251,13 +1291,20 @@ struct SettingsView: View {
         }
     }
 
-    private func loadAllTokens() async {
+    private func loadAllTokens(searchID: UUID? = nil, generation: Int? = nil) async {
+        guard isCurrentSearchLoad(searchID: searchID, generation: generation) else { return }
         await loadWatchTokens()
+        guard isCurrentSearchLoad(searchID: searchID, generation: generation) else { return }
         await loadPhoneTokens()
+        guard isCurrentSearchLoad(searchID: searchID, generation: generation) else { return }
         await loadMacTokens()
+        guard isCurrentSearchLoad(searchID: searchID, generation: generation) else { return }
         await loadiPadTokens()
+        guard isCurrentSearchLoad(searchID: searchID, generation: generation) else { return }
         await loadAirPodsTokens()
+        guard isCurrentSearchLoad(searchID: searchID, generation: generation) else { return }
         await loadHomePodTokens()
+        guard isCurrentSearchLoad(searchID: searchID, generation: generation) else { return }
         await loadAVPTokens()
     }
 }

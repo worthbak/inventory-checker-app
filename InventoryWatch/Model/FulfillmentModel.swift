@@ -196,7 +196,11 @@ actor FulfillmentModel {
                 throw AppError.couldNotGenerateURL
             }
 
-            let stores = try await fetchInventory(from: apiURL, skuData: groupSKUData)
+            let stores = try await fetchInventory(
+                from: apiURL,
+                skuData: groupSKUData,
+                preferredStoreNumber: firstSearch.storeNumber
+            )
             pickupErrors.append(contentsOf: lastPickupErrorKeys)
             for search in group {
                 let matchingSKUs = Set((await skuData(for: search, country: country))?.orderedSKUs ?? [])
@@ -224,7 +228,11 @@ actor FulfillmentModel {
         return (searchResults, SKUData(orderedSKUs: combinedOrder, lookup: combinedLookup))
     }
 
-    private func fetchInventory(from apiURL: URL, skuData: SKUData) async throws -> [(FulfillmentStore, [PartAvailability])] {
+    private func fetchInventory(
+        from apiURL: URL,
+        skuData: SKUData,
+        preferredStoreNumber: String
+    ) async throws -> [(FulfillmentStore, [PartAvailability])] {
         try pickupCooldown.check()
         let timeSinceLastPickup = Date().timeIntervalSince(lastPickupRequestTime)
         if timeSinceLastPickup < minimumRequestInterval {
@@ -260,7 +268,13 @@ actor FulfillmentModel {
         if let error = errorForStatusCode(status) { throw error }
 
         do {
-            let stores = try parseStoreResponse(data, response: httpResponse, filterForModels: modelParsingFilter, skuData: skuData)
+            let stores = try parseStoreResponse(
+                data,
+                response: httpResponse,
+                filterForModels: modelParsingFilter,
+                skuData: skuData,
+                preferredStoreNumber: preferredStoreNumber
+            )
             pickupCooldown.recordSuccess()
             return stores
         } catch AppError.botDetected {
@@ -386,7 +400,13 @@ actor FulfillmentModel {
         return values.filter { seen.insert($0).inserted }
     }
     
-    private func parseStoreResponse(_ responseData: Data?, response: HTTPURLResponse?, filterForModels: Set<String>?, skuData: SKUData) throws -> [(FulfillmentStore, [PartAvailability])] {
+    private func parseStoreResponse(
+        _ responseData: Data?,
+        response: HTTPURLResponse?,
+        filterForModels: Set<String>?,
+        skuData: SKUData,
+        preferredStoreNumber: String
+    ) throws -> [(FulfillmentStore, [PartAvailability])] {
         guard let responseData = responseData else {
             throw errorForStatusCode(response?.statusCode) ?? AppError.invalidStoreResponse
         }
@@ -480,15 +500,19 @@ actor FulfillmentModel {
             return FulfillmentStore(store: retailStore, partsAvailability: parsedParts)
         }
         
-        return self.parseAvailableModels(from: collectedStores, filterForModels: filterForModels)
+        return self.parseAvailableModels(
+            from: collectedStores,
+            filterForModels: filterForModels,
+            preferredStoreNumber: preferredStoreNumber
+        )
     }
     
-    private func parseAvailableModels(from stores: [FulfillmentStore], filterForModels: Set<String>?) -> [(FulfillmentStore, [PartAvailability])] {
+    private func parseAvailableModels(
+        from stores: [FulfillmentStore],
+        filterForModels: Set<String>?,
+        preferredStoreNumber: String
+    ) -> [(FulfillmentStore, [PartAvailability])] {
         let allAvailableModels: [(FulfillmentStore, [PartAvailability])] = stores
-            .sorted(by: { first, _ in
-                // always put preferred store first
-                return first.storeNumber == defaultsVendor.preferredStoreNumber
-            })
             .compactMap { store in
                 let rv: [PartAvailability] = store.partsAvailability.filter { part in
                     switch part.availability {
@@ -510,7 +534,15 @@ actor FulfillmentModel {
                 }
             }
         
-        return allAvailableModels
+        let prioritizedModels = allAvailableModels.enumerated().sorted { first, second in
+            let firstIsPreferred = first.element.0.storeNumber == preferredStoreNumber
+            let secondIsPreferred = second.element.0.storeNumber == preferredStoreNumber
+            if firstIsPreferred != secondIsPreferred {
+                return firstIsPreferred
+            }
+            return first.offset < second.offset
+        }
+        return prioritizedModels.map(\.element)
     }
     
     private func errorForStatusCode(_ statusCode: Int?) -> AppError? {
