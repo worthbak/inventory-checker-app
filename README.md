@@ -44,9 +44,11 @@ when switching products. Notifications deduplicate availability shared by
 overlapping searches.
 
 Existing single-search preferences and older saved searches migrate
-automatically, retaining their previous country and store. Searches with the
-same country and store share a pickup request; other locations are queried
-separately.
+automatically, retaining their previous country and store. On first launch
+after the bundle identifier change, preferences from the previous app
+identifier are imported without overwriting values already saved by the new
+identifier. Searches with the same country and store share a pickup request;
+other locations are queried separately.
 
 ## Architecture
 
