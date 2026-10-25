@@ -14,6 +14,7 @@ struct ContentView: View {
     @AppStorage("lastUpdateDate") private var lastUpdateDate: String = ""
     @AppStorage("useLargeText") private var useLargeText: Bool = false
     @AppStorage("shouldIncludeNearbyStores") private var shouldIncludeNearbyStores: Bool = true
+    @State private var storesByCountry: [String: [RetailStore]] = [:]
 
     private var onlyShowingPreferredResults: Bool {
         UserDefaults.standard.bool(forKey: "showResultsOnlyForPreferredModels")
@@ -91,7 +92,11 @@ struct ContentView: View {
                                         pickupInfo: pickupInfo,
                                         preferredSkus: displayedPreferredSKUs
                                     )
-                                    Text("\(shouldIncludeNearbyStores ? "Near" : "At") store \(search.storeNumber.isEmpty ? "all stores" : search.storeNumber)")
+                                    Text(Self.storeLocationLabel(
+                                        store: storesByCountry[search.countryCode]?.first { $0.storeNumber == search.storeNumber },
+                                        storeNumber: search.storeNumber,
+                                        includeNearbyStores: shouldIncludeNearbyStores
+                                    ))
                                         .font(.caption)
                                         .foregroundColor(.secondary)
                                 }
@@ -145,6 +150,23 @@ struct ContentView: View {
                 NotificationManager.shared.requestNotificationPermissions()
             }
         }
+        .task(id: Set(model.searchConfigurations.filter { !$0.storeNumber.isEmpty }.map(\.countryCode))) {
+            let countryCodes = Set(model.searchConfigurations.filter { !$0.storeNumber.isEmpty }.map(\.countryCode))
+            for countryCode in countryCodes.sorted() {
+                let stores = await model.stores(for: countryCode)
+                guard !Task.isCancelled else { return }
+                storesByCountry[countryCode] = stores
+            }
+        }
+    }
+
+    static func storeLocationLabel(store: RetailStore?, storeNumber: String, includeNearbyStores: Bool) -> String {
+        guard !storeNumber.isEmpty else { return "No store selected" }
+        let relation = includeNearbyStores ? "Near" : "At"
+        guard let store else { return "\(relation) selected store (\(storeNumber))" }
+        let name = store.name.hasPrefix("Apple ") ? store.name : "Apple \(store.name)"
+        let location = store.address.cityStateDisplay
+        return location.isEmpty ? "\(relation) \(name)" : "\(relation) \(name) — \(location)"
     }
 
     @ViewBuilder
