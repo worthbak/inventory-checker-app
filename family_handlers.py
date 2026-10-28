@@ -1075,6 +1075,9 @@ def _chip_suffix(title: str) -> str:
 class IPadHandler(FamilyHandler):
     """iPad: translate colors/finishes/sizes from bootstrap displayValues, then build names."""
 
+    # The scraper runs post_process_skus again once familyName is set per screen size.
+    names_from_family = True
+
     def enrich_skus(self, skus: dict, payload: dict, region: dict) -> dict:
         """Extract dimensionColor/dimensionFinish/dimensionScreensize translations."""
         if not skus or not payload:

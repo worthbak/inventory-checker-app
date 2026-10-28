@@ -2936,6 +2936,11 @@ class Scraper:
                         if isinstance(v, dict) and (v.get('familyName') or '').strip().lower() in ('', fam_cap.lower()):
                             v['familyName'] = inferred_display
 
+                # Handlers whose names build on each SKU's final familyName (iPad: per screen size,
+                # set above) run their name pass once more.
+                if skus and getattr(h, 'names_from_family', False):
+                    skus = h.post_process_skus(skus, payload, token, inferred_display, self._family_config(family))
+
                 # Final cleanup pass: sanitize familyName, name, capacity, colorDisplay before writing
                 fam_disp = self._family_config(family).get('display_name', family.title()) if family else ''
                 for k, v in (skus or {}).items():
