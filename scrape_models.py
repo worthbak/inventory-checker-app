@@ -19,7 +19,7 @@ from typing import Dict, List, Tuple, Optional
 
 import requests
 
-from family_handlers import get_handler, sanitize_text
+from family_handlers import clean_capacity, get_handler, sanitize_text
 
 DEFAULT_CONFIG_PATH = "scraper_config.json"
 
@@ -39,6 +39,49 @@ DEFAULT_UA = {
     'Connection': 'keep-alive',
     'Upgrade-Insecure-Requests': '1'
 }
+
+
+def js_object_to_json(text: str) -> str:
+    """Quote a JS object literal's bare keys and drop trailing commas, outside strings only.
+
+    A regex over the whole text also rewrote product copy: Sweden's iPad pages say
+    "..., reparerbarhet: klass C", which became '..., "reparerbarhet": ...' and broke the parse.
+    """
+    out = []
+    i, n = 0, len(text)
+    last = ''  # last non-space character emitted outside a string
+    while i < n:
+        ch = text[i]
+        if ch == '"':
+            j = i + 1
+            while j < n and text[j] != '"':
+                j += 2 if text[j] == '\\' else 1
+            out.append(text[i:j + 1])
+            i, last = j + 1, '"'
+            continue
+        if ch in '{,' or ch.isspace():
+            out.append(ch)
+            if not ch.isspace():
+                last = ch
+            i += 1
+            continue
+        if last in '{,':
+            m = re.match(r'([A-Za-z_$][\w$]*)\s*:', text[i:])
+            if m:
+                out.append(f'"{m.group(1)}":')
+                i += m.end()
+                last = ':'
+                continue
+        if ch in '}]' and last == ',':
+            # Trailing comma: drop it (and keep the whitespace after it).
+            k = len(out) - 1
+            while out[k].isspace():
+                k -= 1
+            out.pop(k)
+        out.append(ch)
+        last = ch
+        i += 1
+    return ''.join(out)
 
 
 def _leaked_title(family: str) -> bool:
@@ -309,15 +352,7 @@ class Scraper:
                         bootstrap = json.loads(raw)
                     except Exception:
                         # Convert JavaScript object notation to JSON
-                        js_to_json = raw
-                        # Add quotes around unquoted keys
-                        js_to_json = re.sub(r'([{,]\s*)([a-zA-Z_$][a-zA-Z0-9_$]*)\s*:', r'\1"\2":', js_to_json)
-                        # Fix boolean values
-                        js_to_json = re.sub(r'\bfalse\b', 'false', js_to_json)
-                        js_to_json = re.sub(r'\btrue\b', 'true', js_to_json)
-                        js_to_json = re.sub(r'\bnull\b', 'null', js_to_json)
-                        # Remove trailing commas
-                        js_to_json = re.sub(r',\s*([}\]])', r'\1', js_to_json)
+                        js_to_json = js_object_to_json(raw)
                         try:
                             bootstrap = json.loads(js_to_json)
                         except Exception:
@@ -1589,15 +1624,7 @@ class Scraper:
                         bootstrap = json.loads(raw2)
                     except Exception:
                         # Convert JavaScript object notation to JSON
-                        js_to_json = raw2
-                        # Add quotes around unquoted keys
-                        js_to_json = re.sub(r'([{,]\s*)([a-zA-Z_$][a-zA-Z0-9_$]*)\s*:', r'\1"\2":', js_to_json)
-                        # Fix boolean values
-                        js_to_json = re.sub(r'\bfalse\b', 'false', js_to_json)
-                        js_to_json = re.sub(r'\btrue\b', 'true', js_to_json)
-                        js_to_json = re.sub(r'\bnull\b', 'null', js_to_json)
-                        # Remove trailing commas
-                        js_to_json = re.sub(r',\s*([}\]])', r'\1', js_to_json)
+                        js_to_json = js_object_to_json(raw2)
                         try:
                             bootstrap = json.loads(js_to_json)
                         except Exception:
@@ -2203,7 +2230,13 @@ class Scraper:
                     continue
                 # AppleCare+ plans the page offers alongside the product (Brazil's Mac pages list them with
                 # full part numbers like "MN863BR/A") are not products to track.
-                for plan_pn in self._applecare_plan_parts(plan_html):
+                # A part the page also lists as a product is a product, whatever planDetails says.
+                page_products = {
+                    p.get('partNumber') for p in
+                    (((payload or {}).get('bootstrap') or {}).get('productSelectionData') or {}).get('products') or []
+                    if isinstance(p, dict)
+                }
+                for plan_pn in self._applecare_plan_parts(plan_html) - page_products:
                     if skus and skus.pop(plan_pn, None) is not None:
                         print(f"[debug] {r['code']}/{family}:{token} -> dropped AppleCare plan {plan_pn}")
                 # Handler: pre-pruning enrichment
@@ -2950,13 +2983,8 @@ class Scraper:
                         if (v.get('name') or '').strip():
                             v['name'] = self._clean_product_name(v['name'])
                         if (v.get('capacity') or '').strip():
-                            cap = v['capacity']
-                            cap = sanitize_text(cap)
-                            cap = re.sub(r'\s+(?:Speicher|storage|Stockage|Memoria|Armazenamento|Lagring|Tallennustila|저장\s*용량|ストレージ|存储容量|儲存容量)\s*$', '', cap, flags=re.IGNORECASE)
-                            cap = cap.strip()
-                            # Normalize: "256 GB" -> "256GB", "1 TB" -> "1TB"
-                            cap = re.sub(r'\s+(GB|TB)', r'\1', cap, flags=re.IGNORECASE)
-                            v['capacity'] = cap
+                            # "256GB" from "256 GB", "256GB opslag", "พื้นที่จัดเก็บข้อมูล 256GB", ...
+                            v['capacity'] = clean_capacity(v['capacity'])
                         if (v.get('colorDisplay') or '').strip():
                             cd = v['colorDisplay']
                             cd = sanitize_text(cd)

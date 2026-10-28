@@ -12,19 +12,40 @@ from typing import Any, Dict, List, Set, Tuple
 
 
 def sanitize_text(text: str) -> str:
-    """Clean scraped text: U+00A0 and &nbsp; become spaces and other entities are deleted (numeric ones
-    too); a stray "n" right after a GB/TB size is removed ("128GBn" / "128 GBn", an escaped newline on the
-    Oct 2026 iPad pages); complete tags are removed and tags cut off mid-way ("<div class=") become a
-    space. Runs of spaces and tabs collapse and the ends are trimmed; line breaks inside are kept."""
+    """Clean scraped text: U+00A0 and &nbsp; become spaces, other entities are deleted (numeric ones
+    too), and soft hyphens and direction marks are dropped. A stray "n" right after a size is removed
+    ("128GBn", "128 Gon", "256 Gtn": an escaped newline on the Oct 2026 iPad pages). Complete tags are
+    removed and tags cut off mid-way ("<div class=") become a space. Runs of spaces and tabs collapse
+    and the ends are trimmed; line breaks inside are kept."""
     if not text:
         return text
     text = text.replace('\xa0', ' ')
+    text = re.sub(r'[\xad\u200e\u200f]', '', text)
     text = re.sub(r'&nbsp;', ' ', text)
     text = re.sub(r'&[a-zA-Z0-9#]+;', '', text)
-    text = re.sub(r'(\d\s?(?:GB|TB))\\?n(?![A-Za-z])', r'\1', text)
+    text = re.sub(r'(\d\s?(?:GB|TB|Go|To|Gt|Tt))\\n', r'\1 ', text)
+    text = re.sub(r'(\d\s?(?:GB|TB|Go|To|Gt|Tt))n(?![A-Za-z])', r'\1', text)
     text = re.sub(r'<[^>]+>', '', text)
-    text = re.sub(r'</?[a-zA-Z][^\s>]*(?:\s+[\w-]+(?:=["\']?)?)?', ' ', text)
+    # Lowercase tag names only, so text like "<M5 Pro" is left alone.
+    text = re.sub(r'</?[a-z][a-z0-9]*(?:\s+[\w-]+(?:=["\']?)?)?', ' ', text)
     return re.sub(r'[ \t]+', ' ', text).strip()
+
+
+_CAPACITY = re.compile(r'(\d+(?:[.,]\d+)?)\s?(GB|TB|Go|To|Gt|Tt)(?![A-Za-z])')
+
+
+def clean_capacity(cap: str) -> str:
+    """Just the size from a scraped capacity: "256GB", "1TB", or "256 Go" / "1 Tt" in French and Finnish.
+
+    Apple's pages wrap it in a word for storage, in front or behind ("256GB opslag", "1 TB lagring",
+    "256GBストレージ", "พื้นที่จัดเก็บข้อมูล 256GB", "256 Go de"). Text with no size is returned cleaned.
+    """
+    cap = sanitize_text(cap or '')
+    m = _CAPACITY.search(cap)
+    if not m:
+        return cap
+    num, unit = m.groups()
+    return f'{num}{unit}' if unit in ('GB', 'TB') else f'{num} {unit}'
 
 
 # ---------------------------------------------------------------------------
@@ -535,10 +556,11 @@ class MacHandler(FamilyHandler):
             # Storage capacity — sanitize HTML entities and trailing text before matching
             cap = displays.get('storage-dimensionCapacity')
             if cap and not (sku_data.get('capacity') or '').strip():
-                cap = sanitize_text(cap)
-                m_cap = re.match(r'(\d+)\s*(GB|TB)', cap, re.IGNORECASE)
-                if m_cap:
-                    sku_data['capacity'] = m_cap.group(1) + m_cap.group(2).upper()
+                # clean_capacity also reads French "256 Go" and Finnish "256 Gt" (the GB/TB-only
+                # match left MacBook Neo without a capacity in fr, be-fr, ch-fr and fi).
+                cap = clean_capacity(cap)
+                if _CAPACITY.fullmatch(cap):
+                    sku_data['capacity'] = cap
                     changed = True
 
             if md:
@@ -909,7 +931,7 @@ class AirPodsHandler(FamilyHandler):
             if not dims:
                 # Try base-part match
                 for pn, dims2 in pn_to_dim.items():
-                    if sku.startswith(pn[:4]):
+                    if sku[:5] == pn[:5]:
                         dims = dims2
                         break
             if not dims:
@@ -1140,7 +1162,7 @@ class IPadHandler(FamilyHandler):
             pd = pn_to_dims.get(sku)
             if not pd:
                 for pn, dims2 in pn_to_dims.items():
-                    if sku.startswith(pn[:4]):
+                    if sku[:5] == pn[:5]:
                         pd = dims2
                         break
             if not pd:
@@ -1198,15 +1220,15 @@ class IPadHandler(FamilyHandler):
         # Extract SKU-to-connectivity mapping from page HTML
         html = payload.get('html', '') if isinstance(payload, dict) else ''
         pn_to_conn: Dict[str, str] = {}
+        # Each product object lists its partNumber first and its dimensions last, so read
+        # dimensionConnection within the same object. (A scan forward from dimensionConnection
+        # found the next product's part number: on Sweden's page 8 iPads got the wrong one.)
+        # The bootstrap products below, when parsed, override this.
         if html:
-            for m in re.finditer(r'\"dimensionConnection\"\s*:\s*\"(wifi|wificell)\"', html, re.IGNORECASE):
-                # Look for SKU nearby (within 600 chars after)
-                window = html[m.end():m.end() + 600]
-                for sku_m in re.finditer(r'"(M[A-Z0-9]{3,7})(?:[A-Z]{1,3}/[A-Z])?"', window):
-                    conn = 'Cellular' if m.group(1).lower() == 'wificell' else 'Wi-Fi'
-                    pn_to_conn[sku_m.group(1)] = conn
-        # Fallback: extract connectivity from bootstrap product data for SKUs
-        # missed by the HTML proximity scan
+            for m in re.finditer(r'"partNumber"\s*:\s*"(M[A-Z0-9]{4})[A-Z0-9]*/[A-Z]"[^{}]*?"dimensionConnection"\s*:\s*"(wifi|wificell)"',
+                                 html, re.IGNORECASE):
+                pn_to_conn[m.group(1)] = 'Cellular' if m.group(2).lower() == 'wificell' else 'Wi-Fi'
+        # Connectivity from the bootstrap product data (authoritative)
         bs = (payload.get('bootstrap') or {}) if isinstance(payload, dict) else {}
         if isinstance(bs, dict):
             psd = bs.get('productSelectionData') or {}
@@ -1217,16 +1239,12 @@ class IPadHandler(FamilyHandler):
                 if not dc:
                     continue
                 pn = p.get('partNumber') or p.get('btrOrFdPartNumber') or ''
-                bp = p.get('basePartNumber') or (pn[:6] if len(pn) >= 6 else '')
+                bp = p.get('basePartNumber') or pn[:5]
                 conn_label = 'Cellular' if str(dc).lower() == 'wificell' else 'Wi-Fi'
+                # Exact part and base code only: shorter prefixes are shared by other products.
                 for key in (pn, bp):
                     if key:
                         pn_to_conn[key] = conn_label
-                # Also index prefix variants so k[:N] lookups always hit
-                for key in (pn, bp):
-                    if key:
-                        for plen in range(4, min(len(key) + 1, 8)):
-                            pn_to_conn[key[:plen]] = conn_label
         for k, v in skus.items():
             if not isinstance(v, dict):
                 continue
@@ -1234,12 +1252,7 @@ class IPadHandler(FamilyHandler):
             size_raw = (v.get('dimensionScreensize') or '').strip()
             cap = (v.get('capacity') or '').strip()
             color = (v.get('colorDisplay') or '').strip()
-            conn = pn_to_conn.get(k[:6], '')
-            if not conn:
-                for plen in (5, 4):
-                    conn = pn_to_conn.get(k[:plen], '')
-                    if conn:
-                        break
+            conn = pn_to_conn.get(k) or pn_to_conn.get(k[:5], '')
             md = v.get('metadata') if isinstance(v.get('metadata'), dict) else {}
             finish = md.get('displayFinish', '')
             has_dims = bool(size_raw or cap or color or finish)
@@ -1250,10 +1263,7 @@ class IPadHandler(FamilyHandler):
                     m_sz = re.match(r'^(\d+)inch$', size_raw, re.IGNORECASE)
                     if m_sz:
                         size_label = f'{m_sz.group(1)}-inch '
-                cap = re.sub(r'\s+(GB|TB)', r'\1', cap, flags=re.IGNORECASE)
-                cap = re.sub(r'\s+(?:Speicher|storage|Stockage|Memoria)', '', cap, flags=re.IGNORECASE).strip()
-                cap = re.sub(r'&nbsp;', ' ', cap)
-                cap = re.sub(r'<[^>]+>', '', cap).strip()
+                cap = clean_capacity(cap)
                 # Each SKU's own familyName ("13-inch iPad Pro", "iPad Pro รุ่น 13 นิ้ว"): the page
                 # title in `display` is the first product's, so on two-size pages it named every
                 # 13-inch SKU "13-inch iPad Pro 11-inch (M5)". The chip ("(M5)") still comes from it.
@@ -1261,6 +1271,10 @@ class IPadHandler(FamilyHandler):
                 if fam:
                     chip = _chip_suffix(display_clean)
                     base = f'{fam}{chip}' if chip and not _chip_suffix(fam) else fam
+                    # A familyName without the size (no per-size name found for this page) still
+                    # needs it, or both sizes get the same name.
+                    if size_label and not re.search(rf'(?<!\d){size_label.split("-")[0]}(?!\d)', fam):
+                        base = size_label + base
                 else:
                     base = size_label + display_clean if size_label else display_clean
                 parts = [base]
