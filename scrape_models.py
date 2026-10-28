@@ -2231,9 +2231,10 @@ class Scraper:
                 # AppleCare+ plans the page offers alongside the product (Brazil's Mac pages list them with
                 # full part numbers like "MN863BR/A") are not products to track.
                 # A part the page also lists as a product is a product, whatever planDetails says.
+                psd = ((payload or {}).get('bootstrap') or {}) if isinstance(payload, dict) else {}
+                psd = psd.get('productSelectionData') if isinstance(psd, dict) else None
                 page_products = {
-                    p.get('partNumber') for p in
-                    (((payload or {}).get('bootstrap') or {}).get('productSelectionData') or {}).get('products') or []
+                    p.get('partNumber') for p in ((psd.get('products') or []) if isinstance(psd, dict) else [])
                     if isinstance(p, dict)
                 }
                 for plan_pn in self._applecare_plan_parts(plan_html) - page_products:

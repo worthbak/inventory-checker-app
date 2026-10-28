@@ -31,7 +31,7 @@ def sanitize_text(text: str) -> str:
     return re.sub(r'[ \t]+', ' ', text).strip()
 
 
-_CAPACITY = re.compile(r'(\d+(?:[.,]\d+)?)\s?(GB|TB|Go|To|Gt|Tt)(?![A-Za-z])')
+_CAPACITY = re.compile(r'(\d+(?:[.,]\d+)?)\s?(GB|TB|Go|To|Gt|Tt)(?![A-Za-z])', re.IGNORECASE)
 
 
 def clean_capacity(cap: str) -> str:
@@ -44,8 +44,8 @@ def clean_capacity(cap: str) -> str:
     m = _CAPACITY.search(cap)
     if not m:
         return cap
-    num, unit = m.groups()
-    return f'{num}{unit}' if unit in ('GB', 'TB') else f'{num} {unit}'
+    num, unit = m.group(1), m.group(2)[0].upper() + m.group(2)[1].lower()
+    return f'{num}{unit.upper()}' if unit in ('Gb', 'Tb') else f'{num} {unit}'
 
 
 # ---------------------------------------------------------------------------
@@ -1225,7 +1225,8 @@ class IPadHandler(FamilyHandler):
         # found the next product's part number: on Sweden's page 8 iPads got the wrong one.)
         # The bootstrap products below, when parsed, override this.
         if html:
-            for m in re.finditer(r'"partNumber"\s*:\s*"(M[A-Z0-9]{4})[A-Z0-9]*/[A-Z]"[^{}]*?"dimensionConnection"\s*:\s*"(wifi|wificell)"',
+            # One level of nesting allowed: US carrier models carry "footNotes":{"carrierModel":...}.
+            for m in re.finditer(r'"partNumber"\s*:\s*"(M[A-Z0-9]{4})[A-Z0-9]*/[A-Z]"(?:[^{}]|\{[^{}]*\})*?"dimensionConnection"\s*:\s*"(wifi|wificell)"',
                                  html, re.IGNORECASE):
                 pn_to_conn[m.group(1)] = 'Cellular' if m.group(2).lower() == 'wificell' else 'Wi-Fi'
         # Connectivity from the bootstrap product data (authoritative)
