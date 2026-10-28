@@ -6,6 +6,7 @@
 
 - Sparkle update dialogs show release notes from the changelog. Release packaging embeds the matching version's notes, or the Unreleased section for a new version.
 - GitHub releases include the same changelog section ahead of automatically generated notes.
+- MacBook Pro with PROLED XDR Display (M5 Pro and M5 Max, 14- and 16-inch), launched October 28, 2026, in every supported region.
 
 ### Changed
 
