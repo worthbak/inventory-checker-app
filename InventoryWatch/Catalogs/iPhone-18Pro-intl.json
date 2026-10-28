@@ -1,7 +1,7 @@
 {
   "_meta": {
     "family": "iphone",
-    "generated_at": "2026-10-16T13:57:49.015241+00:00",
+    "generated_at": "2026-10-28T08:51:15.843202+00:00",
     "regions_scraped": 33,
     "scraper_version": "1.0",
     "token": "iphone-18-pro"
@@ -1810,7 +1810,7 @@
             "partNumber": "MJRX4ZD/A"
           },
           "MJRY4ZD/A": {
-            "capacity": "1To",
+            "capacity": "1 To",
             "colorDisplay": "Noir",
             "colorKey": "black",
             "dimensionScreensize": "6_3inch",
@@ -1824,7 +1824,7 @@
             "partNumber": "MJRY4ZD/A"
           },
           "MJT04ZD/A": {
-            "capacity": "1To",
+            "capacity": "1 To",
             "colorDisplay": "Argent",
             "colorKey": "silver",
             "dimensionScreensize": "6_3inch",
@@ -1838,7 +1838,7 @@
             "partNumber": "MJT04ZD/A"
           },
           "MJT14ZD/A": {
-            "capacity": "1To",
+            "capacity": "1 To",
             "colorDisplay": "Bordeaux",
             "colorKey": "burgundy",
             "dimensionScreensize": "6_3inch",
@@ -1852,7 +1852,7 @@
             "partNumber": "MJT14ZD/A"
           },
           "MJT24ZD/A": {
-            "capacity": "1To",
+            "capacity": "1 To",
             "colorDisplay": "Glacier",
             "colorKey": "glacier",
             "dimensionScreensize": "6_3inch",
@@ -1866,7 +1866,7 @@
             "partNumber": "MJT24ZD/A"
           },
           "MJT34ZD/A": {
-            "capacity": "2To",
+            "capacity": "2 To",
             "colorDisplay": "Noir",
             "colorKey": "black",
             "dimensionScreensize": "6_3inch",
@@ -1880,7 +1880,7 @@
             "partNumber": "MJT34ZD/A"
           },
           "MJT44ZD/A": {
-            "capacity": "2To",
+            "capacity": "2 To",
             "colorDisplay": "Argent",
             "colorKey": "silver",
             "dimensionScreensize": "6_3inch",
@@ -1894,7 +1894,7 @@
             "partNumber": "MJT44ZD/A"
           },
           "MJT54ZD/A": {
-            "capacity": "2To",
+            "capacity": "2 To",
             "colorDisplay": "Bordeaux",
             "colorKey": "burgundy",
             "dimensionScreensize": "6_3inch",
@@ -1908,7 +1908,7 @@
             "partNumber": "MJT54ZD/A"
           },
           "MJT64ZD/A": {
-            "capacity": "2To",
+            "capacity": "2 To",
             "colorDisplay": "Glacier",
             "colorKey": "glacier",
             "dimensionScreensize": "6_3inch",
@@ -2034,7 +2034,7 @@
             "partNumber": "MJXW4ZD/A"
           },
           "MJXX4ZD/A": {
-            "capacity": "1To",
+            "capacity": "1 To",
             "colorDisplay": "Noir",
             "colorKey": "black",
             "dimensionScreensize": "6_9inch",
@@ -2048,7 +2048,7 @@
             "partNumber": "MJXX4ZD/A"
           },
           "MJXY4ZD/A": {
-            "capacity": "1To",
+            "capacity": "1 To",
             "colorDisplay": "Argent",
             "colorKey": "silver",
             "dimensionScreensize": "6_9inch",
@@ -2062,7 +2062,7 @@
             "partNumber": "MJXY4ZD/A"
           },
           "MJY04ZD/A": {
-            "capacity": "1To",
+            "capacity": "1 To",
             "colorDisplay": "Bordeaux",
             "colorKey": "burgundy",
             "dimensionScreensize": "6_9inch",
@@ -2076,7 +2076,7 @@
             "partNumber": "MJY04ZD/A"
           },
           "MJY14ZD/A": {
-            "capacity": "1To",
+            "capacity": "1 To",
             "colorDisplay": "Glacier",
             "colorKey": "glacier",
             "dimensionScreensize": "6_9inch",
@@ -2090,7 +2090,7 @@
             "partNumber": "MJY14ZD/A"
           },
           "MJY24ZD/A": {
-            "capacity": "2To",
+            "capacity": "2 To",
             "colorDisplay": "Noir",
             "colorKey": "black",
             "dimensionScreensize": "6_9inch",
@@ -2104,7 +2104,7 @@
             "partNumber": "MJY24ZD/A"
           },
           "MJY34ZD/A": {
-            "capacity": "2To",
+            "capacity": "2 To",
             "colorDisplay": "Argent",
             "colorKey": "silver",
             "dimensionScreensize": "6_9inch",
@@ -2118,7 +2118,7 @@
             "partNumber": "MJY34ZD/A"
           },
           "MJY44ZD/A": {
-            "capacity": "2To",
+            "capacity": "2 To",
             "colorDisplay": "Bordeaux",
             "colorKey": "burgundy",
             "dimensionScreensize": "6_9inch",
@@ -2132,7 +2132,7 @@
             "partNumber": "MJY44ZD/A"
           },
           "MJY54ZD/A": {
-            "capacity": "2To",
+            "capacity": "2 To",
             "colorDisplay": "Glacier",
             "colorKey": "glacier",
             "dimensionScreensize": "6_9inch",

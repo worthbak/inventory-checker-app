@@ -6,6 +6,28 @@
 
 - Sparkle update dialogs show release notes from the changelog. Release packaging embeds the matching version's notes, or the Unreleased section for a new version.
 - GitHub releases include the same changelog section ahead of automatically generated notes.
+- MacBook Pro with PROLED XDR Display (M5 Pro and M5 Max, 14- and 16-inch), launched October 28, 2026, in every supported region.
+
+### Changed
+
+- Refreshed every product catalog, including iPad mini (A20 Pro), the M6 MacBook Pro configurations and the M6 iMac.
+- MacBook Pro no longer lists the 16-inch M5 Max 40-core GPU standard configurations (`MGE94`, `MGEE4`), which Apple stopped stocking on October 28, 2026. That spec is still sold as a custom configuration, which can't be tracked, and stocked as the MacBook Pro with PROLED XDR Display.
+
+### Fixed
+
+- Catalog scraper accuracy (Oct 2026 catalog refresh):
+  - Preconfigured Macs take their screen size and display finish from their own product entry where the page provides one, and the fallback search around the part number no longer reads the previous product. It had labelled 16-inch MacBook Pros as 14-inch and added nano-texture to configurations without it. Where a page gives only core counts, names include the plain chip from the container code ("M6" on iMac, "M5" on MacBook Air).
+  - Capacities and names no longer keep cut-off page markup such as `128GBn<div class=` or `128 GBn` (iPad pages).
+  - China names no longer start with another page's US title ("HomePod - Midnight 午夜色", "iPad Wi‑Fi 128GB - Blue …", or an AppleCare+ heading as an Apple Watch family name). They use the region's own family name for that screen size or, when every name in the region is affected, the one most countries use. Names that can't be repaired are reported.
+  - AppleCare+ plans a buy page offers (`planDetails`, such as Brazil's Mac plans `MN863BR/A`) are no longer listed as products for regions fetched in the run.
+  - A catalog whose generated file name differs only in case from an existing one (`Mac-iMac` and `Mac-Imac`) reuses the existing file, so case-sensitive file systems don't get a second copy next to the bundled one.
+  - 13-inch iPad Pro and iPad Air names no longer carry the 11-inch model's title ("13-inch iPad Pro 11-inch (M5)"). iPad names use each configuration's own family name, with the chip from the page title.
+  - The product-selection data is parsed even when product copy contains ", word:" (Sweden's ", reparerbarhet:" had broken it), so Swedish iPads get their glass type and screen size again.
+  - iPad Wi-Fi/Cellular comes from each product's own entry. A scan forward from `dimensionConnection` had read the next product's part number and named 8 Swedish iPads with the wrong connectivity.
+  - Capacities are just the size in every language: "256GB" instead of "256GB opslag", "พื้นที่จัดเก็บข้อมูล 256GB" or "256GBストレージ", and "256 Go" instead of "256 Go de" or "256 Gon". Macs read French "Go" and Finnish "Gt", so MacBook Neo has a capacity there.
+  - The product name search skips EU energy labels, whose titles are a PDF's ("Produktinformationsblad PDF, iPad"); iPad names now include the chip in every country.
+  - Soft hyphens and direction marks are removed from names and colors.
+  - `validate_catalogs.py` also fails on scrape junk in SKU text: page markup, a capacity that is more than a size, a stray "n" after a size, another page's or a PDF's title in a name, an iPad named with the other screen size, two parts in one region with the same name, and an iPad's Wi-Fi/Cellular disagreeing with the US name for the same configuration.
 
 ## 3.0.0-RC.3
 

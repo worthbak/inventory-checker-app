@@ -1,7 +1,7 @@
 {
   "_meta": {
     "family": "watch",
-    "generated_at": "2026-10-16T12:23:18.042664+00:00",
+    "generated_at": "2026-10-28T08:30:04.880641+00:00",
     "regions_scraped": 33,
     "scraper_version": "1.0",
     "token": "apple-watch-se"
@@ -2297,7 +2297,7 @@
         "skus": {
           "MEHV4QN/A": {
             "capacity": "",
-            "colorDisplay": "Tähti­valkea",
+            "colorDisplay": "Tähtivalkea",
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "watch",
@@ -2310,7 +2310,7 @@
               "isRealPartNumber": true,
               "sourcePage": "watch"
             },
-            "name": "Apple Watch SE 3 40mm gps aluminum Tähti­valkea",
+            "name": "Apple Watch SE 3 40mm gps aluminum Tähtivalkea",
             "partNumber": "MEHV4QN/A"
           },
           "MEHX4QN/A": {
@@ -2333,7 +2333,7 @@
           },
           "MEP04QN/A": {
             "capacity": "",
-            "colorDisplay": "Tähti­valkea",
+            "colorDisplay": "Tähtivalkea",
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "watch",
@@ -2346,7 +2346,7 @@
               "isRealPartNumber": true,
               "sourcePage": "watch"
             },
-            "name": "Apple Watch SE 3 44mm gps aluminum Tähti­valkea",
+            "name": "Apple Watch SE 3 44mm gps aluminum Tähtivalkea",
             "partNumber": "MEP04QN/A"
           },
           "MEP34QN/A": {
@@ -2369,7 +2369,7 @@
           },
           "MEQ14QN/A": {
             "capacity": "",
-            "colorDisplay": "Tähti­valkea",
+            "colorDisplay": "Tähtivalkea",
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "watch",
@@ -2382,7 +2382,7 @@
               "isRealPartNumber": true,
               "sourcePage": "watch"
             },
-            "name": "Apple Watch SE 3 40mm gpscell aluminum Tähti­valkea",
+            "name": "Apple Watch SE 3 40mm gpscell aluminum Tähtivalkea",
             "partNumber": "MEQ14QN/A"
           },
           "MEQ24QN/A": {
@@ -2405,7 +2405,7 @@
           },
           "MEQ34QN/A": {
             "capacity": "",
-            "colorDisplay": "Tähti­valkea",
+            "colorDisplay": "Tähtivalkea",
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "watch",
@@ -2418,7 +2418,7 @@
               "isRealPartNumber": true,
               "sourcePage": "watch"
             },
-            "name": "Apple Watch SE 3 44mm gpscell aluminum Tähti­valkea",
+            "name": "Apple Watch SE 3 44mm gpscell aluminum Tähtivalkea",
             "partNumber": "MEQ34QN/A"
           },
           "MEQ44QN/A": {
