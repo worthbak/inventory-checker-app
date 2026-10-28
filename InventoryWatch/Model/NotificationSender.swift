@@ -11,39 +11,16 @@ struct NotificationSender {
     
     private let defaultsVendor = DefaultsVendor()
     
-    func sendNotificationIfNeeded(availableParts: [(FulfillmentStore, [PartAvailability])], skuData: SKUData, searches: [SearchConfiguration]) async {
-        var hasPreferredModel = false
-        let preferredModels = defaultsVendor.preferredSKUs
-        for model in availableParts {
-            for submodel in model.1 {
-                if hasPreferredModel == false && preferredModels.contains(submodel.partNumber) {
-                    hasPreferredModel = true
-                    break
-                }
-                
-                if hasPreferredModel == false, let customSku = defaultsVendor.customSkuData?.sku, submodel.partNumber == customSku {
-                    hasPreferredModel = true
-                    break
-                }
-            }
-        }
-        
-        if defaultsVendor.notifyOnlyForPreferredModels && !hasPreferredModel {
-            return
-        }
-        
-        let message = self.generateNotificationText(from: availableParts, skuData: skuData, preferredModels: preferredModels, searches: searches)
+    func sendNotificationIfNeeded(availableParts: [(FulfillmentStore, [PartAvailability])], hasPreferredModel: Bool, skuData: SKUData, searches: [SearchConfiguration]) async {
+        let message = self.generateNotificationText(from: availableParts, skuData: skuData, searches: searches)
         let title = await generateNotificationTitle(hasPreferredModel: hasPreferredModel, availableParts: availableParts, skuData: skuData, searches: searches)
         await NotificationManager.shared.sendNotification(title: title, body: message)
     }
     
-    private func generateNotificationText(from data: [(FulfillmentStore, [PartAvailability])], skuData: SKUData, preferredModels: Set<String>, searches: [SearchConfiguration]) -> String {
+    private func generateNotificationText(from data: [(FulfillmentStore, [PartAvailability])], skuData: SKUData, searches: [SearchConfiguration]) -> String {
         guard data.isEmpty == false else {
             return "No inventory currently available at nearby stores"
         }
-        
-        let customSkuData = defaultsVendor.customSkuData
-        let filterForPreferredModels = defaultsVendor.notifyOnlyForPreferredModels
         
         var collector: [PartAvailability: Int] = [:]
         var storeNames: Set<String> = []
@@ -51,13 +28,7 @@ struct NotificationSender {
         for (store, parts) in data {
             storeNames.insert(store.storeName)
             for part in parts {
-                let shouldInclude = part.partNumber == customSkuData?.sku || 
-                                 (filterForPreferredModels && preferredModels.contains(part.partNumber)) ||
-                                 !filterForPreferredModels
-                
-                if shouldInclude {
-                    collector[part, default: 0] += 1
-                }
+                collector[part, default: 0] += 1
             }
         }
         

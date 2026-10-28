@@ -87,19 +87,48 @@ struct SearchConfiguration: Codable, Hashable, Identifiable {
     var token: String
     var countryCode: String
     var storeNumber: String
+    var customSku: String
+    var customSkuNickname: String
+    var preferredSKUs: Set<String>
+    var showOnlyPreferredModels: Bool
+    var notifyOnlyForPreferredModels: Bool
+    var includeNearbyStores: Bool
+
+    /// Preferred SKUs that belong to this search's catalog; empty means no preference applies.
+    func effectivePreferredSKUs(in catalog: some Collection<String>) -> Set<String> {
+        preferredSKUs.intersection(catalog)
+    }
+
+    var customSkuData: (sku: String, nickname: String)? {
+        let sku = customSku.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard sku.isEmpty == false else { return nil }
+        return (sku, customSkuNickname.isEmpty ? sku : customSkuNickname)
+    }
 
     init(
         id: UUID = UUID(),
         family: ProductFamily,
         token: String,
         countryCode: String = "US",
-        storeNumber: String = ""
+        storeNumber: String = "",
+        customSku: String = "",
+        customSkuNickname: String = "",
+        preferredSKUs: Set<String> = [],
+        showOnlyPreferredModels: Bool = false,
+        notifyOnlyForPreferredModels: Bool = false,
+        includeNearbyStores: Bool = true
     ) {
         self.id = id
         self.family = family
         self.token = token
         self.countryCode = countryCode
         self.storeNumber = storeNumber
+        self.customSku = customSku
+        self.customSkuNickname = customSkuNickname
+        self.preferredSKUs = preferredSKUs
+        self.showOnlyPreferredModels = showOnlyPreferredModels
+        self.notifyOnlyForPreferredModels = notifyOnlyForPreferredModels
+        self.includeNearbyStores = includeNearbyStores
     }
 
     init(from decoder: Decoder) throws {
@@ -111,11 +140,29 @@ struct SearchConfiguration: Codable, Hashable, Identifiable {
             ?? (UserDefaults.standard.string(forKey: "preferredCountry") ?? "US")
         storeNumber = try container.decodeIfPresent(String.self, forKey: .storeNumber)
             ?? UserDefaults.standard.preferredStoreNumber
+        // Searches saved before custom SKUs became per-search inherit the old global value.
+        customSku = try container.decodeIfPresent(String.self, forKey: .customSku)
+            ?? (UserDefaults.standard.string(forKey: "customSku") ?? "")
+        customSkuNickname = try container.decodeIfPresent(String.self, forKey: .customSkuNickname)
+            ?? (UserDefaults.standard.string(forKey: "customSkuNickname") ?? "")
+        let defaults = UserDefaults.standard
+        preferredSKUs = try container.decodeIfPresent(Set<String>.self, forKey: .preferredSKUs)
+            ?? defaults.preferredSKUsFromLegacyPreferences
+        showOnlyPreferredModels = try container.decodeIfPresent(Bool.self, forKey: .showOnlyPreferredModels)
+            ?? defaults.bool(forKey: "showResultsOnlyForPreferredModels")
+        notifyOnlyForPreferredModels = try container.decodeIfPresent(Bool.self, forKey: .notifyOnlyForPreferredModels)
+            ?? defaults.bool(forKey: "notifyOnlyForPreferredModels")
+        includeNearbyStores = try container.decodeIfPresent(Bool.self, forKey: .includeNearbyStores)
+            ?? (defaults.object(forKey: "shouldIncludeNearbyStores") as? Bool ?? true)
     }
 }
 
 extension UserDefaults {
-    
+
+    var preferredSKUsFromLegacyPreferences: Set<String> {
+        Set((string(forKey: "preferredSKUs") ?? "").split(separator: ",").map(String.init))
+    }
+
     @objc dynamic var preferredStoreNumber: String {
         get { string(forKey: "preferredStoreNumber") ?? "" }
         set { setValue(newValue, forKey: "preferredStoreNumber") }
@@ -198,41 +245,6 @@ struct DefaultsVendor {
         return UserDefaults.standard.preferredUpdateInterval
     }
     
-    var shouldIncludeNearbyStores: Bool {
-        let value = UserDefaults.standard.object(forKey: "shouldIncludeNearbyStores") as? Bool
-        
-        return value ?? true
-    }
-    
-    var preferredSKUs: Set<String> {
-        guard let defaults = UserDefaults.standard.string(forKey: "preferredSKUs") else {
-            return []
-        }
-        
-        return defaults.components(separatedBy: ",").reduce(into: Set<String>()) { partialResult, next in
-            partialResult.insert(next)
-        }
-    }
-    
-    var customSkuData: (sku: String, nickname: String)? {
-        guard
-            let sku = UserDefaults.standard.string(forKey: "customSku"),
-            let name = UserDefaults.standard.string(forKey: "customSkuNickname")
-        else {
-            return nil
-        }
-        
-        return (sku, name)
-    }
-    
-    var showResultsOnlyForPreferredModels: Bool {
-        UserDefaults.standard.bool(forKey: "showResultsOnlyForPreferredModels")
-    }
-    
-    var notifyOnlyForPreferredModels: Bool {
-        UserDefaults.standard.bool(forKey: "notifyOnlyForPreferredModels")
-    }
-
     var notificationCooldownHours: Int {
         let val = UserDefaults.standard.integer(forKey: "notificationCooldownHours")
         return val > 0 ? val : 24

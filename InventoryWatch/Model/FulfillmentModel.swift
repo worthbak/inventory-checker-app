@@ -86,16 +86,6 @@ actor FulfillmentModel {
         request.timeoutInterval = 30
     }
     
-    private var modelParsingFilter: Set<String>? {
-        let filterForPreferredModels = defaultsVendor.showResultsOnlyForPreferredModels
-        var filterModels = filterForPreferredModels ? defaultsVendor.preferredSKUs : nil
-        if let customSku = defaultsVendor.customSkuData?.sku {
-            filterModels?.insert(customSku)
-        }
-        
-        return filterModels
-    }
-    
     func loadStoresByCountry(country: Country) async throws -> [String: StoreCountry] {
         if cachedStoreData[country.locale] != nil {
             return cachedStoreData
@@ -168,7 +158,7 @@ actor FulfillmentModel {
     func fetchInventory(searches: [SearchConfiguration]) async throws -> (searchResults: [SearchInventoryResult], skuData: SKUData) {
         guard searches.isEmpty == false else { throw AppError.productNotAvailableInRegion }
         try pickupCooldown.check()
-        let groupedSearches = Dictionary(grouping: searches) { "\($0.countryCode):\($0.storeNumber)" }
+        let groupedSearches = Dictionary(grouping: searches) { "\($0.countryCode):\($0.storeNumber):\($0.includeNearbyStores)" }
         var searchResults: [SearchInventoryResult] = []
         var pickupErrors: [String] = []
         var combinedLookup: [String: String] = [:]
@@ -199,13 +189,20 @@ actor FulfillmentModel {
             let stores = try await fetchInventory(
                 from: apiURL,
                 skuData: groupSKUData,
+                customSKUNames: group.reduce(into: [:]) { names, search in
+                    if let custom = search.customSkuData { names[custom.sku] = custom.nickname }
+                },
                 preferredStoreNumber: firstSearch.storeNumber
             )
             pickupErrors.append(contentsOf: lastPickupErrorKeys)
             for search in group {
-                let matchingSKUs = Set((await skuData(for: search, country: country))?.orderedSKUs ?? [])
-                var searchMatchingSKUs = matchingSKUs
-                if let customSku = defaultsVendor.customSkuData?.sku {
+                let catalog = (await skuData(for: search, country: country))?.orderedSKUs ?? []
+                var searchMatchingSKUs = Set(catalog)
+                let preferred = search.effectivePreferredSKUs(in: catalog)
+                if search.showOnlyPreferredModels, preferred.isEmpty == false {
+                    searchMatchingSKUs.formIntersection(preferred)
+                }
+                if let customSku = search.customSkuData?.sku {
                     searchMatchingSKUs.insert(customSku)
                 }
                 let filteredStores = stores.compactMap { store, parts -> (FulfillmentStore, [PartAvailability])? in
@@ -231,6 +228,7 @@ actor FulfillmentModel {
     private func fetchInventory(
         from apiURL: URL,
         skuData: SKUData,
+        customSKUNames: [String: String],
         preferredStoreNumber: String
     ) async throws -> [(FulfillmentStore, [PartAvailability])] {
         try pickupCooldown.check()
@@ -271,8 +269,9 @@ actor FulfillmentModel {
             let stores = try parseStoreResponse(
                 data,
                 response: httpResponse,
-                filterForModels: modelParsingFilter,
+                filterForModels: nil,
                 skuData: skuData,
+                customSKUNames: customSKUNames,
                 preferredStoreNumber: preferredStoreNumber
             )
             pickupCooldown.recordSuccess()
@@ -310,48 +309,24 @@ actor FulfillmentModel {
                 }
             }
         )
-        let resolvedSKUs = try searchData.flatMap { entry -> [String] in
-            let (search, data) = entry
-            guard search.family.isMac else { return data.orderedSKUs }
-            let fullPartNumbers = data.orderedSKUs.filter { $0.contains("/") }
-            guard fullPartNumbers.isEmpty == false else { throw AppError.invalidCatalogData }
-            return fullPartNumbers
-        }
-        let resolvedSKUSet = Set(resolvedSKUs)
-
-        // Build final SKU order depending on user preference
-        // When "Only show results for preferred models" is enabled, restrict to preferred SKUs (plus custom)
-        let preferred = defaultsVendor.preferredSKUs
-        let showOnlyPreferred = defaultsVendor.showResultsOnlyForPreferredModels
         var allSkus: [String] = []
-        if showOnlyPreferred {
-            // Preserve deterministic order based on the user's stored CSV order
-            let preferredCsv = UserDefaults.standard.string(forKey: "preferredSKUs") ?? ""
-            let preferredList = preferredCsv.split(separator: ",").map { String($0) }.filter { resolvedSKUSet.contains($0) }
-            allSkus.append(contentsOf: preferredList)
-        } else {
-            // Keep selected favorites first, then include the remaining SKUs from every search.
-            if preferred.isEmpty == false {
-                let preferredCsv = UserDefaults.standard.string(forKey: "preferredSKUs") ?? ""
-                let preferredList = preferredCsv.split(separator: ",").map { String($0) }.filter { resolvedSKUSet.contains($0) }
-                allSkus.append(contentsOf: preferredList)
-                let remainder = resolvedSKUs.filter { preferred.contains($0) == false }
-                allSkus.append(contentsOf: remainder)
-            } else {
-                allSkus = resolvedSKUs
+        for (search, data) in searchData {
+            var searchSKUs = data.orderedSKUs
+            if search.family.isMac {
+                searchSKUs = searchSKUs.filter { $0.contains("/") }
+                guard searchSKUs.isEmpty == false else { throw AppError.invalidCatalogData }
             }
+            let preferred = search.effectivePreferredSKUs(in: searchSKUs)
+            if search.showOnlyPreferredModels, preferred.isEmpty == false {
+                searchSKUs = searchSKUs.filter { preferred.contains($0) }
+            } else if preferred.isEmpty == false {
+                // Keep selected favorites first.
+                searchSKUs = searchSKUs.filter { preferred.contains($0) } + searchSKUs.filter { preferred.contains($0) == false }
+            }
+            allSkus.append(contentsOf: searchSKUs)
+            if let custom = search.customSkuData?.sku { allSkus.append(custom) }
         }
-        // Always append custom SKU if present
-        if let customSku = defaultsVendor.customSkuData?.sku, customSku.isEmpty == false {
-            allSkus.append(customSku)
-        }
-        // Deduplicate while preserving order
-        var seen = Set<String>()
-        allSkus = allSkus.filter { sku in
-            if seen.contains(sku) { return false }
-            seen.insert(sku)
-            return true
-        }
+        allSkus = unique(allSkus)
 
         guard allSkus.isEmpty == false else { return nil }
 
@@ -361,7 +336,7 @@ actor FulfillmentModel {
             queryItems.append("store=\(storeNumber)")
         }
 
-        queryItems.append("searchNearby=\(defaultsVendor.shouldIncludeNearbyStores)")
+        queryItems.append("searchNearby=\(searches[0].includeNearbyStores)")
         queryItems.append("little=false")
 
         queryItems.append(contentsOf: allSkus
@@ -405,6 +380,7 @@ actor FulfillmentModel {
         response: HTTPURLResponse?,
         filterForModels: Set<String>?,
         skuData: SKUData,
+        customSKUNames: [String: String] = [:],
         preferredStoreNumber: String
     ) throws -> [(FulfillmentStore, [PartAvailability])] {
         guard let responseData = responseData else {
@@ -484,8 +460,8 @@ actor FulfillmentModel {
                 let productName: String
                 if let name = skuData.productName(forSKU: partNumber) {
                     productName = name
-                } else if let customSku = defaultsVendor.customSkuData, partNumber == customSku.sku {
-                    productName = customSku.nickname
+                } else if let nickname = customSKUNames[partNumber] {
+                    productName = nickname
                 } else {
                     productName = partNumber
                 }

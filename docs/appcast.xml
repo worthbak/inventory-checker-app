@@ -9,6 +9,27 @@
         <description>InventoryWatch release updates</description>
         <language>en</language>
         <!-- Omit sparkle:channel for stable releases; use <sparkle:channel>beta</sparkle:channel> for beta releases. -->
+        <item>
+            <title>InventoryWatch 3.0.0-RC.3</title>
+            <sparkle:version>4</sparkle:version>
+            <sparkle:shortVersionString>3.0.0-RC.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:channel>beta</sparkle:channel>
+            <pubDate>Wed, 28 Oct 2026 14:18:07 +0000</pubDate>
+            <description>&lt;h3&gt;Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added 2, 10, and 15 minute update intervals.&lt;/li&gt;
+&lt;li&gt;In-app credits and project pages acknowledge the original author and contributors.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Changed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Custom SKU, preferred models, nearby-store inclusion, and the preferred-only display and notification options are now per search. Existing searches inherit the previous global values on first load.&lt;/li&gt;
+&lt;li&gt;Settings now has a &lt;strong&gt;General Settings&lt;/strong&gt; page (update interval and larger text) separate from per-search options.&lt;/li&gt;
+&lt;li&gt;Searches sharing a country, store, and nearby-store setting are combined into one pickup request. Results and notification filtering respect each search's preferences.&lt;/li&gt;
+&lt;/ul&gt;</description>
+            <enclosure url="https://github.com/drallgood/inventory-checker-app/releases/download/v3.0.0-RC.3-build.4/InventoryWatch.zip"
+                       sparkle:edSignature="8Pll+9BWXIp1zddm/GAkOQMwo6ZUPwwWHVNLSLyEuZ1x0KAi8mtI1zbdQHz/xbrPMhexTx3MB0uH4oYiUpYDAg==" length="2312830" type="application/octet-stream" />
+        </item>
             <item>
             <title>InventoryWatch 3.0.0-RC.2</title>
             <sparkle:version>3</sparkle:version>

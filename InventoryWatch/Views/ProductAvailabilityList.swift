@@ -25,10 +25,11 @@ struct ProductAvailabilityList: View {
             Text(emptyTokenMessage)
                 .foregroundColor(.secondary)
         } else if let data = skuData {
+            let effectivePreferred = preferredSKUs.intersection(data.orderedSKUs)
             let filtered = data.orderedSKUs.filter { sku in
                 let isAvailable = availableSkus.contains(sku)
-                if preferredSKUs.isEmpty { return isAvailable }
-                return isAvailable && preferredSKUs.contains(sku)
+                if effectivePreferred.isEmpty { return isAvailable }
+                return isAvailable && effectivePreferred.contains(sku)
             }
             if filtered.isEmpty {
                 Text("No models available in-store.")
