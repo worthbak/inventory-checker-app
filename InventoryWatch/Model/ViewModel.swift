@@ -164,9 +164,24 @@ final class ViewModel: ObservableObject {
                 refreshLastUpdateTime()
                 
                 var seenAvailability = Set<AvailabilityIdentity>()
+                var hasPreferredModel = false
+                var suppressedByPreference = false
                 let notificationAvailability = result.searchResults.flatMap { searchResult in
-                    searchResult.availableParts.compactMap { store, parts -> (FulfillmentStore, [PartAvailability])? in
-                        let uniqueParts = parts.filter { part in
+                    let search = searchResult.search
+                    let allPartNumbers = searchResult.availableParts.flatMap { $0.1.map(\.partNumber) }
+                    let preferred = search.effectivePreferredSKUs(in: allPartNumbers)
+                    let customSku = search.customSkuData?.sku
+                    return searchResult.availableParts.compactMap { store, parts -> (FulfillmentStore, [PartAvailability])? in
+                        let relevantParts = parts.filter { preferred.contains($0.partNumber) || $0.partNumber == customSku }
+                        if relevantParts.isEmpty == false { hasPreferredModel = true }
+                        let candidateParts: [PartAvailability]
+                        if search.notifyOnlyForPreferredModels {
+                            if relevantParts.count != parts.count { suppressedByPreference = true }
+                            candidateParts = relevantParts
+                        } else {
+                            candidateParts = parts
+                        }
+                        let uniqueParts = candidateParts.filter { part in
                             seenAvailability.insert(AvailabilityIdentity(
                                 countryCode: searchResult.search.countryCode,
                                 storeNumber: store.storeNumber,
@@ -177,8 +192,13 @@ final class ViewModel: ObservableObject {
                         return (store, uniqueParts)
                     }
                 }
+                if notificationAvailability.isEmpty && suppressedByPreference {
+                    finishInventoryFetch()
+                    return
+                }
                 await notificationSender.sendNotificationIfNeeded(
                     availableParts: notificationAvailability,
+                    hasPreferredModel: hasPreferredModel,
                     skuData: result.skuData,
                     searches: searches
                 )

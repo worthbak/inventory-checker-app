@@ -14,6 +14,9 @@
 
 ### Changed
 
+- Custom SKU, preferred models, nearby-store inclusion, and the preferred-only display and notification options are now per search. Existing searches inherit the previous global values on first load.
+- Settings now has a **General Settings** page (update interval and larger text) separate from per-search options.
+- Added 2, 10, and 15 minute update intervals.
 - Existing single-search preferences and earlier family/model-only saved searches migrate to independently identified searches using the previous country and store settings.
 - Searches sharing a country and store are combined into one pickup request. Different locations are queried separately, and results are scoped to the corresponding search.
 - Preferred-model selections are retained when switching products. Favorites from unrelated searches are excluded from pickup queries, and an empty preferred-only selection does not trigger an invalid request.

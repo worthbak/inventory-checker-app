@@ -47,7 +47,6 @@ struct SettingsView: View {
     
     @State private var preferredCountry = "US"
     @State private var preferredStoreNumber = ""
-    @AppStorage("preferredSKUs") private var preferredSKUs: String = ""
     @AppStorage("preferredUpdateInterval") private var preferredUpdateInterval: Int = 1
     @AppStorage("preferredProductType") private var preferredProductType: String = ProductFamily.iphone.rawValue
     @AppStorage("preferredWatchToken") private var preferredWatchToken: String = ""
@@ -57,15 +56,15 @@ struct SettingsView: View {
     @AppStorage("preferredAirPodsToken") private var preferredAirPodsToken: String = ""
     @AppStorage("preferredHomePodToken") private var preferredHomePodToken: String = ""
     @AppStorage("preferredAVPToken") private var preferredAVPToken: String = ""
-    @AppStorage("notifyOnlyForPreferredModels") private var notifyOnlyForPreferredModels: Bool = false
-    @AppStorage("showResultsOnlyForPreferredModels") private var showResultsOnlyForPreferredModels: Bool = false
-    @AppStorage("customSku") private var customSku = ""
-    @AppStorage("customSkuNickname") private var customSkuNickname = ""
     @AppStorage("useLargeText") private var useLargeText: Bool = false
-    @AppStorage("shouldIncludeNearbyStores") private var shouldIncludeNearbyStores: Bool = true
     
     @State private var selectedCountryIndex = 0
     @State private var selectedSearchID: UUID?
+    @State private var showGeneralSettings = false
+    @State private var customSkuDraft = ""
+    @State private var customSkuNicknameDraft = ""
+    @FocusState private var customSkuFieldFocused: Bool
+    @FocusState private var customSkuNicknameFieldFocused: Bool
     @State private var isLoadingSearchConfiguration = false
     @State private var searchLoadGeneration = 0
     @State private var allModels: [ProductModel] = []
@@ -101,7 +100,9 @@ struct SettingsView: View {
                     .foregroundColor(.orange)
                     .padding(.bottom, 6)
                 }
-                if selectedSearchID == nil {
+                if showGeneralSettings {
+                    generalSettingsView
+                } else if selectedSearchID == nil {
                     ContentUnavailableView(
                         "No Search Selected",
                         systemImage: "magnifyingglass",
@@ -126,7 +127,13 @@ struct SettingsView: View {
             alignment: .center
         )
         .onAppear { onAppearSetup() }
-        .onChange(of: selectedSearchID) { _, newValue in handleSelectedSearchChange(newValue) }
+        .onChange(of: customSkuFieldFocused) { _, focused in if !focused { commitCustomSku() } }
+        .onChange(of: customSkuNicknameFieldFocused) { _, focused in if !focused { commitCustomSku() } }
+        .onChange(of: selectedSearchID) { oldValue, newValue in
+            if let oldValue, oldValue != newValue { commitCustomSku(for: oldValue) }
+            if newValue != nil { showGeneralSettings = false }
+            handleSelectedSearchChange(newValue)
+        }
         .onChange(of: selectedCountryIndex) { _, newValue in handleSelectedCountryIndexChange(newValue) }
         .onChange(of: allModels) { _, newValue in handleAllModelsChange(newValue) }
         .onChange(of: storeSearchText) { _, newValue in handleStoreSearchTextChange(newValue) }
@@ -134,8 +141,6 @@ struct SettingsView: View {
         .onChange(of: preferredStoreNumber) { saveSelectedSearch() }
         .onChange(of: preferredUpdateInterval) { handlePreferredUpdateIntervalChange() }
         .onChange(of: preferredCountry) { handlePreferredCountryChange() }
-        .onChange(of: showResultsOnlyForPreferredModels) { handleReloadInventory() }
-        .onChange(of: shouldIncludeNearbyStores) { handleReloadInventory() }
         .onChange(of: preferredWatchToken) { handlePreferredWatchTokenChange() }
         .onChange(of: preferredPhoneToken) { handlePreferredPhoneTokenChange() }
         .onChange(of: preferredMacToken) { handlePreferredMacTokenChange() }
@@ -149,7 +154,6 @@ struct SettingsView: View {
     @ViewBuilder private var topControls: some View {
         HStack(alignment: .top, spacing: 24) {
             leftControlsView.frame(maxWidth: .infinity, alignment: .leading)
-            rightControlsView.frame(maxWidth: .infinity, alignment: .leading)
         }
     }
 
@@ -164,6 +168,17 @@ struct SettingsView: View {
 
     @ViewBuilder private var searchesSidebar: some View {
         VStack(spacing: 0) {
+            Button {
+                showGeneralSettings = true
+                selectedSearchID = nil
+            } label: {
+                Label("General Settings", systemImage: "gearshape")
+                    .frame(maxWidth: .infinity, alignment: .leading)
+            }
+            .buttonStyle(.plain)
+            .padding(10)
+            .background(showGeneralSettings ? Color.accentColor.opacity(0.25) : Color.clear)
+            Divider()
             List(selection: $selectedSearchID) {
                 ForEach(model.searchConfigurations) { search in
                     Text(searchDisplayName(search))
@@ -207,45 +222,37 @@ struct SettingsView: View {
         VStack(alignment: .leading) {
             countryPickerView
             productOrWatchPickerView
-
-            Picker("Update every", selection: $preferredUpdateInterval) {
-                Text("Never").tag(0)
-                Text("1 minute").tag(1)
-                Text("5 minutes").tag(5)
-                Text("30 minutes").tag(30)
-                Text("60 minutes").tag(60)
-            }
-            
-            Toggle(isOn: $notifyOnlyForPreferredModels) {
-                Text("Notify only for preferred models")
-                    .padding(.leading, 4)
-            }
-            Toggle(isOn: $showResultsOnlyForPreferredModels) {
-                Text("Only show results for preferred models")
-                    .padding(.leading, 4)
-            }
+            TextField("Custom SKU", text: $customSkuDraft, prompt: Text("Enter a custom SKU"))
+                .focused($customSkuFieldFocused)
+                .onSubmit { commitCustomSku() }
+            TextField("Custom SKU Nickname", text: $customSkuNicknameDraft, prompt: Text("Nickname for custom SKU"))
+                .focused($customSkuNicknameFieldFocused)
+                .onSubmit { commitCustomSku() }
+            Toggle("Notify only for preferred models", isOn: searchBinding(\.notifyOnlyForPreferredModels, default: false))
+            Toggle("Only show results for preferred models", isOn: searchBinding(\.showOnlyPreferredModels, default: false))
+            Toggle("Include results from nearby stores", isOn: searchBinding(\.includeNearbyStores, default: true))
         }
     }
 
-    @ViewBuilder private var rightControlsView: some View {
-        VStack(alignment: .leading) {
-            HStack(alignment: .top) {
-                Text("Custom SKU")
-                VStack {
-                    TextField("Enter a custom SKU", text: $customSku)
-                    TextField("Custom SKU Nickname", text: $customSkuNickname)
+    @ViewBuilder private var generalSettingsView: some View {
+        Form {
+            Section("Updates") {
+                Picker("Update every", selection: $preferredUpdateInterval) {
+                    Text("Never").tag(0)
+                    Text("1 minute").tag(1)
+                    Text("2 minutes").tag(2)
+                    Text("5 minutes").tag(5)
+                    Text("10 minutes").tag(10)
+                    Text("15 minutes").tag(15)
+                    Text("30 minutes").tag(30)
+                    Text("60 minutes").tag(60)
                 }
             }
-            
-            Toggle(isOn: $useLargeText) {
-                Text("Use larger text sizes")
+            Section("Appearance") {
+                Toggle("Use larger text sizes", isOn: $useLargeText)
             }
-            
-            Toggle(isOn: $shouldIncludeNearbyStores) {
-                Text("Include results from nearby stores")
-            }
-            
         }
+        .formStyle(.grouped)
     }
 
     @ViewBuilder private var preferredModelsList: some View {
@@ -609,7 +616,7 @@ struct SettingsView: View {
     
     func loadSkus(searchID: UUID? = nil, generation: Int? = nil) async {
         guard isCurrentSearchLoad(searchID: searchID, generation: generation) else { return }
-        let favoriteSkus = Set<String>(preferredSKUs.components(separatedBy: ","))
+        let favoriteSkus = selectedSearch?.preferredSKUs ?? []
         // Resolve the preferred product type
         let family = ProductFamily(rawValue: preferredProductType)
         // When Apple Watch is selected, use the JSON-driven, cached watch helper (synchronous)
@@ -1028,10 +1035,10 @@ struct SettingsView: View {
 
     private func handleAllModelsChange(_ models: [ProductModel]) {
         let visibleSKUs = Set(models.map(\.sku))
-        let existingFavorites = Set(preferredSKUs.split(separator: ",").map(String.init))
-        let favoritedModels = models.filter { $0.isFavorite }
-        let retainedFavorites = existingFavorites.subtracting(visibleSKUs)
-        preferredSKUs = (retainedFavorites.union(favoritedModels.map(\.sku))).sorted().joined(separator: ",")
+        guard isLoadingSearchConfiguration == false, var search = selectedSearch else { return }
+        let retainedFavorites = search.preferredSKUs.subtracting(visibleSKUs)
+        search.preferredSKUs = retainedFavorites.union(models.filter { $0.isFavorite }.map(\.sku))
+        model.updateSearchConfiguration(search)
     }
 
     private func handleStoreSearchTextChange(_ newText: String) {
@@ -1150,6 +1157,8 @@ struct SettingsView: View {
         selectedCountryIndex = OrderedCountries.firstIndex(of: search.countryCode) ?? 0
         preferredProductType = search.family.rawValue
         preferredStoreNumber = search.storeNumber
+        customSkuDraft = search.customSku
+        customSkuNicknameDraft = search.customSkuNickname
         selectedStore = search.storeNumber
         await loadTokens(for: search.family, searchID: search.id, generation: generation)
         guard selectedSearchID == search.id,
@@ -1274,19 +1283,37 @@ struct SettingsView: View {
         await Task.yield()
     }
 
+    private func searchBinding<Value>(_ keyPath: WritableKeyPath<SearchConfiguration, Value>, default fallback: Value) -> Binding<Value> {
+        Binding(
+            get: { selectedSearch?[keyPath: keyPath] ?? fallback },
+            set: { newValue in
+                guard var search = selectedSearch else { return }
+                search[keyPath: keyPath] = newValue
+                model.updateSearchConfiguration(search)
+            }
+        )
+    }
+
+    // Custom SKU edits are committed on submit or focus loss so each keystroke doesn't trigger a refetch.
+    private func commitCustomSku(for id: UUID? = nil) {
+        guard isLoadingSearchConfiguration == false || id != nil,
+              var search = model.searchConfigurations.first(where: { $0.id == (id ?? selectedSearchID) }),
+              search.customSku != customSkuDraft || search.customSkuNickname != customSkuNicknameDraft else { return }
+        search.customSku = customSkuDraft
+        search.customSkuNickname = customSkuNicknameDraft
+        model.updateSearchConfiguration(search)
+    }
+
     private func saveSelectedSearch() {
         guard isLoadingSearchConfiguration == false,
               let currentSearchConfiguration,
               let selectedSearchID else { return }
-        model.updateSearchConfiguration(
-            SearchConfiguration(
-                id: selectedSearchID,
-                family: currentSearchConfiguration.family,
-                token: currentSearchConfiguration.token,
-                countryCode: preferredCountry,
-                storeNumber: preferredStoreNumber
-            )
-        )
+        guard var search = selectedSearch else { return }
+        search.family = currentSearchConfiguration.family
+        search.token = currentSearchConfiguration.token
+        search.countryCode = preferredCountry
+        search.storeNumber = preferredStoreNumber
+        model.updateSearchConfiguration(search)
     }
 
     private func setDraftToken(_ token: String, for family: ProductFamily) {

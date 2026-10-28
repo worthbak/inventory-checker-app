@@ -13,11 +13,10 @@ struct ContentView: View {
 
     @AppStorage("lastUpdateDate") private var lastUpdateDate: String = ""
     @AppStorage("useLargeText") private var useLargeText: Bool = false
-    @AppStorage("shouldIncludeNearbyStores") private var shouldIncludeNearbyStores: Bool = true
     @State private var storesByCountry: [String: [RetailStore]] = [:]
 
     private var onlyShowingPreferredResults: Bool {
-        UserDefaults.standard.bool(forKey: "showResultsOnlyForPreferredModels")
+        model.searchConfigurations.contains { $0.showOnlyPreferredModels && $0.preferredSKUs.isEmpty == false }
     }
 
     var body: some View {
@@ -62,16 +61,9 @@ struct ContentView: View {
                         Text("Add a product search in Settings to start checking inventory.")
                             .foregroundColor(.secondary)
                     } else {
-                        let preferredSkus = Set(
-                            (UserDefaults.standard.string(forKey: "preferredSKUs") ?? "")
-                                .split(separator: ",")
-                                .map(String.init)
-                                .filter { !$0.isEmpty }
-                        )
-                        let displayedPreferredSKUs: Set<String> = onlyShowingPreferredResults ? preferredSkus : []
-
                         ForEach(model.searchConfigurations) { search in
                             if let country = Countries[search.countryCode] {
+                                let displayedPreferredSKUs: Set<String> = search.showOnlyPreferredModels ? search.preferredSKUs : []
                                 let result = model.searchResults.first(where: { $0.id == search.id })
                                 let availableParts = result?.availableParts ?? []
                                 let availableSkus = Set(availableParts.flatMap { $0.1.map(\.partNumber) })
@@ -95,7 +87,7 @@ struct ContentView: View {
                                     Text(Self.storeLocationLabel(
                                         store: storesByCountry[search.countryCode]?.first { $0.storeNumber == search.storeNumber },
                                         storeNumber: search.storeNumber,
-                                        includeNearbyStores: shouldIncludeNearbyStores
+                                        includeNearbyStores: search.includeNearbyStores
                                     ))
                                         .font(.caption)
                                         .foregroundColor(.secondary)

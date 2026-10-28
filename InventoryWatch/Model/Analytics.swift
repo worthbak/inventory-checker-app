@@ -55,7 +55,9 @@ struct AnalyticsData: Codable, Equatable {
         let preferredSKUsString = defaults.string(forKey: "preferredSKUs") ?? ""
         let notifyOnlyForPreferredModels = defaults.bool(forKey: "notifyOnlyForPreferredModels")
         let preferredUpdateInterval = defaults.integer(forKey: "preferredUpdateInterval")
-        let customSku = defaults.string(forKey: "customSku")
+        let hasCustomSku = defaults.data(forKey: "searchConfigurations")
+            .flatMap { try? JSONDecoder().decode([SearchConfiguration].self, from: $0) }?
+            .contains { $0.customSkuData != nil } ?? false
         
         return AnalyticsData(
             localUUID: localUUID!,
@@ -65,7 +67,7 @@ struct AnalyticsData: Codable, Equatable {
             preferredModels: preferredSKUsString,
             updateInterval: preferredUpdateInterval,
             notifyOnlyForPreferredModels: notifyOnlyForPreferredModels,
-            hasCustomSku: customSku != nil && customSku?.isEmpty == false,
+            hasCustomSku: hasCustomSku,
             appVersion: Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "unkown_version"
         )
     }
