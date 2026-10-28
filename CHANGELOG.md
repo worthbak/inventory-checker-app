@@ -11,6 +11,7 @@
 ### Changed
 
 - Refreshed every product catalog, including iPad mini (A20 Pro), the M6 MacBook Pro configurations and the M6 iMac.
+- MacBook Pro no longer lists the 16-inch M5 Max 40-core GPU standard configurations (`MGE94`, `MGEE4`), which Apple stopped stocking on October 28, 2026. That spec is still sold as a custom configuration, which can't be tracked, and stocked as the MacBook Pro with PROLED XDR Display.
 
 ### Fixed
 

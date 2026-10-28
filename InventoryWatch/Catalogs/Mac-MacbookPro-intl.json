@@ -1,7 +1,7 @@
 {
   "_meta": {
     "family": "mac",
-    "generated_at": "2026-10-28T08:34:26.485658+00:00",
+    "generated_at": "2026-10-28T17:42:07.355218+00:00",
     "regions_scraped": 33,
     "scraper_version": "1.0",
     "token": "macbook-pro"
@@ -422,21 +422,6 @@
             },
             "name": "MacBook Pro 16-inch Silver M5 Max (18-Core CPU / 32-Core GPU)"
           },
-          "MGE94AB/A": {
-            "capacity": "",
-            "colorDisplay": "Silver",
-            "colorKey": "silver",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SILVER_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch Silver M5 Max (18-Core CPU / 40-Core GPU)"
-          },
           "MGEA4AB/A": {
             "capacity": "",
             "colorDisplay": "Space Black",
@@ -466,21 +451,6 @@
               "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
             },
             "name": "MacBook Pro 16-inch Space Black M5 Max (18-Core CPU / 32-Core GPU)"
-          },
-          "MGEE4AB/A": {
-            "capacity": "",
-            "colorDisplay": "Space Black",
-            "colorKey": "spaceblack",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SPACEBLACK_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch Space Black M5 Max (18-Core CPU / 40-Core GPU)"
           },
           "MHWT4AB/A": {
             "capacity": "",
@@ -624,21 +594,6 @@
             },
             "name": "MacBook Pro 16-inch Silber M5 Max (18-Core CPU / 32-Core GPU)"
           },
-          "MGE94D/A": {
-            "capacity": "",
-            "colorDisplay": "Silber",
-            "colorKey": "silber",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SILVER_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch Silber M5 Max (18-Core CPU / 40-Core GPU)"
-          },
           "MGEA4D/A": {
             "capacity": "",
             "colorDisplay": "Space Schwarz",
@@ -668,21 +623,6 @@
               "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
             },
             "name": "MacBook Pro 16-inch Space Schwarz M5 Max (18-Core CPU / 32-Core GPU)"
-          },
-          "MGEE4D/A": {
-            "capacity": "",
-            "colorDisplay": "Space Schwarz",
-            "colorKey": "spaceschwarz",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SPACEBLACK_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch Space Schwarz M5 Max (18-Core CPU / 40-Core GPU)"
           },
           "MHWT4D/A": {
             "capacity": "",
@@ -826,21 +766,6 @@
             },
             "name": "MacBook Pro 16-inch Silver M5 Max (18-Core CPU / 32-Core GPU)"
           },
-          "MGE94X/A": {
-            "capacity": "",
-            "colorDisplay": "Silver",
-            "colorKey": "silver",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SILVER_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch Silver M5 Max (18-Core CPU / 40-Core GPU)"
-          },
           "MGEA4X/A": {
             "capacity": "",
             "colorDisplay": "Space Black",
@@ -870,21 +795,6 @@
               "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
             },
             "name": "MacBook Pro 16-inch Space Black M5 Max (18-Core CPU / 32-Core GPU)"
-          },
-          "MGEE4X/A": {
-            "capacity": "",
-            "colorDisplay": "Space Black",
-            "colorKey": "spaceblack",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SPACEBLACK_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch Space Black M5 Max (18-Core CPU / 40-Core GPU)"
           },
           "MHWT4X/A": {
             "capacity": "",
@@ -1028,21 +938,6 @@
             },
             "name": "MacBook Pro 16-inch Argent M5 Max (18-Core CPU / 32-Core GPU)"
           },
-          "MGE94FN/A": {
-            "capacity": "",
-            "colorDisplay": "Argent",
-            "colorKey": "argent",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SILVER_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch Argent M5 Max (18-Core CPU / 40-Core GPU)"
-          },
           "MGEA4FN/A": {
             "capacity": "",
             "colorDisplay": "Noir sidéral",
@@ -1072,21 +967,6 @@
               "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
             },
             "name": "MacBook Pro 16-inch Noir sidéral M5 Max (18-Core CPU / 32-Core GPU)"
-          },
-          "MGEE4FN/A": {
-            "capacity": "",
-            "colorDisplay": "Noir sidéral",
-            "colorKey": "noirsidral",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SPACEBLACK_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch Noir sidéral M5 Max (18-Core CPU / 40-Core GPU)"
           },
           "MHWT4FN/A": {
             "capacity": "",
@@ -1230,21 +1110,6 @@
             },
             "name": "MacBook Pro 16-inch Zilver M5 Max (18-Core CPU / 32-Core GPU)"
           },
-          "MGE94FN/A": {
-            "capacity": "",
-            "colorDisplay": "Zilver",
-            "colorKey": "zilver",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SILVER_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch Zilver M5 Max (18-Core CPU / 40-Core GPU)"
-          },
           "MGEA4FN/A": {
             "capacity": "",
             "colorDisplay": "Spacezwart",
@@ -1274,21 +1139,6 @@
               "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
             },
             "name": "MacBook Pro 16-inch Spacezwart M5 Max (18-Core CPU / 32-Core GPU)"
-          },
-          "MGEE4FN/A": {
-            "capacity": "",
-            "colorDisplay": "Spacezwart",
-            "colorKey": "spacezwart",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SPACEBLACK_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch Spacezwart M5 Max (18-Core CPU / 40-Core GPU)"
           },
           "MHWT4FN/A": {
             "capacity": "",
@@ -1432,21 +1282,6 @@
             },
             "name": "MacBook Pro 16-inch Prateado M5 Max (18-Core CPU / 32-Core GPU)"
           },
-          "MGE94BZ/A": {
-            "capacity": "",
-            "colorDisplay": "Prateado",
-            "colorKey": "prateado",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SILVER_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch Prateado M5 Max (18-Core CPU / 40-Core GPU)"
-          },
           "MGEA4BZ/A": {
             "capacity": "",
             "colorDisplay": "Preto-espacial",
@@ -1476,21 +1311,6 @@
               "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
             },
             "name": "MacBook Pro 16-inch Preto-espacial M5 Max (18-Core CPU / 32-Core GPU)"
-          },
-          "MGEE4BZ/A": {
-            "capacity": "",
-            "colorDisplay": "Preto-espacial",
-            "colorKey": "pretoespacial",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SPACEBLACK_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch Preto-espacial M5 Max (18-Core CPU / 40-Core GPU)"
           },
           "MHWT4BZ/A": {
             "capacity": "",
@@ -1634,21 +1454,6 @@
             },
             "name": "MacBook Pro 16-inch Silver M5 Max (18-Core CPU / 32-Core GPU)"
           },
-          "MGE94LL/A": {
-            "capacity": "",
-            "colorDisplay": "Silver",
-            "colorKey": "silver",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SILVER_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch Silver M5 Max (18-Core CPU / 40-Core GPU)"
-          },
           "MGEA4LL/A": {
             "capacity": "",
             "colorDisplay": "Space Black",
@@ -1678,21 +1483,6 @@
               "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
             },
             "name": "MacBook Pro 16-inch Space Black M5 Max (18-Core CPU / 32-Core GPU)"
-          },
-          "MGEE4LL/A": {
-            "capacity": "",
-            "colorDisplay": "Space Black",
-            "colorKey": "spaceblack",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SPACEBLACK_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch Space Black M5 Max (18-Core CPU / 40-Core GPU)"
           },
           "MHWT4LL/A": {
             "capacity": "",
@@ -1836,21 +1626,6 @@
             },
             "name": "MacBook Pro 16-inch Silber M5 Max (18-Core CPU / 32-Core GPU)"
           },
-          "MGE94SM/A": {
-            "capacity": "",
-            "colorDisplay": "Silber",
-            "colorKey": "silber",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SILVER_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch Silber M5 Max (18-Core CPU / 40-Core GPU)"
-          },
           "MGEA4SM/A": {
             "capacity": "",
             "colorDisplay": "Space Schwarz",
@@ -1880,21 +1655,6 @@
               "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
             },
             "name": "MacBook Pro 16-inch Space Schwarz M5 Max (18-Core CPU / 32-Core GPU)"
-          },
-          "MGEE4SM/A": {
-            "capacity": "",
-            "colorDisplay": "Space Schwarz",
-            "colorKey": "spaceschwarz",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SPACEBLACK_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch Space Schwarz M5 Max (18-Core CPU / 40-Core GPU)"
           },
           "MHWT4SM/A": {
             "capacity": "",
@@ -2038,21 +1798,6 @@
             },
             "name": "MacBook Pro 16-inch Argent M5 Max (18-Core CPU / 32-Core GPU)"
           },
-          "MGE94SM/A": {
-            "capacity": "",
-            "colorDisplay": "Argent",
-            "colorKey": "argent",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SILVER_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch Argent M5 Max (18-Core CPU / 40-Core GPU)"
-          },
           "MGEA4SM/A": {
             "capacity": "",
             "colorDisplay": "Noir sidéral",
@@ -2082,21 +1827,6 @@
               "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
             },
             "name": "MacBook Pro 16-inch Noir sidéral M5 Max (18-Core CPU / 32-Core GPU)"
-          },
-          "MGEE4SM/A": {
-            "capacity": "",
-            "colorDisplay": "Noir sidéral",
-            "colorKey": "noirsidral",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SPACEBLACK_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch Noir sidéral M5 Max (18-Core CPU / 40-Core GPU)"
           },
           "MHWT4SM/A": {
             "capacity": "",
@@ -2240,21 +1970,6 @@
             },
             "name": "MacBook Pro 16-inch 银色 M5 Max (18-Core CPU / 32-Core GPU)"
           },
-          "MGE94CH/A": {
-            "capacity": "",
-            "colorDisplay": "银色",
-            "colorKey": "",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SILVER_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch 银色 M5 Max (18-Core CPU / 40-Core GPU)"
-          },
           "MGEA4CH/A": {
             "capacity": "",
             "colorDisplay": "深空黑色",
@@ -2284,21 +1999,6 @@
               "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
             },
             "name": "MacBook Pro 16-inch 深空黑色 M5 Max (18-Core CPU / 32-Core GPU)"
-          },
-          "MGEE4CH/A": {
-            "capacity": "",
-            "colorDisplay": "深空黑色",
-            "colorKey": "",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SPACEBLACK_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch 深空黑色 M5 Max (18-Core CPU / 40-Core GPU)"
           },
           "MHWT4CH/A": {
             "capacity": "",
@@ -2442,21 +2142,6 @@
             },
             "name": "MacBook Pro 16-inch Silber M5 Max (18-Core CPU / 32-Core GPU)"
           },
-          "MGE94D/A": {
-            "capacity": "",
-            "colorDisplay": "Silber",
-            "colorKey": "silber",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SILVER_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch Silber M5 Max (18-Core CPU / 40-Core GPU)"
-          },
           "MGEA4D/A": {
             "capacity": "",
             "colorDisplay": "Space Schwarz",
@@ -2486,21 +2171,6 @@
               "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
             },
             "name": "MacBook Pro 16-inch Space Schwarz M5 Max (18-Core CPU / 32-Core GPU)"
-          },
-          "MGEE4D/A": {
-            "capacity": "",
-            "colorDisplay": "Space Schwarz",
-            "colorKey": "spaceschwarz",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SPACEBLACK_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch Space Schwarz M5 Max (18-Core CPU / 40-Core GPU)"
           },
           "MHWT4D/A": {
             "capacity": "",
@@ -2644,21 +2314,6 @@
             },
             "name": "MacBook Pro 16-inch sølv M5 Max (18-Core CPU / 32-Core GPU)"
           },
-          "MGE94DK/A": {
-            "capacity": "",
-            "colorDisplay": "sølv",
-            "colorKey": "slv",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SILVER_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch sølv M5 Max (18-Core CPU / 40-Core GPU)"
-          },
           "MGEA4DK/A": {
             "capacity": "",
             "colorDisplay": "space black",
@@ -2688,21 +2343,6 @@
               "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
             },
             "name": "MacBook Pro 16-inch space black M5 Max (18-Core CPU / 32-Core GPU)"
-          },
-          "MGEE4DK/A": {
-            "capacity": "",
-            "colorDisplay": "space black",
-            "colorKey": "spaceblack",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SPACEBLACK_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch space black M5 Max (18-Core CPU / 40-Core GPU)"
           },
           "MHWT4DK/A": {
             "capacity": "",
@@ -2831,21 +2471,6 @@
             },
             "name": "MacBook Pro 16-inch Plata M5 Max (18-Core CPU / 32-Core GPU)"
           },
-          "MGE94Y/A": {
-            "capacity": "",
-            "colorDisplay": "Plata",
-            "colorKey": "plata",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SILVER_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch Plata M5 Max (18-Core CPU / 40-Core GPU)"
-          },
           "MGEA4Y/A": {
             "capacity": "",
             "colorDisplay": "Negro espacial",
@@ -2875,21 +2500,6 @@
               "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
             },
             "name": "MacBook Pro 16-inch Negro espacial M5 Max (18-Core CPU / 32-Core GPU)"
-          },
-          "MGEE4Y/A": {
-            "capacity": "",
-            "colorDisplay": "Negro espacial",
-            "colorKey": "negroespacial",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SPACEBLACK_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch Negro espacial M5 Max (18-Core CPU / 40-Core GPU)"
           },
           "MHWT4Y/A": {
             "capacity": "",
@@ -3033,21 +2643,6 @@
             },
             "name": "MacBook Pro 16-inch Hopea M5 Max (18-Core CPU / 32-Core GPU)"
           },
-          "MGE94KS/A": {
-            "capacity": "",
-            "colorDisplay": "Hopea",
-            "colorKey": "hopea",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SILVER_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch Hopea M5 Max (18-Core CPU / 40-Core GPU)"
-          },
           "MGEA4KS/A": {
             "capacity": "",
             "colorDisplay": "Tähtimusta",
@@ -3077,21 +2672,6 @@
               "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
             },
             "name": "MacBook Pro 16-inch Tähtimusta M5 Max (18-Core CPU / 32-Core GPU)"
-          },
-          "MGEE4KS/A": {
-            "capacity": "",
-            "colorDisplay": "Tähtimusta",
-            "colorKey": "thtimusta",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SPACEBLACK_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch Tähtimusta M5 Max (18-Core CPU / 40-Core GPU)"
           },
           "MHWT4KS/A": {
             "capacity": "",
@@ -3220,21 +2800,6 @@
             },
             "name": "MacBook Pro 16-inch Argent M5 Max (18-Core CPU / 32-Core GPU)"
           },
-          "MGE94FN/A": {
-            "capacity": "",
-            "colorDisplay": "Argent",
-            "colorKey": "argent",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SILVER_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch Argent M5 Max (18-Core CPU / 40-Core GPU)"
-          },
           "MGEA4FN/A": {
             "capacity": "",
             "colorDisplay": "Noir sidéral",
@@ -3264,21 +2829,6 @@
               "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
             },
             "name": "MacBook Pro 16-inch Noir sidéral M5 Max (18-Core CPU / 32-Core GPU)"
-          },
-          "MGEE4FN/A": {
-            "capacity": "",
-            "colorDisplay": "Noir sidéral",
-            "colorKey": "noirsidral",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SPACEBLACK_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch Noir sidéral M5 Max (18-Core CPU / 40-Core GPU)"
           },
           "MHWT4FN/A": {
             "capacity": "",
@@ -3422,21 +2972,6 @@
             },
             "name": "MacBook Pro 16-inch Silver M5 Max (18-Core CPU / 32-Core GPU)"
           },
-          "MGE94ZP/A": {
-            "capacity": "",
-            "colorDisplay": "Silver",
-            "colorKey": "silver",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SILVER_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch Silver M5 Max (18-Core CPU / 40-Core GPU)"
-          },
           "MGEA4ZP/A": {
             "capacity": "",
             "colorDisplay": "Space Black",
@@ -3466,21 +3001,6 @@
               "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
             },
             "name": "MacBook Pro 16-inch Space Black M5 Max (18-Core CPU / 32-Core GPU)"
-          },
-          "MGEE4ZP/A": {
-            "capacity": "",
-            "colorDisplay": "Space Black",
-            "colorKey": "spaceblack",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SPACEBLACK_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch Space Black M5 Max (18-Core CPU / 40-Core GPU)"
           },
           "MHWT4ZP/A": {
             "capacity": "",
@@ -3624,21 +3144,6 @@
             },
             "name": "MacBook Pro 16-inch Silver M5 Max (18-Core CPU / 32-Core GPU)"
           },
-          "MGE94HN/A": {
-            "capacity": "",
-            "colorDisplay": "Silver",
-            "colorKey": "silver",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SILVER_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch Silver M5 Max (18-Core CPU / 40-Core GPU)"
-          },
           "MGEA4HN/A": {
             "capacity": "",
             "colorDisplay": "Space Black",
@@ -3668,21 +3173,6 @@
               "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
             },
             "name": "MacBook Pro 16-inch Space Black M5 Max (18-Core CPU / 32-Core GPU)"
-          },
-          "MGEE4HN/A": {
-            "capacity": "",
-            "colorDisplay": "Space Black",
-            "colorKey": "spaceblack",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SPACEBLACK_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch Space Black M5 Max (18-Core CPU / 40-Core GPU)"
           },
           "MHWT4HN/A": {
             "capacity": "",
@@ -3826,21 +3316,6 @@
             },
             "name": "MacBook Pro 16-inch Argento M5 Max (18-Core CPU / 32-Core GPU)"
           },
-          "MGE94T/A": {
-            "capacity": "",
-            "colorDisplay": "Argento",
-            "colorKey": "argento",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SILVER_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch Argento M5 Max (18-Core CPU / 40-Core GPU)"
-          },
           "MGEA4T/A": {
             "capacity": "",
             "colorDisplay": "Nero siderale",
@@ -3870,21 +3345,6 @@
               "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
             },
             "name": "MacBook Pro 16-inch Nero siderale M5 Max (18-Core CPU / 32-Core GPU)"
-          },
-          "MGEE4T/A": {
-            "capacity": "",
-            "colorDisplay": "Nero siderale",
-            "colorKey": "nerosiderale",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SPACEBLACK_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch Nero siderale M5 Max (18-Core CPU / 40-Core GPU)"
           },
           "MHWT4T/A": {
             "capacity": "",
@@ -4028,21 +3488,6 @@
             },
             "name": "MacBook Pro 16-inch シルバー M5 Max (18-Core CPU / 32-Core GPU)"
           },
-          "MGE94J/A": {
-            "capacity": "",
-            "colorDisplay": "シルバー",
-            "colorKey": "",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SILVER_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch シルバー M5 Max (18-Core CPU / 40-Core GPU)"
-          },
           "MGEA4J/A": {
             "capacity": "",
             "colorDisplay": "スペースブラック",
@@ -4072,21 +3517,6 @@
               "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
             },
             "name": "MacBook Pro 16-inch スペースブラック M5 Max (18-Core CPU / 32-Core GPU)"
-          },
-          "MGEE4J/A": {
-            "capacity": "",
-            "colorDisplay": "スペースブラック",
-            "colorKey": "",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SPACEBLACK_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch スペースブラック M5 Max (18-Core CPU / 40-Core GPU)"
           },
           "MHWT4J/A": {
             "capacity": "",
@@ -4230,21 +3660,6 @@
             },
             "name": "MacBook Pro 16-inch 실버 M5 Max (18-Core CPU / 32-Core GPU)"
           },
-          "MGE94KH/A": {
-            "capacity": "",
-            "colorDisplay": "실버",
-            "colorKey": "",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SILVER_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch 실버 M5 Max (18-Core CPU / 40-Core GPU)"
-          },
           "MGEA4KH/A": {
             "capacity": "",
             "colorDisplay": "스페이스 블랙",
@@ -4274,21 +3689,6 @@
               "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
             },
             "name": "MacBook Pro 16-inch 스페이스 블랙 M5 Max (18-Core CPU / 32-Core GPU)"
-          },
-          "MGEE4KH/A": {
-            "capacity": "",
-            "colorDisplay": "스페이스 블랙",
-            "colorKey": "",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SPACEBLACK_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch 스페이스 블랙 M5 Max (18-Core CPU / 40-Core GPU)"
           },
           "MHWT4KH/A": {
             "capacity": "",
@@ -4432,21 +3832,6 @@
             },
             "name": "MacBook Pro 16-inch Color plata M5 Max (18-Core CPU / 32-Core GPU)"
           },
-          "MGE94E/A": {
-            "capacity": "",
-            "colorDisplay": "Color plata",
-            "colorKey": "colorplata",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SILVER_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch Color plata M5 Max (18-Core CPU / 40-Core GPU)"
-          },
           "MGEA4E/A": {
             "capacity": "",
             "colorDisplay": "Negro espacial",
@@ -4476,21 +3861,6 @@
               "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
             },
             "name": "MacBook Pro 16-inch Negro espacial M5 Max (18-Core CPU / 32-Core GPU)"
-          },
-          "MGEE4E/A": {
-            "capacity": "",
-            "colorDisplay": "Negro espacial",
-            "colorKey": "negroespacial",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SPACEBLACK_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch Negro espacial M5 Max (18-Core CPU / 40-Core GPU)"
           },
           "MHWT4E/A": {
             "capacity": "",
@@ -4634,21 +4004,6 @@
             },
             "name": "MacBook Pro 16-inch Silver M5 Max (18-Core CPU / 32-Core GPU)"
           },
-          "MGE94ZP/A": {
-            "capacity": "",
-            "colorDisplay": "Silver",
-            "colorKey": "silver",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SILVER_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch Silver M5 Max (18-Core CPU / 40-Core GPU)"
-          },
           "MGEA4ZP/A": {
             "capacity": "",
             "colorDisplay": "Space Black",
@@ -4678,21 +4033,6 @@
               "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
             },
             "name": "MacBook Pro 16-inch Space Black M5 Max (18-Core CPU / 32-Core GPU)"
-          },
-          "MGEE4ZP/A": {
-            "capacity": "",
-            "colorDisplay": "Space Black",
-            "colorKey": "spaceblack",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SPACEBLACK_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch Space Black M5 Max (18-Core CPU / 40-Core GPU)"
           },
           "MHWT4ZP/A": {
             "capacity": "",
@@ -4836,21 +4176,6 @@
             },
             "name": "MacBook Pro 16-inch Zilver M5 Max (18-Core CPU / 32-Core GPU)"
           },
-          "MGE94N/A": {
-            "capacity": "",
-            "colorDisplay": "Zilver",
-            "colorKey": "zilver",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SILVER_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch Zilver M5 Max (18-Core CPU / 40-Core GPU)"
-          },
           "MGEA4N/A": {
             "capacity": "",
             "colorDisplay": "Spacezwart",
@@ -4880,21 +4205,6 @@
               "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
             },
             "name": "MacBook Pro 16-inch Spacezwart M5 Max (18-Core CPU / 32-Core GPU)"
-          },
-          "MGEE4N/A": {
-            "capacity": "",
-            "colorDisplay": "Spacezwart",
-            "colorKey": "spacezwart",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SPACEBLACK_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch Spacezwart M5 Max (18-Core CPU / 40-Core GPU)"
           },
           "MHWT4N/A": {
             "capacity": "",
@@ -5038,21 +4348,6 @@
             },
             "name": "MacBook Pro 16-inch sølv M5 Max (18-Core CPU / 32-Core GPU)"
           },
-          "MGE94H/A": {
-            "capacity": "",
-            "colorDisplay": "sølv",
-            "colorKey": "slv",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SILVER_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch sølv M5 Max (18-Core CPU / 40-Core GPU)"
-          },
           "MGEA4H/A": {
             "capacity": "",
             "colorDisplay": "stellarsvart",
@@ -5082,21 +4377,6 @@
               "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
             },
             "name": "MacBook Pro 16-inch stellarsvart M5 Max (18-Core CPU / 32-Core GPU)"
-          },
-          "MGEE4H/A": {
-            "capacity": "",
-            "colorDisplay": "stellarsvart",
-            "colorKey": "stellarsvart",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SPACEBLACK_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch stellarsvart M5 Max (18-Core CPU / 40-Core GPU)"
           },
           "MHWT4H/A": {
             "capacity": "",
@@ -5225,21 +4505,6 @@
             },
             "name": "MacBook Pro 16-inch Silver M5 Max (18-Core CPU / 32-Core GPU)"
           },
-          "MGE94AB/A": {
-            "capacity": "",
-            "colorDisplay": "Silver",
-            "colorKey": "silver",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SILVER_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch Silver M5 Max (18-Core CPU / 40-Core GPU)"
-          },
           "MGEA4AB/A": {
             "capacity": "",
             "colorDisplay": "Space Black",
@@ -5269,21 +4534,6 @@
               "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
             },
             "name": "MacBook Pro 16-inch Space Black M5 Max (18-Core CPU / 32-Core GPU)"
-          },
-          "MGEE4AB/A": {
-            "capacity": "",
-            "colorDisplay": "Space Black",
-            "colorKey": "spaceblack",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SPACEBLACK_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch Space Black M5 Max (18-Core CPU / 40-Core GPU)"
           },
           "MHWT4AB/A": {
             "capacity": "",
@@ -5412,21 +4662,6 @@
             },
             "name": "MacBook Pro 16-inch silver M5 Max (18-Core CPU / 32-Core GPU)"
           },
-          "MGE94KS/A": {
-            "capacity": "",
-            "colorDisplay": "silver",
-            "colorKey": "silver",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SILVER_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch silver M5 Max (18-Core CPU / 40-Core GPU)"
-          },
           "MGEA4KS/A": {
             "capacity": "",
             "colorDisplay": "rymdsvart",
@@ -5456,21 +4691,6 @@
               "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
             },
             "name": "MacBook Pro 16-inch rymdsvart M5 Max (18-Core CPU / 32-Core GPU)"
-          },
-          "MGEE4KS/A": {
-            "capacity": "",
-            "colorDisplay": "rymdsvart",
-            "colorKey": "rymdsvart",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SPACEBLACK_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch rymdsvart M5 Max (18-Core CPU / 40-Core GPU)"
           },
           "MHWT4KS/A": {
             "capacity": "",
@@ -5614,21 +4834,6 @@
             },
             "name": "MacBook Pro 16-inch Silver M5 Max (18-Core CPU / 32-Core GPU)"
           },
-          "MGE94ZP/A": {
-            "capacity": "",
-            "colorDisplay": "Silver",
-            "colorKey": "silver",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SILVER_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch Silver M5 Max (18-Core CPU / 40-Core GPU)"
-          },
           "MGEA4ZP/A": {
             "capacity": "",
             "colorDisplay": "Space Black",
@@ -5658,21 +4863,6 @@
               "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
             },
             "name": "MacBook Pro 16-inch Space Black M5 Max (18-Core CPU / 32-Core GPU)"
-          },
-          "MGEE4ZP/A": {
-            "capacity": "",
-            "colorDisplay": "Space Black",
-            "colorKey": "spaceblack",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SPACEBLACK_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch Space Black M5 Max (18-Core CPU / 40-Core GPU)"
           },
           "MHWT4ZP/A": {
             "capacity": "",
@@ -5816,21 +5006,6 @@
             },
             "name": "MacBook Pro 16-inch เงิน M5 Max (18-Core CPU / 32-Core GPU)"
           },
-          "MGE94TH/A": {
-            "capacity": "",
-            "colorDisplay": "เงิน",
-            "colorKey": "",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SILVER_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch เงิน M5 Max (18-Core CPU / 40-Core GPU)"
-          },
           "MGEA4TH/A": {
             "capacity": "",
             "colorDisplay": "ดำสเปซแบล็ค",
@@ -5860,21 +5035,6 @@
               "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
             },
             "name": "MacBook Pro 16-inch ดำสเปซแบล็ค M5 Max (18-Core CPU / 32-Core GPU)"
-          },
-          "MGEE4TH/A": {
-            "capacity": "",
-            "colorDisplay": "ดำสเปซแบล็ค",
-            "colorKey": "",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SPACEBLACK_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch ดำสเปซแบล็ค M5 Max (18-Core CPU / 40-Core GPU)"
           },
           "MHWT4TH/A": {
             "capacity": "",
@@ -6018,21 +5178,6 @@
             },
             "name": "MacBook Pro 16-inch Gümüş M5 Max (18-Core CPU / 32-Core GPU)"
           },
-          "MGE94TU/A": {
-            "capacity": "",
-            "colorDisplay": "Gümüş",
-            "colorKey": "gm",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SILVER_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch Gümüş M5 Max (18-Core CPU / 40-Core GPU)"
-          },
           "MGEA4TU/A": {
             "capacity": "",
             "colorDisplay": "Uzay Siyahı",
@@ -6062,21 +5207,6 @@
               "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
             },
             "name": "MacBook Pro 16-inch Uzay Siyahı M5 Max (18-Core CPU / 32-Core GPU)"
-          },
-          "MGEE4TU/A": {
-            "capacity": "",
-            "colorDisplay": "Uzay Siyahı",
-            "colorKey": "uzaysiyah",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SPACEBLACK_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch Uzay Siyahı M5 Max (18-Core CPU / 40-Core GPU)"
           },
           "MHWT4TU/A": {
             "capacity": "",
@@ -6220,21 +5350,6 @@
             },
             "name": "MacBook Pro 16-inch 銀色 M5 Max (18-Core CPU / 32-Core GPU)"
           },
-          "MGE94TA/A": {
-            "capacity": "",
-            "colorDisplay": "銀色",
-            "colorKey": "",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SILVER_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch 銀色 M5 Max (18-Core CPU / 40-Core GPU)"
-          },
           "MGEA4TA/A": {
             "capacity": "",
             "colorDisplay": "太空黑色",
@@ -6264,21 +5379,6 @@
               "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
             },
             "name": "MacBook Pro 16-inch 太空黑色 M5 Max (18-Core CPU / 32-Core GPU)"
-          },
-          "MGEE4TA/A": {
-            "capacity": "",
-            "colorDisplay": "太空黑色",
-            "colorKey": "",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SPACEBLACK_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch 太空黑色 M5 Max (18-Core CPU / 40-Core GPU)"
           },
           "MHWT4TA/A": {
             "capacity": "",
@@ -6422,21 +5522,6 @@
             },
             "name": "MacBook Pro 16-inch Silver M5 Max (18-Core CPU / 32-Core GPU)"
           },
-          "MGE94B/A": {
-            "capacity": "",
-            "colorDisplay": "Silver",
-            "colorKey": "silver",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SILVER_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch Silver M5 Max (18-Core CPU / 40-Core GPU)"
-          },
           "MGEA4B/A": {
             "capacity": "",
             "colorDisplay": "Space Black",
@@ -6466,21 +5551,6 @@
               "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
             },
             "name": "MacBook Pro 16-inch Space Black M5 Max (18-Core CPU / 32-Core GPU)"
-          },
-          "MGEE4B/A": {
-            "capacity": "",
-            "colorDisplay": "Space Black",
-            "colorKey": "spaceblack",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SPACEBLACK_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch Space Black M5 Max (18-Core CPU / 40-Core GPU)"
           },
           "MHWT4B/A": {
             "capacity": "",
@@ -6624,21 +5694,6 @@
             },
             "name": "MacBook Pro 16-inch Silver M5 Max (18-Core CPU / 32-Core GPU)"
           },
-          "MGE94LL/A": {
-            "capacity": "",
-            "colorDisplay": "Silver",
-            "colorKey": "silver",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SILVER_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch Silver M5 Max (18-Core CPU / 40-Core GPU)"
-          },
           "MGEA4LL/A": {
             "capacity": "",
             "colorDisplay": "Space Black",
@@ -6668,21 +5723,6 @@
               "processorDisplay": "M5 Max (18-Core CPU / 32-Core GPU)"
             },
             "name": "MacBook Pro 16-inch Space Black M5 Max (18-Core CPU / 32-Core GPU)"
-          },
-          "MGEE4LL/A": {
-            "capacity": "",
-            "colorDisplay": "Space Black",
-            "colorKey": "spaceblack",
-            "dimensionScreensize": "16inch",
-            "family": "mac",
-            "familyName": "MacBook Pro",
-            "metadata": {
-              "containerPartNumber": "RO_MBP_M5PRO_M5MAX_16INCH_SPACEBLACK_BT_UT_SP_2026",
-              "displayFinish": "standard",
-              "isRealPartNumber": true,
-              "processorDisplay": "M5 Max (18-Core CPU / 40-Core GPU)"
-            },
-            "name": "MacBook Pro 16-inch Space Black M5 Max (18-Core CPU / 40-Core GPU)"
           },
           "MHWT4LL/A": {
             "capacity": "",
