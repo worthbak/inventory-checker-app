@@ -11,6 +11,43 @@ import re
 from typing import Any, Dict, List, Set, Tuple
 
 
+def sanitize_text(text: str) -> str:
+    """Clean scraped text: U+00A0 and &nbsp; become spaces, other entities are deleted (numeric ones
+    too), and soft hyphens and direction marks are dropped. A stray "n" right after a size is removed
+    ("128GBn", "128 Gon", "256 Gtn": an escaped newline on the Oct 2026 iPad pages). Complete tags are
+    removed and tags cut off mid-way ("<div class=") become a space. Runs of spaces and tabs collapse
+    and the ends are trimmed; line breaks inside are kept."""
+    if not text:
+        return text
+    text = text.replace('\xa0', ' ')
+    text = re.sub(r'[\xad\u200e\u200f]', '', text)
+    text = re.sub(r'&nbsp;', ' ', text)
+    text = re.sub(r'&[a-zA-Z0-9#]+;', '', text)
+    text = re.sub(r'(\d\s?(?:GB|TB|Go|To|Gt|Tt))\\n', r'\1 ', text)
+    text = re.sub(r'(\d\s?(?:GB|TB|Go|To|Gt|Tt))n(?![A-Za-z])', r'\1', text)
+    text = re.sub(r'<[^>]+>', '', text)
+    # Lowercase tag names only, so text like "<M5 Pro" is left alone.
+    text = re.sub(r'</?[a-z][a-z0-9]*(?:\s+[\w-]+(?:=["\']?)?)?', ' ', text)
+    return re.sub(r'[ \t]+', ' ', text).strip()
+
+
+_CAPACITY = re.compile(r'(\d+(?:[.,]\d+)?)\s?(GB|TB|Go|To|Gt|Tt)(?![A-Za-z])', re.IGNORECASE)
+
+
+def clean_capacity(cap: str) -> str:
+    """Just the size from a scraped capacity: "256GB", "1TB", or "256 Go" / "1 Tt" in French and Finnish.
+
+    Apple's pages wrap it in a word for storage, in front or behind ("256GB opslag", "1 TB lagring",
+    "256GBストレージ", "พื้นที่จัดเก็บข้อมูล 256GB", "256 Go de"). Text with no size is returned cleaned.
+    """
+    cap = sanitize_text(cap or '')
+    m = _CAPACITY.search(cap)
+    if not m:
+        return cap
+    num, unit = m.group(1), m.group(2)[0].upper() + m.group(2)[1].lower()
+    return f'{num}{unit.upper()}' if unit in ('Gb', 'Tb') else f'{num} {unit}'
+
+
 # ---------------------------------------------------------------------------
 # Module-level extraction utilities (moved from Scraper class)
 # ---------------------------------------------------------------------------
@@ -394,6 +431,8 @@ class MacHandler(FamilyHandler):
         pn_to_display: dict = {}  # pn -> { dimensionKey: displayValue }
         pn_to_processor: dict = {}
         pn_to_container: dict = {}
+        pn_to_size: dict = {}    # pn -> "14inch", from the product's own dimensions
+        pn_to_finish: dict = {}  # pn -> "nano_texture" / "standard"
 
         for p in products:
             if not isinstance(p, dict):
@@ -433,6 +472,12 @@ class MacHandler(FamilyHandler):
                     parts = core_dim2.split('-')
                     if len(parts) == 2 and parts[0].isdigit() and parts[1].isdigit():
                         proc_disp = f'{parts[0]}-Core CPU / {parts[1]}-Core GPU'
+                # Pages without a processor-dimensionChip (iMac, MacBook Air in Oct 2026) name the chip
+                # only in the container code ("RO_IMAC_M6_24INCH_..."). Only a plain chip ("M6") is used:
+                # containers that list Pro/Max/Ultra chips ("RO_MBP_M5PRO_M5MAX_...") cover several.
+                m_cont = re.search(r'_M(\d+)_', p.get('aosContainerPartNumber') or '')
+                if proc_disp and m_cont:
+                    proc_disp = f'M{m_cont.group(1)} ({proc_disp})'
             if displays:
                 pn_to_display.setdefault(pn, displays)
             if proc_disp:
@@ -440,8 +485,14 @@ class MacHandler(FamilyHandler):
             container = p.get('aosContainerPartNumber') or ''
             if container:
                 pn_to_container.setdefault(pn, container)
+            size_dim = dims.get('chassis-dimensionScreensize') or ''
+            if size_dim:
+                pn_to_size.setdefault(pn, size_dim)
+            finish_dim = dims.get('display-dimensionFinish') or ''
+            if finish_dim:
+                pn_to_finish.setdefault(pn, finish_dim)
 
-        if not pn_to_display and not pn_to_processor:
+        if not pn_to_display and not pn_to_processor and not pn_to_size and not pn_to_finish:
             return skus
 
         applied = 0
@@ -471,6 +522,15 @@ class MacHandler(FamilyHandler):
             changed = False
             md = sku_data.get('metadata') if isinstance(sku_data.get('metadata'), dict) else {}
 
+            # Screen size and display finish from this exact product's dimensions win over values
+            # picked up near the part number elsewhere on the page (a neighbour's, at times).
+            if sku in pn_to_size and sku_data.get('dimensionScreensize') != pn_to_size[sku]:
+                sku_data['dimensionScreensize'] = pn_to_size[sku]
+                changed = True
+            if sku in pn_to_finish and md.get('displayFinish') != pn_to_finish[sku]:
+                md['displayFinish'] = pn_to_finish[sku]
+                changed = True
+
             # Processor chip name (already resolved via direct or base-part lookup above)
             if proc_disp and not md.get('processorDisplay'):
                 md['processorDisplay'] = proc_disp
@@ -496,13 +556,11 @@ class MacHandler(FamilyHandler):
             # Storage capacity — sanitize HTML entities and trailing text before matching
             cap = displays.get('storage-dimensionCapacity')
             if cap and not (sku_data.get('capacity') or '').strip():
-                cap = re.sub(r'&nbsp;', ' ', cap)
-                cap = re.sub(r'&[a-zA-Z0-9#]+;', '', cap)
-                cap = re.sub(r'<[^>]+>', '', cap)
-                cap = cap.strip()
-                m_cap = re.match(r'(\d+)\s*(GB|TB)', cap, re.IGNORECASE)
-                if m_cap:
-                    sku_data['capacity'] = m_cap.group(1) + m_cap.group(2).upper()
+                # clean_capacity also reads French "256 Go" and Finnish "256 Gt" (the GB/TB-only
+                # match left MacBook Neo without a capacity in fr, be-fr, ch-fr and fi).
+                cap = clean_capacity(cap)
+                if _CAPACITY.fullmatch(cap):
+                    sku_data['capacity'] = cap
                     changed = True
 
             if md:
@@ -873,7 +931,7 @@ class AirPodsHandler(FamilyHandler):
             if not dims:
                 # Try base-part match
                 for pn, dims2 in pn_to_dim.items():
-                    if sku.startswith(pn[:4]):
+                    if sku[:5] == pn[:5]:
                         dims = dims2
                         break
             if not dims:
@@ -1027,8 +1085,20 @@ class HomePodHandler(FamilyHandler):
 # iPad Handler
 # ---------------------------------------------------------------------------
 
+_CHIP_PAREN = re.compile(r'\s?[(（][^()（）]*\b[AM]\d+[^()（）]*[)）]')
+
+
+def _chip_suffix(title: str) -> str:
+    """The chip in parentheses at the end of a title: " (M5)", "（M5）", " (ชิป A20 Pro)"."""
+    found = _CHIP_PAREN.findall(title or '')
+    return found[-1] if found else ''
+
+
 class IPadHandler(FamilyHandler):
     """iPad: translate colors/finishes/sizes from bootstrap displayValues, then build names."""
+
+    # The scraper runs post_process_skus again once familyName is set per screen size.
+    names_from_family = True
 
     def enrich_skus(self, skus: dict, payload: dict, region: dict) -> dict:
         """Extract dimensionColor/dimensionFinish/dimensionScreensize translations."""
@@ -1092,7 +1162,7 @@ class IPadHandler(FamilyHandler):
             pd = pn_to_dims.get(sku)
             if not pd:
                 for pn, dims2 in pn_to_dims.items():
-                    if sku.startswith(pn[:4]):
+                    if sku[:5] == pn[:5]:
                         pd = dims2
                         break
             if not pd:
@@ -1150,15 +1220,16 @@ class IPadHandler(FamilyHandler):
         # Extract SKU-to-connectivity mapping from page HTML
         html = payload.get('html', '') if isinstance(payload, dict) else ''
         pn_to_conn: Dict[str, str] = {}
+        # Each product object lists its partNumber first and its dimensions last, so read
+        # dimensionConnection within the same object. (A scan forward from dimensionConnection
+        # found the next product's part number: on Sweden's page 8 iPads got the wrong one.)
+        # The bootstrap products below, when parsed, override this.
         if html:
-            for m in re.finditer(r'\"dimensionConnection\"\s*:\s*\"(wifi|wificell)\"', html, re.IGNORECASE):
-                # Look for SKU nearby (within 600 chars after)
-                window = html[m.end():m.end() + 600]
-                for sku_m in re.finditer(r'"(M[A-Z0-9]{3,7})(?:[A-Z]{1,3}/[A-Z])?"', window):
-                    conn = 'Cellular' if m.group(1).lower() == 'wificell' else 'Wi-Fi'
-                    pn_to_conn[sku_m.group(1)] = conn
-        # Fallback: extract connectivity from bootstrap product data for SKUs
-        # missed by the HTML proximity scan
+            # One level of nesting allowed: US carrier models carry "footNotes":{"carrierModel":...}.
+            for m in re.finditer(r'"partNumber"\s*:\s*"(M[A-Z0-9]{4})[A-Z0-9]*/[A-Z]"(?:[^{}]|\{[^{}]*\})*?"dimensionConnection"\s*:\s*"(wifi|wificell)"',
+                                 html, re.IGNORECASE):
+                pn_to_conn[m.group(1)] = 'Cellular' if m.group(2).lower() == 'wificell' else 'Wi-Fi'
+        # Connectivity from the bootstrap product data (authoritative)
         bs = (payload.get('bootstrap') or {}) if isinstance(payload, dict) else {}
         if isinstance(bs, dict):
             psd = bs.get('productSelectionData') or {}
@@ -1169,16 +1240,12 @@ class IPadHandler(FamilyHandler):
                 if not dc:
                     continue
                 pn = p.get('partNumber') or p.get('btrOrFdPartNumber') or ''
-                bp = p.get('basePartNumber') or (pn[:6] if len(pn) >= 6 else '')
+                bp = p.get('basePartNumber') or pn[:5]
                 conn_label = 'Cellular' if str(dc).lower() == 'wificell' else 'Wi-Fi'
+                # Exact part and base code only: shorter prefixes are shared by other products.
                 for key in (pn, bp):
                     if key:
                         pn_to_conn[key] = conn_label
-                # Also index prefix variants so k[:N] lookups always hit
-                for key in (pn, bp):
-                    if key:
-                        for plen in range(4, min(len(key) + 1, 8)):
-                            pn_to_conn[key[:plen]] = conn_label
         for k, v in skus.items():
             if not isinstance(v, dict):
                 continue
@@ -1186,12 +1253,7 @@ class IPadHandler(FamilyHandler):
             size_raw = (v.get('dimensionScreensize') or '').strip()
             cap = (v.get('capacity') or '').strip()
             color = (v.get('colorDisplay') or '').strip()
-            conn = pn_to_conn.get(k[:6], '')
-            if not conn:
-                for plen in (5, 4):
-                    conn = pn_to_conn.get(k[:plen], '')
-                    if conn:
-                        break
+            conn = pn_to_conn.get(k) or pn_to_conn.get(k[:5], '')
             md = v.get('metadata') if isinstance(v.get('metadata'), dict) else {}
             finish = md.get('displayFinish', '')
             has_dims = bool(size_raw or cap or color or finish)
@@ -1202,11 +1264,21 @@ class IPadHandler(FamilyHandler):
                     m_sz = re.match(r'^(\d+)inch$', size_raw, re.IGNORECASE)
                     if m_sz:
                         size_label = f'{m_sz.group(1)}-inch '
-                cap = re.sub(r'\s+(GB|TB)', r'\1', cap, flags=re.IGNORECASE)
-                cap = re.sub(r'\s+(?:Speicher|storage|Stockage|Memoria)', '', cap, flags=re.IGNORECASE).strip()
-                cap = re.sub(r'&nbsp;', ' ', cap)
-                cap = re.sub(r'<[^>]+>', '', cap).strip()
-                parts = [size_label + display_clean if size_label else display_clean]
+                cap = clean_capacity(cap)
+                # Each SKU's own familyName ("13-inch iPad Pro", "iPad Pro รุ่น 13 นิ้ว"): the page
+                # title in `display` is the first product's, so on two-size pages it named every
+                # 13-inch SKU "13-inch iPad Pro 11-inch (M5)". The chip ("(M5)") still comes from it.
+                fam = sanitize_text(v.get('familyName') or '')
+                if fam:
+                    chip = _chip_suffix(display_clean)
+                    base = f'{fam}{chip}' if chip and not _chip_suffix(fam) else fam
+                    # A familyName without the size (no per-size name found for this page) still
+                    # needs it, or both sizes get the same name.
+                    if size_label and not re.search(rf'(?<!\d){size_label.split("-")[0]}(?!\d)', fam):
+                        base = size_label + base
+                else:
+                    base = size_label + display_clean if size_label else display_clean
+                parts = [base]
                 if conn:
                     parts.append(conn)
                 if cap:

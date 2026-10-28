@@ -193,6 +193,14 @@ bash scrape_all.sh
 
 Configuration is in `scraper_config.json` (regions, categories, model variants, families). See [Scraper Config Reference](#scraper-config-reference) below.
 
+After scraping, check the catalogs before committing:
+```bash
+python3 validate_catalogs.py
+```
+It fails on region loss against the committed catalog, failed-region metadata, and scrape junk
+in names or capacities (leftover HTML markup, a stray `n` after a size such as `256 GBn`, or a
+product title leaked into another product's name).
+
 ### Scrape store data
 
 ```bash

@@ -1,7 +1,7 @@
 {
   "_meta": {
     "family": "iphone",
-    "generated_at": "2026-10-16T13:57:36.374999+00:00",
+    "generated_at": "2026-10-28T08:50:27.542258+00:00",
     "regions_scraped": 33,
     "scraper_version": "1.0",
     "token": "iphone-duo"
@@ -746,7 +746,7 @@
             "partNumber": "MK2G4ZD/A"
           },
           "MK2H4ZD/A": {
-            "capacity": "1To",
+            "capacity": "1 To",
             "colorDisplay": "Blanc stellaire",
             "colorKey": "starwhite",
             "dimensionScreensize": "",
@@ -760,7 +760,7 @@
             "partNumber": "MK2H4ZD/A"
           },
           "MK2J4ZD/A": {
-            "capacity": "1To",
+            "capacity": "1 To",
             "colorDisplay": "Ciel nocturne",
             "colorKey": "nightsky",
             "dimensionScreensize": "",
@@ -774,7 +774,7 @@
             "partNumber": "MK2J4ZD/A"
           },
           "MK2K4ZD/A": {
-            "capacity": "2To",
+            "capacity": "2 To",
             "colorDisplay": "Blanc stellaire",
             "colorKey": "starwhite",
             "dimensionScreensize": "",
@@ -788,7 +788,7 @@
             "partNumber": "MK2K4ZD/A"
           },
           "MK2L4ZD/A": {
-            "capacity": "2To",
+            "capacity": "2 To",
             "colorDisplay": "Ciel nocturne",
             "colorKey": "nightsky",
             "dimensionScreensize": "",

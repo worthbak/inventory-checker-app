@@ -1,7 +1,7 @@
 {
   "_meta": {
     "family": "iphone",
-    "generated_at": "2026-10-16T13:58:22.085392+00:00",
+    "generated_at": "2026-10-28T08:53:16.618385+00:00",
     "regions_scraped": 33,
     "scraper_version": "1.0",
     "token": "iphone-17e"
@@ -127,6 +127,16 @@
         "iphone-17e": "shop/buy-iphone/iphone-17e"
       }
     },
+    "es": {
+      "localization": {
+        "token_display": {
+          "iphone-17e": "iPhone 17e"
+        }
+      },
+      "shop_paths": {
+        "iphone-17e": "shop/buy-iphone/iphone-17e"
+      }
+    },
     "fi": {
       "localization": {
         "token_display": {
@@ -148,6 +158,16 @@
       }
     },
     "hk": {
+      "localization": {
+        "token_display": {
+          "iphone-17e": "iPhone 17e"
+        }
+      },
+      "shop_paths": {
+        "iphone-17e": "shop/buy-iphone/iphone-17e"
+      }
+    },
+    "in": {
       "localization": {
         "token_display": {
           "iphone-17e": "iPhone 17e"
@@ -1525,7 +1545,7 @@
           },
           "MHRX4QN/A": {
             "capacity": "256 Gt",
-            "colorDisplay": "Pehmeän­pinkki",
+            "colorDisplay": "Pehmeänpinkki",
             "colorKey": "soft_pink",
             "dimensionScreensize": "",
             "family": "iphone17e",
@@ -1567,7 +1587,7 @@
           },
           "MHU34QN/A": {
             "capacity": "512 Gt",
-            "colorDisplay": "Pehmeän­pinkki",
+            "colorDisplay": "Pehmeänpinkki",
             "colorKey": "soft_pink",
             "dimensionScreensize": "",
             "family": "iphone17e",

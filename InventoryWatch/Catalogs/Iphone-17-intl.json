@@ -1,7 +1,7 @@
 {
   "_meta": {
     "family": "iphone",
-    "generated_at": "2026-10-16T13:58:11.351015+00:00",
+    "generated_at": "2026-10-28T08:52:40.018457+00:00",
     "regions_scraped": 33,
     "scraper_version": "1.0",
     "token": "iphone-17"
@@ -127,6 +127,16 @@
         "iphone-17": "shop/buy-iphone/iphone-17"
       }
     },
+    "es": {
+      "localization": {
+        "token_display": {
+          "iphone-17": "iPhone 17"
+        }
+      },
+      "shop_paths": {
+        "iphone-17": "shop/buy-iphone/iphone-17"
+      }
+    },
     "fi": {
       "localization": {
         "token_display": {
@@ -188,6 +198,16 @@
       }
     },
     "kr": {
+      "localization": {
+        "token_display": {
+          "iphone-17": "iPhone 17"
+        }
+      },
+      "shop_paths": {
+        "iphone-17": "shop/buy-iphone/iphone-17"
+      }
+    },
+    "mx": {
       "localization": {
         "token_display": {
           "iphone-17": "iPhone 17"
@@ -1415,7 +1435,7 @@
             "capacity": "512GB",
             "colorDisplay": "Schwarz",
             "colorKey": "black",
-            "dimensionScreensize": "6_3inch",
+            "dimensionScreensize": "",
             "family": "iphone17",
             "familyName": "iPhone 17",
             "metadata": {
@@ -1443,7 +1463,7 @@
             "capacity": "512GB",
             "colorDisplay": "Nebelblau",
             "colorKey": "mistblue",
-            "dimensionScreensize": "6_3inch",
+            "dimensionScreensize": "",
             "family": "iphone17",
             "familyName": "iPhone 17",
             "metadata": {

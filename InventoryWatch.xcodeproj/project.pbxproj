@@ -31,6 +31,7 @@
 		38E4279E273EF542006BF6D7 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 38E4279D273EF542006BF6D7 /* Credits.rtf */; };
 		469112532E7CB945004C26BC /* Mac-Imac-intl.json in Resources */ = {isa = PBXBuildFile; fileRef = 4691124C2E7CB945004C26BC /* Mac-Imac-intl.json */; };
 		469112542E7CB945004C26BC /* Mac-MacbookPro-intl.json in Resources */ = {isa = PBXBuildFile; fileRef = 4691124E2E7CB945004C26BC /* Mac-MacbookPro-intl.json */; };
+		46F11C7A304B80560000EBF2 /* Mac-MacbookProProledXdr-intl.json in Resources */ = {isa = PBXBuildFile; fileRef = 46F11C79304B80560000EBF2 /* Mac-MacbookProProledXdr-intl.json */; };
 		469112562E7CB945004C26BC /* Mac-Mini-intl.json in Resources */ = {isa = PBXBuildFile; fileRef = 4691124F2E7CB945004C26BC /* Mac-Mini-intl.json */; };
 		469112582E7CB945004C26BC /* Mac-Studio-intl.json in Resources */ = {isa = PBXBuildFile; fileRef = 469112522E7CB945004C26BC /* Mac-Studio-intl.json */; };
 		4691125A2E7CB945004C26BC /* Mac-MacbookAir-intl.json in Resources */ = {isa = PBXBuildFile; fileRef = 4691124D2E7CB945004C26BC /* Mac-MacbookAir-intl.json */; };
@@ -113,6 +114,7 @@
 		4691124C2E7CB945004C26BC /* Mac-Imac-intl.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Mac-Imac-intl.json"; sourceTree = "<group>"; };
 		4691124D2E7CB945004C26BC /* Mac-MacbookAir-intl.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Mac-MacbookAir-intl.json"; sourceTree = "<group>"; };
 		4691124E2E7CB945004C26BC /* Mac-MacbookPro-intl.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Mac-MacbookPro-intl.json"; sourceTree = "<group>"; };
+		46F11C79304B80560000EBF2 /* Mac-MacbookProProledXdr-intl.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Mac-MacbookProProledXdr-intl.json"; sourceTree = "<group>"; };
 		4691124F2E7CB945004C26BC /* Mac-Mini-intl.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Mac-Mini-intl.json"; sourceTree = "<group>"; };
 		469112522E7CB945004C26BC /* Mac-Studio-intl.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Mac-Studio-intl.json"; sourceTree = "<group>"; };
 		46CF2237305203B30017DCE1 /* AirPods-5-intl.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "AirPods-5-intl.json"; sourceTree = "<group>"; };
@@ -287,6 +289,7 @@
 				4691124C2E7CB945004C26BC /* Mac-Imac-intl.json */,
 				4691124D2E7CB945004C26BC /* Mac-MacbookAir-intl.json */,
 				4691124E2E7CB945004C26BC /* Mac-MacbookPro-intl.json */,
+				46F11C79304B80560000EBF2 /* Mac-MacbookProProledXdr-intl.json */,
 				4691124F2E7CB945004C26BC /* Mac-Mini-intl.json */,
 				469112522E7CB945004C26BC /* Mac-Studio-intl.json */,
 				46F134C62E7C3B0A00CBE7DB /* AppleWatch-AppleWatch-intl.json */,
@@ -406,6 +409,7 @@
 			files = (
 				469112532E7CB945004C26BC /* Mac-Imac-intl.json in Resources */,
 				469112542E7CB945004C26BC /* Mac-MacbookPro-intl.json in Resources */,
+				46F11C7A304B80560000EBF2 /* Mac-MacbookProProledXdr-intl.json in Resources */,
 				469112562E7CB945004C26BC /* Mac-Mini-intl.json in Resources */,
 				469112582E7CB945004C26BC /* Mac-Studio-intl.json in Resources */,
 				4691125A2E7CB945004C26BC /* Mac-MacbookAir-intl.json in Resources */,

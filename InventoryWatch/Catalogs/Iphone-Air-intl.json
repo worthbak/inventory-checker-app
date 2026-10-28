@@ -1,7 +1,7 @@
 {
   "_meta": {
     "family": "iphone",
-    "generated_at": "2026-10-16T13:58:00.633623+00:00",
+    "generated_at": "2026-10-28T08:52:00.527486+00:00",
     "regions_scraped": 33,
     "scraper_version": "1.0",
     "token": "iphone-air"
@@ -970,7 +970,7 @@
             "partNumber": "MG2V4ZD/A"
           },
           "MG2W4ZD/A": {
-            "capacity": "1To",
+            "capacity": "1 To",
             "colorDisplay": "Noir sidéral",
             "colorKey": "spaceblack",
             "dimensionScreensize": "",
@@ -984,7 +984,7 @@
             "partNumber": "MG2W4ZD/A"
           },
           "MG2X4ZD/A": {
-            "capacity": "1To",
+            "capacity": "1 To",
             "colorDisplay": "Blanc nuage",
             "colorKey": "cloudwhite",
             "dimensionScreensize": "",
@@ -998,7 +998,7 @@
             "partNumber": "MG2X4ZD/A"
           },
           "MG2Y4ZD/A": {
-            "capacity": "1To",
+            "capacity": "1 To",
             "colorDisplay": "Or clair",
             "colorKey": "lightgold",
             "dimensionScreensize": "",
@@ -1012,7 +1012,7 @@
             "partNumber": "MG2Y4ZD/A"
           },
           "MG304ZD/A": {
-            "capacity": "1To",
+            "capacity": "1 To",
             "colorDisplay": "Bleu ciel",
             "colorKey": "skyblue",
             "dimensionScreensize": "",
@@ -2623,7 +2623,7 @@
           },
           "MG2M4QN/A": {
             "capacity": "256 Gt",
-            "colorDisplay": "Poudan­valkea",
+            "colorDisplay": "Poudanvalkea",
             "colorKey": "cloudwhite",
             "dimensionScreensize": "",
             "family": "iphoneair",
@@ -2651,7 +2651,7 @@
           },
           "MG2P4QN/A": {
             "capacity": "256 Gt",
-            "colorDisplay": "Taivaan­sininen",
+            "colorDisplay": "Taivaansininen",
             "colorKey": "skyblue",
             "dimensionScreensize": "",
             "family": "iphoneair",
@@ -2679,7 +2679,7 @@
           },
           "MG2T4QN/A": {
             "capacity": "512 Gt",
-            "colorDisplay": "Poudan­valkea",
+            "colorDisplay": "Poudanvalkea",
             "colorKey": "cloudwhite",
             "dimensionScreensize": "",
             "family": "iphoneair",
@@ -2707,7 +2707,7 @@
           },
           "MG2V4QN/A": {
             "capacity": "512 Gt",
-            "colorDisplay": "Taivaan­sininen",
+            "colorDisplay": "Taivaansininen",
             "colorKey": "skyblue",
             "dimensionScreensize": "",
             "family": "iphoneair",
@@ -2735,7 +2735,7 @@
           },
           "MG2X4QN/A": {
             "capacity": "1 Tt",
-            "colorDisplay": "Poudan­valkea",
+            "colorDisplay": "Poudanvalkea",
             "colorKey": "cloudwhite",
             "dimensionScreensize": "",
             "family": "iphoneair",
@@ -2763,7 +2763,7 @@
           },
           "MG304QN/A": {
             "capacity": "1 Tt",
-            "colorDisplay": "Taivaan­sininen",
+            "colorDisplay": "Taivaansininen",
             "colorKey": "skyblue",
             "dimensionScreensize": "",
             "family": "iphoneair",

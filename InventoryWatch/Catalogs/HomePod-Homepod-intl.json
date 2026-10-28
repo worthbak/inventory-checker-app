@@ -1,7 +1,7 @@
 {
   "_meta": {
     "family": "homepod",
-    "generated_at": "2026-10-16T13:32:08.248246+00:00",
+    "generated_at": "2026-10-28T08:47:21.681238+00:00",
     "regions_scraped": 33,
     "scraper_version": "1.0",
     "token": "homepod"
@@ -595,12 +595,12 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "homepod",
-            "familyName": "HomePod - Midnight",
+            "familyName": "HomePod",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "homepod"
             },
-            "name": "HomePod - Midnight 午夜色",
+            "name": "HomePod 午夜色",
             "partNumber": "MDEX4CH/A"
           },
           "MDF04CH/A": {
@@ -609,12 +609,12 @@
             "colorKey": "white",
             "dimensionScreensize": "",
             "family": "homepod",
-            "familyName": "HomePod - Midnight",
+            "familyName": "HomePod",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "homepod"
             },
-            "name": "HomePod - Midnight 白色",
+            "name": "HomePod 白色",
             "partNumber": "MDF04CH/A"
           }
         },
