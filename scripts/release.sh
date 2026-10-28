@@ -179,6 +179,12 @@ ARCHIVE="$OUTPUT/InventoryWatch.xcarchive"
 APP="$ARCHIVE/Products/Applications/InventoryWatch.app"
 echo "Release output: $OUTPUT"
 
+if ! python3 -c 'import markdown' >/dev/null 2>&1; then
+    echo "Error: release notes require Markdown. Install with: python3 -m pip install -r scripts/requirements-release.txt" >&2
+    exit 1
+fi
+python3 "$ROOT/scripts/release_notes.py" "$ROOT/CHANGELOG.md" "$VERSION" "$OUTPUT/release-notes.xml"
+
 xcodebuild test \
     -project "$ROOT/InventoryWatch.xcodeproj" \
     -scheme InventoryWatch \
@@ -363,6 +369,7 @@ APPCAST_ITEM="$OUTPUT/appcast-item.xml"
         printf '            <sparkle:channel>beta</sparkle:channel>\n'
     fi
     printf '            <pubDate>%s</pubDate>\n' "$PUBLISHED_AT"
+    cat "$OUTPUT/release-notes.xml"
     printf '            <enclosure url="https://github.com/%s/releases/download/%s/InventoryWatch.zip"\n' "$RELEASE_REPOSITORY" "$RELEASE_TAG"
     printf '                       sparkle:edSignature="%s" length="%s" type="application/octet-stream" />\n' "$ED_SIGNATURE" "$ARCHIVE_LENGTH"
     printf '        </item>\n'
