@@ -66,6 +66,9 @@ def text_problems(catalog: dict) -> list:
                 family = sku.get("familyName") or ""
                 if " - " in family or "applecare" in (family + " " + (sku.get("name") or "")).lower():
                     found.append(f"{region} {part}: another page's title in familyName/name {family!r}")
+                # An EU energy label's PDF title ("Produktinformationsblad PDF, iPad") taken as the name.
+                if re.search(r"\bPDF\b", family + " " + (sku.get("name") or "")):
+                    found.append(f"{region} {part}: a PDF's title in familyName/name {family!r}")
     found += _duplicate_names(catalog) + _connectivity_vs_us(catalog)
     return found
 

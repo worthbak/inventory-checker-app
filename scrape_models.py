@@ -770,6 +770,9 @@ class Scraper:
             def find_product_names(obj, path=""):
                 if isinstance(obj, dict):
                     for k, v in obj.items():
+                        # EU energy labels: their titles are a PDF's ("Produktinformationsblad PDF, iPad").
+                        if k == 'energyComplianceDictionary':
+                            continue
                         if k.lower() in ['productname', 'displayname', 'title', 'name'] and isinstance(v, str):
                             name = v.strip()
                             # Clean HTML entities only
