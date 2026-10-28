@@ -19,7 +19,7 @@ from typing import Dict, List, Tuple, Optional
 
 import requests
 
-from family_handlers import get_handler
+from family_handlers import get_handler, sanitize_text
 
 DEFAULT_CONFIG_PATH = "scraper_config.json"
 
@@ -39,6 +39,63 @@ DEFAULT_UA = {
     'Connection': 'keep-alive',
     'Upgrade-Insecure-Requests': '1'
 }
+
+
+def _leaked_title(family: str) -> bool:
+    return ' - ' in family or 'applecare' in family.lower()
+
+
+# Scripts the China (and other non-Latin) pages use; a Latin-script name with "Wi‑Fi" or "Hermès" is
+# never a leaked-title case.
+_NON_LATIN = re.compile(r'[\u0e00-\u0e7f\u3040-\u30ff\u3400-\u9fff\uf900-\ufaff\uac00-\ud7af]')
+
+
+def usual_family_names(regions) -> Dict[str, str]:
+    """The most common familyName per screen size ('' = any size) across regions' SKU dicts, ignoring
+    ones that carry a leaked title, so 13-inch configurations get a 13-inch family."""
+    counts: Dict[str, Dict[str, int]] = {}
+    for skus in regions:
+        for v in (skus or {}).values():
+            f = (v.get('familyName') or '').strip() if isinstance(v, dict) else ''
+            if not f or _leaked_title(f):
+                continue
+            for size in {(v.get('dimensionScreensize') or '').strip(), ''}:
+                by = counts.setdefault(size, {})
+                by[f] = by.get(f, 0) + 1
+    return {size: max(by, key=by.get) for size, by in counts.items() if by}
+
+
+def repair_leaked_titles(skus: Dict[str, dict], fallback: Dict[str, str] | None = None) -> int:
+    """Undo a US title the China pages put in front of names: as the familyName ("HomePod - Midnight",
+    "iPad Wi-Fi 128GB - Blue", or an AppleCare+ heading) or only in the name ("13-inch 11-inch iPad Pro
+    Wi-Fi 2TB with standard glass - Space Black Cellular 256GB ..."). `fallback` is usual_family_names
+    across all regions. Returns how many were repaired."""
+    local = usual_family_names([skus])
+    fallback = fallback or {}
+    repaired = 0
+    for v in skus.values():
+        if not isinstance(v, dict):
+            continue
+        family = (v.get('familyName') or '').strip()
+        name = (v.get('name') or '').strip()
+        size = (v.get('dimensionScreensize') or '').strip()
+        if family and _leaked_title(family):
+            usual = local.get(size) or fallback.get(size) or local.get('') or fallback.get('')
+            if not usual:
+                continue
+            tail = (name[len(family):] if name.startswith(family) else name).strip()
+            v['familyName'] = usual
+            v['name'] = f"{usual} {tail or (v.get('colorDisplay') or '')}".strip()
+            repaired += 1
+            continue
+        # Name-only leak: a localized family, and an English " - Color" title before the localized rest.
+        if not family or not _NON_LATIN.search(family) or name.startswith(family):
+            continue
+        m = re.match(r'^.*? - [A-Z][\w\u2011-]*(?: [A-Z][\w\u2011-]*)*? (?=Wi-Fi|Cellular|\d|\S*[^\x00-\x7F])', name)
+        if m and _NON_LATIN.search(name[m.end():]):
+            v['name'] = f"{family} {name[m.end():]}"
+            repaired += 1
+    return repaired
 
 
 class Scraper:
@@ -791,10 +848,7 @@ class Scraper:
         if not raw:
             return raw
         name = raw
-        name = name.replace('\xa0', ' ')
-        name = re.sub(r'&nbsp;', ' ', name)
-        name = re.sub(r'&[a-zA-Z0-9#]+;', '', name)
-        name = re.sub(r'<[^>]+>', '', name)
+        name = sanitize_text(name)
         name = re.sub(r'\s*-\s*Apple\s*.*$', '', name, flags=re.IGNORECASE)
         # Remove trailing PDF/document metadata
         name = re.sub(r'\s*[,;]\s*Produktdatenblatt\s*PDF\s*$', '', name, flags=re.IGNORECASE)
@@ -1642,8 +1696,15 @@ class Scraper:
                 pn = m.group(1)
                 if not pn:
                     continue
-                # Look around this occurrence for lightweight differentiators
-                win = compact_html[max(0, m.start() - 1600): m.end() + 1600]
+                # Look only inside this product's own object: products are listed one after another as
+                # {"aosContainerPartNumber":...,"btrOrFdPartNumber":...,"dimensions":{...}}, so a window
+                # reaching back into the previous object picked up its size and finish instead.
+                # Dimensions follow the part number in its object; the container code precedes it.
+                lo, hi = max(0, m.start() - 1600), m.end() + 1600
+                obj_start = compact_html.rfind('"aosContainerPartNumber"', lo, m.start())
+                obj_end = compact_html.find('"aosContainerPartNumber"', m.end(), hi)
+                before = compact_html[obj_start if obj_start >= 0 else lo:m.start()]
+                win = compact_html[m.end():obj_end if obj_end >= 0 else hi]
                 size = ''
                 proc = ''
                 finish = ''
@@ -1658,7 +1719,7 @@ class Scraper:
                 mf = re.search(r'"display-dimensionFinish"\s*:\s*"([^"]+)"', win, re.IGNORECASE)
                 if mf:
                     finish = (mf.group(1) or '').strip()
-                mc = re.search(r'"aosContainerPartNumber"\s*:\s*"([^"]+)"', win, re.IGNORECASE)
+                mc = re.search(r'"aosContainerPartNumber"\s*:\s*"([^"]+)"', before, re.IGNORECASE)
                 if mc:
                     container = (mc.group(1) or '').strip()
                 # Some pages include human-ish tokens like "13inch-midnight-10-8" near variant blocks.
@@ -1793,6 +1854,22 @@ class Scraper:
         
         return out
 
+    @staticmethod
+    def _applecare_plan_parts(html: str) -> set:
+        """Part numbers of the AppleCare plans a buy page offers: "planDetails":[{"partNumber":"MN863BR/A",...}]."""
+        parts: set = set()
+        for m in re.finditer(r'"planDetails"\s*:\s*\[', html or ''):
+            depth = 0
+            for i in range(m.end() - 1, min(len(html), m.end() + 20000)):
+                if html[i] == '[':
+                    depth += 1
+                elif html[i] == ']':
+                    depth -= 1
+                    if depth == 0:
+                        parts.update(re.findall(r'"partNumber"\s*:\s*"([A-Z0-9]+/[A-Z])"', html[m.end():i]))
+                        break
+        return parts
+
     def _token_base_name(self, family: str, token: str) -> str:
         base = self._family_config(family).get('display_name', (family or '').title())
         t = token
@@ -1868,7 +1945,18 @@ class Scraper:
                 os.makedirs(models_dir, exist_ok=True)
         except Exception:
             pass
-        return os.path.join(models_dir if os.path.isdir(models_dir) else (out_dir if os.path.isdir(out_dir) else "."), fname)
+        target_dir = models_dir if os.path.isdir(models_dir) else (out_dir if os.path.isdir(out_dir) else ".")
+        # Reuse an existing file whose name differs only in case ("Mac-Imac" for "Mac-iMac"): on macOS
+        # they are the same file, but on case-sensitive file systems a second catalog would appear
+        # next to the one the Xcode project bundles.
+        try:
+            if not os.path.exists(os.path.join(target_dir, fname)):
+                matches = sorted(e for e in os.listdir(target_dir) if e.lower() == fname.lower())
+                if matches:
+                    fname = matches[0]
+        except OSError:
+            pass
+        return os.path.join(target_dir, fname)
 
     def emit_model_file(self, family: str, token: str, country_to_data: Dict[str, Tuple[str, Dict[str, dict]]], regions_count: int = 0, failed_regions: Optional[List[str]] = None) -> str:
         """
@@ -2080,6 +2168,7 @@ class Scraper:
                     continue
                 if not payload:
                     continue
+                plan_html = payload.get('html', '')
                 try:
                     skus = self._build_skus_from_payload(payload, family_hint=family)
                     # Retry with purchaseOption=fullPrice if configured for this family
@@ -2088,10 +2177,16 @@ class Scraper:
                         alt = self._extract_product_data(alt_url)
                         if alt:
                             skus = self._build_skus_from_payload(alt, family_hint=family) or skus
+                            plan_html += alt.get('html', '')
                 except Exception as e:
                     print(f"[error] {r['code']}:{token}: {e}")
                     failed_regions.append(r['code'].lower())
                     continue
+                # AppleCare+ plans the page offers alongside the product (Brazil's Mac pages list them with
+                # full part numbers like "MN863BR/A") are not products to track.
+                for plan_pn in self._applecare_plan_parts(plan_html):
+                    if skus and skus.pop(plan_pn, None) is not None:
+                        print(f"[debug] {r['code']}/{family}:{token} -> dropped AppleCare plan {plan_pn}")
                 # Handler: pre-pruning enrichment
                 skus = h.enrich_skus(skus, payload, r)
                 # Evaluate usefulness: count entries with any non-empty metadata
@@ -2832,9 +2927,7 @@ class Scraper:
                             v['name'] = self._clean_product_name(v['name'])
                         if (v.get('capacity') or '').strip():
                             cap = v['capacity']
-                            cap = re.sub(r'&nbsp;', ' ', cap)
-                            cap = re.sub(r'&[a-zA-Z0-9#]+;', '', cap)
-                            cap = re.sub(r'<[^>]+>', '', cap)
+                            cap = sanitize_text(cap)
                             cap = re.sub(r'\s+(?:Speicher|storage|Stockage|Memoria|Armazenamento|Lagring|Tallennustila|저장\s*용량|ストレージ|存储容量|儲存容量)\s*$', '', cap, flags=re.IGNORECASE)
                             cap = cap.strip()
                             # Normalize: "256 GB" -> "256GB", "1 TB" -> "1TB"
@@ -2842,12 +2935,9 @@ class Scraper:
                             v['capacity'] = cap
                         if (v.get('colorDisplay') or '').strip():
                             cd = v['colorDisplay']
-                            cd = re.sub(r'&nbsp;', ' ', cd)
-                            cd = re.sub(r'&[a-zA-Z0-9#]+;', '', cd)
-                            cd = re.sub(r'<[^>]+>', '', cd)
-                            cd = cd.strip()
+                            cd = sanitize_text(cd)
                             v['colorDisplay'] = cd
-                
+
                 country_to_data[r["code"].upper()] = (shop_path, skus or {})
             if failed_regions:
                 # Carry forward the last-known-good data for regions that failed to fetch,
@@ -2872,6 +2962,13 @@ class Scraper:
                 except Exception as e:
                     print(f"[warn] could not carry forward previous data for {token}: {e}")
             if country_to_data:
+                # Names that carry another page's title get the family most countries use (all of a
+                # region's names can be affected, as on China's iPad mini page).
+                usual = usual_family_names(sk for _, sk in country_to_data.values())
+                for cc, (_, sk) in country_to_data.items():
+                    fixed = repair_leaked_titles(sk or {}, usual)
+                    if fixed:
+                        print(f"[debug] {cc.lower()}:{token} -> repaired {fixed} name(s) carrying another page's title")
                 self.emit_model_file(family, token, country_to_data, regions_count=len(regions), failed_regions=failed_regions)
             else:
                 print(f"[warn] no data for token {token} in selected regions")

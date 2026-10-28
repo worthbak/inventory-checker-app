@@ -14,6 +14,7 @@
 
 ### Changed
 
+- Refreshed iPad, Mac, Apple Watch, HomePod and AirPods catalogs, including iPad mini (A20 Pro), the M6 MacBook Pro configurations and the M6 iMac.
 - Existing single-search preferences and earlier family/model-only saved searches migrate to independently identified searches using the previous country and store settings.
 - Searches sharing a country and store are combined into one pickup request. Different locations are queried separately, and results are scoped to the corresponding search.
 - Preferred-model selections are retained when switching products. Favorites from unrelated searches are excluded from pickup queries, and an empty preferred-only selection does not trigger an invalid request.
@@ -29,6 +30,12 @@
 - Pickup warnings are collected across location groups, and the configured store is prioritized within its search's results.
 - Refresh errors retain existing results, which may be stale, rather than replacing them with a successful-looking empty result.
 - The SKU-name regression test now uses the existing SKU lookup API, allowing the test target to compile instead of leaving an incomplete unsigned test bundle after a failed build.
+- Catalog scraper accuracy (Oct 2026 catalog refresh):
+  - Preconfigured Macs take their screen size and display finish from their own product entry on the buy page. A window around the part number had often reached into the previous product, labelling 16-inch MacBook Pros as 14-inch and adding nano-texture to configurations without it. iMac and MacBook Air names include the chip from the container code (for example, "M6").
+  - Capacities and names no longer keep cut-off page markup such as `128GBn<div class=` (iPad pages).
+  - China names no longer start with another page's US title ("HomePod - Midnight 午夜色", "iPad Wi‑Fi 128GB - Blue …", or an AppleCare+ heading as an Apple Watch family name). They use the family name the other countries share.
+  - AppleCare+ plans a buy page offers (`planDetails`, such as Brazil's Mac plans `MN863BR/A`) are no longer listed as products.
+  - A catalog whose generated file name differs only in case from an existing one (`Mac-iMac` and `Mac-Imac`) reuses the existing file, so case-sensitive file systems don't get a second copy next to the bundled one.
 
 ### Release notes
 

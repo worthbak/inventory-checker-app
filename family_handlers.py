@@ -11,6 +11,21 @@ import re
 from typing import Any, Dict, List, Set, Tuple
 
 
+def sanitize_text(text: str) -> str:
+    """Decode &nbsp;, drop other entities and HTML, including tags cut off mid-way: the Oct 2026 iPad
+    pages yield capacities like "128GBn<div class=" or "128 GBn" (an escaped newline and the start of
+    the next tag). Line breaks are kept."""
+    if not text:
+        return text
+    text = text.replace('\xa0', ' ')
+    text = re.sub(r'&nbsp;', ' ', text)
+    text = re.sub(r'&[a-zA-Z0-9#]+;', '', text)
+    text = re.sub(r'(\d\s?(?:GB|TB))\\?n(?![A-Za-z])', r'\1', text)
+    text = re.sub(r'<[^>]+>', ' ', text)
+    text = re.sub(r'</?[a-zA-Z][^\s>]*(?:\s+[\w-]+=["\']?)?', ' ', text)
+    return re.sub(r'[ \t]+', ' ', text).strip()
+
+
 # ---------------------------------------------------------------------------
 # Module-level extraction utilities (moved from Scraper class)
 # ---------------------------------------------------------------------------
@@ -394,6 +409,8 @@ class MacHandler(FamilyHandler):
         pn_to_display: dict = {}  # pn -> { dimensionKey: displayValue }
         pn_to_processor: dict = {}
         pn_to_container: dict = {}
+        pn_to_size: dict = {}    # pn -> "14inch", from the product's own dimensions
+        pn_to_finish: dict = {}  # pn -> "nano_texture" / "standard"
 
         for p in products:
             if not isinstance(p, dict):
@@ -433,6 +450,11 @@ class MacHandler(FamilyHandler):
                     parts = core_dim2.split('-')
                     if len(parts) == 2 and parts[0].isdigit() and parts[1].isdigit():
                         proc_disp = f'{parts[0]}-Core CPU / {parts[1]}-Core GPU'
+                # iMac and MacBook Air name the chip only in the container code ("RO_IMAC_M6_24INCH_...").
+                m_cont = re.search(r'_M(\d+)(PRO|MAX|ULTRA)?_', p.get('aosContainerPartNumber') or '')
+                if proc_disp and m_cont:
+                    chip = 'M' + m_cont.group(1) + (' ' + m_cont.group(2).title() if m_cont.group(2) else '')
+                    proc_disp = f'{chip} ({proc_disp})'
             if displays:
                 pn_to_display.setdefault(pn, displays)
             if proc_disp:
@@ -440,6 +462,12 @@ class MacHandler(FamilyHandler):
             container = p.get('aosContainerPartNumber') or ''
             if container:
                 pn_to_container.setdefault(pn, container)
+            size_dim = dims.get('chassis-dimensionScreensize') or ''
+            if size_dim:
+                pn_to_size.setdefault(pn, size_dim)
+            finish_dim = dims.get('display-dimensionFinish') or ''
+            if finish_dim:
+                pn_to_finish.setdefault(pn, finish_dim)
 
         if not pn_to_display and not pn_to_processor:
             return skus
@@ -471,6 +499,15 @@ class MacHandler(FamilyHandler):
             changed = False
             md = sku_data.get('metadata') if isinstance(sku_data.get('metadata'), dict) else {}
 
+            # Screen size and display finish from this exact product's dimensions win over values
+            # picked up near the part number elsewhere on the page (a neighbour's, at times).
+            if sku in pn_to_size and sku_data.get('dimensionScreensize') != pn_to_size[sku]:
+                sku_data['dimensionScreensize'] = pn_to_size[sku]
+                changed = True
+            if sku in pn_to_finish and md.get('displayFinish') != pn_to_finish[sku]:
+                md['displayFinish'] = pn_to_finish[sku]
+                changed = True
+
             # Processor chip name (already resolved via direct or base-part lookup above)
             if proc_disp and not md.get('processorDisplay'):
                 md['processorDisplay'] = proc_disp
@@ -496,10 +533,7 @@ class MacHandler(FamilyHandler):
             # Storage capacity — sanitize HTML entities and trailing text before matching
             cap = displays.get('storage-dimensionCapacity')
             if cap and not (sku_data.get('capacity') or '').strip():
-                cap = re.sub(r'&nbsp;', ' ', cap)
-                cap = re.sub(r'&[a-zA-Z0-9#]+;', '', cap)
-                cap = re.sub(r'<[^>]+>', '', cap)
-                cap = cap.strip()
+                cap = sanitize_text(cap)
                 m_cap = re.match(r'(\d+)\s*(GB|TB)', cap, re.IGNORECASE)
                 if m_cap:
                     sku_data['capacity'] = m_cap.group(1) + m_cap.group(2).upper()

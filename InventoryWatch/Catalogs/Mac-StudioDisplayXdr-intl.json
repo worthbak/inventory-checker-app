@@ -1,7 +1,7 @@
 {
   "_meta": {
     "family": "mac",
-    "generated_at": "2026-10-16T12:26:54.726120+00:00",
+    "generated_at": "2026-10-28T05:42:06.508712+00:00",
     "regions_scraped": 33,
     "scraper_version": "1.0",
     "token": "studio-display-xdr"
@@ -905,12 +905,12 @@
             "colorKey": "",
             "dimensionScreensize": "",
             "family": "studiodisplayxdr",
-            "familyName": "Studio Display XDR - Standard glass - VESA mount adapter (stand not included)",
+            "familyName": "Studio Display XDR",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "mac"
             },
-            "name": "Studio Display XDR - Standard glass - VESA mount adapter (stand not included) (MFEL4CH/A)",
+            "name": "Studio Display XDR (MFEL4CH/A)",
             "partNumber": "MFEL4CH/A"
           },
           "MFEN4CH/A": {
@@ -919,12 +919,12 @@
             "colorKey": "",
             "dimensionScreensize": "",
             "family": "studiodisplayxdr",
-            "familyName": "Studio Display XDR - Standard glass - VESA mount adapter (stand not included)",
+            "familyName": "Studio Display XDR",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "mac"
             },
-            "name": "Studio Display XDR - Standard glass - VESA mount adapter (stand not included) (MFEN4CH/A)",
+            "name": "Studio Display XDR (MFEN4CH/A)",
             "partNumber": "MFEN4CH/A"
           },
           "MFEP4CH/A": {
@@ -933,12 +933,12 @@
             "colorKey": "",
             "dimensionScreensize": "",
             "family": "studiodisplayxdr",
-            "familyName": "Studio Display XDR - Standard glass - VESA mount adapter (stand not included)",
+            "familyName": "Studio Display XDR",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "mac"
             },
-            "name": "Studio Display XDR - Standard glass - VESA mount adapter (stand not included) (MFEP4CH/A)",
+            "name": "Studio Display XDR (MFEP4CH/A)",
             "partNumber": "MFEP4CH/A"
           },
           "MFEQ4CH/A": {
@@ -947,12 +947,12 @@
             "colorKey": "",
             "dimensionScreensize": "",
             "family": "studiodisplayxdr",
-            "familyName": "Studio Display XDR - Standard glass - VESA mount adapter (stand not included)",
+            "familyName": "Studio Display XDR",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "mac"
             },
-            "name": "Studio Display XDR - Standard glass - VESA mount adapter (stand not included) (MFEQ4CH/A)",
+            "name": "Studio Display XDR (MFEQ4CH/A)",
             "partNumber": "MFEQ4CH/A"
           }
         },

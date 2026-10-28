@@ -1,7 +1,7 @@
 {
   "_meta": {
     "family": "airpods",
-    "generated_at": "2026-10-16T14:00:23.385817+00:00",
+    "generated_at": "2026-10-28T05:51:20.256128+00:00",
     "regions_scraped": 33,
     "scraper_version": "1.0",
     "token": "airpods-max-2"
@@ -1076,13 +1076,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "airpodsmax2",
-            "familyName": "AirPods Max 2 - Midnight",
+            "familyName": "AirPods Max 2",
             "metadata": {
               "dimensionColor": "Midnight",
               "isRealPartNumber": true,
               "sourcePage": "airpods"
             },
-            "name": "Midnight",
+            "name": "AirPods Max 2 Midnight",
             "partNumber": "MHWK4CH/A"
           },
           "MHWL4CH/A": {
@@ -1091,13 +1091,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "airpodsmax2",
-            "familyName": "AirPods Max 2 - Midnight",
+            "familyName": "AirPods Max 2",
             "metadata": {
               "dimensionColor": "Starlight",
               "isRealPartNumber": true,
               "sourcePage": "airpods"
             },
-            "name": "Starlight",
+            "name": "AirPods Max 2 Starlight",
             "partNumber": "MHWL4CH/A"
           },
           "MHWM4CH/A": {
@@ -1106,13 +1106,13 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "airpodsmax2",
-            "familyName": "AirPods Max 2 - Midnight",
+            "familyName": "AirPods Max 2",
             "metadata": {
               "dimensionColor": "蓝色",
               "isRealPartNumber": true,
               "sourcePage": "airpods"
             },
-            "name": "蓝色",
+            "name": "AirPods Max 2 蓝色",
             "partNumber": "MHWM4CH/A"
           },
           "MHWN4CH/A": {
@@ -1121,13 +1121,13 @@
             "colorKey": "orange",
             "dimensionScreensize": "",
             "family": "airpodsmax2",
-            "familyName": "AirPods Max 2 - Midnight",
+            "familyName": "AirPods Max 2",
             "metadata": {
               "dimensionColor": "橙色",
               "isRealPartNumber": true,
               "sourcePage": "airpods"
             },
-            "name": "橙色",
+            "name": "AirPods Max 2 橙色",
             "partNumber": "MHWN4CH/A"
           },
           "MHWP4CH/A": {
@@ -1136,13 +1136,13 @@
             "colorKey": "purple",
             "dimensionScreensize": "",
             "family": "airpodsmax2",
-            "familyName": "AirPods Max 2 - Midnight",
+            "familyName": "AirPods Max 2",
             "metadata": {
               "dimensionColor": "紫色",
               "isRealPartNumber": true,
               "sourcePage": "airpods"
             },
-            "name": "紫色",
+            "name": "AirPods Max 2 紫色",
             "partNumber": "MHWP4CH/A"
           }
         },

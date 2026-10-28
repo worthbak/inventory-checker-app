@@ -1,7 +1,7 @@
 {
   "_meta": {
     "family": "ipad",
-    "generated_at": "2026-10-16T12:26:34.466200+00:00",
+    "generated_at": "2026-10-28T05:35:00.611547+00:00",
     "regions_scraped": 33,
     "scraper_version": "1.0",
     "token": "ipad"
@@ -3425,12 +3425,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad Wi-Fi 128GB - Blue",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128GB - Blue Wi-Fi 128GB 银色",
+            "name": "iPad (A16) Wi-Fi 128GB 银色",
             "partNumber": "MD3Y4CH/A"
           },
           "MD4A4CH/A": {
@@ -3439,12 +3439,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad Wi-Fi 128GB - Blue",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128GB - Blue Wi-Fi 128GB 蓝色",
+            "name": "iPad (A16) Wi-Fi 128GB 蓝色",
             "partNumber": "MD4A4CH/A"
           },
           "MD4D4CH/A": {
@@ -3453,12 +3453,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad Wi-Fi 128GB - Blue",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128GB - Blue Wi-Fi 128GB 黄色",
+            "name": "iPad (A16) Wi-Fi 128GB 黄色",
             "partNumber": "MD4D4CH/A"
           },
           "MD4E4CH/A": {
@@ -3467,12 +3467,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad Wi-Fi 128GB - Blue",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128GB - Blue Wi-Fi 128GB 粉色",
+            "name": "iPad (A16) Wi-Fi 128GB 粉色",
             "partNumber": "MD4E4CH/A"
           },
           "MD4G4CH/A": {
@@ -3481,12 +3481,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad Wi-Fi 128GB - Blue",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128GB - Blue Wi-Fi 256GB 银色",
+            "name": "iPad (A16) Wi-Fi 256GB 银色",
             "partNumber": "MD4G4CH/A"
           },
           "MD4H4CH/A": {
@@ -3495,12 +3495,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad Wi-Fi 128GB - Blue",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128GB - Blue Wi-Fi 256GB 蓝色",
+            "name": "iPad (A16) Wi-Fi 256GB 蓝色",
             "partNumber": "MD4H4CH/A"
           },
           "MD4J4CH/A": {
@@ -3509,12 +3509,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad Wi-Fi 128GB - Blue",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128GB - Blue Wi-Fi 256GB 黄色",
+            "name": "iPad (A16) Wi-Fi 256GB 黄色",
             "partNumber": "MD4J4CH/A"
           },
           "MD4P4CH/A": {
@@ -3523,12 +3523,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad Wi-Fi 128GB - Blue",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128GB - Blue Wi-Fi 256GB 粉色",
+            "name": "iPad (A16) Wi-Fi 256GB 粉色",
             "partNumber": "MD4P4CH/A"
           },
           "MD4Q4CH/A": {
@@ -3537,12 +3537,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad Wi-Fi 128GB - Blue",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128GB - Blue Wi-Fi 512GB 银色",
+            "name": "iPad (A16) Wi-Fi 512GB 银色",
             "partNumber": "MD4Q4CH/A"
           },
           "MD4Y4CH/A": {
@@ -3551,12 +3551,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad Wi-Fi 128GB - Blue",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128GB - Blue Wi-Fi 512GB 蓝色",
+            "name": "iPad (A16) Wi-Fi 512GB 蓝色",
             "partNumber": "MD4Y4CH/A"
           },
           "MD5A4CH/A": {
@@ -3565,12 +3565,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad Wi-Fi 128GB - Blue",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128GB - Blue Wi-Fi 512GB 黄色",
+            "name": "iPad (A16) Wi-Fi 512GB 黄色",
             "partNumber": "MD5A4CH/A"
           },
           "MD5C4CH/A": {
@@ -3579,12 +3579,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad Wi-Fi 128GB - Blue",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128GB - Blue Wi-Fi 512GB 粉色",
+            "name": "iPad (A16) Wi-Fi 512GB 粉色",
             "partNumber": "MD5C4CH/A"
           },
           "MD7U4CH/A": {
@@ -3593,12 +3593,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad Wi-Fi 128GB - Blue",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128GB - Blue Cellular 128GB 银色",
+            "name": "iPad (A16) Cellular 128GB 银色",
             "partNumber": "MD7U4CH/A"
           },
           "MD7V4CH/A": {
@@ -3607,12 +3607,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad Wi-Fi 128GB - Blue",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128GB - Blue Cellular 128GB 蓝色",
+            "name": "iPad (A16) Cellular 128GB 蓝色",
             "partNumber": "MD7V4CH/A"
           },
           "MD7W4CH/A": {
@@ -3621,12 +3621,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad Wi-Fi 128GB - Blue",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128GB - Blue Cellular 128GB 黄色",
+            "name": "iPad (A16) Cellular 128GB 黄色",
             "partNumber": "MD7W4CH/A"
           },
           "MD7X4CH/A": {
@@ -3635,12 +3635,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad Wi-Fi 128GB - Blue",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128GB - Blue Cellular 128GB 粉色",
+            "name": "iPad (A16) Cellular 128GB 粉色",
             "partNumber": "MD7X4CH/A"
           },
           "MD7Y4CH/A": {
@@ -3649,12 +3649,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad Wi-Fi 128GB - Blue",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128GB - Blue Cellular 256GB 银色",
+            "name": "iPad (A16) Cellular 256GB 银色",
             "partNumber": "MD7Y4CH/A"
           },
           "MD8A4CH/A": {
@@ -3663,12 +3663,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad Wi-Fi 128GB - Blue",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128GB - Blue Cellular 256GB 黄色",
+            "name": "iPad (A16) Cellular 256GB 黄色",
             "partNumber": "MD8A4CH/A"
           },
           "MD8C4CH/A": {
@@ -3677,12 +3677,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad Wi-Fi 128GB - Blue",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128GB - Blue Cellular 256GB 粉色",
+            "name": "iPad (A16) Cellular 256GB 粉色",
             "partNumber": "MD8C4CH/A"
           },
           "MD8D4CH/A": {
@@ -3691,12 +3691,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad Wi-Fi 128GB - Blue",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128GB - Blue Cellular 512GB 银色",
+            "name": "iPad (A16) Cellular 512GB 银色",
             "partNumber": "MD8D4CH/A"
           },
           "MD8E4CH/A": {
@@ -3705,12 +3705,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad Wi-Fi 128GB - Blue",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128GB - Blue Cellular 512GB 蓝色",
+            "name": "iPad (A16) Cellular 512GB 蓝色",
             "partNumber": "MD8E4CH/A"
           },
           "MD8F4CH/A": {
@@ -3719,12 +3719,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad Wi-Fi 128GB - Blue",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128GB - Blue Cellular 512GB 黄色",
+            "name": "iPad (A16) Cellular 512GB 黄色",
             "partNumber": "MD8F4CH/A"
           },
           "MD8G4CH/A": {
@@ -3733,12 +3733,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad Wi-Fi 128GB - Blue",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128GB - Blue Cellular 512GB 粉色",
+            "name": "iPad (A16) Cellular 512GB 粉色",
             "partNumber": "MD8G4CH/A"
           },
           "MDAJ4CH/A": {
@@ -3747,12 +3747,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad Wi-Fi 128GB - Blue",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128GB - Blue Cellular 256GB 蓝色",
+            "name": "iPad (A16) Cellular 256GB 蓝色",
             "partNumber": "MDAJ4CH/A"
           }
         },

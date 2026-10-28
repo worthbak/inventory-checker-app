@@ -1,7 +1,7 @@
 {
   "_meta": {
     "family": "mac",
-    "generated_at": "2026-10-16T12:26:14.464061+00:00",
+    "generated_at": "2026-10-28T05:41:34.690966+00:00",
     "regions_scraped": 33,
     "scraper_version": "1.0",
     "token": "studio-display"
@@ -1157,12 +1157,12 @@
             "colorKey": "",
             "dimensionScreensize": "",
             "family": "studiodisplay",
-            "familyName": "Studio Display - Nano-texture glass - VESA mount adapter",
+            "familyName": "Studio Display",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "mac"
             },
-            "name": "Studio Display - Nano-texture glass - VESA mount adapter (MFEW4CH/A)",
+            "name": "Studio Display (MFEW4CH/A)",
             "partNumber": "MFEW4CH/A"
           },
           "MFEX4CH/A": {
@@ -1171,12 +1171,12 @@
             "colorKey": "",
             "dimensionScreensize": "",
             "family": "studiodisplay",
-            "familyName": "Studio Display - Nano-texture glass - VESA mount adapter",
+            "familyName": "Studio Display",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "mac"
             },
-            "name": "Studio Display - Nano-texture glass - VESA mount adapter (MFEX4CH/A)",
+            "name": "Studio Display (MFEX4CH/A)",
             "partNumber": "MFEX4CH/A"
           },
           "MFEY4CH/A": {
@@ -1185,12 +1185,12 @@
             "colorKey": "",
             "dimensionScreensize": "",
             "family": "studiodisplay",
-            "familyName": "Studio Display - Nano-texture glass - VESA mount adapter",
+            "familyName": "Studio Display",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "mac"
             },
-            "name": "Studio Display - Nano-texture glass - VESA mount adapter (MFEY4CH/A)",
+            "name": "Studio Display (MFEY4CH/A)",
             "partNumber": "MFEY4CH/A"
           },
           "MFF04CH/A": {
@@ -1199,12 +1199,12 @@
             "colorKey": "",
             "dimensionScreensize": "",
             "family": "studiodisplay",
-            "familyName": "Studio Display - Nano-texture glass - VESA mount adapter",
+            "familyName": "Studio Display",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "mac"
             },
-            "name": "Studio Display - Nano-texture glass - VESA mount adapter (MFF04CH/A)",
+            "name": "Studio Display (MFF04CH/A)",
             "partNumber": "MFF04CH/A"
           },
           "MFF14CH/A": {
@@ -1213,12 +1213,12 @@
             "colorKey": "",
             "dimensionScreensize": "",
             "family": "studiodisplay",
-            "familyName": "Studio Display - Nano-texture glass - VESA mount adapter",
+            "familyName": "Studio Display",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "mac"
             },
-            "name": "Studio Display - Nano-texture glass - VESA mount adapter (MFF14CH/A)",
+            "name": "Studio Display (MFF14CH/A)",
             "partNumber": "MFF14CH/A"
           },
           "MFF24CH/A": {
@@ -1227,12 +1227,12 @@
             "colorKey": "",
             "dimensionScreensize": "",
             "family": "studiodisplay",
-            "familyName": "Studio Display - Nano-texture glass - VESA mount adapter",
+            "familyName": "Studio Display",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "mac"
             },
-            "name": "Studio Display - Nano-texture glass - VESA mount adapter (MFF24CH/A)",
+            "name": "Studio Display (MFF24CH/A)",
             "partNumber": "MFF24CH/A"
           }
         },

@@ -1,7 +1,7 @@
 {
   "_meta": {
     "family": "homepod",
-    "generated_at": "2026-10-16T13:32:27.434423+00:00",
+    "generated_at": "2026-10-28T05:49:52.885200+00:00",
     "regions_scraped": 33,
     "scraper_version": "1.0",
     "token": "homepod-mini"
@@ -889,12 +889,12 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "homepodmini",
-            "familyName": "HomePod mini 2 - Pink",
+            "familyName": "HomePod mini 2",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "homepod"
             },
-            "name": "HomePod mini 2 - Pink 午夜色",
+            "name": "HomePod mini 2 午夜色",
             "partNumber": "MGHJ4CH/A"
           },
           "MGHK4CH/A": {
@@ -903,12 +903,12 @@
             "colorKey": "white",
             "dimensionScreensize": "",
             "family": "homepodmini",
-            "familyName": "HomePod mini 2 - Pink",
+            "familyName": "HomePod mini 2",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "homepod"
             },
-            "name": "HomePod mini 2 - Pink 白色",
+            "name": "HomePod mini 2 白色",
             "partNumber": "MGHK4CH/A"
           },
           "MGHL4CH/A": {
@@ -917,12 +917,12 @@
             "colorKey": "green",
             "dimensionScreensize": "",
             "family": "homepodmini",
-            "familyName": "HomePod mini 2 - Pink",
+            "familyName": "HomePod mini 2",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "homepod"
             },
-            "name": "HomePod mini 2 - Pink 绿色",
+            "name": "HomePod mini 2 绿色",
             "partNumber": "MGHL4CH/A"
           },
           "MGHM4CH/A": {
@@ -931,12 +931,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "homepodmini",
-            "familyName": "HomePod mini 2 - Pink",
+            "familyName": "HomePod mini 2",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "homepod"
             },
-            "name": "HomePod mini 2 - Pink 蓝色",
+            "name": "HomePod mini 2 蓝色",
             "partNumber": "MGHM4CH/A"
           },
           "MGKR4CH/A": {
@@ -945,12 +945,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "homepodmini",
-            "familyName": "HomePod mini 2 - Pink",
+            "familyName": "HomePod mini 2",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "homepod"
             },
-            "name": "HomePod mini 2 - Pink 粉色",
+            "name": "HomePod mini 2 粉色",
             "partNumber": "MGKR4CH/A"
           }
         },
