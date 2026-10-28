@@ -145,6 +145,8 @@ Install the release-note renderer once with
 `python3 -m pip install -r scripts/requirements-release.txt` (use a virtual
 environment if required by your Python installation). Release packaging embeds
 HTML notes in the appcast so Sparkle displays what changed in its update dialog.
+The same section is included as Markdown in the GitHub release, ahead of
+GitHub's automatically generated notes.
 Notes come from the exact `## <marketing version>` heading in
 [`CHANGELOG.md`](CHANGELOG.md), falling back to `## Unreleased` if that version
 has no section. Empty or missing notes stop the release before building.

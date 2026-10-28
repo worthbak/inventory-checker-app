@@ -1,4 +1,4 @@
-"""Render the matching changelog section as an appcast description."""
+"""Render changelog notes for Sparkle or GitHub releases."""
 
 import argparse
 from pathlib import Path
@@ -28,9 +28,16 @@ def main() -> None:
     parser.add_argument("changelog", type=Path)
     parser.add_argument("version")
     parser.add_argument("output", type=Path)
+    parser.add_argument("--format", choices=("xml", "markdown"), default="xml")
     args = parser.parse_args()
+    changelog = args.changelog.read_text(encoding="utf-8")
+    notes = (
+        release_section(changelog, args.version)
+        if args.format == "markdown"
+        else description(changelog, args.version)
+    )
     args.output.write_text(
-        description(args.changelog.read_text(encoding="utf-8"), args.version) + "\n",
+        notes + "\n",
         encoding="utf-8",
     )
 

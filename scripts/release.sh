@@ -184,6 +184,7 @@ if ! python3 -c 'import markdown' >/dev/null 2>&1; then
     exit 1
 fi
 python3 "$ROOT/scripts/release_notes.py" "$ROOT/CHANGELOG.md" "$VERSION" "$OUTPUT/release-notes.xml"
+python3 "$ROOT/scripts/release_notes.py" "$ROOT/CHANGELOG.md" "$VERSION" "$OUTPUT/release-notes.md" --format markdown
 
 xcodebuild test \
     -project "$ROOT/InventoryWatch.xcodeproj" \
@@ -397,6 +398,7 @@ GH_RELEASE_ARGS=(
     --target "$RELEASE_COMMIT"
     --title "InventoryWatch $VERSION (build $BUILD_VERSION)"
     --generate-notes
+    --notes-file "$OUTPUT/release-notes.md"
 )
 if [[ "$RELEASE_CHANNEL" == beta ]]; then
     GH_RELEASE_ARGS+=(--prerelease)

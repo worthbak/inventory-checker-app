@@ -5,6 +5,7 @@
 ### Added
 
 - Sparkle update dialogs show release notes from the changelog. Release packaging embeds the matching version's notes, or the Unreleased section for a new version.
+- GitHub releases include the same changelog section ahead of automatically generated notes.
 
 ## 3.0.0-RC.3
 
