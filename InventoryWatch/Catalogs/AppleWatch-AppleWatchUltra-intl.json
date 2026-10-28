@@ -1,7 +1,7 @@
 {
   "_meta": {
     "family": "watch",
-    "generated_at": "2026-10-28T05:45:18.575158+00:00",
+    "generated_at": "2026-10-28T08:29:25.255646+00:00",
     "regions_scraped": 33,
     "scraper_version": "1.0",
     "token": "apple-watch-ultra"
@@ -841,7 +841,7 @@
         "skus": {
           "MJCR4KS/A": {
             "capacity": "",
-            "colorDisplay": "Luonnon­­vaalea",
+            "colorDisplay": "Luonnonvaalea",
             "colorKey": "natural",
             "dimensionScreensize": "",
             "family": "watch",
@@ -852,7 +852,7 @@
               "isRealPartNumber": true,
               "sourcePage": "watch"
             },
-            "name": "Apple Watch Ultra 4 49mm Luonnon­­vaalea",
+            "name": "Apple Watch Ultra 4 49mm Luonnonvaalea",
             "partNumber": "MJCR4KS/A"
           },
           "MJCT4KS/A": {

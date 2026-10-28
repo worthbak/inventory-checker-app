@@ -1,7 +1,7 @@
 {
   "_meta": {
     "family": "ipad",
-    "generated_at": "2026-10-28T05:35:49.591391+00:00",
+    "generated_at": "2026-10-28T08:44:55.370625+00:00",
     "regions_scraped": 33,
     "scraper_version": "1.0",
     "token": "ipad-mini"
@@ -645,13 +645,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 128GB Mitternacht",
+            "name": "iPad mini (A20 Pro) Cellular 128GB Mitternacht",
             "partNumber": "MJ674TY/A"
           },
           "MJ684TY/A": {
@@ -660,13 +660,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 128GB Polarstern",
+            "name": "iPad mini (A20 Pro) Cellular 128GB Polarstern",
             "partNumber": "MJ684TY/A"
           },
           "MJ6C4TY/A": {
@@ -675,13 +675,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 256GB Mitternacht",
+            "name": "iPad mini (A20 Pro) Cellular 256GB Mitternacht",
             "partNumber": "MJ6C4TY/A"
           },
           "MJ6D4TY/A": {
@@ -690,13 +690,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 256GB Polarstern",
+            "name": "iPad mini (A20 Pro) Cellular 256GB Polarstern",
             "partNumber": "MJ6D4TY/A"
           },
           "MJ6F4TY/A": {
@@ -705,13 +705,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 128GB Mitternacht",
+            "name": "iPad mini (A20 Pro) Wi-Fi 128GB Mitternacht",
             "partNumber": "MJ6F4TY/A"
           },
           "MJ6H4TY/A": {
@@ -720,13 +720,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 512GB Mitternacht",
+            "name": "iPad mini (A20 Pro) Cellular 512GB Mitternacht",
             "partNumber": "MJ6H4TY/A"
           },
           "MJ6J4TY/A": {
@@ -735,13 +735,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 128GB Polarstern",
+            "name": "iPad mini (A20 Pro) Wi-Fi 128GB Polarstern",
             "partNumber": "MJ6J4TY/A"
           },
           "MJ6K4TY/A": {
@@ -750,13 +750,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 512GB Polarstern",
+            "name": "iPad mini (A20 Pro) Cellular 512GB Polarstern",
             "partNumber": "MJ6K4TY/A"
           },
           "MJ6M4TY/A": {
@@ -765,13 +765,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Nanotexturglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 512GB Nanotexturglas Mitternacht",
+            "name": "iPad mini (A20 Pro) Cellular 512GB Nanotexturglas Mitternacht",
             "partNumber": "MJ6M4TY/A"
           },
           "MJ6P4TY/A": {
@@ -780,13 +780,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Nanotexturglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 512GB Nanotexturglas Polarstern",
+            "name": "iPad mini (A20 Pro) Cellular 512GB Nanotexturglas Polarstern",
             "partNumber": "MJ6P4TY/A"
           },
           "MJ6Q4TY/A": {
@@ -795,13 +795,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 256GB Mitternacht",
+            "name": "iPad mini (A20 Pro) Wi-Fi 256GB Mitternacht",
             "partNumber": "MJ6Q4TY/A"
           },
           "MJ6R4TY/A": {
@@ -810,13 +810,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 256GB Polarstern",
+            "name": "iPad mini (A20 Pro) Wi-Fi 256GB Polarstern",
             "partNumber": "MJ6R4TY/A"
           },
           "MJ6V4TY/A": {
@@ -825,13 +825,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 512GB Mitternacht",
+            "name": "iPad mini (A20 Pro) Wi-Fi 512GB Mitternacht",
             "partNumber": "MJ6V4TY/A"
           },
           "MJ6W4TY/A": {
@@ -840,13 +840,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 512GB Polarstern",
+            "name": "iPad mini (A20 Pro) Wi-Fi 512GB Polarstern",
             "partNumber": "MJ6W4TY/A"
           },
           "MJ6X4TY/A": {
@@ -855,13 +855,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Nanotexturglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 512GB Nanotexturglas Mitternacht",
+            "name": "iPad mini (A20 Pro) Wi-Fi 512GB Nanotexturglas Mitternacht",
             "partNumber": "MJ6X4TY/A"
           },
           "MJ6Y4TY/A": {
@@ -870,13 +870,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Nanotexturglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 512GB Nanotexturglas Polarstern",
+            "name": "iPad mini (A20 Pro) Wi-Fi 512GB Nanotexturglas Polarstern",
             "partNumber": "MJ6Y4TY/A"
           },
           "ML2Q4TY/A": {
@@ -885,13 +885,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Nanotexturglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 256GB Nanotexturglas Mitternacht",
+            "name": "iPad mini (A20 Pro) Wi-Fi 256GB Nanotexturglas Mitternacht",
             "partNumber": "ML2Q4TY/A"
           },
           "ML2T4TY/A": {
@@ -900,13 +900,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Nanotexturglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 256GB Nanotexturglas Polarstern",
+            "name": "iPad mini (A20 Pro) Wi-Fi 256GB Nanotexturglas Polarstern",
             "partNumber": "ML2T4TY/A"
           },
           "ML2W4TY/A": {
@@ -915,13 +915,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Nanotexturglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 256GB Nanotexturglas Mitternacht",
+            "name": "iPad mini (A20 Pro) Cellular 256GB Nanotexturglas Mitternacht",
             "partNumber": "ML2W4TY/A"
           },
           "ML2X4TY/A": {
@@ -930,13 +930,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Nanotexturglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 256GB Nanotexturglas Polarstern",
+            "name": "iPad mini (A20 Pro) Cellular 256GB Nanotexturglas Polarstern",
             "partNumber": "ML2X4TY/A"
           }
         },
@@ -1254,78 +1254,78 @@
       "ipad-mini": {
         "skus": {
           "MJ674TY/A": {
-            "capacity": "128 Gon",
+            "capacity": "128 Go",
             "colorDisplay": "Minuit",
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Verre standard",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 128 Gon Verre standard Minuit",
+            "name": "iPad mini (A20 Pro) Cellular 128 Go Verre standard Minuit",
             "partNumber": "MJ674TY/A"
           },
           "MJ684TY/A": {
-            "capacity": "128 Gon",
+            "capacity": "128 Go",
             "colorDisplay": "Lumière stellaire",
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Verre standard",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 128 Gon Verre standard Lumière stellaire",
+            "name": "iPad mini (A20 Pro) Cellular 128 Go Verre standard Lumière stellaire",
             "partNumber": "MJ684TY/A"
           },
           "MJ6C4TY/A": {
-            "capacity": "256 Gon",
+            "capacity": "256 Go",
             "colorDisplay": "Minuit",
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Verre standard",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 256 Gon Verre standard Minuit",
+            "name": "iPad mini (A20 Pro) Cellular 256 Go Verre standard Minuit",
             "partNumber": "MJ6C4TY/A"
           },
           "MJ6D4TY/A": {
-            "capacity": "256 Gon",
+            "capacity": "256 Go",
             "colorDisplay": "Lumière stellaire",
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Verre standard",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 256 Gon Verre standard Lumière stellaire",
+            "name": "iPad mini (A20 Pro) Cellular 256 Go Verre standard Lumière stellaire",
             "partNumber": "MJ6D4TY/A"
           },
           "MJ6F4TY/A": {
-            "capacity": "128 Gon",
+            "capacity": "128 Go",
             "colorDisplay": "Minuit",
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Verre standard",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 128 Gon Verre standard Minuit",
+            "name": "iPad mini (A20 Pro) Wi-Fi 128 Go Verre standard Minuit",
             "partNumber": "MJ6F4TY/A"
           },
           "MJ6H4TY/A": {
@@ -1334,28 +1334,28 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Verre standard",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 512 Go Verre standard Minuit",
+            "name": "iPad mini (A20 Pro) Cellular 512 Go Verre standard Minuit",
             "partNumber": "MJ6H4TY/A"
           },
           "MJ6J4TY/A": {
-            "capacity": "128 Gon",
+            "capacity": "128 Go",
             "colorDisplay": "Lumière stellaire",
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Verre standard",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 128 Gon Verre standard Lumière stellaire",
+            "name": "iPad mini (A20 Pro) Wi-Fi 128 Go Verre standard Lumière stellaire",
             "partNumber": "MJ6J4TY/A"
           },
           "MJ6K4TY/A": {
@@ -1364,13 +1364,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Verre standard",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 512 Go Verre standard Lumière stellaire",
+            "name": "iPad mini (A20 Pro) Cellular 512 Go Verre standard Lumière stellaire",
             "partNumber": "MJ6K4TY/A"
           },
           "MJ6M4TY/A": {
@@ -1379,13 +1379,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Verre nano-texturé",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 512 Go Verre nano-texturé Minuit",
+            "name": "iPad mini (A20 Pro) Cellular 512 Go Verre nano-texturé Minuit",
             "partNumber": "MJ6M4TY/A"
           },
           "MJ6P4TY/A": {
@@ -1394,43 +1394,43 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Verre nano-texturé",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 512 Go Verre nano-texturé Lumière stellaire",
+            "name": "iPad mini (A20 Pro) Cellular 512 Go Verre nano-texturé Lumière stellaire",
             "partNumber": "MJ6P4TY/A"
           },
           "MJ6Q4TY/A": {
-            "capacity": "256 Gon",
+            "capacity": "256 Go",
             "colorDisplay": "Minuit",
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Verre standard",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 256 Gon Verre standard Minuit",
+            "name": "iPad mini (A20 Pro) Wi-Fi 256 Go Verre standard Minuit",
             "partNumber": "MJ6Q4TY/A"
           },
           "MJ6R4TY/A": {
-            "capacity": "256 Gon",
+            "capacity": "256 Go",
             "colorDisplay": "Lumière stellaire",
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Verre standard",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 256 Gon Verre standard Lumière stellaire",
+            "name": "iPad mini (A20 Pro) Wi-Fi 256 Go Verre standard Lumière stellaire",
             "partNumber": "MJ6R4TY/A"
           },
           "MJ6V4TY/A": {
@@ -1439,13 +1439,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Verre standard",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 512 Go Verre standard Minuit",
+            "name": "iPad mini (A20 Pro) Wi-Fi 512 Go Verre standard Minuit",
             "partNumber": "MJ6V4TY/A"
           },
           "MJ6W4TY/A": {
@@ -1454,13 +1454,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Verre standard",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 512 Go Verre standard Lumière stellaire",
+            "name": "iPad mini (A20 Pro) Wi-Fi 512 Go Verre standard Lumière stellaire",
             "partNumber": "MJ6W4TY/A"
           },
           "MJ6X4TY/A": {
@@ -1469,13 +1469,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Verre nano-texturé",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 512 Go Verre nano-texturé Minuit",
+            "name": "iPad mini (A20 Pro) Wi-Fi 512 Go Verre nano-texturé Minuit",
             "partNumber": "MJ6X4TY/A"
           },
           "MJ6Y4TY/A": {
@@ -1484,73 +1484,73 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Verre nano-texturé",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 512 Go Verre nano-texturé Lumière stellaire",
+            "name": "iPad mini (A20 Pro) Wi-Fi 512 Go Verre nano-texturé Lumière stellaire",
             "partNumber": "MJ6Y4TY/A"
           },
           "ML2Q4TY/A": {
-            "capacity": "256 Gon",
+            "capacity": "256 Go",
             "colorDisplay": "Minuit",
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Verre nano-texturé",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 256 Gon Verre nano-texturé Minuit",
+            "name": "iPad mini (A20 Pro) Wi-Fi 256 Go Verre nano-texturé Minuit",
             "partNumber": "ML2Q4TY/A"
           },
           "ML2T4TY/A": {
-            "capacity": "256 Gon",
+            "capacity": "256 Go",
             "colorDisplay": "Lumière stellaire",
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Verre nano-texturé",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 256 Gon Verre nano-texturé Lumière stellaire",
+            "name": "iPad mini (A20 Pro) Wi-Fi 256 Go Verre nano-texturé Lumière stellaire",
             "partNumber": "ML2T4TY/A"
           },
           "ML2W4TY/A": {
-            "capacity": "256 Gon",
+            "capacity": "256 Go",
             "colorDisplay": "Minuit",
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Verre nano-texturé",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 256 Gon Verre nano-texturé Minuit",
+            "name": "iPad mini (A20 Pro) Cellular 256 Go Verre nano-texturé Minuit",
             "partNumber": "ML2W4TY/A"
           },
           "ML2X4TY/A": {
-            "capacity": "256 Gon",
+            "capacity": "256 Go",
             "colorDisplay": "Lumière stellaire",
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Verre nano-texturé",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 256 Gon Verre nano-texturé Lumière stellaire",
+            "name": "iPad mini (A20 Pro) Cellular 256 Go Verre nano-texturé Lumière stellaire",
             "partNumber": "ML2X4TY/A"
           }
         },
@@ -1566,13 +1566,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standaardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 128GB Standaardglas Middernacht",
+            "name": "iPad mini (A20 Pro) Cellular 128GB Standaardglas Middernacht",
             "partNumber": "MJ674TY/A"
           },
           "MJ684TY/A": {
@@ -1581,13 +1581,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standaardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 128GB Standaardglas Sterrenlicht",
+            "name": "iPad mini (A20 Pro) Cellular 128GB Standaardglas Sterrenlicht",
             "partNumber": "MJ684TY/A"
           },
           "MJ6C4TY/A": {
@@ -1596,13 +1596,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standaardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 256 GB Standaardglas Middernacht",
+            "name": "iPad mini (A20 Pro) Cellular 256GB Standaardglas Middernacht",
             "partNumber": "MJ6C4TY/A"
           },
           "MJ6D4TY/A": {
@@ -1611,13 +1611,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standaardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 256 GB Standaardglas Sterrenlicht",
+            "name": "iPad mini (A20 Pro) Cellular 256GB Standaardglas Sterrenlicht",
             "partNumber": "MJ6D4TY/A"
           },
           "MJ6F4TY/A": {
@@ -1626,13 +1626,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standaardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 128GB Standaardglas Middernacht",
+            "name": "iPad mini (A20 Pro) Wi-Fi 128GB Standaardglas Middernacht",
             "partNumber": "MJ6F4TY/A"
           },
           "MJ6H4TY/A": {
@@ -1641,13 +1641,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standaardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 512GB Standaardglas Middernacht",
+            "name": "iPad mini (A20 Pro) Cellular 512GB Standaardglas Middernacht",
             "partNumber": "MJ6H4TY/A"
           },
           "MJ6J4TY/A": {
@@ -1656,13 +1656,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standaardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 128GB Standaardglas Sterrenlicht",
+            "name": "iPad mini (A20 Pro) Wi-Fi 128GB Standaardglas Sterrenlicht",
             "partNumber": "MJ6J4TY/A"
           },
           "MJ6K4TY/A": {
@@ -1671,13 +1671,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standaardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 512GB Standaardglas Sterrenlicht",
+            "name": "iPad mini (A20 Pro) Cellular 512GB Standaardglas Sterrenlicht",
             "partNumber": "MJ6K4TY/A"
           },
           "MJ6M4TY/A": {
@@ -1686,13 +1686,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Glas met nanotextuur",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 512GB Glas met nanotextuur Middernacht",
+            "name": "iPad mini (A20 Pro) Cellular 512GB Glas met nanotextuur Middernacht",
             "partNumber": "MJ6M4TY/A"
           },
           "MJ6P4TY/A": {
@@ -1701,13 +1701,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Glas met nanotextuur",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 512GB Glas met nanotextuur Sterrenlicht",
+            "name": "iPad mini (A20 Pro) Cellular 512GB Glas met nanotextuur Sterrenlicht",
             "partNumber": "MJ6P4TY/A"
           },
           "MJ6Q4TY/A": {
@@ -1716,13 +1716,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standaardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 256 GB Standaardglas Middernacht",
+            "name": "iPad mini (A20 Pro) Wi-Fi 256GB Standaardglas Middernacht",
             "partNumber": "MJ6Q4TY/A"
           },
           "MJ6R4TY/A": {
@@ -1731,13 +1731,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standaardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 256 GB Standaardglas Sterrenlicht",
+            "name": "iPad mini (A20 Pro) Wi-Fi 256GB Standaardglas Sterrenlicht",
             "partNumber": "MJ6R4TY/A"
           },
           "MJ6V4TY/A": {
@@ -1746,13 +1746,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standaardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 512GB Standaardglas Middernacht",
+            "name": "iPad mini (A20 Pro) Wi-Fi 512GB Standaardglas Middernacht",
             "partNumber": "MJ6V4TY/A"
           },
           "MJ6W4TY/A": {
@@ -1761,13 +1761,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standaardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 512GB Standaardglas Sterrenlicht",
+            "name": "iPad mini (A20 Pro) Wi-Fi 512GB Standaardglas Sterrenlicht",
             "partNumber": "MJ6W4TY/A"
           },
           "MJ6X4TY/A": {
@@ -1776,13 +1776,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Glas met nanotextuur",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 512GB Glas met nanotextuur Middernacht",
+            "name": "iPad mini (A20 Pro) Wi-Fi 512GB Glas met nanotextuur Middernacht",
             "partNumber": "MJ6X4TY/A"
           },
           "MJ6Y4TY/A": {
@@ -1791,13 +1791,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Glas met nanotextuur",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 512GB Glas met nanotextuur Sterrenlicht",
+            "name": "iPad mini (A20 Pro) Wi-Fi 512GB Glas met nanotextuur Sterrenlicht",
             "partNumber": "MJ6Y4TY/A"
           },
           "ML2Q4TY/A": {
@@ -1806,13 +1806,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Glas met nanotextuur",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 256 GB Glas met nanotextuur Middernacht",
+            "name": "iPad mini (A20 Pro) Wi-Fi 256GB Glas met nanotextuur Middernacht",
             "partNumber": "ML2Q4TY/A"
           },
           "ML2T4TY/A": {
@@ -1821,13 +1821,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Glas met nanotextuur",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 256 GB Glas met nanotextuur Sterrenlicht",
+            "name": "iPad mini (A20 Pro) Wi-Fi 256GB Glas met nanotextuur Sterrenlicht",
             "partNumber": "ML2T4TY/A"
           },
           "ML2W4TY/A": {
@@ -1836,13 +1836,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Glas met nanotextuur",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 256 GB Glas met nanotextuur Middernacht",
+            "name": "iPad mini (A20 Pro) Cellular 256GB Glas met nanotextuur Middernacht",
             "partNumber": "ML2W4TY/A"
           },
           "ML2X4TY/A": {
@@ -1851,13 +1851,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Glas met nanotextuur",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 256 GB Glas met nanotextuur Sterrenlicht",
+            "name": "iPad mini (A20 Pro) Cellular 256GB Glas met nanotextuur Sterrenlicht",
             "partNumber": "ML2X4TY/A"
           }
         },
@@ -1909,7 +1909,7 @@
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini (A20 Pro) Cellular 256 GB Vidro convencional Meia-noite",
+            "name": "iPad mini (A20 Pro) Cellular 256GB Vidro convencional Meia-noite",
             "partNumber": "MJ6C4BZ/A"
           },
           "MJ6D4BZ/A": {
@@ -1924,7 +1924,7 @@
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini (A20 Pro) Cellular 256 GB Vidro convencional Estelar",
+            "name": "iPad mini (A20 Pro) Cellular 256GB Vidro convencional Estelar",
             "partNumber": "MJ6D4BZ/A"
           },
           "MJ6F4BZ/A": {
@@ -1954,7 +1954,7 @@
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini (A20 Pro) Cellular 512 GB Vidro convencional Meia-noite",
+            "name": "iPad mini (A20 Pro) Cellular 512GB Vidro convencional Meia-noite",
             "partNumber": "MJ6H4BZ/A"
           },
           "MJ6J4BZ/A": {
@@ -1984,7 +1984,7 @@
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini (A20 Pro) Cellular 512 GB Vidro convencional Estelar",
+            "name": "iPad mini (A20 Pro) Cellular 512GB Vidro convencional Estelar",
             "partNumber": "MJ6K4BZ/A"
           },
           "MJ6M4BZ/A": {
@@ -1999,7 +1999,7 @@
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini (A20 Pro) Cellular 512 GB Vidro nano-texture Meia-noite",
+            "name": "iPad mini (A20 Pro) Cellular 512GB Vidro nano-texture Meia-noite",
             "partNumber": "MJ6M4BZ/A"
           },
           "MJ6P4BZ/A": {
@@ -2014,7 +2014,7 @@
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini (A20 Pro) Cellular 512 GB Vidro nano-texture Estelar",
+            "name": "iPad mini (A20 Pro) Cellular 512GB Vidro nano-texture Estelar",
             "partNumber": "MJ6P4BZ/A"
           },
           "MJ6Q4BZ/A": {
@@ -2029,7 +2029,7 @@
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini (A20 Pro) Wi-Fi 256 GB Vidro convencional Meia-noite",
+            "name": "iPad mini (A20 Pro) Wi-Fi 256GB Vidro convencional Meia-noite",
             "partNumber": "MJ6Q4BZ/A"
           },
           "MJ6R4BZ/A": {
@@ -2044,7 +2044,7 @@
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini (A20 Pro) Wi-Fi 256 GB Vidro convencional Estelar",
+            "name": "iPad mini (A20 Pro) Wi-Fi 256GB Vidro convencional Estelar",
             "partNumber": "MJ6R4BZ/A"
           },
           "MJ6V4BZ/A": {
@@ -2059,7 +2059,7 @@
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini (A20 Pro) Wi-Fi 512 GB Vidro convencional Meia-noite",
+            "name": "iPad mini (A20 Pro) Wi-Fi 512GB Vidro convencional Meia-noite",
             "partNumber": "MJ6V4BZ/A"
           },
           "MJ6W4BZ/A": {
@@ -2074,7 +2074,7 @@
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini (A20 Pro) Wi-Fi 512 GB Vidro convencional Estelar",
+            "name": "iPad mini (A20 Pro) Wi-Fi 512GB Vidro convencional Estelar",
             "partNumber": "MJ6W4BZ/A"
           },
           "MJ6X4BZ/A": {
@@ -2089,7 +2089,7 @@
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini (A20 Pro) Wi-Fi 512 GB Vidro nano-texture Meia-noite",
+            "name": "iPad mini (A20 Pro) Wi-Fi 512GB Vidro nano-texture Meia-noite",
             "partNumber": "MJ6X4BZ/A"
           },
           "MJ6Y4BZ/A": {
@@ -2104,7 +2104,7 @@
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini (A20 Pro) Wi-Fi 512 GB Vidro nano-texture Estelar",
+            "name": "iPad mini (A20 Pro) Wi-Fi 512GB Vidro nano-texture Estelar",
             "partNumber": "MJ6Y4BZ/A"
           },
           "ML2Q4BZ/A": {
@@ -2119,7 +2119,7 @@
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini (A20 Pro) Wi-Fi 256 GB Vidro nano-texture Meia-noite",
+            "name": "iPad mini (A20 Pro) Wi-Fi 256GB Vidro nano-texture Meia-noite",
             "partNumber": "ML2Q4BZ/A"
           },
           "ML2T4BZ/A": {
@@ -2134,7 +2134,7 @@
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini (A20 Pro) Wi-Fi 256 GB Vidro nano-texture Estelar",
+            "name": "iPad mini (A20 Pro) Wi-Fi 256GB Vidro nano-texture Estelar",
             "partNumber": "ML2T4BZ/A"
           },
           "ML2W4BZ/A": {
@@ -2149,7 +2149,7 @@
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini (A20 Pro) Cellular 256 GB Vidro nano-texture Meia-noite",
+            "name": "iPad mini (A20 Pro) Cellular 256GB Vidro nano-texture Meia-noite",
             "partNumber": "ML2W4BZ/A"
           },
           "ML2X4BZ/A": {
@@ -2164,7 +2164,7 @@
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini (A20 Pro) Cellular 256 GB Vidro nano-texture Estelar",
+            "name": "iPad mini (A20 Pro) Cellular 256GB Vidro nano-texture Estelar",
             "partNumber": "ML2X4BZ/A"
           }
         },
@@ -2487,13 +2487,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 128GB Mitternacht",
+            "name": "iPad mini (A20 Pro) Cellular 128GB Mitternacht",
             "partNumber": "MJ674TY/A"
           },
           "MJ684TY/A": {
@@ -2502,13 +2502,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 128GB Polarstern",
+            "name": "iPad mini (A20 Pro) Cellular 128GB Polarstern",
             "partNumber": "MJ684TY/A"
           },
           "MJ6C4TY/A": {
@@ -2517,13 +2517,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 256GB Mitternacht",
+            "name": "iPad mini (A20 Pro) Cellular 256GB Mitternacht",
             "partNumber": "MJ6C4TY/A"
           },
           "MJ6D4TY/A": {
@@ -2532,13 +2532,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 256GB Polarstern",
+            "name": "iPad mini (A20 Pro) Cellular 256GB Polarstern",
             "partNumber": "MJ6D4TY/A"
           },
           "MJ6F4TY/A": {
@@ -2547,13 +2547,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 128GB Mitternacht",
+            "name": "iPad mini (A20 Pro) Wi-Fi 128GB Mitternacht",
             "partNumber": "MJ6F4TY/A"
           },
           "MJ6H4TY/A": {
@@ -2562,13 +2562,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 512GB Mitternacht",
+            "name": "iPad mini (A20 Pro) Cellular 512GB Mitternacht",
             "partNumber": "MJ6H4TY/A"
           },
           "MJ6J4TY/A": {
@@ -2577,13 +2577,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 128GB Polarstern",
+            "name": "iPad mini (A20 Pro) Wi-Fi 128GB Polarstern",
             "partNumber": "MJ6J4TY/A"
           },
           "MJ6K4TY/A": {
@@ -2592,13 +2592,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 512GB Polarstern",
+            "name": "iPad mini (A20 Pro) Cellular 512GB Polarstern",
             "partNumber": "MJ6K4TY/A"
           },
           "MJ6M4TY/A": {
@@ -2607,13 +2607,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Nanotexturglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 512GB Nanotexturglas Mitternacht",
+            "name": "iPad mini (A20 Pro) Cellular 512GB Nanotexturglas Mitternacht",
             "partNumber": "MJ6M4TY/A"
           },
           "MJ6P4TY/A": {
@@ -2622,13 +2622,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Nanotexturglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 512GB Nanotexturglas Polarstern",
+            "name": "iPad mini (A20 Pro) Cellular 512GB Nanotexturglas Polarstern",
             "partNumber": "MJ6P4TY/A"
           },
           "MJ6Q4TY/A": {
@@ -2637,13 +2637,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 256GB Mitternacht",
+            "name": "iPad mini (A20 Pro) Wi-Fi 256GB Mitternacht",
             "partNumber": "MJ6Q4TY/A"
           },
           "MJ6R4TY/A": {
@@ -2652,13 +2652,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 256GB Polarstern",
+            "name": "iPad mini (A20 Pro) Wi-Fi 256GB Polarstern",
             "partNumber": "MJ6R4TY/A"
           },
           "MJ6V4TY/A": {
@@ -2667,13 +2667,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 512GB Mitternacht",
+            "name": "iPad mini (A20 Pro) Wi-Fi 512GB Mitternacht",
             "partNumber": "MJ6V4TY/A"
           },
           "MJ6W4TY/A": {
@@ -2682,13 +2682,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 512GB Polarstern",
+            "name": "iPad mini (A20 Pro) Wi-Fi 512GB Polarstern",
             "partNumber": "MJ6W4TY/A"
           },
           "MJ6X4TY/A": {
@@ -2697,13 +2697,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Nanotexturglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 512GB Nanotexturglas Mitternacht",
+            "name": "iPad mini (A20 Pro) Wi-Fi 512GB Nanotexturglas Mitternacht",
             "partNumber": "MJ6X4TY/A"
           },
           "MJ6Y4TY/A": {
@@ -2712,13 +2712,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Nanotexturglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 512GB Nanotexturglas Polarstern",
+            "name": "iPad mini (A20 Pro) Wi-Fi 512GB Nanotexturglas Polarstern",
             "partNumber": "MJ6Y4TY/A"
           },
           "ML2Q4TY/A": {
@@ -2727,13 +2727,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Nanotexturglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 256GB Nanotexturglas Mitternacht",
+            "name": "iPad mini (A20 Pro) Wi-Fi 256GB Nanotexturglas Mitternacht",
             "partNumber": "ML2Q4TY/A"
           },
           "ML2T4TY/A": {
@@ -2742,13 +2742,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Nanotexturglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 256GB Nanotexturglas Polarstern",
+            "name": "iPad mini (A20 Pro) Wi-Fi 256GB Nanotexturglas Polarstern",
             "partNumber": "ML2T4TY/A"
           },
           "ML2W4TY/A": {
@@ -2757,13 +2757,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Nanotexturglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 256GB Nanotexturglas Mitternacht",
+            "name": "iPad mini (A20 Pro) Cellular 256GB Nanotexturglas Mitternacht",
             "partNumber": "ML2W4TY/A"
           },
           "ML2X4TY/A": {
@@ -2772,13 +2772,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Nanotexturglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 256GB Nanotexturglas Polarstern",
+            "name": "iPad mini (A20 Pro) Cellular 256GB Nanotexturglas Polarstern",
             "partNumber": "ML2X4TY/A"
           }
         },
@@ -2789,78 +2789,78 @@
       "ipad-mini": {
         "skus": {
           "MJ674TY/A": {
-            "capacity": "128 Gon",
+            "capacity": "128 Go",
             "colorDisplay": "Minuit",
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Verre standard",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 128 Gon Verre standard Minuit",
+            "name": "iPad mini (A20 Pro) Cellular 128 Go Verre standard Minuit",
             "partNumber": "MJ674TY/A"
           },
           "MJ684TY/A": {
-            "capacity": "128 Gon",
+            "capacity": "128 Go",
             "colorDisplay": "Lumière stellaire",
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Verre standard",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 128 Gon Verre standard Lumière stellaire",
+            "name": "iPad mini (A20 Pro) Cellular 128 Go Verre standard Lumière stellaire",
             "partNumber": "MJ684TY/A"
           },
           "MJ6C4TY/A": {
-            "capacity": "256 Gon",
+            "capacity": "256 Go",
             "colorDisplay": "Minuit",
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Verre standard",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 256 Gon Verre standard Minuit",
+            "name": "iPad mini (A20 Pro) Cellular 256 Go Verre standard Minuit",
             "partNumber": "MJ6C4TY/A"
           },
           "MJ6D4TY/A": {
-            "capacity": "256 Gon",
+            "capacity": "256 Go",
             "colorDisplay": "Lumière stellaire",
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Verre standard",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 256 Gon Verre standard Lumière stellaire",
+            "name": "iPad mini (A20 Pro) Cellular 256 Go Verre standard Lumière stellaire",
             "partNumber": "MJ6D4TY/A"
           },
           "MJ6F4TY/A": {
-            "capacity": "128 Gon",
+            "capacity": "128 Go",
             "colorDisplay": "Minuit",
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Verre standard",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 128 Gon Verre standard Minuit",
+            "name": "iPad mini (A20 Pro) Wi-Fi 128 Go Verre standard Minuit",
             "partNumber": "MJ6F4TY/A"
           },
           "MJ6H4TY/A": {
@@ -2869,28 +2869,28 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Verre standard",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 512 Go Verre standard Minuit",
+            "name": "iPad mini (A20 Pro) Cellular 512 Go Verre standard Minuit",
             "partNumber": "MJ6H4TY/A"
           },
           "MJ6J4TY/A": {
-            "capacity": "128 Gon",
+            "capacity": "128 Go",
             "colorDisplay": "Lumière stellaire",
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Verre standard",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 128 Gon Verre standard Lumière stellaire",
+            "name": "iPad mini (A20 Pro) Wi-Fi 128 Go Verre standard Lumière stellaire",
             "partNumber": "MJ6J4TY/A"
           },
           "MJ6K4TY/A": {
@@ -2899,13 +2899,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Verre standard",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 512 Go Verre standard Lumière stellaire",
+            "name": "iPad mini (A20 Pro) Cellular 512 Go Verre standard Lumière stellaire",
             "partNumber": "MJ6K4TY/A"
           },
           "MJ6M4TY/A": {
@@ -2914,13 +2914,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Verre nano-texturé",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 512 Go Verre nano-texturé Minuit",
+            "name": "iPad mini (A20 Pro) Cellular 512 Go Verre nano-texturé Minuit",
             "partNumber": "MJ6M4TY/A"
           },
           "MJ6P4TY/A": {
@@ -2929,43 +2929,43 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Verre nano-texturé",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 512 Go Verre nano-texturé Lumière stellaire",
+            "name": "iPad mini (A20 Pro) Cellular 512 Go Verre nano-texturé Lumière stellaire",
             "partNumber": "MJ6P4TY/A"
           },
           "MJ6Q4TY/A": {
-            "capacity": "256 Gon",
+            "capacity": "256 Go",
             "colorDisplay": "Minuit",
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Verre standard",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 256 Gon Verre standard Minuit",
+            "name": "iPad mini (A20 Pro) Wi-Fi 256 Go Verre standard Minuit",
             "partNumber": "MJ6Q4TY/A"
           },
           "MJ6R4TY/A": {
-            "capacity": "256 Gon",
+            "capacity": "256 Go",
             "colorDisplay": "Lumière stellaire",
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Verre standard",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 256 Gon Verre standard Lumière stellaire",
+            "name": "iPad mini (A20 Pro) Wi-Fi 256 Go Verre standard Lumière stellaire",
             "partNumber": "MJ6R4TY/A"
           },
           "MJ6V4TY/A": {
@@ -2974,13 +2974,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Verre standard",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 512 Go Verre standard Minuit",
+            "name": "iPad mini (A20 Pro) Wi-Fi 512 Go Verre standard Minuit",
             "partNumber": "MJ6V4TY/A"
           },
           "MJ6W4TY/A": {
@@ -2989,13 +2989,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Verre standard",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 512 Go Verre standard Lumière stellaire",
+            "name": "iPad mini (A20 Pro) Wi-Fi 512 Go Verre standard Lumière stellaire",
             "partNumber": "MJ6W4TY/A"
           },
           "MJ6X4TY/A": {
@@ -3004,13 +3004,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Verre nano-texturé",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 512 Go Verre nano-texturé Minuit",
+            "name": "iPad mini (A20 Pro) Wi-Fi 512 Go Verre nano-texturé Minuit",
             "partNumber": "MJ6X4TY/A"
           },
           "MJ6Y4TY/A": {
@@ -3019,73 +3019,73 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Verre nano-texturé",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 512 Go Verre nano-texturé Lumière stellaire",
+            "name": "iPad mini (A20 Pro) Wi-Fi 512 Go Verre nano-texturé Lumière stellaire",
             "partNumber": "MJ6Y4TY/A"
           },
           "ML2Q4TY/A": {
-            "capacity": "256 Gon",
+            "capacity": "256 Go",
             "colorDisplay": "Minuit",
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Verre nano-texturé",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 256 Gon Verre nano-texturé Minuit",
+            "name": "iPad mini (A20 Pro) Wi-Fi 256 Go Verre nano-texturé Minuit",
             "partNumber": "ML2Q4TY/A"
           },
           "ML2T4TY/A": {
-            "capacity": "256 Gon",
+            "capacity": "256 Go",
             "colorDisplay": "Lumière stellaire",
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Verre nano-texturé",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 256 Gon Verre nano-texturé Lumière stellaire",
+            "name": "iPad mini (A20 Pro) Wi-Fi 256 Go Verre nano-texturé Lumière stellaire",
             "partNumber": "ML2T4TY/A"
           },
           "ML2W4TY/A": {
-            "capacity": "256 Gon",
+            "capacity": "256 Go",
             "colorDisplay": "Minuit",
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Verre nano-texturé",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 256 Gon Verre nano-texturé Minuit",
+            "name": "iPad mini (A20 Pro) Cellular 256 Go Verre nano-texturé Minuit",
             "partNumber": "ML2W4TY/A"
           },
           "ML2X4TY/A": {
-            "capacity": "256 Gon",
+            "capacity": "256 Go",
             "colorDisplay": "Lumière stellaire",
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Verre nano-texturé",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 256 Gon Verre nano-texturé Lumière stellaire",
+            "name": "iPad mini (A20 Pro) Cellular 256 Go Verre nano-texturé Lumière stellaire",
             "partNumber": "ML2X4TY/A"
           }
         },
@@ -3408,13 +3408,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 128GB Mitternacht",
+            "name": "iPad mini (A20 Pro) Cellular 128GB Mitternacht",
             "partNumber": "MJ674TY/A"
           },
           "MJ684TY/A": {
@@ -3423,13 +3423,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 128GB Polarstern",
+            "name": "iPad mini (A20 Pro) Cellular 128GB Polarstern",
             "partNumber": "MJ684TY/A"
           },
           "MJ6C4TY/A": {
@@ -3438,13 +3438,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 256GB Mitternacht",
+            "name": "iPad mini (A20 Pro) Cellular 256GB Mitternacht",
             "partNumber": "MJ6C4TY/A"
           },
           "MJ6D4TY/A": {
@@ -3453,13 +3453,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 256GB Polarstern",
+            "name": "iPad mini (A20 Pro) Cellular 256GB Polarstern",
             "partNumber": "MJ6D4TY/A"
           },
           "MJ6F4TY/A": {
@@ -3468,13 +3468,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 128GB Mitternacht",
+            "name": "iPad mini (A20 Pro) Wi-Fi 128GB Mitternacht",
             "partNumber": "MJ6F4TY/A"
           },
           "MJ6H4TY/A": {
@@ -3483,13 +3483,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 512GB Mitternacht",
+            "name": "iPad mini (A20 Pro) Cellular 512GB Mitternacht",
             "partNumber": "MJ6H4TY/A"
           },
           "MJ6J4TY/A": {
@@ -3498,13 +3498,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 128GB Polarstern",
+            "name": "iPad mini (A20 Pro) Wi-Fi 128GB Polarstern",
             "partNumber": "MJ6J4TY/A"
           },
           "MJ6K4TY/A": {
@@ -3513,13 +3513,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 512GB Polarstern",
+            "name": "iPad mini (A20 Pro) Cellular 512GB Polarstern",
             "partNumber": "MJ6K4TY/A"
           },
           "MJ6M4TY/A": {
@@ -3528,13 +3528,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Nanotexturglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 512GB Nanotexturglas Mitternacht",
+            "name": "iPad mini (A20 Pro) Cellular 512GB Nanotexturglas Mitternacht",
             "partNumber": "MJ6M4TY/A"
           },
           "MJ6P4TY/A": {
@@ -3543,13 +3543,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Nanotexturglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 512GB Nanotexturglas Polarstern",
+            "name": "iPad mini (A20 Pro) Cellular 512GB Nanotexturglas Polarstern",
             "partNumber": "MJ6P4TY/A"
           },
           "MJ6Q4TY/A": {
@@ -3558,13 +3558,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 256GB Mitternacht",
+            "name": "iPad mini (A20 Pro) Wi-Fi 256GB Mitternacht",
             "partNumber": "MJ6Q4TY/A"
           },
           "MJ6R4TY/A": {
@@ -3573,13 +3573,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 256GB Polarstern",
+            "name": "iPad mini (A20 Pro) Wi-Fi 256GB Polarstern",
             "partNumber": "MJ6R4TY/A"
           },
           "MJ6V4TY/A": {
@@ -3588,13 +3588,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 512GB Mitternacht",
+            "name": "iPad mini (A20 Pro) Wi-Fi 512GB Mitternacht",
             "partNumber": "MJ6V4TY/A"
           },
           "MJ6W4TY/A": {
@@ -3603,13 +3603,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 512GB Polarstern",
+            "name": "iPad mini (A20 Pro) Wi-Fi 512GB Polarstern",
             "partNumber": "MJ6W4TY/A"
           },
           "MJ6X4TY/A": {
@@ -3618,13 +3618,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Nanotexturglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 512GB Nanotexturglas Mitternacht",
+            "name": "iPad mini (A20 Pro) Wi-Fi 512GB Nanotexturglas Mitternacht",
             "partNumber": "MJ6X4TY/A"
           },
           "MJ6Y4TY/A": {
@@ -3633,13 +3633,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Nanotexturglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 512GB Nanotexturglas Polarstern",
+            "name": "iPad mini (A20 Pro) Wi-Fi 512GB Nanotexturglas Polarstern",
             "partNumber": "MJ6Y4TY/A"
           },
           "ML2Q4TY/A": {
@@ -3648,13 +3648,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Nanotexturglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 256GB Nanotexturglas Mitternacht",
+            "name": "iPad mini (A20 Pro) Wi-Fi 256GB Nanotexturglas Mitternacht",
             "partNumber": "ML2Q4TY/A"
           },
           "ML2T4TY/A": {
@@ -3663,13 +3663,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Nanotexturglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 256GB Nanotexturglas Polarstern",
+            "name": "iPad mini (A20 Pro) Wi-Fi 256GB Nanotexturglas Polarstern",
             "partNumber": "ML2T4TY/A"
           },
           "ML2W4TY/A": {
@@ -3678,13 +3678,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Nanotexturglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 256GB Nanotexturglas Mitternacht",
+            "name": "iPad mini (A20 Pro) Cellular 256GB Nanotexturglas Mitternacht",
             "partNumber": "ML2W4TY/A"
           },
           "ML2X4TY/A": {
@@ -3693,13 +3693,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Nanotexturglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 256GB Nanotexturglas Polarstern",
+            "name": "iPad mini (A20 Pro) Cellular 256GB Nanotexturglas Polarstern",
             "partNumber": "ML2X4TY/A"
           }
         },
@@ -3715,13 +3715,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 128GB midnat",
+            "name": "iPad mini (A20 Pro) Cellular 128GB midnat",
             "partNumber": "MJ674KN/A"
           },
           "MJ684KN/A": {
@@ -3730,13 +3730,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 128GB stjerneskær",
+            "name": "iPad mini (A20 Pro) Cellular 128GB stjerneskær",
             "partNumber": "MJ684KN/A"
           },
           "MJ6C4KN/A": {
@@ -3745,13 +3745,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 256GB midnat",
+            "name": "iPad mini (A20 Pro) Cellular 256GB midnat",
             "partNumber": "MJ6C4KN/A"
           },
           "MJ6D4KN/A": {
@@ -3760,13 +3760,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 256GB stjerneskær",
+            "name": "iPad mini (A20 Pro) Cellular 256GB stjerneskær",
             "partNumber": "MJ6D4KN/A"
           },
           "MJ6F4KN/A": {
@@ -3775,13 +3775,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 128GB midnat",
+            "name": "iPad mini (A20 Pro) Wi-Fi 128GB midnat",
             "partNumber": "MJ6F4KN/A"
           },
           "MJ6H4KN/A": {
@@ -3790,13 +3790,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 512 GB midnat",
+            "name": "iPad mini (A20 Pro) Cellular 512GB midnat",
             "partNumber": "MJ6H4KN/A"
           },
           "MJ6J4KN/A": {
@@ -3805,13 +3805,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 128GB stjerneskær",
+            "name": "iPad mini (A20 Pro) Wi-Fi 128GB stjerneskær",
             "partNumber": "MJ6J4KN/A"
           },
           "MJ6K4KN/A": {
@@ -3820,13 +3820,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 512 GB stjerneskær",
+            "name": "iPad mini (A20 Pro) Cellular 512GB stjerneskær",
             "partNumber": "MJ6K4KN/A"
           },
           "MJ6M4KN/A": {
@@ -3835,13 +3835,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Glas med nanotekstur",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 512 GB Glas med nanotekstur midnat",
+            "name": "iPad mini (A20 Pro) Cellular 512GB Glas med nanotekstur midnat",
             "partNumber": "MJ6M4KN/A"
           },
           "MJ6P4KN/A": {
@@ -3850,13 +3850,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Glas med nanotekstur",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 512 GB Glas med nanotekstur stjerneskær",
+            "name": "iPad mini (A20 Pro) Cellular 512GB Glas med nanotekstur stjerneskær",
             "partNumber": "MJ6P4KN/A"
           },
           "MJ6Q4KN/A": {
@@ -3865,13 +3865,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 256GB midnat",
+            "name": "iPad mini (A20 Pro) Wi-Fi 256GB midnat",
             "partNumber": "MJ6Q4KN/A"
           },
           "MJ6R4KN/A": {
@@ -3880,13 +3880,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 256GB stjerneskær",
+            "name": "iPad mini (A20 Pro) Wi-Fi 256GB stjerneskær",
             "partNumber": "MJ6R4KN/A"
           },
           "MJ6V4KN/A": {
@@ -3895,13 +3895,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 512 GB midnat",
+            "name": "iPad mini (A20 Pro) Wi-Fi 512GB midnat",
             "partNumber": "MJ6V4KN/A"
           },
           "MJ6W4KN/A": {
@@ -3910,13 +3910,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 512 GB stjerneskær",
+            "name": "iPad mini (A20 Pro) Wi-Fi 512GB stjerneskær",
             "partNumber": "MJ6W4KN/A"
           },
           "MJ6X4KN/A": {
@@ -3925,13 +3925,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Glas med nanotekstur",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 512 GB Glas med nanotekstur midnat",
+            "name": "iPad mini (A20 Pro) Wi-Fi 512GB Glas med nanotekstur midnat",
             "partNumber": "MJ6X4KN/A"
           },
           "MJ6Y4KN/A": {
@@ -3940,13 +3940,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Glas med nanotekstur",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 512 GB Glas med nanotekstur stjerneskær",
+            "name": "iPad mini (A20 Pro) Wi-Fi 512GB Glas med nanotekstur stjerneskær",
             "partNumber": "MJ6Y4KN/A"
           },
           "ML2Q4KN/A": {
@@ -3955,13 +3955,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Glas med nanotekstur",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 256GB Glas med nanotekstur midnat",
+            "name": "iPad mini (A20 Pro) Wi-Fi 256GB Glas med nanotekstur midnat",
             "partNumber": "ML2Q4KN/A"
           },
           "ML2T4KN/A": {
@@ -3970,13 +3970,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Glas med nanotekstur",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 256GB Glas med nanotekstur stjerneskær",
+            "name": "iPad mini (A20 Pro) Wi-Fi 256GB Glas med nanotekstur stjerneskær",
             "partNumber": "ML2T4KN/A"
           },
           "ML2W4KN/A": {
@@ -3985,13 +3985,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Glas med nanotekstur",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 256GB Glas med nanotekstur midnat",
+            "name": "iPad mini (A20 Pro) Cellular 256GB Glas med nanotekstur midnat",
             "partNumber": "ML2W4KN/A"
           },
           "ML2X4KN/A": {
@@ -4000,13 +4000,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Glas med nanotekstur",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 256GB Glas med nanotekstur stjerneskær",
+            "name": "iPad mini (A20 Pro) Cellular 256GB Glas med nanotekstur stjerneskær",
             "partNumber": "ML2X4KN/A"
           }
         },
@@ -4022,13 +4022,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Vidrio estándar",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 128GB Vidrio estándar Medianoche",
+            "name": "iPad mini (A20 Pro) Cellular 128GB Vidrio estándar Medianoche",
             "partNumber": "MJ674TY/A"
           },
           "MJ684TY/A": {
@@ -4037,13 +4037,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Vidrio estándar",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 128GB Vidrio estándar Blanco estrella",
+            "name": "iPad mini (A20 Pro) Cellular 128GB Vidrio estándar Blanco estrella",
             "partNumber": "MJ684TY/A"
           },
           "MJ6C4TY/A": {
@@ -4052,13 +4052,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Vidrio estándar",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 256 GB Vidrio estándar Medianoche",
+            "name": "iPad mini (A20 Pro) Cellular 256GB Vidrio estándar Medianoche",
             "partNumber": "MJ6C4TY/A"
           },
           "MJ6D4TY/A": {
@@ -4067,13 +4067,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Vidrio estándar",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 256 GB Vidrio estándar Blanco estrella",
+            "name": "iPad mini (A20 Pro) Cellular 256GB Vidrio estándar Blanco estrella",
             "partNumber": "MJ6D4TY/A"
           },
           "MJ6F4TY/A": {
@@ -4082,13 +4082,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Vidrio estándar",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 128GB Vidrio estándar Medianoche",
+            "name": "iPad mini (A20 Pro) Wi-Fi 128GB Vidrio estándar Medianoche",
             "partNumber": "MJ6F4TY/A"
           },
           "MJ6H4TY/A": {
@@ -4097,13 +4097,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Vidrio estándar",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 512 GB Vidrio estándar Medianoche",
+            "name": "iPad mini (A20 Pro) Cellular 512GB Vidrio estándar Medianoche",
             "partNumber": "MJ6H4TY/A"
           },
           "MJ6J4TY/A": {
@@ -4112,13 +4112,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Vidrio estándar",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 128GB Vidrio estándar Blanco estrella",
+            "name": "iPad mini (A20 Pro) Wi-Fi 128GB Vidrio estándar Blanco estrella",
             "partNumber": "MJ6J4TY/A"
           },
           "MJ6K4TY/A": {
@@ -4127,13 +4127,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Vidrio estándar",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 512 GB Vidrio estándar Blanco estrella",
+            "name": "iPad mini (A20 Pro) Cellular 512GB Vidrio estándar Blanco estrella",
             "partNumber": "MJ6K4TY/A"
           },
           "MJ6M4TY/A": {
@@ -4142,13 +4142,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Vidrio nanotexturizado",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 512 GB Vidrio nanotexturizado Medianoche",
+            "name": "iPad mini (A20 Pro) Cellular 512GB Vidrio nanotexturizado Medianoche",
             "partNumber": "MJ6M4TY/A"
           },
           "MJ6P4TY/A": {
@@ -4157,13 +4157,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Vidrio nanotexturizado",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 512 GB Vidrio nanotexturizado Blanco estrella",
+            "name": "iPad mini (A20 Pro) Cellular 512GB Vidrio nanotexturizado Blanco estrella",
             "partNumber": "MJ6P4TY/A"
           },
           "MJ6Q4TY/A": {
@@ -4172,13 +4172,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Vidrio estándar",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 256 GB Vidrio estándar Medianoche",
+            "name": "iPad mini (A20 Pro) Wi-Fi 256GB Vidrio estándar Medianoche",
             "partNumber": "MJ6Q4TY/A"
           },
           "MJ6R4TY/A": {
@@ -4187,13 +4187,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Vidrio estándar",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 256 GB Vidrio estándar Blanco estrella",
+            "name": "iPad mini (A20 Pro) Wi-Fi 256GB Vidrio estándar Blanco estrella",
             "partNumber": "MJ6R4TY/A"
           },
           "MJ6V4TY/A": {
@@ -4202,13 +4202,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Vidrio estándar",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 512 GB Vidrio estándar Medianoche",
+            "name": "iPad mini (A20 Pro) Wi-Fi 512GB Vidrio estándar Medianoche",
             "partNumber": "MJ6V4TY/A"
           },
           "MJ6W4TY/A": {
@@ -4217,13 +4217,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Vidrio estándar",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 512 GB Vidrio estándar Blanco estrella",
+            "name": "iPad mini (A20 Pro) Wi-Fi 512GB Vidrio estándar Blanco estrella",
             "partNumber": "MJ6W4TY/A"
           },
           "MJ6X4TY/A": {
@@ -4232,13 +4232,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Vidrio nanotexturizado",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 512 GB Vidrio nanotexturizado Medianoche",
+            "name": "iPad mini (A20 Pro) Wi-Fi 512GB Vidrio nanotexturizado Medianoche",
             "partNumber": "MJ6X4TY/A"
           },
           "MJ6Y4TY/A": {
@@ -4247,13 +4247,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Vidrio nanotexturizado",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 512 GB Vidrio nanotexturizado Blanco estrella",
+            "name": "iPad mini (A20 Pro) Wi-Fi 512GB Vidrio nanotexturizado Blanco estrella",
             "partNumber": "MJ6Y4TY/A"
           },
           "ML2Q4TY/A": {
@@ -4262,13 +4262,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Vidrio nanotexturizado",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 256 GB Vidrio nanotexturizado Medianoche",
+            "name": "iPad mini (A20 Pro) Wi-Fi 256GB Vidrio nanotexturizado Medianoche",
             "partNumber": "ML2Q4TY/A"
           },
           "ML2T4TY/A": {
@@ -4277,13 +4277,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Vidrio nanotexturizado",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 256 GB Vidrio nanotexturizado Blanco estrella",
+            "name": "iPad mini (A20 Pro) Wi-Fi 256GB Vidrio nanotexturizado Blanco estrella",
             "partNumber": "ML2T4TY/A"
           },
           "ML2W4TY/A": {
@@ -4292,13 +4292,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Vidrio nanotexturizado",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 256 GB Vidrio nanotexturizado Medianoche",
+            "name": "iPad mini (A20 Pro) Cellular 256GB Vidrio nanotexturizado Medianoche",
             "partNumber": "ML2W4TY/A"
           },
           "ML2X4TY/A": {
@@ -4307,13 +4307,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Vidrio nanotexturizado",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 256 GB Vidrio nanotexturizado Blanco estrella",
+            "name": "iPad mini (A20 Pro) Cellular 256GB Vidrio nanotexturizado Blanco estrella",
             "partNumber": "ML2X4TY/A"
           }
         },
@@ -4324,78 +4324,78 @@
       "ipad-mini": {
         "skus": {
           "MJ674KN/A": {
-            "capacity": "128 Gtn",
+            "capacity": "128 Gt",
             "colorDisplay": "Keskiyö",
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Tavallinen lasi",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 128 Gtn Tavallinen lasi Keskiyö",
+            "name": "iPad mini (A20 Pro) Cellular 128 Gt Tavallinen lasi Keskiyö",
             "partNumber": "MJ674KN/A"
           },
           "MJ684KN/A": {
-            "capacity": "128 Gtn",
-            "colorDisplay": "Tähti­valkea",
+            "capacity": "128 Gt",
+            "colorDisplay": "Tähtivalkea",
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Tavallinen lasi",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 128 Gtn Tavallinen lasi Tähti­valkea",
+            "name": "iPad mini (A20 Pro) Cellular 128 Gt Tavallinen lasi Tähtivalkea",
             "partNumber": "MJ684KN/A"
           },
           "MJ6C4KN/A": {
-            "capacity": "256 Gtn",
+            "capacity": "256 Gt",
             "colorDisplay": "Keskiyö",
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Tavallinen lasi",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 256 Gtn Tavallinen lasi Keskiyö",
+            "name": "iPad mini (A20 Pro) Cellular 256 Gt Tavallinen lasi Keskiyö",
             "partNumber": "MJ6C4KN/A"
           },
           "MJ6D4KN/A": {
-            "capacity": "256 Gtn",
-            "colorDisplay": "Tähti­valkea",
+            "capacity": "256 Gt",
+            "colorDisplay": "Tähtivalkea",
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Tavallinen lasi",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 256 Gtn Tavallinen lasi Tähti­valkea",
+            "name": "iPad mini (A20 Pro) Cellular 256 Gt Tavallinen lasi Tähtivalkea",
             "partNumber": "MJ6D4KN/A"
           },
           "MJ6F4KN/A": {
-            "capacity": "128 Gtn",
+            "capacity": "128 Gt",
             "colorDisplay": "Keskiyö",
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Tavallinen lasi",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 128 Gtn Tavallinen lasi Keskiyö",
+            "name": "iPad mini (A20 Pro) Wi-Fi 128 Gt Tavallinen lasi Keskiyö",
             "partNumber": "MJ6F4KN/A"
           },
           "MJ6H4KN/A": {
@@ -4404,43 +4404,43 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Tavallinen lasi",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 512 Gt Tavallinen lasi Keskiyö",
+            "name": "iPad mini (A20 Pro) Cellular 512 Gt Tavallinen lasi Keskiyö",
             "partNumber": "MJ6H4KN/A"
           },
           "MJ6J4KN/A": {
-            "capacity": "128 Gtn",
-            "colorDisplay": "Tähti­valkea",
+            "capacity": "128 Gt",
+            "colorDisplay": "Tähtivalkea",
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Tavallinen lasi",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 128 Gtn Tavallinen lasi Tähti­valkea",
+            "name": "iPad mini (A20 Pro) Wi-Fi 128 Gt Tavallinen lasi Tähtivalkea",
             "partNumber": "MJ6J4KN/A"
           },
           "MJ6K4KN/A": {
             "capacity": "512 Gt",
-            "colorDisplay": "Tähti­valkea",
+            "colorDisplay": "Tähtivalkea",
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Tavallinen lasi",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 512 Gt Tavallinen lasi Tähti­valkea",
+            "name": "iPad mini (A20 Pro) Cellular 512 Gt Tavallinen lasi Tähtivalkea",
             "partNumber": "MJ6K4KN/A"
           },
           "MJ6M4KN/A": {
@@ -4449,58 +4449,58 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Nano­pinnoitettu lasi",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 512 Gt Nano­pinnoitettu lasi Keskiyö",
+            "name": "iPad mini (A20 Pro) Cellular 512 Gt Nanopinnoitettu lasi Keskiyö",
             "partNumber": "MJ6M4KN/A"
           },
           "MJ6P4KN/A": {
             "capacity": "512 Gt",
-            "colorDisplay": "Tähti­valkea",
+            "colorDisplay": "Tähtivalkea",
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Nano­pinnoitettu lasi",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 512 Gt Nano­pinnoitettu lasi Tähti­valkea",
+            "name": "iPad mini (A20 Pro) Cellular 512 Gt Nanopinnoitettu lasi Tähtivalkea",
             "partNumber": "MJ6P4KN/A"
           },
           "MJ6Q4KN/A": {
-            "capacity": "256 Gtn",
+            "capacity": "256 Gt",
             "colorDisplay": "Keskiyö",
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Tavallinen lasi",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 256 Gtn Tavallinen lasi Keskiyö",
+            "name": "iPad mini (A20 Pro) Wi-Fi 256 Gt Tavallinen lasi Keskiyö",
             "partNumber": "MJ6Q4KN/A"
           },
           "MJ6R4KN/A": {
-            "capacity": "256 Gtn",
-            "colorDisplay": "Tähti­valkea",
+            "capacity": "256 Gt",
+            "colorDisplay": "Tähtivalkea",
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Tavallinen lasi",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 256 Gtn Tavallinen lasi Tähti­valkea",
+            "name": "iPad mini (A20 Pro) Wi-Fi 256 Gt Tavallinen lasi Tähtivalkea",
             "partNumber": "MJ6R4KN/A"
           },
           "MJ6V4KN/A": {
@@ -4509,28 +4509,28 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Tavallinen lasi",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 512 Gt Tavallinen lasi Keskiyö",
+            "name": "iPad mini (A20 Pro) Wi-Fi 512 Gt Tavallinen lasi Keskiyö",
             "partNumber": "MJ6V4KN/A"
           },
           "MJ6W4KN/A": {
             "capacity": "512 Gt",
-            "colorDisplay": "Tähti­valkea",
+            "colorDisplay": "Tähtivalkea",
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Tavallinen lasi",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 512 Gt Tavallinen lasi Tähti­valkea",
+            "name": "iPad mini (A20 Pro) Wi-Fi 512 Gt Tavallinen lasi Tähtivalkea",
             "partNumber": "MJ6W4KN/A"
           },
           "MJ6X4KN/A": {
@@ -4539,88 +4539,88 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Nano­pinnoitettu lasi",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 512 Gt Nano­pinnoitettu lasi Keskiyö",
+            "name": "iPad mini (A20 Pro) Wi-Fi 512 Gt Nanopinnoitettu lasi Keskiyö",
             "partNumber": "MJ6X4KN/A"
           },
           "MJ6Y4KN/A": {
             "capacity": "512 Gt",
-            "colorDisplay": "Tähti­valkea",
+            "colorDisplay": "Tähtivalkea",
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Nano­pinnoitettu lasi",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 512 Gt Nano­pinnoitettu lasi Tähti­valkea",
+            "name": "iPad mini (A20 Pro) Wi-Fi 512 Gt Nanopinnoitettu lasi Tähtivalkea",
             "partNumber": "MJ6Y4KN/A"
           },
           "ML2Q4KN/A": {
-            "capacity": "256 Gtn",
+            "capacity": "256 Gt",
             "colorDisplay": "Keskiyö",
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Nano­pinnoitettu lasi",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 256 Gtn Nano­pinnoitettu lasi Keskiyö",
+            "name": "iPad mini (A20 Pro) Wi-Fi 256 Gt Nanopinnoitettu lasi Keskiyö",
             "partNumber": "ML2Q4KN/A"
           },
           "ML2T4KN/A": {
-            "capacity": "256 Gtn",
-            "colorDisplay": "Tähti­valkea",
+            "capacity": "256 Gt",
+            "colorDisplay": "Tähtivalkea",
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Nano­pinnoitettu lasi",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 256 Gtn Nano­pinnoitettu lasi Tähti­valkea",
+            "name": "iPad mini (A20 Pro) Wi-Fi 256 Gt Nanopinnoitettu lasi Tähtivalkea",
             "partNumber": "ML2T4KN/A"
           },
           "ML2W4KN/A": {
-            "capacity": "256 Gtn",
+            "capacity": "256 Gt",
             "colorDisplay": "Keskiyö",
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Nano­pinnoitettu lasi",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 256 Gtn Nano­pinnoitettu lasi Keskiyö",
+            "name": "iPad mini (A20 Pro) Cellular 256 Gt Nanopinnoitettu lasi Keskiyö",
             "partNumber": "ML2W4KN/A"
           },
           "ML2X4KN/A": {
-            "capacity": "256 Gtn",
-            "colorDisplay": "Tähti­valkea",
+            "capacity": "256 Gt",
+            "colorDisplay": "Tähtivalkea",
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Nano­pinnoitettu lasi",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 256 Gtn Nano­pinnoitettu lasi Tähti­valkea",
+            "name": "iPad mini (A20 Pro) Cellular 256 Gt Nanopinnoitettu lasi Tähtivalkea",
             "partNumber": "ML2X4KN/A"
           }
         },
@@ -4631,78 +4631,78 @@
       "ipad-mini": {
         "skus": {
           "MJ674TY/A": {
-            "capacity": "128 Gon",
+            "capacity": "128 Go",
             "colorDisplay": "Minuit",
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Verre standard",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 128 Gon Verre standard Minuit",
+            "name": "iPad mini (A20 Pro) Cellular 128 Go Verre standard Minuit",
             "partNumber": "MJ674TY/A"
           },
           "MJ684TY/A": {
-            "capacity": "128 Gon",
+            "capacity": "128 Go",
             "colorDisplay": "Lumière stellaire",
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Verre standard",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 128 Gon Verre standard Lumière stellaire",
+            "name": "iPad mini (A20 Pro) Cellular 128 Go Verre standard Lumière stellaire",
             "partNumber": "MJ684TY/A"
           },
           "MJ6C4TY/A": {
-            "capacity": "256 Gon",
+            "capacity": "256 Go",
             "colorDisplay": "Minuit",
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Verre standard",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 256 Gon Verre standard Minuit",
+            "name": "iPad mini (A20 Pro) Cellular 256 Go Verre standard Minuit",
             "partNumber": "MJ6C4TY/A"
           },
           "MJ6D4TY/A": {
-            "capacity": "256 Gon",
+            "capacity": "256 Go",
             "colorDisplay": "Lumière stellaire",
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Verre standard",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 256 Gon Verre standard Lumière stellaire",
+            "name": "iPad mini (A20 Pro) Cellular 256 Go Verre standard Lumière stellaire",
             "partNumber": "MJ6D4TY/A"
           },
           "MJ6F4TY/A": {
-            "capacity": "128 Gon",
+            "capacity": "128 Go",
             "colorDisplay": "Minuit",
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Verre standard",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 128 Gon Verre standard Minuit",
+            "name": "iPad mini (A20 Pro) Wi-Fi 128 Go Verre standard Minuit",
             "partNumber": "MJ6F4TY/A"
           },
           "MJ6H4TY/A": {
@@ -4711,28 +4711,28 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Verre standard",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 512 Go Verre standard Minuit",
+            "name": "iPad mini (A20 Pro) Cellular 512 Go Verre standard Minuit",
             "partNumber": "MJ6H4TY/A"
           },
           "MJ6J4TY/A": {
-            "capacity": "128 Gon",
+            "capacity": "128 Go",
             "colorDisplay": "Lumière stellaire",
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Verre standard",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 128 Gon Verre standard Lumière stellaire",
+            "name": "iPad mini (A20 Pro) Wi-Fi 128 Go Verre standard Lumière stellaire",
             "partNumber": "MJ6J4TY/A"
           },
           "MJ6K4TY/A": {
@@ -4741,13 +4741,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Verre standard",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 512 Go Verre standard Lumière stellaire",
+            "name": "iPad mini (A20 Pro) Cellular 512 Go Verre standard Lumière stellaire",
             "partNumber": "MJ6K4TY/A"
           },
           "MJ6M4TY/A": {
@@ -4756,13 +4756,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Verre nano-texturé",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 512 Go Verre nano-texturé Minuit",
+            "name": "iPad mini (A20 Pro) Cellular 512 Go Verre nano-texturé Minuit",
             "partNumber": "MJ6M4TY/A"
           },
           "MJ6P4TY/A": {
@@ -4771,43 +4771,43 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Verre nano-texturé",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 512 Go Verre nano-texturé Lumière stellaire",
+            "name": "iPad mini (A20 Pro) Cellular 512 Go Verre nano-texturé Lumière stellaire",
             "partNumber": "MJ6P4TY/A"
           },
           "MJ6Q4TY/A": {
-            "capacity": "256 Gon",
+            "capacity": "256 Go",
             "colorDisplay": "Minuit",
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Verre standard",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 256 Gon Verre standard Minuit",
+            "name": "iPad mini (A20 Pro) Wi-Fi 256 Go Verre standard Minuit",
             "partNumber": "MJ6Q4TY/A"
           },
           "MJ6R4TY/A": {
-            "capacity": "256 Gon",
+            "capacity": "256 Go",
             "colorDisplay": "Lumière stellaire",
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Verre standard",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 256 Gon Verre standard Lumière stellaire",
+            "name": "iPad mini (A20 Pro) Wi-Fi 256 Go Verre standard Lumière stellaire",
             "partNumber": "MJ6R4TY/A"
           },
           "MJ6V4TY/A": {
@@ -4816,13 +4816,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Verre standard",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 512 Go Verre standard Minuit",
+            "name": "iPad mini (A20 Pro) Wi-Fi 512 Go Verre standard Minuit",
             "partNumber": "MJ6V4TY/A"
           },
           "MJ6W4TY/A": {
@@ -4831,13 +4831,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Verre standard",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 512 Go Verre standard Lumière stellaire",
+            "name": "iPad mini (A20 Pro) Wi-Fi 512 Go Verre standard Lumière stellaire",
             "partNumber": "MJ6W4TY/A"
           },
           "MJ6X4TY/A": {
@@ -4846,13 +4846,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Verre nano-texturé",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 512 Go Verre nano-texturé Minuit",
+            "name": "iPad mini (A20 Pro) Wi-Fi 512 Go Verre nano-texturé Minuit",
             "partNumber": "MJ6X4TY/A"
           },
           "MJ6Y4TY/A": {
@@ -4861,73 +4861,73 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Verre nano-texturé",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 512 Go Verre nano-texturé Lumière stellaire",
+            "name": "iPad mini (A20 Pro) Wi-Fi 512 Go Verre nano-texturé Lumière stellaire",
             "partNumber": "MJ6Y4TY/A"
           },
           "ML2Q4TY/A": {
-            "capacity": "256 Gon",
+            "capacity": "256 Go",
             "colorDisplay": "Minuit",
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Verre nano-texturé",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 256 Gon Verre nano-texturé Minuit",
+            "name": "iPad mini (A20 Pro) Wi-Fi 256 Go Verre nano-texturé Minuit",
             "partNumber": "ML2Q4TY/A"
           },
           "ML2T4TY/A": {
-            "capacity": "256 Gon",
+            "capacity": "256 Go",
             "colorDisplay": "Lumière stellaire",
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Verre nano-texturé",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 256 Gon Verre nano-texturé Lumière stellaire",
+            "name": "iPad mini (A20 Pro) Wi-Fi 256 Go Verre nano-texturé Lumière stellaire",
             "partNumber": "ML2T4TY/A"
           },
           "ML2W4TY/A": {
-            "capacity": "256 Gon",
+            "capacity": "256 Go",
             "colorDisplay": "Minuit",
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Verre nano-texturé",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 256 Gon Verre nano-texturé Minuit",
+            "name": "iPad mini (A20 Pro) Cellular 256 Go Verre nano-texturé Minuit",
             "partNumber": "ML2W4TY/A"
           },
           "ML2X4TY/A": {
-            "capacity": "256 Gon",
+            "capacity": "256 Go",
             "colorDisplay": "Lumière stellaire",
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Verre nano-texturé",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 256 Gon Verre nano-texturé Lumière stellaire",
+            "name": "iPad mini (A20 Pro) Cellular 256 Go Verre nano-texturé Lumière stellaire",
             "partNumber": "ML2X4TY/A"
           }
         },
@@ -5557,13 +5557,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Vetro standard",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 128GB Vetro standard Mezzanotte",
+            "name": "iPad mini (A20 Pro) Cellular 128GB Vetro standard Mezzanotte",
             "partNumber": "MJ674TY/A"
           },
           "MJ684TY/A": {
@@ -5572,13 +5572,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Vetro standard",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 128GB Vetro standard Galassia",
+            "name": "iPad mini (A20 Pro) Cellular 128GB Vetro standard Galassia",
             "partNumber": "MJ684TY/A"
           },
           "MJ6C4TY/A": {
@@ -5587,13 +5587,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Vetro standard",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 256GB Vetro standard Mezzanotte",
+            "name": "iPad mini (A20 Pro) Cellular 256GB Vetro standard Mezzanotte",
             "partNumber": "MJ6C4TY/A"
           },
           "MJ6D4TY/A": {
@@ -5602,13 +5602,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Vetro standard",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 256GB Vetro standard Galassia",
+            "name": "iPad mini (A20 Pro) Cellular 256GB Vetro standard Galassia",
             "partNumber": "MJ6D4TY/A"
           },
           "MJ6F4TY/A": {
@@ -5617,13 +5617,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Vetro standard",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 128GB Vetro standard Mezzanotte",
+            "name": "iPad mini (A20 Pro) Wi-Fi 128GB Vetro standard Mezzanotte",
             "partNumber": "MJ6F4TY/A"
           },
           "MJ6H4TY/A": {
@@ -5632,13 +5632,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Vetro standard",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 512GB Vetro standard Mezzanotte",
+            "name": "iPad mini (A20 Pro) Cellular 512GB Vetro standard Mezzanotte",
             "partNumber": "MJ6H4TY/A"
           },
           "MJ6J4TY/A": {
@@ -5647,13 +5647,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Vetro standard",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 128GB Vetro standard Galassia",
+            "name": "iPad mini (A20 Pro) Wi-Fi 128GB Vetro standard Galassia",
             "partNumber": "MJ6J4TY/A"
           },
           "MJ6K4TY/A": {
@@ -5662,13 +5662,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Vetro standard",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 512GB Vetro standard Galassia",
+            "name": "iPad mini (A20 Pro) Cellular 512GB Vetro standard Galassia",
             "partNumber": "MJ6K4TY/A"
           },
           "MJ6M4TY/A": {
@@ -5677,13 +5677,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Vetro nanotexture",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 512GB Vetro nanotexture Mezzanotte",
+            "name": "iPad mini (A20 Pro) Cellular 512GB Vetro nanotexture Mezzanotte",
             "partNumber": "MJ6M4TY/A"
           },
           "MJ6P4TY/A": {
@@ -5692,13 +5692,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Vetro nanotexture",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 512GB Vetro nanotexture Galassia",
+            "name": "iPad mini (A20 Pro) Cellular 512GB Vetro nanotexture Galassia",
             "partNumber": "MJ6P4TY/A"
           },
           "MJ6Q4TY/A": {
@@ -5707,13 +5707,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Vetro standard",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 256GB Vetro standard Mezzanotte",
+            "name": "iPad mini (A20 Pro) Wi-Fi 256GB Vetro standard Mezzanotte",
             "partNumber": "MJ6Q4TY/A"
           },
           "MJ6R4TY/A": {
@@ -5722,13 +5722,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Vetro standard",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 256GB Vetro standard Galassia",
+            "name": "iPad mini (A20 Pro) Wi-Fi 256GB Vetro standard Galassia",
             "partNumber": "MJ6R4TY/A"
           },
           "MJ6V4TY/A": {
@@ -5737,13 +5737,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Vetro standard",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 512GB Vetro standard Mezzanotte",
+            "name": "iPad mini (A20 Pro) Wi-Fi 512GB Vetro standard Mezzanotte",
             "partNumber": "MJ6V4TY/A"
           },
           "MJ6W4TY/A": {
@@ -5752,13 +5752,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Vetro standard",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 512GB Vetro standard Galassia",
+            "name": "iPad mini (A20 Pro) Wi-Fi 512GB Vetro standard Galassia",
             "partNumber": "MJ6W4TY/A"
           },
           "MJ6X4TY/A": {
@@ -5767,13 +5767,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Vetro nanotexture",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 512GB Vetro nanotexture Mezzanotte",
+            "name": "iPad mini (A20 Pro) Wi-Fi 512GB Vetro nanotexture Mezzanotte",
             "partNumber": "MJ6X4TY/A"
           },
           "MJ6Y4TY/A": {
@@ -5782,13 +5782,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Vetro nanotexture",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 512GB Vetro nanotexture Galassia",
+            "name": "iPad mini (A20 Pro) Wi-Fi 512GB Vetro nanotexture Galassia",
             "partNumber": "MJ6Y4TY/A"
           },
           "ML2Q4TY/A": {
@@ -5797,13 +5797,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Vetro nanotexture",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 256GB Vetro nanotexture Mezzanotte",
+            "name": "iPad mini (A20 Pro) Wi-Fi 256GB Vetro nanotexture Mezzanotte",
             "partNumber": "ML2Q4TY/A"
           },
           "ML2T4TY/A": {
@@ -5812,13 +5812,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Vetro nanotexture",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 256GB Vetro nanotexture Galassia",
+            "name": "iPad mini (A20 Pro) Wi-Fi 256GB Vetro nanotexture Galassia",
             "partNumber": "ML2T4TY/A"
           },
           "ML2W4TY/A": {
@@ -5827,13 +5827,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Vetro nanotexture",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 256GB Vetro nanotexture Mezzanotte",
+            "name": "iPad mini (A20 Pro) Cellular 256GB Vetro nanotexture Mezzanotte",
             "partNumber": "ML2W4TY/A"
           },
           "ML2X4TY/A": {
@@ -5842,13 +5842,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Vetro nanotexture",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 256GB Vetro nanotexture Galassia",
+            "name": "iPad mini (A20 Pro) Cellular 256GB Vetro nanotexture Galassia",
             "partNumber": "ML2X4TY/A"
           }
         },
@@ -6559,7 +6559,7 @@
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini (A20 Pro) Cellular 512 GB Vidrio estándar Color medianoche",
+            "name": "iPad mini (A20 Pro) Cellular 512GB Vidrio estándar Color medianoche",
             "partNumber": "MJ6H4CL/A"
           },
           "MJ6J4CL/A": {
@@ -6589,7 +6589,7 @@
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini (A20 Pro) Cellular 512 GB Vidrio estándar Blanco estelar",
+            "name": "iPad mini (A20 Pro) Cellular 512GB Vidrio estándar Blanco estelar",
             "partNumber": "MJ6K4CL/A"
           },
           "MJ6M4CL/A": {
@@ -6604,7 +6604,7 @@
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini (A20 Pro) Cellular 512 GB Vidrio nanotexturizado Color medianoche",
+            "name": "iPad mini (A20 Pro) Cellular 512GB Vidrio nanotexturizado Color medianoche",
             "partNumber": "MJ6M4CL/A"
           },
           "MJ6P4CL/A": {
@@ -6619,7 +6619,7 @@
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini (A20 Pro) Cellular 512 GB Vidrio nanotexturizado Blanco estelar",
+            "name": "iPad mini (A20 Pro) Cellular 512GB Vidrio nanotexturizado Blanco estelar",
             "partNumber": "MJ6P4CL/A"
           },
           "MJ6Q4CL/A": {
@@ -6664,7 +6664,7 @@
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini (A20 Pro) Wi-Fi 512 GB Vidrio estándar Color medianoche",
+            "name": "iPad mini (A20 Pro) Wi-Fi 512GB Vidrio estándar Color medianoche",
             "partNumber": "MJ6V4CL/A"
           },
           "MJ6W4CL/A": {
@@ -6679,7 +6679,7 @@
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini (A20 Pro) Wi-Fi 512 GB Vidrio estándar Blanco estelar",
+            "name": "iPad mini (A20 Pro) Wi-Fi 512GB Vidrio estándar Blanco estelar",
             "partNumber": "MJ6W4CL/A"
           },
           "MJ6X4CL/A": {
@@ -6694,7 +6694,7 @@
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini (A20 Pro) Wi-Fi 512 GB Vidrio nanotexturizado Color medianoche",
+            "name": "iPad mini (A20 Pro) Wi-Fi 512GB Vidrio nanotexturizado Color medianoche",
             "partNumber": "MJ6X4CL/A"
           },
           "MJ6Y4CL/A": {
@@ -6709,7 +6709,7 @@
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini (A20 Pro) Wi-Fi 512 GB Vidrio nanotexturizado Blanco estelar",
+            "name": "iPad mini (A20 Pro) Wi-Fi 512GB Vidrio nanotexturizado Blanco estelar",
             "partNumber": "MJ6Y4CL/A"
           },
           "ML2Q4CL/A": {
@@ -7092,13 +7092,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standaardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 128GB Standaardglas Middernacht",
+            "name": "iPad mini (A20 Pro) Cellular 128GB Standaardglas Middernacht",
             "partNumber": "MJ674TY/A"
           },
           "MJ684TY/A": {
@@ -7107,13 +7107,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standaardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 128GB Standaardglas Sterrenlicht",
+            "name": "iPad mini (A20 Pro) Cellular 128GB Standaardglas Sterrenlicht",
             "partNumber": "MJ684TY/A"
           },
           "MJ6C4TY/A": {
@@ -7122,13 +7122,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standaardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 256 GB Standaardglas Middernacht",
+            "name": "iPad mini (A20 Pro) Cellular 256GB Standaardglas Middernacht",
             "partNumber": "MJ6C4TY/A"
           },
           "MJ6D4TY/A": {
@@ -7137,13 +7137,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standaardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 256 GB Standaardglas Sterrenlicht",
+            "name": "iPad mini (A20 Pro) Cellular 256GB Standaardglas Sterrenlicht",
             "partNumber": "MJ6D4TY/A"
           },
           "MJ6F4TY/A": {
@@ -7152,13 +7152,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standaardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 128GB Standaardglas Middernacht",
+            "name": "iPad mini (A20 Pro) Wi-Fi 128GB Standaardglas Middernacht",
             "partNumber": "MJ6F4TY/A"
           },
           "MJ6H4TY/A": {
@@ -7167,13 +7167,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standaardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 512GB Standaardglas Middernacht",
+            "name": "iPad mini (A20 Pro) Cellular 512GB Standaardglas Middernacht",
             "partNumber": "MJ6H4TY/A"
           },
           "MJ6J4TY/A": {
@@ -7182,13 +7182,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standaardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 128GB Standaardglas Sterrenlicht",
+            "name": "iPad mini (A20 Pro) Wi-Fi 128GB Standaardglas Sterrenlicht",
             "partNumber": "MJ6J4TY/A"
           },
           "MJ6K4TY/A": {
@@ -7197,13 +7197,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standaardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 512GB Standaardglas Sterrenlicht",
+            "name": "iPad mini (A20 Pro) Cellular 512GB Standaardglas Sterrenlicht",
             "partNumber": "MJ6K4TY/A"
           },
           "MJ6M4TY/A": {
@@ -7212,13 +7212,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Glas met nanotextuur",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 512GB Glas met nanotextuur Middernacht",
+            "name": "iPad mini (A20 Pro) Cellular 512GB Glas met nanotextuur Middernacht",
             "partNumber": "MJ6M4TY/A"
           },
           "MJ6P4TY/A": {
@@ -7227,13 +7227,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Glas met nanotextuur",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 512GB Glas met nanotextuur Sterrenlicht",
+            "name": "iPad mini (A20 Pro) Cellular 512GB Glas met nanotextuur Sterrenlicht",
             "partNumber": "MJ6P4TY/A"
           },
           "MJ6Q4TY/A": {
@@ -7242,13 +7242,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standaardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 256 GB Standaardglas Middernacht",
+            "name": "iPad mini (A20 Pro) Wi-Fi 256GB Standaardglas Middernacht",
             "partNumber": "MJ6Q4TY/A"
           },
           "MJ6R4TY/A": {
@@ -7257,13 +7257,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standaardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 256 GB Standaardglas Sterrenlicht",
+            "name": "iPad mini (A20 Pro) Wi-Fi 256GB Standaardglas Sterrenlicht",
             "partNumber": "MJ6R4TY/A"
           },
           "MJ6V4TY/A": {
@@ -7272,13 +7272,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standaardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 512GB Standaardglas Middernacht",
+            "name": "iPad mini (A20 Pro) Wi-Fi 512GB Standaardglas Middernacht",
             "partNumber": "MJ6V4TY/A"
           },
           "MJ6W4TY/A": {
@@ -7287,13 +7287,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standaardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 512GB Standaardglas Sterrenlicht",
+            "name": "iPad mini (A20 Pro) Wi-Fi 512GB Standaardglas Sterrenlicht",
             "partNumber": "MJ6W4TY/A"
           },
           "MJ6X4TY/A": {
@@ -7302,13 +7302,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Glas met nanotextuur",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 512GB Glas met nanotextuur Middernacht",
+            "name": "iPad mini (A20 Pro) Wi-Fi 512GB Glas met nanotextuur Middernacht",
             "partNumber": "MJ6X4TY/A"
           },
           "MJ6Y4TY/A": {
@@ -7317,13 +7317,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Glas met nanotextuur",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 512GB Glas met nanotextuur Sterrenlicht",
+            "name": "iPad mini (A20 Pro) Wi-Fi 512GB Glas met nanotextuur Sterrenlicht",
             "partNumber": "MJ6Y4TY/A"
           },
           "ML2Q4TY/A": {
@@ -7332,13 +7332,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Glas met nanotextuur",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 256 GB Glas met nanotextuur Middernacht",
+            "name": "iPad mini (A20 Pro) Wi-Fi 256GB Glas met nanotextuur Middernacht",
             "partNumber": "ML2Q4TY/A"
           },
           "ML2T4TY/A": {
@@ -7347,13 +7347,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Glas met nanotextuur",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 256 GB Glas met nanotextuur Sterrenlicht",
+            "name": "iPad mini (A20 Pro) Wi-Fi 256GB Glas met nanotextuur Sterrenlicht",
             "partNumber": "ML2T4TY/A"
           },
           "ML2W4TY/A": {
@@ -7362,13 +7362,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Glas met nanotextuur",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 256 GB Glas met nanotextuur Middernacht",
+            "name": "iPad mini (A20 Pro) Cellular 256GB Glas met nanotextuur Middernacht",
             "partNumber": "ML2W4TY/A"
           },
           "ML2X4TY/A": {
@@ -7377,13 +7377,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Glas met nanotextuur",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 256 GB Glas met nanotextuur Sterrenlicht",
+            "name": "iPad mini (A20 Pro) Cellular 256GB Glas met nanotextuur Sterrenlicht",
             "partNumber": "ML2X4TY/A"
           }
         },
@@ -7399,13 +7399,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standard glass",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 128GB Standard glass midnatt",
+            "name": "iPad mini (A20 Pro) Cellular 128GB Standard glass midnatt",
             "partNumber": "MJ674KN/A"
           },
           "MJ684KN/A": {
@@ -7414,13 +7414,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standard glass",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 128GB Standard glass stjerneskinn",
+            "name": "iPad mini (A20 Pro) Cellular 128GB Standard glass stjerneskinn",
             "partNumber": "MJ684KN/A"
           },
           "MJ6C4KN/A": {
@@ -7429,13 +7429,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standard glass",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 256GB Standard glass midnatt",
+            "name": "iPad mini (A20 Pro) Cellular 256GB Standard glass midnatt",
             "partNumber": "MJ6C4KN/A"
           },
           "MJ6D4KN/A": {
@@ -7444,13 +7444,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standard glass",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 256GB Standard glass stjerneskinn",
+            "name": "iPad mini (A20 Pro) Cellular 256GB Standard glass stjerneskinn",
             "partNumber": "MJ6D4KN/A"
           },
           "MJ6F4KN/A": {
@@ -7459,13 +7459,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standard glass",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 128GB Standard glass midnatt",
+            "name": "iPad mini (A20 Pro) Wi-Fi 128GB Standard glass midnatt",
             "partNumber": "MJ6F4KN/A"
           },
           "MJ6H4KN/A": {
@@ -7474,13 +7474,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standard glass",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 512 GB Standard glass midnatt",
+            "name": "iPad mini (A20 Pro) Cellular 512GB Standard glass midnatt",
             "partNumber": "MJ6H4KN/A"
           },
           "MJ6J4KN/A": {
@@ -7489,13 +7489,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standard glass",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 128GB Standard glass stjerneskinn",
+            "name": "iPad mini (A20 Pro) Wi-Fi 128GB Standard glass stjerneskinn",
             "partNumber": "MJ6J4KN/A"
           },
           "MJ6K4KN/A": {
@@ -7504,13 +7504,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standard glass",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 512 GB Standard glass stjerneskinn",
+            "name": "iPad mini (A20 Pro) Cellular 512GB Standard glass stjerneskinn",
             "partNumber": "MJ6K4KN/A"
           },
           "MJ6M4KN/A": {
@@ -7519,13 +7519,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Glass med nanotekstur",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 512 GB Glass med nanotekstur midnatt",
+            "name": "iPad mini (A20 Pro) Cellular 512GB Glass med nanotekstur midnatt",
             "partNumber": "MJ6M4KN/A"
           },
           "MJ6P4KN/A": {
@@ -7534,13 +7534,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Glass med nanotekstur",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 512 GB Glass med nanotekstur stjerneskinn",
+            "name": "iPad mini (A20 Pro) Cellular 512GB Glass med nanotekstur stjerneskinn",
             "partNumber": "MJ6P4KN/A"
           },
           "MJ6Q4KN/A": {
@@ -7549,13 +7549,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standard glass",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 256GB Standard glass midnatt",
+            "name": "iPad mini (A20 Pro) Wi-Fi 256GB Standard glass midnatt",
             "partNumber": "MJ6Q4KN/A"
           },
           "MJ6R4KN/A": {
@@ -7564,13 +7564,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standard glass",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 256GB Standard glass stjerneskinn",
+            "name": "iPad mini (A20 Pro) Wi-Fi 256GB Standard glass stjerneskinn",
             "partNumber": "MJ6R4KN/A"
           },
           "MJ6V4KN/A": {
@@ -7579,13 +7579,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standard glass",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 512 GB Standard glass midnatt",
+            "name": "iPad mini (A20 Pro) Wi-Fi 512GB Standard glass midnatt",
             "partNumber": "MJ6V4KN/A"
           },
           "MJ6W4KN/A": {
@@ -7594,13 +7594,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Standard glass",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 512 GB Standard glass stjerneskinn",
+            "name": "iPad mini (A20 Pro) Wi-Fi 512GB Standard glass stjerneskinn",
             "partNumber": "MJ6W4KN/A"
           },
           "MJ6X4KN/A": {
@@ -7609,13 +7609,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Glass med nanotekstur",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 512 GB Glass med nanotekstur midnatt",
+            "name": "iPad mini (A20 Pro) Wi-Fi 512GB Glass med nanotekstur midnatt",
             "partNumber": "MJ6X4KN/A"
           },
           "MJ6Y4KN/A": {
@@ -7624,13 +7624,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Glass med nanotekstur",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 512 GB Glass med nanotekstur stjerneskinn",
+            "name": "iPad mini (A20 Pro) Wi-Fi 512GB Glass med nanotekstur stjerneskinn",
             "partNumber": "MJ6Y4KN/A"
           },
           "ML2Q4KN/A": {
@@ -7639,13 +7639,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Glass med nanotekstur",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 256GB Glass med nanotekstur midnatt",
+            "name": "iPad mini (A20 Pro) Wi-Fi 256GB Glass med nanotekstur midnatt",
             "partNumber": "ML2Q4KN/A"
           },
           "ML2T4KN/A": {
@@ -7654,13 +7654,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Glass med nanotekstur",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Wi-Fi 256GB Glass med nanotekstur stjerneskinn",
+            "name": "iPad mini (A20 Pro) Wi-Fi 256GB Glass med nanotekstur stjerneskinn",
             "partNumber": "ML2T4KN/A"
           },
           "ML2W4KN/A": {
@@ -7669,13 +7669,13 @@
             "colorKey": "midnight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Glass med nanotekstur",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 256GB Glass med nanotekstur midnatt",
+            "name": "iPad mini (A20 Pro) Cellular 256GB Glass med nanotekstur midnatt",
             "partNumber": "ML2W4KN/A"
           },
           "ML2X4KN/A": {
@@ -7684,13 +7684,13 @@
             "colorKey": "starlight",
             "dimensionScreensize": "",
             "family": "ipadmini2026",
-            "familyName": "iPad mini",
+            "familyName": "iPad mini (A20 Pro)",
             "metadata": {
               "displayFinish": "Glass med nanotekstur",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini Cellular 256GB Glass med nanotekstur stjerneskinn",
+            "name": "iPad mini (A20 Pro) Cellular 256GB Glass med nanotekstur stjerneskinn",
             "partNumber": "ML2X4KN/A"
           }
         },
@@ -8015,6 +8015,7 @@
             "family": "ipadmini2026",
             "familyName": "iPad mini (A20 Pro)",
             "metadata": {
+              "displayFinish": "Standardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
@@ -8029,6 +8030,7 @@
             "family": "ipadmini2026",
             "familyName": "iPad mini (A20 Pro)",
             "metadata": {
+              "displayFinish": "Standardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
@@ -8043,10 +8045,11 @@
             "family": "ipadmini2026",
             "familyName": "iPad mini (A20 Pro)",
             "metadata": {
+              "displayFinish": "Standardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini (A20 Pro) Cellular 256 GB midnatt",
+            "name": "iPad mini (A20 Pro) Cellular 256GB midnatt",
             "partNumber": "MJ6C4KN/A"
           },
           "MJ6D4KN/A": {
@@ -8057,10 +8060,11 @@
             "family": "ipadmini2026",
             "familyName": "iPad mini (A20 Pro)",
             "metadata": {
+              "displayFinish": "Standardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini (A20 Pro) Cellular 256 GB stjärnglans",
+            "name": "iPad mini (A20 Pro) Cellular 256GB stjärnglans",
             "partNumber": "MJ6D4KN/A"
           },
           "MJ6F4KN/A": {
@@ -8071,6 +8075,7 @@
             "family": "ipadmini2026",
             "familyName": "iPad mini (A20 Pro)",
             "metadata": {
+              "displayFinish": "Standardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
@@ -8085,6 +8090,7 @@
             "family": "ipadmini2026",
             "familyName": "iPad mini (A20 Pro)",
             "metadata": {
+              "displayFinish": "Standardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
@@ -8099,6 +8105,7 @@
             "family": "ipadmini2026",
             "familyName": "iPad mini (A20 Pro)",
             "metadata": {
+              "displayFinish": "Standardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
@@ -8113,6 +8120,7 @@
             "family": "ipadmini2026",
             "familyName": "iPad mini (A20 Pro)",
             "metadata": {
+              "displayFinish": "Standardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
@@ -8127,10 +8135,11 @@
             "family": "ipadmini2026",
             "familyName": "iPad mini (A20 Pro)",
             "metadata": {
+              "displayFinish": "Nanotexturglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini (A20 Pro) Cellular 512GB midnatt",
+            "name": "iPad mini (A20 Pro) Cellular 512GB Nanotexturglas midnatt",
             "partNumber": "MJ6M4KN/A"
           },
           "MJ6P4KN/A": {
@@ -8141,10 +8150,11 @@
             "family": "ipadmini2026",
             "familyName": "iPad mini (A20 Pro)",
             "metadata": {
+              "displayFinish": "Nanotexturglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini (A20 Pro) Cellular 512GB stjärnglans",
+            "name": "iPad mini (A20 Pro) Cellular 512GB Nanotexturglas stjärnglans",
             "partNumber": "MJ6P4KN/A"
           },
           "MJ6Q4KN/A": {
@@ -8155,10 +8165,11 @@
             "family": "ipadmini2026",
             "familyName": "iPad mini (A20 Pro)",
             "metadata": {
+              "displayFinish": "Standardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini (A20 Pro) Wi-Fi 256 GB midnatt",
+            "name": "iPad mini (A20 Pro) Wi-Fi 256GB midnatt",
             "partNumber": "MJ6Q4KN/A"
           },
           "MJ6R4KN/A": {
@@ -8169,10 +8180,11 @@
             "family": "ipadmini2026",
             "familyName": "iPad mini (A20 Pro)",
             "metadata": {
+              "displayFinish": "Standardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini (A20 Pro) Wi-Fi 256 GB stjärnglans",
+            "name": "iPad mini (A20 Pro) Wi-Fi 256GB stjärnglans",
             "partNumber": "MJ6R4KN/A"
           },
           "MJ6V4KN/A": {
@@ -8183,6 +8195,7 @@
             "family": "ipadmini2026",
             "familyName": "iPad mini (A20 Pro)",
             "metadata": {
+              "displayFinish": "Standardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
@@ -8197,6 +8210,7 @@
             "family": "ipadmini2026",
             "familyName": "iPad mini (A20 Pro)",
             "metadata": {
+              "displayFinish": "Standardglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
@@ -8211,10 +8225,11 @@
             "family": "ipadmini2026",
             "familyName": "iPad mini (A20 Pro)",
             "metadata": {
+              "displayFinish": "Nanotexturglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini (A20 Pro) Wi-Fi 512GB midnatt",
+            "name": "iPad mini (A20 Pro) Wi-Fi 512GB Nanotexturglas midnatt",
             "partNumber": "MJ6X4KN/A"
           },
           "MJ6Y4KN/A": {
@@ -8225,10 +8240,11 @@
             "family": "ipadmini2026",
             "familyName": "iPad mini (A20 Pro)",
             "metadata": {
+              "displayFinish": "Nanotexturglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini (A20 Pro) Wi-Fi 512GB stjärnglans",
+            "name": "iPad mini (A20 Pro) Wi-Fi 512GB Nanotexturglas stjärnglans",
             "partNumber": "MJ6Y4KN/A"
           },
           "ML2Q4KN/A": {
@@ -8239,10 +8255,11 @@
             "family": "ipadmini2026",
             "familyName": "iPad mini (A20 Pro)",
             "metadata": {
+              "displayFinish": "Nanotexturglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini (A20 Pro) Wi-Fi 256 GB midnatt",
+            "name": "iPad mini (A20 Pro) Wi-Fi 256GB Nanotexturglas midnatt",
             "partNumber": "ML2Q4KN/A"
           },
           "ML2T4KN/A": {
@@ -8253,10 +8270,11 @@
             "family": "ipadmini2026",
             "familyName": "iPad mini (A20 Pro)",
             "metadata": {
+              "displayFinish": "Nanotexturglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini (A20 Pro) 256 GB stjärnglans",
+            "name": "iPad mini (A20 Pro) Wi-Fi 256GB Nanotexturglas stjärnglans",
             "partNumber": "ML2T4KN/A"
           },
           "ML2W4KN/A": {
@@ -8267,10 +8285,11 @@
             "family": "ipadmini2026",
             "familyName": "iPad mini (A20 Pro)",
             "metadata": {
+              "displayFinish": "Nanotexturglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini (A20 Pro) Wi-Fi 256 GB midnatt",
+            "name": "iPad mini (A20 Pro) Cellular 256GB Nanotexturglas midnatt",
             "partNumber": "ML2W4KN/A"
           },
           "ML2X4KN/A": {
@@ -8281,10 +8300,11 @@
             "family": "ipadmini2026",
             "familyName": "iPad mini (A20 Pro)",
             "metadata": {
+              "displayFinish": "Nanotexturglas",
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad mini (A20 Pro) Cellular 256 GB stjärnglans",
+            "name": "iPad mini (A20 Pro) Cellular 256GB Nanotexturglas stjärnglans",
             "partNumber": "ML2X4KN/A"
           }
         },

@@ -1,7 +1,7 @@
 {
   "_meta": {
     "family": "mac",
-    "generated_at": "2026-10-28T05:38:21.874651+00:00",
+    "generated_at": "2026-10-28T08:33:30.460736+00:00",
     "regions_scraped": 33,
     "scraper_version": "1.0",
     "token": "macbook-neo"
@@ -666,7 +666,7 @@
       "macbook-neo": {
         "skus": {
           "MHFA4FN/A": {
-            "capacity": "",
+            "capacity": "256 Go",
             "colorDisplay": "Argent",
             "colorKey": "argent",
             "family": "mac",
@@ -676,10 +676,10 @@
               "isRealPartNumber": true,
               "processorDisplay": "6-Core CPU / 5-Core GPU"
             },
-            "name": "MacBook Neo Argent 6-Core CPU / 5-Core GPU (MHFA4FN/A)"
+            "name": "MacBook Neo Argent 256 Go 6-Core CPU / 5-Core GPU"
           },
           "MHFC4FN/A": {
-            "capacity": "",
+            "capacity": "512 Go",
             "colorDisplay": "Argent",
             "colorKey": "argent",
             "family": "mac",
@@ -689,10 +689,10 @@
               "isRealPartNumber": true,
               "processorDisplay": "6-Core CPU / 5-Core GPU"
             },
-            "name": "MacBook Neo Argent 6-Core CPU / 5-Core GPU (MHFC4FN/A)"
+            "name": "MacBook Neo Argent 512 Go 6-Core CPU / 5-Core GPU"
           },
           "MHFD4FN/A": {
-            "capacity": "",
+            "capacity": "256 Go",
             "colorDisplay": "Jaune agrume",
             "colorKey": "jauneagrume",
             "family": "mac",
@@ -702,10 +702,10 @@
               "isRealPartNumber": true,
               "processorDisplay": "6-Core CPU / 5-Core GPU"
             },
-            "name": "MacBook Neo Jaune agrume 6-Core CPU / 5-Core GPU (MHFD4FN/A)"
+            "name": "MacBook Neo Jaune agrume 256 Go 6-Core CPU / 5-Core GPU"
           },
           "MHFE4FN/A": {
-            "capacity": "",
+            "capacity": "512 Go",
             "colorDisplay": "Jaune agrume",
             "colorKey": "jauneagrume",
             "family": "mac",
@@ -715,10 +715,10 @@
               "isRealPartNumber": true,
               "processorDisplay": "6-Core CPU / 5-Core GPU"
             },
-            "name": "MacBook Neo Jaune agrume 6-Core CPU / 5-Core GPU (MHFE4FN/A)"
+            "name": "MacBook Neo Jaune agrume 512 Go 6-Core CPU / 5-Core GPU"
           },
           "MHFF4FN/A": {
-            "capacity": "",
+            "capacity": "256 Go",
             "colorDisplay": "Indigo",
             "colorKey": "indigo",
             "family": "mac",
@@ -728,10 +728,10 @@
               "isRealPartNumber": true,
               "processorDisplay": "6-Core CPU / 5-Core GPU"
             },
-            "name": "MacBook Neo Indigo 6-Core CPU / 5-Core GPU (MHFF4FN/A)"
+            "name": "MacBook Neo Indigo 256 Go 6-Core CPU / 5-Core GPU"
           },
           "MHFG4FN/A": {
-            "capacity": "",
+            "capacity": "512 Go",
             "colorDisplay": "Indigo",
             "colorKey": "indigo",
             "family": "mac",
@@ -741,10 +741,10 @@
               "isRealPartNumber": true,
               "processorDisplay": "6-Core CPU / 5-Core GPU"
             },
-            "name": "MacBook Neo Indigo 6-Core CPU / 5-Core GPU (MHFG4FN/A)"
+            "name": "MacBook Neo Indigo 512 Go 6-Core CPU / 5-Core GPU"
           },
           "MHFH4FN/A": {
-            "capacity": "",
+            "capacity": "256 Go",
             "colorDisplay": "Rose poudré",
             "colorKey": "rosepoudr",
             "family": "mac",
@@ -754,10 +754,10 @@
               "isRealPartNumber": true,
               "processorDisplay": "6-Core CPU / 5-Core GPU"
             },
-            "name": "MacBook Neo Rose poudré 6-Core CPU / 5-Core GPU (MHFH4FN/A)"
+            "name": "MacBook Neo Rose poudré 256 Go 6-Core CPU / 5-Core GPU"
           },
           "MHFJ4FN/A": {
-            "capacity": "",
+            "capacity": "512 Go",
             "colorDisplay": "Rose poudré",
             "colorKey": "rosepoudr",
             "family": "mac",
@@ -767,7 +767,7 @@
               "isRealPartNumber": true,
               "processorDisplay": "6-Core CPU / 5-Core GPU"
             },
-            "name": "MacBook Neo Rose poudré 6-Core CPU / 5-Core GPU (MHFJ4FN/A)"
+            "name": "MacBook Neo Rose poudré 512 Go 6-Core CPU / 5-Core GPU"
           }
         },
         "url": "https://www.apple.com/be-fr/shop/buy-mac/macbook-neo"
@@ -1221,7 +1221,7 @@
       "macbook-neo": {
         "skus": {
           "MHFA4SM/A": {
-            "capacity": "",
+            "capacity": "256 Go",
             "colorDisplay": "Argent",
             "colorKey": "argent",
             "family": "mac",
@@ -1231,10 +1231,10 @@
               "isRealPartNumber": true,
               "processorDisplay": "6-Core CPU / 5-Core GPU"
             },
-            "name": "MacBook Neo Argent 6-Core CPU / 5-Core GPU (MHFA4SM/A)"
+            "name": "MacBook Neo Argent 256 Go 6-Core CPU / 5-Core GPU"
           },
           "MHFC4SM/A": {
-            "capacity": "",
+            "capacity": "512 Go",
             "colorDisplay": "Argent",
             "colorKey": "argent",
             "family": "mac",
@@ -1244,10 +1244,10 @@
               "isRealPartNumber": true,
               "processorDisplay": "6-Core CPU / 5-Core GPU"
             },
-            "name": "MacBook Neo Argent 6-Core CPU / 5-Core GPU (MHFC4SM/A)"
+            "name": "MacBook Neo Argent 512 Go 6-Core CPU / 5-Core GPU"
           },
           "MHFD4SM/A": {
-            "capacity": "",
+            "capacity": "256 Go",
             "colorDisplay": "Jaune agrume",
             "colorKey": "jauneagrume",
             "family": "mac",
@@ -1257,10 +1257,10 @@
               "isRealPartNumber": true,
               "processorDisplay": "6-Core CPU / 5-Core GPU"
             },
-            "name": "MacBook Neo Jaune agrume 6-Core CPU / 5-Core GPU (MHFD4SM/A)"
+            "name": "MacBook Neo Jaune agrume 256 Go 6-Core CPU / 5-Core GPU"
           },
           "MHFE4SM/A": {
-            "capacity": "",
+            "capacity": "512 Go",
             "colorDisplay": "Jaune agrume",
             "colorKey": "jauneagrume",
             "family": "mac",
@@ -1270,10 +1270,10 @@
               "isRealPartNumber": true,
               "processorDisplay": "6-Core CPU / 5-Core GPU"
             },
-            "name": "MacBook Neo Jaune agrume 6-Core CPU / 5-Core GPU (MHFE4SM/A)"
+            "name": "MacBook Neo Jaune agrume 512 Go 6-Core CPU / 5-Core GPU"
           },
           "MHFF4SM/A": {
-            "capacity": "",
+            "capacity": "256 Go",
             "colorDisplay": "Indigo",
             "colorKey": "indigo",
             "family": "mac",
@@ -1283,10 +1283,10 @@
               "isRealPartNumber": true,
               "processorDisplay": "6-Core CPU / 5-Core GPU"
             },
-            "name": "MacBook Neo Indigo 6-Core CPU / 5-Core GPU (MHFF4SM/A)"
+            "name": "MacBook Neo Indigo 256 Go 6-Core CPU / 5-Core GPU"
           },
           "MHFG4SM/A": {
-            "capacity": "",
+            "capacity": "512 Go",
             "colorDisplay": "Indigo",
             "colorKey": "indigo",
             "family": "mac",
@@ -1296,10 +1296,10 @@
               "isRealPartNumber": true,
               "processorDisplay": "6-Core CPU / 5-Core GPU"
             },
-            "name": "MacBook Neo Indigo 6-Core CPU / 5-Core GPU (MHFG4SM/A)"
+            "name": "MacBook Neo Indigo 512 Go 6-Core CPU / 5-Core GPU"
           },
           "MHFH4SM/A": {
-            "capacity": "",
+            "capacity": "256 Go",
             "colorDisplay": "Rose poudré",
             "colorKey": "rosepoudr",
             "family": "mac",
@@ -1309,10 +1309,10 @@
               "isRealPartNumber": true,
               "processorDisplay": "6-Core CPU / 5-Core GPU"
             },
-            "name": "MacBook Neo Rose poudré 6-Core CPU / 5-Core GPU (MHFH4SM/A)"
+            "name": "MacBook Neo Rose poudré 256 Go 6-Core CPU / 5-Core GPU"
           },
           "MHFJ4SM/A": {
-            "capacity": "",
+            "capacity": "512 Go",
             "colorDisplay": "Rose poudré",
             "colorKey": "rosepoudr",
             "family": "mac",
@@ -1322,7 +1322,7 @@
               "isRealPartNumber": true,
               "processorDisplay": "6-Core CPU / 5-Core GPU"
             },
-            "name": "MacBook Neo Rose poudré 6-Core CPU / 5-Core GPU (MHFJ4SM/A)"
+            "name": "MacBook Neo Rose poudré 512 Go 6-Core CPU / 5-Core GPU"
           }
         },
         "url": "https://www.apple.com/ch-fr/shop/buy-mac/macbook-neo"
@@ -1776,7 +1776,7 @@
       "macbook-neo": {
         "skus": {
           "MHFA4KS/A": {
-            "capacity": "",
+            "capacity": "256 Gt",
             "colorDisplay": "Hopea",
             "colorKey": "hopea",
             "family": "mac",
@@ -1786,10 +1786,10 @@
               "isRealPartNumber": true,
               "processorDisplay": "6-Core CPU / 5-Core GPU"
             },
-            "name": "MacBook Neo Hopea 6-Core CPU / 5-Core GPU (MHFA4KS/A)"
+            "name": "MacBook Neo Hopea 256 Gt 6-Core CPU / 5-Core GPU"
           },
           "MHFC4KS/A": {
-            "capacity": "",
+            "capacity": "512 Gt",
             "colorDisplay": "Hopea",
             "colorKey": "hopea",
             "family": "mac",
@@ -1799,10 +1799,10 @@
               "isRealPartNumber": true,
               "processorDisplay": "6-Core CPU / 5-Core GPU"
             },
-            "name": "MacBook Neo Hopea 6-Core CPU / 5-Core GPU (MHFC4KS/A)"
+            "name": "MacBook Neo Hopea 512 Gt 6-Core CPU / 5-Core GPU"
           },
           "MHFD4KS/A": {
-            "capacity": "",
+            "capacity": "256 Gt",
             "colorDisplay": "Sitrus",
             "colorKey": "sitrus",
             "family": "mac",
@@ -1812,10 +1812,10 @@
               "isRealPartNumber": true,
               "processorDisplay": "6-Core CPU / 5-Core GPU"
             },
-            "name": "MacBook Neo Sitrus 6-Core CPU / 5-Core GPU (MHFD4KS/A)"
+            "name": "MacBook Neo Sitrus 256 Gt 6-Core CPU / 5-Core GPU"
           },
           "MHFE4KS/A": {
-            "capacity": "",
+            "capacity": "512 Gt",
             "colorDisplay": "Sitrus",
             "colorKey": "sitrus",
             "family": "mac",
@@ -1825,10 +1825,10 @@
               "isRealPartNumber": true,
               "processorDisplay": "6-Core CPU / 5-Core GPU"
             },
-            "name": "MacBook Neo Sitrus 6-Core CPU / 5-Core GPU (MHFE4KS/A)"
+            "name": "MacBook Neo Sitrus 512 Gt 6-Core CPU / 5-Core GPU"
           },
           "MHFF4KS/A": {
-            "capacity": "",
+            "capacity": "256 Gt",
             "colorDisplay": "Indigo",
             "colorKey": "indigo",
             "family": "mac",
@@ -1838,10 +1838,10 @@
               "isRealPartNumber": true,
               "processorDisplay": "6-Core CPU / 5-Core GPU"
             },
-            "name": "MacBook Neo Indigo 6-Core CPU / 5-Core GPU (MHFF4KS/A)"
+            "name": "MacBook Neo Indigo 256 Gt 6-Core CPU / 5-Core GPU"
           },
           "MHFG4KS/A": {
-            "capacity": "",
+            "capacity": "512 Gt",
             "colorDisplay": "Indigo",
             "colorKey": "indigo",
             "family": "mac",
@@ -1851,10 +1851,10 @@
               "isRealPartNumber": true,
               "processorDisplay": "6-Core CPU / 5-Core GPU"
             },
-            "name": "MacBook Neo Indigo 6-Core CPU / 5-Core GPU (MHFG4KS/A)"
+            "name": "MacBook Neo Indigo 512 Gt 6-Core CPU / 5-Core GPU"
           },
           "MHFH4KS/A": {
-            "capacity": "",
+            "capacity": "256 Gt",
             "colorDisplay": "Roosa",
             "colorKey": "roosa",
             "family": "mac",
@@ -1864,10 +1864,10 @@
               "isRealPartNumber": true,
               "processorDisplay": "6-Core CPU / 5-Core GPU"
             },
-            "name": "MacBook Neo Roosa 6-Core CPU / 5-Core GPU (MHFH4KS/A)"
+            "name": "MacBook Neo Roosa 256 Gt 6-Core CPU / 5-Core GPU"
           },
           "MHFJ4KS/A": {
-            "capacity": "",
+            "capacity": "512 Gt",
             "colorDisplay": "Roosa",
             "colorKey": "roosa",
             "family": "mac",
@@ -1877,7 +1877,7 @@
               "isRealPartNumber": true,
               "processorDisplay": "6-Core CPU / 5-Core GPU"
             },
-            "name": "MacBook Neo Roosa 6-Core CPU / 5-Core GPU (MHFJ4KS/A)"
+            "name": "MacBook Neo Roosa 512 Gt 6-Core CPU / 5-Core GPU"
           }
         },
         "url": "https://www.apple.com/fi/shop/buy-mac/macbook-neo"
@@ -1887,7 +1887,7 @@
       "macbook-neo": {
         "skus": {
           "MHFA4FN/A": {
-            "capacity": "",
+            "capacity": "256 Go",
             "colorDisplay": "Argent",
             "colorKey": "argent",
             "family": "mac",
@@ -1897,10 +1897,10 @@
               "isRealPartNumber": true,
               "processorDisplay": "6-Core CPU / 5-Core GPU"
             },
-            "name": "MacBook Neo Argent 6-Core CPU / 5-Core GPU (MHFA4FN/A)"
+            "name": "MacBook Neo Argent 256 Go 6-Core CPU / 5-Core GPU"
           },
           "MHFC4FN/A": {
-            "capacity": "",
+            "capacity": "512 Go",
             "colorDisplay": "Argent",
             "colorKey": "argent",
             "family": "mac",
@@ -1910,10 +1910,10 @@
               "isRealPartNumber": true,
               "processorDisplay": "6-Core CPU / 5-Core GPU"
             },
-            "name": "MacBook Neo Argent 6-Core CPU / 5-Core GPU (MHFC4FN/A)"
+            "name": "MacBook Neo Argent 512 Go 6-Core CPU / 5-Core GPU"
           },
           "MHFD4FN/A": {
-            "capacity": "",
+            "capacity": "256 Go",
             "colorDisplay": "Jaune agrume",
             "colorKey": "jauneagrume",
             "family": "mac",
@@ -1923,10 +1923,10 @@
               "isRealPartNumber": true,
               "processorDisplay": "6-Core CPU / 5-Core GPU"
             },
-            "name": "MacBook Neo Jaune agrume 6-Core CPU / 5-Core GPU (MHFD4FN/A)"
+            "name": "MacBook Neo Jaune agrume 256 Go 6-Core CPU / 5-Core GPU"
           },
           "MHFE4FN/A": {
-            "capacity": "",
+            "capacity": "512 Go",
             "colorDisplay": "Jaune agrume",
             "colorKey": "jauneagrume",
             "family": "mac",
@@ -1936,10 +1936,10 @@
               "isRealPartNumber": true,
               "processorDisplay": "6-Core CPU / 5-Core GPU"
             },
-            "name": "MacBook Neo Jaune agrume 6-Core CPU / 5-Core GPU (MHFE4FN/A)"
+            "name": "MacBook Neo Jaune agrume 512 Go 6-Core CPU / 5-Core GPU"
           },
           "MHFF4FN/A": {
-            "capacity": "",
+            "capacity": "256 Go",
             "colorDisplay": "Indigo",
             "colorKey": "indigo",
             "family": "mac",
@@ -1949,10 +1949,10 @@
               "isRealPartNumber": true,
               "processorDisplay": "6-Core CPU / 5-Core GPU"
             },
-            "name": "MacBook Neo Indigo 6-Core CPU / 5-Core GPU (MHFF4FN/A)"
+            "name": "MacBook Neo Indigo 256 Go 6-Core CPU / 5-Core GPU"
           },
           "MHFG4FN/A": {
-            "capacity": "",
+            "capacity": "512 Go",
             "colorDisplay": "Indigo",
             "colorKey": "indigo",
             "family": "mac",
@@ -1962,10 +1962,10 @@
               "isRealPartNumber": true,
               "processorDisplay": "6-Core CPU / 5-Core GPU"
             },
-            "name": "MacBook Neo Indigo 6-Core CPU / 5-Core GPU (MHFG4FN/A)"
+            "name": "MacBook Neo Indigo 512 Go 6-Core CPU / 5-Core GPU"
           },
           "MHFH4FN/A": {
-            "capacity": "",
+            "capacity": "256 Go",
             "colorDisplay": "Rose poudré",
             "colorKey": "rosepoudr",
             "family": "mac",
@@ -1975,10 +1975,10 @@
               "isRealPartNumber": true,
               "processorDisplay": "6-Core CPU / 5-Core GPU"
             },
-            "name": "MacBook Neo Rose poudré 6-Core CPU / 5-Core GPU (MHFH4FN/A)"
+            "name": "MacBook Neo Rose poudré 256 Go 6-Core CPU / 5-Core GPU"
           },
           "MHFJ4FN/A": {
-            "capacity": "",
+            "capacity": "512 Go",
             "colorDisplay": "Rose poudré",
             "colorKey": "rosepoudr",
             "family": "mac",
@@ -1988,7 +1988,7 @@
               "isRealPartNumber": true,
               "processorDisplay": "6-Core CPU / 5-Core GPU"
             },
-            "name": "MacBook Neo Rose poudré 6-Core CPU / 5-Core GPU (MHFJ4FN/A)"
+            "name": "MacBook Neo Rose poudré 512 Go 6-Core CPU / 5-Core GPU"
           }
         },
         "url": "https://www.apple.com/fr/shop/buy-mac/macbook-neo"

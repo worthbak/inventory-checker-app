@@ -1,7 +1,7 @@
 {
   "_meta": {
     "family": "mac",
-    "generated_at": "2026-10-28T05:38:55.030677+00:00",
+    "generated_at": "2026-10-28T08:34:02.609506+00:00",
     "regions_scraped": 33,
     "scraper_version": "1.0",
     "token": "macbook-air"
@@ -2000,7 +2000,7 @@
           },
           "MDHA4KS/A": {
             "capacity": "",
-            "colorDisplay": "Tähti­valkea",
+            "colorDisplay": "Tähtivalkea",
             "colorKey": "thtivalkea",
             "dimensionScreensize": "13inch",
             "family": "mac",
@@ -2011,7 +2011,7 @@
               "isRealPartNumber": true,
               "processorDisplay": "M5 (10-Core CPU / 8-Core GPU)"
             },
-            "name": "MacBook Air 13-inch Tähti­valkea M5 (10-Core CPU / 8-Core GPU)"
+            "name": "MacBook Air 13-inch Tähtivalkea M5 (10-Core CPU / 8-Core GPU)"
           },
           "MDHE4KS/A": {
             "capacity": "",
@@ -2030,7 +2030,7 @@
           },
           "MDHH4KS/A": {
             "capacity": "",
-            "colorDisplay": "Taivaan­sininen",
+            "colorDisplay": "Taivaansininen",
             "colorKey": "taivaansininen",
             "dimensionScreensize": "13inch",
             "family": "mac",
@@ -2041,7 +2041,7 @@
               "isRealPartNumber": true,
               "processorDisplay": "M5 (10-Core CPU / 8-Core GPU)"
             },
-            "name": "MacBook Air 13-inch Taivaan­sininen M5 (10-Core CPU / 8-Core GPU)"
+            "name": "MacBook Air 13-inch Taivaansininen M5 (10-Core CPU / 8-Core GPU)"
           },
           "MDV94KS/A": {
             "capacity": "",
@@ -2060,7 +2060,7 @@
           },
           "MDVD4KS/A": {
             "capacity": "",
-            "colorDisplay": "Tähti­valkea",
+            "colorDisplay": "Tähtivalkea",
             "colorKey": "thtivalkea",
             "dimensionScreensize": "15inch",
             "family": "mac",
@@ -2071,7 +2071,7 @@
               "isRealPartNumber": true,
               "processorDisplay": "M5 (10-Core CPU / 10-Core GPU)"
             },
-            "name": "MacBook Air 15-inch Tähti­valkea M5 (10-Core CPU / 10-Core GPU)"
+            "name": "MacBook Air 15-inch Tähtivalkea M5 (10-Core CPU / 10-Core GPU)"
           },
           "MDVH4KS/A": {
             "capacity": "",
@@ -2090,7 +2090,7 @@
           },
           "MDVQ4KS/A": {
             "capacity": "",
-            "colorDisplay": "Taivaan­sininen",
+            "colorDisplay": "Taivaansininen",
             "colorKey": "taivaansininen",
             "dimensionScreensize": "15inch",
             "family": "mac",
@@ -2101,7 +2101,7 @@
               "isRealPartNumber": true,
               "processorDisplay": "M5 (10-Core CPU / 10-Core GPU)"
             },
-            "name": "MacBook Air 15-inch Taivaan­sininen M5 (10-Core CPU / 10-Core GPU)"
+            "name": "MacBook Air 15-inch Taivaansininen M5 (10-Core CPU / 10-Core GPU)"
           }
         },
         "url": "https://www.apple.com/fi/shop/buy-mac/macbook-air"

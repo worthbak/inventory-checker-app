@@ -1,7 +1,7 @@
 {
   "_meta": {
     "family": "ipad",
-    "generated_at": "2026-10-28T05:35:00.611547+00:00",
+    "generated_at": "2026-10-28T08:44:11.257431+00:00",
     "regions_scraped": 33,
     "scraper_version": "1.0",
     "token": "ipad"
@@ -681,12 +681,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128GB Silber",
+            "name": "iPad (A16) Wi-Fi 128GB Silber",
             "partNumber": "MD3Y4TY/A"
           },
           "MD4A4TY/A": {
@@ -695,12 +695,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128GB Blau",
+            "name": "iPad (A16) Wi-Fi 128GB Blau",
             "partNumber": "MD4A4TY/A"
           },
           "MD4D4TY/A": {
@@ -709,12 +709,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128GB Gelb",
+            "name": "iPad (A16) Wi-Fi 128GB Gelb",
             "partNumber": "MD4D4TY/A"
           },
           "MD4E4TY/A": {
@@ -723,12 +723,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128GB Pink",
+            "name": "iPad (A16) Wi-Fi 128GB Pink",
             "partNumber": "MD4E4TY/A"
           },
           "MD4G4TY/A": {
@@ -737,12 +737,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 256GB Silber",
+            "name": "iPad (A16) Wi-Fi 256GB Silber",
             "partNumber": "MD4G4TY/A"
           },
           "MD4H4TY/A": {
@@ -751,12 +751,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 256GB Blau",
+            "name": "iPad (A16) Wi-Fi 256GB Blau",
             "partNumber": "MD4H4TY/A"
           },
           "MD4J4TY/A": {
@@ -765,12 +765,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 256GB Gelb",
+            "name": "iPad (A16) Wi-Fi 256GB Gelb",
             "partNumber": "MD4J4TY/A"
           },
           "MD4P4TY/A": {
@@ -779,12 +779,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 256GB Pink",
+            "name": "iPad (A16) Wi-Fi 256GB Pink",
             "partNumber": "MD4P4TY/A"
           },
           "MD4Q4TY/A": {
@@ -793,12 +793,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 512GB Silber",
+            "name": "iPad (A16) Wi-Fi 512GB Silber",
             "partNumber": "MD4Q4TY/A"
           },
           "MD4Y4TY/A": {
@@ -807,12 +807,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 512GB Blau",
+            "name": "iPad (A16) Wi-Fi 512GB Blau",
             "partNumber": "MD4Y4TY/A"
           },
           "MD5A4TY/A": {
@@ -821,12 +821,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 512GB Gelb",
+            "name": "iPad (A16) Wi-Fi 512GB Gelb",
             "partNumber": "MD5A4TY/A"
           },
           "MD5C4TY/A": {
@@ -835,12 +835,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 512GB Pink",
+            "name": "iPad (A16) Wi-Fi 512GB Pink",
             "partNumber": "MD5C4TY/A"
           },
           "MD7F4TY/A": {
@@ -849,12 +849,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 128GB Silber",
+            "name": "iPad (A16) Cellular 128GB Silber",
             "partNumber": "MD7F4TY/A"
           },
           "MD7G4TY/A": {
@@ -863,12 +863,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 128GB Blau",
+            "name": "iPad (A16) Cellular 128GB Blau",
             "partNumber": "MD7G4TY/A"
           },
           "MD7H4TY/A": {
@@ -877,12 +877,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 128GB Gelb",
+            "name": "iPad (A16) Cellular 128GB Gelb",
             "partNumber": "MD7H4TY/A"
           },
           "MD7J4TY/A": {
@@ -891,12 +891,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 128GB Pink",
+            "name": "iPad (A16) Cellular 128GB Pink",
             "partNumber": "MD7J4TY/A"
           },
           "MD7K4TY/A": {
@@ -905,12 +905,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 256GB Silber",
+            "name": "iPad (A16) Cellular 256GB Silber",
             "partNumber": "MD7K4TY/A"
           },
           "MD7L4TY/A": {
@@ -919,12 +919,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 256GB Blau",
+            "name": "iPad (A16) Cellular 256GB Blau",
             "partNumber": "MD7L4TY/A"
           },
           "MD7M4TY/A": {
@@ -933,12 +933,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 256GB Gelb",
+            "name": "iPad (A16) Cellular 256GB Gelb",
             "partNumber": "MD7M4TY/A"
           },
           "MD7N4TY/A": {
@@ -947,12 +947,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 256GB Pink",
+            "name": "iPad (A16) Cellular 256GB Pink",
             "partNumber": "MD7N4TY/A"
           },
           "MD7P4TY/A": {
@@ -961,12 +961,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 512GB Silber",
+            "name": "iPad (A16) Cellular 512GB Silber",
             "partNumber": "MD7P4TY/A"
           },
           "MD7Q4TY/A": {
@@ -975,12 +975,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 512GB Blau",
+            "name": "iPad (A16) Cellular 512GB Blau",
             "partNumber": "MD7Q4TY/A"
           },
           "MD7R4TY/A": {
@@ -989,12 +989,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 512GB Gelb",
+            "name": "iPad (A16) Cellular 512GB Gelb",
             "partNumber": "MD7R4TY/A"
           },
           "MD7T4TY/A": {
@@ -1003,12 +1003,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 512GB Pink",
+            "name": "iPad (A16) Cellular 512GB Pink",
             "partNumber": "MD7T4TY/A"
           }
         },
@@ -1367,12 +1367,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128 Go Argent",
+            "name": "iPad (A16) Wi-Fi 128 Go Argent",
             "partNumber": "MD3Y4TY/A"
           },
           "MD4A4TY/A": {
@@ -1381,12 +1381,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128 Go Bleu",
+            "name": "iPad (A16) Wi-Fi 128 Go Bleu",
             "partNumber": "MD4A4TY/A"
           },
           "MD4D4TY/A": {
@@ -1395,12 +1395,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128 Go Jaune",
+            "name": "iPad (A16) Wi-Fi 128 Go Jaune",
             "partNumber": "MD4D4TY/A"
           },
           "MD4E4TY/A": {
@@ -1409,12 +1409,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128 Go Rose",
+            "name": "iPad (A16) Wi-Fi 128 Go Rose",
             "partNumber": "MD4E4TY/A"
           },
           "MD4G4TY/A": {
@@ -1423,12 +1423,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 256 Go Argent",
+            "name": "iPad (A16) Wi-Fi 256 Go Argent",
             "partNumber": "MD4G4TY/A"
           },
           "MD4H4TY/A": {
@@ -1437,12 +1437,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 256 Go Bleu",
+            "name": "iPad (A16) Wi-Fi 256 Go Bleu",
             "partNumber": "MD4H4TY/A"
           },
           "MD4J4TY/A": {
@@ -1451,12 +1451,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 256 Go Jaune",
+            "name": "iPad (A16) Wi-Fi 256 Go Jaune",
             "partNumber": "MD4J4TY/A"
           },
           "MD4P4TY/A": {
@@ -1465,12 +1465,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 256 Go Rose",
+            "name": "iPad (A16) Wi-Fi 256 Go Rose",
             "partNumber": "MD4P4TY/A"
           },
           "MD4Q4TY/A": {
@@ -1479,12 +1479,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 512 Go Argent",
+            "name": "iPad (A16) Wi-Fi 512 Go Argent",
             "partNumber": "MD4Q4TY/A"
           },
           "MD4Y4TY/A": {
@@ -1493,12 +1493,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 512 Go Bleu",
+            "name": "iPad (A16) Wi-Fi 512 Go Bleu",
             "partNumber": "MD4Y4TY/A"
           },
           "MD5A4TY/A": {
@@ -1507,12 +1507,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 512 Go Jaune",
+            "name": "iPad (A16) Wi-Fi 512 Go Jaune",
             "partNumber": "MD5A4TY/A"
           },
           "MD5C4TY/A": {
@@ -1521,12 +1521,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 512 Go Rose",
+            "name": "iPad (A16) Wi-Fi 512 Go Rose",
             "partNumber": "MD5C4TY/A"
           },
           "MD7F4TY/A": {
@@ -1535,12 +1535,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 128 Go Argent",
+            "name": "iPad (A16) Cellular 128 Go Argent",
             "partNumber": "MD7F4TY/A"
           },
           "MD7G4TY/A": {
@@ -1549,12 +1549,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 128 Go Bleu",
+            "name": "iPad (A16) Cellular 128 Go Bleu",
             "partNumber": "MD7G4TY/A"
           },
           "MD7H4TY/A": {
@@ -1563,12 +1563,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 128 Go Jaune",
+            "name": "iPad (A16) Cellular 128 Go Jaune",
             "partNumber": "MD7H4TY/A"
           },
           "MD7J4TY/A": {
@@ -1577,12 +1577,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 128 Go Rose",
+            "name": "iPad (A16) Cellular 128 Go Rose",
             "partNumber": "MD7J4TY/A"
           },
           "MD7K4TY/A": {
@@ -1591,12 +1591,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 256 Go Argent",
+            "name": "iPad (A16) Cellular 256 Go Argent",
             "partNumber": "MD7K4TY/A"
           },
           "MD7L4TY/A": {
@@ -1605,12 +1605,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 256 Go Bleu",
+            "name": "iPad (A16) Cellular 256 Go Bleu",
             "partNumber": "MD7L4TY/A"
           },
           "MD7M4TY/A": {
@@ -1619,12 +1619,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 256 Go Jaune",
+            "name": "iPad (A16) Cellular 256 Go Jaune",
             "partNumber": "MD7M4TY/A"
           },
           "MD7N4TY/A": {
@@ -1633,12 +1633,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 256 Go Rose",
+            "name": "iPad (A16) Cellular 256 Go Rose",
             "partNumber": "MD7N4TY/A"
           },
           "MD7P4TY/A": {
@@ -1647,12 +1647,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 512 Go Argent",
+            "name": "iPad (A16) Cellular 512 Go Argent",
             "partNumber": "MD7P4TY/A"
           },
           "MD7Q4TY/A": {
@@ -1661,12 +1661,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 512 Go Bleu",
+            "name": "iPad (A16) Cellular 512 Go Bleu",
             "partNumber": "MD7Q4TY/A"
           },
           "MD7R4TY/A": {
@@ -1675,12 +1675,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 512 Go Jaune",
+            "name": "iPad (A16) Cellular 512 Go Jaune",
             "partNumber": "MD7R4TY/A"
           },
           "MD7T4TY/A": {
@@ -1689,12 +1689,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 512 Go Rose",
+            "name": "iPad (A16) Cellular 512 Go Rose",
             "partNumber": "MD7T4TY/A"
           }
         },
@@ -1710,12 +1710,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128GB Zilver",
+            "name": "iPad (A16) Wi-Fi 128GB Zilver",
             "partNumber": "MD3Y4TY/A"
           },
           "MD4A4TY/A": {
@@ -1724,12 +1724,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128GB Blauw",
+            "name": "iPad (A16) Wi-Fi 128GB Blauw",
             "partNumber": "MD4A4TY/A"
           },
           "MD4D4TY/A": {
@@ -1738,12 +1738,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128GB Geel",
+            "name": "iPad (A16) Wi-Fi 128GB Geel",
             "partNumber": "MD4D4TY/A"
           },
           "MD4E4TY/A": {
@@ -1752,12 +1752,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128GB Roze",
+            "name": "iPad (A16) Wi-Fi 128GB Roze",
             "partNumber": "MD4E4TY/A"
           },
           "MD4G4TY/A": {
@@ -1766,12 +1766,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 256GB Zilver",
+            "name": "iPad (A16) Wi-Fi 256GB Zilver",
             "partNumber": "MD4G4TY/A"
           },
           "MD4H4TY/A": {
@@ -1780,12 +1780,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 256GB Blauw",
+            "name": "iPad (A16) Wi-Fi 256GB Blauw",
             "partNumber": "MD4H4TY/A"
           },
           "MD4J4TY/A": {
@@ -1794,12 +1794,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 256GB Geel",
+            "name": "iPad (A16) Wi-Fi 256GB Geel",
             "partNumber": "MD4J4TY/A"
           },
           "MD4P4TY/A": {
@@ -1808,12 +1808,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 256GB Roze",
+            "name": "iPad (A16) Wi-Fi 256GB Roze",
             "partNumber": "MD4P4TY/A"
           },
           "MD4Q4TY/A": {
@@ -1822,12 +1822,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 512GB Zilver",
+            "name": "iPad (A16) Wi-Fi 512GB Zilver",
             "partNumber": "MD4Q4TY/A"
           },
           "MD4Y4TY/A": {
@@ -1836,12 +1836,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 512GB Blauw",
+            "name": "iPad (A16) Wi-Fi 512GB Blauw",
             "partNumber": "MD4Y4TY/A"
           },
           "MD5A4TY/A": {
@@ -1850,12 +1850,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 512GB Geel",
+            "name": "iPad (A16) Wi-Fi 512GB Geel",
             "partNumber": "MD5A4TY/A"
           },
           "MD5C4TY/A": {
@@ -1864,12 +1864,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 512GB Roze",
+            "name": "iPad (A16) Wi-Fi 512GB Roze",
             "partNumber": "MD5C4TY/A"
           },
           "MD7F4TY/A": {
@@ -1878,12 +1878,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 128GB Zilver",
+            "name": "iPad (A16) Cellular 128GB Zilver",
             "partNumber": "MD7F4TY/A"
           },
           "MD7G4TY/A": {
@@ -1892,12 +1892,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 128GB Blauw",
+            "name": "iPad (A16) Cellular 128GB Blauw",
             "partNumber": "MD7G4TY/A"
           },
           "MD7H4TY/A": {
@@ -1906,12 +1906,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 128GB Geel",
+            "name": "iPad (A16) Cellular 128GB Geel",
             "partNumber": "MD7H4TY/A"
           },
           "MD7J4TY/A": {
@@ -1920,12 +1920,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 128GB Roze",
+            "name": "iPad (A16) Cellular 128GB Roze",
             "partNumber": "MD7J4TY/A"
           },
           "MD7K4TY/A": {
@@ -1934,12 +1934,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 256GB Zilver",
+            "name": "iPad (A16) Cellular 256GB Zilver",
             "partNumber": "MD7K4TY/A"
           },
           "MD7L4TY/A": {
@@ -1948,12 +1948,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 256GB Blauw",
+            "name": "iPad (A16) Cellular 256GB Blauw",
             "partNumber": "MD7L4TY/A"
           },
           "MD7M4TY/A": {
@@ -1962,12 +1962,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 256GB Geel",
+            "name": "iPad (A16) Cellular 256GB Geel",
             "partNumber": "MD7M4TY/A"
           },
           "MD7N4TY/A": {
@@ -1976,12 +1976,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 256GB Roze",
+            "name": "iPad (A16) Cellular 256GB Roze",
             "partNumber": "MD7N4TY/A"
           },
           "MD7P4TY/A": {
@@ -1990,12 +1990,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 512GB Zilver",
+            "name": "iPad (A16) Cellular 512GB Zilver",
             "partNumber": "MD7P4TY/A"
           },
           "MD7Q4TY/A": {
@@ -2004,12 +2004,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 512GB Blauw",
+            "name": "iPad (A16) Cellular 512GB Blauw",
             "partNumber": "MD7Q4TY/A"
           },
           "MD7R4TY/A": {
@@ -2018,12 +2018,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 512GB Geel",
+            "name": "iPad (A16) Cellular 512GB Geel",
             "partNumber": "MD7R4TY/A"
           },
           "MD7T4TY/A": {
@@ -2032,12 +2032,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 512GB Roze",
+            "name": "iPad (A16) Cellular 512GB Roze",
             "partNumber": "MD7T4TY/A"
           }
         },
@@ -2058,7 +2058,7 @@
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad (A16) Wi-Fi 128 GB Prateado",
+            "name": "iPad (A16) Wi-Fi 128GB Prateado",
             "partNumber": "MD3Y4BZ/A"
           },
           "MD4A4BZ/A": {
@@ -2072,7 +2072,7 @@
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad (A16) Wi-Fi 128 GB Azul",
+            "name": "iPad (A16) Wi-Fi 128GB Azul",
             "partNumber": "MD4A4BZ/A"
           },
           "MD4D4BZ/A": {
@@ -2086,7 +2086,7 @@
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad (A16) Wi-Fi 128 GB Amarelo",
+            "name": "iPad (A16) Wi-Fi 128GB Amarelo",
             "partNumber": "MD4D4BZ/A"
           },
           "MD4E4BZ/A": {
@@ -2100,7 +2100,7 @@
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad (A16) Wi-Fi 128 GB Rosa",
+            "name": "iPad (A16) Wi-Fi 128GB Rosa",
             "partNumber": "MD4E4BZ/A"
           },
           "MD4G4BZ/A": {
@@ -2114,7 +2114,7 @@
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad (A16) Wi-Fi 256 GB Prateado",
+            "name": "iPad (A16) Wi-Fi 256GB Prateado",
             "partNumber": "MD4G4BZ/A"
           },
           "MD4H4BZ/A": {
@@ -2128,7 +2128,7 @@
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad (A16) Wi-Fi 256 GB Azul",
+            "name": "iPad (A16) Wi-Fi 256GB Azul",
             "partNumber": "MD4H4BZ/A"
           },
           "MD4J4BZ/A": {
@@ -2142,7 +2142,7 @@
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad (A16) Wi-Fi 256 GB Amarelo",
+            "name": "iPad (A16) Wi-Fi 256GB Amarelo",
             "partNumber": "MD4J4BZ/A"
           },
           "MD4P4BZ/A": {
@@ -2156,7 +2156,7 @@
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad (A16) Wi-Fi 256 GB Rosa",
+            "name": "iPad (A16) Wi-Fi 256GB Rosa",
             "partNumber": "MD4P4BZ/A"
           },
           "MD4Q4BZ/A": {
@@ -2170,7 +2170,7 @@
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad (A16) Wi-Fi 512 GB Prateado",
+            "name": "iPad (A16) Wi-Fi 512GB Prateado",
             "partNumber": "MD4Q4BZ/A"
           },
           "MD4Y4BZ/A": {
@@ -2184,7 +2184,7 @@
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad (A16) Wi-Fi 512 GB Azul",
+            "name": "iPad (A16) Wi-Fi 512GB Azul",
             "partNumber": "MD4Y4BZ/A"
           },
           "MD5A4BZ/A": {
@@ -2198,7 +2198,7 @@
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad (A16) Wi-Fi 512 GB Amarelo",
+            "name": "iPad (A16) Wi-Fi 512GB Amarelo",
             "partNumber": "MD5A4BZ/A"
           },
           "MD5C4BZ/A": {
@@ -2212,7 +2212,7 @@
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad (A16) Wi-Fi 512 GB Rosa",
+            "name": "iPad (A16) Wi-Fi 512GB Rosa",
             "partNumber": "MD5C4BZ/A"
           },
           "MD7F4BZ/A": {
@@ -2226,7 +2226,7 @@
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad (A16) Cellular 128 GB Prateado",
+            "name": "iPad (A16) Cellular 128GB Prateado",
             "partNumber": "MD7F4BZ/A"
           },
           "MD7G4BZ/A": {
@@ -2240,7 +2240,7 @@
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad (A16) Cellular 128 GB Azul",
+            "name": "iPad (A16) Cellular 128GB Azul",
             "partNumber": "MD7G4BZ/A"
           },
           "MD7H4BZ/A": {
@@ -2254,7 +2254,7 @@
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad (A16) Cellular 128 GB Amarelo",
+            "name": "iPad (A16) Cellular 128GB Amarelo",
             "partNumber": "MD7H4BZ/A"
           },
           "MD7J4BZ/A": {
@@ -2268,7 +2268,7 @@
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad (A16) Cellular 128 GB Rosa",
+            "name": "iPad (A16) Cellular 128GB Rosa",
             "partNumber": "MD7J4BZ/A"
           },
           "MD7K4BZ/A": {
@@ -2282,7 +2282,7 @@
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad (A16) Cellular 256 GB Prateado",
+            "name": "iPad (A16) Cellular 256GB Prateado",
             "partNumber": "MD7K4BZ/A"
           },
           "MD7L4BZ/A": {
@@ -2296,7 +2296,7 @@
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad (A16) Cellular 256 GB Azul",
+            "name": "iPad (A16) Cellular 256GB Azul",
             "partNumber": "MD7L4BZ/A"
           },
           "MD7M4BZ/A": {
@@ -2310,7 +2310,7 @@
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad (A16) Cellular 256 GB Amarelo",
+            "name": "iPad (A16) Cellular 256GB Amarelo",
             "partNumber": "MD7M4BZ/A"
           },
           "MD7N4BZ/A": {
@@ -2324,7 +2324,7 @@
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad (A16) Cellular 256 GB Rosa",
+            "name": "iPad (A16) Cellular 256GB Rosa",
             "partNumber": "MD7N4BZ/A"
           },
           "MD7P4BZ/A": {
@@ -2338,7 +2338,7 @@
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad (A16) Cellular 512 GB Prateado",
+            "name": "iPad (A16) Cellular 512GB Prateado",
             "partNumber": "MD7P4BZ/A"
           },
           "MD7Q4BZ/A": {
@@ -2352,7 +2352,7 @@
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad (A16) Cellular 512 GB Azul",
+            "name": "iPad (A16) Cellular 512GB Azul",
             "partNumber": "MD7Q4BZ/A"
           },
           "MD7R4BZ/A": {
@@ -2366,7 +2366,7 @@
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad (A16) Cellular 512 GB Amarelo",
+            "name": "iPad (A16) Cellular 512GB Amarelo",
             "partNumber": "MD7R4BZ/A"
           },
           "MD7T4BZ/A": {
@@ -2380,7 +2380,7 @@
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad (A16) Cellular 512 GB Rosa",
+            "name": "iPad (A16) Cellular 512GB Rosa",
             "partNumber": "MD7T4BZ/A"
           }
         },
@@ -2739,12 +2739,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128GB Silber",
+            "name": "iPad (A16) Wi-Fi 128GB Silber",
             "partNumber": "MD3Y4TY/A"
           },
           "MD4A4TY/A": {
@@ -2753,12 +2753,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128GB Blau",
+            "name": "iPad (A16) Wi-Fi 128GB Blau",
             "partNumber": "MD4A4TY/A"
           },
           "MD4D4TY/A": {
@@ -2767,12 +2767,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128GB Gelb",
+            "name": "iPad (A16) Wi-Fi 128GB Gelb",
             "partNumber": "MD4D4TY/A"
           },
           "MD4E4TY/A": {
@@ -2781,12 +2781,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128GB Pink",
+            "name": "iPad (A16) Wi-Fi 128GB Pink",
             "partNumber": "MD4E4TY/A"
           },
           "MD4G4TY/A": {
@@ -2795,12 +2795,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 256GB Silber",
+            "name": "iPad (A16) Wi-Fi 256GB Silber",
             "partNumber": "MD4G4TY/A"
           },
           "MD4H4TY/A": {
@@ -2809,12 +2809,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 256GB Blau",
+            "name": "iPad (A16) Wi-Fi 256GB Blau",
             "partNumber": "MD4H4TY/A"
           },
           "MD4J4TY/A": {
@@ -2823,12 +2823,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 256GB Gelb",
+            "name": "iPad (A16) Wi-Fi 256GB Gelb",
             "partNumber": "MD4J4TY/A"
           },
           "MD4P4TY/A": {
@@ -2837,12 +2837,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 256GB Pink",
+            "name": "iPad (A16) Wi-Fi 256GB Pink",
             "partNumber": "MD4P4TY/A"
           },
           "MD4Q4TY/A": {
@@ -2851,12 +2851,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 512GB Silber",
+            "name": "iPad (A16) Wi-Fi 512GB Silber",
             "partNumber": "MD4Q4TY/A"
           },
           "MD4Y4TY/A": {
@@ -2865,12 +2865,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 512GB Blau",
+            "name": "iPad (A16) Wi-Fi 512GB Blau",
             "partNumber": "MD4Y4TY/A"
           },
           "MD5A4TY/A": {
@@ -2879,12 +2879,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 512GB Gelb",
+            "name": "iPad (A16) Wi-Fi 512GB Gelb",
             "partNumber": "MD5A4TY/A"
           },
           "MD5C4TY/A": {
@@ -2893,12 +2893,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 512GB Pink",
+            "name": "iPad (A16) Wi-Fi 512GB Pink",
             "partNumber": "MD5C4TY/A"
           },
           "MD7F4TY/A": {
@@ -2907,12 +2907,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 128GB Silber",
+            "name": "iPad (A16) Cellular 128GB Silber",
             "partNumber": "MD7F4TY/A"
           },
           "MD7G4TY/A": {
@@ -2921,12 +2921,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 128GB Blau",
+            "name": "iPad (A16) Cellular 128GB Blau",
             "partNumber": "MD7G4TY/A"
           },
           "MD7H4TY/A": {
@@ -2935,12 +2935,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 128GB Gelb",
+            "name": "iPad (A16) Cellular 128GB Gelb",
             "partNumber": "MD7H4TY/A"
           },
           "MD7J4TY/A": {
@@ -2949,12 +2949,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 128GB Pink",
+            "name": "iPad (A16) Cellular 128GB Pink",
             "partNumber": "MD7J4TY/A"
           },
           "MD7K4TY/A": {
@@ -2963,12 +2963,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 256GB Silber",
+            "name": "iPad (A16) Cellular 256GB Silber",
             "partNumber": "MD7K4TY/A"
           },
           "MD7L4TY/A": {
@@ -2977,12 +2977,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 256GB Blau",
+            "name": "iPad (A16) Cellular 256GB Blau",
             "partNumber": "MD7L4TY/A"
           },
           "MD7M4TY/A": {
@@ -2991,12 +2991,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 256GB Gelb",
+            "name": "iPad (A16) Cellular 256GB Gelb",
             "partNumber": "MD7M4TY/A"
           },
           "MD7N4TY/A": {
@@ -3005,12 +3005,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 256GB Pink",
+            "name": "iPad (A16) Cellular 256GB Pink",
             "partNumber": "MD7N4TY/A"
           },
           "MD7P4TY/A": {
@@ -3019,12 +3019,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 512GB Silber",
+            "name": "iPad (A16) Cellular 512GB Silber",
             "partNumber": "MD7P4TY/A"
           },
           "MD7Q4TY/A": {
@@ -3033,12 +3033,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 512GB Blau",
+            "name": "iPad (A16) Cellular 512GB Blau",
             "partNumber": "MD7Q4TY/A"
           },
           "MD7R4TY/A": {
@@ -3047,12 +3047,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 512GB Gelb",
+            "name": "iPad (A16) Cellular 512GB Gelb",
             "partNumber": "MD7R4TY/A"
           },
           "MD7T4TY/A": {
@@ -3061,12 +3061,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 512GB Pink",
+            "name": "iPad (A16) Cellular 512GB Pink",
             "partNumber": "MD7T4TY/A"
           }
         },
@@ -3082,12 +3082,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128 Go Argent",
+            "name": "iPad (A16) Wi-Fi 128 Go Argent",
             "partNumber": "MD3Y4TY/A"
           },
           "MD4A4TY/A": {
@@ -3096,12 +3096,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128 Go Bleu",
+            "name": "iPad (A16) Wi-Fi 128 Go Bleu",
             "partNumber": "MD4A4TY/A"
           },
           "MD4D4TY/A": {
@@ -3110,12 +3110,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128 Go Jaune",
+            "name": "iPad (A16) Wi-Fi 128 Go Jaune",
             "partNumber": "MD4D4TY/A"
           },
           "MD4E4TY/A": {
@@ -3124,12 +3124,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128 Go Rose",
+            "name": "iPad (A16) Wi-Fi 128 Go Rose",
             "partNumber": "MD4E4TY/A"
           },
           "MD4G4TY/A": {
@@ -3138,12 +3138,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 256 Go Argent",
+            "name": "iPad (A16) Wi-Fi 256 Go Argent",
             "partNumber": "MD4G4TY/A"
           },
           "MD4H4TY/A": {
@@ -3152,12 +3152,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 256 Go Bleu",
+            "name": "iPad (A16) Wi-Fi 256 Go Bleu",
             "partNumber": "MD4H4TY/A"
           },
           "MD4J4TY/A": {
@@ -3166,12 +3166,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 256 Go Jaune",
+            "name": "iPad (A16) Wi-Fi 256 Go Jaune",
             "partNumber": "MD4J4TY/A"
           },
           "MD4P4TY/A": {
@@ -3180,12 +3180,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 256 Go Rose",
+            "name": "iPad (A16) Wi-Fi 256 Go Rose",
             "partNumber": "MD4P4TY/A"
           },
           "MD4Q4TY/A": {
@@ -3194,12 +3194,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 512 Go Argent",
+            "name": "iPad (A16) Wi-Fi 512 Go Argent",
             "partNumber": "MD4Q4TY/A"
           },
           "MD4Y4TY/A": {
@@ -3208,12 +3208,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 512 Go Bleu",
+            "name": "iPad (A16) Wi-Fi 512 Go Bleu",
             "partNumber": "MD4Y4TY/A"
           },
           "MD5A4TY/A": {
@@ -3222,12 +3222,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 512 Go Jaune",
+            "name": "iPad (A16) Wi-Fi 512 Go Jaune",
             "partNumber": "MD5A4TY/A"
           },
           "MD5C4TY/A": {
@@ -3236,12 +3236,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 512 Go Rose",
+            "name": "iPad (A16) Wi-Fi 512 Go Rose",
             "partNumber": "MD5C4TY/A"
           },
           "MD7F4TY/A": {
@@ -3250,12 +3250,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 128 Go Argent",
+            "name": "iPad (A16) Cellular 128 Go Argent",
             "partNumber": "MD7F4TY/A"
           },
           "MD7G4TY/A": {
@@ -3264,12 +3264,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 128 Go Bleu",
+            "name": "iPad (A16) Cellular 128 Go Bleu",
             "partNumber": "MD7G4TY/A"
           },
           "MD7H4TY/A": {
@@ -3278,12 +3278,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 128 Go Jaune",
+            "name": "iPad (A16) Cellular 128 Go Jaune",
             "partNumber": "MD7H4TY/A"
           },
           "MD7J4TY/A": {
@@ -3292,12 +3292,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 128 Go Rose",
+            "name": "iPad (A16) Cellular 128 Go Rose",
             "partNumber": "MD7J4TY/A"
           },
           "MD7K4TY/A": {
@@ -3306,12 +3306,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 256 Go Argent",
+            "name": "iPad (A16) Cellular 256 Go Argent",
             "partNumber": "MD7K4TY/A"
           },
           "MD7L4TY/A": {
@@ -3320,12 +3320,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 256 Go Bleu",
+            "name": "iPad (A16) Cellular 256 Go Bleu",
             "partNumber": "MD7L4TY/A"
           },
           "MD7M4TY/A": {
@@ -3334,12 +3334,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 256 Go Jaune",
+            "name": "iPad (A16) Cellular 256 Go Jaune",
             "partNumber": "MD7M4TY/A"
           },
           "MD7N4TY/A": {
@@ -3348,12 +3348,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 256 Go Rose",
+            "name": "iPad (A16) Cellular 256 Go Rose",
             "partNumber": "MD7N4TY/A"
           },
           "MD7P4TY/A": {
@@ -3362,12 +3362,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 512 Go Argent",
+            "name": "iPad (A16) Cellular 512 Go Argent",
             "partNumber": "MD7P4TY/A"
           },
           "MD7Q4TY/A": {
@@ -3376,12 +3376,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 512 Go Bleu",
+            "name": "iPad (A16) Cellular 512 Go Bleu",
             "partNumber": "MD7Q4TY/A"
           },
           "MD7R4TY/A": {
@@ -3390,12 +3390,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 512 Go Jaune",
+            "name": "iPad (A16) Cellular 512 Go Jaune",
             "partNumber": "MD7R4TY/A"
           },
           "MD7T4TY/A": {
@@ -3404,12 +3404,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 512 Go Rose",
+            "name": "iPad (A16) Cellular 512 Go Rose",
             "partNumber": "MD7T4TY/A"
           }
         },
@@ -3768,12 +3768,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128GB Silber",
+            "name": "iPad (A16) Wi-Fi 128GB Silber",
             "partNumber": "MD3Y4TY/A"
           },
           "MD4A4TY/A": {
@@ -3782,12 +3782,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128GB Blau",
+            "name": "iPad (A16) Wi-Fi 128GB Blau",
             "partNumber": "MD4A4TY/A"
           },
           "MD4D4TY/A": {
@@ -3796,12 +3796,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128GB Gelb",
+            "name": "iPad (A16) Wi-Fi 128GB Gelb",
             "partNumber": "MD4D4TY/A"
           },
           "MD4E4TY/A": {
@@ -3810,12 +3810,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128GB Pink",
+            "name": "iPad (A16) Wi-Fi 128GB Pink",
             "partNumber": "MD4E4TY/A"
           },
           "MD4G4TY/A": {
@@ -3824,12 +3824,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 256GB Silber",
+            "name": "iPad (A16) Wi-Fi 256GB Silber",
             "partNumber": "MD4G4TY/A"
           },
           "MD4H4TY/A": {
@@ -3838,12 +3838,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 256GB Blau",
+            "name": "iPad (A16) Wi-Fi 256GB Blau",
             "partNumber": "MD4H4TY/A"
           },
           "MD4J4TY/A": {
@@ -3852,12 +3852,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 256GB Gelb",
+            "name": "iPad (A16) Wi-Fi 256GB Gelb",
             "partNumber": "MD4J4TY/A"
           },
           "MD4P4TY/A": {
@@ -3866,12 +3866,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 256GB Pink",
+            "name": "iPad (A16) Wi-Fi 256GB Pink",
             "partNumber": "MD4P4TY/A"
           },
           "MD4Q4TY/A": {
@@ -3880,12 +3880,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 512GB Silber",
+            "name": "iPad (A16) Wi-Fi 512GB Silber",
             "partNumber": "MD4Q4TY/A"
           },
           "MD4Y4TY/A": {
@@ -3894,12 +3894,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 512GB Blau",
+            "name": "iPad (A16) Wi-Fi 512GB Blau",
             "partNumber": "MD4Y4TY/A"
           },
           "MD5A4TY/A": {
@@ -3908,12 +3908,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 512GB Gelb",
+            "name": "iPad (A16) Wi-Fi 512GB Gelb",
             "partNumber": "MD5A4TY/A"
           },
           "MD5C4TY/A": {
@@ -3922,12 +3922,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 512GB Pink",
+            "name": "iPad (A16) Wi-Fi 512GB Pink",
             "partNumber": "MD5C4TY/A"
           },
           "MD7F4TY/A": {
@@ -3936,12 +3936,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 128GB Silber",
+            "name": "iPad (A16) Cellular 128GB Silber",
             "partNumber": "MD7F4TY/A"
           },
           "MD7G4TY/A": {
@@ -3950,12 +3950,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 128GB Blau",
+            "name": "iPad (A16) Cellular 128GB Blau",
             "partNumber": "MD7G4TY/A"
           },
           "MD7H4TY/A": {
@@ -3964,12 +3964,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 128GB Gelb",
+            "name": "iPad (A16) Cellular 128GB Gelb",
             "partNumber": "MD7H4TY/A"
           },
           "MD7J4TY/A": {
@@ -3978,12 +3978,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 128GB Pink",
+            "name": "iPad (A16) Cellular 128GB Pink",
             "partNumber": "MD7J4TY/A"
           },
           "MD7K4TY/A": {
@@ -3992,12 +3992,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 256GB Silber",
+            "name": "iPad (A16) Cellular 256GB Silber",
             "partNumber": "MD7K4TY/A"
           },
           "MD7L4TY/A": {
@@ -4006,12 +4006,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 256GB Blau",
+            "name": "iPad (A16) Cellular 256GB Blau",
             "partNumber": "MD7L4TY/A"
           },
           "MD7M4TY/A": {
@@ -4020,12 +4020,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 256GB Gelb",
+            "name": "iPad (A16) Cellular 256GB Gelb",
             "partNumber": "MD7M4TY/A"
           },
           "MD7N4TY/A": {
@@ -4034,12 +4034,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 256GB Pink",
+            "name": "iPad (A16) Cellular 256GB Pink",
             "partNumber": "MD7N4TY/A"
           },
           "MD7P4TY/A": {
@@ -4048,12 +4048,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 512GB Silber",
+            "name": "iPad (A16) Cellular 512GB Silber",
             "partNumber": "MD7P4TY/A"
           },
           "MD7Q4TY/A": {
@@ -4062,12 +4062,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 512GB Blau",
+            "name": "iPad (A16) Cellular 512GB Blau",
             "partNumber": "MD7Q4TY/A"
           },
           "MD7R4TY/A": {
@@ -4076,12 +4076,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 512GB Gelb",
+            "name": "iPad (A16) Cellular 512GB Gelb",
             "partNumber": "MD7R4TY/A"
           },
           "MD7T4TY/A": {
@@ -4090,12 +4090,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 512GB Pink",
+            "name": "iPad (A16) Cellular 512GB Pink",
             "partNumber": "MD7T4TY/A"
           }
         },
@@ -4111,12 +4111,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128GB sølv",
+            "name": "iPad (A16) Wi-Fi 128GB sølv",
             "partNumber": "MD3Y4KN/A"
           },
           "MD4A4KN/A": {
@@ -4125,12 +4125,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128GB blå",
+            "name": "iPad (A16) Wi-Fi 128GB blå",
             "partNumber": "MD4A4KN/A"
           },
           "MD4D4KN/A": {
@@ -4139,12 +4139,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128GB gul",
+            "name": "iPad (A16) Wi-Fi 128GB gul",
             "partNumber": "MD4D4KN/A"
           },
           "MD4E4KN/A": {
@@ -4153,12 +4153,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128GB lyserød",
+            "name": "iPad (A16) Wi-Fi 128GB lyserød",
             "partNumber": "MD4E4KN/A"
           },
           "MD4G4KN/A": {
@@ -4167,12 +4167,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 256GB sølv",
+            "name": "iPad (A16) Wi-Fi 256GB sølv",
             "partNumber": "MD4G4KN/A"
           },
           "MD4H4KN/A": {
@@ -4181,12 +4181,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 256GB blå",
+            "name": "iPad (A16) Wi-Fi 256GB blå",
             "partNumber": "MD4H4KN/A"
           },
           "MD4J4KN/A": {
@@ -4195,12 +4195,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 256GB gul",
+            "name": "iPad (A16) Wi-Fi 256GB gul",
             "partNumber": "MD4J4KN/A"
           },
           "MD4P4KN/A": {
@@ -4209,12 +4209,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 256GB lyserød",
+            "name": "iPad (A16) Wi-Fi 256GB lyserød",
             "partNumber": "MD4P4KN/A"
           },
           "MD4Q4KN/A": {
@@ -4223,12 +4223,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 512GB sølv",
+            "name": "iPad (A16) Wi-Fi 512GB sølv",
             "partNumber": "MD4Q4KN/A"
           },
           "MD4Y4KN/A": {
@@ -4237,12 +4237,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 512GB blå",
+            "name": "iPad (A16) Wi-Fi 512GB blå",
             "partNumber": "MD4Y4KN/A"
           },
           "MD5A4KN/A": {
@@ -4251,12 +4251,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 512GB gul",
+            "name": "iPad (A16) Wi-Fi 512GB gul",
             "partNumber": "MD5A4KN/A"
           },
           "MD5C4KN/A": {
@@ -4265,12 +4265,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 512GB lyserød",
+            "name": "iPad (A16) Wi-Fi 512GB lyserød",
             "partNumber": "MD5C4KN/A"
           },
           "MD7F4KN/A": {
@@ -4279,12 +4279,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 128GB sølv",
+            "name": "iPad (A16) Cellular 128GB sølv",
             "partNumber": "MD7F4KN/A"
           },
           "MD7G4KN/A": {
@@ -4293,12 +4293,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 128GB blå",
+            "name": "iPad (A16) Cellular 128GB blå",
             "partNumber": "MD7G4KN/A"
           },
           "MD7H4KN/A": {
@@ -4307,12 +4307,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 128GB gul",
+            "name": "iPad (A16) Cellular 128GB gul",
             "partNumber": "MD7H4KN/A"
           },
           "MD7J4KN/A": {
@@ -4321,12 +4321,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 128GB lyserød",
+            "name": "iPad (A16) Cellular 128GB lyserød",
             "partNumber": "MD7J4KN/A"
           },
           "MD7K4KN/A": {
@@ -4335,12 +4335,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 256GB sølv",
+            "name": "iPad (A16) Cellular 256GB sølv",
             "partNumber": "MD7K4KN/A"
           },
           "MD7L4KN/A": {
@@ -4349,12 +4349,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 256GB blå",
+            "name": "iPad (A16) Cellular 256GB blå",
             "partNumber": "MD7L4KN/A"
           },
           "MD7M4KN/A": {
@@ -4363,12 +4363,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 256GB gul",
+            "name": "iPad (A16) Cellular 256GB gul",
             "partNumber": "MD7M4KN/A"
           },
           "MD7N4KN/A": {
@@ -4377,12 +4377,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 256GB lyserød",
+            "name": "iPad (A16) Cellular 256GB lyserød",
             "partNumber": "MD7N4KN/A"
           },
           "MD7P4KN/A": {
@@ -4391,12 +4391,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 512GB sølv",
+            "name": "iPad (A16) Cellular 512GB sølv",
             "partNumber": "MD7P4KN/A"
           },
           "MD7Q4KN/A": {
@@ -4405,12 +4405,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 512GB blå",
+            "name": "iPad (A16) Cellular 512GB blå",
             "partNumber": "MD7Q4KN/A"
           },
           "MD7R4KN/A": {
@@ -4419,12 +4419,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 512GB gul",
+            "name": "iPad (A16) Cellular 512GB gul",
             "partNumber": "MD7R4KN/A"
           },
           "MD7T4KN/A": {
@@ -4433,12 +4433,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 512GB lyserød",
+            "name": "iPad (A16) Cellular 512GB lyserød",
             "partNumber": "MD7T4KN/A"
           }
         },
@@ -4454,12 +4454,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128GB Plata",
+            "name": "iPad (A16) Wi-Fi 128GB Plata",
             "partNumber": "MD3Y4TY/A"
           },
           "MD4A4TY/A": {
@@ -4468,12 +4468,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128GB Azul",
+            "name": "iPad (A16) Wi-Fi 128GB Azul",
             "partNumber": "MD4A4TY/A"
           },
           "MD4D4TY/A": {
@@ -4482,12 +4482,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128GB Amarillo",
+            "name": "iPad (A16) Wi-Fi 128GB Amarillo",
             "partNumber": "MD4D4TY/A"
           },
           "MD4E4TY/A": {
@@ -4496,12 +4496,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128GB Rosa",
+            "name": "iPad (A16) Wi-Fi 128GB Rosa",
             "partNumber": "MD4E4TY/A"
           },
           "MD4G4TY/A": {
@@ -4510,12 +4510,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 256GB Plata",
+            "name": "iPad (A16) Wi-Fi 256GB Plata",
             "partNumber": "MD4G4TY/A"
           },
           "MD4H4TY/A": {
@@ -4524,12 +4524,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 256GB Azul",
+            "name": "iPad (A16) Wi-Fi 256GB Azul",
             "partNumber": "MD4H4TY/A"
           },
           "MD4J4TY/A": {
@@ -4538,12 +4538,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 256GB Amarillo",
+            "name": "iPad (A16) Wi-Fi 256GB Amarillo",
             "partNumber": "MD4J4TY/A"
           },
           "MD4P4TY/A": {
@@ -4552,12 +4552,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 256GB Rosa",
+            "name": "iPad (A16) Wi-Fi 256GB Rosa",
             "partNumber": "MD4P4TY/A"
           },
           "MD4Q4TY/A": {
@@ -4566,12 +4566,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 512GB Plata",
+            "name": "iPad (A16) Wi-Fi 512GB Plata",
             "partNumber": "MD4Q4TY/A"
           },
           "MD4Y4TY/A": {
@@ -4580,12 +4580,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 512GB Azul",
+            "name": "iPad (A16) Wi-Fi 512GB Azul",
             "partNumber": "MD4Y4TY/A"
           },
           "MD5A4TY/A": {
@@ -4594,12 +4594,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 512GB Amarillo",
+            "name": "iPad (A16) Wi-Fi 512GB Amarillo",
             "partNumber": "MD5A4TY/A"
           },
           "MD5C4TY/A": {
@@ -4608,12 +4608,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 512GB Rosa",
+            "name": "iPad (A16) Wi-Fi 512GB Rosa",
             "partNumber": "MD5C4TY/A"
           },
           "MD7F4TY/A": {
@@ -4622,12 +4622,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 128GB Plata",
+            "name": "iPad (A16) Cellular 128GB Plata",
             "partNumber": "MD7F4TY/A"
           },
           "MD7G4TY/A": {
@@ -4636,12 +4636,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 128GB Azul",
+            "name": "iPad (A16) Cellular 128GB Azul",
             "partNumber": "MD7G4TY/A"
           },
           "MD7H4TY/A": {
@@ -4650,12 +4650,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 128GB Amarillo",
+            "name": "iPad (A16) Cellular 128GB Amarillo",
             "partNumber": "MD7H4TY/A"
           },
           "MD7J4TY/A": {
@@ -4664,12 +4664,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 128GB Rosa",
+            "name": "iPad (A16) Cellular 128GB Rosa",
             "partNumber": "MD7J4TY/A"
           },
           "MD7K4TY/A": {
@@ -4678,12 +4678,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 256GB Plata",
+            "name": "iPad (A16) Cellular 256GB Plata",
             "partNumber": "MD7K4TY/A"
           },
           "MD7L4TY/A": {
@@ -4692,12 +4692,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 256GB Azul",
+            "name": "iPad (A16) Cellular 256GB Azul",
             "partNumber": "MD7L4TY/A"
           },
           "MD7M4TY/A": {
@@ -4706,12 +4706,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 256GB Amarillo",
+            "name": "iPad (A16) Cellular 256GB Amarillo",
             "partNumber": "MD7M4TY/A"
           },
           "MD7N4TY/A": {
@@ -4720,12 +4720,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 256GB Rosa",
+            "name": "iPad (A16) Cellular 256GB Rosa",
             "partNumber": "MD7N4TY/A"
           },
           "MD7P4TY/A": {
@@ -4734,12 +4734,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 512GB Plata",
+            "name": "iPad (A16) Cellular 512GB Plata",
             "partNumber": "MD7P4TY/A"
           },
           "MD7Q4TY/A": {
@@ -4748,12 +4748,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 512GB Azul",
+            "name": "iPad (A16) Cellular 512GB Azul",
             "partNumber": "MD7Q4TY/A"
           },
           "MD7R4TY/A": {
@@ -4762,12 +4762,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 512GB Amarillo",
+            "name": "iPad (A16) Cellular 512GB Amarillo",
             "partNumber": "MD7R4TY/A"
           },
           "MD7T4TY/A": {
@@ -4776,12 +4776,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 512GB Rosa",
+            "name": "iPad (A16) Cellular 512GB Rosa",
             "partNumber": "MD7T4TY/A"
           }
         },
@@ -4797,12 +4797,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128 Gt Hopea",
+            "name": "iPad (A16) Wi-Fi 128 Gt Hopea",
             "partNumber": "MD3Y4KN/A"
           },
           "MD4A4KN/A": {
@@ -4811,12 +4811,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128 Gt Sininen",
+            "name": "iPad (A16) Wi-Fi 128 Gt Sininen",
             "partNumber": "MD4A4KN/A"
           },
           "MD4D4KN/A": {
@@ -4825,12 +4825,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128 Gt Keltainen",
+            "name": "iPad (A16) Wi-Fi 128 Gt Keltainen",
             "partNumber": "MD4D4KN/A"
           },
           "MD4E4KN/A": {
@@ -4839,12 +4839,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128 Gt Pinkki",
+            "name": "iPad (A16) Wi-Fi 128 Gt Pinkki",
             "partNumber": "MD4E4KN/A"
           },
           "MD4G4KN/A": {
@@ -4853,12 +4853,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 256 Gt Hopea",
+            "name": "iPad (A16) Wi-Fi 256 Gt Hopea",
             "partNumber": "MD4G4KN/A"
           },
           "MD4H4KN/A": {
@@ -4867,12 +4867,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 256 Gt Sininen",
+            "name": "iPad (A16) Wi-Fi 256 Gt Sininen",
             "partNumber": "MD4H4KN/A"
           },
           "MD4J4KN/A": {
@@ -4881,12 +4881,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 256 Gt Keltainen",
+            "name": "iPad (A16) Wi-Fi 256 Gt Keltainen",
             "partNumber": "MD4J4KN/A"
           },
           "MD4P4KN/A": {
@@ -4895,12 +4895,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 256 Gt Pinkki",
+            "name": "iPad (A16) Wi-Fi 256 Gt Pinkki",
             "partNumber": "MD4P4KN/A"
           },
           "MD4Q4KN/A": {
@@ -4909,12 +4909,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 512 Gt Hopea",
+            "name": "iPad (A16) Wi-Fi 512 Gt Hopea",
             "partNumber": "MD4Q4KN/A"
           },
           "MD4Y4KN/A": {
@@ -4923,12 +4923,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 512 Gt Sininen",
+            "name": "iPad (A16) Wi-Fi 512 Gt Sininen",
             "partNumber": "MD4Y4KN/A"
           },
           "MD5A4KN/A": {
@@ -4937,12 +4937,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 512 Gt Keltainen",
+            "name": "iPad (A16) Wi-Fi 512 Gt Keltainen",
             "partNumber": "MD5A4KN/A"
           },
           "MD5C4KN/A": {
@@ -4951,12 +4951,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 512 Gt Pinkki",
+            "name": "iPad (A16) Wi-Fi 512 Gt Pinkki",
             "partNumber": "MD5C4KN/A"
           },
           "MD7F4KN/A": {
@@ -4965,12 +4965,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 128 Gt Hopea",
+            "name": "iPad (A16) Cellular 128 Gt Hopea",
             "partNumber": "MD7F4KN/A"
           },
           "MD7G4KN/A": {
@@ -4979,12 +4979,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 128 Gt Sininen",
+            "name": "iPad (A16) Cellular 128 Gt Sininen",
             "partNumber": "MD7G4KN/A"
           },
           "MD7H4KN/A": {
@@ -4993,12 +4993,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 128 Gt Keltainen",
+            "name": "iPad (A16) Cellular 128 Gt Keltainen",
             "partNumber": "MD7H4KN/A"
           },
           "MD7J4KN/A": {
@@ -5007,12 +5007,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 128 Gt Pinkki",
+            "name": "iPad (A16) Cellular 128 Gt Pinkki",
             "partNumber": "MD7J4KN/A"
           },
           "MD7K4KN/A": {
@@ -5021,12 +5021,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 256 Gt Hopea",
+            "name": "iPad (A16) Cellular 256 Gt Hopea",
             "partNumber": "MD7K4KN/A"
           },
           "MD7L4KN/A": {
@@ -5035,12 +5035,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 256 Gt Sininen",
+            "name": "iPad (A16) Cellular 256 Gt Sininen",
             "partNumber": "MD7L4KN/A"
           },
           "MD7M4KN/A": {
@@ -5049,12 +5049,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 256 Gt Keltainen",
+            "name": "iPad (A16) Cellular 256 Gt Keltainen",
             "partNumber": "MD7M4KN/A"
           },
           "MD7N4KN/A": {
@@ -5063,12 +5063,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 256 Gt Pinkki",
+            "name": "iPad (A16) Cellular 256 Gt Pinkki",
             "partNumber": "MD7N4KN/A"
           },
           "MD7P4KN/A": {
@@ -5077,12 +5077,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 512 Gt Hopea",
+            "name": "iPad (A16) Cellular 512 Gt Hopea",
             "partNumber": "MD7P4KN/A"
           },
           "MD7Q4KN/A": {
@@ -5091,12 +5091,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 512 Gt Sininen",
+            "name": "iPad (A16) Cellular 512 Gt Sininen",
             "partNumber": "MD7Q4KN/A"
           },
           "MD7R4KN/A": {
@@ -5105,12 +5105,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 512 Gt Keltainen",
+            "name": "iPad (A16) Cellular 512 Gt Keltainen",
             "partNumber": "MD7R4KN/A"
           },
           "MD7T4KN/A": {
@@ -5119,12 +5119,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 512 Gt Pinkki",
+            "name": "iPad (A16) Cellular 512 Gt Pinkki",
             "partNumber": "MD7T4KN/A"
           }
         },
@@ -5140,12 +5140,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128 Go Argent",
+            "name": "iPad (A16) Wi-Fi 128 Go Argent",
             "partNumber": "MD3Y4TY/A"
           },
           "MD4A4TY/A": {
@@ -5154,12 +5154,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128 Go Bleu",
+            "name": "iPad (A16) Wi-Fi 128 Go Bleu",
             "partNumber": "MD4A4TY/A"
           },
           "MD4D4TY/A": {
@@ -5168,12 +5168,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128 Go Jaune",
+            "name": "iPad (A16) Wi-Fi 128 Go Jaune",
             "partNumber": "MD4D4TY/A"
           },
           "MD4E4TY/A": {
@@ -5182,12 +5182,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128 Go Rose",
+            "name": "iPad (A16) Wi-Fi 128 Go Rose",
             "partNumber": "MD4E4TY/A"
           },
           "MD4G4TY/A": {
@@ -5196,12 +5196,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 256 Go Argent",
+            "name": "iPad (A16) Wi-Fi 256 Go Argent",
             "partNumber": "MD4G4TY/A"
           },
           "MD4H4TY/A": {
@@ -5210,12 +5210,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 256 Go Bleu",
+            "name": "iPad (A16) Wi-Fi 256 Go Bleu",
             "partNumber": "MD4H4TY/A"
           },
           "MD4J4TY/A": {
@@ -5224,12 +5224,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 256 Go Jaune",
+            "name": "iPad (A16) Wi-Fi 256 Go Jaune",
             "partNumber": "MD4J4TY/A"
           },
           "MD4P4TY/A": {
@@ -5238,12 +5238,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 256 Go Rose",
+            "name": "iPad (A16) Wi-Fi 256 Go Rose",
             "partNumber": "MD4P4TY/A"
           },
           "MD4Q4TY/A": {
@@ -5252,12 +5252,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 512 Go Argent",
+            "name": "iPad (A16) Wi-Fi 512 Go Argent",
             "partNumber": "MD4Q4TY/A"
           },
           "MD4Y4TY/A": {
@@ -5266,12 +5266,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 512 Go Bleu",
+            "name": "iPad (A16) Wi-Fi 512 Go Bleu",
             "partNumber": "MD4Y4TY/A"
           },
           "MD5A4TY/A": {
@@ -5280,12 +5280,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 512 Go Jaune",
+            "name": "iPad (A16) Wi-Fi 512 Go Jaune",
             "partNumber": "MD5A4TY/A"
           },
           "MD5C4TY/A": {
@@ -5294,12 +5294,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 512 Go Rose",
+            "name": "iPad (A16) Wi-Fi 512 Go Rose",
             "partNumber": "MD5C4TY/A"
           },
           "MD7F4TY/A": {
@@ -5308,12 +5308,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 128 Go Argent",
+            "name": "iPad (A16) Cellular 128 Go Argent",
             "partNumber": "MD7F4TY/A"
           },
           "MD7G4TY/A": {
@@ -5322,12 +5322,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 128 Go Bleu",
+            "name": "iPad (A16) Cellular 128 Go Bleu",
             "partNumber": "MD7G4TY/A"
           },
           "MD7H4TY/A": {
@@ -5336,12 +5336,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 128 Go Jaune",
+            "name": "iPad (A16) Cellular 128 Go Jaune",
             "partNumber": "MD7H4TY/A"
           },
           "MD7J4TY/A": {
@@ -5350,12 +5350,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 128 Go Rose",
+            "name": "iPad (A16) Cellular 128 Go Rose",
             "partNumber": "MD7J4TY/A"
           },
           "MD7K4TY/A": {
@@ -5364,12 +5364,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 256 Go Argent",
+            "name": "iPad (A16) Cellular 256 Go Argent",
             "partNumber": "MD7K4TY/A"
           },
           "MD7L4TY/A": {
@@ -5378,12 +5378,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 256 Go Bleu",
+            "name": "iPad (A16) Cellular 256 Go Bleu",
             "partNumber": "MD7L4TY/A"
           },
           "MD7M4TY/A": {
@@ -5392,12 +5392,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 256 Go Jaune",
+            "name": "iPad (A16) Cellular 256 Go Jaune",
             "partNumber": "MD7M4TY/A"
           },
           "MD7N4TY/A": {
@@ -5406,12 +5406,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 256 Go Rose",
+            "name": "iPad (A16) Cellular 256 Go Rose",
             "partNumber": "MD7N4TY/A"
           },
           "MD7P4TY/A": {
@@ -5420,12 +5420,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 512 Go Argent",
+            "name": "iPad (A16) Cellular 512 Go Argent",
             "partNumber": "MD7P4TY/A"
           },
           "MD7Q4TY/A": {
@@ -5434,12 +5434,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 512 Go Bleu",
+            "name": "iPad (A16) Cellular 512 Go Bleu",
             "partNumber": "MD7Q4TY/A"
           },
           "MD7R4TY/A": {
@@ -5448,12 +5448,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 512 Go Jaune",
+            "name": "iPad (A16) Cellular 512 Go Jaune",
             "partNumber": "MD7R4TY/A"
           },
           "MD7T4TY/A": {
@@ -5462,12 +5462,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 512 Go Rose",
+            "name": "iPad (A16) Cellular 512 Go Rose",
             "partNumber": "MD7T4TY/A"
           }
         },
@@ -6169,12 +6169,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128GB Argento",
+            "name": "iPad (A16) Wi-Fi 128GB Argento",
             "partNumber": "MD3Y4TY/A"
           },
           "MD4A4TY/A": {
@@ -6183,12 +6183,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128GB Blu",
+            "name": "iPad (A16) Wi-Fi 128GB Blu",
             "partNumber": "MD4A4TY/A"
           },
           "MD4D4TY/A": {
@@ -6197,12 +6197,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128GB Giallo",
+            "name": "iPad (A16) Wi-Fi 128GB Giallo",
             "partNumber": "MD4D4TY/A"
           },
           "MD4E4TY/A": {
@@ -6211,12 +6211,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128GB Rosa",
+            "name": "iPad (A16) Wi-Fi 128GB Rosa",
             "partNumber": "MD4E4TY/A"
           },
           "MD4G4TY/A": {
@@ -6225,12 +6225,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 256GB Argento",
+            "name": "iPad (A16) Wi-Fi 256GB Argento",
             "partNumber": "MD4G4TY/A"
           },
           "MD4H4TY/A": {
@@ -6239,12 +6239,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 256GB Blu",
+            "name": "iPad (A16) Wi-Fi 256GB Blu",
             "partNumber": "MD4H4TY/A"
           },
           "MD4J4TY/A": {
@@ -6253,12 +6253,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 256GB Giallo",
+            "name": "iPad (A16) Wi-Fi 256GB Giallo",
             "partNumber": "MD4J4TY/A"
           },
           "MD4P4TY/A": {
@@ -6267,12 +6267,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 256GB Rosa",
+            "name": "iPad (A16) Wi-Fi 256GB Rosa",
             "partNumber": "MD4P4TY/A"
           },
           "MD4Q4TY/A": {
@@ -6281,12 +6281,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 512GB Argento",
+            "name": "iPad (A16) Wi-Fi 512GB Argento",
             "partNumber": "MD4Q4TY/A"
           },
           "MD4Y4TY/A": {
@@ -6295,12 +6295,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 512GB Blu",
+            "name": "iPad (A16) Wi-Fi 512GB Blu",
             "partNumber": "MD4Y4TY/A"
           },
           "MD5A4TY/A": {
@@ -6309,12 +6309,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 512GB Giallo",
+            "name": "iPad (A16) Wi-Fi 512GB Giallo",
             "partNumber": "MD5A4TY/A"
           },
           "MD5C4TY/A": {
@@ -6323,12 +6323,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 512GB Rosa",
+            "name": "iPad (A16) Wi-Fi 512GB Rosa",
             "partNumber": "MD5C4TY/A"
           },
           "MD7F4TY/A": {
@@ -6337,12 +6337,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 128GB Argento",
+            "name": "iPad (A16) Cellular 128GB Argento",
             "partNumber": "MD7F4TY/A"
           },
           "MD7G4TY/A": {
@@ -6351,12 +6351,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 128GB Blu",
+            "name": "iPad (A16) Cellular 128GB Blu",
             "partNumber": "MD7G4TY/A"
           },
           "MD7H4TY/A": {
@@ -6365,12 +6365,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 128GB Giallo",
+            "name": "iPad (A16) Cellular 128GB Giallo",
             "partNumber": "MD7H4TY/A"
           },
           "MD7J4TY/A": {
@@ -6379,12 +6379,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 128GB Rosa",
+            "name": "iPad (A16) Cellular 128GB Rosa",
             "partNumber": "MD7J4TY/A"
           },
           "MD7K4TY/A": {
@@ -6393,12 +6393,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 256GB Argento",
+            "name": "iPad (A16) Cellular 256GB Argento",
             "partNumber": "MD7K4TY/A"
           },
           "MD7L4TY/A": {
@@ -6407,12 +6407,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 256GB Blu",
+            "name": "iPad (A16) Cellular 256GB Blu",
             "partNumber": "MD7L4TY/A"
           },
           "MD7M4TY/A": {
@@ -6421,12 +6421,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 256GB Giallo",
+            "name": "iPad (A16) Cellular 256GB Giallo",
             "partNumber": "MD7M4TY/A"
           },
           "MD7N4TY/A": {
@@ -6435,12 +6435,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 256GB Rosa",
+            "name": "iPad (A16) Cellular 256GB Rosa",
             "partNumber": "MD7N4TY/A"
           },
           "MD7P4TY/A": {
@@ -6449,12 +6449,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 512GB Argento",
+            "name": "iPad (A16) Cellular 512GB Argento",
             "partNumber": "MD7P4TY/A"
           },
           "MD7Q4TY/A": {
@@ -6463,12 +6463,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 512GB Blu",
+            "name": "iPad (A16) Cellular 512GB Blu",
             "partNumber": "MD7Q4TY/A"
           },
           "MD7R4TY/A": {
@@ -6477,12 +6477,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 512GB Giallo",
+            "name": "iPad (A16) Cellular 512GB Giallo",
             "partNumber": "MD7R4TY/A"
           },
           "MD7T4TY/A": {
@@ -6491,12 +6491,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 512GB Rosa",
+            "name": "iPad (A16) Cellular 512GB Rosa",
             "partNumber": "MD7T4TY/A"
           }
         },
@@ -7884,12 +7884,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128GB Zilver",
+            "name": "iPad (A16) Wi-Fi 128GB Zilver",
             "partNumber": "MD3Y4TY/A"
           },
           "MD4A4TY/A": {
@@ -7898,12 +7898,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128GB Blauw",
+            "name": "iPad (A16) Wi-Fi 128GB Blauw",
             "partNumber": "MD4A4TY/A"
           },
           "MD4D4TY/A": {
@@ -7912,12 +7912,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128GB Geel",
+            "name": "iPad (A16) Wi-Fi 128GB Geel",
             "partNumber": "MD4D4TY/A"
           },
           "MD4E4TY/A": {
@@ -7926,12 +7926,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128GB Roze",
+            "name": "iPad (A16) Wi-Fi 128GB Roze",
             "partNumber": "MD4E4TY/A"
           },
           "MD4G4TY/A": {
@@ -7940,12 +7940,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 256GB Zilver",
+            "name": "iPad (A16) Wi-Fi 256GB Zilver",
             "partNumber": "MD4G4TY/A"
           },
           "MD4H4TY/A": {
@@ -7954,12 +7954,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 256GB Blauw",
+            "name": "iPad (A16) Wi-Fi 256GB Blauw",
             "partNumber": "MD4H4TY/A"
           },
           "MD4J4TY/A": {
@@ -7968,12 +7968,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 256GB Geel",
+            "name": "iPad (A16) Wi-Fi 256GB Geel",
             "partNumber": "MD4J4TY/A"
           },
           "MD4P4TY/A": {
@@ -7982,12 +7982,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 256GB Roze",
+            "name": "iPad (A16) Wi-Fi 256GB Roze",
             "partNumber": "MD4P4TY/A"
           },
           "MD4Q4TY/A": {
@@ -7996,12 +7996,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 512GB Zilver",
+            "name": "iPad (A16) Wi-Fi 512GB Zilver",
             "partNumber": "MD4Q4TY/A"
           },
           "MD4Y4TY/A": {
@@ -8010,12 +8010,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 512GB Blauw",
+            "name": "iPad (A16) Wi-Fi 512GB Blauw",
             "partNumber": "MD4Y4TY/A"
           },
           "MD5A4TY/A": {
@@ -8024,12 +8024,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 512GB Geel",
+            "name": "iPad (A16) Wi-Fi 512GB Geel",
             "partNumber": "MD5A4TY/A"
           },
           "MD5C4TY/A": {
@@ -8038,12 +8038,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 512GB Roze",
+            "name": "iPad (A16) Wi-Fi 512GB Roze",
             "partNumber": "MD5C4TY/A"
           },
           "MD7F4TY/A": {
@@ -8052,12 +8052,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 128GB Zilver",
+            "name": "iPad (A16) Cellular 128GB Zilver",
             "partNumber": "MD7F4TY/A"
           },
           "MD7G4TY/A": {
@@ -8066,12 +8066,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 128GB Blauw",
+            "name": "iPad (A16) Cellular 128GB Blauw",
             "partNumber": "MD7G4TY/A"
           },
           "MD7H4TY/A": {
@@ -8080,12 +8080,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 128GB Geel",
+            "name": "iPad (A16) Cellular 128GB Geel",
             "partNumber": "MD7H4TY/A"
           },
           "MD7J4TY/A": {
@@ -8094,12 +8094,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 128GB Roze",
+            "name": "iPad (A16) Cellular 128GB Roze",
             "partNumber": "MD7J4TY/A"
           },
           "MD7K4TY/A": {
@@ -8108,12 +8108,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 256GB Zilver",
+            "name": "iPad (A16) Cellular 256GB Zilver",
             "partNumber": "MD7K4TY/A"
           },
           "MD7L4TY/A": {
@@ -8122,12 +8122,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 256GB Blauw",
+            "name": "iPad (A16) Cellular 256GB Blauw",
             "partNumber": "MD7L4TY/A"
           },
           "MD7M4TY/A": {
@@ -8136,12 +8136,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 256GB Geel",
+            "name": "iPad (A16) Cellular 256GB Geel",
             "partNumber": "MD7M4TY/A"
           },
           "MD7N4TY/A": {
@@ -8150,12 +8150,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 256GB Roze",
+            "name": "iPad (A16) Cellular 256GB Roze",
             "partNumber": "MD7N4TY/A"
           },
           "MD7P4TY/A": {
@@ -8164,12 +8164,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 512GB Zilver",
+            "name": "iPad (A16) Cellular 512GB Zilver",
             "partNumber": "MD7P4TY/A"
           },
           "MD7Q4TY/A": {
@@ -8178,12 +8178,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 512GB Blauw",
+            "name": "iPad (A16) Cellular 512GB Blauw",
             "partNumber": "MD7Q4TY/A"
           },
           "MD7R4TY/A": {
@@ -8192,12 +8192,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 512GB Geel",
+            "name": "iPad (A16) Cellular 512GB Geel",
             "partNumber": "MD7R4TY/A"
           },
           "MD7T4TY/A": {
@@ -8206,12 +8206,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 512GB Roze",
+            "name": "iPad (A16) Cellular 512GB Roze",
             "partNumber": "MD7T4TY/A"
           }
         },
@@ -8227,12 +8227,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128GB sølv",
+            "name": "iPad (A16) Wi-Fi 128GB sølv",
             "partNumber": "MD3Y4KN/A"
           },
           "MD4A4KN/A": {
@@ -8241,12 +8241,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128GB blå",
+            "name": "iPad (A16) Wi-Fi 128GB blå",
             "partNumber": "MD4A4KN/A"
           },
           "MD4D4KN/A": {
@@ -8255,12 +8255,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128GB gul",
+            "name": "iPad (A16) Wi-Fi 128GB gul",
             "partNumber": "MD4D4KN/A"
           },
           "MD4E4KN/A": {
@@ -8269,12 +8269,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 128GB rosa",
+            "name": "iPad (A16) Wi-Fi 128GB rosa",
             "partNumber": "MD4E4KN/A"
           },
           "MD4G4KN/A": {
@@ -8283,12 +8283,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 256GB sølv",
+            "name": "iPad (A16) Wi-Fi 256GB sølv",
             "partNumber": "MD4G4KN/A"
           },
           "MD4H4KN/A": {
@@ -8297,12 +8297,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 256GB blå",
+            "name": "iPad (A16) Wi-Fi 256GB blå",
             "partNumber": "MD4H4KN/A"
           },
           "MD4J4KN/A": {
@@ -8311,12 +8311,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 256GB gul",
+            "name": "iPad (A16) Wi-Fi 256GB gul",
             "partNumber": "MD4J4KN/A"
           },
           "MD4P4KN/A": {
@@ -8325,12 +8325,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 256GB rosa",
+            "name": "iPad (A16) Wi-Fi 256GB rosa",
             "partNumber": "MD4P4KN/A"
           },
           "MD4Q4KN/A": {
@@ -8339,12 +8339,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 512GB sølv",
+            "name": "iPad (A16) Wi-Fi 512GB sølv",
             "partNumber": "MD4Q4KN/A"
           },
           "MD4Y4KN/A": {
@@ -8353,12 +8353,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 512GB blå",
+            "name": "iPad (A16) Wi-Fi 512GB blå",
             "partNumber": "MD4Y4KN/A"
           },
           "MD5A4KN/A": {
@@ -8367,12 +8367,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 512GB gul",
+            "name": "iPad (A16) Wi-Fi 512GB gul",
             "partNumber": "MD5A4KN/A"
           },
           "MD5C4KN/A": {
@@ -8381,12 +8381,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Wi-Fi 512GB rosa",
+            "name": "iPad (A16) Wi-Fi 512GB rosa",
             "partNumber": "MD5C4KN/A"
           },
           "MD7F4KN/A": {
@@ -8395,12 +8395,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 128GB sølv",
+            "name": "iPad (A16) Cellular 128GB sølv",
             "partNumber": "MD7F4KN/A"
           },
           "MD7G4KN/A": {
@@ -8409,12 +8409,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 128GB blå",
+            "name": "iPad (A16) Cellular 128GB blå",
             "partNumber": "MD7G4KN/A"
           },
           "MD7H4KN/A": {
@@ -8423,12 +8423,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 128GB gul",
+            "name": "iPad (A16) Cellular 128GB gul",
             "partNumber": "MD7H4KN/A"
           },
           "MD7J4KN/A": {
@@ -8437,12 +8437,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 128GB rosa",
+            "name": "iPad (A16) Cellular 128GB rosa",
             "partNumber": "MD7J4KN/A"
           },
           "MD7K4KN/A": {
@@ -8451,12 +8451,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 256GB sølv",
+            "name": "iPad (A16) Cellular 256GB sølv",
             "partNumber": "MD7K4KN/A"
           },
           "MD7L4KN/A": {
@@ -8465,12 +8465,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 256GB blå",
+            "name": "iPad (A16) Cellular 256GB blå",
             "partNumber": "MD7L4KN/A"
           },
           "MD7M4KN/A": {
@@ -8479,12 +8479,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 256GB gul",
+            "name": "iPad (A16) Cellular 256GB gul",
             "partNumber": "MD7M4KN/A"
           },
           "MD7N4KN/A": {
@@ -8493,12 +8493,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 256GB rosa",
+            "name": "iPad (A16) Cellular 256GB rosa",
             "partNumber": "MD7N4KN/A"
           },
           "MD7P4KN/A": {
@@ -8507,12 +8507,12 @@
             "colorKey": "silver",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 512GB sølv",
+            "name": "iPad (A16) Cellular 512GB sølv",
             "partNumber": "MD7P4KN/A"
           },
           "MD7Q4KN/A": {
@@ -8521,12 +8521,12 @@
             "colorKey": "blue",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 512GB blå",
+            "name": "iPad (A16) Cellular 512GB blå",
             "partNumber": "MD7Q4KN/A"
           },
           "MD7R4KN/A": {
@@ -8535,12 +8535,12 @@
             "colorKey": "yellow",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 512GB gul",
+            "name": "iPad (A16) Cellular 512GB gul",
             "partNumber": "MD7R4KN/A"
           },
           "MD7T4KN/A": {
@@ -8549,12 +8549,12 @@
             "colorKey": "pink",
             "dimensionScreensize": "",
             "family": "ipada162025",
-            "familyName": "iPad",
+            "familyName": "iPad (A16)",
             "metadata": {
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad Cellular 512GB rosa",
+            "name": "iPad (A16) Cellular 512GB rosa",
             "partNumber": "MD7T4KN/A"
           }
         },
@@ -8932,7 +8932,7 @@
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad (A16) 128GB blå",
+            "name": "iPad (A16) Wi-Fi 128GB blå",
             "partNumber": "MD4A4KN/A"
           },
           "MD4D4KN/A": {
@@ -9114,7 +9114,7 @@
               "isRealPartNumber": true,
               "sourcePage": "ipad"
             },
-            "name": "iPad (A16) Wi-Fi 128GB gul",
+            "name": "iPad (A16) Cellular 128GB gul",
             "partNumber": "MD7H4KN/A"
           },
           "MD7J4KN/A": {

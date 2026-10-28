@@ -1,7 +1,7 @@
 {
   "_meta": {
     "family": "airpods",
-    "generated_at": "2026-10-28T05:50:51.706506+00:00",
+    "generated_at": "2026-10-28T08:46:20.073161+00:00",
     "regions_scraped": 33,
     "scraper_version": "1.0",
     "token": "airpods-5"
@@ -381,7 +381,7 @@
               "isRealPartNumber": true,
               "sourcePage": "airpods"
             },
-            "name": "AirPods 5 mit kabellosem Ladecase\nInkl. Drucksensor mit Streichen zur Lautstärke­regelung und längerer Batterie­laufzeit",
+            "name": "AirPods 5 mit kabellosem Ladecase\nInkl. Drucksensor mit Streichen zur Lautstärkeregelung und längerer Batterielaufzeit",
             "partNumber": "MKFT4ZM/A"
           },
           "MKFW4ZM/A": {
@@ -603,7 +603,7 @@
               "isRealPartNumber": true,
               "sourcePage": "airpods"
             },
-            "name": "AirPods 5 mit kabellosem Ladecase\nInkl. Drucksensor mit Streichen zur Lautstärke­regelung und längerer Batterie­laufzeit",
+            "name": "AirPods 5 mit kabellosem Ladecase\nInkl. Drucksensor mit Streichen zur Lautstärkeregelung und längerer Batterielaufzeit",
             "partNumber": "MKFT4ZM/A"
           },
           "MKFW4ZM/A": {
@@ -714,7 +714,7 @@
               "isRealPartNumber": true,
               "sourcePage": "airpods"
             },
-            "name": "AirPods 5 mit kabellosem Ladecase\nInkl. Drucksensor mit Streichen zur Lautstärke­regelung und längerer Batterie­laufzeit",
+            "name": "AirPods 5 mit kabellosem Ladecase\nInkl. Drucksensor mit Streichen zur Lautstärkeregelung und längerer Batterielaufzeit",
             "partNumber": "MKFT4ZM/A"
           },
           "MKFW4ZM/A": {
@@ -751,7 +751,7 @@
               "isRealPartNumber": true,
               "sourcePage": "airpods"
             },
-            "name": "AirPods 5 med trådløst opladningsetui\nIndbygget tryksensor med lydstyrke­justering og længere batteritid",
+            "name": "AirPods 5 med trådløst opladningsetui\nIndbygget tryksensor med lydstyrkejustering og længere batteritid",
             "partNumber": "MKFT4DN/A"
           },
           "MKFW4DN/A": {
@@ -825,7 +825,7 @@
               "isRealPartNumber": true,
               "sourcePage": "airpods"
             },
-            "name": "AirPods 5 ja langaton latauskotelo\nSisältää painalluksen tunnistimen äänen­voimakkuuden pyyhkäisyllä ja pidempään kestävän akun",
+            "name": "AirPods 5 ja langaton latauskotelo\nSisältää painalluksen tunnistimen äänenvoimakkuuden pyyhkäisyllä ja pidempään kestävän akun",
             "partNumber": "MKFT4DN/A"
           },
           "MKFW4DN/A": {

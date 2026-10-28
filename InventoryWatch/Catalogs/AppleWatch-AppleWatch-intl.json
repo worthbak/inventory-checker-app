@@ -1,7 +1,7 @@
 {
   "_meta": {
     "family": "watch",
-    "generated_at": "2026-10-28T05:43:53.096386+00:00",
+    "generated_at": "2026-10-28T08:27:42.927842+00:00",
     "regions_scraped": 33,
     "scraper_version": "1.0",
     "token": "apple-watch"
@@ -6329,7 +6329,7 @@
           },
           "MJJM4QN/A": {
             "capacity": "",
-            "colorDisplay": "Luonnon­­vaalea",
+            "colorDisplay": "Luonnonvaalea",
             "colorKey": "natural",
             "dimensionScreensize": "",
             "family": "watch",
@@ -6342,7 +6342,7 @@
               "isRealPartNumber": true,
               "sourcePage": "watch"
             },
-            "name": "Apple Watch Series 12 42mm gpscell titanium Luonnon­­vaalea",
+            "name": "Apple Watch Series 12 42mm gpscell titanium Luonnonvaalea",
             "partNumber": "MJJM4QN/A"
           },
           "MJJN4QN/A": {
@@ -6365,7 +6365,7 @@
           },
           "MJJP4QN/A": {
             "capacity": "",
-            "colorDisplay": "Luonnon­­vaalea",
+            "colorDisplay": "Luonnonvaalea",
             "colorKey": "natural",
             "dimensionScreensize": "",
             "family": "watch",
@@ -6378,7 +6378,7 @@
               "isRealPartNumber": true,
               "sourcePage": "watch"
             },
-            "name": "Apple Watch Series 12 46mm gpscell titanium Luonnon­­vaalea",
+            "name": "Apple Watch Series 12 46mm gpscell titanium Luonnonvaalea",
             "partNumber": "MJJP4QN/A"
           },
           "MJJQ4QN/A": {
