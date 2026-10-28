@@ -4,7 +4,8 @@
 Catches the failure mode where Apple rate-limiting (HTTP 541 / timeouts) caused
 regions to be silently dropped from a catalog file, and SKU text the scraper should
 have cleaned: page markup ("<div class="), a capacity with a stray "n" ("128GBn"),
-or another page's title in a familyName ("HomePod - Midnight", AppleCare+ headings).
+or another page's title in a familyName ("HomePod - Midnight", AppleCare+ headings), or an iPad
+named with the other screen size ("13-inch iPad Pro 11-inch (M5)").
 Run after a scrape:
 
     python3 validate_catalogs.py            # all catalogs
@@ -47,6 +48,12 @@ def text_problems(catalog: dict) -> list:
                         found.append(f"{region} {part}: markup in {field} {value!r}")
                     if STRAY_N.search(value):
                         found.append(f"{region} {part}: stray 'n' after a size in {field} {value!r}")
+                size = re.match(r"^(\d+)inch$", sku.get("dimensionScreensize") or "")
+                if size and str(sku.get("family") or "").startswith("ipad"):
+                    # "13-inch iPad Pro 11-inch (M5)": a two-digit number other than the SKU's own size.
+                    others = {n for n in re.findall(r"(?<![\d.])(\d{2})(?![\d.])", sku.get("name") or "") if n != size.group(1)}
+                    if others:
+                        found.append(f"{region} {part}: {size.group(1)}-inch SKU named with size {', '.join(sorted(others))}: {sku.get('name')!r}")
                 family = sku.get("familyName") or ""
                 if " - " in family or "applecare" in (family + " " + (sku.get("name") or "")).lower():
                     found.append(f"{region} {part}: another page's title in familyName/name {family!r}")

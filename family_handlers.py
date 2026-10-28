@@ -1063,6 +1063,15 @@ class HomePodHandler(FamilyHandler):
 # iPad Handler
 # ---------------------------------------------------------------------------
 
+_CHIP_PAREN = re.compile(r'\s?[(（][^()（）]*\b[AM]\d+[^()（）]*[)）]')
+
+
+def _chip_suffix(title: str) -> str:
+    """The chip in parentheses at the end of a title: " (M5)", "（M5）", " (ชิป A20 Pro)"."""
+    found = _CHIP_PAREN.findall(title or '')
+    return found[-1] if found else ''
+
+
 class IPadHandler(FamilyHandler):
     """iPad: translate colors/finishes/sizes from bootstrap displayValues, then build names."""
 
@@ -1242,7 +1251,16 @@ class IPadHandler(FamilyHandler):
                 cap = re.sub(r'\s+(?:Speicher|storage|Stockage|Memoria)', '', cap, flags=re.IGNORECASE).strip()
                 cap = re.sub(r'&nbsp;', ' ', cap)
                 cap = re.sub(r'<[^>]+>', '', cap).strip()
-                parts = [size_label + display_clean if size_label else display_clean]
+                # Each SKU's own familyName ("13-inch iPad Pro", "iPad Pro รุ่น 13 นิ้ว"): the page
+                # title in `display` is the first product's, so on two-size pages it named every
+                # 13-inch SKU "13-inch iPad Pro 11-inch (M5)". The chip ("(M5)") still comes from it.
+                fam = sanitize_text(v.get('familyName') or '')
+                if fam:
+                    chip = _chip_suffix(display_clean)
+                    base = f'{fam}{chip}' if chip and not _chip_suffix(fam) else fam
+                else:
+                    base = size_label + display_clean if size_label else display_clean
+                parts = [base]
                 if conn:
                     parts.append(conn)
                 if cap:
