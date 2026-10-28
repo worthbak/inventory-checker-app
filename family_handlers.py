@@ -12,17 +12,18 @@ from typing import Any, Dict, List, Set, Tuple
 
 
 def sanitize_text(text: str) -> str:
-    """Decode &nbsp;, drop other entities and HTML, including tags cut off mid-way: the Oct 2026 iPad
-    pages yield capacities like "128GBn<div class=" or "128 GBn" (an escaped newline and the start of
-    the next tag). Line breaks are kept."""
+    """Clean scraped text: U+00A0 and &nbsp; become spaces and other entities are deleted (numeric ones
+    too); a stray "n" right after a GB/TB size is removed ("128GBn" / "128 GBn", an escaped newline on the
+    Oct 2026 iPad pages); complete tags are removed and tags cut off mid-way ("<div class=") become a
+    space. Runs of spaces and tabs collapse and the ends are trimmed; line breaks inside are kept."""
     if not text:
         return text
     text = text.replace('\xa0', ' ')
     text = re.sub(r'&nbsp;', ' ', text)
     text = re.sub(r'&[a-zA-Z0-9#]+;', '', text)
     text = re.sub(r'(\d\s?(?:GB|TB))\\?n(?![A-Za-z])', r'\1', text)
-    text = re.sub(r'<[^>]+>', ' ', text)
-    text = re.sub(r'</?[a-zA-Z][^\s>]*(?:\s+[\w-]+=["\']?)?', ' ', text)
+    text = re.sub(r'<[^>]+>', '', text)
+    text = re.sub(r'</?[a-zA-Z][^\s>]*(?:\s+[\w-]+(?:=["\']?)?)?', ' ', text)
     return re.sub(r'[ \t]+', ' ', text).strip()
 
 
@@ -450,11 +451,12 @@ class MacHandler(FamilyHandler):
                     parts = core_dim2.split('-')
                     if len(parts) == 2 and parts[0].isdigit() and parts[1].isdigit():
                         proc_disp = f'{parts[0]}-Core CPU / {parts[1]}-Core GPU'
-                # iMac and MacBook Air name the chip only in the container code ("RO_IMAC_M6_24INCH_...").
-                m_cont = re.search(r'_M(\d+)(PRO|MAX|ULTRA)?_', p.get('aosContainerPartNumber') or '')
+                # Pages without a processor-dimensionChip (iMac, MacBook Air in Oct 2026) name the chip
+                # only in the container code ("RO_IMAC_M6_24INCH_..."). Only a plain chip ("M6") is used:
+                # containers that list Pro/Max/Ultra chips ("RO_MBP_M5PRO_M5MAX_...") cover several.
+                m_cont = re.search(r'_M(\d+)_', p.get('aosContainerPartNumber') or '')
                 if proc_disp and m_cont:
-                    chip = 'M' + m_cont.group(1) + (' ' + m_cont.group(2).title() if m_cont.group(2) else '')
-                    proc_disp = f'{chip} ({proc_disp})'
+                    proc_disp = f'M{m_cont.group(1)} ({proc_disp})'
             if displays:
                 pn_to_display.setdefault(pn, displays)
             if proc_disp:
@@ -469,7 +471,7 @@ class MacHandler(FamilyHandler):
             if finish_dim:
                 pn_to_finish.setdefault(pn, finish_dim)
 
-        if not pn_to_display and not pn_to_processor:
+        if not pn_to_display and not pn_to_processor and not pn_to_size and not pn_to_finish:
             return skus
 
         applied = 0

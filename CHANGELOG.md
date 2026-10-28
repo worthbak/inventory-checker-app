@@ -31,11 +31,12 @@
 - Refresh errors retain existing results, which may be stale, rather than replacing them with a successful-looking empty result.
 - The SKU-name regression test now uses the existing SKU lookup API, allowing the test target to compile instead of leaving an incomplete unsigned test bundle after a failed build.
 - Catalog scraper accuracy (Oct 2026 catalog refresh):
-  - Preconfigured Macs take their screen size and display finish from their own product entry on the buy page. A window around the part number had often reached into the previous product, labelling 16-inch MacBook Pros as 14-inch and adding nano-texture to configurations without it. iMac and MacBook Air names include the chip from the container code (for example, "M6").
-  - Capacities and names no longer keep cut-off page markup such as `128GBn<div class=` (iPad pages).
-  - China names no longer start with another page's US title ("HomePod - Midnight 午夜色", "iPad Wi‑Fi 128GB - Blue …", or an AppleCare+ heading as an Apple Watch family name). They use the family name the other countries share.
-  - AppleCare+ plans a buy page offers (`planDetails`, such as Brazil's Mac plans `MN863BR/A`) are no longer listed as products.
+  - Preconfigured Macs take their screen size and display finish from their own product entry where the page provides one, and the fallback search around the part number no longer reads the previous product. It had labelled 16-inch MacBook Pros as 14-inch and added nano-texture to configurations without it. Where a page gives only core counts, names include the plain chip from the container code ("M6" on iMac, "M5" on MacBook Air).
+  - Capacities and names no longer keep cut-off page markup such as `128GBn<div class=` or `128 GBn` (iPad pages).
+  - China names no longer start with another page's US title ("HomePod - Midnight 午夜色", "iPad Wi‑Fi 128GB - Blue …", or an AppleCare+ heading as an Apple Watch family name). They use the region's own family name for that screen size or, when every name in the region is affected, the one most countries use. Names that can't be repaired are reported.
+  - AppleCare+ plans a buy page offers (`planDetails`, such as Brazil's Mac plans `MN863BR/A`) are no longer listed as products for regions fetched in the run.
   - A catalog whose generated file name differs only in case from an existing one (`Mac-iMac` and `Mac-Imac`) reuses the existing file, so case-sensitive file systems don't get a second copy next to the bundled one.
+  - `validate_catalogs.py` also fails on scrape junk in SKU text: page markup, a capacity with a stray "n", or another page's title in a family name.
 
 ### Release notes
 
